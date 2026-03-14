@@ -91,16 +91,29 @@
     <!-- ─── CENTER COLUMN ─── -->
     <div class="col-center">
 
-        <!-- Analytics Engine -->
+        <!-- Payoff Chart -->
         <div class="chart-box">
             <div class="panel">
                 <div class="chart-header">
                     <div>
-                        <div class="lbl" style="font-size:12px;margin-bottom:0">ANALYTICS ENGINE</div>
-                        <div class="sub-label">MULTI-METRIC OVERLAY // UNDERLYING F</div>
+                        <div class="lbl" style="font-size:12px;margin-bottom:0">PAYOFF DIAGRAM</div>
+                        <div class="sub-label">P&L AT EXPIRY // UNDERLYING F</div>
                     </div>
                 </div>
-                <div id="main-chart" class="chart-plot"></div>
+                <div id="payoff-chart" class="chart-plot"></div>
+            </div>
+        </div>
+
+        <!-- Greeks Chart -->
+        <div class="chart-box">
+            <div class="panel">
+                <div class="chart-header">
+                    <div>
+                        <div class="lbl" style="font-size:12px;margin-bottom:0">GREEKS ANALYTICS</div>
+                        <div class="sub-label">SENSITIVITIES // UNDERLYING F</div>
+                    </div>
+                </div>
+                <div id="greeks-chart" class="chart-plot"></div>
             </div>
         </div>
 
@@ -150,7 +163,7 @@
                 <div class="lbl lbl-sm">FUTURES PRICE (F)</div>
                 <div class="slider-group">
                     <input type="range" id="futures-price-slider" min="1" max="200" step="0.5" value="75">
-                    <span class="slider-val" id="futures-price-val">75.0</span>
+                    <input type="number" class="slider-input" id="futures-price-input" value="75" step="0.5">
                 </div>
             </div>
 
@@ -158,7 +171,7 @@
                 <div class="lbl lbl-sm">EXPIRY T (YEARS)</div>
                 <div class="slider-group">
                     <input type="range" id="time-to-expiry-slider" min="0.01" max="5" step="0.01" value="1">
-                    <span class="slider-val" id="time-to-expiry-val">1.00</span>
+                    <input type="number" class="slider-input" id="time-to-expiry-input" value="1.00" step="0.01">
                 </div>
             </div>
 
@@ -166,7 +179,7 @@
                 <div class="lbl lbl-sm">VOLATILITY σ (%)</div>
                 <div class="slider-group">
                     <input type="range" id="volatility-slider" min="1" max="150" step="0.5" value="35">
-                    <span class="slider-val" id="volatility-val">35.0</span>
+                    <input type="number" class="slider-input" id="volatility-input" value="35.0" step="0.5">
                 </div>
             </div>
 
@@ -174,7 +187,7 @@
                 <div class="lbl lbl-sm">RATE r (%)</div>
                 <div class="slider-group">
                     <input type="range" id="risk-free-rate-slider" min="0" max="20" step="0.1" value="5">
-                    <span class="slider-val" id="risk-free-rate-val">5.0</span>
+                    <input type="number" class="slider-input" id="risk-free-rate-input" value="5.0" step="0.1">
                 </div>
             </div>
 
@@ -182,7 +195,7 @@
                 <div class="lbl lbl-sm">YIELD q (%)</div>
                 <div class="slider-group">
                     <input type="range" id="div-yield-slider" min="0" max="15" step="0.1" value="0">
-                    <span class="slider-val" id="div-yield-val">0.0</span>
+                    <input type="number" class="slider-input" id="div-yield-input" value="0.0" step="0.1">
                 </div>
             </div>
 
@@ -228,7 +241,7 @@
         </div>
 
         <!-- Active Metrics -->
-        <div class="panel" style="max-height:calc(100vh - 520px);overflow-y:auto">
+        <div class="panel" style="max-height:calc(100vh - 580px);overflow-y:auto">
             <div class="lbl">ACTIVE METRICS</div>
             <div id="metrics-container" class="mt-8"></div>
         </div>
