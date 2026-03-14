@@ -1,0 +1,80 @@
+/* Energy Derivatives Terminal - Custom Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
+/* Dropdown dark theme */
+.dark-dropdown .Select-control,
+.dark-dropdown .Select-menu-outer {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+    color: #e2e8f0 !important;
+}
+.dark-dropdown .Select-value-label,
+.dark-dropdown .Select-placeholder {
+    color: #e2e8f0 !important;
+}
+.dark-dropdown .Select-option {
+    background-color: #1e293b !important;
+    color: #e2e8f0 !important;
+}
+.dark-dropdown .Select-option.is-focused {
+    background-color: #334155 !important;
+}
+.VirtualizedSelectOption {
+    color: #e2e8f0 !important;
+}
+
+/* Dash dropdown overrides */
+.Select-control {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+}
+.Select-menu-outer {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+}
+.Select-value-label {
+    color: #e2e8f0 !important;
+}
+.Select-option {
+    background-color: #1e293b !important;
+    color: #e2e8f0 !important;
+}
+.Select-option.is-focused {
+    background-color: #334155 !important;
+}
+.Select-arrow {
+    border-color: #64748b transparent transparent !important;
+}
+.is-open > .Select-control .Select-arrow {
+    border-color: transparent transparent #64748b !important;
+}
+.Select-input input {
+    color: #e2e8f0 !important;
+}
+.Select-clear {
+    color: #64748b !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0a0e17; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+/* Input number spinners */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 0.3;
+}
+
+/* Plotly modebar */
+.modebar-btn { color: #64748b !important; }
+.modebar-btn:hover { color: #06b6d4 !important; }
+.modebar-group { background: transparent !important; }
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #0a0e17;
+}
