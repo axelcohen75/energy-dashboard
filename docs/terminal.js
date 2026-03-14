@@ -361,24 +361,28 @@ function updateCharts() {
     }
     updateMetricStyles();
 
-    // ─── PAYOFF CHART (always shows payoff) ───
-    if (portfolio.length === 0) {
-        const emptyAnnotation = [{
+    // ─── Empty state: show grid with zero line ───
+    const emptyLayout = (yTitle) => ({
+        ...CHART_LAYOUT,
+        xaxis: { ...CHART_LAYOUT.xaxis, title: 'Underlying Price (F)', range: [env.spotMin, env.spotMax] },
+        yaxis: { ...CHART_LAYOUT.yaxis, title: yTitle },
+        shapes: [{
+            type: 'line', x0: env.F, x1: env.F, y0: 0, y1: 1, yref: 'paper',
+            line: { color: '#64748b', width: 1, dash: 'dot' },
+        }],
+        annotations: portfolio.length === 0 ? [{
             text: 'Add positions to begin analysis',
             xref: 'paper', yref: 'paper', x: 0.5, y: 0.5,
-            showarrow: false, font: { size: 14, color: '#64748b' },
-        }];
-        Plotly.react('payoff-chart', [], {
-            ...CHART_LAYOUT,
-            xaxis: { ...CHART_LAYOUT.xaxis, title: 'Underlying Price (F)' },
-            yaxis: { ...CHART_LAYOUT.yaxis, title: 'Payoff' },
-            annotations: emptyAnnotation,
-        }, CHART_CONFIG);
-        Plotly.react('greeks-chart', [], {
-            ...CHART_LAYOUT,
-            xaxis: { ...CHART_LAYOUT.xaxis, title: 'Underlying Price (F)' },
-            annotations: emptyAnnotation,
-        }, CHART_CONFIG);
+            showarrow: false, font: { size: 13, color: '#64748b' },
+        }] : [],
+    });
+
+    if (portfolio.length === 0) {
+        // Show empty charts with proper axes
+        const zeroLine = { x: spotRange, y: spotRange.map(() => 0), type: 'scatter', mode: 'lines',
+            line: { color: 'rgba(100,116,139,0.3)', width: 1 }, showlegend: false, hoverinfo: 'skip' };
+        Plotly.react('payoff-chart', [zeroLine], emptyLayout('Payoff / Price'), CHART_CONFIG);
+        Plotly.react('greeks-chart', [zeroLine], emptyLayout('Greeks'), CHART_CONFIG);
         return;
     }
 
