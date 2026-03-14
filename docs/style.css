@@ -290,13 +290,19 @@ input[type="range"]::-moz-range-thumb {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    height: 45vh;
-    min-height: 320px;
+    height: 42vh;
+    min-height: 300px;
 }
 .chart-box {
     display: flex;
     flex-direction: column;
     min-height: 300px;
+}
+.chart-box-3d {
+    display: flex;
+    flex-direction: column;
+    min-height: 450px;
+    height: 50vh;
 }
 .chart-box .panel {
     flex: 1;

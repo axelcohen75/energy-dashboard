@@ -435,14 +435,14 @@ function updateCharts() {
     const activeGreeks = activeMetrics.filter(m => m !== 'payoff');
 
     if (activeGreeks.length === 0) {
-        Plotly.react('greeks-chart', [], {
+        const zeroLine2 = { x: spotRange, y: spotRange.map(() => 0), type: 'scatter', mode: 'lines',
+            line: { color: 'rgba(100,116,139,0.3)', width: 1 }, showlegend: false, hoverinfo: 'skip' };
+        Plotly.react('greeks-chart', [zeroLine2], {
             ...CHART_LAYOUT,
-            xaxis: { ...CHART_LAYOUT.xaxis, title: 'Underlying Price (F)' },
-            annotations: [{
-                text: 'Select metrics from the panel on the right',
-                xref: 'paper', yref: 'paper', x: 0.5, y: 0.5,
-                showarrow: false, font: { size: 13, color: '#64748b' },
-            }],
+            xaxis: { ...CHART_LAYOUT.xaxis, title: 'Underlying Price (F)', range: [env.spotMin, env.spotMax] },
+            yaxis: { ...CHART_LAYOUT.yaxis, title: 'Greeks' },
+            shapes: [{ type: 'line', x0: env.F, x1: env.F, y0: 0, y1: 1, yref: 'paper',
+                line: { color: '#64748b', width: 1, dash: 'dot' } }],
         }, CHART_CONFIG);
         return;
     }
