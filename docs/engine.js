@@ -8,12 +8,11 @@
 // ─── Normal distribution helpers ────────────────────────────────────────────
 
 function normCDF(x) {
-    // Abramowitz & Stegun approximation (max error ~1.5e-7)
     if (x === 0) return 0.5;
     const sign = x < 0 ? -1 : 1;
     x = Math.abs(x);
     const t = 1.0 / (1.0 + 0.2316419 * x);
-    const d = 0.3989422804014327; // 1/sqrt(2*PI)
+    const d = 0.3989422804014327;
     const p = d * Math.exp(-0.5 * x * x);
     const k = ((((1.330274429 * t - 1.821255978) * t + 1.781477937) * t -
         0.356563782) * t + 0.319381530) * t;
@@ -110,41 +109,6 @@ const Black76 = {
         const vegaRaw = df * F * normPDF(d1) * Math.sqrt(T);
         return vegaRaw * d1 * d2 / sigma / 100.0;
     },
-
-    speed(F, K, r, sigma, T) {
-        if (T <= 1e-10 || sigma <= 0) return 0;
-        const d1 = this.d1(F, K, r, sigma, T);
-        const g = this.gamma(F, K, r, sigma, T);
-        return -g / F * (d1 / (sigma * Math.sqrt(T)) + 1);
-    },
-
-    zomma(F, K, r, sigma, T) {
-        if (T <= 1e-10 || sigma <= 0) return 0;
-        const d1 = this.d1(F, K, r, sigma, T);
-        const d2 = this.d2(F, K, r, sigma, T);
-        const g = this.gamma(F, K, r, sigma, T);
-        return g * (d1 * d2 - 1) / sigma;
-    },
-
-    color(F, K, r, sigma, T) {
-        if (T <= 1e-10 || sigma <= 0) return 0;
-        const d1 = this.d1(F, K, r, sigma, T);
-        const d2 = this.d2(F, K, r, sigma, T);
-        const df = Math.exp(-r * T);
-        const sqrtT = Math.sqrt(T);
-        return -df * normPDF(d1) / (2 * F * T * sigma * sqrtT) *
-            (2 * r * T + 1 + d1 * (2 * r * T - d2 * sigma * sqrtT) / (sigma * sqrtT));
-    },
-
-    ultima(F, K, r, sigma, T) {
-        if (T <= 1e-10 || sigma <= 0) return 0;
-        const d1 = this.d1(F, K, r, sigma, T);
-        const d2 = this.d2(F, K, r, sigma, T);
-        const df = Math.exp(-r * T);
-        const vegaRaw = df * F * normPDF(d1) * Math.sqrt(T);
-        return -vegaRaw / (sigma * sigma) *
-            (d1 * d2 * (1 - d1 * d2) + d1 * d1 + d2 * d2) / 100.0;
-    }
 };
 
 // ─── Portfolio Helpers ───────────────────────────────────────────────────────
@@ -165,16 +129,12 @@ function computeGreeks(leg, F, r, sigma, T) {
         rho:    s * Black76.rho(F, K, r, sigma, T, isCall),
         vanna:  s * Black76.vanna(F, K, r, sigma, T),
         volga:  s * Black76.volga(F, K, r, sigma, T),
-        speed:  s * Black76.speed(F, K, r, sigma, T),
-        zomma:  s * Black76.zomma(F, K, r, sigma, T),
-        color:  s * Black76.color(F, K, r, sigma, T),
-        ultima: s * Black76.ultima(F, K, r, sigma, T),
     };
 }
 
 function portfolioGreeks(legs, F, r, sigma, T) {
     const totals = { price: 0, delta: 0, gamma: 0, vega: 0, theta: 0, rho: 0,
-                     vanna: 0, volga: 0, speed: 0, zomma: 0, color: 0, ultima: 0 };
+                     vanna: 0, volga: 0 };
     for (const leg of legs) {
         const g = computeGreeks(leg, F, r, sigma, T);
         for (const k in totals) totals[k] += g[k];
@@ -260,19 +220,18 @@ const STRATEGIES = {
     ],
 };
 
-// ─── Commodity Reference Data ────────────────────────────────────────────────
+// ─── Commodity Presets ───────────────────────────────────────────────────────
+// These load realistic default parameters — the pricing model (Black-76) is the same for all.
 
 const COMMODITIES = {
-    'WTI Crude Oil':          { ticker: 'CL',   unit: 'USD/bbl',   F: 75,   vol: 35, rate: 5.0, exchange: 'NYMEX' },
-    'Brent Crude Oil':        { ticker: 'BZ',   unit: 'USD/bbl',   F: 78,   vol: 33, rate: 5.0, exchange: 'ICE' },
-    'Henry Hub Natural Gas':  { ticker: 'NG',   unit: 'USD/MMBtu', F: 3.50, vol: 55, rate: 5.0, exchange: 'NYMEX' },
-    'TTF Natural Gas':        { ticker: 'TTF',  unit: 'EUR/MWh',   F: 35,   vol: 60, rate: 4.0, exchange: 'ICE' },
-    'German Power (Baseload)':{ ticker: 'DEPW', unit: 'EUR/MWh',   F: 85,   vol: 50, rate: 4.0, exchange: 'EEX' },
-    'UK Power (Baseload)':    { ticker: 'UKPW', unit: 'GBP/MWh',   F: 95,   vol: 48, rate: 4.5, exchange: 'ICE' },
-    'RBOB Gasoline':          { ticker: 'RB',   unit: 'USD/gal',   F: 2.50, vol: 38, rate: 5.0, exchange: 'NYMEX' },
-    'Heating Oil':            { ticker: 'HO',   unit: 'USD/gal',   F: 2.60, vol: 36, rate: 5.0, exchange: 'NYMEX' },
-    'EU Carbon (EUA)':        { ticker: 'EUA',  unit: 'EUR/tCO2',  F: 65,   vol: 45, rate: 4.0, exchange: 'ICE' },
-    'Coal (API2)':            { ticker: 'API2', unit: 'USD/mt',    F: 120,  vol: 40, rate: 5.0, exchange: 'ICE' },
-    'LNG (JKM)':              { ticker: 'JKM',  unit: 'USD/MMBtu', F: 12,   vol: 65, rate: 5.0, exchange: 'ICE' },
-    'Ethanol':                { ticker: 'EH',   unit: 'USD/gal',   F: 1.80, vol: 35, rate: 5.0, exchange: 'CBOT' },
+    'WTI Crude Oil (CL)':            { F: 75,   vol: 35, rate: 5.0 },
+    'Brent Crude Oil (BZ)':          { F: 78,   vol: 33, rate: 5.0 },
+    'Henry Hub Nat Gas (NG)':        { F: 3.50, vol: 55, rate: 5.0 },
+    'TTF Natural Gas':               { F: 35,   vol: 60, rate: 4.0 },
+    'German Power Baseload':         { F: 85,   vol: 50, rate: 4.0 },
+    'EU Carbon EUA':                 { F: 65,   vol: 45, rate: 4.0 },
+    'RBOB Gasoline (RB)':            { F: 2.50, vol: 38, rate: 5.0 },
+    'Coal API2':                     { F: 120,  vol: 40, rate: 5.0 },
+    'LNG JKM':                       { F: 12,   vol: 65, rate: 5.0 },
+    'Custom':                        { F: 100,  vol: 30, rate: 5.0 },
 };

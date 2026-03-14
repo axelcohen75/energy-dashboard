@@ -19,21 +19,12 @@ Le modèle utilisé est le **Black-76**, qui est le modèle standard pour les op
 - Support des Calls et Puts européens
 - Positions Long / Short avec quantités ajustables
 
-### Commodities supportées
-| Commodity | Ticker | Exchange |
-|-----------|--------|----------|
-| WTI Crude Oil | CL | NYMEX |
-| Brent Crude Oil | BZ | ICE |
-| Henry Hub Natural Gas | NG | NYMEX |
-| TTF Natural Gas | TTF | ICE |
-| German Power (Baseload) | DEPW | EEX |
-| UK Power (Baseload) | UKPW | ICE |
-| RBOB Gasoline | RB | NYMEX |
-| Heating Oil | HO | NYMEX |
-| EU Carbon (EUA) | EUA | ICE |
-| Coal (API2) | API2 | ICE |
-| LNG (JKM) | JKM | ICE |
-| Ethanol | EH | CBOT |
+### Commodity Presets
+Le modèle de pricing (Black-76) est le même pour toutes les commodities — les presets chargent simplement des paramètres de marché réalistes (prix, volatilité typique, taux) pour chaque sous-jacent :
+
+WTI Crude Oil (CL), Brent Crude Oil (BZ), Henry Hub Natural Gas (NG), TTF Natural Gas, German Power Baseload, EU Carbon EUA, RBOB Gasoline (RB), Coal API2, LNG JKM
+
+On peut aussi entrer des paramètres custom pour n'importe quel sous-jacent.
 
 ### Stratégies pré-configurées
 Straddle, Strangle, Bull Call Spread, Bear Put Spread, Butterfly, Iron Condor, Risk Reversal, Collar
@@ -41,7 +32,6 @@ Straddle, Strangle, Bull Call Spread, Bear Put Spread, Butterfly, Iron Condor, R
 ### Greeks
 - **1er ordre** : Delta, Gamma, Vega, Theta, Rho
 - **2ème ordre** : Vanna, Volga
-- **3ème ordre** : Speed, Zomma, Color, Ultima
 
 ### Visualisation
 - Graphique interactif du payoff et des Greeks en fonction du sous-jacent

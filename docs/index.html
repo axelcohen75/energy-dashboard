@@ -26,9 +26,9 @@
     <!-- ─── LEFT COLUMN ─── -->
     <div class="col-left">
 
-        <!-- Commodity Selector -->
+        <!-- Commodity Preset -->
         <div class="panel">
-            <div class="lbl">COMMODITY</div>
+            <div class="lbl">COMMODITY PRESET</div>
             <select id="commodity-select" class="mt-8"></select>
         </div>
 
@@ -46,7 +46,7 @@
 
         <!-- Strategy -->
         <div class="panel">
-            <div class="lbl">STRUCTURED PRODUCT</div>
+            <div class="lbl">OPTION STRATEGIES</div>
             <div class="flex-row mt-8">
                 <div class="flex-1">
                     <select id="strategy-select"></select>
@@ -142,9 +142,50 @@
     <!-- ─── RIGHT COLUMN ─── -->
     <div class="col-right">
 
-        <!-- Environment -->
+        <!-- Parameters -->
         <div class="panel">
-            <div class="lbl">ENVIRONMENT</div>
+            <div class="lbl">PARAMETERS</div>
+
+            <div class="mt-10">
+                <div class="lbl lbl-sm">FUTURES PRICE (F)</div>
+                <div class="slider-group">
+                    <input type="range" id="futures-price-slider" min="1" max="200" step="0.5" value="75">
+                    <span class="slider-val" id="futures-price-val">75.0</span>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <div class="lbl lbl-sm">EXPIRY T (YEARS)</div>
+                <div class="slider-group">
+                    <input type="range" id="time-to-expiry-slider" min="0.01" max="5" step="0.01" value="1">
+                    <span class="slider-val" id="time-to-expiry-val">1.00</span>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <div class="lbl lbl-sm">VOLATILITY σ (%)</div>
+                <div class="slider-group">
+                    <input type="range" id="volatility-slider" min="1" max="150" step="0.5" value="35">
+                    <span class="slider-val" id="volatility-val">35.0</span>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <div class="lbl lbl-sm">RATE r (%)</div>
+                <div class="slider-group">
+                    <input type="range" id="risk-free-rate-slider" min="0" max="20" step="0.1" value="5">
+                    <span class="slider-val" id="risk-free-rate-val">5.0</span>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <div class="lbl lbl-sm">YIELD q (%)</div>
+                <div class="slider-group">
+                    <input type="range" id="div-yield-slider" min="0" max="15" step="0.1" value="0">
+                    <span class="slider-val" id="div-yield-val">0.0</span>
+                </div>
+            </div>
+
             <div class="grid-2 mt-10">
                 <div>
                     <div class="lbl lbl-sm">SPOT MIN</div>
@@ -154,27 +195,8 @@
                     <div class="lbl lbl-sm">SPOT MAX</div>
                     <input type="number" id="spot-max" value="150">
                 </div>
-                <div>
-                    <div class="lbl lbl-sm">FUTURES PRICE (F)</div>
-                    <input type="number" id="futures-price" value="75" step="0.5">
-                </div>
-                <div>
-                    <div class="lbl lbl-sm">EXPIRY T (YRS)</div>
-                    <input type="number" id="time-to-expiry" value="1.00" step="0.05" min="0.01">
-                </div>
-                <div>
-                    <div class="lbl lbl-sm">RATE r (%)</div>
-                    <input type="number" id="risk-free-rate" value="5.0" step="0.1">
-                </div>
-                <div>
-                    <div class="lbl lbl-sm">YIELD q (%)</div>
-                    <input type="number" id="div-yield" value="0.0" step="0.1">
-                </div>
             </div>
-            <div class="mt-10">
-                <div class="lbl lbl-sm">VOLATILITY σ (%)</div>
-                <input type="number" id="volatility" value="35.0" step="0.5">
-            </div>
+
             <button class="btn btn-ghost btn-full mt-12" onclick="resetEnv()">RESET</button>
         </div>
 
@@ -206,7 +228,7 @@
         </div>
 
         <!-- Active Metrics -->
-        <div class="panel" style="max-height:calc(100vh - 420px);overflow-y:auto">
+        <div class="panel" style="max-height:calc(100vh - 520px);overflow-y:auto">
             <div class="lbl">ACTIVE METRICS</div>
             <div id="metrics-container" class="mt-8"></div>
         </div>

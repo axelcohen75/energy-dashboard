@@ -11,9 +11,8 @@ const LINE_COLORS = ['#06b6d4', '#f59e0b', '#8b5cf6', '#10b981', '#ef4444', '#ec
 const ALL_METRICS = [
     'payoff', 'price', 'delta', 'gamma', 'vega', 'theta', 'rho',
     'vanna', 'volga',
-    'speed', 'zomma', 'color', 'ultima'
 ];
-const SECTION_BREAKS = { 'vanna': '2ND ORDER CROSS', 'speed': '3RD ORDER GREEKS' };
+const SECTION_BREAKS = { 'vanna': '2ND ORDER CROSS' };
 
 const CHART_LAYOUT = {
     paper_bgcolor: '#111827',
@@ -29,32 +28,55 @@ const CHART_LAYOUT = {
 const CHART_CONFIG = {
     displayModeBar: true,
     displaylogo: false,
+    responsive: true,
     modeBarButtonsToRemove: ['lasso2d', 'select2d'],
 };
+
+// ─── Slider parameter definitions ────────────────────────────────────────────
+
+const SLIDERS = [
+    { id: 'futures-price',  min: 1,    max: 200, step: 0.5,  decimals: 1 },
+    { id: 'time-to-expiry', min: 0.01, max: 5,   step: 0.01, decimals: 2 },
+    { id: 'volatility',     min: 1,    max: 150, step: 0.5,  decimals: 1 },
+    { id: 'risk-free-rate', min: 0,    max: 20,  step: 0.1,  decimals: 1 },
+    { id: 'div-yield',      min: 0,    max: 15,  step: 0.1,  decimals: 1 },
+];
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
 const $ = id => document.getElementById(id);
-const val = id => parseFloat($(id).value) || 0;
+
+function sliderVal(id) {
+    return parseFloat($(`${id}-slider`).value) || 0;
+}
+
+function numVal(id) {
+    return parseFloat($(id).value) || 0;
+}
 
 function getEnv() {
     return {
-        F: val('futures-price'),
-        r: val('risk-free-rate') / 100,
-        sigma: val('volatility') / 100,
-        T: val('time-to-expiry'),
-        spotMin: val('spot-min'),
-        spotMax: val('spot-max'),
+        F:      sliderVal('futures-price'),
+        r:      sliderVal('risk-free-rate') / 100,
+        sigma:  sliderVal('volatility') / 100,
+        T:      sliderVal('time-to-expiry'),
+        spotMin: numVal('spot-min'),
+        spotMax: numVal('spot-max'),
     };
 }
 
 function formatVal(v) {
     if (typeof v !== 'number' || isNaN(v)) return '—';
     const a = Math.abs(v);
+    if (a === 0) return '0';
     if (a >= 1000) return v.toLocaleString('en', { maximumFractionDigits: 1 });
-    if (a >= 1) return v.toFixed(4);
-    if (a >= 0.001) return v.toFixed(6);
+    if (a >= 0.01) return v.toFixed(4);
     return v.toExponential(2);
+}
+
+function debounce(fn, ms) {
+    let timer;
+    return (...args) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), ms); };
 }
 
 // ─── Initialization ──────────────────────────────────────────────────────────
@@ -79,16 +101,24 @@ function init() {
         strat.appendChild(opt);
     }
 
+    // Wire up sliders
+    for (const s of SLIDERS) {
+        const slider = $(`${s.id}-slider`);
+        const valEl = $(`${s.id}-val`);
+        slider.addEventListener('input', () => {
+            valEl.textContent = parseFloat(slider.value).toFixed(s.decimals);
+            debouncedUpdate();
+        });
+    }
+
+    // Wire up number inputs
+    for (const id of ['spot-min', 'spot-max', 'sweep-from', 'sweep-to', 'sweep-steps']) {
+        $(id).addEventListener('input', debouncedUpdate);
+    }
+    $('sweep-param').addEventListener('change', debouncedUpdate);
+
     // Build metrics panel
     buildMetricsPanel();
-
-    // Attach input listeners for live updates
-    const inputs = ['futures-price', 'time-to-expiry', 'risk-free-rate', 'volatility',
-                    'div-yield', 'spot-min', 'spot-max', 'sweep-param', 'sweep-from',
-                    'sweep-to', 'sweep-steps'];
-    for (const id of inputs) {
-        $(id).addEventListener('input', debounce(updateCharts, 150));
-    }
 
     // Init charts
     Plotly.newPlot('main-chart', [], { ...CHART_LAYOUT }, CHART_CONFIG);
@@ -104,39 +134,50 @@ function init() {
     }, CHART_CONFIG);
 
     // Resize handling
-    const resizeObs = new ResizeObserver(debounce(() => {
+    window.addEventListener('resize', debounce(() => {
         Plotly.Plots.resize('main-chart');
         Plotly.Plots.resize('surface-chart');
-    }, 100));
-    resizeObs.observe($('main-chart'));
-    resizeObs.observe($('surface-chart'));
+    }, 150));
 
     updateCharts();
 }
 
-function debounce(fn, ms) {
-    let timer;
-    return (...args) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), ms); };
-}
+const debouncedUpdate = debounce(() => updateCharts(), 80);
 
 // ─── Commodity change ────────────────────────────────────────────────────────
 
 function onCommodityChange() {
     const c = COMMODITIES[$('commodity-select').value];
     if (!c) return;
-    $('futures-price').value = c.F;
-    $('volatility').value = c.vol;
-    $('risk-free-rate').value = c.rate;
+
+    setSlider('futures-price', c.F, 1);
+    setSlider('volatility', c.vol, 1);
+    setSlider('risk-free-rate', c.rate, 1);
+
+    // Adjust slider range if needed (e.g. gas at 3.5 needs different range than oil at 75)
+    const fSlider = $('futures-price-slider');
+    const newMax = Math.max(c.F * 3, 50);
+    fSlider.max = newMax;
+    fSlider.step = c.F < 10 ? 0.05 : 0.5;
+
     $('new-strike').value = c.F;
-    $('spot-min').value = +(c.F * 0.5).toFixed(1);
-    $('spot-max').value = +(c.F * 2.0).toFixed(1);
+    $('spot-min').value = +(c.F * 0.5).toFixed(2);
+    $('spot-max').value = +(c.F * 2.0).toFixed(2);
+
     updateCharts();
+}
+
+function setSlider(id, value, decimals) {
+    const slider = $(`${id}-slider`);
+    const valEl = $(`${id}-val`);
+    slider.value = value;
+    valEl.textContent = parseFloat(value).toFixed(decimals !== undefined ? decimals : 1);
 }
 
 function resetEnv() {
     onCommodityChange();
-    $('time-to-expiry').value = '1.00';
-    $('div-yield').value = '0.0';
+    setSlider('time-to-expiry', 1.0, 2);
+    setSlider('div-yield', 0.0, 1);
     updateCharts();
 }
 
@@ -168,7 +209,7 @@ function clearLegs() {
 
 function applyStrategy() {
     const name = $('strategy-select').value;
-    const F = val('futures-price');
+    const F = sliderVal('futures-price');
     if (STRATEGIES[name]) {
         portfolio = STRATEGIES[name](F);
         renderLegs();
@@ -197,7 +238,7 @@ function renderLegs() {
                     <div class="leg-label">${label}</div>
                     <div class="leg-qty">QTY: ${sign}${leg.quantity}</div>
                 </div>
-                <button class="leg-remove" onclick="removeLeg(${i})">×</button>
+                <button class="leg-remove" onclick="removeLeg(${i})">&times;</button>
             </div>`;
     }).join('');
 }
@@ -216,7 +257,7 @@ function buildMetricsPanel() {
             <div class="metric-row ${activeMetrics.includes(name) ? 'active' : ''}"
                  id="metric-${name}" onclick="toggleMetric('${name}')">
                 <span>${name.toUpperCase()}</span>
-                <span class="metric-val" id="mval-${name}">—</span>
+                <span class="metric-val" id="mval-${name}">&mdash;</span>
             </div>`;
     }
     container.innerHTML = html;
@@ -255,6 +296,8 @@ function updateMetricStyles() {
 
 function updateCharts() {
     const env = getEnv();
+    if (env.spotMin >= env.spotMax || env.spotMin < 0) return;
+
     const spotRange = linspace(env.spotMin, env.spotMax, 200);
 
     // Current portfolio greeks at F
@@ -262,7 +305,6 @@ function updateCharts() {
         ? portfolioGreeks(portfolio, env.F, env.r, env.sigma, env.T)
         : {};
 
-    // Add payoff value
     if (portfolio.length > 0) {
         const payoffs = portfolioPayoff(portfolio, [env.F]);
         current.payoff = payoffs[0];
@@ -275,9 +317,7 @@ function updateCharts() {
     }
     updateMetricStyles();
 
-    // Build traces
-    const traces = [];
-
+    // ─── Build traces ───
     if (portfolio.length === 0) {
         Plotly.react('main-chart', [], {
             ...CHART_LAYOUT,
@@ -291,52 +331,73 @@ function updateCharts() {
         return;
     }
 
-    // Determine if we need dual Y axes
-    const needsY2 = activeMetrics.length > 1;
-
-    for (let mi = 0; mi < activeMetrics.length; mi++) {
-        const metric = activeMetrics[mi];
-        const ci = mi % LINE_COLORS.length;
-        const color = LINE_COLORS[ci];
-
-        let y;
+    // Compute all active metric series
+    const seriesData = {};
+    for (const metric of activeMetrics) {
         if (metric === 'payoff') {
-            y = portfolioPayoff(portfolio, spotRange);
+            seriesData[metric] = portfolioPayoff(portfolio, spotRange);
         } else {
-            y = spotRange.map(S => {
+            seriesData[metric] = spotRange.map(S => {
                 const g = portfolioGreeks(portfolio, S, env.r, env.sigma, env.T);
                 return g[metric] || 0;
             });
         }
+    }
 
+    // Determine which metrics go on Y1 vs Y2
+    // Strategy: first metric → Y1, rest → Y2 (if they exist and scales differ)
+    const y1Metric = activeMetrics[0];
+    const y2Metrics = activeMetrics.slice(1);
+    const needsY2 = y2Metrics.length > 0;
+
+    const traces = [];
+
+    // Y1 traces
+    {
+        const ci = 0 % LINE_COLORS.length;
         traces.push({
             x: spotRange,
-            y: y,
-            name: metric.toUpperCase(),
+            y: seriesData[y1Metric],
+            name: y1Metric.toUpperCase(),
             type: 'scatter',
             mode: 'lines',
-            line: { color, width: 2 },
-            yaxis: mi === 0 ? 'y' : 'y2',
-            fill: metric === 'payoff' ? 'tozeroy' : undefined,
-            fillcolor: metric === 'payoff' ? `${color}0d` : undefined,
+            line: { color: LINE_COLORS[ci], width: 2 },
+            yaxis: 'y',
+            fill: y1Metric === 'payoff' ? 'tozeroy' : undefined,
+            fillcolor: y1Metric === 'payoff' ? `${LINE_COLORS[ci]}0d` : undefined,
         });
     }
 
-    // Sweep lines for the first non-payoff active metric
-    const sweepMetric = activeMetrics.find(m => m !== 'payoff');
+    // Y2 traces
+    for (let i = 0; i < y2Metrics.length; i++) {
+        const metric = y2Metrics[i];
+        const ci = (i + 1) % LINE_COLORS.length;
+        traces.push({
+            x: spotRange,
+            y: seriesData[metric],
+            name: metric.toUpperCase(),
+            type: 'scatter',
+            mode: 'lines',
+            line: { color: LINE_COLORS[ci], width: 2 },
+            yaxis: needsY2 ? 'y2' : 'y',
+        });
+    }
+
+    // Sweep lines
+    const sweepMetric = activeMetrics.find(m => m !== 'payoff') || activeMetrics[0];
     if (sweepMetric) {
         const param = $('sweep-param').value;
-        let from = val('sweep-from');
-        let to = val('sweep-to');
+        let from = numVal('sweep-from');
+        let to = numVal('sweep-to');
         const steps = parseInt($('sweep-steps').value) || 8;
 
         if (from > 0 && to > 0 && steps >= 2) {
-            // Convert vol sweep values if entered as percentages
             if (param === 'volatility') {
                 if (from > 1) from /= 100;
                 if (to > 1) to /= 100;
             }
             const sweepVals = linspace(from, to, steps);
+            const sweepOnY2 = needsY2 && y2Metrics.includes(sweepMetric);
 
             for (let si = 0; si < sweepVals.length; si++) {
                 const sv = sweepVals[si];
@@ -357,7 +418,7 @@ function updateCharts() {
                     mode: 'lines',
                     line: { color: `rgba(139,92,246,${alpha})`, width: 1, dash: 'dot' },
                     showlegend: false,
-                    yaxis: activeMetrics.indexOf(sweepMetric) === 0 ? 'y' : 'y2',
+                    yaxis: sweepOnY2 ? 'y2' : 'y',
                     hovertemplate: `${param}=${sv.toFixed(3)}<br>%{x:.2f}: %{y:.4f}<extra></extra>`,
                 });
             }
@@ -375,16 +436,24 @@ function updateCharts() {
     const layout = {
         ...CHART_LAYOUT,
         xaxis: { ...CHART_LAYOUT.xaxis, title: 'Underlying Price (F)' },
+        yaxis: {
+            ...CHART_LAYOUT.yaxis,
+            title: { text: y1Metric.toUpperCase(), font: { size: 11, color: LINE_COLORS[0] } },
+        },
         shapes,
         showlegend: true,
         annotations: [],
     };
 
     if (needsY2) {
+        const y2Label = y2Metrics.map(m => m.toUpperCase()).join(' / ');
         layout.yaxis2 = {
-            overlaying: 'y', side: 'right',
-            gridcolor: 'rgba(30,41,59,0.3)', zerolinecolor: '#334155',
+            overlaying: 'y',
+            side: 'right',
+            gridcolor: 'rgba(30,41,59,0.15)',
+            zerolinecolor: '#334155',
             tickfont: { size: 10, color: '#94a3b8' },
+            title: { text: y2Label, font: { size: 11, color: LINE_COLORS[1] } },
         };
     }
 
