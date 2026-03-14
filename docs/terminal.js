@@ -165,6 +165,10 @@ function onCommodityChange() {
     const c = COMMODITIES[$('commodity-select').value];
     if (!c) return;
 
+    // Reset portfolio when switching commodity
+    portfolio = [];
+    renderLegs();
+
     // Adjust slider range for this commodity
     const fSlider = $('futures-price-slider');
     fSlider.max = Math.max(c.F * 3, 50);

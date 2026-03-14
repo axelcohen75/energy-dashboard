@@ -91,29 +91,32 @@
     <!-- ─── CENTER COLUMN ─── -->
     <div class="col-center">
 
-        <!-- Payoff Chart -->
-        <div class="chart-box">
-            <div class="panel">
-                <div class="chart-header">
-                    <div>
-                        <div class="lbl" style="font-size:12px;margin-bottom:0">PAYOFF DIAGRAM</div>
-                        <div class="sub-label">P&L AT EXPIRY // UNDERLYING F</div>
+        <!-- Top row: Payoff + Greeks side by side -->
+        <div class="charts-row">
+            <!-- Payoff Chart -->
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">PAYOFF DIAGRAM</div>
+                            <div class="sub-label">P&L AT EXPIRY // UNDERLYING F</div>
+                        </div>
                     </div>
+                    <div id="payoff-chart" class="chart-plot"></div>
                 </div>
-                <div id="payoff-chart" class="chart-plot"></div>
             </div>
-        </div>
 
-        <!-- Greeks Chart -->
-        <div class="chart-box">
-            <div class="panel">
-                <div class="chart-header">
-                    <div>
-                        <div class="lbl" style="font-size:12px;margin-bottom:0">GREEKS ANALYTICS</div>
-                        <div class="sub-label">SENSITIVITIES // UNDERLYING F</div>
+            <!-- Greeks Chart -->
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">GREEKS ANALYTICS</div>
+                            <div class="sub-label">SENSITIVITIES // UNDERLYING F</div>
+                        </div>
                     </div>
+                    <div id="greeks-chart" class="chart-plot"></div>
                 </div>
-                <div id="greeks-chart" class="chart-plot"></div>
             </div>
         </div>
 

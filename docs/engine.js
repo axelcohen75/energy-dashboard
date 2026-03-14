@@ -229,9 +229,6 @@ const COMMODITIES = {
     'Henry Hub Nat Gas (NG)':        { F: 3.50, vol: 55, rate: 5.0 },
     'TTF Natural Gas':               { F: 35,   vol: 60, rate: 4.0 },
     'German Power Baseload':         { F: 85,   vol: 50, rate: 4.0 },
-    'EU Carbon EUA':                 { F: 65,   vol: 45, rate: 4.0 },
     'RBOB Gasoline (RB)':            { F: 2.50, vol: 38, rate: 5.0 },
-    'Coal API2':                     { F: 120,  vol: 40, rate: 5.0 },
-    'LNG JKM':                       { F: 12,   vol: 65, rate: 5.0 },
     'Custom':                        { F: 100,  vol: 30, rate: 5.0 },
 };
