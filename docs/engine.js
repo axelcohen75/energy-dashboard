@@ -77,14 +77,15 @@ const Black76 = {
         const d1 = this.d1(F, K, r, sigma, T);
         const d2 = this.d2(F, K, r, sigma, T);
         const df = Math.exp(-r * T);
-        const term1 = -df * F * normPDF(d1) * sigma / (2 * Math.sqrt(T));
-        let term2;
+        // θ = -dC/dT = -df*F*N'(d1)*σ/(2√T) + r*Price
+        const diffusion = -df * F * normPDF(d1) * sigma / (2 * Math.sqrt(T));
+        let riskFree;
         if (isCall) {
-            term2 = r * df * (F * normCDF(d1) - K * normCDF(d2));
+            riskFree = r * df * (F * normCDF(d1) - K * normCDF(d2));
         } else {
-            term2 = r * df * (K * normCDF(-d2) - F * normCDF(-d1));
+            riskFree = r * df * (K * normCDF(-d2) - F * normCDF(-d1));
         }
-        return (term1 - term2) / 365.0;
+        return (diffusion + riskFree) / 365.0;
     },
 
     rho(F, K, r, sigma, T, isCall) {

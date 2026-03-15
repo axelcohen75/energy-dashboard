@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Energy Derivatives Terminal</title>
-    <link rel="stylesheet" href="style.css?v=4">
+    <title>Option Pricer</title>
+    <link rel="stylesheet" href="style.css?v=5">
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
 </head>
 <body>
@@ -12,11 +12,14 @@
 <!-- ═══ HEADER ═══ -->
 <div class="header">
     <div class="header-title">
-        <span class="hl">///</span>&nbsp; ENERGY DERIVATIVES <span class="hl">TERMINAL</span>
+        <span class="hl">///</span>&nbsp; OPTION <span class="hl">PRICER</span>
     </div>
     <div class="header-meta">
         MODEL <span class="model-val">BLACK-76</span>
-        &nbsp;|&nbsp; STATUS <span class="val">READY</span>
+        &nbsp;|&nbsp;
+        <button class="btn-theme-toggle" id="theme-toggle" onclick="toggleTheme()" title="Toggle dark/light mode">
+            <span id="theme-icon">&#9790;</span>
+        </button>
     </div>
 </div>
 
@@ -267,7 +270,7 @@
     </div>
 </div>
 
-<script src="engine.js?v=4"></script>
-<script src="terminal.js?v=4"></script>
+<script src="engine.js?v=5"></script>
+<script src="terminal.js?v=5"></script>
 </body>
 </html>
