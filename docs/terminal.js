@@ -7,7 +7,7 @@
 let portfolio = [];
 let activeMetrics = ['delta'];
 
-const LINE_COLORS = ['#06b6d4', '#f59e0b', '#8b5cf6', '#10b981', '#ef4444', '#ec4899'];
+const LINE_COLORS = ['#2563eb', '#d97706', '#7c3aed', '#059669', '#dc2626', '#db2777'];
 const ALL_METRICS = [
     'payoff', 'price', 'delta', 'gamma', 'vega', 'theta', 'rho',
     'vanna', 'volga',
@@ -16,13 +16,13 @@ const GREEKS_ONLY = ['price', 'delta', 'gamma', 'vega', 'theta', 'rho', 'vanna',
 const SECTION_BREAKS = { 'vanna': '2ND ORDER CROSS' };
 
 const CHART_LAYOUT = {
-    paper_bgcolor: '#111827',
-    plot_bgcolor: '#111827',
-    font: { color: '#e2e8f0', family: 'JetBrains Mono, monospace', size: 11 },
-    xaxis: { gridcolor: '#1e293b', zerolinecolor: '#334155', tickfont: { size: 10, color: '#94a3b8' } },
-    yaxis: { gridcolor: '#1e293b', zerolinecolor: '#334155', tickfont: { size: 10, color: '#94a3b8' } },
+    paper_bgcolor: '#ffffff',
+    plot_bgcolor: '#ffffff',
+    font: { color: '#1e293b', family: 'Inter, sans-serif', size: 11 },
+    xaxis: { gridcolor: '#e2e8f0', zerolinecolor: '#cbd5e1', tickfont: { size: 10, color: '#64748b' } },
+    yaxis: { gridcolor: '#e2e8f0', zerolinecolor: '#cbd5e1', tickfont: { size: 10, color: '#64748b' } },
     margin: { l: 55, r: 55, t: 25, b: 40 },
-    legend: { bgcolor: 'rgba(0,0,0,0)', font: { size: 10, color: '#94a3b8' }, orientation: 'h', yanchor: 'bottom', y: 1.02 },
+    legend: { bgcolor: 'rgba(255,255,255,0)', font: { size: 10, color: '#64748b' }, orientation: 'h', yanchor: 'bottom', y: 1.02 },
     hovermode: 'x unified',
 };
 
@@ -136,13 +136,14 @@ function init() {
     // Init charts
     Plotly.newPlot('payoff-chart', [], { ...CHART_LAYOUT }, CHART_CONFIG);
     Plotly.newPlot('greeks-chart', [], { ...CHART_LAYOUT }, CHART_CONFIG);
+    Plotly.newPlot('theta-chart', [], { ...CHART_LAYOUT }, CHART_CONFIG);
     Plotly.newPlot('surface-chart', [], {
         ...CHART_LAYOUT,
         scene: {
-            xaxis: { title: 'Spot', backgroundcolor: '#111827', gridcolor: '#1e293b', color: '#94a3b8' },
-            yaxis: { title: 'Time', backgroundcolor: '#111827', gridcolor: '#1e293b', color: '#94a3b8' },
-            zaxis: { title: 'Delta', backgroundcolor: '#111827', gridcolor: '#1e293b', color: '#94a3b8' },
-            bgcolor: '#111827',
+            xaxis: { title: 'Spot', backgroundcolor: '#ffffff', gridcolor: '#e2e8f0', color: '#64748b' },
+            yaxis: { title: 'Time', backgroundcolor: '#ffffff', gridcolor: '#e2e8f0', color: '#64748b' },
+            zaxis: { title: 'Delta', backgroundcolor: '#ffffff', gridcolor: '#e2e8f0', color: '#64748b' },
+            bgcolor: '#ffffff',
         },
         margin: { l: 0, r: 0, t: 10, b: 0 },
     }, CHART_CONFIG);
@@ -152,6 +153,7 @@ function init() {
         Plotly.Plots.resize('payoff-chart');
         Plotly.Plots.resize('greeks-chart');
         Plotly.Plots.resize('surface-chart');
+        Plotly.Plots.resize('theta-chart');
     }, 150));
 
     updateCharts();
@@ -315,8 +317,8 @@ function updateMetricStyles() {
         if (!el) continue;
 
         if (name === 'payoff') {
-            el.style.borderLeftColor = '#06b6d4';
-            el.style.backgroundColor = '#06b6d418';
+            el.style.borderLeftColor = '#2563eb';
+            el.style.backgroundColor = 'rgba(37,99,235,0.08)';
             el.style.opacity = '0.7';
             el.style.cursor = 'default';
             continue;
@@ -380,9 +382,10 @@ function updateCharts() {
     if (portfolio.length === 0) {
         // Show empty charts with proper axes
         const zeroLine = { x: spotRange, y: spotRange.map(() => 0), type: 'scatter', mode: 'lines',
-            line: { color: 'rgba(100,116,139,0.3)', width: 1 }, showlegend: false, hoverinfo: 'skip' };
+            line: { color: 'rgba(148,163,184,0.4)', width: 1 }, showlegend: false, hoverinfo: 'skip' };
         Plotly.react('payoff-chart', [zeroLine], emptyLayout('Payoff / Price'), CHART_CONFIG);
         Plotly.react('greeks-chart', [zeroLine], emptyLayout('Greeks'), CHART_CONFIG);
+        Plotly.react('theta-chart', [zeroLine], emptyLayout('Portfolio Value'), CHART_CONFIG);
         return;
     }
 
@@ -394,9 +397,9 @@ function updateCharts() {
         name: 'PAYOFF',
         type: 'scatter',
         mode: 'lines',
-        line: { color: '#06b6d4', width: 2.5 },
+        line: { color: '#2563eb', width: 2.5 },
         fill: 'tozeroy',
-        fillcolor: 'rgba(6,182,212,0.08)',
+        fillcolor: 'rgba(37,99,235,0.06)',
     }];
 
     // Add price overlay on payoff chart
@@ -410,7 +413,7 @@ function updateCharts() {
         name: 'PRICE (CURRENT)',
         type: 'scatter',
         mode: 'lines',
-        line: { color: '#f59e0b', width: 1.5, dash: 'dash' },
+        line: { color: '#d97706', width: 1.5, dash: 'dash' },
         yaxis: 'y',
     });
 
@@ -422,7 +425,7 @@ function updateCharts() {
     Plotly.react('payoff-chart', payoffTraces, {
         ...CHART_LAYOUT,
         xaxis: { ...CHART_LAYOUT.xaxis, title: 'Underlying Price (F)' },
-        yaxis: { ...CHART_LAYOUT.yaxis, title: { text: 'PAYOFF / PRICE', font: { size: 11, color: '#94a3b8' } } },
+        yaxis: { ...CHART_LAYOUT.yaxis, title: { text: 'PAYOFF / PRICE', font: { size: 11, color: '#64748b' } } },
         shapes: payoffShapes,
         showlegend: true,
         annotations: [],
@@ -436,7 +439,7 @@ function updateCharts() {
 
     if (activeGreeks.length === 0) {
         const zeroLine2 = { x: spotRange, y: spotRange.map(() => 0), type: 'scatter', mode: 'lines',
-            line: { color: 'rgba(100,116,139,0.3)', width: 1 }, showlegend: false, hoverinfo: 'skip' };
+            line: { color: 'rgba(148,163,184,0.4)', width: 1 }, showlegend: false, hoverinfo: 'skip' };
         Plotly.react('greeks-chart', [zeroLine2], {
             ...CHART_LAYOUT,
             xaxis: { ...CHART_LAYOUT.xaxis, title: 'Underlying Price (F)', range: [env.spotMin, env.spotMax] },
@@ -444,6 +447,7 @@ function updateCharts() {
             shapes: [{ type: 'line', x0: env.F, x1: env.F, y0: 0, y1: 1, yref: 'paper',
                 line: { color: '#64748b', width: 1, dash: 'dot' } }],
         }, CHART_CONFIG);
+        updateThetaDecay(env, spotRange);
         return;
     }
 
@@ -511,7 +515,7 @@ function updateCharts() {
                     x: spotRange, y: yy,
                     name: `${param}=${sv.toFixed(3)}`,
                     type: 'scatter', mode: 'lines',
-                    line: { color: `rgba(139,92,246,${alpha})`, width: 1, dash: 'dot' },
+                    line: { color: `rgba(124,58,237,${alpha})`, width: 1, dash: 'dot' },
                     showlegend: false, yaxis: 'y',
                     hovertemplate: `${param}=${sv.toFixed(3)}<br>%{x:.2f}: %{y:.4f}<extra></extra>`,
                 });
@@ -539,13 +543,62 @@ function updateCharts() {
         const y2ci = activeMetrics.indexOf(y2Metrics[0]) % LINE_COLORS.length;
         greeksLayout.yaxis2 = {
             overlaying: 'y', side: 'right',
-            gridcolor: 'rgba(30,41,59,0.15)', zerolinecolor: '#334155',
-            tickfont: { size: 10, color: '#94a3b8' },
+            gridcolor: 'rgba(226,232,240,0.5)', zerolinecolor: '#cbd5e1',
+            tickfont: { size: 10, color: '#64748b' },
             title: { text: y2Label, font: { size: 11, color: LINE_COLORS[y2ci] } },
         };
     }
 
     Plotly.react('greeks-chart', greekTraces, greeksLayout, CHART_CONFIG);
+
+    // ─── THETA DECAY CHART ───
+    updateThetaDecay(env, spotRange);
+}
+
+// ─── Theta Decay ─────────────────────────────────────────────────────────
+
+function updateThetaDecay(env, spotRange) {
+    if (portfolio.length === 0) return;
+
+    const nSteps = 7;
+    const times = linspace(env.T, 0.01, nSteps);
+    const DECAY_COLORS = ['#2563eb', '#3b82f6', '#60a5fa', '#d97706', '#f59e0b', '#ef4444', '#dc2626'];
+    const traces = [];
+
+    for (let i = 0; i < times.length; i++) {
+        const t = times[i];
+        const yData = spotRange.map(S => {
+            const g = portfolioGreeks(portfolio, S, env.r, env.sigma, t);
+            return g.price || 0;
+        });
+        const label = t >= 1 ? `T=${t.toFixed(1)}y` : `T=${(t * 365).toFixed(0)}d`;
+        traces.push({
+            x: spotRange, y: yData,
+            name: label,
+            type: 'scatter', mode: 'lines',
+            line: { color: DECAY_COLORS[i % DECAY_COLORS.length], width: i === 0 ? 2.5 : 1.5 },
+        });
+    }
+
+    // Add payoff at expiry
+    const payoffData = portfolioPayoff(portfolio, spotRange);
+    traces.push({
+        x: spotRange, y: payoffData,
+        name: 'EXPIRY',
+        type: 'scatter', mode: 'lines',
+        line: { color: '#64748b', width: 2, dash: 'dash' },
+    });
+
+    Plotly.react('theta-chart', traces, {
+        ...CHART_LAYOUT,
+        xaxis: { ...CHART_LAYOUT.xaxis, title: 'Underlying Price (F)' },
+        yaxis: { ...CHART_LAYOUT.yaxis, title: { text: 'PORTFOLIO VALUE', font: { size: 11, color: '#64748b' } } },
+        shapes: [{
+            type: 'line', x0: env.F, x1: env.F, y0: 0, y1: 1, yref: 'paper',
+            line: { color: '#64748b', width: 1, dash: 'dot' },
+        }],
+        showlegend: true,
+    }, CHART_CONFIG);
 }
 
 // ─── 3D Surface ──────────────────────────────────────────────────────────────
@@ -580,11 +633,11 @@ function generateSurface() {
         colorscale: 'Viridis',
         opacity: 0.92,
         contours: {
-            z: { show: true, usecolormap: true, highlightcolor: '#06b6d4', project: { z: true } },
+            z: { show: true, usecolormap: true, highlightcolor: '#2563eb', project: { z: true } },
         },
         colorbar: {
-            title: { text: greek.toUpperCase(), font: { size: 11, color: '#94a3b8' } },
-            tickfont: { size: 10, color: '#94a3b8' },
+            title: { text: greek.toUpperCase(), font: { size: 11, color: '#64748b' } },
+            tickfont: { size: 10, color: '#64748b' },
             len: 0.6,
         },
     };
@@ -592,10 +645,10 @@ function generateSurface() {
     const layout = {
         ...CHART_LAYOUT,
         scene: {
-            xaxis: { title: 'Spot Price', backgroundcolor: '#111827', gridcolor: '#1e293b', color: '#94a3b8' },
-            yaxis: { title: axisTitle, backgroundcolor: '#111827', gridcolor: '#1e293b', color: '#94a3b8' },
-            zaxis: { title: greek.toUpperCase(), backgroundcolor: '#111827', gridcolor: '#1e293b', color: '#94a3b8' },
-            bgcolor: '#111827',
+            xaxis: { title: 'Spot Price', backgroundcolor: '#ffffff', gridcolor: '#e2e8f0', color: '#64748b' },
+            yaxis: { title: axisTitle, backgroundcolor: '#ffffff', gridcolor: '#e2e8f0', color: '#64748b' },
+            zaxis: { title: greek.toUpperCase(), backgroundcolor: '#ffffff', gridcolor: '#e2e8f0', color: '#64748b' },
+            bgcolor: '#ffffff',
         },
         margin: { l: 0, r: 0, t: 10, b: 0 },
     };

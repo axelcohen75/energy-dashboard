@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy Derivatives Terminal</title>
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
 </head>
 <body>
@@ -120,37 +120,53 @@
             </div>
         </div>
 
-        <!-- 3D Surface -->
-        <div class="chart-box-3d">
-            <div class="panel">
-                <div class="chart-header">
-                    <div>
-                        <div class="lbl" style="font-size:12px;margin-bottom:0">3D GREEK SURFACE</div>
-                        <div class="sub-label">METRIC × SPOT × VARIABLE</div>
-                    </div>
-                    <div class="flex-row">
+        <!-- Bottom row: 3D Surface + Theta Decay -->
+        <div class="charts-row">
+            <!-- 3D Surface -->
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
                         <div>
-                            <div class="lbl lbl-sm">GREEK</div>
-                            <select id="surface-greek" style="width:110px">
-                                <option value="delta">DELTA</option>
-                                <option value="gamma">GAMMA</option>
-                                <option value="vega">VEGA</option>
-                                <option value="theta">THETA</option>
-                                <option value="rho">RHO</option>
-                                <option value="price">PRICE</option>
-                            </select>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">3D GREEK SURFACE</div>
+                            <div class="sub-label">METRIC × SPOT × VARIABLE</div>
                         </div>
-                        <div>
-                            <div class="lbl lbl-sm">2ND AXIS</div>
-                            <select id="surface-axis" style="width:120px">
-                                <option value="time_to_expiry">EXPIRY T</option>
-                                <option value="volatility">VOLATILITY σ</option>
-                            </select>
+                        <div class="flex-row">
+                            <div>
+                                <div class="lbl lbl-sm">GREEK</div>
+                                <select id="surface-greek" style="width:110px">
+                                    <option value="delta">DELTA</option>
+                                    <option value="gamma">GAMMA</option>
+                                    <option value="vega">VEGA</option>
+                                    <option value="theta">THETA</option>
+                                    <option value="rho">RHO</option>
+                                    <option value="price">PRICE</option>
+                                </select>
+                            </div>
+                            <div>
+                                <div class="lbl lbl-sm">2ND AXIS</div>
+                                <select id="surface-axis" style="width:120px">
+                                    <option value="time_to_expiry">EXPIRY T</option>
+                                    <option value="volatility">VOLATILITY σ</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-accent" onclick="generateSurface()">GENERATE</button>
                         </div>
-                        <button class="btn btn-accent" onclick="generateSurface()">GENERATE</button>
                     </div>
+                    <div id="surface-chart" class="chart-plot"></div>
                 </div>
-                <div id="surface-chart" class="chart-plot"></div>
+            </div>
+
+            <!-- Theta Decay -->
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">THETA DECAY</div>
+                            <div class="sub-label">PORTFOLIO VALUE × TIME TO EXPIRY</div>
+                        </div>
+                    </div>
+                    <div id="theta-chart" class="chart-plot"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -251,7 +267,7 @@
     </div>
 </div>
 
-<script src="engine.js?v=3"></script>
-<script src="terminal.js?v=3"></script>
+<script src="engine.js?v=4"></script>
+<script src="terminal.js?v=4"></script>
 </body>
 </html>
