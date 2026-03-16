@@ -205,12 +205,15 @@ function init() {
     Plotly.newPlot('greeks-chart', [], { ...CHART_LAYOUT }, CHART_CONFIG);
     Plotly.newPlot('theta-chart', [], { ...CHART_LAYOUT }, CHART_CONFIG);
     const ic = getChartColors();
+    const initSceneAxis = (title) => ({ title, backgroundcolor: ic.bg, gridcolor: ic.grid, color: ic.muted, showbackground: true });
     Plotly.newPlot('surface-chart', [], {
-        ...CHART_LAYOUT,
+        paper_bgcolor: ic.bg,
+        plot_bgcolor: ic.bg,
+        font: { color: ic.text, family: 'Inter, sans-serif', size: 11 },
         scene: {
-            xaxis: { title: 'Spot', backgroundcolor: ic.bg, gridcolor: ic.grid, color: ic.muted },
-            yaxis: { title: 'Time', backgroundcolor: ic.bg, gridcolor: ic.grid, color: ic.muted },
-            zaxis: { title: 'Delta', backgroundcolor: ic.bg, gridcolor: ic.grid, color: ic.muted },
+            xaxis: initSceneAxis('Spot'),
+            yaxis: initSceneAxis('Time'),
+            zaxis: initSceneAxis('Delta'),
             bgcolor: ic.bg,
         },
         margin: { l: 0, r: 0, t: 10, b: 0 },
@@ -715,9 +718,11 @@ function generateSurface() {
         },
     };
 
-    const sceneAxis = (title) => ({ title, backgroundcolor: cc.bg, gridcolor: cc.grid, color: cc.muted });
+    const sceneAxis = (title) => ({ title, backgroundcolor: cc.bg, gridcolor: cc.grid, color: cc.muted, showbackground: true });
     const layout = {
-        ...CHART_LAYOUT,
+        paper_bgcolor: cc.bg,
+        plot_bgcolor: cc.bg,
+        font: { color: cc.text, family: 'Inter, sans-serif', size: 11 },
         scene: {
             xaxis: sceneAxis('Spot Price'),
             yaxis: sceneAxis(axisTitle),
