@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Option Pricer</title>
-    <link rel="stylesheet" href="style.css?v=5">
+    <title>Energy Derivatives Platform</title>
+    <link rel="stylesheet" href="style.css?v=6">
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
 </head>
 <body>
 
 <!-- ═══ HEADER ═══ -->
 <div class="header">
-    <div class="header-title">
-        <span class="hl">///</span>&nbsp; OPTION <span class="hl">PRICER</span>
+    <div class="header-left">
+        <div class="header-title">
+            <span class="hl">///</span>&nbsp; ENERGY <span class="hl">DERIVATIVES</span>
+        </div>
+        <nav class="tab-nav">
+            <button class="tab-btn active" data-tab="pricer" onclick="switchTab('pricer')">OPTION PRICER</button>
+            <button class="tab-btn" data-tab="markets" onclick="switchTab('markets')">ENERGY MARKETS</button>
+        </nav>
     </div>
     <div class="header-meta">
         MODEL <span class="model-val">BLACK-76</span>
@@ -23,7 +29,10 @@
     </div>
 </div>
 
-<!-- ═══ MAIN GRID ═══ -->
+<!-- ═══════════════════════════════════════════════════════════════════════════ -->
+<!-- TAB 1: OPTION PRICER                                                      -->
+<!-- ═══════════════════════════════════════════════════════════════════════════ -->
+<div class="tab-content active" id="tab-pricer">
 <div class="main-grid">
 
     <!-- ─── LEFT COLUMN ─── -->
@@ -269,8 +278,151 @@
         </div>
     </div>
 </div>
+</div>
 
-<script src="engine.js?v=5"></script>
-<script src="terminal.js?v=5"></script>
+<!-- ═══════════════════════════════════════════════════════════════════════════ -->
+<!-- TAB 2: ENERGY MARKETS                                                     -->
+<!-- ═══════════════════════════════════════════════════════════════════════════ -->
+<div class="tab-content" id="tab-markets">
+<div class="markets-grid">
+
+    <!-- ─── LEFT SIDEBAR ─── -->
+    <div class="col-left">
+
+        <!-- Commodity Selection -->
+        <div class="panel">
+            <div class="lbl">TERM STRUCTURE</div>
+            <div class="mt-8">
+                <div class="lbl lbl-sm">COMMODITY</div>
+                <select id="ts-commodity">
+                    <option value="all">ALL COMMODITIES</option>
+                </select>
+            </div>
+            <button class="btn btn-accent btn-full mt-10" onclick="updateTermStructure()">REFRESH</button>
+        </div>
+
+        <!-- Timespread Controls -->
+        <div class="panel">
+            <div class="lbl">TIMESPREAD ANALYSIS</div>
+            <div class="mt-8">
+                <div class="lbl lbl-sm">COMMODITY</div>
+                <select id="ts-spread-commodity"></select>
+            </div>
+            <div class="mt-8">
+                <div class="lbl lbl-sm">SPREAD</div>
+                <select id="ts-spread-select"></select>
+            </div>
+            <div class="mt-8">
+                <div class="lbl lbl-sm">HISTORY</div>
+                <select id="ts-spread-period">
+                    <option value="63">3 MONTHS</option>
+                    <option value="126">6 MONTHS</option>
+                    <option value="252" selected>1 YEAR</option>
+                    <option value="504">2 YEARS</option>
+                </select>
+            </div>
+            <button class="btn btn-accent btn-full mt-10" onclick="updateTimespread()">ANALYZE</button>
+        </div>
+
+        <!-- Spread Monitor Controls -->
+        <div class="panel">
+            <div class="lbl">SPREAD MONITOR</div>
+            <div class="mt-8">
+                <div class="lbl lbl-sm">CATEGORY</div>
+                <select id="spread-category">
+                    <option value="all">ALL SPREADS</option>
+                    <option value="OIL">OIL SPREADS</option>
+                    <option value="CRACK">CRACK SPREADS</option>
+                    <option value="POWER & GAS">POWER & GAS</option>
+                    <option value="FWD SPREADS">FWD SPREADS</option>
+                </select>
+            </div>
+            <div class="mt-8">
+                <div class="lbl lbl-sm">SPREAD</div>
+                <select id="spread-select"></select>
+            </div>
+            <div class="mt-8">
+                <div class="lbl lbl-sm">HISTORY</div>
+                <select id="spread-period">
+                    <option value="63">3 MONTHS</option>
+                    <option value="126">6 MONTHS</option>
+                    <option value="252" selected>1 YEAR</option>
+                    <option value="504">2 YEARS</option>
+                </select>
+            </div>
+            <button class="btn btn-accent btn-full mt-10" onclick="updateSpreadChart()">ANALYZE</button>
+        </div>
+    </div>
+
+    <!-- ─── CENTER: CHARTS ─── -->
+    <div class="col-center">
+
+        <!-- Term Structure Chart -->
+        <div class="charts-row charts-row-single">
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">FUTURES TERM STRUCTURE</div>
+                            <div class="sub-label">FORWARD CURVE // DELIVERY MONTH</div>
+                        </div>
+                    </div>
+                    <div id="term-structure-chart" class="chart-plot"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timespread + Spread Monitor -->
+        <div class="charts-row">
+            <!-- Timespread Chart -->
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">CALENDAR SPREAD</div>
+                            <div class="sub-label" id="timespread-subtitle">SELECT A TIMESPREAD TO ANALYZE</div>
+                        </div>
+                    </div>
+                    <div id="timespread-chart" class="chart-plot"></div>
+                </div>
+            </div>
+
+            <!-- Spread Monitor Chart -->
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">SPREAD MONITOR</div>
+                            <div class="sub-label" id="spread-subtitle">SELECT A SPREAD TO ANALYZE</div>
+                        </div>
+                    </div>
+                    <div id="spread-monitor-chart" class="chart-plot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ─── RIGHT: SPREAD TABLE ─── -->
+    <div class="col-right">
+
+        <!-- Spot Prices -->
+        <div class="panel">
+            <div class="lbl">SPOT PRICES</div>
+            <div id="spot-prices-table" class="mt-8"></div>
+        </div>
+
+        <!-- Spread Dashboard -->
+        <div class="panel" style="max-height:calc(100vh - 340px);overflow-y:auto">
+            <div class="lbl">SPREAD DASHBOARD</div>
+            <div id="spread-dashboard" class="mt-8"></div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="engine.js?v=6"></script>
+<script src="energy-data.js?v=6"></script>
+<script src="energy-markets.js?v=6"></script>
+<script src="terminal.js?v=6"></script>
 </body>
 </html>

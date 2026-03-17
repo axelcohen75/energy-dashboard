@@ -1,4 +1,4 @@
-/* ─── Option Pricer — Dual Theme ─── */
+/* ─── Energy Derivatives Platform — Dual Theme ─── */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
@@ -65,19 +65,58 @@ body {
     background: var(--panel);
     height: 48px;
 }
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
 .header-title { font-size: 14px; font-weight: 700; letter-spacing: 1px; white-space: nowrap; font-family: var(--mono); }
 .header-title .hl { color: var(--accent); }
 .header-meta { font-size: 11px; color: var(--text-muted); white-space: nowrap; font-family: var(--mono); }
 .header-meta .val { color: var(--accent4); font-weight: 600; }
 .header-meta .model-val { color: var(--accent); font-weight: 600; }
 
+/* ─── Tab Navigation ─── */
+.tab-nav {
+    display: flex;
+    gap: 2px;
+    background: var(--input-bg);
+    border-radius: 6px;
+    padding: 2px;
+}
+.tab-btn {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+.tab-btn:hover { color: var(--text-muted); }
+.tab-btn.active {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 1px 3px rgba(37,99,235,0.3);
+}
+
+/* ─── Tab Content ─── */
+.tab-content { display: none; height: calc(100vh - 48px); }
+.tab-content.active { display: block; }
+
 /* ─── Layout ─── */
-.main-grid {
+.main-grid, .markets-grid {
     display: grid;
     grid-template-columns: 250px 1fr 300px;
     gap: 10px;
     padding: 10px 14px;
-    height: calc(100vh - 48px);
+    height: 100%;
     overflow: hidden;
 }
 .col-left, .col-right { overflow-y: auto; overflow-x: hidden; }
@@ -337,6 +376,10 @@ input[type="range"]::-moz-range-thumb {
     height: 42vh;
     min-height: 300px;
 }
+.charts-row-single {
+    grid-template-columns: 1fr;
+    height: 38vh;
+}
 .chart-box {
     display: flex;
     flex-direction: column;
@@ -362,6 +405,79 @@ input[type="range"]::-moz-range-thumb {
     min-height: 250px;
 }
 
+/* ─── Spot Prices Table (Energy Markets) ─── */
+.spot-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 4px;
+    border-bottom: 1px solid var(--panel-border);
+    font-size: 11px;
+}
+.spot-row:last-child { border-bottom: none; }
+.spot-name {
+    flex: 1;
+    font-weight: 500;
+    font-size: 11px;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.spot-price {
+    font-family: var(--mono);
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--accent);
+    min-width: 55px;
+    text-align: right;
+}
+.spot-unit {
+    font-size: 9px;
+    color: var(--text-dim);
+    min-width: 55px;
+    text-align: right;
+}
+
+/* ─── Spread Dashboard (Energy Markets) ─── */
+.spread-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 11px;
+    transition: background 0.15s;
+    border-left: 3px solid transparent;
+}
+.spread-row:hover {
+    background: rgba(37, 99, 235, 0.04);
+    border-left-color: var(--accent);
+}
+.spread-name {
+    flex: 1;
+    font-weight: 500;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 11px;
+}
+.spread-val {
+    font-family: var(--mono);
+    font-weight: 600;
+    font-size: 12px;
+    min-width: 55px;
+    text-align: right;
+}
+.spread-unit {
+    font-size: 9px;
+    color: var(--text-dim);
+    min-width: 50px;
+    text-align: right;
+}
+
 /* ─── Scrollbar ─── */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
@@ -376,7 +492,7 @@ input[type="range"]::-moz-range-thumb {
 /* ─── Responsive ─── */
 
 @media (max-width: 1200px) {
-    .main-grid {
+    .main-grid, .markets-grid {
         grid-template-columns: 220px 1fr 280px;
         gap: 8px;
         padding: 8px 10px;
@@ -385,25 +501,30 @@ input[type="range"]::-moz-range-thumb {
 
 @media (max-width: 1000px) {
     .charts-row { grid-template-columns: 1fr; height: auto; }
+    .charts-row-single { height: auto; }
     .header-meta { display: none; }
 }
 
 @media (max-width: 960px) {
-    .main-grid {
+    .main-grid, .markets-grid {
         grid-template-columns: 1fr;
         height: auto;
         overflow: auto;
     }
     body { overflow-y: auto; overflow-x: hidden; height: auto; }
+    .tab-content { height: auto; }
     .col-left, .col-right { overflow: visible; }
     .col-center { overflow: visible; }
     .header-title { font-size: 12px; letter-spacing: 1px; }
+    .header-left { gap: 12px; }
+    .tab-btn { font-size: 9px; padding: 4px 10px; }
 }
 
 @media (max-width: 600px) {
     .header { padding: 8px 12px; }
     .header-title { font-size: 11px; letter-spacing: 0.5px; }
-    .main-grid { padding: 6px; gap: 6px; }
+    .header-left { flex-direction: column; gap: 6px; align-items: flex-start; }
+    .main-grid, .markets-grid { padding: 6px; gap: 6px; }
     .panel { padding: 10px; }
     .chart-header { flex-direction: column; align-items: flex-start; }
     .chart-header .flex-row { flex-wrap: wrap; }

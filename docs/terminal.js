@@ -129,6 +129,7 @@ function toggleTheme() {
     // Re-render all charts
     updateCharts();
     generateSurface();
+    if (typeof refreshEnergyMarkets === 'function') refreshEnergyMarkets();
 }
 
 function loadThemePreference() {
