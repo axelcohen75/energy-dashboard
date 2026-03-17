@@ -10,9 +10,30 @@
 const MONTH_CODES = ['F', 'G', 'H', 'J', 'K', 'M', 'N', 'Q', 'U', 'V', 'X', 'Z'];
 const MONTH_NAMES = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-const CORS_PROXIES = [
-    url => `https://corsproxy.io/?url=${encodeURIComponent(url)}`,
-    url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
+// ─── CORS Proxy Layer ───────────────────────────────────────────────────────
+// Multiple strategies to bypass CORS when calling Yahoo Finance from browser.
+
+const CORS_STRATEGIES = [
+    {
+        name: 'allorigins-get',
+        // The /get endpoint wraps response in {contents: "..."} with proper CORS
+        buildUrl: url => `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`,
+        parse: async resp => {
+            const wrapper = await resp.json();
+            if (!wrapper.contents) return null;
+            return JSON.parse(wrapper.contents);
+        },
+    },
+    {
+        name: 'corsproxy-io',
+        buildUrl: url => `https://corsproxy.io/?${encodeURIComponent(url)}`,
+        parse: async resp => resp.json(),
+    },
+    {
+        name: 'codetabs',
+        buildUrl: url => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
+        parse: async resp => resp.json(),
+    },
 ];
 
 const YF_CHART_URL = 'https://query1.finance.yahoo.com/v8/finance/chart/';
@@ -68,23 +89,40 @@ function _setCache(key, data) {
     _cache[key] = { data, ts: Date.now() };
 }
 
+// Track which proxy works so we try it first next time
+let _preferredProxy = null;
+
 async function _fetchYahoo(url) {
-    for (const makeProxy of CORS_PROXIES) {
+    // Try preferred proxy first if we found one that works
+    const strategies = _preferredProxy
+        ? [_preferredProxy, ...CORS_STRATEGIES.filter(s => s !== _preferredProxy)]
+        : CORS_STRATEGIES;
+
+    for (const strategy of strategies) {
         try {
-            const proxyUrl = makeProxy(url);
+            const proxyUrl = strategy.buildUrl(url);
             const ctrl = new AbortController();
-            const timer = setTimeout(() => ctrl.abort(), 10000);
+            const timer = setTimeout(() => ctrl.abort(), 12000);
             const resp = await fetch(proxyUrl, { signal: ctrl.signal });
             clearTimeout(timer);
-            if (!resp.ok) continue;
-            const json = await resp.json();
-            const result = json.chart?.result?.[0];
-            if (result) return result;
+
+            if (!resp.ok) {
+                console.warn(`[YF] ${strategy.name}: HTTP ${resp.status} for ${url}`);
+                continue;
+            }
+
+            const json = await strategy.parse(resp);
+            const result = json?.chart?.result?.[0];
+            if (result) {
+                _preferredProxy = strategy; // Remember what works
+                return result;
+            }
+            console.warn(`[YF] ${strategy.name}: no chart data for ${url}`);
         } catch (e) {
-            console.warn(`[YF] proxy failed for ${url}:`, e.message);
+            console.warn(`[YF] ${strategy.name} failed for ${url}:`, e.message);
         }
     }
-    console.warn(`[YF] ALL proxies failed for ${url}`);
+    console.warn(`[YF] ALL strategies failed for ${url}`);
     return null;
 }
 
