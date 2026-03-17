@@ -2,7 +2,7 @@
  * Energy Markets — UI Controller
  *
  * Handles the Energy Markets tab: term structures, timespreads, and spread monitoring.
- * Uses Yahoo Finance for real data with synthetic fallback.
+ * Uses Yahoo Finance exclusively — no synthetic fallback.
  */
 
 // ─── Tab Switching ──────────────────────────────────────────────────────────
@@ -36,18 +36,16 @@ function switchTab(tab) {
     }, 50);
 }
 
-// ─── Loading State Helpers ──────────────────────────────────────────────────
+// ─── Chart Helpers ──────────────────────────────────────────────────────────
 
 function showChartLoading(chartId) {
-    const el = document.getElementById(chartId);
-    if (!el) return;
     const cc = getChartColors();
     Plotly.react(chartId, [], {
         paper_bgcolor: cc.bg, plot_bgcolor: cc.bg,
         font: { color: cc.text, family: 'Inter, sans-serif', size: 11 },
         xaxis: { visible: false }, yaxis: { visible: false },
         annotations: [{
-            text: 'Loading data...',
+            text: 'Fetching from Yahoo Finance...',
             xref: 'paper', yref: 'paper', x: 0.5, y: 0.5,
             showarrow: false, font: { size: 13, color: cc.muted },
         }],
@@ -55,14 +53,19 @@ function showChartLoading(chartId) {
     }, CHART_CONFIG);
 }
 
-function showSourceBadge(chartId, source) {
-    // Update subtitle to show data source
-    const subtitleMap = {
-        'term-structure-chart': null, // no subtitle element for this one
-        'timespread-chart': 'timespread-subtitle',
-        'spread-monitor-chart': 'spread-subtitle',
-    };
-    // Source badge is shown via annotations in the chart itself
+function showChartEmpty(chartId, msg) {
+    const cc = getChartColors();
+    Plotly.react(chartId, [], {
+        paper_bgcolor: cc.bg, plot_bgcolor: cc.bg,
+        font: { color: cc.text, family: 'Inter, sans-serif', size: 11 },
+        xaxis: { visible: false }, yaxis: { visible: false },
+        annotations: [{
+            text: msg || 'No data available',
+            xref: 'paper', yref: 'paper', x: 0.5, y: 0.5,
+            showarrow: false, font: { size: 12, color: cc.dim },
+        }],
+        margin: { l: 55, r: 30, t: 25, b: 40 },
+    }, CHART_CONFIG);
 }
 
 // ─── Energy Markets Init ────────────────────────────────────────────────────
@@ -81,59 +84,79 @@ function initEnergyMarkets() {
     Plotly.newPlot('timespread-chart', [], { ...emptyLayout }, CHART_CONFIG);
     Plotly.newPlot('spread-monitor-chart', [], { ...emptyLayout }, CHART_CONFIG);
 
-    // Populate commodity dropdowns
+    // Populate commodity dropdowns (only those with term structure for TS dropdown)
     const tsCommodity = document.getElementById('ts-commodity');
     const tsSpreadCommodity = document.getElementById('ts-spread-commodity');
-    for (const name of Object.keys(ENERGY_COMMODITIES)) {
-        tsCommodity.appendChild(new Option(name, name));
-        tsSpreadCommodity.appendChild(new Option(name, name));
+    for (const [name, cfg] of Object.entries(ENERGY_COMMODITIES)) {
+        if (cfg.months > 0) {
+            tsCommodity.appendChild(new Option(name, name));
+        }
+        if (TIMESPREAD_DEFINITIONS[name]) {
+            tsSpreadCommodity.appendChild(new Option(name, name));
+        }
     }
 
     tsSpreadCommodity.addEventListener('change', populateTimespreads);
     document.getElementById('spread-category').addEventListener('change', populateSpreads);
 
+    // Set date input default and max
+    const dateInput = document.getElementById('ts-compare-date');
+    if (dateInput) {
+        const today = new Date().toISOString().slice(0, 10);
+        const twoYearsAgo = new Date(Date.now() - 730 * 86400000).toISOString().slice(0, 10);
+        dateInput.max = today;
+        dateInput.min = twoYearsAgo;
+        // Default: 1 month ago
+        const oneMonthAgo = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
+        dateInput.value = oneMonthAgo;
+    }
+
     populateTimespreads();
     populateSpreads();
 
-    // Fetch real spot prices then render everything
-    fetchAndRenderSpots();
+    // Fetch spot prices, then render everything
+    fetchAndRenderAll();
+}
+
+async function fetchAndRenderAll() {
+    renderSpotPrices(false);
+    await fetchAllSpotPrices();
+    renderSpotPrices(true);
+    renderSpreadDashboard();
     updateTermStructure();
-    updateTimespread();
-    updateSpreadChart();
 }
 
 // ─── Spot Prices ────────────────────────────────────────────────────────────
-
-async function fetchAndRenderSpots() {
-    renderSpotPrices(false);
-    try {
-        await fetchAllSpotPrices();
-    } catch { /* use defaults */ }
-    renderSpotPrices(true);
-    renderSpreadDashboard();
-}
 
 function renderSpotPrices(loaded) {
     const container = document.getElementById('spot-prices-table');
     let html = '';
 
     for (const [name, cfg] of Object.entries(ENERGY_COMMODITIES)) {
-        const shortName = name.replace(/\s*\(.*\)/, '').replace('Henry Hub ', 'HH ').replace('German ', '');
+        const price = liveSpots[name];
+
+        // If loaded and no price found, skip this commodity entirely
+        if (loaded && price == null) continue;
+
+        const shortName = name.replace(/\s*\(.*\)/, '').replace('Henry Hub ', 'HH ');
         const color = isDarkMode ? cfg.colorDark : cfg.color;
-        const hasYahoo = !!cfg.yahoo;
-        const sourceTag = hasYahoo
-            ? `<span class="source-tag source-live">LIVE</span>`
-            : `<span class="source-tag source-synth">SYNTH</span>`;
+        const decimals = price != null && price < 10 ? 2 : 1;
 
         html += `
             <div class="spot-row">
                 <div class="spot-name" style="border-left: 3px solid ${color}; padding-left: 8px">
                     ${shortName}
                 </div>
-                <div class="spot-price">${cfg.spot.toFixed(cfg.spot < 10 ? 2 : 1)}</div>
+                <div class="spot-price">${loaded ? price.toFixed(decimals) : '...'}</div>
                 <div class="spot-unit">${cfg.unit}</div>
-                <div class="spot-source">${loaded ? sourceTag : '<span class="loading-dot">...</span>'}</div>
+                <div class="spot-source">${loaded
+                    ? '<span class="source-tag source-live">LIVE</span>'
+                    : '<span class="loading-dot">...</span>'}</div>
             </div>`;
+    }
+
+    if (loaded && !html) {
+        html = '<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">Unable to fetch market data. Check your connection.</div>';
     }
 
     container.innerHTML = html;
@@ -147,14 +170,15 @@ function renderSpreadDashboard() {
     let lastCategory = '';
 
     for (const [name, def] of Object.entries(SPREAD_DEFINITIONS)) {
+        const val = computeSpreadValue(name);
+        if (val == null) continue; // Skip spreads where we don't have both legs
+
         if (def.category !== lastCategory) {
             html += `<div class="metric-section">${def.category}</div>`;
             lastCategory = def.category;
         }
 
-        const val = computeSpreadValue(name);
-        const isPositive = val >= 0;
-        const valColor = isPositive
+        const valColor = val >= 0
             ? (isDarkMode ? '#34d399' : '#059669')
             : (isDarkMode ? '#f87171' : '#dc2626');
 
@@ -168,6 +192,10 @@ function renderSpreadDashboard() {
             </div>`;
     }
 
+    if (!html) {
+        html = '<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">Waiting for spot data...</div>';
+    }
+
     container.innerHTML = html;
 }
 
@@ -178,54 +206,82 @@ function selectSpread(name) {
 
 // ─── Term Structure ─────────────────────────────────────────────────────────
 
+// Store comparison curves
+let tsComparisons = []; // [{ date, commodity, data }, ...]
+
 async function updateTermStructure() {
     const cc = getChartColors();
     const selected = document.getElementById('ts-commodity').value;
-    const commodities = selected === 'all' ? Object.keys(ENERGY_COMMODITIES) : [selected];
+    const commodities = selected === 'all'
+        ? Object.keys(ENERGY_COMMODITIES).filter(c => ENERGY_COMMODITIES[c].months > 0)
+        : [selected];
 
     showChartLoading('term-structure-chart');
 
-    const units = new Set();
-    commodities.forEach(c => units.add(ENERGY_COMMODITIES[c].unit));
-    const unitList = [...units];
-    const multiUnit = unitList.length > 1;
-
-    // Fetch all term structures in parallel
+    // Fetch current term structures in parallel
     const tsResults = await Promise.all(
-        commodities.map(async (commodity, ci) => {
+        commodities.map(async (commodity) => {
             try {
-                return { commodity, ts: await fetchTermStructure(commodity) };
+                const ts = await fetchTermStructure(commodity);
+                return { commodity, ts };
             } catch {
-                return { commodity, ts: generateTermStructureSynthetic(commodity, 42 + ci) };
+                return { commodity, ts: null };
             }
         })
     );
 
-    const traces = [];
-    let hasLive = false;
-    let hasSynth = false;
+    const units = new Set();
+    const validResults = tsResults.filter(r => r.ts != null);
 
-    for (const { commodity, ts } of tsResults) {
-        if (!ts) continue;
+    if (validResults.length === 0) {
+        showChartEmpty('term-structure-chart', 'No term structure data available from Yahoo Finance');
+        return;
+    }
+
+    validResults.forEach(r => units.add(ENERGY_COMMODITIES[r.commodity].unit));
+    const unitList = [...units];
+    const multiUnit = unitList.length > 1;
+
+    const traces = [];
+
+    // Current curves (solid lines)
+    for (const { commodity, ts } of validResults) {
         const cfg = ENERGY_COMMODITIES[commodity];
         const color = isDarkMode ? cfg.colorDark : cfg.color;
-        const shortName = commodity.replace(/\s*\(.*\)/, '').replace('Henry Hub ', '').replace('German ', '');
+        const shortName = commodity.replace(/\s*\(.*\)/, '').replace('Henry Hub ', '');
         const yAxisIdx = multiUnit ? unitList.indexOf(cfg.unit) : 0;
-
-        if (ts.source === 'yahoo') hasLive = true; else hasSynth = true;
 
         traces.push({
             x: ts.months, y: ts.prices,
-            name: shortName,
+            name: `${shortName} (now)`,
             type: 'scatter', mode: 'lines+markers',
-            line: { color, width: 2 }, marker: { size: 3, color },
+            line: { color, width: 2.5 }, marker: { size: 4, color },
             yaxis: yAxisIdx === 0 ? 'y' : 'y2',
-            hovertemplate: `${shortName}<br>%{x}: %{y:.2f} ${cfg.unit}<extra></extra>`,
+            hovertemplate: `${shortName} (now)<br>%{x}: %{y:.2f} ${cfg.unit}<extra></extra>`,
         });
     }
 
-    const sourceText = hasLive && hasSynth ? 'YAHOO FINANCE + SYNTHETIC'
-        : hasLive ? 'YAHOO FINANCE' : 'SYNTHETIC DATA';
+    // Historical comparison curves (dashed lines)
+    const compColors = ['#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4'];
+    for (let ci = 0; ci < tsComparisons.length; ci++) {
+        const comp = tsComparisons[ci];
+        if (comp.commodity !== selected && selected !== 'all') continue;
+
+        const cfg = ENERGY_COMMODITIES[comp.commodity];
+        const shortName = comp.commodity.replace(/\s*\(.*\)/, '').replace('Henry Hub ', '');
+        const yAxisIdx = multiUnit ? unitList.indexOf(cfg.unit) : 0;
+        const compColor = compColors[ci % compColors.length];
+
+        traces.push({
+            x: comp.data.months, y: comp.data.prices,
+            name: `${shortName} (${comp.date})`,
+            type: 'scatter', mode: 'lines+markers',
+            line: { color: compColor, width: 1.5, dash: 'dash' },
+            marker: { size: 3, color: compColor, symbol: 'diamond' },
+            yaxis: yAxisIdx === 0 ? 'y' : 'y2',
+            hovertemplate: `${shortName} (${comp.date})<br>%{x}: %{y:.2f} ${cfg.unit}<extra></extra>`,
+        });
+    }
 
     const layout = {
         paper_bgcolor: cc.bg, plot_bgcolor: cc.bg,
@@ -240,7 +296,7 @@ async function updateTermStructure() {
         hovermode: 'x unified',
         annotations: [{
             x: 1, y: -0.18, xref: 'paper', yref: 'paper', xanchor: 'right',
-            text: sourceText, showarrow: false,
+            text: 'YAHOO FINANCE', showarrow: false,
             font: { size: 9, color: cc.dim, family: 'JetBrains Mono, monospace' },
         }],
     };
@@ -255,6 +311,77 @@ async function updateTermStructure() {
     }
 
     Plotly.react('term-structure-chart', traces, layout, CHART_CONFIG);
+}
+
+// ─── Term Structure Comparison ──────────────────────────────────────────────
+
+async function addTermStructureComparison() {
+    const dateStr = document.getElementById('ts-compare-date').value;
+    if (!dateStr) return;
+
+    const selected = document.getElementById('ts-commodity').value;
+    const commodities = selected === 'all'
+        ? Object.keys(ENERGY_COMMODITIES).filter(c => ENERGY_COMMODITIES[c].months > 0)
+        : [selected];
+
+    // Prevent duplicates
+    const existing = tsComparisons.find(c => c.date === dateStr && commodities.includes(c.commodity));
+    if (existing) return;
+
+    // Max 4 comparisons
+    if (tsComparisons.length >= 4) tsComparisons.shift();
+
+    showChartLoading('term-structure-chart');
+
+    for (const commodity of commodities) {
+        try {
+            const data = await fetchTermStructureAtDate(commodity, dateStr);
+            if (data) {
+                tsComparisons.push({ date: dateStr, commodity, data });
+            }
+        } catch (e) {
+            console.warn(`[TS Compare] Failed for ${commodity} at ${dateStr}:`, e.message);
+        }
+    }
+
+    renderComparisonTags();
+    updateTermStructure();
+}
+
+function removeComparison(idx) {
+    tsComparisons.splice(idx, 1);
+    renderComparisonTags();
+    updateTermStructure();
+}
+
+function clearComparisons() {
+    tsComparisons = [];
+    renderComparisonTags();
+    updateTermStructure();
+}
+
+function renderComparisonTags() {
+    const container = document.getElementById('ts-comparisons');
+    if (!container) return;
+
+    if (tsComparisons.length === 0) {
+        container.innerHTML = '';
+        return;
+    }
+
+    const compColors = ['#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4'];
+    let html = '';
+    for (let i = 0; i < tsComparisons.length; i++) {
+        const c = tsComparisons[i];
+        const shortName = c.commodity.replace(/\s*\(.*\)/, '').replace('Henry Hub ', '');
+        const color = compColors[i % compColors.length];
+        html += `<span class="comp-tag" style="border-left:3px solid ${color}">
+            ${shortName} ${c.date}
+            <button class="comp-remove" onclick="removeComparison(${i})">&times;</button>
+        </span>`;
+    }
+    html += `<button class="comp-clear" onclick="clearComparisons()">Clear all</button>`;
+    container.innerHTML = html;
 }
 
 // ─── Timespread Analysis ────────────────────────────────────────────────────
@@ -283,13 +410,15 @@ async function updateTimespread() {
     let data;
     try {
         data = await fetchTimespreadHistory(commodity, spreadDef, nDays);
-    } catch {
-        data = generateTimespreadHistorySynthetic(commodity, spreadDef, nDays);
-    }
-    if (!data) return;
+    } catch { data = null; }
 
-    const sourceTag = data.source === 'yahoo' ? ' [LIVE]' : ' [SYNTHETIC]';
-    document.getElementById('timespread-subtitle').textContent = `${data.name} // ${data.unit}${sourceTag}`;
+    if (!data) {
+        showChartEmpty('timespread-chart', 'No timespread data available');
+        document.getElementById('timespread-subtitle').textContent = 'NO DATA';
+        return;
+    }
+
+    document.getElementById('timespread-subtitle').textContent = `${data.name} // ${data.unit}`;
 
     const vals = data.values;
     const mean = vals.reduce((a, b) => a + b, 0) / vals.length;
@@ -365,13 +494,15 @@ async function updateSpreadChart() {
     let data;
     try {
         data = await fetchSpreadHistory(spreadKey, nDays);
-    } catch {
-        data = generateSpreadHistorySynthetic(spreadKey, nDays);
-    }
-    if (!data) return;
+    } catch { data = null; }
 
-    const sourceTag = data.source === 'yahoo' ? ' [LIVE]' : ' [SYNTHETIC]';
-    document.getElementById('spread-subtitle').textContent = `${def.description} // ${def.unit}${sourceTag}`;
+    if (!data) {
+        showChartEmpty('spread-monitor-chart', `No data for ${spreadKey}`);
+        document.getElementById('spread-subtitle').textContent = 'NO DATA';
+        return;
+    }
+
+    document.getElementById('spread-subtitle').textContent = `${def.description} // ${def.unit}`;
 
     const vals = data.values;
     const mean = vals.reduce((a, b) => a + b, 0) / vals.length;
@@ -435,6 +566,4 @@ function refreshEnergyMarkets() {
     renderSpotPrices(true);
     renderSpreadDashboard();
     updateTermStructure();
-    if (document.getElementById('ts-spread-select').value) updateTimespread();
-    if (document.getElementById('spread-select').value) updateSpreadChart();
 }
