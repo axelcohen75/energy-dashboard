@@ -133,6 +133,39 @@ async function loadMarketData() {
 
 // ─── Data Access Functions ──────────────────────────────────────────────────
 
+function getTermStructureAtDate(commodity, dateStr) {
+    const contracts = marketData?.contractHistory?.[commodity];
+    if (!contracts || !contracts.length) return null;
+
+    const cfg = ENERGY_COMMODITIES[commodity];
+    const months = [];
+    const prices = [];
+
+    for (const c of contracts) {
+        // Find the closest trading day to the target date
+        const idx = c.dates.findIndex(d => d >= dateStr);
+        // Try exact match or nearest before
+        let price = null;
+        if (idx >= 0 && c.dates[idx] === dateStr) {
+            price = c.close[idx];
+        } else if (idx > 0) {
+            // Use the day before (nearest available before target)
+            price = c.close[idx - 1];
+        } else if (idx === -1 && c.dates.length > 0) {
+            // All dates are before target — use last available
+            price = c.close[c.close.length - 1];
+        }
+
+        if (price != null && price > 0) {
+            months.push(c.label);
+            prices.push(price);
+        }
+    }
+
+    if (months.length < 3) return null;
+    return { months, prices, unit: cfg?.unit, date: dateStr };
+}
+
 function getTermStructure(commodity) {
     if (!marketData?.termStructures?.[commodity]) return null;
     const ts = marketData.termStructures[commodity];

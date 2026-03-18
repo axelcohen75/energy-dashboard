@@ -113,6 +113,16 @@ async function initEnergyMarkets() {
     populateTimespreads();
     populateSpreads();
 
+    // Set date input default
+    const dateInput = document.getElementById('ts-compare-date');
+    if (dateInput) {
+        const today = new Date().toISOString().slice(0, 10);
+        const twoYearsAgo = new Date(Date.now() - 730 * 86400000).toISOString().slice(0, 10);
+        dateInput.max = today;
+        dateInput.min = twoYearsAgo;
+        dateInput.value = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
+    }
+
     // Render everything
     renderSpotPrices(true);
     renderSpreadDashboard();
@@ -216,6 +226,8 @@ function selectSpread(name) {
 
 // ─── Term Structure ─────────────────────────────────────────────────────────
 
+let tsComparisons = []; // [{ date, commodity, data }, ...]
+
 function updateTermStructure() {
     const cc = getChartColors();
     const selected = document.getElementById('ts-commodity').value;
@@ -240,6 +252,7 @@ function updateTermStructure() {
 
     const traces = [];
 
+    // Current curves (solid)
     for (const commodity of commodities) {
         const ts = getTermStructure(commodity);
         if (!ts) continue;
@@ -251,16 +264,39 @@ function updateTermStructure() {
 
         traces.push({
             x: ts.months, y: ts.prices,
-            name: shortName,
+            name: `${shortName} (now)`,
             type: 'scatter', mode: 'lines+markers',
             line: { color, width: 2.5 }, marker: { size: 4, color },
             yaxis: yAxisIdx === 0 ? 'y' : 'y2',
-            hovertemplate: `${shortName}<br>%{x}: %{y:.2f} ${cfg.unit}<extra></extra>`,
+            hovertemplate: `${shortName} (now)<br>%{x}: %{y:.2f} ${cfg.unit}<extra></extra>`,
         });
     }
 
-    const ts = getDataTimestamp();
-    const stampText = ts ? `YAHOO FINANCE — ${_timeAgo(ts)}` : 'YAHOO FINANCE';
+    // Historical comparison curves (dashed)
+    const compColors = ['#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4'];
+    for (let ci = 0; ci < tsComparisons.length; ci++) {
+        const comp = tsComparisons[ci];
+        if (selected !== 'all' && comp.commodity !== selected) continue;
+
+        const cfg = ENERGY_COMMODITIES[comp.commodity];
+        if (!cfg) continue;
+        const shortName = comp.commodity.replace(/\s*\(.*\)/, '').replace('Henry Hub ', '');
+        const yAxisIdx = multiUnit ? unitList.indexOf(cfg.unit) : 0;
+        const compColor = compColors[ci % compColors.length];
+
+        traces.push({
+            x: comp.data.months, y: comp.data.prices,
+            name: `${shortName} (${comp.date})`,
+            type: 'scatter', mode: 'lines+markers',
+            line: { color: compColor, width: 1.5, dash: 'dash' },
+            marker: { size: 3, color: compColor, symbol: 'diamond' },
+            yaxis: yAxisIdx === 0 ? 'y' : 'y2',
+            hovertemplate: `${shortName} (${comp.date})<br>%{x}: %{y:.2f} ${cfg.unit}<extra></extra>`,
+        });
+    }
+
+    const dataTs = getDataTimestamp();
+    const stampText = dataTs ? `YAHOO FINANCE — ${_timeAgo(dataTs)}` : 'YAHOO FINANCE';
 
     const layout = {
         paper_bgcolor: cc.bg, plot_bgcolor: cc.bg,
@@ -290,6 +326,73 @@ function updateTermStructure() {
     }
 
     Plotly.react('term-structure-chart', traces, layout, CHART_CONFIG);
+}
+
+// ─── Term Structure Comparison ──────────────────────────────────────────────
+
+function addTermStructureComparison() {
+    const dateStr = document.getElementById('ts-compare-date').value;
+    if (!dateStr) return;
+
+    const selected = document.getElementById('ts-commodity').value;
+    const commodities = selected === 'all'
+        ? Object.keys(ENERGY_COMMODITIES).filter(c => marketData?.contractHistory?.[c])
+        : (marketData?.contractHistory?.[selected] ? [selected] : []);
+
+    if (tsComparisons.length >= 4) tsComparisons.shift();
+
+    let added = false;
+    for (const commodity of commodities) {
+        // Prevent duplicates
+        if (tsComparisons.find(c => c.date === dateStr && c.commodity === commodity)) continue;
+
+        const data = getTermStructureAtDate(commodity, dateStr);
+        if (data) {
+            tsComparisons.push({ date: dateStr, commodity, data });
+            added = true;
+        }
+    }
+
+    if (added) {
+        renderComparisonTags();
+        updateTermStructure();
+    }
+}
+
+function removeComparison(idx) {
+    tsComparisons.splice(idx, 1);
+    renderComparisonTags();
+    updateTermStructure();
+}
+
+function clearComparisons() {
+    tsComparisons = [];
+    renderComparisonTags();
+    updateTermStructure();
+}
+
+function renderComparisonTags() {
+    const container = document.getElementById('ts-comparisons');
+    if (!container) return;
+
+    if (tsComparisons.length === 0) {
+        container.innerHTML = '';
+        return;
+    }
+
+    const compColors = ['#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4'];
+    let html = '';
+    for (let i = 0; i < tsComparisons.length; i++) {
+        const c = tsComparisons[i];
+        const shortName = c.commodity.replace(/\s*\(.*\)/, '').replace('Henry Hub ', '');
+        const color = compColors[i % compColors.length];
+        html += `<span class="comp-tag" style="border-left:3px solid ${color}">
+            ${shortName} ${c.date}
+            <button class="comp-remove" onclick="removeComparison(${i})">&times;</button>
+        </span>`;
+    }
+    html += `<button class="comp-clear" onclick="clearComparisons()">Clear all</button>`;
+    container.innerHTML = html;
 }
 
 // ─── Timespread Analysis ────────────────────────────────────────────────────

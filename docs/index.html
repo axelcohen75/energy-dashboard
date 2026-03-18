@@ -299,6 +299,12 @@
                 </select>
             </div>
             <button class="btn btn-accent btn-full mt-10" onclick="updateTermStructure()">REFRESH</button>
+            <div class="mt-10" style="border-top:1px solid var(--input-border);padding-top:10px">
+                <div class="lbl lbl-sm">COMPARE WITH DATE</div>
+                <input type="date" id="ts-compare-date" style="width:100%;background:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text);font-size:11px;font-family:var(--mono);padding:4px 6px;margin-top:4px">
+                <button class="btn btn-full mt-8" onclick="addTermStructureComparison()" style="font-size:10px">ADD COMPARISON</button>
+                <div id="ts-comparisons" class="mt-8"></div>
+            </div>
         </div>
 
         <!-- Timespread Controls -->

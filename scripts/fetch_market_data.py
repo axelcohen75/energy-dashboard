@@ -271,6 +271,40 @@ def fetch_timespreads():
 
     return spreads
 
+def fetch_contract_history():
+    """Fetch 2 years of daily data for individual contract months (for term structure comparison)."""
+    print("\nFetching contract month history (for term structure comparison)...")
+    contract_history = {}
+
+    for name, cfg in COMMODITIES.items():
+        if cfg['months'] == 0 or 'base' not in cfg:
+            continue
+
+        tickers = get_forward_tickers(cfg['base'], cfg['exchange'], cfg['months'])
+        symbols = [t['symbol'] for t in tickers]
+
+        try:
+            data, is_multi = safe_download(symbols, period='2y', interval='1d', auto_adjust=True)
+
+            contracts = []
+            for ticker in tickers:
+                close = get_close(data, ticker['symbol'], is_multi)
+                if close is not None and len(close) > 10:
+                    contracts.append({
+                        'symbol': ticker['symbol'],
+                        'label': ticker['label'],
+                        'dates': [d.strftime('%Y-%m-%d') for d in close.index],
+                        'close': [round(float(v), 4) for v in close.values],
+                    })
+
+            if contracts:
+                contract_history[name] = contracts
+                print(f"  {name}: {len(contracts)} contracts with history")
+        except Exception as e:
+            print(f"  {name}: FAILED ({e})")
+
+    return contract_history
+
 
 # ─── Main ────────────────────────────────────────────────────────────────────
 
@@ -282,6 +316,7 @@ def main():
     term_structures = fetch_term_structures()
     history = fetch_historical()
     timespreads = fetch_timespreads()
+    contract_history = fetch_contract_history()
 
     result = {
         'updated': datetime.datetime.now(datetime.timezone.utc).isoformat(),
@@ -289,6 +324,7 @@ def main():
         'termStructures': term_structures,
         'history': history,
         'timespreads': timespreads,
+        'contractHistory': contract_history,
     }
 
     with open(output_path, 'w') as f:
