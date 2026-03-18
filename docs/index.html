@@ -18,6 +18,7 @@
         <nav class="tab-nav">
             <button class="tab-btn active" data-tab="pricer" onclick="switchTab('pricer')">OPTION PRICER</button>
             <button class="tab-btn" data-tab="markets" onclick="switchTab('markets')">ENERGY MARKETS</button>
+            <button class="tab-btn" data-tab="physical" onclick="switchTab('physical')">PHYSICAL</button>
         </nav>
     </div>
     <div class="header-meta">
@@ -425,9 +426,87 @@
 </div>
 </div>
 
+<!-- ═══════════════════════════════════════════════════════════════════════════ -->
+<!-- TAB 3: PHYSICAL MARKETS                                                    -->
+<!-- ═══════════════════════════════════════════════════════════════════════════ -->
+<div class="tab-content" id="tab-physical">
+<div class="markets-grid">
+
+    <!-- ─── LEFT SIDEBAR ─── -->
+    <div class="col-left">
+
+        <!-- Inventory Controls -->
+        <div class="panel">
+            <div class="lbl">US INVENTORIES</div>
+            <div class="mt-8">
+                <div class="lbl lbl-sm">SERIES</div>
+                <select id="inv-select">
+                    <option value="us_crude_stocks">US Crude Oil</option>
+                </select>
+            </div>
+            <div class="mt-8">
+                <div class="lbl lbl-sm">PERIOD</div>
+                <select id="inv-period">
+                    <option value="26">6 MONTHS</option>
+                    <option value="52">1 YEAR</option>
+                    <option value="104" selected>2 YEARS</option>
+                    <option value="260">5 YEARS</option>
+                </select>
+            </div>
+            <button class="btn btn-accent btn-full mt-10" onclick="updateInventoryChart()">REFRESH</button>
+        </div>
+
+        <!-- Inventory Summary -->
+        <div class="panel">
+            <div class="lbl">INVENTORY LEVELS</div>
+            <div id="inventory-table" class="mt-8"></div>
+        </div>
+    </div>
+
+    <!-- ─── CENTER: CHARTS ─── -->
+    <div class="col-center">
+
+        <!-- Inventory Chart -->
+        <div class="charts-row charts-row-single">
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">US INVENTORIES</div>
+                            <div class="sub-label">EIA WEEKLY DATA // 5-YEAR RANGE</div>
+                        </div>
+                    </div>
+                    <div id="inventory-chart" class="chart-plot"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Polymarket Section -->
+        <div class="charts-row charts-row-single">
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">POLYMARKET — ENERGY & GEOPOLITICS</div>
+                            <div class="sub-label">PREDICTION MARKETS // LIVE PROBABILITIES</div>
+                        </div>
+                    </div>
+                    <div id="polymarket-list" class="pm-container"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ─── RIGHT SIDEBAR (empty for now) ─── -->
+    <div class="col-right"></div>
+</div>
+</div>
+
 <script src="engine.js?v=6"></script>
-<script src="energy-data.js?v=6"></script>
-<script src="energy-markets.js?v=6"></script>
-<script src="terminal.js?v=6"></script>
+<script src="energy-data.js?v=7"></script>
+<script src="energy-markets.js?v=7"></script>
+<script src="physical-markets.js?v=7"></script>
+<script src="terminal.js?v=7"></script>
 </body>
 </html>

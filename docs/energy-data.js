@@ -142,18 +142,23 @@ function getTermStructureAtDate(commodity, dateStr) {
     const prices = [];
 
     for (const c of contracts) {
-        // Find the closest trading day to the target date
-        const idx = c.dates.findIndex(d => d >= dateStr);
-        // Try exact match or nearest before
+        if (!c.dates || !c.dates.length || !c.close) continue;
+
         let price = null;
-        if (idx >= 0 && c.dates[idx] === dateStr) {
-            price = c.close[idx];
-        } else if (idx > 0) {
-            // Use the day before (nearest available before target)
-            price = c.close[idx - 1];
-        } else if (idx === -1 && c.dates.length > 0) {
+        const idx = c.dates.findIndex(d => d >= dateStr);
+
+        if (idx === -1) {
             // All dates are before target — use last available
             price = c.close[c.close.length - 1];
+        } else if (c.dates[idx] === dateStr) {
+            // Exact match
+            price = c.close[idx];
+        } else if (idx > 0) {
+            // Use the nearest date before target
+            price = c.close[idx - 1];
+        } else {
+            // idx === 0, target is before all data — use first available
+            price = c.close[0];
         }
 
         if (price != null && price > 0) {

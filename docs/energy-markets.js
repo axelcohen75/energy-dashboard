@@ -21,11 +21,17 @@ function switchTab(tab) {
         marketsInitialized = true;
     }
 
+    if (tab === 'physical' && !physicalInitialized) {
+        initPhysicalMarkets();
+    }
+
     setTimeout(() => {
         if (tab === 'markets') {
             Plotly.Plots.resize('term-structure-chart');
             Plotly.Plots.resize('timespread-chart');
             Plotly.Plots.resize('spread-monitor-chart');
+        } else if (tab === 'physical') {
+            Plotly.Plots.resize('inventory-chart');
         } else {
             Plotly.Plots.resize('payoff-chart');
             Plotly.Plots.resize('greeks-chart');
@@ -262,13 +268,14 @@ function updateTermStructure() {
         const shortName = commodity.replace(/\s*\(.*\)/, '').replace('Henry Hub ', '');
         const yAxisIdx = multiUnit ? unitList.indexOf(cfg.unit) : 0;
 
+        const label = tsComparisons.length > 0 ? `${shortName} (now)` : shortName;
         traces.push({
             x: ts.months, y: ts.prices,
-            name: `${shortName} (now)`,
+            name: label,
             type: 'scatter', mode: 'lines+markers',
             line: { color, width: 2.5 }, marker: { size: 4, color },
             yaxis: yAxisIdx === 0 ? 'y' : 'y2',
-            hovertemplate: `${shortName} (now)<br>%{x}: %{y:.2f} ${cfg.unit}<extra></extra>`,
+            hovertemplate: `${label}<br>%{x}: %{y:.2f} ${cfg.unit}<extra></extra>`,
         });
     }
 

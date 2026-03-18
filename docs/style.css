@@ -368,6 +368,66 @@ input[type="range"]::-moz-range-thumb {
     padding: 10px 10px 4px;
 }
 
+/* ─── Inventory rows ─── */
+.inv-row {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    gap: 6px;
+    align-items: center;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 11px;
+    transition: all 0.15s;
+    color: var(--text-muted);
+}
+.inv-row:hover { background: rgba(37, 99, 235, 0.04); }
+.inv-row.active { background: rgba(37, 99, 235, 0.06); font-weight: 600; color: var(--text); }
+.inv-name { font-size: 11px; }
+.inv-val { font-family: var(--mono); font-size: 11px; font-weight: 600; text-align: right; }
+.inv-chg { font-family: var(--mono); font-size: 10px; text-align: right; }
+.inv-unit { font-size: 9px; color: var(--text-dim); text-align: right; }
+
+/* ─── Polymarket ─── */
+.pm-container {
+    max-height: 50vh;
+    overflow-y: auto;
+    padding: 4px 0;
+}
+.pm-row {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--input-border);
+    transition: background 0.15s;
+}
+.pm-row:hover { background: rgba(37, 99, 235, 0.03); }
+.pm-row:last-child { border-bottom: none; }
+.pm-question {
+    font-size: 11px;
+    color: var(--text);
+    margin-bottom: 5px;
+    line-height: 1.35;
+}
+.pm-bar-wrap {
+    height: 4px;
+    background: var(--input-bg);
+    border-radius: 2px;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
+.pm-bar {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.3s;
+}
+.pm-stats {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--mono);
+    font-size: 10px;
+}
+.pm-prob { font-weight: 700; }
+.pm-vol { color: var(--text-dim); }
+
 /* ─── Chart containers ─── */
 .charts-row {
     display: grid;

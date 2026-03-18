@@ -130,6 +130,7 @@ function toggleTheme() {
     updateCharts();
     generateSurface();
     if (typeof refreshEnergyMarkets === 'function') refreshEnergyMarkets();
+    if (typeof refreshPhysicalMarkets === 'function') refreshPhysicalMarkets();
 }
 
 function loadThemePreference() {

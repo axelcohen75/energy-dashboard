@@ -22,14 +22,17 @@ jobs:
       - name: Install dependencies
         run: pip install yfinance pandas
 
-      - name: Fetch market data
+      - name: Fetch market data (Yahoo Finance)
         run: python scripts/fetch_market_data.py
+
+      - name: Fetch physical data (EIA + Polymarket)
+        run: python scripts/fetch_physical_data.py
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/market-data.json
+          git add docs/data/market-data.json docs/data/physical-data.json
           if git diff --staged --quiet; then
             echo "No data changes"
           else
