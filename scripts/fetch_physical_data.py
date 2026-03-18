@@ -304,90 +304,82 @@ def fetch_polymarket():
     # Keep top 40
     relevant = relevant[:40]
 
-    # Build term structure groups (related markets with different maturities)
-    term_groups = build_term_structure_groups(relevant)
-
     print(f"  Found {len(relevant)} relevant markets")
+    geo = sum(1 for m in relevant if m['category'] == 'geopolitics')
+    opec = sum(1 for m in relevant if m['category'] == 'opec_physical')
+    print(f"    Geopolitics: {geo}, OPEC/Physical: {opec}")
     for m in relevant[:5]:
         prob_str = f"{m['probabilities'][0]:.0f}%" if m['probabilities'] else 'N/A'
         print(f"    {m['question'][:60]} ({prob_str}, vol=${m['volume']:,})")
-    print(f"  Term structure groups: {len(term_groups)}")
 
-    return {'markets': relevant, 'termGroups': term_groups}
+    return relevant
 
 
-def build_term_structure_groups(markets):
-    """Group related markets by topic for term structure display.
+# ─── Ceasefire Term Structure ────────────────────────────────────────────────
 
-    Detects markets about the same topic but with different time horizons
-    (e.g., "ceasefire by March", "ceasefire by April", "ceasefire by December").
-    """
-    import re
+CEASEFIRE_EVENT_ID = 236840  # US x Iran ceasefire event on Polymarket
 
-    # Normalize question to find groups
-    groups = {}
-    date_patterns = [
-        r'\b(january|february|march|april|may|june|july|august|september|october|november|december)\s*\d{0,2}\s*,?\s*\d{4}\b',
-        r'\b(january|february|march|april|may|june|july|august|september|october|november|december)\s*\d{0,2}\b',
-        r'\b(march|april|may|june|july|august|september|october|november|december)\s+\d{1,2}\b',
-        r'\bon\s+(march|april|may|june|july|august|september|october|november|december)\s+\d{1,2}\b',
-        r'\bby\s+(march|april|may|june|july|august|september|october|november|december)\s*\d{0,2}\b',
-        r'\bin\s+(march|april|may|june|july|august|september|october|november|december)\s*\d{0,4}\b',
-        r'\b(march|april|may|june|july|august|september|october|november|december)\s+\d{4}\b',
-        r'\bq[1-4]\s+\d{4}\b',
-        r'\b\d{4}\b',
-        r'\bends?\s+on\s+\w+\s+\d+',
-        r'\bthis\s+week\b',
-        r'\bweek\s*\(\s*\w+\s+\d+\s*\)',
-    ]
 
+def fetch_ceasefire_term_structure():
+    """Fetch ceasefire event from Polymarket and extract term structure."""
+    print("\nFetching ceasefire term structure (event 236840)...")
+    try:
+        url = f'{POLYMARKET_BASE}/events/{CEASEFIRE_EVENT_ID}'
+        data = _get_json(url)
+    except Exception as e:
+        print(f"  Failed to fetch ceasefire event: {e}")
+        return []
+
+    # data is the event object; markets are nested
+    markets = data.get('markets', [])
+    if not markets:
+        print("  No markets found in ceasefire event")
+        return []
+
+    points = []
     for m in markets:
-        q = m['question'].lower()
-        # Strip date references to get a "topic key"
-        topic = q
-        for pat in date_patterns:
-            topic = re.sub(pat, '__DATE__', topic)
-        # Also strip specific numbers that look like targets (over $80, over $72, etc.)
-        topic = re.sub(r'over\s+\$\d+', 'over $__', topic)
-        topic = re.sub(r'\d+\s+or\s+more', '__N__ or more', topic)
-        topic = re.sub(r'\d+-\d+\s+ships', '__N__ ships', topic)
-        # Clean up
-        topic = re.sub(r'\s+', ' ', topic).strip()
+        question = m.get('question', '')
+        group_title = m.get('groupItemTitle', '')
+        prices_raw = m.get('outcomePrices', [])
 
-        if topic not in groups:
-            groups[topic] = []
-        groups[topic].append({
-            'question': m['question'],
-            'endDate': m['endDate'],
-            'prob': m['probabilities'][0] if m['probabilities'] else None,
-            'volume': m['volume'],
-            'slug': m['slug'],
-        })
+        # Parse prices
+        if isinstance(prices_raw, str):
+            try:
+                prices_raw = json.loads(prices_raw)
+            except (json.JSONDecodeError, TypeError):
+                prices_raw = []
 
-    # Only keep groups with 2+ markets (actual term structure)
-    term_groups = []
-    for topic, items in groups.items():
-        if len(items) >= 2:
-            # Sort by endDate
-            items.sort(key=lambda x: x['endDate'] or '')
-            # Create a readable label from the first question
-            label = items[0]['question']
-            for pat in date_patterns:
-                label = re.sub(pat, '', label, flags=re.IGNORECASE)
-            label = re.sub(r'over\s+\$\d+', '', label)
-            label = re.sub(r'\s+', ' ', label).strip()
-            label = label.rstrip('?., ')
-            if len(label) > 60:
-                label = label[:57] + '...'
+        prob = None
+        if prices_raw:
+            try:
+                prob = round(float(prices_raw[0]) * 100, 1)
+            except (ValueError, TypeError, IndexError):
+                pass
 
-            term_groups.append({
-                'label': label,
-                'points': items,
+        end_date = m.get('endDate', '')
+
+        try:
+            vol = round(float(m.get('volume', 0)))
+        except (ValueError, TypeError):
+            vol = 0
+
+        if prob is not None:
+            points.append({
+                'label': group_title or question,
+                'question': question,
+                'prob': prob,
+                'endDate': end_date,
+                'volume': vol,
             })
 
-    # Sort by number of points (more = more interesting)
-    term_groups.sort(key=lambda x: len(x['points']), reverse=True)
-    return term_groups
+    # Sort by probability (ascending = by maturity timeline)
+    points.sort(key=lambda x: x['prob'])
+
+    print(f"  Found {len(points)} ceasefire maturities:")
+    for p in points:
+        print(f"    {p['label']:>15} → {p['prob']:5.1f}%")
+
+    return points
 
 
 # ─── Main ────────────────────────────────────────────────────────────────────
@@ -398,12 +390,13 @@ def main():
 
     eia = fetch_all_eia()
     pm = fetch_polymarket()
+    ceasefire = fetch_ceasefire_term_structure()
 
     result = {
         'updated': datetime.datetime.now(datetime.timezone.utc).isoformat(),
         'eia': eia,
-        'polymarket': pm['markets'],
-        'pmTermGroups': pm['termGroups'],
+        'polymarket': pm,
+        'ceasefireTermStructure': ceasefire,
     }
 
     with open(output_path, 'w') as f:

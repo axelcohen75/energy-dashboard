@@ -1,7 +1,8 @@
 /**
  * Physical Markets — UI Controller
  *
- * Displays EIA inventory data and Polymarket predictions.
+ * Displays EIA inventory data, Polymarket predictions, ceasefire term structure,
+ * OPEC+ calendar, key dates, and supply analytics.
  * Reads from data/physical-data.json.
  */
 
@@ -21,7 +22,6 @@ async function initPhysicalMarkets() {
     Plotly.newPlot('inventory-chart', [], { ...emptyLayout }, CHART_CONFIG);
     Plotly.newPlot('pm-term-chart', [], { ...emptyLayout }, CHART_CONFIG);
 
-    // Load data
     try {
         const resp = await fetch('data/physical-data.json');
         if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
@@ -34,12 +34,16 @@ async function initPhysicalMarkets() {
 
     renderInventoryPanel();
     renderPolymarketPanels();
-    populatePmTopicSelect();
+    renderCeasefireTermStructure();
+    renderOpecCalendar();
+    renderKeyDates();
+    renderSupplySnapshot();
+    renderVs5YearAvg();
+    renderSeasonalIndicator();
     updateInventoryChart();
-    updatePmTermStructure();
 }
 
-// ─── Inventory Panel (left sidebar) ─────────────────────────────────────────
+// ─── Inventory Panel ────────────────────────────────────────────────────────
 
 const INVENTORY_CONFIG = {
     us_crude_stocks: { label: 'US Crude Oil', color: '#2563eb', colorDark: '#60a5fa' },
@@ -83,7 +87,7 @@ function renderInventoryPanel() {
 
     container.innerHTML = html;
 
-    // Populate dropdown
+    // Populate hidden select for chart logic
     const select = document.getElementById('inv-select');
     if (select && select.options.length === 0) {
         for (const [key, cfg] of Object.entries(INVENTORY_CONFIG)) {
@@ -91,7 +95,6 @@ function renderInventoryPanel() {
                 select.appendChild(new Option(cfg.label, key));
             }
         }
-        // Select first item and highlight
         if (firstKey) {
             select.value = firstKey;
             const firstRow = container.querySelector(`[data-key="${firstKey}"]`);
@@ -121,7 +124,6 @@ function updateInventoryChart() {
     const cfg = INVENTORY_CONFIG[key];
     const color = isDarkMode ? cfg.colorDark : cfg.color;
 
-    // Trim to period
     const start = Math.max(0, series.dates.length - nWeeks);
     const dates = series.dates.slice(start);
     const values = series.values.slice(start);
@@ -131,7 +133,6 @@ function updateInventoryChart() {
     const max = Math.max(...values);
     const decimals = series.unit === 'Bcf' ? 0 : 1;
 
-    // 5-year range if we have enough data
     let rangeBand = null;
     if (series.dates.length > 260) {
         rangeBand = compute5YearRange(series, nWeeks);
@@ -145,8 +146,7 @@ function updateInventoryChart() {
             y: [...rangeBand.high, ...rangeBand.low.slice().reverse()],
             type: 'scatter', fill: 'toself', name: '5Y Range',
             fillcolor: isDarkMode ? 'rgba(148,163,184,0.08)' : 'rgba(148,163,184,0.12)',
-            line: { width: 0 },
-            hoverinfo: 'skip',
+            line: { width: 0 }, hoverinfo: 'skip',
         });
         traces.push({
             x: rangeBand.dates, y: rangeBand.avg,
@@ -218,9 +218,7 @@ function compute5YearRange(series, nWeeks) {
             low.push(Math.min(...prevYears));
             avg.push(prevYears.reduce((a, b) => a + b, 0) / prevYears.length);
         } else {
-            high.push(null);
-            low.push(null);
-            avg.push(null);
+            high.push(null); low.push(null); avg.push(null);
         }
     }
 
@@ -232,7 +230,7 @@ function getWeekOfYear(date) {
     return Math.floor((date - start) / (7 * 24 * 60 * 60 * 1000));
 }
 
-// ─── Polymarket Panels (split into Geopolitics + OPEC/Physical) ─────────────
+// ─── Polymarket Panels ──────────────────────────────────────────────────────
 
 function renderPolymarketPanels() {
     if (!physicalData?.polymarket) return;
@@ -240,15 +238,10 @@ function renderPolymarketPanels() {
     const geoContainer = document.getElementById('pm-geopolitics');
     const opecContainer = document.getElementById('pm-opec-physical');
 
-    const geo = [];
-    const opec = [];
-
+    const geo = [], opec = [];
     for (const m of physicalData.polymarket) {
-        if (m.category === 'opec_physical') {
-            opec.push(m);
-        } else {
-            geo.push(m);
-        }
+        if (m.category === 'opec_physical') opec.push(m);
+        else geo.push(m);
     }
 
     if (geoContainer) geoContainer.innerHTML = renderPmList(geo) || emptyPmHtml('No geopolitics data');
@@ -270,8 +263,7 @@ function renderPmList(markets) {
         else barColor = isDarkMode ? '#f87171' : '#dc2626';
 
         const volStr = vol >= 1000000 ? `$${(vol / 1000000).toFixed(1)}M`
-            : vol >= 1000 ? `$${(vol / 1000).toFixed(0)}K`
-            : `$${vol}`;
+            : vol >= 1000 ? `$${(vol / 1000).toFixed(0)}K` : `$${vol}`;
 
         html += `
             <div class="pm-row">
@@ -293,89 +285,51 @@ function emptyPmHtml(msg) {
     return `<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">${msg}</div>`;
 }
 
-// ─── Polymarket Term Structure ───────────────────────────────────────────────
+// ─── Ceasefire Term Structure ───────────────────────────────────────────────
 
-function populatePmTopicSelect() {
-    const select = document.getElementById('pm-topic-select');
-    if (!select || !physicalData?.pmTermGroups) return;
-
-    select.innerHTML = '';
-    const groups = physicalData.pmTermGroups;
-    if (!groups.length) {
-        select.appendChild(new Option('No term structure data', ''));
-        return;
-    }
-
-    for (let i = 0; i < groups.length; i++) {
-        select.appendChild(new Option(groups[i].label, i.toString()));
-    }
-}
-
-function updatePmTermStructure() {
+function renderCeasefireTermStructure() {
     const cc = getChartColors();
-    const select = document.getElementById('pm-topic-select');
-    if (!select || !physicalData?.pmTermGroups) return;
-
-    const idx = parseInt(select.value);
-    const groups = physicalData.pmTermGroups;
-    if (isNaN(idx) || !groups[idx]) {
+    const points = physicalData?.ceasefireTermStructure;
+    if (!points || !points.length) {
         Plotly.react('pm-term-chart', [], {
             paper_bgcolor: cc.bg, plot_bgcolor: cc.bg,
-            font: { color: cc.text, family: 'Inter, sans-serif', size: 11 },
-            margin: { l: 55, r: 30, t: 25, b: 40 },
+            font: { color: cc.text, size: 11 }, margin: { l: 55, r: 30, t: 25, b: 40 },
         }, CHART_CONFIG);
         return;
     }
 
-    const group = groups[idx];
-    const points = group.points.filter(p => p.prob != null);
+    // Filter out expired (0%) and keep meaningful ones
+    const active = points.filter(p => p.prob > 0);
 
-    if (!points.length) return;
+    const labels = active.map(p => p.label);
+    const probs = active.map(p => p.prob);
+    const colors = active.map(p => {
+        if (p.prob >= 60) return isDarkMode ? '#34d399' : '#059669';
+        if (p.prob >= 30) return isDarkMode ? '#fbbf24' : '#d97706';
+        return isDarkMode ? '#f87171' : '#dc2626';
+    });
 
-    // Build x-axis labels (end dates) and y-axis (probabilities)
-    const labels = [];
-    const probs = [];
-    const hoverTexts = [];
-    const colors = [];
-
-    for (const p of points) {
-        const endDate = p.endDate ? new Date(p.endDate) : null;
-        const label = endDate
-            ? endDate.toLocaleDateString('en-US', { month: 'short', year: '2-digit' })
-            : 'N/A';
-        labels.push(label);
-        probs.push(p.prob);
-        hoverTexts.push(`${p.question}<br>${p.prob.toFixed(1)}%<br>Vol: $${p.volume.toLocaleString()}`);
-
-        // Color by probability
-        if (p.prob >= 70) colors.push(isDarkMode ? '#34d399' : '#059669');
-        else if (p.prob >= 40) colors.push(isDarkMode ? '#fbbf24' : '#d97706');
-        else colors.push(isDarkMode ? '#f87171' : '#dc2626');
-    }
+    const hoverTexts = active.map(p =>
+        `${p.question}<br><b>${p.prob.toFixed(1)}%</b><br>Vol: $${p.volume.toLocaleString()}`);
 
     const traces = [{
-        x: labels,
-        y: probs,
+        x: labels, y: probs,
         type: 'bar',
         marker: { color: colors, line: { width: 0 } },
         text: probs.map(p => `${p.toFixed(0)}%`),
         textposition: 'outside',
         textfont: { size: 11, color: cc.text, family: 'JetBrains Mono, monospace' },
-        hovertext: hoverTexts,
-        hoverinfo: 'text',
+        hovertext: hoverTexts, hoverinfo: 'text',
     }];
 
-    // Also add a line connecting the points
-    if (points.length > 2) {
+    // Connecting line
+    if (active.length > 2) {
         traces.push({
-            x: labels,
-            y: probs,
-            type: 'scatter',
-            mode: 'lines+markers',
+            x: labels, y: probs,
+            type: 'scatter', mode: 'lines+markers',
             line: { color: isDarkMode ? '#60a5fa' : '#2563eb', width: 2, shape: 'spline' },
             marker: { size: 8, color: isDarkMode ? '#60a5fa' : '#2563eb' },
-            showlegend: false,
-            hoverinfo: 'skip',
+            showlegend: false, hoverinfo: 'skip',
         });
     }
 
@@ -385,18 +339,17 @@ function updatePmTermStructure() {
         xaxis: {
             gridcolor: cc.grid, zerolinecolor: cc.zero,
             tickfont: { size: 10, color: cc.muted },
-            title: { text: 'MATURITY', font: { size: 10, color: cc.muted } },
+            title: { text: 'CEASEFIRE DEADLINE', font: { size: 10, color: cc.muted } },
         },
         yaxis: {
             gridcolor: cc.grid, zerolinecolor: cc.zero,
             tickfont: { size: 10, color: cc.muted },
             title: { text: 'PROBABILITY %', font: { size: 11, color: cc.muted } },
-            range: [0, 105],
+            range: [0, Math.max(...probs) + 15],
             ticksuffix: '%',
         },
         margin: { l: 55, r: 30, t: 25, b: 55 },
-        bargap: 0.3,
-        showlegend: false,
+        bargap: 0.3, showlegend: false,
         annotations: [{
             x: 1, y: -0.18, xref: 'paper', yref: 'paper', xanchor: 'right',
             text: 'SOURCE: POLYMARKET', showarrow: false,
@@ -407,12 +360,277 @@ function updatePmTermStructure() {
     Plotly.react('pm-term-chart', traces, layout, CHART_CONFIG);
 }
 
+// ─── OPEC+ Calendar (Left sidebar) ─────────────────────────────────────────
+
+function renderOpecCalendar() {
+    const container = document.getElementById('opec-calendar');
+    if (!container) return;
+
+    // OPEC+ 2026 meeting dates (JMMC + full ministerial)
+    const events = [
+        { date: '2026-02-03', type: 'JMMC', label: '54th JMMC', status: 'past' },
+        { date: '2026-04-05', type: 'JMMC', label: '55th JMMC', status: 'upcoming' },
+        { date: '2026-05-28', type: 'OPEC+', label: '39th OPEC+ Ministerial', status: 'upcoming' },
+        { date: '2026-06-01', type: 'JMMC', label: '56th JMMC', status: 'upcoming' },
+        { date: '2026-08-03', type: 'JMMC', label: '57th JMMC', status: 'upcoming' },
+        { date: '2026-10-05', type: 'JMMC', label: '58th JMMC', status: 'upcoming' },
+        { date: '2026-12-01', type: 'OPEC+', label: '40th OPEC+ Ministerial', status: 'upcoming' },
+    ];
+
+    const now = new Date().toISOString().slice(0, 10);
+    let html = '';
+    for (const evt of events) {
+        const isPast = evt.date < now;
+        const isNext = !isPast && events.filter(e => e.date >= now).indexOf(evt) === 0;
+        const dateObj = new Date(evt.date + 'T12:00:00');
+        const dateStr = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        const typeColor = evt.type === 'OPEC+'
+            ? (isDarkMode ? '#f87171' : '#dc2626')
+            : (isDarkMode ? '#fbbf24' : '#d97706');
+        const opacity = isPast ? '0.4' : '1';
+        const highlight = isNext ? `background:${isDarkMode ? 'rgba(59,130,246,0.1)' : 'rgba(37,99,235,0.05)'};border-radius:4px;` : '';
+
+        html += `<div style="display:flex;align-items:center;gap:8px;padding:4px 6px;opacity:${opacity};${highlight}font-size:11px">
+            <span style="font-family:var(--mono);font-size:10px;color:var(--text-muted);min-width:50px">${dateStr}</span>
+            <span style="font-size:9px;font-weight:700;color:${typeColor};min-width:40px">${evt.type}</span>
+            <span style="color:var(--text);font-size:10px;flex:1">${evt.label}</span>
+            ${isNext ? '<span style="font-size:8px;color:var(--accent);font-weight:600">NEXT</span>' : ''}
+            ${isPast ? '<span style="font-size:8px;color:var(--text-dim)">DONE</span>' : ''}
+        </div>`;
+    }
+
+    container.innerHTML = html;
+}
+
+// ─── Key Dates (Left sidebar) ───────────────────────────────────────────────
+
+function renderKeyDates() {
+    const container = document.getElementById('key-dates');
+    if (!container) return;
+
+    // Recurring key dates
+    const now = new Date();
+    const dates = [];
+
+    // EIA Weekly Petroleum Status Report: Wednesdays 10:30 ET
+    const nextWed = getNextWeekday(now, 3);
+    dates.push({ date: fmtDate(nextWed), label: 'EIA Petroleum Report', type: 'EIA', recurring: 'Weekly Wed' });
+
+    // EIA Natural Gas Storage: Thursdays 10:30 ET
+    const nextThu = getNextWeekday(now, 4);
+    dates.push({ date: fmtDate(nextThu), label: 'EIA Gas Storage', type: 'EIA', recurring: 'Weekly Thu' });
+
+    // FOMC 2026 dates
+    const fomc = ['2026-03-18', '2026-05-06', '2026-06-17', '2026-07-29', '2026-09-16', '2026-11-04', '2026-12-16'];
+    const nowStr = now.toISOString().slice(0, 10);
+    const nextFomc = fomc.find(d => d >= nowStr);
+    if (nextFomc) {
+        dates.push({ date: nextFomc, label: 'FOMC Decision', type: 'FED', recurring: '' });
+    }
+
+    // US CPI release (typically mid-month)
+    const cpiDates = ['2026-03-12', '2026-04-10', '2026-05-13', '2026-06-10', '2026-07-14'];
+    const nextCpi = cpiDates.find(d => d >= nowStr);
+    if (nextCpi) {
+        dates.push({ date: nextCpi, label: 'US CPI Release', type: 'ECON', recurring: '' });
+    }
+
+    dates.sort((a, b) => a.date.localeCompare(b.date));
+
+    let html = '';
+    for (const d of dates) {
+        const dateObj = new Date(d.date + 'T12:00:00');
+        const dateStr = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        const typeColor = d.type === 'EIA' ? (isDarkMode ? '#22d3ee' : '#0891b2')
+            : d.type === 'FED' ? (isDarkMode ? '#a78bfa' : '#7c3aed')
+            : (isDarkMode ? '#fbbf24' : '#d97706');
+
+        html += `<div style="display:flex;align-items:center;gap:8px;padding:3px 6px;font-size:11px">
+            <span style="font-family:var(--mono);font-size:10px;color:var(--text-muted);min-width:50px">${dateStr}</span>
+            <span style="font-size:8px;font-weight:700;color:${typeColor};min-width:30px">${d.type}</span>
+            <span style="color:var(--text);font-size:10px;flex:1">${d.label}</span>
+            ${d.recurring ? `<span style="font-size:8px;color:var(--text-dim)">${d.recurring}</span>` : ''}
+        </div>`;
+    }
+
+    container.innerHTML = html;
+}
+
+function getNextWeekday(from, targetDay) {
+    const d = new Date(from);
+    const diff = (targetDay - d.getDay() + 7) % 7 || 7;
+    d.setDate(d.getDate() + diff);
+    return d;
+}
+
+function fmtDate(d) {
+    return d.toISOString().slice(0, 10);
+}
+
+// ─── Right Sidebar: Supply Snapshot ─────────────────────────────────────────
+
+function renderSupplySnapshot() {
+    const container = document.getElementById('supply-snapshot');
+    if (!container || !physicalData?.eia) return;
+
+    let html = '<div style="font-size:10px">';
+    html += '<div style="color:var(--text-dim);font-size:9px;margin-bottom:6px;font-family:var(--mono)">WEEK-OVER-WEEK CHANGES</div>';
+
+    for (const [key, cfg] of Object.entries(INVENTORY_CONFIG)) {
+        const series = physicalData.eia[key];
+        if (!series || series.values.length < 2) continue;
+
+        const vals = series.values;
+        const latest = vals[vals.length - 1];
+        const prev = vals[vals.length - 2];
+        const change = latest - prev;
+        const pctChange = (change / prev * 100);
+        const decimals = series.unit === 'Bcf' ? 0 : 1;
+
+        const color = isDarkMode ? cfg.colorDark : cfg.color;
+        const chgColor = change >= 0
+            ? (isDarkMode ? '#34d399' : '#059669')
+            : (isDarkMode ? '#f87171' : '#dc2626');
+        const arrow = change >= 0 ? '▲' : '▼';
+
+        html += `<div style="display:flex;justify-content:space-between;align-items:center;padding:4px 0;border-bottom:1px solid var(--input-border)">
+            <span style="color:${color};font-weight:500;font-size:10px">${cfg.label}</span>
+            <span style="font-family:var(--mono);font-size:10px;color:${chgColor}">
+                ${arrow} ${Math.abs(change).toFixed(decimals)} <span style="font-size:8px">(${pctChange >= 0 ? '+' : ''}${pctChange.toFixed(1)}%)</span>
+            </span>
+        </div>`;
+    }
+    html += '</div>';
+
+    // Last update
+    if (physicalData.updated) {
+        const upd = new Date(physicalData.updated);
+        html += `<div style="font-size:8px;color:var(--text-dim);font-family:var(--mono);margin-top:6px;text-align:right">
+            Updated: ${upd.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} ${upd.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}
+        </div>`;
+    }
+
+    container.innerHTML = html;
+}
+
+// ─── Right Sidebar: vs 5-Year Average ───────────────────────────────────────
+
+function renderVs5YearAvg() {
+    const container = document.getElementById('inv-vs-avg');
+    if (!container || !physicalData?.eia) return;
+
+    let html = '<div style="font-size:10px">';
+
+    for (const [key, cfg] of Object.entries(INVENTORY_CONFIG)) {
+        const series = physicalData.eia[key];
+        if (!series || series.values.length < 260) continue;
+
+        const vals = series.values;
+        const dates = series.dates;
+        const latest = vals[vals.length - 1];
+        const latestDate = new Date(dates[dates.length - 1]);
+        const week = getWeekOfYear(latestDate);
+
+        // Compute 5-year avg for this week
+        const weekMap = {};
+        for (let i = 0; i < dates.length; i++) {
+            const d = new Date(dates[i]);
+            const w = getWeekOfYear(d);
+            const y = d.getFullYear();
+            if (!weekMap[w]) weekMap[w] = {};
+            weekMap[w][y] = vals[i];
+        }
+
+        const currentYear = latestDate.getFullYear();
+        const yearVals = weekMap[week] || {};
+        const prevYears = Object.entries(yearVals)
+            .filter(([y]) => parseInt(y) < currentYear && parseInt(y) >= currentYear - 5)
+            .map(([, v]) => v);
+
+        if (prevYears.length === 0) continue;
+
+        const avg5y = prevYears.reduce((a, b) => a + b, 0) / prevYears.length;
+        const diff = latest - avg5y;
+        const pctDiff = (diff / avg5y * 100);
+        const decimals = series.unit === 'Bcf' ? 0 : 1;
+
+        const color = isDarkMode ? cfg.colorDark : cfg.color;
+        const diffColor = diff >= 0
+            ? (isDarkMode ? '#34d399' : '#059669')
+            : (isDarkMode ? '#f87171' : '#dc2626');
+
+        // Visual bar showing position relative to 5y range
+        const min5y = Math.min(...prevYears);
+        const max5y = Math.max(...prevYears);
+        const range = max5y - min5y || 1;
+        const pct = Math.max(0, Math.min(100, ((latest - min5y) / range) * 100));
+
+        html += `<div style="padding:5px 0;border-bottom:1px solid var(--input-border)">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+                <span style="color:${color};font-weight:500;font-size:10px">${cfg.label}</span>
+                <span style="font-family:var(--mono);font-size:10px;color:${diffColor}">
+                    ${diff >= 0 ? '+' : ''}${diff.toFixed(decimals)} (${pctDiff >= 0 ? '+' : ''}${pctDiff.toFixed(1)}%)
+                </span>
+            </div>
+            <div style="height:4px;background:var(--input-bg);border-radius:2px;margin-top:3px;position:relative">
+                <div style="position:absolute;left:0;top:0;height:100%;width:${pct}%;background:${color};border-radius:2px;opacity:0.6"></div>
+                <div style="position:absolute;left:${pct}%;top:-2px;width:3px;height:8px;background:${color};border-radius:1px;transform:translateX(-50%)"></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:8px;color:var(--text-dim);font-family:var(--mono);margin-top:1px">
+                <span>5Y Min: ${min5y.toFixed(decimals)}</span>
+                <span>5Y Max: ${max5y.toFixed(decimals)}</span>
+            </div>
+        </div>`;
+    }
+    html += '</div>';
+    container.innerHTML = html;
+}
+
+// ─── Right Sidebar: Seasonal Pattern ────────────────────────────────────────
+
+function renderSeasonalIndicator() {
+    const container = document.getElementById('seasonal-indicator');
+    if (!container) return;
+
+    const now = new Date();
+    const month = now.getMonth(); // 0-11
+
+    const seasons = [
+        { name: 'Refinery Maintenance', months: [2, 3], desc: 'Spring turnaround — lower runs, crude builds', color: '#d97706' },
+        { name: 'Summer Driving Season', months: [4, 5, 6, 7], desc: 'Peak gasoline demand — draws accelerate', color: '#dc2626' },
+        { name: 'Hurricane Season', months: [5, 6, 7, 8, 9, 10], desc: 'Gulf supply risk — Jun-Nov', color: '#7c3aed' },
+        { name: 'Winter Heating', months: [10, 11, 0, 1], desc: 'Peak distillate & NG demand', color: '#2563eb' },
+        { name: 'NG Injection Season', months: [3, 4, 5, 6, 7, 8, 9], desc: 'Apr-Oct — storage builds', color: '#059669' },
+        { name: 'NG Withdrawal Season', months: [10, 11, 0, 1, 2], desc: 'Nov-Mar — storage draws', color: '#0891b2' },
+    ];
+
+    let html = '';
+    for (const s of seasons) {
+        const isActive = s.months.includes(month);
+        const opacity = isActive ? '1' : '0.35';
+        const activeColor = isDarkMode ? s.color + 'cc' : s.color;
+        const indicator = isActive ? `<span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:${activeColor};margin-right:4px;animation:pulse 2s infinite"></span>` : '';
+
+        html += `<div style="padding:4px 6px;opacity:${opacity};font-size:10px;${isActive ? `border-left:2px solid ${activeColor};` : ''}">
+            <div style="color:${isActive ? activeColor : 'var(--text-muted)'};font-weight:${isActive ? '600' : '400'};font-size:10px">${indicator}${s.name}</div>
+            <div style="color:var(--text-dim);font-size:9px;margin-top:1px">${s.desc}</div>
+        </div>`;
+    }
+
+    container.innerHTML = html;
+}
+
 // ─── Refresh on theme change ────────────────────────────────────────────────
 
 function refreshPhysicalMarkets() {
     if (!physicalInitialized) return;
     renderInventoryPanel();
     renderPolymarketPanels();
+    renderCeasefireTermStructure();
+    renderOpecCalendar();
+    renderKeyDates();
+    renderSupplySnapshot();
+    renderVs5YearAvg();
+    renderSeasonalIndicator();
     updateInventoryChart();
-    updatePmTermStructure();
 }

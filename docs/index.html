@@ -435,29 +435,30 @@
     <!-- ─── LEFT SIDEBAR ─── -->
     <div class="col-left">
 
-        <!-- Inventory Controls -->
-        <div class="panel">
-            <div class="lbl">US INVENTORIES</div>
-            <div class="mt-8">
-                <div class="lbl lbl-sm">SERIES</div>
-                <select id="inv-select"></select>
-            </div>
-            <div class="mt-8">
-                <div class="lbl lbl-sm">PERIOD</div>
-                <select id="inv-period">
-                    <option value="26">6 MONTHS</option>
-                    <option value="52">1 YEAR</option>
-                    <option value="104">2 YEARS</option>
-                    <option value="260" selected>5 YEARS</option>
-                </select>
-            </div>
-            <button class="btn btn-accent btn-full mt-10" onclick="updateInventoryChart()">REFRESH</button>
-        </div>
-
         <!-- Inventory Summary -->
         <div class="panel">
-            <div class="lbl">INVENTORY LEVELS</div>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+                <div class="lbl">INVENTORY LEVELS</div>
+                <select id="inv-period" onchange="updateInventoryChart()" style="width:80px;font-size:9px;padding:2px 4px">
+                    <option value="52">1Y</option>
+                    <option value="104">2Y</option>
+                    <option value="260" selected>5Y</option>
+                </select>
+            </div>
+            <select id="inv-select" style="display:none"></select>
             <div id="inventory-table" class="mt-8"></div>
+        </div>
+
+        <!-- OPEC+ Calendar -->
+        <div class="panel">
+            <div class="lbl">OPEC+ CALENDAR</div>
+            <div id="opec-calendar" class="mt-8"></div>
+        </div>
+
+        <!-- Key Dates -->
+        <div class="panel">
+            <div class="lbl">KEY DATES</div>
+            <div id="key-dates" class="mt-8"></div>
         </div>
     </div>
 
@@ -507,20 +508,14 @@
             </div>
         </div>
 
-        <!-- Polymarket Term Structure -->
+        <!-- Ceasefire Term Structure -->
         <div class="charts-row charts-row-single">
             <div class="chart-box">
                 <div class="panel">
                     <div class="chart-header">
                         <div>
-                            <div class="lbl" style="font-size:12px;margin-bottom:0">PREDICTION TERM STRUCTURE</div>
-                            <div class="sub-label">PROBABILITY BY MATURITY // SELECT A TOPIC</div>
-                        </div>
-                        <div class="flex-row">
-                            <div>
-                                <div class="lbl lbl-sm">TOPIC</div>
-                                <select id="pm-topic-select" onchange="updatePmTermStructure()" style="width:220px"></select>
-                            </div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">US × IRAN CEASEFIRE — TERM STRUCTURE</div>
+                            <div class="sub-label">PROBABILITY BY MATURITY // POLYMARKET</div>
                         </div>
                     </div>
                     <div id="pm-term-chart" class="chart-plot"></div>
@@ -530,8 +525,28 @@
 
     </div>
 
-    <!-- ─── RIGHT SIDEBAR (empty for now) ─── -->
-    <div class="col-right"></div>
+    <!-- ─── RIGHT SIDEBAR ─── -->
+    <div class="col-right">
+
+        <!-- Supply Snapshot -->
+        <div class="panel">
+            <div class="lbl">SUPPLY SNAPSHOT</div>
+            <div id="supply-snapshot" class="mt-8"></div>
+        </div>
+
+        <!-- Inventory vs 5Y Avg -->
+        <div class="panel">
+            <div class="lbl">VS 5-YEAR AVERAGE</div>
+            <div id="inv-vs-avg" class="mt-8"></div>
+        </div>
+
+        <!-- Seasonal Indicator -->
+        <div class="panel">
+            <div class="lbl">SEASONAL PATTERN</div>
+            <div id="seasonal-indicator" class="mt-8"></div>
+        </div>
+
+    </div>
 </div>
 </div>
 
