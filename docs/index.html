@@ -440,17 +440,15 @@
             <div class="lbl">US INVENTORIES</div>
             <div class="mt-8">
                 <div class="lbl lbl-sm">SERIES</div>
-                <select id="inv-select">
-                    <option value="us_crude_stocks">US Crude Oil</option>
-                </select>
+                <select id="inv-select"></select>
             </div>
             <div class="mt-8">
                 <div class="lbl lbl-sm">PERIOD</div>
                 <select id="inv-period">
                     <option value="26">6 MONTHS</option>
                     <option value="52">1 YEAR</option>
-                    <option value="104" selected>2 YEARS</option>
-                    <option value="260">5 YEARS</option>
+                    <option value="104">2 YEARS</option>
+                    <option value="260" selected>5 YEARS</option>
                 </select>
             </div>
             <button class="btn btn-accent btn-full mt-10" onclick="updateInventoryChart()">REFRESH</button>
@@ -481,17 +479,51 @@
             </div>
         </div>
 
-        <!-- Polymarket Section -->
+        <!-- Polymarket Sections -->
+        <div class="charts-row">
+            <!-- Geopolitics -->
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">GEOPOLITICS</div>
+                            <div class="sub-label">PREDICTION MARKETS // CONFLICTS & SANCTIONS</div>
+                        </div>
+                    </div>
+                    <div id="pm-geopolitics" class="pm-container"></div>
+                </div>
+            </div>
+            <!-- OPEC / Physical Impact -->
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">OPEC / PHYSICAL IMPACT</div>
+                            <div class="sub-label">PREDICTION MARKETS // SUPPLY & PRICE DECISIONS</div>
+                        </div>
+                    </div>
+                    <div id="pm-opec-physical" class="pm-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Polymarket Term Structure -->
         <div class="charts-row charts-row-single">
             <div class="chart-box">
                 <div class="panel">
                     <div class="chart-header">
                         <div>
-                            <div class="lbl" style="font-size:12px;margin-bottom:0">POLYMARKET — ENERGY & GEOPOLITICS</div>
-                            <div class="sub-label">PREDICTION MARKETS // LIVE PROBABILITIES</div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">PREDICTION TERM STRUCTURE</div>
+                            <div class="sub-label">PROBABILITY BY MATURITY // SELECT A TOPIC</div>
+                        </div>
+                        <div class="flex-row">
+                            <div>
+                                <div class="lbl lbl-sm">TOPIC</div>
+                                <select id="pm-topic-select" onchange="updatePmTermStructure()" style="width:220px"></select>
+                            </div>
                         </div>
                     </div>
-                    <div id="polymarket-list" class="pm-container"></div>
+                    <div id="pm-term-chart" class="chart-plot"></div>
                 </div>
             </div>
         </div>

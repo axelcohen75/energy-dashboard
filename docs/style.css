@@ -390,10 +390,11 @@ input[type="range"]::-moz-range-thumb {
 
 /* ─── Polymarket ─── */
 .pm-container {
-    max-height: 50vh;
+    max-height: 40vh;
     overflow-y: auto;
     padding: 4px 0;
 }
+.pm-expiry { white-space: nowrap; }
 .pm-row {
     padding: 8px 10px;
     border-bottom: 1px solid var(--input-border);

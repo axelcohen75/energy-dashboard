@@ -19,6 +19,7 @@ async function initPhysicalMarkets() {
         margin: { l: 55, r: 30, t: 25, b: 40 },
     };
     Plotly.newPlot('inventory-chart', [], { ...emptyLayout }, CHART_CONFIG);
+    Plotly.newPlot('pm-term-chart', [], { ...emptyLayout }, CHART_CONFIG);
 
     // Load data
     try {
@@ -32,8 +33,10 @@ async function initPhysicalMarkets() {
     }
 
     renderInventoryPanel();
-    renderPolymarketPanel();
+    renderPolymarketPanels();
+    populatePmTopicSelect();
     updateInventoryChart();
+    updatePmTermStructure();
 }
 
 // ─── Inventory Panel (left sidebar) ─────────────────────────────────────────
@@ -52,9 +55,11 @@ function renderInventoryPanel() {
     if (!container || !physicalData?.eia) return;
 
     let html = '';
+    let firstKey = null;
     for (const [key, cfg] of Object.entries(INVENTORY_CONFIG)) {
         const series = physicalData.eia[key];
         if (!series) continue;
+        if (!firstKey) firstKey = key;
 
         const vals = series.values;
         const latest = vals[vals.length - 1];
@@ -80,11 +85,17 @@ function renderInventoryPanel() {
 
     // Populate dropdown
     const select = document.getElementById('inv-select');
-    if (select && select.options.length <= 1) {
+    if (select && select.options.length === 0) {
         for (const [key, cfg] of Object.entries(INVENTORY_CONFIG)) {
             if (physicalData.eia[key]) {
                 select.appendChild(new Option(cfg.label, key));
             }
+        }
+        // Select first item and highlight
+        if (firstKey) {
+            select.value = firstKey;
+            const firstRow = container.querySelector(`[data-key="${firstKey}"]`);
+            if (firstRow) firstRow.classList.add('active');
         }
     }
 }
@@ -92,7 +103,6 @@ function renderInventoryPanel() {
 function selectInventory(key) {
     document.getElementById('inv-select').value = key;
     updateInventoryChart();
-    // Highlight active row
     document.querySelectorAll('.inv-row').forEach(r => {
         r.classList.toggle('active', r.dataset.key === key);
     });
@@ -103,7 +113,7 @@ function selectInventory(key) {
 function updateInventoryChart() {
     const cc = getChartColors();
     const key = document.getElementById('inv-select').value;
-    const nWeeks = parseInt(document.getElementById('inv-period').value) || 104;
+    const nWeeks = parseInt(document.getElementById('inv-period').value) || 260;
 
     if (!key || !physicalData?.eia?.[key]) return;
 
@@ -116,7 +126,6 @@ function updateInventoryChart() {
     const dates = series.dates.slice(start);
     const values = series.values.slice(start);
 
-    const mean = values.reduce((a, b) => a + b, 0) / values.length;
     const current = values[values.length - 1];
     const min = Math.min(...values);
     const max = Math.max(...values);
@@ -130,7 +139,6 @@ function updateInventoryChart() {
 
     const traces = [];
 
-    // 5-year range band
     if (rangeBand) {
         traces.push({
             x: [...rangeBand.dates, ...rangeBand.dates.slice().reverse()],
@@ -183,8 +191,7 @@ function updateInventoryChart() {
 }
 
 function compute5YearRange(series, nWeeks) {
-    // Compute week-of-year stats from last 5 years of data
-    const weekMap = {}; // weekOfYear → [values]
+    const weekMap = {};
     for (let i = 0; i < series.dates.length; i++) {
         const d = new Date(series.dates[i]);
         const week = getWeekOfYear(d);
@@ -193,21 +200,15 @@ function compute5YearRange(series, nWeeks) {
         weekMap[week][year] = series.values[i];
     }
 
-    // Get dates for the current period
     const start = Math.max(0, series.dates.length - nWeeks);
     const dates = series.dates.slice(start);
-
-    const high = [];
-    const low = [];
-    const avg = [];
+    const high = [], low = [], avg = [];
 
     for (const dateStr of dates) {
         const d = new Date(dateStr);
         const week = getWeekOfYear(d);
         const currentYear = d.getFullYear();
         const yearVals = weekMap[week] || {};
-
-        // Get values from previous 5 years (excluding current)
         const prevYears = Object.entries(yearVals)
             .filter(([y]) => parseInt(y) < currentYear && parseInt(y) >= currentYear - 5)
             .map(([, v]) => v);
@@ -231,21 +232,38 @@ function getWeekOfYear(date) {
     return Math.floor((date - start) / (7 * 24 * 60 * 60 * 1000));
 }
 
-// ─── Polymarket Panel ───────────────────────────────────────────────────────
+// ─── Polymarket Panels (split into Geopolitics + OPEC/Physical) ─────────────
 
-function renderPolymarketPanel() {
-    const container = document.getElementById('polymarket-list');
-    if (!container || !physicalData?.polymarket) return;
+function renderPolymarketPanels() {
+    if (!physicalData?.polymarket) return;
 
-    let html = '';
+    const geoContainer = document.getElementById('pm-geopolitics');
+    const opecContainer = document.getElementById('pm-opec-physical');
+
+    const geo = [];
+    const opec = [];
+
     for (const m of physicalData.polymarket) {
-        const outcomes = m.outcomes || [];
+        if (m.category === 'opec_physical') {
+            opec.push(m);
+        } else {
+            geo.push(m);
+        }
+    }
+
+    if (geoContainer) geoContainer.innerHTML = renderPmList(geo) || emptyPmHtml('No geopolitics data');
+    if (opecContainer) opecContainer.innerHTML = renderPmList(opec) || emptyPmHtml('No OPEC/physical data');
+}
+
+function renderPmList(markets) {
+    let html = '';
+    for (const m of markets) {
         const probs = m.probabilities || [];
         const mainProb = probs[0] || 0;
         const question = m.question || '';
         const vol = m.volume || 0;
+        const endDate = m.endDate ? new Date(m.endDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: '2-digit' }) : '';
 
-        // Color based on probability
         let barColor;
         if (mainProb >= 70) barColor = isDarkMode ? '#34d399' : '#059669';
         else if (mainProb >= 40) barColor = isDarkMode ? '#fbbf24' : '#d97706';
@@ -264,15 +282,129 @@ function renderPolymarketPanel() {
                 <div class="pm-stats">
                     <span class="pm-prob" style="color:${barColor}">${mainProb.toFixed(0)}%</span>
                     <span class="pm-vol">${volStr}</span>
+                    <span class="pm-expiry" style="color:var(--text-dim);font-size:9px;margin-left:4px">${endDate}</span>
                 </div>
             </div>`;
     }
+    return html;
+}
 
-    if (!html) {
-        html = '<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">No Polymarket data</div>';
+function emptyPmHtml(msg) {
+    return `<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">${msg}</div>`;
+}
+
+// ─── Polymarket Term Structure ───────────────────────────────────────────────
+
+function populatePmTopicSelect() {
+    const select = document.getElementById('pm-topic-select');
+    if (!select || !physicalData?.pmTermGroups) return;
+
+    select.innerHTML = '';
+    const groups = physicalData.pmTermGroups;
+    if (!groups.length) {
+        select.appendChild(new Option('No term structure data', ''));
+        return;
     }
 
-    container.innerHTML = html;
+    for (let i = 0; i < groups.length; i++) {
+        select.appendChild(new Option(groups[i].label, i.toString()));
+    }
+}
+
+function updatePmTermStructure() {
+    const cc = getChartColors();
+    const select = document.getElementById('pm-topic-select');
+    if (!select || !physicalData?.pmTermGroups) return;
+
+    const idx = parseInt(select.value);
+    const groups = physicalData.pmTermGroups;
+    if (isNaN(idx) || !groups[idx]) {
+        Plotly.react('pm-term-chart', [], {
+            paper_bgcolor: cc.bg, plot_bgcolor: cc.bg,
+            font: { color: cc.text, family: 'Inter, sans-serif', size: 11 },
+            margin: { l: 55, r: 30, t: 25, b: 40 },
+        }, CHART_CONFIG);
+        return;
+    }
+
+    const group = groups[idx];
+    const points = group.points.filter(p => p.prob != null);
+
+    if (!points.length) return;
+
+    // Build x-axis labels (end dates) and y-axis (probabilities)
+    const labels = [];
+    const probs = [];
+    const hoverTexts = [];
+    const colors = [];
+
+    for (const p of points) {
+        const endDate = p.endDate ? new Date(p.endDate) : null;
+        const label = endDate
+            ? endDate.toLocaleDateString('en-US', { month: 'short', year: '2-digit' })
+            : 'N/A';
+        labels.push(label);
+        probs.push(p.prob);
+        hoverTexts.push(`${p.question}<br>${p.prob.toFixed(1)}%<br>Vol: $${p.volume.toLocaleString()}`);
+
+        // Color by probability
+        if (p.prob >= 70) colors.push(isDarkMode ? '#34d399' : '#059669');
+        else if (p.prob >= 40) colors.push(isDarkMode ? '#fbbf24' : '#d97706');
+        else colors.push(isDarkMode ? '#f87171' : '#dc2626');
+    }
+
+    const traces = [{
+        x: labels,
+        y: probs,
+        type: 'bar',
+        marker: { color: colors, line: { width: 0 } },
+        text: probs.map(p => `${p.toFixed(0)}%`),
+        textposition: 'outside',
+        textfont: { size: 11, color: cc.text, family: 'JetBrains Mono, monospace' },
+        hovertext: hoverTexts,
+        hoverinfo: 'text',
+    }];
+
+    // Also add a line connecting the points
+    if (points.length > 2) {
+        traces.push({
+            x: labels,
+            y: probs,
+            type: 'scatter',
+            mode: 'lines+markers',
+            line: { color: isDarkMode ? '#60a5fa' : '#2563eb', width: 2, shape: 'spline' },
+            marker: { size: 8, color: isDarkMode ? '#60a5fa' : '#2563eb' },
+            showlegend: false,
+            hoverinfo: 'skip',
+        });
+    }
+
+    const layout = {
+        paper_bgcolor: cc.bg, plot_bgcolor: cc.bg,
+        font: { color: cc.text, family: 'Inter, sans-serif', size: 11 },
+        xaxis: {
+            gridcolor: cc.grid, zerolinecolor: cc.zero,
+            tickfont: { size: 10, color: cc.muted },
+            title: { text: 'MATURITY', font: { size: 10, color: cc.muted } },
+        },
+        yaxis: {
+            gridcolor: cc.grid, zerolinecolor: cc.zero,
+            tickfont: { size: 10, color: cc.muted },
+            title: { text: 'PROBABILITY %', font: { size: 11, color: cc.muted } },
+            range: [0, 105],
+            ticksuffix: '%',
+        },
+        margin: { l: 55, r: 30, t: 25, b: 55 },
+        bargap: 0.3,
+        showlegend: false,
+        annotations: [{
+            x: 1, y: -0.18, xref: 'paper', yref: 'paper', xanchor: 'right',
+            text: 'SOURCE: POLYMARKET', showarrow: false,
+            font: { size: 9, color: cc.dim, family: 'JetBrains Mono, monospace' },
+        }],
+    };
+
+    Plotly.react('pm-term-chart', traces, layout, CHART_CONFIG);
 }
 
 // ─── Refresh on theme change ────────────────────────────────────────────────
@@ -280,6 +412,7 @@ function renderPolymarketPanel() {
 function refreshPhysicalMarkets() {
     if (!physicalInitialized) return;
     renderInventoryPanel();
-    renderPolymarketPanel();
+    renderPolymarketPanels();
     updateInventoryChart();
+    updatePmTermStructure();
 }
