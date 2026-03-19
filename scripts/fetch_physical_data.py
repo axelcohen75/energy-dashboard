@@ -96,8 +96,8 @@ EIA_SERIES = {
 NG_STORAGE_REGIONS = ['R31', 'R32', 'R33', 'R34', 'R35']
 
 
-def fetch_eia_series(key, cfg, n_weeks=260):
-    """Fetch weekly EIA data (5 years by default)."""
+def fetch_eia_series(key, cfg, n_weeks=5000):
+    """Fetch weekly EIA data (max history)."""
     params = {
         'api_key': EIA_KEY,
         'frequency': 'weekly',
@@ -139,7 +139,7 @@ def fetch_eia_series(key, cfg, n_weeks=260):
         return None
 
 
-def fetch_ng_storage(n_weeks=260):
+def fetch_ng_storage(n_weeks=5000):
     """Fetch US NG working gas storage — sum of all regions."""
     print("  Fetching NG storage (summing regions)...")
     params = {
