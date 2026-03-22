@@ -513,27 +513,28 @@ input[type="range"]::-moz-range-thumb {
 }
 .spot-row-active .spot-name { font-weight: 700; }
 .spot-name {
-    flex: 1;
     font-weight: 500;
     font-size: 11px;
     color: var(--text);
     white-space: nowrap;
-    min-width: 0;
+}
+.spot-val {
+    text-align: right;
+    margin-left: auto;
+    padding-left: 8px;
+    white-space: nowrap;
 }
 .spot-price {
     font-family: var(--mono);
     font-weight: 600;
     font-size: 12px;
     color: var(--accent);
-    text-align: right;
-    margin-left: 6px;
 }
 .spot-unit {
+    font-family: var(--mono);
     font-size: 9px;
     color: var(--text-dim);
-    text-align: right;
-    margin-left: 4px;
-    white-space: nowrap;
+    margin-left: 3px;
 }
 
 /* ─── Spread Dashboard (Energy Markets) ─── */

@@ -192,8 +192,10 @@ function renderSpotPrices(loaded) {
                 <div class="spot-name" style="border-left: 3px solid ${color}; padding-left: 8px">
                     ${shortName}
                 </div>
-                <div class="spot-price">${loaded ? price.toFixed(decimals) : '...'}</div>
-                <div class="spot-unit">${cfg.unit}</div>
+                <div class="spot-val">
+                    <span class="spot-price">${loaded ? price.toFixed(decimals) : '...'}</span>
+                    <span class="spot-unit">${cfg.unit}</span>
+                </div>
             </div>`;
     }
 
