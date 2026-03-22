@@ -181,7 +181,7 @@ function renderSpotPrices(loaded) {
             .replace('Brent Crude Oil (BZ)', 'Brent Crude')
             .replace('Henry Hub Nat Gas (NG)', 'HH Nat Gas')
             .replace('TTF Natural Gas', 'TTF Gas')
-            .replace('RBOB Gasoline (RB)', 'RBOB Gas')
+            .replace('RBOB Gasoline (RB)', 'RBOB Gasoline')
             .replace('Heating Oil (HO)', 'Heating Oil');
         const color = isDarkMode ? cfg.colorDark : cfg.color;
         const decimals = price != null && price < 10 ? 3 : 2;
@@ -226,7 +226,7 @@ function renderSpreadDashboard() {
             ? (isDarkMode ? '#34d399' : '#059669')
             : (isDarkMode ? '#f87171' : '#dc2626');
 
-        const shortName = name.replace(' Spread', '').replace('Gasoline Crack', 'Gas Crack').replace('Heating Oil Crack', 'HO Crack');
+        const shortName = name.replace(' Spread', '').replace('Gasoline Crack', 'RBOB Crack').replace('Heating Oil Crack', 'HO Crack');
 
         html += `
             <div class="spread-row" onclick="selectSpread('${name}')" title="${def.description}">
