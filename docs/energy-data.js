@@ -128,6 +128,16 @@ async function loadMarketData() {
             }
         }
 
+        // Fallback: use front-month futures price when spot is missing
+        if (marketData.termStructures) {
+            for (const [name, ts] of Object.entries(marketData.termStructures)) {
+                if (liveSpots[name] == null && ts.prices && ts.prices.length > 0) {
+                    liveSpots[name] = ts.prices[0];
+                    console.log(`[Market Data] Using front-month as spot for ${name}: ${ts.prices[0]}`);
+                }
+            }
+        }
+
         console.log(`[Market Data] Loaded — updated ${marketData.updated}`);
         return marketData;
     } catch (e) {
