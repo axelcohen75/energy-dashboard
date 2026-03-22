@@ -163,34 +163,56 @@ def scrape_with_playwright():
                 if url and url != 'about:blank':
                     print(f"    Frame: {url[:120]}")
 
-            target_frame = page
+            # Find the QuikStrike OPEC Watch iframe and wait for it
+            qs_frames = []
             for frame in iframes:
                 url = frame.url
-                if 'quikstrike' in url.lower() or 'opec' in url.lower():
-                    print(f"  Switching to iframe: {url}")
-                    target_frame = frame
-                    time.sleep(5)  # Let iframe content load
-                    break
+                if 'quikstrike' in url.lower() and 'opecwatch' in url.lower():
+                    qs_frames.insert(0, frame)  # prioritize OPEC-specific
+                elif 'quikstrike' in url.lower():
+                    qs_frames.append(frame)
 
-            # Strategy 1: Look for probability data in tables
-            meetings = extract_from_tables(target_frame)
+            if qs_frames:
+                target_frame = qs_frames[0]
+                print(f"  Using QuikStrike frame: {target_frame.url[:120]}")
+                # Wait for the iframe content to fully render
+                print("  Waiting 15s for QuikStrike iframe to render...")
+                time.sleep(15)
 
-            # Strategy 2: Look for probability data in any text content
+                # Dump iframe content for debugging
+                try:
+                    qs_content = target_frame.content()
+                    print(f"  QuikStrike iframe content length: {len(qs_content)}")
+                    # Log visible text (stripped of HTML)
+                    qs_text = re.sub(r'<[^>]+>', ' ', qs_content)
+                    qs_text = re.sub(r'\s+', ' ', qs_text).strip()
+                    print(f"  QuikStrike text (first 1000): {qs_text[:1000]}")
+                except Exception as e:
+                    print(f"  Could not read iframe content: {e}")
+            else:
+                target_frame = page
+                print("  No QuikStrike iframe found, using main page")
+
+            # Strategy 1: Extract from QuikStrike iframe
+            meetings = extract_from_frame(target_frame)
+
+            # Strategy 2: Try all QuikStrike frames
             if not meetings:
-                meetings = extract_from_text(target_frame)
+                for frame in qs_frames[1:]:
+                    print(f"  Trying alt QuikStrike frame: {frame.url[:80]}...")
+                    time.sleep(5)
+                    meetings = extract_from_frame(frame)
+                    if meetings:
+                        break
 
-            # Strategy 3: Try all frames
+            # Strategy 3: Try all other frames
             if not meetings:
                 for frame in iframes:
-                    if frame == page.main_frame:
+                    if frame == page.main_frame or frame in qs_frames:
                         continue
                     if not frame.url or frame.url == 'about:blank':
                         continue
-                    print(f"  Trying frame: {frame.url[:80]}...")
-                    meetings = extract_from_tables(frame)
-                    if meetings:
-                        break
-                    meetings = extract_from_text(frame)
+                    meetings = extract_from_frame(frame)
                     if meetings:
                         break
 
@@ -210,7 +232,6 @@ def scrape_with_playwright():
             # Strategy 5: Dump page content for debugging
             if not meetings:
                 content = page.content()
-                # Log a snippet for debugging in CI logs
                 print(f"  Page content length: {len(content)}")
                 print(f"  Page snippet: {content[:500]}")
 
@@ -222,60 +243,114 @@ def scrape_with_playwright():
     return meetings if meetings else None
 
 
-def extract_from_tables(frame):
-    """Extract probability data from HTML tables in a frame."""
+def extract_from_frame(frame):
+    """Extract probability data from a frame using multiple strategies."""
     meetings = []
+
+    try:
+        content = frame.content()
+    except Exception as e:
+        print(f"  Could not get frame content: {e}")
+        return meetings
+
+    # Strategy A: Look for probability values near outcome keywords in HTML
+    probs = {}
+
+    # CME/QuikStrike may use various label formats
+    outcome_patterns = {
+        'Large Cut (>1M)':     [r'large\s*cut', r'significant\s*cut', r'cut.*?>.*?1'],
+        'Small Cut':           [r'small\s*cut', r'modest\s*cut', r'minor\s*cut'],
+        'No Change':           [r'no\s*change', r'unchanged', r'maintain', r'status\s*quo'],
+        'Small Increase':      [r'small\s*increase', r'modest\s*increase', r'minor\s*increase'],
+        'Large Increase (>1M)':[r'large\s*increase', r'significant\s*increase', r'increase.*?>.*?1'],
+    }
+
+    # Strip HTML tags for text matching
+    text = re.sub(r'<[^>]+>', ' ', content)
+    text = re.sub(r'\s+', ' ', text)
+
+    for outcome, patterns in outcome_patterns.items():
+        for pat in patterns:
+            # Find the keyword and grab a nearby percentage
+            match = re.search(rf'({pat})[^0-9%]*?(\d{{1,2}}\.?\d*)\s*%', text, re.IGNORECASE)
+            if match:
+                val = float(match.group(2))
+                if 0 < val < 100:
+                    probs[outcome] = val
+                    print(f"    Found: {outcome} = {val}%")
+                    break
+            # Also try percentage before the label
+            match = re.search(rf'(\d{{1,2}}\.?\d*)\s*%[^a-zA-Z]*?{pat}', text, re.IGNORECASE)
+            if match:
+                val = float(match.group(1))
+                if 0 < val < 100:
+                    probs[outcome] = val
+                    print(f"    Found: {outcome} = {val}% (reversed)")
+                    break
+
+    if len(probs) >= 3:
+        meetings.append({'probabilities': probs})
+        print(f"  Extracted {len(probs)} outcomes from frame text")
+        return meetings
+
+    # Strategy B: Look for a cluster of percentages (the 3 or 5 outcome bars)
+    # QuikStrike often renders as divs with percentage values
+    pct_matches = re.findall(r'(\d{1,2}\.\d+)%', text)
+    pct_values = [float(v) for v in pct_matches if 0.1 < float(v) < 99.9]
+
+    # If we find exactly 3 or 5 percentages that sum close to 100, that's our data
+    for n in [5, 3]:
+        if len(pct_values) >= n:
+            for i in range(len(pct_values) - n + 1):
+                group = pct_values[i:i+n]
+                total = sum(group)
+                if 98 < total < 102:
+                    print(f"  Found {n} percentages summing to {total:.1f}%: {group}")
+                    if n == 5:
+                        probs = dict(zip(OUTCOMES, group))
+                    elif n == 3:
+                        # 3 outcomes: Cut / No Change / Increase
+                        probs = {
+                            'Large Cut (>1M)': 0,
+                            'Small Cut': group[0],
+                            'No Change': group[1],
+                            'Small Increase': group[2],
+                            'Large Increase (>1M)': 0,
+                        }
+                    meetings.append({'probabilities': probs})
+                    return meetings
+
+    # Strategy C: Tables with numeric cells
     try:
         tables = frame.query_selector_all('table')
         for table in tables:
             rows = table.query_selector_all('tr')
-            probs = {}
             for row in rows:
-                text = row.inner_text().strip()
-                for outcome in OUTCOMES:
-                    short = outcome.replace(' (>1M)', '')
-                    if short.lower() in text.lower() or outcome.lower() in text.lower():
-                        numbers = re.findall(r'(\d+\.?\d*)%?', text)
-                        floats = [float(n) for n in numbers if 0 < float(n) < 100]
-                        if floats:
-                            probs[outcome] = floats[0]
+                cells = row.query_selector_all('td, th')
+                row_text = ' '.join(c.inner_text().strip() for c in cells)
+                for outcome, patterns in outcome_patterns.items():
+                    if outcome in probs:
+                        continue
+                    for pat in patterns:
+                        if re.search(pat, row_text, re.IGNORECASE):
+                            nums = re.findall(r'(\d{1,2}\.?\d*)%?', row_text)
+                            for n in nums:
+                                val = float(n)
+                                if 0 < val < 100:
+                                    probs[outcome] = val
+                                    break
+                            break
 
             if len(probs) >= 3:
                 meetings.append({'probabilities': probs})
-                print(f"  Extracted from table: {probs}")
-
+                print(f"  Extracted {len(probs)} outcomes from table")
+                return meetings
     except Exception as e:
         print(f"  Table extraction error: {e}")
-    return meetings
 
+    if probs:
+        print(f"  Partial extraction ({len(probs)} outcomes): {probs}")
 
-def extract_from_text(frame):
-    """Extract probability data from visible text content."""
-    meetings = []
-    try:
-        content = frame.content()
-        # Match patterns like "No Change 52.1%" or "Large Cut (>1M): 3.2%"
-        probs = {}
-        for outcome in OUTCOMES:
-            short = outcome.replace(' (>1M)', '')
-            patterns = [
-                rf'{re.escape(outcome)}[^0-9]*?(\d+\.?\d*)\s*%',
-                rf'{re.escape(short)}[^0-9]*?(\d+\.?\d*)\s*%',
-            ]
-            for pat in patterns:
-                match = re.search(pat, content, re.IGNORECASE)
-                if match:
-                    val = float(match.group(1))
-                    if 0 < val < 100:
-                        probs[outcome] = val
-                        break
-
-        if len(probs) >= 3:
-            meetings.append({'probabilities': probs})
-            print(f"  Extracted from text: {probs}")
-
-    except Exception as e:
-        print(f"  Text extraction error: {e}")
     return meetings
 
 
