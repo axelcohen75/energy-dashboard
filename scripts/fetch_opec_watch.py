@@ -49,6 +49,24 @@ def save_history(data):
     print(f"  Saved history to {DATA_FILE}")
 
 
+def _find_chromium():
+    """Find an available Chromium binary in the Playwright cache."""
+    import glob
+    import os
+    cache_dir = os.path.expanduser('~/.cache/ms-playwright')
+    # Look for any chromium build (version may differ from pip package)
+    patterns = [
+        os.path.join(cache_dir, 'chromium-*/chrome-linux/chrome'),
+        os.path.join(cache_dir, 'chromium-*/chrome-linux64/chrome'),
+        os.path.join(cache_dir, 'chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell'),
+    ]
+    for pattern in patterns:
+        matches = sorted(glob.glob(pattern))
+        if matches:
+            return matches[-1]  # latest version
+    return None
+
+
 def scrape_with_playwright():
     """Use Playwright to load the CME OPEC Watch page and extract data."""
     try:
@@ -62,7 +80,13 @@ def scrape_with_playwright():
     meetings = []
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
+        # Try to find an available Chromium binary (version may differ from pip package)
+        launch_args = {'headless': True}
+        chromium_path = _find_chromium()
+        if chromium_path:
+            launch_args['executable_path'] = chromium_path
+            print(f"  Using Chromium: {chromium_path}")
+        browser = p.chromium.launch(**launch_args)
         context = browser.new_context(
             user_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
                         'AppleWebKit/537.36 (KHTML, like Gecko) '
