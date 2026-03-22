@@ -1,48 +1,59 @@
 # Energy Derivatives Pricing Terminal
 
-> Plateforme de pricing d'options et d'analyse des marchés energy, développée avec Claude pour un usage personnel.
+> Options pricing and energy market analysis platform, built with Claude for personal use.
 
-**[Accéder à l'application](https://axelcohen75.github.io/commodity-derivatives-pricer/)**
+**[Access the app](https://axelcohen75.github.io/commodity-derivatives-pricer/)**
 
 ## Pages
 
 ### Options Pricer
-Pricer d'options sur futures utilisant le modèle **Black-76**. Construction de stratégies multi-legs (straddle, strangle, butterfly, etc.), visualisation du payoff, des Greeks (Delta, Gamma, Vega, Theta, Rho, Vanna, Volga), surface 3D et parameter sweep. Presets disponibles pour les principales commodities energy (WTI, Brent, HH, TTF, Power, EUA, etc.).
+Futures options pricer using the **Black-76** model. Build multi-leg strategies (straddle, strangle, butterfly, etc.), visualize payoff, Greeks (Delta, Gamma, Vega, Theta, Rho, Vanna, Volga), 3D surface and parameter sweep. Presets available for major energy commodities (WTI, Brent, HH, TTF, Power, EUA, etc.).
 
 ### Energy Markets
-Données de marché réelles via **Yahoo Finance** (spots, term structures, historiques). Analyse des timespreads (prompt spread, calendar spreads), monitoring des cross-commodity spreads (Brent-WTI, crack spreads, TTF-HH), et comparaison historique des courbes forward. Les données sont mises à jour automatiquement via GitHub Actions toutes les 30 minutes pendant les heures de marché.
+Real market data via **Yahoo Finance** (spots, term structures, historical). Timespread analysis (prompt spread, calendar spreads), cross-commodity spread monitoring (Brent-WTI, crack spreads, TTF-HH), and historical forward curve comparison. Data is automatically updated via GitHub Actions every 30 minutes during market hours.
 
-## Données de marché
+### Physical
+EIA weekly inventory data (crude, Cushing, SPR, gasoline, distillates, natural gas) with up to 43 years of history and 5-year range bands. OPEC Watch with meeting outcome probabilities (implied from options), OPEC+ decisions history (2024–2026), calendar, key dates, supply snapshot, and seasonal indicators.
 
-Les données sont récupérées par un script Python (`scripts/fetch_market_data.py`) qui utilise `yfinance` et sauvegarde les résultats dans un fichier JSON statique lu par le frontend. Zéro problème de CORS.
+### Geopolitics
+Polymarket prediction markets filtered for energy-relevant geopolitical events (conflicts, sanctions, diplomacy) and OPEC/physical impact (oil prices, production, trade). US x Iran ceasefire term structure with probability by deadline.
+
+## Market Data
+
+Data is fetched by Python scripts and saved as static JSON files read by the frontend. Zero CORS issues.
 
 ```bash
-# Mettre à jour les données manuellement
+# Update data manually
 pip install yfinance
-python scripts/fetch_market_data.py
+python scripts/fetch_market_data.py    # Yahoo Finance (spots, term structures)
+python scripts/fetch_physical_data.py  # EIA inventories + Polymarket
+python scripts/fetch_opec_watch.py     # CME OPEC Watch probabilities
 ```
 
-GitHub Actions met automatiquement à jour les données toutes les 30 min (lun-ven, heures NYMEX).
+GitHub Actions automatically updates data every 30 min (Mon-Fri, NYMEX hours).
 
-## Stack technique
+## Tech Stack
 
-- **HTML / CSS / JavaScript** vanilla, 100% côté client
-- **Plotly.js** pour les graphiques 2D et surfaces 3D
-- **Black-76** implémenté from scratch en JS
-- **yfinance** (Python) pour les données Yahoo Finance
-- **GitHub Actions** pour la mise à jour automatique des données
+- **HTML / CSS / JavaScript** vanilla, 100% client-side
+- **Plotly.js** for 2D charts and 3D surfaces
+- **Black-76** implemented from scratch in JS
+- **yfinance** (Python) for Yahoo Finance data
+- **EIA API v2** for US inventory data
+- **Polymarket Gamma API** for prediction markets
+- **GitHub Actions** for automated data updates
 
-## Lancer en local
+## Run Locally
 
 ```bash
-# Version web (statique)
-# Ouvrir docs/index.html dans un navigateur
+# Web version (static)
+# Open docs/index.html in a browser
 
-# Mettre à jour les données
+# Update data
 pip install yfinance
 python scripts/fetch_market_data.py
+python scripts/fetch_physical_data.py
 
-# Version Python (Dash)
+# Python version (Dash)
 pip install -r requirements.txt
 python app.py
 ```
@@ -50,20 +61,25 @@ python app.py
 ## Structure
 
 ```
-├── docs/                     # Frontend (GitHub Pages)
+├── docs/                      # Frontend (GitHub Pages)
 │   ├── index.html
 │   ├── style.css
-│   ├── engine.js             # Moteur Black-76
-│   ├── terminal.js           # UI pricer
-│   ├── energy-data.js        # Lecture des données marché
-│   ├── energy-markets.js     # UI energy markets
+│   ├── engine.js              # Black-76 engine
+│   ├── terminal.js            # Pricer UI
+│   ├── energy-data.js         # Market data reader
+│   ├── energy-markets.js      # Energy markets UI
+│   ├── physical-markets.js    # Physical tab + OPEC Watch
+│   ├── geopolitics.js         # Geopolitics tab
 │   └── data/
-│       └── market-data.json  # Données Yahoo Finance (auto-updated)
+│       ├── market-data.json   # Yahoo Finance data (auto-updated)
+│       └── physical-data.json # EIA + Polymarket data (auto-updated)
 ├── scripts/
-│   └── fetch_market_data.py  # Fetcher Python yfinance
+│   ├── fetch_market_data.py   # Yahoo Finance fetcher
+│   ├── fetch_physical_data.py # EIA + Polymarket fetcher
+│   └── fetch_opec_watch.py    # CME OPEC Watch scraper
 ├── .github/workflows/
 │   └── update-market-data.yml
-├── engine/                   # Version Python
+├── engine/                    # Python version
 │   ├── models.py
 │   └── market_data.py
 ├── app.py
