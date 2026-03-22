@@ -6,7 +6,7 @@
       "meetings": [
         {
           "date": "2026-04-05",
-          "label": "Apr 5, 2026 — 55th JMMC",
+          "label": "Apr 5, 2026 \u2014 55th JMMC",
           "probabilities": {
             "Large Cut (>1M)": 3.5,
             "Small Cut": 9.1,
@@ -17,7 +17,7 @@
         },
         {
           "date": "2026-05-28",
-          "label": "May 28, 2026 — 39th Ministerial",
+          "label": "May 28, 2026 \u2014 39th Ministerial",
           "probabilities": {
             "Large Cut (>1M)": 5.4,
             "Small Cut": 12.8,
@@ -28,7 +28,7 @@
         },
         {
           "date": "2026-06-01",
-          "label": "Jun 1, 2026 — 56th JMMC",
+          "label": "Jun 1, 2026 \u2014 56th JMMC",
           "probabilities": {
             "Large Cut (>1M)": 6.3,
             "Small Cut": 14.5,
@@ -39,7 +39,7 @@
         },
         {
           "date": "2026-08-03",
-          "label": "Aug 3, 2026 — 57th JMMC",
+          "label": "Aug 3, 2026 \u2014 57th JMMC",
           "probabilities": {
             "Large Cut (>1M)": 8.8,
             "Small Cut": 17.2,
@@ -50,7 +50,7 @@
         },
         {
           "date": "2026-10-05",
-          "label": "Oct 5, 2026 — 58th JMMC",
+          "label": "Oct 5, 2026 \u2014 58th JMMC",
           "probabilities": {
             "Large Cut (>1M)": 10.6,
             "Small Cut": 18.9,
@@ -61,7 +61,7 @@
         },
         {
           "date": "2026-12-01",
-          "label": "Dec 1, 2026 — 40th Ministerial",
+          "label": "Dec 1, 2026 \u2014 40th Ministerial",
           "probabilities": {
             "Large Cut (>1M)": 12.9,
             "Small Cut": 20.2,
@@ -74,72 +74,15 @@
     },
     {
       "date": "2026-03-22",
-      "timestamp": "2026-03-22T18:00:00+00:00",
+      "timestamp": "2026-03-22T15:59:20.453130+00:00",
       "meetings": [
         {
           "date": "2026-04-05",
-          "label": "Apr 5, 2026 — 55th JMMC",
+          "label": "April 5 OPEC Meeting",
           "probabilities": {
-            "Large Cut (>1M)": 3.2,
-            "Small Cut": 8.5,
-            "No Change": 52.1,
-            "Small Increase": 28.7,
-            "Large Increase (>1M)": 7.5
-          }
-        },
-        {
-          "date": "2026-05-28",
-          "label": "May 28, 2026 — 39th Ministerial",
-          "probabilities": {
-            "Large Cut (>1M)": 5.1,
-            "Small Cut": 12.3,
-            "No Change": 44.8,
-            "Small Increase": 26.9,
-            "Large Increase (>1M)": 10.9
-          }
-        },
-        {
-          "date": "2026-06-01",
-          "label": "Jun 1, 2026 — 56th JMMC",
-          "probabilities": {
-            "Large Cut (>1M)": 6.0,
-            "Small Cut": 14.1,
-            "No Change": 40.2,
-            "Small Increase": 27.5,
-            "Large Increase (>1M)": 12.2
-          }
-        },
-        {
-          "date": "2026-08-03",
-          "label": "Aug 3, 2026 — 57th JMMC",
-          "probabilities": {
-            "Large Cut (>1M)": 8.4,
-            "Small Cut": 16.8,
-            "No Change": 35.6,
-            "Small Increase": 25.1,
-            "Large Increase (>1M)": 14.1
-          }
-        },
-        {
-          "date": "2026-10-05",
-          "label": "Oct 5, 2026 — 58th JMMC",
-          "probabilities": {
-            "Large Cut (>1M)": 10.2,
-            "Small Cut": 18.5,
-            "No Change": 31.4,
-            "Small Increase": 24.3,
-            "Large Increase (>1M)": 15.6
-          }
-        },
-        {
-          "date": "2026-12-01",
-          "label": "Dec 1, 2026 — 40th Ministerial",
-          "probabilities": {
-            "Large Cut (>1M)": 12.5,
-            "Small Cut": 19.8,
-            "No Change": 28.1,
-            "Small Increase": 22.7,
-            "Large Increase (>1M)": 16.9
+            "Decrease": 22.33,
+            "No Change": 67.26,
+            "Increase": 10.41
           }
         }
       ]
@@ -148,68 +91,11 @@
   "meetings": [
     {
       "date": "2026-04-05",
-      "label": "Apr 5, 2026 — 55th JMMC",
+      "label": "April 5 OPEC Meeting",
       "probabilities": {
-        "Large Cut (>1M)": 3.2,
-        "Small Cut": 8.5,
-        "No Change": 52.1,
-        "Small Increase": 28.7,
-        "Large Increase (>1M)": 7.5
-      }
-    },
-    {
-      "date": "2026-05-28",
-      "label": "May 28, 2026 — 39th Ministerial",
-      "probabilities": {
-        "Large Cut (>1M)": 5.1,
-        "Small Cut": 12.3,
-        "No Change": 44.8,
-        "Small Increase": 26.9,
-        "Large Increase (>1M)": 10.9
-      }
-    },
-    {
-      "date": "2026-06-01",
-      "label": "Jun 1, 2026 — 56th JMMC",
-      "probabilities": {
-        "Large Cut (>1M)": 6.0,
-        "Small Cut": 14.1,
-        "No Change": 40.2,
-        "Small Increase": 27.5,
-        "Large Increase (>1M)": 12.2
-      }
-    },
-    {
-      "date": "2026-08-03",
-      "label": "Aug 3, 2026 — 57th JMMC",
-      "probabilities": {
-        "Large Cut (>1M)": 8.4,
-        "Small Cut": 16.8,
-        "No Change": 35.6,
-        "Small Increase": 25.1,
-        "Large Increase (>1M)": 14.1
-      }
-    },
-    {
-      "date": "2026-10-05",
-      "label": "Oct 5, 2026 — 58th JMMC",
-      "probabilities": {
-        "Large Cut (>1M)": 10.2,
-        "Small Cut": 18.5,
-        "No Change": 31.4,
-        "Small Increase": 24.3,
-        "Large Increase (>1M)": 15.6
-      }
-    },
-    {
-      "date": "2026-12-01",
-      "label": "Dec 1, 2026 — 40th Ministerial",
-      "probabilities": {
-        "Large Cut (>1M)": 12.5,
-        "Small Cut": 19.8,
-        "No Change": 28.1,
-        "Small Increase": 22.7,
-        "Large Increase (>1M)": 16.9
+        "Decrease": 22.33,
+        "No Change": 67.26,
+        "Increase": 10.41
       }
     }
   ]
