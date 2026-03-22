@@ -83,7 +83,12 @@ const SPREAD_DEFINITIONS = {
     },
     '3-2-1 Crack Spread': {
         category: 'CRACK', formula: 'custom',
-        description: '(2×RB + 1×HO) × 42 - 3×CL) / 3',
+        description: '(2×RB + 1×HO) × 42 - 3×CL) / 3 — standard refinery margin',
+        unit: '$/bbl',
+    },
+    '2-1-1 Crack Spread': {
+        category: 'CRACK', formula: 'custom',
+        description: '(1×RB + 1×HO) × 42 - 2×CL) / 2 — equal product yield',
         unit: '$/bbl',
     },
     'Gasoline Crack (RB-CL)': {
@@ -198,7 +203,10 @@ function getSpreadHistory(spreadKey, nDays) {
     if (!def || !marketData?.history) return null;
 
     if (def.formula === 'custom' && spreadKey === '3-2-1 Crack Spread') {
-        return _compute321CrackHistory(nDays);
+        return _computeCrackHistory(nDays, 2, 1, 3, '3-2-1 Crack Spread');
+    }
+    if (def.formula === 'custom' && spreadKey === '2-1-1 Crack Spread') {
+        return _computeCrackHistory(nDays, 1, 1, 2, '2-1-1 Crack Spread');
     }
 
     if (def.formula === 'fwd') return null;
@@ -232,7 +240,7 @@ function getSpreadHistory(spreadKey, nDays) {
     return { dates: trimmed.dates, values: trimmed.values, name: spreadKey, unit: def.unit, current };
 }
 
-function _compute321CrackHistory(nDays) {
+function _computeCrackHistory(nDays, rbCoeff, hoCoeff, clCoeff, label) {
     if (!marketData?.history) return null;
     const rbHist = marketData.history['RB=F'];
     const hoHist = marketData.history['HO=F'];
@@ -250,7 +258,7 @@ function _compute321CrackHistory(nDays) {
         const d = rbHist.dates[i];
         if (hoMap[d] != null && clMap[d] != null) {
             dates.push(d);
-            values.push(+((2 * rbHist.close[i] * 42 + hoMap[d] * 42 - 3 * clMap[d]) / 3).toFixed(2));
+            values.push(+((rbCoeff * rbHist.close[i] * 42 + hoCoeff * hoMap[d] * 42 - clCoeff * clMap[d]) / clCoeff).toFixed(2));
         }
     }
 
@@ -258,7 +266,7 @@ function _compute321CrackHistory(nDays) {
     if (trimmed.dates.length < 10) return null;
 
     const current = trimmed.values[trimmed.values.length - 1];
-    return { dates: trimmed.dates, values: trimmed.values, name: '3-2-1 Crack Spread', unit: '$/bbl', current };
+    return { dates: trimmed.dates, values: trimmed.values, name: label, unit: '$/bbl', current };
 }
 
 function _trimToDays(dates, values, nDays) {
@@ -271,12 +279,19 @@ function computeSpreadValue(spreadKey) {
     const def = SPREAD_DEFINITIONS[spreadKey];
     if (!def) return null;
 
-    if (def.formula === 'custom' && spreadKey === '3-2-1 Crack Spread') {
+    if (def.formula === 'custom') {
         const rb = liveSpots['RBOB Gasoline (RB)'];
         const ho = liveSpots['Heating Oil (HO)'];
         const cl = liveSpots['WTI Crude Oil (CL)'];
         if (rb == null || ho == null || cl == null) return null;
-        return +((2 * rb * 42 + ho * 42 - 3 * cl) / 3).toFixed(2);
+
+        if (spreadKey === '3-2-1 Crack Spread') {
+            return +((2 * rb * 42 + ho * 42 - 3 * cl) / 3).toFixed(2);
+        }
+        if (spreadKey === '2-1-1 Crack Spread') {
+            return +((rb * 42 + ho * 42 - 2 * cl) / 2).toFixed(2);
+        }
+        return null;
     }
 
     if (def.formula === 'fwd') return null;
