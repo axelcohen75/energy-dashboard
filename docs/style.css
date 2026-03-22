@@ -679,6 +679,14 @@ input[type="range"]::-moz-range-thumb {
     .tab-btn { font-size: 9px; padding: 4px 10px; }
 }
 
+.opec-meeting-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--accent);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
 /* ─── OPEC Watch Shift Table ─── */
 .opec-shift-tbl {
     width: 100%;

@@ -279,27 +279,20 @@ const OPEC_OUTCOME_COLORS = {
 };
 
 function initOpecWatch() {
-    const select = document.getElementById('opec-meeting-select');
-    if (!select) return;
-
-    select.innerHTML = '';
-    const now = new Date().toISOString().slice(0, 10);
-
-    for (const mtg of OPEC_WATCH_DATA.meetings) {
-        if (mtg.date >= now) {
-            select.appendChild(new Option(mtg.label, mtg.date));
-        }
-    }
-
     updateOpecWatch();
+}
+
+function getNextOpecMeeting() {
+    const now = new Date().toISOString().slice(0, 10);
+    // Find next upcoming meeting, or fall back to the last one
+    return OPEC_WATCH_DATA.meetings.find(m => m.date >= now)
+        || OPEC_WATCH_DATA.meetings[OPEC_WATCH_DATA.meetings.length - 1]
+        || null;
 }
 
 function updateOpecWatch() {
     const cc = getChartColors();
-    const select = document.getElementById('opec-meeting-select');
-    const selectedDate = select ? select.value : null;
-
-    const mtg = OPEC_WATCH_DATA.meetings.find(m => m.date === selectedDate);
+    const mtg = getNextOpecMeeting();
     if (!mtg) {
         Plotly.react('opec-watch-chart', [], {
             paper_bgcolor: cc.bg, plot_bgcolor: cc.bg,
@@ -311,6 +304,9 @@ function updateOpecWatch() {
 
     const subtitle = document.getElementById('opec-watch-subtitle');
     if (subtitle) subtitle.textContent = `${mtg.label} // IMPLIED FROM OPTIONS`;
+
+    const meetingLabel = document.getElementById('opec-meeting-label');
+    if (meetingLabel) meetingLabel.textContent = mtg.label;
 
     const outcomes = Object.keys(mtg.probabilities);
     const probs = Object.values(mtg.probabilities);
