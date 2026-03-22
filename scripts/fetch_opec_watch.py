@@ -112,12 +112,25 @@ def scrape_with_playwright():
 
         page = context.new_page()
 
-        # Intercept network responses to catch JSON data as it loads
+        # Intercept network responses to catch JSON/API data
         json_responses = []
+        all_qs_responses = []
         def handle_response(response):
-            ct = response.headers.get('content-type', '')
             url = response.url
-            if 'json' in ct or 'javascript' in ct or 'opec' in url.lower():
+            ct = response.headers.get('content-type', '')
+
+            # Capture ALL QuikStrike responses for analysis
+            if 'quikstrike' in url.lower():
+                try:
+                    body = response.text()
+                    all_qs_responses.append({'url': url, 'body': body, 'ct': ct})
+                    print(f"  QS response [{ct[:30]}]: {url[:120]}")
+                except Exception:
+                    pass
+                return
+
+            # Also capture OPEC-related responses from any domain
+            if 'json' in ct or 'opec' in url.lower():
                 try:
                     body = response.text()
                     if any(kw in body.lower() for kw in ['opec', 'probability', 'outcome',
@@ -175,9 +188,19 @@ def scrape_with_playwright():
             if qs_frames:
                 target_frame = qs_frames[0]
                 print(f"  Using QuikStrike frame: {target_frame.url[:120]}")
-                # Wait for the iframe content to fully render
-                print("  Waiting 15s for QuikStrike iframe to render...")
-                time.sleep(15)
+
+                # Wait for the iframe's JS to finish loading data
+                print("  Waiting for QuikStrike iframe networkidle...")
+                try:
+                    # Wait for network to settle in main page (captures iframe traffic too)
+                    page.wait_for_load_state('networkidle', timeout=30000)
+                    print("  Network idle reached")
+                except Exception:
+                    print("  Network idle timeout, continuing...")
+
+                # Additional wait for client-side rendering
+                print("  Waiting 10s for client-side rendering...")
+                time.sleep(10)
 
                 # Dump iframe content for debugging
                 try:
@@ -186,9 +209,23 @@ def scrape_with_playwright():
                     # Log visible text (stripped of HTML)
                     qs_text = re.sub(r'<[^>]+>', ' ', qs_content)
                     qs_text = re.sub(r'\s+', ' ', qs_text).strip()
-                    print(f"  QuikStrike text (first 1000): {qs_text[:1000]}")
+                    # Print more - first 2000 AND last 2000 chars to find data
+                    print(f"  QS text START: {qs_text[:2000]}")
+                    if len(qs_text) > 2000:
+                        print(f"  QS text END: {qs_text[-2000:]}")
+                    # Also look for percentage values anywhere
+                    pcts = re.findall(r'(\d{1,2}\.\d+)%', qs_text)
+                    if pcts:
+                        print(f"  Found percentages in iframe: {pcts[:20]}")
                 except Exception as e:
                     print(f"  Could not read iframe content: {e}")
+
+                # Log all QuikStrike network responses captured
+                print(f"  Total QuikStrike responses captured: {len(all_qs_responses)}")
+                for resp in all_qs_responses:
+                    body_preview = resp['body'][:300] if resp['body'] else '(empty)'
+                    print(f"    QS [{resp['ct'][:20]}] {resp['url'][:80]}")
+                    print(f"      Body: {body_preview}")
             else:
                 target_frame = page
                 print("  No QuikStrike iframe found, using main page")
@@ -216,18 +253,37 @@ def scrape_with_playwright():
                     if meetings:
                         break
 
-            # Strategy 4: Check captured network responses
-            if not meetings and json_responses:
-                print(f"  Checking {len(json_responses)} captured network responses...")
-                for resp in json_responses:
+            # Strategy 4: Check captured network responses (both general + QuikStrike)
+            all_responses = json_responses + all_qs_responses
+            if not meetings and all_responses:
+                print(f"  Checking {len(all_responses)} captured responses for data...")
+                for resp in all_responses:
+                    body = resp.get('body', '')
+                    if not body:
+                        continue
+                    # Try JSON parsing
                     try:
-                        data = json.loads(resp['body'])
+                        data = json.loads(body)
                         meetings = parse_json_payload(data)
                         if meetings:
-                            print(f"  Found data in network response: {resp['url'][:100]}")
+                            print(f"  Found data in response: {resp['url'][:100]}")
                             break
-                    except json.JSONDecodeError:
+                    except (json.JSONDecodeError, ValueError):
                         pass
+                    # Try regex on response body text
+                    if not meetings:
+                        probs = {}
+                        for outcome in OUTCOMES:
+                            short = outcome.replace(' (>1M)', '').lower()
+                            match = re.search(
+                                rf'{re.escape(short)}[^0-9]*?(\d{{1,2}}\.?\d*)\s*%',
+                                body, re.IGNORECASE)
+                            if match:
+                                probs[outcome] = float(match.group(1))
+                        if len(probs) >= 3:
+                            meetings = [{'probabilities': probs}]
+                            print(f"  Found data in response text: {resp['url'][:100]}")
+                            break
 
             # Strategy 5: Dump page content for debugging
             if not meetings:
