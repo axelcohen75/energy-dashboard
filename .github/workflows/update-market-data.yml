@@ -20,7 +20,9 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install yfinance pandas
+        run: |
+          pip install yfinance pandas playwright
+          playwright install --with-deps chromium
 
       - name: Fetch market data (Yahoo Finance)
         run: python scripts/fetch_market_data.py
@@ -28,7 +30,7 @@ jobs:
       - name: Fetch physical data (EIA + Polymarket)
         run: python scripts/fetch_physical_data.py
 
-      - name: Fetch OPEC Watch data (CME)
+      - name: Fetch OPEC Watch data (CME via Playwright)
         run: python scripts/fetch_opec_watch.py
         continue-on-error: true
 
@@ -36,7 +38,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/market-data.json docs/data/physical-data.json docs/physical-markets.js
+          git add docs/data/market-data.json docs/data/physical-data.json docs/data/opec-watch.json docs/physical-markets.js
           if git diff --staged --quiet; then
             echo "No data changes"
           else
