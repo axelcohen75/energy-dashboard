@@ -176,13 +176,16 @@ function renderSpotPrices(loaded) {
         const price = liveSpots[name];
         if (loaded && price == null) continue;
 
-        const shortName = name.replace(/\s*\(.*\)/, '').replace('Henry Hub ', 'HH ');
+        const shortName = name
+            .replace('WTI Crude Oil (CL)', 'WTI Crude')
+            .replace('Brent Crude Oil (BZ)', 'Brent Crude')
+            .replace('Henry Hub Nat Gas (NG)', 'HH Nat Gas')
+            .replace('TTF Natural Gas', 'TTF Gas')
+            .replace('RBOB Gasoline (RB)', 'RBOB Gas')
+            .replace('Heating Oil (HO)', 'Heating Oil');
         const color = isDarkMode ? cfg.colorDark : cfg.color;
         const decimals = price != null && price < 10 ? 3 : 2;
         const isSelected = selectedCommodity === name;
-
-        const ts = getDataTimestamp();
-        const ago = ts ? _timeAgo(ts) : '';
 
         html += `
             <div class="spot-row${isSelected ? ' spot-row-active' : ''}" onclick="selectCommodity('${name}')" style="cursor:pointer">
@@ -191,9 +194,6 @@ function renderSpotPrices(loaded) {
                 </div>
                 <div class="spot-price">${loaded ? price.toFixed(decimals) : '...'}</div>
                 <div class="spot-unit">${cfg.unit}</div>
-                <div class="spot-source">${loaded
-                    ? `<span class="source-tag source-live" title="Updated ${ago}">${ago}</span>`
-                    : '<span class="loading-dot">...</span>'}</div>
             </div>`;
     }
 
