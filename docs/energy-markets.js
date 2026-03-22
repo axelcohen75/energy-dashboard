@@ -104,14 +104,14 @@ async function initEnergyMarkets() {
     await loadMarketData();
 
     // Populate dropdowns (only commodities that have data)
-    const tsCommodity = document.getElementById('ts-commodity');
+    const tsCompareCommodity = document.getElementById('ts-compare-commodity');
     const tsSpreadCommodity = document.getElementById('ts-spread-commodity');
 
     for (const [name] of Object.entries(ENERGY_COMMODITIES)) {
         if (liveSpots[name] != null) {
-            // Term structure dropdown: only if we have term structure data
+            // Compare commodity dropdown: only if we have term structure data
             if (marketData?.termStructures?.[name]) {
-                tsCommodity.appendChild(new Option(name, name));
+                tsCompareCommodity.appendChild(new Option(name, name));
             }
             // Timespread dropdown: only if we have timespread data
             if (TIMESPREAD_DEFINITIONS[name]) {
@@ -136,10 +136,10 @@ async function initEnergyMarkets() {
         dateInput.value = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
     }
 
-    // Render everything
+    // Render everything — no term structure by default (user clicks a commodity)
     renderSpotPrices(true);
     renderSpreadDashboard();
-    updateTermStructure();
+    updateTermStructure();  // shows empty "Select a commodity" message
 
     // Show data timestamp
     const ts = getDataTimestamp();
@@ -160,6 +160,14 @@ function _timeAgo(date) {
 
 // ─── Spot Prices ────────────────────────────────────────────────────────────
 
+let selectedCommodity = null;  // currently selected commodity for term structure
+
+function selectCommodity(name) {
+    selectedCommodity = name;
+    renderSpotPrices(true);
+    updateTermStructure();
+}
+
 function renderSpotPrices(loaded) {
     const container = document.getElementById('spot-prices-table');
     let html = '';
@@ -171,12 +179,13 @@ function renderSpotPrices(loaded) {
         const shortName = name.replace(/\s*\(.*\)/, '').replace('Henry Hub ', 'HH ');
         const color = isDarkMode ? cfg.colorDark : cfg.color;
         const decimals = price != null && price < 10 ? 3 : 2;
+        const isSelected = selectedCommodity === name;
 
         const ts = getDataTimestamp();
         const ago = ts ? _timeAgo(ts) : '';
 
         html += `
-            <div class="spot-row">
+            <div class="spot-row${isSelected ? ' spot-row-active' : ''}" onclick="selectCommodity('${name}')" style="cursor:pointer">
                 <div class="spot-name" style="border-left: 3px solid ${color}; padding-left: 8px">
                     ${shortName}
                 </div>
@@ -243,15 +252,19 @@ let tsComparisons = []; // [{ date, commodity, data }, ...]
 
 function updateTermStructure() {
     const cc = getChartColors();
-    const selected = document.getElementById('ts-commodity').value;
 
-    // Gather commodities to show
-    let commodities;
-    if (selected === 'all') {
-        commodities = Object.keys(ENERGY_COMMODITIES).filter(c => marketData?.termStructures?.[c]);
-    } else {
-        commodities = marketData?.termStructures?.[selected] ? [selected] : [];
+    // Show selected commodity, or empty chart if none selected
+    const subtitle = document.getElementById('ts-subtitle');
+
+    if (!selectedCommodity) {
+        showChartEmpty('term-structure-chart', 'Select a commodity to view its term structure');
+        if (subtitle) subtitle.textContent = 'FORWARD CURVE // DELIVERY MONTH';
+        return;
     }
+
+    if (subtitle) subtitle.textContent = `${selectedCommodity} // DELIVERY MONTH`;
+
+    const commodities = marketData?.termStructures?.[selectedCommodity] ? [selectedCommodity] : [];
 
     if (commodities.length === 0) {
         showChartEmpty('term-structure-chart', 'No term structure data available');
@@ -260,6 +273,11 @@ function updateTermStructure() {
 
     const units = new Set();
     commodities.forEach(c => units.add(ENERGY_COMMODITIES[c].unit));
+    // Include units from commodity comparisons
+    tsComparisons.forEach(c => {
+        const cfg = ENERGY_COMMODITIES[c.commodity];
+        if (cfg) units.add(cfg.unit);
+    });
     const unitList = [...units];
     const multiUnit = unitList.length > 1;
 
@@ -286,26 +304,28 @@ function updateTermStructure() {
         });
     }
 
-    // Historical comparison curves (dashed)
+    // Comparison curves (dashed) — date comparisons and commodity comparisons
     const compColors = ['#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4'];
     for (let ci = 0; ci < tsComparisons.length; ci++) {
         const comp = tsComparisons[ci];
-        if (selected !== 'all' && comp.commodity !== selected) continue;
-
         const cfg = ENERGY_COMMODITIES[comp.commodity];
         if (!cfg) continue;
         const shortName = comp.commodity.replace(/\s*\(.*\)/, '').replace('Henry Hub ', '');
         const yAxisIdx = multiUnit ? unitList.indexOf(cfg.unit) : 0;
         const compColor = compColors[ci % compColors.length];
 
+        const compLabel = comp.type === 'commodity'
+            ? `${shortName} (now)`
+            : `${shortName} (${comp.date})`;
+
         traces.push({
             x: comp.data.months, y: comp.data.prices,
-            name: `${shortName} (${comp.date})`,
+            name: compLabel,
             type: 'scatter', mode: 'lines+markers',
-            line: { color: compColor, width: 1.5, dash: 'dash' },
-            marker: { size: 3, color: compColor, symbol: 'diamond' },
+            line: { color: compColor, width: 1.5, dash: comp.type === 'commodity' ? 'solid' : 'dash' },
+            marker: { size: 3, color: compColor, symbol: comp.type === 'commodity' ? 'circle' : 'diamond' },
             yaxis: yAxisIdx === 0 ? 'y' : 'y2',
-            hovertemplate: `${shortName} (${comp.date})<br>%{x}: %{y:.2f} ${cfg.unit}<extra></extra>`,
+            hovertemplate: `${compLabel}<br>%{x}: %{y:.2f} ${cfg.unit}<extra></extra>`,
         });
     }
 
@@ -346,12 +366,9 @@ function updateTermStructure() {
 
 function addTermStructureComparison() {
     const dateStr = document.getElementById('ts-compare-date').value;
-    if (!dateStr) return;
+    if (!dateStr || !selectedCommodity) return;
 
-    const selected = document.getElementById('ts-commodity').value;
-    const commodities = selected === 'all'
-        ? Object.keys(ENERGY_COMMODITIES).filter(c => marketData?.contractHistory?.[c])
-        : (marketData?.contractHistory?.[selected] ? [selected] : []);
+    const commodities = marketData?.contractHistory?.[selectedCommodity] ? [selectedCommodity] : [];
 
     if (tsComparisons.length >= 4) tsComparisons.shift();
 
@@ -368,6 +385,24 @@ function addTermStructureComparison() {
     }
 
     if (added) {
+        renderComparisonTags();
+        updateTermStructure();
+    }
+}
+
+function addCommodityComparison() {
+    const select = document.getElementById('ts-compare-commodity');
+    const commodity = select.value;
+    if (!commodity || !selectedCommodity) return;
+
+    // Prevent duplicates
+    if (tsComparisons.find(c => c.type === 'commodity' && c.commodity === commodity)) return;
+    if (tsComparisons.length >= 4) tsComparisons.shift();
+
+    const data = getTermStructure(commodity);
+    if (data) {
+        tsComparisons.push({ type: 'commodity', commodity, data, date: 'now' });
+        select.value = '';
         renderComparisonTags();
         updateTermStructure();
     }
@@ -400,8 +435,9 @@ function renderComparisonTags() {
         const c = tsComparisons[i];
         const shortName = c.commodity.replace(/\s*\(.*\)/, '').replace('Henry Hub ', '');
         const color = compColors[i % compColors.length];
+        const tagLabel = c.type === 'commodity' ? shortName : `${shortName} ${c.date}`;
         html += `<span class="comp-tag" style="border-left:3px solid ${color}">
-            ${shortName} ${c.date}
+            ${tagLabel}
             <button class="comp-remove" onclick="removeComparison(${i})">&times;</button>
         </span>`;
     }

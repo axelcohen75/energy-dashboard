@@ -506,6 +506,12 @@ input[type="range"]::-moz-range-thumb {
     font-size: 11px;
 }
 .spot-row:last-child { border-bottom: none; }
+.spot-row:hover { background: rgba(37, 99, 235, 0.06); }
+.spot-row-active {
+    background: rgba(37, 99, 235, 0.1);
+    border-radius: 4px;
+}
+.spot-row-active .spot-name { font-weight: 700; }
 .spot-name {
     flex: 1;
     font-weight: 500;

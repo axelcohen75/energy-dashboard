@@ -323,22 +323,28 @@
     <!-- ─── LEFT SIDEBAR ─── -->
     <div class="col-left">
 
-        <!-- Commodity Selection -->
+        <!-- Spot Prices / Commodity Selector -->
+        <div class="panel">
+            <div class="lbl">SPOT PRICES</div>
+            <div id="spot-prices-table" class="mt-8"></div>
+        </div>
+
+        <!-- Term Structure Controls -->
         <div class="panel">
             <div class="lbl">TERM STRUCTURE</div>
-            <div class="mt-8">
-                <div class="lbl lbl-sm">COMMODITY</div>
-                <select id="ts-commodity">
-                    <option value="all">ALL COMMODITIES</option>
-                </select>
-            </div>
-            <button class="btn btn-accent btn-full mt-10" onclick="updateTermStructure()">REFRESH</button>
-            <div class="mt-10" style="border-top:1px solid var(--input-border);padding-top:10px">
+            <div class="mt-8" style="border-bottom:1px solid var(--input-border);padding-bottom:10px">
                 <div class="lbl lbl-sm">COMPARE WITH DATE</div>
                 <input type="date" id="ts-compare-date" style="width:100%;background:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text);font-size:11px;font-family:var(--mono);padding:4px 6px;margin-top:4px">
                 <button class="btn btn-full mt-8" onclick="addTermStructureComparison()" style="font-size:10px">ADD COMPARISON</button>
-                <div id="ts-comparisons" class="mt-8"></div>
             </div>
+            <div class="mt-8">
+                <div class="lbl lbl-sm">COMPARE WITH COMMODITY</div>
+                <select id="ts-compare-commodity" style="margin-top:4px">
+                    <option value="">— Select —</option>
+                </select>
+                <button class="btn btn-full mt-8" onclick="addCommodityComparison()" style="font-size:10px">ADD COMPARISON</button>
+            </div>
+            <div id="ts-comparisons" class="mt-8"></div>
         </div>
 
         <!-- Timespread Controls -->
@@ -403,7 +409,7 @@
                     <div class="chart-header">
                         <div>
                             <div class="lbl" style="font-size:12px;margin-bottom:0">FUTURES TERM STRUCTURE</div>
-                            <div class="sub-label">FORWARD CURVE // DELIVERY MONTH</div>
+                            <div class="sub-label" id="ts-subtitle">FORWARD CURVE // DELIVERY MONTH</div>
                         </div>
                     </div>
                     <div id="term-structure-chart" class="chart-plot"></div>
@@ -443,12 +449,6 @@
 
     <!-- ─── RIGHT: SPREAD TABLE ─── -->
     <div class="col-right">
-
-        <!-- Spot Prices -->
-        <div class="panel">
-            <div class="lbl">SPOT PRICES</div>
-            <div id="spot-prices-table" class="mt-8"></div>
-        </div>
 
         <!-- Spread Dashboard -->
         <div class="panel" style="max-height:calc(100vh - 340px);overflow-y:auto">
