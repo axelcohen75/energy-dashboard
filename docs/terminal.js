@@ -131,6 +131,7 @@ function toggleTheme() {
     generateSurface();
     if (typeof refreshEnergyMarkets === 'function') refreshEnergyMarkets();
     if (typeof refreshPhysicalMarkets === 'function') refreshPhysicalMarkets();
+    if (typeof refreshGeopolitics === 'function') refreshGeopolitics();
 }
 
 function loadThemePreference() {

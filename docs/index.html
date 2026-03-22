@@ -19,6 +19,7 @@
             <button class="tab-btn active" data-tab="pricer" onclick="switchTab('pricer')">OPTION PRICER</button>
             <button class="tab-btn" data-tab="markets" onclick="switchTab('markets')">ENERGY MARKETS</button>
             <button class="tab-btn" data-tab="physical" onclick="switchTab('physical')">PHYSICAL</button>
+            <button class="tab-btn" data-tab="geopolitics" onclick="switchTab('geopolitics')">GEOPOLITICS</button>
         </nav>
     </div>
     <div class="header-meta">
@@ -483,45 +484,33 @@
             </div>
         </div>
 
-        <!-- Polymarket Sections -->
+        <!-- OPEC Watch: Outcome Probability -->
         <div class="charts-row">
-            <!-- Geopolitics -->
             <div class="chart-box">
                 <div class="panel">
                     <div class="chart-header">
                         <div>
-                            <div class="lbl" style="font-size:12px;margin-bottom:0">GEOPOLITICS</div>
-                            <div class="sub-label">PREDICTION MARKETS // CONFLICTS & SANCTIONS</div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">OPEC WATCH — MEETING OUTCOME PROBABILITY</div>
+                            <div class="sub-label" id="opec-watch-subtitle">NEXT MEETING // IMPLIED FROM OPTIONS</div>
                         </div>
-                    </div>
-                    <div id="pm-geopolitics" class="pm-container"></div>
-                </div>
-            </div>
-            <!-- OPEC / Physical Impact -->
-            <div class="chart-box">
-                <div class="panel">
-                    <div class="chart-header">
                         <div>
-                            <div class="lbl" style="font-size:12px;margin-bottom:0">OPEC / PHYSICAL IMPACT</div>
-                            <div class="sub-label">PREDICTION MARKETS // SUPPLY & PRICE DECISIONS</div>
+                            <select id="opec-meeting-select" onchange="updateOpecWatch()" style="width:160px;font-size:10px"></select>
                         </div>
                     </div>
-                    <div id="pm-opec-physical" class="pm-container"></div>
+                    <div id="opec-watch-chart" class="chart-plot"></div>
                 </div>
             </div>
-        </div>
 
-        <!-- Ceasefire Term Structure -->
-        <div class="charts-row charts-row-single">
+            <!-- OPEC Decisions History -->
             <div class="chart-box">
                 <div class="panel">
                     <div class="chart-header">
                         <div>
-                            <div class="lbl" style="font-size:12px;margin-bottom:0">US × IRAN CEASEFIRE — TERM STRUCTURE</div>
-                            <div class="sub-label">PROBABILITY BY MATURITY // POLYMARKET</div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">OPEC+ DECISIONS HISTORY</div>
+                            <div class="sub-label">PRODUCTION CHANGES // 2024–2026</div>
                         </div>
                     </div>
-                    <div id="pm-term-chart" class="chart-plot"></div>
+                    <div id="opec-decisions" class="pm-container" style="max-height:45vh"></div>
                 </div>
             </div>
         </div>
@@ -553,10 +542,106 @@
 </div>
 </div>
 
+<!-- ═══════════════════════════════════════════════════════════════════════════ -->
+<!-- TAB 4: GEOPOLITICS                                                        -->
+<!-- ═══════════════════════════════════════════════════════════════════════════ -->
+<div class="tab-content" id="tab-geopolitics">
+<div class="markets-grid">
+
+    <!-- ─── LEFT SIDEBAR ─── -->
+    <div class="col-left">
+
+        <!-- Geopolitics Summary -->
+        <div class="panel">
+            <div class="lbl">GEOPOLITICAL RISK</div>
+            <div id="geo-risk-summary" class="mt-8"></div>
+        </div>
+
+        <!-- OPEC/Physical Impact -->
+        <div class="panel">
+            <div class="lbl">OPEC / SUPPLY IMPACT</div>
+            <div id="geo-opec-summary" class="mt-8"></div>
+        </div>
+
+    </div>
+
+    <!-- ─── CENTER: CHARTS ─── -->
+    <div class="col-center">
+
+        <!-- Geopolitics Predictions -->
+        <div class="charts-row">
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">GEOPOLITICAL PREDICTIONS</div>
+                            <div class="sub-label">POLYMARKET — CONFLICT, SANCTIONS, DIPLOMACY</div>
+                        </div>
+                    </div>
+                    <div id="pm-geopolitics" class="pm-container" style="max-height:45vh"></div>
+                </div>
+            </div>
+
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">OPEC / PHYSICAL IMPACT</div>
+                            <div class="sub-label">POLYMARKET — OIL, PRODUCTION, TRADE</div>
+                        </div>
+                    </div>
+                    <div id="pm-opec-physical" class="pm-container" style="max-height:45vh"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ceasefire Term Structure -->
+        <div class="charts-row charts-row-single">
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">US × IRAN CEASEFIRE — TERM STRUCTURE</div>
+                            <div class="sub-label">PROBABILITY BY DEADLINE // POLYMARKET EVENT 236840</div>
+                        </div>
+                    </div>
+                    <div id="pm-term-chart" class="chart-plot"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ─── RIGHT SIDEBAR ─── -->
+    <div class="col-right">
+
+        <!-- Market Stats -->
+        <div class="panel">
+            <div class="lbl">PREDICTION MARKET STATS</div>
+            <div id="geo-market-stats" class="mt-8"></div>
+        </div>
+
+        <!-- High Probability Alerts -->
+        <div class="panel">
+            <div class="lbl">HIGH PROBABILITY EVENTS</div>
+            <div id="geo-high-prob" class="mt-8"></div>
+        </div>
+
+        <!-- Ceasefire Summary -->
+        <div class="panel">
+            <div class="lbl">CEASEFIRE OUTLOOK</div>
+            <div id="geo-ceasefire-summary" class="mt-8"></div>
+        </div>
+
+    </div>
+</div>
+</div>
+
 <script src="engine.js?v=6"></script>
 <script src="energy-data.js?v=7"></script>
-<script src="energy-markets.js?v=7"></script>
-<script src="physical-markets.js?v=7"></script>
+<script src="energy-markets.js?v=8"></script>
+<script src="physical-markets.js?v=8"></script>
+<script src="geopolitics.js?v=1"></script>
 <script src="terminal.js?v=7"></script>
 </body>
 </html>

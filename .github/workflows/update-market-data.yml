@@ -28,11 +28,15 @@ jobs:
       - name: Fetch physical data (EIA + Polymarket)
         run: python scripts/fetch_physical_data.py
 
+      - name: Fetch OPEC Watch data (CME)
+        run: python scripts/fetch_opec_watch.py
+        continue-on-error: true
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/market-data.json docs/data/physical-data.json
+          git add docs/data/market-data.json docs/data/physical-data.json docs/physical-markets.js
           if git diff --staged --quiet; then
             echo "No data changes"
           else

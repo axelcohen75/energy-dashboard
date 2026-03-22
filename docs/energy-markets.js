@@ -25,6 +25,10 @@ function switchTab(tab) {
         initPhysicalMarkets();
     }
 
+    if (tab === 'geopolitics' && !geopoliticsInitialized) {
+        initGeopolitics();
+    }
+
     setTimeout(() => {
         if (tab === 'markets') {
             Plotly.Plots.resize('term-structure-chart');
@@ -32,6 +36,9 @@ function switchTab(tab) {
             Plotly.Plots.resize('spread-monitor-chart');
         } else if (tab === 'physical') {
             Plotly.Plots.resize('inventory-chart');
+            try { Plotly.Plots.resize('opec-watch-chart'); } catch(e) {}
+        } else if (tab === 'geopolitics') {
+            try { Plotly.Plots.resize('pm-term-chart'); } catch(e) {}
         } else {
             Plotly.Plots.resize('payoff-chart');
             Plotly.Plots.resize('greeks-chart');

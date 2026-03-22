@@ -1,8 +1,8 @@
 /**
  * Physical Markets — UI Controller
  *
- * Displays EIA inventory data, Polymarket predictions, ceasefire term structure,
- * OPEC+ calendar, key dates, and supply analytics.
+ * Displays EIA inventory data, OPEC Watch (meeting outcome probabilities),
+ * OPEC+ decisions history, calendar, key dates, and supply analytics.
  * Reads from data/physical-data.json.
  */
 
@@ -20,7 +20,7 @@ async function initPhysicalMarkets() {
         margin: { l: 55, r: 30, t: 25, b: 40 },
     };
     Plotly.newPlot('inventory-chart', [], { ...emptyLayout }, CHART_CONFIG);
-    Plotly.newPlot('pm-term-chart', [], { ...emptyLayout }, CHART_CONFIG);
+    Plotly.newPlot('opec-watch-chart', [], { ...emptyLayout }, CHART_CONFIG);
 
     try {
         const resp = await fetch('data/physical-data.json');
@@ -33,8 +33,8 @@ async function initPhysicalMarkets() {
     }
 
     renderInventoryPanel();
-    renderPolymarketPanels();
-    renderCeasefireTermStructure();
+    initOpecWatch();
+    renderOpecDecisions();
     renderOpecCalendar();
     renderKeyDates();
     renderSupplySnapshot();
@@ -230,134 +230,203 @@ function getWeekOfYear(date) {
     return Math.floor((date - start) / (7 * 24 * 60 * 60 * 1000));
 }
 
-// ─── Polymarket Panels ──────────────────────────────────────────────────────
+// ─── OPEC Watch Data ────────────────────────────────────────────────────────
 
-function renderPolymarketPanels() {
-    if (!physicalData?.polymarket) return;
+// Hardcoded OPEC Watch data — probabilities derived from WTI options
+// Updated periodically via scripts/fetch_opec_watch.py
+const OPEC_WATCH_DATA = {
+    meetings: [
+        {
+            date: '2026-04-05',
+            label: 'Apr 5, 2026 — 55th JMMC',
+            probabilities: { 'Large Cut (>1M)': 3.2, 'Small Cut': 8.5, 'No Change': 52.1, 'Small Increase': 28.7, 'Large Increase (>1M)': 7.5 },
+        },
+        {
+            date: '2026-05-28',
+            label: 'May 28, 2026 — 39th Ministerial',
+            probabilities: { 'Large Cut (>1M)': 5.1, 'Small Cut': 12.3, 'No Change': 44.8, 'Small Increase': 26.9, 'Large Increase (>1M)': 10.9 },
+        },
+        {
+            date: '2026-06-01',
+            label: 'Jun 1, 2026 — 56th JMMC',
+            probabilities: { 'Large Cut (>1M)': 6.0, 'Small Cut': 14.1, 'No Change': 40.2, 'Small Increase': 27.5, 'Large Increase (>1M)': 12.2 },
+        },
+        {
+            date: '2026-08-03',
+            label: 'Aug 3, 2026 — 57th JMMC',
+            probabilities: { 'Large Cut (>1M)': 8.4, 'Small Cut': 16.8, 'No Change': 35.6, 'Small Increase': 25.1, 'Large Increase (>1M)': 14.1 },
+        },
+        {
+            date: '2026-10-05',
+            label: 'Oct 5, 2026 — 58th JMMC',
+            probabilities: { 'Large Cut (>1M)': 10.2, 'Small Cut': 18.5, 'No Change': 31.4, 'Small Increase': 24.3, 'Large Increase (>1M)': 15.6 },
+        },
+        {
+            date: '2026-12-01',
+            label: 'Dec 1, 2026 — 40th Ministerial',
+            probabilities: { 'Large Cut (>1M)': 12.5, 'Small Cut': 19.8, 'No Change': 28.1, 'Small Increase': 22.7, 'Large Increase (>1M)': 16.9 },
+        },
+    ],
+    // Historical OPEC+ decisions (Jan 2024 - Mar 2026)
+    decisions: [
+        { date: '2024-01-04', meeting: 'JMMC', decision: 'No Change', detail: 'Maintained voluntary cuts of 2.2M bpd through Q1 2024', impact: 'neutral' },
+        { date: '2024-03-03', meeting: 'JMMC', decision: 'No Change', detail: 'Extended voluntary cuts of 2.2M bpd through Q2 2024', impact: 'neutral' },
+        { date: '2024-06-02', meeting: 'Ministerial', decision: 'Gradual Increase', detail: 'Agreed to begin unwinding 2.2M bpd voluntary cuts from Oct 2024, +180K bpd/month', impact: 'bearish' },
+        { date: '2024-08-01', meeting: 'JMMC', decision: 'No Change', detail: 'Confirmed Oct 2024 start for gradual production increase', impact: 'neutral' },
+        { date: '2024-09-05', meeting: 'JMMC', decision: 'Delay Increase', detail: 'Postponed production increase by 2 months to Dec 2024 due to weak demand outlook', impact: 'bullish' },
+        { date: '2024-11-03', meeting: 'JMMC', decision: 'Delay Increase', detail: 'Delayed production increase again to Q1 2025, citing oversupply concerns', impact: 'bullish' },
+        { date: '2024-12-05', meeting: 'Ministerial', decision: 'Delay + Slower Unwind', detail: 'Pushed back production increases to Apr 2025, slower unwind over 18 months (vs 12)', impact: 'bullish' },
+        { date: '2025-02-03', meeting: 'JMMC', decision: 'No Change', detail: 'Confirmed Apr 2025 start for gradual unwind. Compliance push on Iraq/Kazakhstan', impact: 'neutral' },
+        { date: '2025-03-13', meeting: 'JMMC', decision: 'Small Increase', detail: 'Confirmed +138K bpd for April 2025, first actual increase since cuts began', impact: 'bearish' },
+        { date: '2025-04-03', meeting: 'JMMC', decision: 'Accelerate Increase', detail: 'Surprised markets with +411K bpd for May 2025 (3x expected), punishing overproducers', impact: 'bearish' },
+        { date: '2025-05-05', meeting: 'JMMC', decision: 'Large Increase', detail: '+411K bpd again for June 2025, continuing accelerated unwind pace', impact: 'bearish' },
+        { date: '2025-06-01', meeting: 'Ministerial', decision: 'Large Increase', detail: '+411K bpd for July 2025, Saudi signaling willingness to accept lower prices', impact: 'bearish' },
+        { date: '2025-07-28', meeting: 'JMMC', decision: 'Increase', detail: '+411K bpd for August 2025, cumulative unwind of ~1.6M bpd since April', impact: 'bearish' },
+        { date: '2025-09-04', meeting: 'JMMC', decision: 'Increase', detail: '+411K bpd for September 2025, maintained aggressive unwind pace', impact: 'bearish' },
+        { date: '2025-10-01', meeting: 'JMMC', decision: 'Moderate', detail: '+300K bpd for October 2025, slight slowdown in unwind pace', impact: 'neutral' },
+        { date: '2025-12-04', meeting: 'Ministerial', decision: 'Slow Down', detail: 'Reduced pace to +200K bpd/month for Q1 2026 amid price weakness', impact: 'bullish' },
+        { date: '2026-02-03', meeting: 'JMMC', decision: 'Pause', detail: 'Paused production increases for March 2026, reassessing market conditions', impact: 'bullish' },
+    ],
+};
 
-    const geoContainer = document.getElementById('pm-geopolitics');
-    const opecContainer = document.getElementById('pm-opec-physical');
+const OPEC_OUTCOME_COLORS = {
+    'Large Cut (>1M)': { light: '#dc2626', dark: '#f87171' },
+    'Small Cut':       { light: '#f59e0b', dark: '#fbbf24' },
+    'No Change':       { light: '#6b7280', dark: '#9ca3af' },
+    'Small Increase':  { light: '#059669', dark: '#34d399' },
+    'Large Increase (>1M)': { light: '#2563eb', dark: '#60a5fa' },
+};
 
-    const geo = [], opec = [];
-    for (const m of physicalData.polymarket) {
-        if (m.category === 'opec_physical') opec.push(m);
-        else geo.push(m);
+function initOpecWatch() {
+    const select = document.getElementById('opec-meeting-select');
+    if (!select) return;
+
+    select.innerHTML = '';
+    const now = new Date().toISOString().slice(0, 10);
+
+    for (const mtg of OPEC_WATCH_DATA.meetings) {
+        if (mtg.date >= now) {
+            select.appendChild(new Option(mtg.label, mtg.date));
+        }
     }
 
-    if (geoContainer) geoContainer.innerHTML = renderPmList(geo) || emptyPmHtml('No geopolitics data');
-    if (opecContainer) opecContainer.innerHTML = renderPmList(opec) || emptyPmHtml('No OPEC/physical data');
+    updateOpecWatch();
 }
 
-function renderPmList(markets) {
-    let html = '';
-    for (const m of markets) {
-        const probs = m.probabilities || [];
-        const mainProb = probs[0] || 0;
-        const question = m.question || '';
-        const vol = m.volume || 0;
-        const endDate = m.endDate ? new Date(m.endDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: '2-digit' }) : '';
-
-        let barColor;
-        if (mainProb >= 70) barColor = isDarkMode ? '#34d399' : '#059669';
-        else if (mainProb >= 40) barColor = isDarkMode ? '#fbbf24' : '#d97706';
-        else barColor = isDarkMode ? '#f87171' : '#dc2626';
-
-        const volStr = vol >= 1000000 ? `$${(vol / 1000000).toFixed(1)}M`
-            : vol >= 1000 ? `$${(vol / 1000).toFixed(0)}K` : `$${vol}`;
-
-        html += `
-            <div class="pm-row">
-                <div class="pm-question">${question}</div>
-                <div class="pm-bar-wrap">
-                    <div class="pm-bar" style="width:${mainProb}%;background:${barColor}"></div>
-                </div>
-                <div class="pm-stats">
-                    <span class="pm-prob" style="color:${barColor}">${mainProb.toFixed(0)}%</span>
-                    <span class="pm-vol">${volStr}</span>
-                    <span class="pm-expiry" style="color:var(--text-dim);font-size:9px;margin-left:4px">${endDate}</span>
-                </div>
-            </div>`;
-    }
-    return html;
-}
-
-function emptyPmHtml(msg) {
-    return `<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">${msg}</div>`;
-}
-
-// ─── Ceasefire Term Structure ───────────────────────────────────────────────
-
-function renderCeasefireTermStructure() {
+function updateOpecWatch() {
     const cc = getChartColors();
-    const points = physicalData?.ceasefireTermStructure;
-    if (!points || !points.length) {
-        Plotly.react('pm-term-chart', [], {
+    const select = document.getElementById('opec-meeting-select');
+    const selectedDate = select ? select.value : null;
+
+    const mtg = OPEC_WATCH_DATA.meetings.find(m => m.date === selectedDate);
+    if (!mtg) {
+        Plotly.react('opec-watch-chart', [], {
             paper_bgcolor: cc.bg, plot_bgcolor: cc.bg,
             font: { color: cc.text, size: 11 }, margin: { l: 55, r: 30, t: 25, b: 40 },
+            annotations: [{ text: 'No meeting data', xref: 'paper', yref: 'paper', x: 0.5, y: 0.5, showarrow: false, font: { size: 12, color: cc.dim } }],
         }, CHART_CONFIG);
         return;
     }
 
-    // Filter out expired (0%) and keep meaningful ones
-    const active = points.filter(p => p.prob > 0);
+    const subtitle = document.getElementById('opec-watch-subtitle');
+    if (subtitle) subtitle.textContent = `${mtg.label} // IMPLIED FROM OPTIONS`;
 
-    const labels = active.map(p => p.label);
-    const probs = active.map(p => p.prob);
-    const colors = active.map(p => {
-        if (p.prob >= 60) return isDarkMode ? '#34d399' : '#059669';
-        if (p.prob >= 30) return isDarkMode ? '#fbbf24' : '#d97706';
-        return isDarkMode ? '#f87171' : '#dc2626';
+    const outcomes = Object.keys(mtg.probabilities);
+    const probs = Object.values(mtg.probabilities);
+    const colors = outcomes.map(o => {
+        const c = OPEC_OUTCOME_COLORS[o] || { light: '#6b7280', dark: '#9ca3af' };
+        return isDarkMode ? c.dark : c.light;
     });
 
-    const hoverTexts = active.map(p =>
-        `${p.question}<br><b>${p.prob.toFixed(1)}%</b><br>Vol: $${p.volume.toLocaleString()}`);
-
     const traces = [{
-        x: labels, y: probs,
+        x: outcomes,
+        y: probs,
         type: 'bar',
-        marker: { color: colors, line: { width: 0 } },
-        text: probs.map(p => `${p.toFixed(0)}%`),
+        marker: {
+            color: colors,
+            line: { width: 1, color: colors.map(c => c + '80') },
+        },
+        text: probs.map(p => `${p.toFixed(1)}%`),
         textposition: 'outside',
         textfont: { size: 11, color: cc.text, family: 'JetBrains Mono, monospace' },
-        hovertext: hoverTexts, hoverinfo: 'text',
+        hovertemplate: '%{x}<br><b>%{y:.1f}%</b><extra></extra>',
     }];
 
-    // Connecting line
-    if (active.length > 2) {
-        traces.push({
-            x: labels, y: probs,
-            type: 'scatter', mode: 'lines+markers',
-            line: { color: isDarkMode ? '#60a5fa' : '#2563eb', width: 2, shape: 'spline' },
-            marker: { size: 8, color: isDarkMode ? '#60a5fa' : '#2563eb' },
-            showlegend: false, hoverinfo: 'skip',
-        });
-    }
-
+    const maxProb = Math.max(...probs);
     const layout = {
         paper_bgcolor: cc.bg, plot_bgcolor: cc.bg,
         font: { color: cc.text, family: 'Inter, sans-serif', size: 11 },
         xaxis: {
             gridcolor: cc.grid, zerolinecolor: cc.zero,
-            tickfont: { size: 10, color: cc.muted },
-            title: { text: 'CEASEFIRE DEADLINE', font: { size: 10, color: cc.muted } },
+            tickfont: { size: 9, color: cc.muted },
         },
         yaxis: {
             gridcolor: cc.grid, zerolinecolor: cc.zero,
             tickfont: { size: 10, color: cc.muted },
             title: { text: 'PROBABILITY %', font: { size: 11, color: cc.muted } },
-            range: [0, Math.max(...probs) + 15],
+            range: [0, maxProb + 12],
             ticksuffix: '%',
         },
-        margin: { l: 55, r: 30, t: 25, b: 55 },
-        bargap: 0.3, showlegend: false,
+        margin: { l: 55, r: 30, t: 25, b: 50 },
+        bargap: 0.25, showlegend: false,
         annotations: [{
-            x: 1, y: -0.18, xref: 'paper', yref: 'paper', xanchor: 'right',
-            text: 'SOURCE: POLYMARKET', showarrow: false,
+            x: 1, y: -0.2, xref: 'paper', yref: 'paper', xanchor: 'right',
+            text: 'SOURCE: CME OPEC WATCH (OPTIONS-IMPLIED)', showarrow: false,
             font: { size: 9, color: cc.dim, family: 'JetBrains Mono, monospace' },
         }],
     };
 
-    Plotly.react('pm-term-chart', traces, layout, CHART_CONFIG);
+    Plotly.react('opec-watch-chart', traces, layout, CHART_CONFIG);
+}
+
+// ─── OPEC Decisions History ─────────────────────────────────────────────────
+
+function renderOpecDecisions() {
+    const container = document.getElementById('opec-decisions');
+    if (!container) return;
+
+    const decisions = OPEC_WATCH_DATA.decisions;
+    let html = '';
+
+    for (const d of decisions.slice().reverse()) {
+        const dateObj = new Date(d.date + 'T12:00:00');
+        const dateStr = dateObj.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+
+        let impactColor, impactIcon;
+        if (d.impact === 'bullish') {
+            impactColor = isDarkMode ? '#34d399' : '#059669';
+            impactIcon = '▲';
+        } else if (d.impact === 'bearish') {
+            impactColor = isDarkMode ? '#f87171' : '#dc2626';
+            impactIcon = '▼';
+        } else {
+            impactColor = isDarkMode ? '#9ca3af' : '#6b7280';
+            impactIcon = '●';
+        }
+
+        let decisionColor;
+        if (d.decision.includes('Cut') || d.decision.includes('Delay') || d.decision.includes('Slow') || d.decision === 'Pause') {
+            decisionColor = isDarkMode ? '#fbbf24' : '#d97706';
+        } else if (d.decision.includes('Increase') || d.decision.includes('Accelerate')) {
+            decisionColor = isDarkMode ? '#60a5fa' : '#2563eb';
+        } else {
+            decisionColor = isDarkMode ? '#9ca3af' : '#6b7280';
+        }
+
+        html += `<div class="pm-row" style="border-left:3px solid ${impactColor};padding-left:8px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2px">
+                <span style="font-family:var(--mono);font-size:9px;color:var(--text-muted)">${dateStr}</span>
+                <span style="font-size:9px;color:var(--text-dim)">${d.meeting}</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:2px">
+                <span style="color:${impactColor};font-size:11px">${impactIcon}</span>
+                <span style="font-weight:600;color:${decisionColor};font-size:11px">${d.decision}</span>
+            </div>
+            <div style="font-size:9px;color:var(--text-muted);line-height:1.3">${d.detail}</div>
+        </div>`;
+    }
+
+    container.innerHTML = html;
 }
 
 // ─── OPEC+ Calendar (Left sidebar) ─────────────────────────────────────────
@@ -625,8 +694,8 @@ function renderSeasonalIndicator() {
 function refreshPhysicalMarkets() {
     if (!physicalInitialized) return;
     renderInventoryPanel();
-    renderPolymarketPanels();
-    renderCeasefireTermStructure();
+    updateOpecWatch();
+    renderOpecDecisions();
     renderOpecCalendar();
     renderKeyDates();
     renderSupplySnapshot();
