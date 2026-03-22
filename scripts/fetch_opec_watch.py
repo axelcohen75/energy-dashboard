@@ -81,28 +81,87 @@ def scrape_with_playwright():
 
     with sync_playwright() as p:
         # Try to find an available Chromium binary (version may differ from pip package)
-        launch_args = {'headless': True}
+        launch_args = {
+            'headless': True,
+            'args': [
+                '--no-sandbox',
+                '--disable-blink-features=AutomationControlled',
+                '--disable-dev-shm-usage',
+            ],
+        }
         chromium_path = _find_chromium()
         if chromium_path:
             launch_args['executable_path'] = chromium_path
             print(f"  Using Chromium: {chromium_path}")
         browser = p.chromium.launch(**launch_args)
         context = browser.new_context(
-            user_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+            user_agent='Mozilla/5.0 (X11; Linux x86_64) '
                         'AppleWebKit/537.36 (KHTML, like Gecko) '
-                        'Chrome/122.0.0.0 Safari/537.36',
+                        'Chrome/131.0.0.0 Safari/537.36',
             viewport={'width': 1920, 'height': 1080},
+            java_script_enabled=True,
+            locale='en-US',
+            timezone_id='America/New_York',
         )
+        # Hide webdriver flag from Cloudflare detection
+        context.add_init_script("""
+            Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+            Object.defineProperty(navigator, 'languages', { get: () => ['en-US', 'en'] });
+            Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3, 4, 5] });
+        """)
+
         page = context.new_page()
 
+        # Intercept network responses to catch JSON data as it loads
+        json_responses = []
+        def handle_response(response):
+            ct = response.headers.get('content-type', '')
+            url = response.url
+            if 'json' in ct or 'javascript' in ct or 'opec' in url.lower():
+                try:
+                    body = response.text()
+                    if any(kw in body.lower() for kw in ['opec', 'probability', 'outcome',
+                            'large cut', 'no change', 'increase', 'cut']):
+                        json_responses.append({'url': url, 'body': body})
+                        print(f"  Captured response: {url[:100]}")
+                except Exception:
+                    pass
+
+        page.on('response', handle_response)
+
         try:
-            page.goto(CME_OPEC_WATCH_URL, wait_until='networkidle', timeout=60000)
-            print("  Page loaded, waiting for content...")
-            time.sleep(5)
+            # Use 'load' instead of 'networkidle' — Cloudflare challenge pages
+            # keep connections open which causes networkidle to timeout
+            page.goto(CME_OPEC_WATCH_URL, wait_until='load', timeout=90000)
+            print("  Page loaded (initial), waiting for JS rendering...")
+
+            # Wait for Cloudflare challenge to complete (if any)
+            time.sleep(10)
+
+            # Check if we're stuck on a Cloudflare challenge page
+            title = page.title()
+            print(f"  Page title: {title}")
+            if 'just a moment' in title.lower() or 'cloudflare' in title.lower():
+                print("  Cloudflare challenge detected, waiting longer...")
+                time.sleep(15)
+                title = page.title()
+                print(f"  Page title after wait: {title}")
+
+            # Wait for actual content to appear
+            try:
+                page.wait_for_selector('iframe, table, [class*="opec"], [class*="chart"]',
+                                       timeout=30000)
+                print("  Content elements found")
+            except Exception:
+                print("  No specific content selectors found, continuing...")
 
             # Try to find and switch into QuikStrike iframe
             iframes = page.frames
             print(f"  Found {len(iframes)} frames")
+            for frame in iframes:
+                url = frame.url
+                if url and url != 'about:blank':
+                    print(f"    Frame: {url[:120]}")
 
             target_frame = page
             for frame in iframes:
@@ -110,6 +169,7 @@ def scrape_with_playwright():
                 if 'quikstrike' in url.lower() or 'opec' in url.lower():
                     print(f"  Switching to iframe: {url}")
                     target_frame = frame
+                    time.sleep(5)  # Let iframe content load
                     break
 
             # Strategy 1: Look for probability data in tables
@@ -124,6 +184,8 @@ def scrape_with_playwright():
                 for frame in iframes:
                     if frame == page.main_frame:
                         continue
+                    if not frame.url or frame.url == 'about:blank':
+                        continue
                     print(f"  Trying frame: {frame.url[:80]}...")
                     meetings = extract_from_tables(frame)
                     if meetings:
@@ -132,34 +194,25 @@ def scrape_with_playwright():
                     if meetings:
                         break
 
-            # Strategy 4: Capture all network responses for JSON data
-            if not meetings:
-                print("  Trying page reload with network interception...")
-                json_responses = []
-
-                def handle_response(response):
-                    ct = response.headers.get('content-type', '')
-                    if 'json' in ct or 'javascript' in ct:
-                        try:
-                            body = response.text()
-                            if any(kw in body.lower() for kw in ['opec', 'probability', 'outcome', 'large cut', 'no change']):
-                                json_responses.append(body)
-                        except Exception:
-                            pass
-
-                page.on('response', handle_response)
-                page.reload(wait_until='networkidle', timeout=60000)
-                time.sleep(5)
-
-                for body in json_responses:
+            # Strategy 4: Check captured network responses
+            if not meetings and json_responses:
+                print(f"  Checking {len(json_responses)} captured network responses...")
+                for resp in json_responses:
                     try:
-                        data = json.loads(body)
+                        data = json.loads(resp['body'])
                         meetings = parse_json_payload(data)
                         if meetings:
-                            print(f"  Found data in network response!")
+                            print(f"  Found data in network response: {resp['url'][:100]}")
                             break
                     except json.JSONDecodeError:
                         pass
+
+            # Strategy 5: Dump page content for debugging
+            if not meetings:
+                content = page.content()
+                # Log a snippet for debugging in CI logs
+                print(f"  Page content length: {len(content)}")
+                print(f"  Page snippet: {content[:500]}")
 
         except Exception as e:
             print(f"  Error during scraping: {e}")
