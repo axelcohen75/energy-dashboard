@@ -167,6 +167,9 @@ function loadThemePreference() {
 function init() {
     loadThemePreference();
 
+    // Render forward formula with KaTeX
+    renderForwardFormula();
+
     // Populate commodity dropdown
     const sel = $('commodity-select');
     for (const name of Object.keys(COMMODITIES)) {
@@ -328,6 +331,27 @@ function resetEnv() {
     setSlider('time-to-expiry', 1.0);
     updateForwardPrice();
     updateCharts();
+}
+
+// ─── Forward Formula Rendering ──────────────────────────────────────────────
+
+function renderForwardFormula() {
+    const el = $('forward-formula');
+    if (!el) return;
+    if (typeof katex !== 'undefined') {
+        katex.render(String.raw`f^T(t) = S(t)\;\cdot\; e^{\left(r\,-\,(y_1\,-\,c)\right)\cdot(T-t)}`, el, {
+            throwOnError: false, displayMode: false,
+        });
+    } else {
+        // KaTeX not loaded yet (defer), retry once
+        window.addEventListener('load', () => {
+            if (typeof katex !== 'undefined') {
+                katex.render(String.raw`f^T(t) = S(t)\;\cdot\; e^{\left(r\,-\,(y_1\,-\,c)\right)\cdot(T-t)}`, el, {
+                    throwOnError: false, displayMode: false,
+                });
+            }
+        });
+    }
 }
 
 // ─── Forward Price Computation ──────────────────────────────────────────────
