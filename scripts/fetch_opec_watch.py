@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 """
-Scrape CME OPEC Watch probabilities and update physical-markets.js.
+Scrape CME OPEC Watch probabilities using Playwright headless browser.
 
 CME OPEC Watch derives meeting outcome probabilities from WTI crude oil
-options prices. Since there's no public API, we scrape the rendered page.
+options prices. The page is Cloudflare-protected and uses QuikStrike iframes,
+so we need a real browser to render it.
 
-Output: Updates the OPEC_WATCH_DATA object in docs/physical-markets.js
+Output:
+  - docs/data/opec-watch.json  (date-stamped history for day-over-day shifts)
+  - docs/physical-markets.js   (updates OPEC_WATCH_DATA inline)
 
 Usage:
+    pip install playwright && playwright install chromium
     python scripts/fetch_opec_watch.py
 
 Designed to run on a schedule (e.g., daily via GitHub Actions).
@@ -16,230 +20,291 @@ Designed to run on a schedule (e.g., daily via GitHub Actions).
 import json
 import re
 import sys
-import urllib.request
-import urllib.error
+import time
 from pathlib import Path
-from datetime import datetime, timezone
-
+from datetime import datetime, timezone, timedelta
 
 CME_OPEC_WATCH_URL = 'https://www.cmegroup.com/markets/energy/opec-watch.html'
 JS_FILE = Path(__file__).parent.parent / 'docs' / 'physical-markets.js'
+DATA_FILE = Path(__file__).parent.parent / 'docs' / 'data' / 'opec-watch.json'
 
-# Fallback: try fetching the JSON data endpoint that CME's frontend uses
-CME_API_URLS = [
-    'https://www.cmegroup.com/services/opec-watch/opec-watch.json',
-    'https://www.cmegroup.com/CmeWS/mvc/opec/OPECWatch',
-    'https://www.cmegroup.com/content/cmegroup/en/markets/energy/opec-watch.ajax.json',
-]
+# Canonical outcome labels
+OUTCOMES = ['Large Cut (>1M)', 'Small Cut', 'No Change', 'Small Increase', 'Large Increase (>1M)']
 
 
-def fetch_with_retry(url, retries=3, delay=5):
-    """Fetch URL with retries and browser-like headers."""
-    import time
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,application/json,*/*;q=0.8',
-        'Accept-Language': 'en-US,en;q=0.9',
-        'Accept-Encoding': 'identity',
-        'Connection': 'keep-alive',
-    }
-
-    for attempt in range(retries):
+def load_history():
+    """Load existing history from JSON file."""
+    if DATA_FILE.exists():
         try:
-            req = urllib.request.Request(url, headers=headers)
-            resp = urllib.request.urlopen(req, timeout=30)
-            return resp.read().decode('utf-8')
-        except (urllib.error.HTTPError, urllib.error.URLError, Exception) as e:
-            print(f"  Attempt {attempt + 1}/{retries} failed: {e}")
-            if attempt < retries - 1:
-                wait = delay * (2 ** attempt)
-                print(f"  Retrying in {wait}s...")
-                time.sleep(wait)
-    return None
+            return json.loads(DATA_FILE.read_text())
+        except (json.JSONDecodeError, OSError):
+            pass
+    return {'snapshots': [], 'meetings': []}
 
 
-def try_fetch_json_api():
-    """Try CME's potential JSON API endpoints."""
-    for url in CME_API_URLS:
-        print(f"  Trying API: {url}")
-        content = fetch_with_retry(url, retries=2, delay=3)
-        if content:
-            try:
-                data = json.loads(content)
-                if data:
-                    print(f"  Got JSON data from {url}")
-                    return data
-            except json.JSONDecodeError:
-                pass
-    return None
+def save_history(data):
+    """Save history to JSON file."""
+    DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
+    DATA_FILE.write_text(json.dumps(data, indent=2))
+    print(f"  Saved history to {DATA_FILE}")
 
 
-def parse_opec_watch_html(html):
-    """Parse OPEC Watch data from the HTML page."""
+def scrape_with_playwright():
+    """Use Playwright to load the CME OPEC Watch page and extract data."""
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        print("ERROR: playwright not installed.")
+        print("  pip install playwright && playwright install chromium")
+        return None
+
+    print(f"  Loading {CME_OPEC_WATCH_URL} ...")
     meetings = []
 
-    # Look for embedded JSON data in script tags
-    # CME often embeds data as JSON in <script> tags or data attributes
-    json_patterns = [
-        r'opecWatchData\s*=\s*(\{[^;]+\});',
-        r'var\s+data\s*=\s*(\{[^;]+\});',
-        r'"opecWatch"\s*:\s*(\{[^}]+\})',
-        r'chartData\s*=\s*(\[[^\]]+\])',
-    ]
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(
+            user_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+                        'AppleWebKit/537.36 (KHTML, like Gecko) '
+                        'Chrome/122.0.0.0 Safari/537.36',
+            viewport={'width': 1920, 'height': 1080},
+        )
+        page = context.new_page()
 
-    for pattern in json_patterns:
-        match = re.search(pattern, html, re.DOTALL)
-        if match:
-            try:
-                data = json.loads(match.group(1))
-                print(f"  Found embedded JSON data")
-                return parse_json_data(data)
-            except json.JSONDecodeError:
-                continue
+        try:
+            page.goto(CME_OPEC_WATCH_URL, wait_until='networkidle', timeout=60000)
+            print("  Page loaded, waiting for content...")
+            time.sleep(5)
 
-    # Try parsing from table structure
-    # CME OPEC Watch uses a table with probability percentages
-    table_pattern = r'<table[^>]*class="[^"]*opec[^"]*"[^>]*>(.*?)</table>'
-    table_match = re.search(table_pattern, html, re.DOTALL | re.IGNORECASE)
-    if table_match:
-        return parse_table_data(table_match.group(1))
+            # Try to find and switch into QuikStrike iframe
+            iframes = page.frames
+            print(f"  Found {len(iframes)} frames")
 
-    # Try parsing probability bars/charts
-    prob_pattern = r'(?:Large\s+Cut|Small\s+Cut|No\s+Change|Small\s+Increase|Large\s+Increase)[^0-9]*?(\d+\.?\d*)%'
-    probs = re.findall(prob_pattern, html, re.IGNORECASE)
-    if probs:
-        print(f"  Found {len(probs)} probability values from text")
+            target_frame = page
+            for frame in iframes:
+                url = frame.url
+                if 'quikstrike' in url.lower() or 'opec' in url.lower():
+                    print(f"  Switching to iframe: {url}")
+                    target_frame = frame
+                    break
 
+            # Strategy 1: Look for probability data in tables
+            meetings = extract_from_tables(target_frame)
+
+            # Strategy 2: Look for probability data in any text content
+            if not meetings:
+                meetings = extract_from_text(target_frame)
+
+            # Strategy 3: Try all frames
+            if not meetings:
+                for frame in iframes:
+                    if frame == page.main_frame:
+                        continue
+                    print(f"  Trying frame: {frame.url[:80]}...")
+                    meetings = extract_from_tables(frame)
+                    if meetings:
+                        break
+                    meetings = extract_from_text(frame)
+                    if meetings:
+                        break
+
+            # Strategy 4: Capture all network responses for JSON data
+            if not meetings:
+                print("  Trying page reload with network interception...")
+                json_responses = []
+
+                def handle_response(response):
+                    ct = response.headers.get('content-type', '')
+                    if 'json' in ct or 'javascript' in ct:
+                        try:
+                            body = response.text()
+                            if any(kw in body.lower() for kw in ['opec', 'probability', 'outcome', 'large cut', 'no change']):
+                                json_responses.append(body)
+                        except Exception:
+                            pass
+
+                page.on('response', handle_response)
+                page.reload(wait_until='networkidle', timeout=60000)
+                time.sleep(5)
+
+                for body in json_responses:
+                    try:
+                        data = json.loads(body)
+                        meetings = parse_json_payload(data)
+                        if meetings:
+                            print(f"  Found data in network response!")
+                            break
+                    except json.JSONDecodeError:
+                        pass
+
+        except Exception as e:
+            print(f"  Error during scraping: {e}")
+        finally:
+            browser.close()
+
+    return meetings if meetings else None
+
+
+def extract_from_tables(frame):
+    """Extract probability data from HTML tables in a frame."""
+    meetings = []
+    try:
+        tables = frame.query_selector_all('table')
+        for table in tables:
+            rows = table.query_selector_all('tr')
+            probs = {}
+            for row in rows:
+                text = row.inner_text().strip()
+                for outcome in OUTCOMES:
+                    short = outcome.replace(' (>1M)', '')
+                    if short.lower() in text.lower() or outcome.lower() in text.lower():
+                        numbers = re.findall(r'(\d+\.?\d*)%?', text)
+                        floats = [float(n) for n in numbers if 0 < float(n) < 100]
+                        if floats:
+                            probs[outcome] = floats[0]
+
+            if len(probs) >= 3:
+                meetings.append({'probabilities': probs})
+                print(f"  Extracted from table: {probs}")
+
+    except Exception as e:
+        print(f"  Table extraction error: {e}")
     return meetings
 
 
-def parse_json_data(data):
-    """Parse structured JSON data from CME."""
+def extract_from_text(frame):
+    """Extract probability data from visible text content."""
+    meetings = []
+    try:
+        content = frame.content()
+        # Match patterns like "No Change 52.1%" or "Large Cut (>1M): 3.2%"
+        probs = {}
+        for outcome in OUTCOMES:
+            short = outcome.replace(' (>1M)', '')
+            patterns = [
+                rf'{re.escape(outcome)}[^0-9]*?(\d+\.?\d*)\s*%',
+                rf'{re.escape(short)}[^0-9]*?(\d+\.?\d*)\s*%',
+            ]
+            for pat in patterns:
+                match = re.search(pat, content, re.IGNORECASE)
+                if match:
+                    val = float(match.group(1))
+                    if 0 < val < 100:
+                        probs[outcome] = val
+                        break
+
+        if len(probs) >= 3:
+            meetings.append({'probabilities': probs})
+            print(f"  Extracted from text: {probs}")
+
+    except Exception as e:
+        print(f"  Text extraction error: {e}")
+    return meetings
+
+
+def parse_json_payload(data):
+    """Parse a JSON payload that might contain OPEC Watch data."""
     meetings = []
 
     if isinstance(data, dict):
-        for key in ['meetings', 'data', 'results', 'opecMeetings']:
-            if key in data:
-                items = data[key]
-                if isinstance(items, list):
-                    for item in items:
-                        mtg = extract_meeting_from_json(item)
-                        if mtg:
-                            meetings.append(mtg)
-                    break
-
-    elif isinstance(data, list):
-        for item in data:
-            mtg = extract_meeting_from_json(item)
-            if mtg:
-                meetings.append(mtg)
-
-    return meetings
-
-
-def extract_meeting_from_json(item):
-    """Extract a single meeting's data from a JSON object."""
-    if not isinstance(item, dict):
-        return None
-
-    date = item.get('date', item.get('meetingDate', ''))
-    label = item.get('label', item.get('title', item.get('meetingTitle', '')))
-    probs = item.get('probabilities', item.get('outcomes', {}))
-
-    if not date or not probs:
-        return None
-
-    # Normalize probabilities
-    outcome_map = {
-        'largeCut': 'Large Cut (>1M)',
-        'smallCut': 'Small Cut',
-        'noChange': 'No Change',
-        'smallIncrease': 'Small Increase',
-        'largeIncrease': 'Large Increase (>1M)',
-        'large_cut': 'Large Cut (>1M)',
-        'small_cut': 'Small Cut',
-        'no_change': 'No Change',
-        'small_increase': 'Small Increase',
-        'large_increase': 'Large Increase (>1M)',
-    }
-
-    normalized = {}
-    if isinstance(probs, dict):
-        for k, v in probs.items():
-            norm_key = outcome_map.get(k, k)
-            try:
-                normalized[norm_key] = round(float(v), 1)
-            except (ValueError, TypeError):
-                pass
-    elif isinstance(probs, list):
-        outcomes = ['Large Cut (>1M)', 'Small Cut', 'No Change', 'Small Increase', 'Large Increase (>1M)']
-        for i, v in enumerate(probs[:5]):
-            try:
-                normalized[outcomes[i]] = round(float(v), 1)
-            except (ValueError, TypeError):
-                pass
-
-    if not normalized:
-        return None
-
-    return {
-        'date': date,
-        'label': label,
-        'probabilities': normalized,
-    }
-
-
-def parse_table_data(table_html):
-    """Parse probabilities from an HTML table."""
-    meetings = []
-
-    rows = re.findall(r'<tr[^>]*>(.*?)</tr>', table_html, re.DOTALL)
-    for row in rows:
-        cells = re.findall(r'<td[^>]*>(.*?)</td>', row, re.DOTALL)
-        numbers = []
-        for cell in cells:
-            clean = re.sub(r'<[^>]+>', '', cell).strip()
-            match = re.search(r'(\d+\.?\d*)%?', clean)
-            if match:
-                numbers.append(float(match.group(1)))
-
-        if len(numbers) >= 5:
-            meetings.append({
-                'probabilities': {
-                    'Large Cut (>1M)': numbers[0],
-                    'Small Cut': numbers[1],
-                    'No Change': numbers[2],
-                    'Small Increase': numbers[3],
-                    'Large Increase (>1M)': numbers[4],
-                }
-            })
+        # Recursively search for probability-like structures
+        for key, val in data.items():
+            if isinstance(val, list):
+                for item in val:
+                    if isinstance(item, dict):
+                        probs = {}
+                        for k, v in item.items():
+                            for outcome in OUTCOMES:
+                                if outcome.lower() in k.lower() or k.lower() in outcome.lower():
+                                    try:
+                                        probs[outcome] = round(float(v), 2)
+                                    except (ValueError, TypeError):
+                                        pass
+                        if len(probs) >= 3:
+                            meetings.append({
+                                'date': item.get('date', item.get('meetingDate', '')),
+                                'label': item.get('label', item.get('title', '')),
+                                'probabilities': probs,
+                            })
+            elif isinstance(val, dict):
+                sub = parse_json_payload(val)
+                if sub:
+                    meetings.extend(sub)
 
     return meetings
 
 
-def update_js_file(meetings):
-    """Update the OPEC_WATCH_DATA meetings in physical-markets.js."""
+def update_history(history, meetings):
+    """Add today's snapshot to history, keeping last 30 days."""
+    today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+
+    # Build snapshot
+    snapshot = {
+        'date': today,
+        'timestamp': datetime.now(timezone.utc).isoformat(),
+        'meetings': [],
+    }
+
+    for mtg in meetings:
+        snapshot['meetings'].append({
+            'date': mtg.get('date', ''),
+            'label': mtg.get('label', ''),
+            'probabilities': mtg.get('probabilities', {}),
+        })
+
+    # Remove any existing snapshot for today
+    history['snapshots'] = [s for s in history['snapshots'] if s['date'] != today]
+    history['snapshots'].append(snapshot)
+
+    # Keep last 30 days
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=30)).strftime('%Y-%m-%d')
+    history['snapshots'] = [s for s in history['snapshots'] if s['date'] >= cutoff]
+    history['snapshots'].sort(key=lambda s: s['date'])
+
+    # Update current meetings
+    history['meetings'] = snapshot['meetings']
+
+    return history
+
+
+def update_js_file(history):
+    """Update OPEC_WATCH_DATA in physical-markets.js with current + previous day data."""
+    meetings = history.get('meetings', [])
     if not meetings:
         print("  No meetings data to update")
         return False
 
+    # Find previous day snapshot for shift calculation
+    snapshots = history.get('snapshots', [])
+    previous = None
+    if len(snapshots) >= 2:
+        previous = snapshots[-2]  # second-to-last is yesterday
+
     js_content = JS_FILE.read_text()
 
-    # Build the new meetings array JS
+    # Build the new meetings array
     meetings_js = "[\n"
     for mtg in meetings:
-        probs_js = json.dumps(mtg['probabilities'], indent=8)
-        # Convert Python dict to JS object formatting
-        probs_js = probs_js.replace('"Large Cut (>1M)"', "'Large Cut (>1M)'")
-        probs_js = probs_js.replace('"Small Cut"', "'Small Cut'")
-        probs_js = probs_js.replace('"No Change"', "'No Change'")
-        probs_js = probs_js.replace('"Small Increase"', "'Small Increase'")
-        probs_js = probs_js.replace('"Large Increase (>1M)"', "'Large Increase (>1M)'")
+        probs = mtg.get('probabilities', {})
+        probs_js = json.dumps(probs)
+
+        # Find previous day probabilities for this meeting
+        prev_probs = {}
+        if previous:
+            for prev_mtg in previous.get('meetings', []):
+                if prev_mtg.get('date') == mtg.get('date'):
+                    prev_probs = prev_mtg.get('probabilities', {})
+                    break
+        prev_js = json.dumps(prev_probs) if prev_probs else '{}'
+
+        prev_date = previous['date'] if previous else ''
 
         meetings_js += f"""        {{
-            date: '{mtg['date']}',
-            label: '{mtg['label']}',
+            date: '{mtg.get('date', '')}',
+            label: '{mtg.get('label', '')}',
             probabilities: {probs_js},
+            previous: {prev_js},
+            previousDate: '{prev_date}',
         }},
 """
     meetings_js += "    ]"
@@ -260,43 +325,43 @@ def update_js_file(meetings):
 
 def main():
     print("=" * 60)
-    print("CME OPEC Watch Scraper")
+    print("CME OPEC Watch Scraper (Playwright)")
     print("=" * 60)
+    print(f"  Time: {datetime.now(timezone.utc).isoformat()}")
 
-    # Strategy 1: Try JSON API endpoints
-    print("\n1. Trying CME JSON API endpoints...")
-    json_data = try_fetch_json_api()
-    if json_data:
-        meetings = parse_json_data(json_data)
-        if meetings:
-            print(f"\n  Parsed {len(meetings)} meetings from API")
-            for m in meetings:
-                print(f"    {m.get('date', 'N/A')}: {m.get('label', 'N/A')}")
-                for outcome, prob in m.get('probabilities', {}).items():
-                    print(f"      {outcome}: {prob}%")
-            update_js_file(meetings)
-            return
+    # Load existing history
+    history = load_history()
+    print(f"  Existing snapshots: {len(history.get('snapshots', []))}")
 
-    # Strategy 2: Try scraping the HTML page
-    print("\n2. Trying HTML scrape of OPEC Watch page...")
-    html = fetch_with_retry(CME_OPEC_WATCH_URL)
-    if html:
-        meetings = parse_opec_watch_html(html)
-        if meetings:
-            print(f"\n  Parsed {len(meetings)} meetings from HTML")
-            update_js_file(meetings)
-            return
-        else:
-            print("  Could not parse meetings from HTML")
+    # Scrape CME
+    print("\n1. Scraping CME OPEC Watch with Playwright...")
+    meetings = scrape_with_playwright()
 
-    # Strategy 3: No data available — keep existing hardcoded data
-    print("\n3. Could not fetch live data. Keeping existing hardcoded data.")
-    print("   The hardcoded data in physical-markets.js will be used.")
-    print("   To update manually, edit OPEC_WATCH_DATA in docs/physical-markets.js")
-    print("\n   Note: CME may block automated access. Consider:")
-    print("   - Using a headless browser (Playwright/Puppeteer)")
-    print("   - Checking if CME offers a data API subscription")
-    print("   - Manual periodic updates of the hardcoded data")
+    if meetings:
+        print(f"\n  Successfully scraped {len(meetings)} meeting(s)")
+        for m in meetings:
+            print(f"    {m.get('date', 'N/A')}: {m.get('label', 'N/A')}")
+            for outcome, prob in m.get('probabilities', {}).items():
+                print(f"      {outcome}: {prob}%")
+
+        # Update history
+        history = update_history(history, meetings)
+        save_history(history)
+
+        # Update JS file
+        update_js_file(history)
+
+        print("\nDone! Data updated successfully.")
+    else:
+        print("\n  Could not scrape live data.")
+        print("  Keeping existing data in physical-markets.js")
+        print("\n  Troubleshooting:")
+        print("  - Make sure Playwright + Chromium are installed:")
+        print("    pip install playwright && playwright install chromium")
+        print("  - CME may have changed their page structure")
+        print("  - Try running with PWDEBUG=1 to debug visually:")
+        print("    PWDEBUG=1 python scripts/fetch_opec_watch.py")
+        print("\n  Manual update: edit OPEC_WATCH_DATA in docs/physical-markets.js")
 
 
 if __name__ == '__main__':

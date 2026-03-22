@@ -240,31 +240,43 @@ const OPEC_WATCH_DATA = {
             date: '2026-04-05',
             label: 'Apr 5, 2026 — 55th JMMC',
             probabilities: { 'Large Cut (>1M)': 3.2, 'Small Cut': 8.5, 'No Change': 52.1, 'Small Increase': 28.7, 'Large Increase (>1M)': 7.5 },
+            previous: { 'Large Cut (>1M)': 3.5, 'Small Cut': 9.1, 'No Change': 53.8, 'Small Increase': 26.4, 'Large Increase (>1M)': 7.2 },
+            previousDate: '2026-03-21',
         },
         {
             date: '2026-05-28',
             label: 'May 28, 2026 — 39th Ministerial',
             probabilities: { 'Large Cut (>1M)': 5.1, 'Small Cut': 12.3, 'No Change': 44.8, 'Small Increase': 26.9, 'Large Increase (>1M)': 10.9 },
+            previous: { 'Large Cut (>1M)': 5.4, 'Small Cut': 12.8, 'No Change': 45.6, 'Small Increase': 25.9, 'Large Increase (>1M)': 10.3 },
+            previousDate: '2026-03-21',
         },
         {
             date: '2026-06-01',
             label: 'Jun 1, 2026 — 56th JMMC',
             probabilities: { 'Large Cut (>1M)': 6.0, 'Small Cut': 14.1, 'No Change': 40.2, 'Small Increase': 27.5, 'Large Increase (>1M)': 12.2 },
+            previous: { 'Large Cut (>1M)': 6.3, 'Small Cut': 14.5, 'No Change': 41.0, 'Small Increase': 26.8, 'Large Increase (>1M)': 11.4 },
+            previousDate: '2026-03-21',
         },
         {
             date: '2026-08-03',
             label: 'Aug 3, 2026 — 57th JMMC',
             probabilities: { 'Large Cut (>1M)': 8.4, 'Small Cut': 16.8, 'No Change': 35.6, 'Small Increase': 25.1, 'Large Increase (>1M)': 14.1 },
+            previous: { 'Large Cut (>1M)': 8.8, 'Small Cut': 17.2, 'No Change': 36.1, 'Small Increase': 24.5, 'Large Increase (>1M)': 13.4 },
+            previousDate: '2026-03-21',
         },
         {
             date: '2026-10-05',
             label: 'Oct 5, 2026 — 58th JMMC',
             probabilities: { 'Large Cut (>1M)': 10.2, 'Small Cut': 18.5, 'No Change': 31.4, 'Small Increase': 24.3, 'Large Increase (>1M)': 15.6 },
+            previous: { 'Large Cut (>1M)': 10.6, 'Small Cut': 18.9, 'No Change': 32.0, 'Small Increase': 23.8, 'Large Increase (>1M)': 14.7 },
+            previousDate: '2026-03-21',
         },
         {
             date: '2026-12-01',
             label: 'Dec 1, 2026 — 40th Ministerial',
             probabilities: { 'Large Cut (>1M)': 12.5, 'Small Cut': 19.8, 'No Change': 28.1, 'Small Increase': 22.7, 'Large Increase (>1M)': 16.9 },
+            previous: { 'Large Cut (>1M)': 12.9, 'Small Cut': 20.2, 'No Change': 28.8, 'Small Increase': 22.1, 'Large Increase (>1M)': 16.0 },
+            previousDate: '2026-03-21',
         },
     ],
     // Historical OPEC+ decisions (Jan 2024 - Mar 2026)
@@ -377,6 +389,66 @@ function updateOpecWatch() {
     };
 
     Plotly.react('opec-watch-chart', traces, layout, CHART_CONFIG);
+
+    // Render probability shift table (like CME FedWatch)
+    renderOpecShiftTable(mtg);
+}
+
+function renderOpecShiftTable(mtg) {
+    let container = document.getElementById('opec-watch-shift-table');
+    if (!container) {
+        // Create container after chart if it doesn't exist
+        const chart = document.getElementById('opec-watch-chart');
+        if (!chart) return;
+        container = document.createElement('div');
+        container.id = 'opec-watch-shift-table';
+        chart.parentNode.insertBefore(container, chart.nextSibling);
+    }
+
+    const prev = mtg.previous || {};
+    const hasPrev = Object.keys(prev).length > 0;
+    const prevDate = mtg.previousDate || '';
+    const prevLabel = prevDate ? formatShiftDate(prevDate) : '';
+
+    const outcomes = Object.keys(mtg.probabilities);
+    let html = `<table class="opec-shift-tbl">
+        <thead><tr>
+            <th class="opec-shift-outcome">OUTCOME</th>
+            <th class="opec-shift-now">NOW</th>
+            ${hasPrev ? `<th class="opec-shift-prev">1 DAY<br><span class="opec-shift-date">${prevLabel}</span></th>` : ''}
+        </tr></thead><tbody>`;
+
+    for (const o of outcomes) {
+        const now = mtg.probabilities[o];
+        const prevVal = prev[o];
+        const diff = hasPrev && prevVal != null ? now - prevVal : null;
+
+        let diffHtml = '';
+        if (diff !== null) {
+            const sign = diff > 0 ? '+' : '';
+            const cls = diff > 0 ? 'opec-shift-up' : diff < 0 ? 'opec-shift-down' : 'opec-shift-flat';
+            diffHtml = `<span class="${cls}">${sign}${diff.toFixed(2)}%</span>`;
+        }
+
+        // Color dot for outcome
+        const c = OPEC_OUTCOME_COLORS[o] || { light: '#6b7280', dark: '#9ca3af' };
+        const dotColor = isDarkMode ? c.dark : c.light;
+
+        html += `<tr>
+            <td class="opec-shift-outcome"><span class="opec-dot" style="background:${dotColor}"></span>${o}</td>
+            <td class="opec-shift-now">${now.toFixed(2)}%</td>
+            ${hasPrev ? `<td class="opec-shift-prev">${prevVal != null ? prevVal.toFixed(2) + '%' : '—'} ${diffHtml}</td>` : ''}
+        </tr>`;
+    }
+
+    html += '</tbody></table>';
+    container.innerHTML = html;
+}
+
+function formatShiftDate(dateStr) {
+    const d = new Date(dateStr + 'T00:00:00');
+    const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+    return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
 }
 
 // ─── OPEC Decisions History ─────────────────────────────────────────────────

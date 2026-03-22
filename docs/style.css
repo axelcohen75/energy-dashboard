@@ -649,6 +649,59 @@ input[type="range"]::-moz-range-thumb {
     .tab-btn { font-size: 9px; padding: 4px 10px; }
 }
 
+/* ─── OPEC Watch Shift Table ─── */
+.opec-shift-tbl {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--mono);
+    font-size: 10px;
+    margin-top: 8px;
+}
+.opec-shift-tbl thead th {
+    text-align: center;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    padding: 6px 8px;
+    border-bottom: 2px solid var(--panel-border);
+    text-transform: uppercase;
+}
+.opec-shift-tbl thead th.opec-shift-outcome { text-align: left; }
+.opec-shift-tbl tbody td {
+    padding: 5px 8px;
+    border-bottom: 1px solid var(--panel-border);
+    text-align: center;
+    color: var(--text);
+}
+.opec-shift-tbl tbody td.opec-shift-outcome {
+    text-align: left;
+    font-weight: 500;
+    font-size: 9.5px;
+    white-space: nowrap;
+}
+.opec-shift-tbl tbody td.opec-shift-now {
+    font-weight: 600;
+    background: rgba(255, 255, 200, 0.15);
+}
+.opec-shift-date {
+    font-size: 8px;
+    font-weight: 400;
+    color: var(--text-dim);
+    display: block;
+}
+.opec-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+.opec-shift-up { color: #059669; font-weight: 600; margin-left: 4px; }
+.opec-shift-down { color: #dc2626; font-weight: 600; margin-left: 4px; }
+.opec-shift-flat { color: var(--text-dim); margin-left: 4px; }
+
 @media (max-width: 600px) {
     .header { padding: 8px 12px; }
     .header-title { font-size: 11px; letter-spacing: 0.5px; }
