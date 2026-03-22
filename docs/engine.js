@@ -112,6 +112,23 @@ const Black76 = {
     },
 };
 
+// ─── Forward Pricing ─────────────────────────────────────────────────────────
+
+/**
+ * Compute commodity forward price from cost-of-carry model.
+ * F = S × e^((r + u - y) × T)
+ *
+ * @param {number} S     Spot price
+ * @param {number} r     Funding/risk-free rate (decimal, e.g. 0.05)
+ * @param {number} u     Storage cost (decimal, e.g. 0.02)
+ * @param {number} y     Convenience yield (decimal, e.g. 0.03)
+ * @param {number} T     Time to maturity (years)
+ * @returns {number}     Forward price
+ */
+function computeForward(S, r, u, y, T) {
+    return S * Math.exp((r + u - y) * T);
+}
+
 // ─── Portfolio Helpers ───────────────────────────────────────────────────────
 
 function computeGreeks(leg, F, r, sigma, T) {
@@ -225,11 +242,11 @@ const STRATEGIES = {
 // These load realistic default parameters — the pricing model (Black-76) is the same for all.
 
 const COMMODITIES = {
-    'WTI Crude Oil (CL)':            { F: 75,   vol: 35, rate: 5.0 },
-    'Brent Crude Oil (BZ)':          { F: 78,   vol: 33, rate: 5.0 },
-    'Henry Hub Nat Gas (NG)':        { F: 3.50, vol: 55, rate: 5.0 },
-    'TTF Natural Gas':               { F: 35,   vol: 60, rate: 4.0 },
-    'German Power Baseload':         { F: 85,   vol: 50, rate: 4.0 },
-    'RBOB Gasoline (RB)':            { F: 2.50, vol: 38, rate: 5.0 },
-    'Custom':                        { F: 100,  vol: 30, rate: 5.0 },
+    'WTI Crude Oil (CL)':            { spot: 75,   vol: 35, rate: 5.0, convYield: 6.0, storageCost: 1.5 },
+    'Brent Crude Oil (BZ)':          { spot: 78,   vol: 33, rate: 5.0, convYield: 5.5, storageCost: 1.0 },
+    'Henry Hub Nat Gas (NG)':        { spot: 3.50, vol: 55, rate: 5.0, convYield: 8.0, storageCost: 4.0 },
+    'TTF Natural Gas':               { spot: 35,   vol: 60, rate: 4.0, convYield: 6.0, storageCost: 2.0 },
+    'German Power Baseload':         { spot: 85,   vol: 50, rate: 4.0, convYield: 0.0, storageCost: 0.0 },
+    'RBOB Gasoline (RB)':            { spot: 2.50, vol: 38, rate: 5.0, convYield: 4.0, storageCost: 2.0 },
+    'Custom':                        { spot: 100,  vol: 30, rate: 5.0, convYield: 0.0, storageCost: 0.0 },
 };

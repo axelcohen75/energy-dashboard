@@ -302,11 +302,15 @@ const OPEC_WATCH_DATA = {
 };
 
 const OPEC_OUTCOME_COLORS = {
+    // 5-category format (legacy)
     'Large Cut (>1M)': { light: '#dc2626', dark: '#f87171' },
     'Small Cut':       { light: '#f59e0b', dark: '#fbbf24' },
     'No Change':       { light: '#6b7280', dark: '#9ca3af' },
     'Small Increase':  { light: '#059669', dark: '#34d399' },
     'Large Increase (>1M)': { light: '#2563eb', dark: '#60a5fa' },
+    // 3-category format (CME current)
+    'Decrease':        { light: '#dc2626', dark: '#f87171' },
+    'Increase':        { light: '#059669', dark: '#34d399' },
 };
 
 function initOpecWatch() {

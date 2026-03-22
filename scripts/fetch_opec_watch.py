@@ -309,25 +309,64 @@ def extract_from_frame(frame):
         print(f"  Could not get frame content: {e}")
         return meetings
 
-    # Strategy A: Look for probability values near outcome keywords in HTML
-    probs = {}
-
-    # CME/QuikStrike may use various label formats
-    outcome_patterns = {
-        'Large Cut (>1M)':     [r'large\s*cut', r'significant\s*cut', r'cut.*?>.*?1'],
-        'Small Cut':           [r'small\s*cut', r'modest\s*cut', r'minor\s*cut'],
-        'No Change':           [r'no\s*change', r'unchanged', r'maintain', r'status\s*quo'],
-        'Small Increase':      [r'small\s*increase', r'modest\s*increase', r'minor\s*increase'],
-        'Large Increase (>1M)':[r'large\s*increase', r'significant\s*increase', r'increase.*?>.*?1'],
-    }
-
     # Strip HTML tags for text matching
     text = re.sub(r'<[^>]+>', ' ', content)
     text = re.sub(r'\s+', ' ', text)
 
+    # ── Strategy A: CME's actual 3-category format (Increase/Pause/Decrease) ──
+    # CME OPEC Watch shows: "Increase X.XX%  Pause Y.YY%  Decrease Z.ZZ%"
+    cme_patterns = {
+        'Increase': r'(?<!\w)Increase\s+(\d{1,2}\.\d+)\s*%',
+        'Pause':    r'(?<!\w)Pause\s+(\d{1,2}\.\d+)\s*%',
+        'Decrease': r'(?<!\w)Decrease\s+(\d{1,2}\.\d+)\s*%',
+    }
+    cme_probs = {}
+    for label, pat in cme_patterns.items():
+        match = re.search(pat, text)
+        if match:
+            cme_probs[label] = float(match.group(1))
+            print(f"    Found CME: {label} = {match.group(1)}%")
+
+    if len(cme_probs) == 3:
+        probs = {
+            'Decrease': cme_probs.get('Decrease', 0),
+            'No Change': cme_probs.get('Pause', 0),
+            'Increase': cme_probs.get('Increase', 0),
+        }
+        mtg = {'probabilities': probs, 'format': '3-category'}
+
+        # Try to extract meeting date/label (e.g. "April 5 OPEC Meeting")
+        date_match = re.search(
+            r'((?:January|February|March|April|May|June|July|August|September|'
+            r'October|November|December)\s+\d{1,2})\s*(OPEC\s*\+?\s*Meeting)',
+            text, re.IGNORECASE)
+        if date_match:
+            mtg['label'] = f"{date_match.group(1)} {date_match.group(2)}"
+            # Parse to a proper date
+            try:
+                year = datetime.now().year
+                dt = datetime.strptime(f"{date_match.group(1)} {year}", "%B %d %Y")
+                mtg['date'] = dt.strftime('%Y-%m-%d')
+            except ValueError:
+                mtg['date'] = date_match.group(1)
+            print(f"    Meeting: {mtg['label']} ({mtg['date']})")
+
+        meetings.append(mtg)
+        print(f"  Extracted CME 3-category: {cme_probs}")
+        return meetings
+
+    # ── Strategy B: Try 5-category patterns ──
+    probs = {}
+    outcome_patterns = {
+        'Large Cut (>1M)':     [r'large\s*cut', r'significant\s*cut'],
+        'Small Cut':           [r'small\s*cut', r'modest\s*cut', r'(?<!\w)decrease'],
+        'No Change':           [r'no\s*change', r'unchanged', r'(?<!\w)pause'],
+        'Small Increase':      [r'small\s*increase', r'modest\s*increase', r'(?<!\w)increase'],
+        'Large Increase (>1M)':[r'large\s*increase', r'significant\s*increase'],
+    }
+
     for outcome, patterns in outcome_patterns.items():
         for pat in patterns:
-            # Find the keyword and grab a nearby percentage
             match = re.search(rf'({pat})[^0-9%]*?(\d{{1,2}}\.?\d*)\s*%', text, re.IGNORECASE)
             if match:
                 val = float(match.group(2))
@@ -335,74 +374,40 @@ def extract_from_frame(frame):
                     probs[outcome] = val
                     print(f"    Found: {outcome} = {val}%")
                     break
-            # Also try percentage before the label
-            match = re.search(rf'(\d{{1,2}}\.?\d*)\s*%[^a-zA-Z]*?{pat}', text, re.IGNORECASE)
-            if match:
-                val = float(match.group(1))
-                if 0 < val < 100:
-                    probs[outcome] = val
-                    print(f"    Found: {outcome} = {val}% (reversed)")
-                    break
 
     if len(probs) >= 3:
         meetings.append({'probabilities': probs})
         print(f"  Extracted {len(probs)} outcomes from frame text")
         return meetings
 
-    # Strategy B: Look for a cluster of percentages (the 3 or 5 outcome bars)
-    # QuikStrike often renders as divs with percentage values
+    # ── Strategy C: Deduplicated percentage clusters ──
     pct_matches = re.findall(r'(\d{1,2}\.\d+)%', text)
     pct_values = [float(v) for v in pct_matches if 0.1 < float(v) < 99.9]
 
-    # If we find exactly 3 or 5 percentages that sum close to 100, that's our data
+    # Deduplicate consecutive identical values (chart label + data table)
+    deduped = []
+    for v in pct_values:
+        if not deduped or abs(v - deduped[-1]) > 0.001:
+            deduped.append(v)
+
     for n in [5, 3]:
-        if len(pct_values) >= n:
-            for i in range(len(pct_values) - n + 1):
-                group = pct_values[i:i+n]
+        if len(deduped) >= n:
+            for i in range(len(deduped) - n + 1):
+                group = deduped[i:i+n]
                 total = sum(group)
                 if 98 < total < 102:
                     print(f"  Found {n} percentages summing to {total:.1f}%: {group}")
                     if n == 5:
                         probs = dict(zip(OUTCOMES, group))
                     elif n == 3:
-                        # 3 outcomes: Cut / No Change / Increase
+                        # CME order: Increase / Pause / Decrease
                         probs = {
-                            'Large Cut (>1M)': 0,
-                            'Small Cut': group[0],
+                            'Increase': group[0],
                             'No Change': group[1],
-                            'Small Increase': group[2],
-                            'Large Increase (>1M)': 0,
+                            'Decrease': group[2],
                         }
                     meetings.append({'probabilities': probs})
                     return meetings
-
-    # Strategy C: Tables with numeric cells
-    try:
-        tables = frame.query_selector_all('table')
-        for table in tables:
-            rows = table.query_selector_all('tr')
-            for row in rows:
-                cells = row.query_selector_all('td, th')
-                row_text = ' '.join(c.inner_text().strip() for c in cells)
-                for outcome, patterns in outcome_patterns.items():
-                    if outcome in probs:
-                        continue
-                    for pat in patterns:
-                        if re.search(pat, row_text, re.IGNORECASE):
-                            nums = re.findall(r'(\d{1,2}\.?\d*)%?', row_text)
-                            for n in nums:
-                                val = float(n)
-                                if 0 < val < 100:
-                                    probs[outcome] = val
-                                    break
-                            break
-
-            if len(probs) >= 3:
-                meetings.append({'probabilities': probs})
-                print(f"  Extracted {len(probs)} outcomes from table")
-                return meetings
-    except Exception as e:
-        print(f"  Table extraction error: {e}")
 
     if probs:
         print(f"  Partial extraction ({len(probs)} outcomes): {probs}")

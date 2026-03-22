@@ -67,11 +67,14 @@ const CHART_CONFIG = {
 // ─── Slider definitions ─────────────────────────────────────────────────────
 
 const SLIDERS = [
+    { id: 'spot-price',     decimals: 1 },
+    { id: 'conv-yield',     decimals: 1 },
+    { id: 'storage-cost',   decimals: 1 },
+    { id: 'funding-rate',   decimals: 1 },
     { id: 'futures-price',  decimals: 1 },
     { id: 'time-to-expiry', decimals: 2 },
     { id: 'volatility',     decimals: 1 },
     { id: 'risk-free-rate', decimals: 1 },
-    { id: 'div-yield',      decimals: 1 },
 ];
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -87,13 +90,24 @@ function numVal(id) {
 }
 
 function getEnv() {
+    const S = sliderVal('spot-price');
+    const r_funding = sliderVal('funding-rate') / 100;
+    const u = sliderVal('storage-cost') / 100;
+    const y = sliderVal('conv-yield') / 100;
+    const T = sliderVal('time-to-expiry');
+    const F = computeForward(S, r_funding, u, y, T);
+
     return {
-        F:      sliderVal('futures-price'),
+        S,
+        F,
         r:      sliderVal('risk-free-rate') / 100,
         sigma:  sliderVal('volatility') / 100,
-        T:      sliderVal('time-to-expiry'),
+        T,
         spotMin: numVal('spot-min'),
         spotMax: numVal('spot-max'),
+        convYield: y,
+        storageCost: u,
+        fundingRate: r_funding,
     };
 }
 
@@ -176,22 +190,48 @@ function init() {
     for (const s of SLIDERS) {
         const slider = $(`${s.id}-slider`);
         const input = $(`${s.id}-input`);
+        if (!slider || !input) continue;
+
+        const isForwardParam = FORWARD_SLIDERS.includes(s.id);
+        // Time-to-expiry also affects F = S × e^((r+u-y)×T)
+        const affectsForward = isForwardParam || s.id === 'time-to-expiry';
 
         slider.addEventListener('input', () => {
             input.value = parseFloat(slider.value).toFixed(s.decimals);
+            if (affectsForward) updateForwardPrice();
             debouncedUpdate();
         });
 
         input.addEventListener('input', () => {
             const v = parseFloat(input.value);
             if (!isNaN(v)) {
-                // Expand slider range if user types a value beyond current max
                 if (v > parseFloat(slider.max)) slider.max = v * 1.5;
                 if (v < parseFloat(slider.min) && v >= 0) slider.min = v;
                 slider.value = v;
+                if (affectsForward) updateForwardPrice();
                 debouncedUpdate();
             }
         });
+    }
+
+    // When user manually changes futures price slider, back-solve spot price
+    const fSlider = $('futures-price-slider');
+    const fInput = $('futures-price-input');
+    if (fSlider && fInput) {
+        const backSolveSpot = () => {
+            const F = parseFloat(fSlider.value);
+            const r = sliderVal('funding-rate') / 100;
+            const u = sliderVal('storage-cost') / 100;
+            const y = sliderVal('conv-yield') / 100;
+            const T = sliderVal('time-to-expiry');
+            // F = S × e^((r+u-y)×T) → S = F / e^((r+u-y)×T)
+            const S = F / Math.exp((r + u - y) * T);
+            setSlider('spot-price', +S.toFixed(2));
+            const el = $('computed-forward');
+            if (el) el.textContent = F.toFixed(2);
+        };
+        fSlider.addEventListener('input', () => { backSolveSpot(); });
+        fInput.addEventListener('input', () => { backSolveSpot(); });
     }
 
     // Wire up other number inputs
@@ -245,19 +285,32 @@ function onCommodityChange() {
     portfolio = [];
     renderLegs();
 
-    // Adjust slider range for this commodity
-    const fSlider = $('futures-price-slider');
-    fSlider.max = Math.max(c.F * 3, 50);
-    fSlider.step = c.F < 10 ? 0.05 : 0.5;
-    $('futures-price-input').step = c.F < 10 ? 0.05 : 0.5;
+    // Forward curve parameters
+    const spotSlider = $('spot-price-slider');
+    spotSlider.max = Math.max(c.spot * 3, 50);
+    spotSlider.step = c.spot < 10 ? 0.05 : 0.5;
+    $('spot-price-input').step = c.spot < 10 ? 0.05 : 0.5;
 
-    setSlider('futures-price', c.F);
+    setSlider('spot-price', c.spot);
+    setSlider('conv-yield', c.convYield);
+    setSlider('storage-cost', c.storageCost);
+    setSlider('funding-rate', c.rate);
     setSlider('volatility', c.vol);
     setSlider('risk-free-rate', c.rate);
 
-    $('new-strike').value = c.F;
-    $('spot-min').value = +(c.F * 0.5).toFixed(2);
-    $('spot-max').value = +(c.F * 2.0).toFixed(2);
+    // Compute forward and set futures price slider
+    updateForwardPrice();
+
+    const env = getEnv();
+    $('new-strike').value = env.F.toFixed(2);
+    $('spot-min').value = +(env.F * 0.5).toFixed(2);
+    $('spot-max').value = +(env.F * 2.0).toFixed(2);
+
+    // Adjust futures price slider range
+    const fSlider = $('futures-price-slider');
+    fSlider.max = Math.max(env.F * 3, 50);
+    fSlider.step = c.spot < 10 ? 0.05 : 0.5;
+    $('futures-price-input').step = c.spot < 10 ? 0.05 : 0.5;
 
     updateCharts();
 }
@@ -273,8 +326,35 @@ function setSlider(id, value) {
 function resetEnv() {
     onCommodityChange();
     setSlider('time-to-expiry', 1.0);
-    setSlider('div-yield', 0.0);
+    updateForwardPrice();
     updateCharts();
+}
+
+// ─── Forward Price Computation ──────────────────────────────────────────────
+
+// IDs of sliders that feed the forward price formula
+const FORWARD_SLIDERS = ['spot-price', 'conv-yield', 'storage-cost', 'funding-rate'];
+
+function updateForwardPrice() {
+    const S = sliderVal('spot-price');
+    const r = sliderVal('funding-rate') / 100;
+    const u = sliderVal('storage-cost') / 100;
+    const y = sliderVal('conv-yield') / 100;
+    const T = sliderVal('time-to-expiry');
+    const F = computeForward(S, r, u, y, T);
+
+    // Update the computed forward display
+    const el = $('computed-forward');
+    if (el) el.textContent = F.toFixed(2);
+
+    // Sync the futures price slider on the right panel
+    setSlider('futures-price', +F.toFixed(2));
+
+    // Expand futures slider range if needed
+    const fSlider = $('futures-price-slider');
+    if (F > parseFloat(fSlider.max)) fSlider.max = F * 2;
+
+    return F;
 }
 
 // ─── Portfolio Management ────────────────────────────────────────────────────
