@@ -314,18 +314,23 @@ def extract_from_frame(frame):
     text = re.sub(r'\s+', ' ', text)
 
     # ── Strategy A: CME's actual 3-category format (Increase/Pause/Decrease) ──
-    # CME OPEC Watch shows: "Increase X.XX%  Pause Y.YY%  Decrease Z.ZZ%"
+    # CME table rows: "Increase 10.41% 6.52% ..." (NOW, 1 DAY, 1 WEEK)
+    # Capture first two percentages after each outcome label
     cme_patterns = {
-        'Increase': r'(?<!\w)Increase\s+(\d{1,2}\.\d+)\s*%',
-        'Pause':    r'(?<!\w)Pause\s+(\d{1,2}\.\d+)\s*%',
-        'Decrease': r'(?<!\w)Decrease\s+(\d{1,2}\.\d+)\s*%',
+        'Increase': r'(?<!\w)Increase\s+(\d{1,2}\.\d+)\s*%(?:[^%]*?(\d{1,2}\.\d+)\s*%)?',
+        'Pause':    r'(?<!\w)Pause\s+(\d{1,2}\.\d+)\s*%(?:[^%]*?(\d{1,2}\.\d+)\s*%)?',
+        'Decrease': r'(?<!\w)Decrease\s+(\d{1,2}\.\d+)\s*%(?:[^%]*?(\d{1,2}\.\d+)\s*%)?',
     }
     cme_probs = {}
+    cme_prev = {}
     for label, pat in cme_patterns.items():
         match = re.search(pat, text)
         if match:
             cme_probs[label] = float(match.group(1))
             print(f"    Found CME: {label} = {match.group(1)}%")
+            if match.group(2):
+                cme_prev[label] = float(match.group(2))
+                print(f"    Found CME 1-day: {label} = {match.group(2)}%")
 
     if len(cme_probs) == 3:
         probs = {
@@ -333,7 +338,14 @@ def extract_from_frame(frame):
             'No Change': cme_probs.get('Pause', 0),
             'Increase': cme_probs.get('Increase', 0),
         }
-        mtg = {'probabilities': probs, 'format': '3-category'}
+        prev_probs = {}
+        if cme_prev:
+            prev_probs = {
+                'Decrease': cme_prev.get('Decrease', 0),
+                'No Change': cme_prev.get('Pause', 0),
+                'Increase': cme_prev.get('Increase', 0),
+            }
+        mtg = {'probabilities': probs, 'previous_day': prev_probs, 'format': '3-category'}
 
         # Try to extract meeting date/label (e.g. "April 5 OPEC Meeting")
         date_match = re.search(
@@ -459,11 +471,14 @@ def update_history(history, meetings):
     }
 
     for mtg in meetings:
-        snapshot['meetings'].append({
+        entry = {
             'date': mtg.get('date', ''),
             'label': mtg.get('label', ''),
             'probabilities': mtg.get('probabilities', {}),
-        })
+        }
+        if mtg.get('previous_day'):
+            entry['previous_day'] = mtg['previous_day']
+        snapshot['meetings'].append(entry)
 
     # Remove any existing snapshot for today
     history['snapshots'] = [s for s in history['snapshots'] if s['date'] != today]
@@ -501,9 +516,9 @@ def update_js_file(history):
         probs = mtg.get('probabilities', {})
         probs_js = json.dumps(probs)
 
-        # Find previous day probabilities for this meeting
-        prev_probs = {}
-        if previous:
+        # Prefer scraped 1-day data; fall back to snapshot history
+        prev_probs = mtg.get('previous_day', {})
+        if not prev_probs and previous:
             for prev_mtg in previous.get('meetings', []):
                 if prev_mtg.get('date') == mtg.get('date'):
                     prev_probs = prev_mtg.get('probabilities', {})
