@@ -154,15 +154,15 @@
     },
     {
       "date": "2026-03-26",
-      "timestamp": "2026-03-26T15:52:31.864900+00:00",
+      "timestamp": "2026-03-26T16:58:36.462632+00:00",
       "meetings": [
         {
           "date": "2026-04-05",
           "label": "April 5 OPEC Meeting",
           "probabilities": {
-            "Decrease": 15.63,
-            "No Change": 68.89,
-            "Increase": 15.48
+            "Decrease": 15.16,
+            "No Change": 72.44,
+            "Increase": 12.4
           },
           "previous_day": {
             "Decrease": 11.79,
@@ -178,9 +178,9 @@
       "date": "2026-04-05",
       "label": "April 5 OPEC Meeting",
       "probabilities": {
-        "Decrease": 15.63,
-        "No Change": 68.89,
-        "Increase": 15.48
+        "Decrease": 15.16,
+        "No Change": 72.44,
+        "Increase": 12.4
       },
       "previous_day": {
         "Decrease": 11.79,
