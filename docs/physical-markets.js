@@ -239,9 +239,9 @@ const OPEC_WATCH_DATA = {
         {
             date: '2026-04-05',
             label: 'April 5 OPEC Meeting',
-            probabilities: {"Decrease": 8.39, "No Change": 70.01, "Increase": 21.6},
-            previous: {"Decrease": 10.64, "No Change": 85.52, "Increase": 3.84},
-            previousDate: '2026-03-24',
+            probabilities: {"Decrease": 15.18, "No Change": 67.23, "Increase": 17.6},
+            previous: {"Decrease": 11.79, "No Change": 84.84, "Increase": 3.37},
+            previousDate: '2026-03-25',
         },
     ],
     // Historical OPEC+ decisions (Jan 2024 - Mar 2026)
