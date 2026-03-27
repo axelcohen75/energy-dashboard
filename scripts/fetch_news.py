@@ -26,20 +26,8 @@ FEEDS = {
     # Google News aggregates Bloomberg, FT, Reuters, NYT, etc.
     "physical": [
         {
-            "url": "https://news.google.com/rss/search?q=oil+inventory+EIA+crude+storage+refinery+pipeline+OPEC+production+supply+demand+when:3d&hl=en&gl=US&ceid=US:en",
-            "name": "Google News (Physical)",
-        },
-        {
             "url": "https://oilprice.com/rss/main",
             "name": "OilPrice",
-        },
-        {
-            "url": "https://www.rigzone.com/news/rss/rigzone_latest.aspx",
-            "name": "Rigzone",
-        },
-        {
-            "url": "https://news.google.com/rss/search?q=natural+gas+LNG+storage+pipeline+export+when:3d&hl=en&gl=US&ceid=US:en",
-            "name": "Google News (Gas)",
         },
     ],
     "geopolitics": [
