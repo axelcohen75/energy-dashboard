@@ -41,6 +41,7 @@ async function initPhysicalMarkets() {
     renderVs5YearAvg();
     renderSeasonalIndicator();
     updateInventoryChart();
+    loadAndRenderNews('physical');
 }
 
 // ─── Inventory Panel ────────────────────────────────────────────────────────
@@ -739,4 +740,87 @@ function refreshPhysicalMarkets() {
     renderVs5YearAvg();
     renderSeasonalIndicator();
     updateInventoryChart();
+    renderNewsFeed('physical');
+}
+
+// ─── News Feed ──────────────────────────────────────────────────────────────
+
+let newsData = null;
+
+async function loadAndRenderNews(category) {
+    if (!newsData) {
+        try {
+            const resp = await fetch('data/news-data.json');
+            if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+            newsData = await resp.json();
+            console.log(`[News] Loaded — updated ${newsData.updated}`);
+        } catch (e) {
+            console.warn('[News] Failed to load news-data.json:', e.message);
+            return;
+        }
+    }
+    renderNewsFeed(category);
+}
+
+function renderNewsFeed(category) {
+    const containerId = category === 'physical' ? 'physical-news-feed' : 'geo-news-feed';
+    const container = document.getElementById(containerId);
+    if (!container || !newsData) return;
+
+    const articles = newsData[category] || [];
+    if (articles.length === 0) {
+        container.innerHTML = '<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">No news available</div>';
+        return;
+    }
+
+    let html = '';
+    for (const a of articles.slice(0, 15)) {
+        const timeAgo = formatTimeAgo(a.published);
+        const sourceTag = a.source ? getSourceTag(a.source) : '';
+
+        html += `<div class="news-item">
+            <div class="news-header">
+                ${sourceTag}
+                <span class="news-time">${timeAgo}</span>
+            </div>
+            <div class="news-title">${a.title}</div>
+            <div class="news-summary">${a.summary || ''}</div>
+            <a href="${a.url}" target="_blank" rel="noopener" class="news-link">READ ARTICLE &rarr;</a>
+        </div>`;
+    }
+
+    if (newsData.updated) {
+        const upd = new Date(newsData.updated);
+        html += `<div style="font-size:8px;color:var(--text-dim);font-family:var(--mono);margin-top:6px;text-align:right">
+            Updated: ${upd.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} ${upd.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}
+        </div>`;
+    }
+
+    container.innerHTML = html;
+}
+
+function getSourceTag(source) {
+    const s = source.toLowerCase();
+    let cls = 'news-src';
+    if (s.includes('bloomberg')) cls += ' src-bloomberg';
+    else if (s.includes('financial times') || s.includes('ft.com')) cls += ' src-ft';
+    else if (s.includes('reuters')) cls += ' src-reuters';
+    else if (s.includes('wall street') || s.includes('wsj')) cls += ' src-wsj';
+    else if (s.includes('cnbc')) cls += ' src-cnbc';
+    return `<span class="${cls}">${source}</span>`;
+}
+
+function formatTimeAgo(dateStr) {
+    if (!dateStr) return '';
+    const now = new Date();
+    const pub = new Date(dateStr);
+    const diffMs = now - pub;
+    const diffMin = Math.floor(diffMs / 60000);
+    if (diffMin < 60) return `${diffMin}m ago`;
+    const diffHrs = Math.floor(diffMin / 60);
+    if (diffHrs < 24) return `${diffHrs}h ago`;
+    const diffDays = Math.floor(diffHrs / 24);
+    if (diffDays === 1) return 'Yesterday';
+    if (diffDays < 7) return `${diffDays}d ago`;
+    return pub.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 }

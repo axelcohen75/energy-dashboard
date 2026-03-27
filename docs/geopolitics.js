@@ -40,6 +40,7 @@ async function initGeopolitics() {
     renderGeoMarketStats();
     renderGeoHighProb();
     renderGeoCeasefireSummary();
+    loadAndRenderNews('geopolitics');
 }
 
 // ─── Polymarket Panels ──────────────────────────────────────────────────────
@@ -363,4 +364,5 @@ function refreshGeopolitics() {
     renderGeoMarketStats();
     renderGeoHighProb();
     renderGeoCeasefireSummary();
+    renderNewsFeed('geopolitics');
 }
