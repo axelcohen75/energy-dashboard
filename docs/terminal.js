@@ -8,7 +8,7 @@ let portfolio = [];
 let activeMetrics = ['delta'];
 let isDarkMode = false;
 
-const LINE_COLORS_LIGHT = ['#2563eb', '#d97706', '#7c3aed', '#059669', '#dc2626', '#db2777'];
+const LINE_COLORS_LIGHT = ['#003061', '#d97706', '#7c3aed', '#059669', '#dc2626', '#db2777'];
 const LINE_COLORS_DARK  = ['#60a5fa', '#fbbf24', '#a78bfa', '#34d399', '#f87171', '#f472b6'];
 let LINE_COLORS = LINE_COLORS_LIGHT;
 
@@ -33,10 +33,10 @@ function getChartColors() {
     return {
         bg: '#ffffff', grid: '#e2e8f0', zero: '#cbd5e1',
         text: '#1e293b', muted: '#64748b', dim: '#94a3b8',
-        accent: '#2563eb', accent2: '#d97706',
+        accent: '#003061', accent2: '#d97706',
         zeroLine: 'rgba(148,163,184,0.4)',
         sweepColor: (a) => `rgba(124,58,237,${a})`,
-        surfaceHighlight: '#2563eb',
+        surfaceHighlight: '#003061',
     };
 }
 
@@ -742,7 +742,7 @@ function updateThetaDecay(env, spotRange) {
 
     const nSteps = 7;
     const times = linspace(env.T, 0.01, nSteps);
-    const DECAY_COLORS_LIGHT = ['#2563eb', '#3b82f6', '#60a5fa', '#d97706', '#f59e0b', '#ef4444', '#dc2626'];
+    const DECAY_COLORS_LIGHT = ['#003061', '#0a4a8a', '#1a6bb5', '#d97706', '#f59e0b', '#ef4444', '#dc2626'];
     const DECAY_COLORS_DARK  = ['#60a5fa', '#93c5fd', '#bfdbfe', '#fbbf24', '#fcd34d', '#f87171', '#fca5a5'];
     const decayColors = isDarkMode ? DECAY_COLORS_DARK : DECAY_COLORS_LIGHT;
     const traces = [];

@@ -16,7 +16,7 @@ const liveSpots = {};  // commodity name → price
 const ENERGY_COMMODITIES = {
     'WTI Crude Oil (CL)': {
         unit: '$/bbl', continuous: 'CL=F',
-        color: '#2563eb', colorDark: '#60a5fa',
+        color: '#003061', colorDark: '#60a5fa',
     },
     'Brent Crude Oil (BZ)': {
         unit: '$/bbl', continuous: 'BZ=F',

@@ -47,7 +47,7 @@ async function initPhysicalMarkets() {
 // ─── Inventory Panel ────────────────────────────────────────────────────────
 
 const INVENTORY_CONFIG = {
-    us_crude_stocks: { label: 'US Crude Oil', color: '#2563eb', colorDark: '#60a5fa' },
+    us_crude_stocks: { label: 'US Crude Oil', color: '#003061', colorDark: '#60a5fa' },
     cushing_stocks: { label: 'Cushing, OK', color: '#7c3aed', colorDark: '#a78bfa' },
     spr: { label: 'SPR', color: '#dc2626', colorDark: '#f87171' },
     gasoline_stocks: { label: 'Gasoline', color: '#db2777', colorDark: '#f472b6' },
@@ -273,7 +273,7 @@ const OPEC_OUTCOME_COLORS = {
     'Small Cut':       { light: '#f59e0b', dark: '#fbbf24' },
     'No Change':       { light: '#6b7280', dark: '#9ca3af' },
     'Small Increase':  { light: '#059669', dark: '#34d399' },
-    'Large Increase (>1M)': { light: '#2563eb', dark: '#60a5fa' },
+    'Large Increase (>1M)': { light: '#003061', dark: '#60a5fa' },
     // 3-category format (CME current)
     'Decrease':        { light: '#dc2626', dark: '#f87171' },
     'Increase':        { light: '#059669', dark: '#34d399' },
@@ -446,7 +446,7 @@ function renderOpecDecisions() {
         if (d.decision.includes('Cut') || d.decision.includes('Delay') || d.decision.includes('Slow') || d.decision === 'Pause') {
             decisionColor = isDarkMode ? '#fbbf24' : '#d97706';
         } else if (d.decision.includes('Increase') || d.decision.includes('Accelerate')) {
-            decisionColor = isDarkMode ? '#60a5fa' : '#2563eb';
+            decisionColor = isDarkMode ? '#60a5fa' : '#003061';
         } else {
             decisionColor = isDarkMode ? '#9ca3af' : '#6b7280';
         }
@@ -706,7 +706,7 @@ function renderSeasonalIndicator() {
         { name: 'Refinery Maintenance', months: [2, 3], desc: 'Spring turnaround — lower runs, crude builds', color: '#d97706' },
         { name: 'Summer Driving Season', months: [4, 5, 6, 7], desc: 'Peak gasoline demand — draws accelerate', color: '#dc2626' },
         { name: 'Hurricane Season', months: [5, 6, 7, 8, 9, 10], desc: 'Gulf supply risk — Jun-Nov', color: '#7c3aed' },
-        { name: 'Winter Heating', months: [10, 11, 0, 1], desc: 'Peak distillate & NG demand', color: '#2563eb' },
+        { name: 'Winter Heating', months: [10, 11, 0, 1], desc: 'Peak distillate & NG demand', color: '#003061' },
         { name: 'NG Injection Season', months: [3, 4, 5, 6, 7, 8, 9], desc: 'Apr-Oct — storage builds', color: '#059669' },
         { name: 'NG Withdrawal Season', months: [10, 11, 0, 1, 2], desc: 'Nov-Mar — storage draws', color: '#0891b2' },
     ];

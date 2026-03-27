@@ -137,8 +137,8 @@ function renderGeoCeasefireTermStructure() {
         traces.push({
             x: labels, y: probs,
             type: 'scatter', mode: 'lines+markers',
-            line: { color: isDarkMode ? '#60a5fa' : '#2563eb', width: 2, shape: 'spline' },
-            marker: { size: 8, color: isDarkMode ? '#60a5fa' : '#2563eb' },
+            line: { color: isDarkMode ? '#60a5fa' : '#003061', width: 2, shape: 'spline' },
+            marker: { size: 8, color: isDarkMode ? '#60a5fa' : '#003061' },
             showlegend: false, hoverinfo: 'skip',
         });
     }

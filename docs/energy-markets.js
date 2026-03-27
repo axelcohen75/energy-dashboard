@@ -499,7 +499,7 @@ function updateTimespread() {
         {
             x: dates, y: vals,
             type: 'scatter', mode: 'lines', name: data.name,
-            line: { color: isDarkMode ? '#60a5fa' : '#2563eb', width: 2 },
+            line: { color: isDarkMode ? '#60a5fa' : '#003061', width: 2 },
             fill: 'tozeroy',
             fillcolor: isDarkMode ? 'rgba(96,165,250,0.08)' : 'rgba(37,99,235,0.06)',
         },

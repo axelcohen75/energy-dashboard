@@ -11,7 +11,7 @@
     --card:         #f8fafc;
     --input-bg:     #f1f5f9;
     --input-border: #cbd5e1;
-    --accent:       #2563eb;
+    --accent:       #003061;
     --accent2:      #7c3aed;
     --accent3:      #d97706;
     --accent4:      #059669;
@@ -493,7 +493,7 @@ input[type="range"]::-moz-range-thumb {
     text-overflow: ellipsis;
     max-width: 140px;
 }
-.news-src.src-bloomberg { background: rgba(37, 99, 235, 0.12); color: #2563eb; }
+.news-src.src-bloomberg { background: rgba(0, 48, 97, 0.12); color: #003061; }
 .news-src.src-ft { background: rgba(217, 119, 6, 0.12); color: #d97706; }
 .news-src.src-reuters { background: rgba(249, 115, 22, 0.12); color: #f97316; }
 .news-src.src-wsj { background: rgba(15, 23, 42, 0.08); color: var(--text); }
