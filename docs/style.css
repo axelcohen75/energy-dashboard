@@ -121,6 +121,7 @@ body {
 }
 .col-left, .col-right { overflow-y: auto; overflow-x: hidden; }
 .physical-grid { grid-template-columns: 340px 1fr 300px; }
+.geo-grid { grid-template-columns: 340px 1fr; }
 .col-center {
     display: flex;
     flex-direction: column;
@@ -741,6 +742,7 @@ input[type="range"]::-moz-range-thumb {
         padding: 8px 10px;
     }
     .physical-grid { grid-template-columns: 300px 1fr 280px; }
+    .geo-grid { grid-template-columns: 300px 1fr; }
 }
 
 @media (max-width: 1000px) {

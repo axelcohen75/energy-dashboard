@@ -558,21 +558,33 @@
 <!-- TAB 4: GEOPOLITICS                                                        -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 <div class="tab-content" id="tab-geopolitics">
-<div class="markets-grid">
+<div class="markets-grid geo-grid">
 
-    <!-- ─── LEFT SIDEBAR ─── -->
+    <!-- ─── LEFT SIDEBAR: Stats + News ─── -->
     <div class="col-left">
 
-        <!-- Geopolitics Summary -->
+        <!-- Market Stats -->
         <div class="panel">
-            <div class="lbl">GEOPOLITICAL RISK</div>
-            <div id="geo-risk-summary" class="mt-8"></div>
+            <div class="lbl">PREDICTION MARKET STATS</div>
+            <div id="geo-market-stats" class="mt-8"></div>
         </div>
 
-        <!-- OPEC/Physical Impact -->
+        <!-- High Probability Alerts -->
         <div class="panel">
-            <div class="lbl">OPEC / SUPPLY IMPACT</div>
-            <div id="geo-opec-summary" class="mt-8"></div>
+            <div class="lbl">HIGH PROBABILITY EVENTS</div>
+            <div id="geo-high-prob" class="mt-8"></div>
+        </div>
+
+        <!-- Ceasefire Summary -->
+        <div class="panel">
+            <div class="lbl">CEASEFIRE OUTLOOK</div>
+            <div id="geo-ceasefire-summary" class="mt-8"></div>
+        </div>
+
+        <!-- Geopolitics News Feed -->
+        <div class="panel">
+            <div class="lbl">GEOPOLITICS NEWS</div>
+            <div id="geo-news-feed" class="news-feed mt-8"></div>
         </div>
 
     </div>
@@ -624,34 +636,12 @@
 
     </div>
 
-    <!-- ─── RIGHT SIDEBAR ─── -->
-    <div class="col-right">
-
-        <!-- Market Stats -->
-        <div class="panel">
-            <div class="lbl">PREDICTION MARKET STATS</div>
-            <div id="geo-market-stats" class="mt-8"></div>
-        </div>
-
-        <!-- High Probability Alerts -->
-        <div class="panel">
-            <div class="lbl">HIGH PROBABILITY EVENTS</div>
-            <div id="geo-high-prob" class="mt-8"></div>
-        </div>
-
-        <!-- Ceasefire Summary -->
-        <div class="panel">
-            <div class="lbl">CEASEFIRE OUTLOOK</div>
-            <div id="geo-ceasefire-summary" class="mt-8"></div>
-        </div>
-
-        <!-- Geopolitics News Feed -->
-        <div class="panel">
-            <div class="lbl">GEOPOLITICS NEWS</div>
-            <div id="geo-news-feed" class="news-feed mt-8"></div>
-        </div>
-
+    <!-- ─── Hidden containers for removed sidebar panels (keep JS happy) ─── -->
+    <div style="display:none">
+        <div id="geo-risk-summary"></div>
+        <div id="geo-opec-summary"></div>
     </div>
+
 </div>
 </div>
 
