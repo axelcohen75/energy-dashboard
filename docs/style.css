@@ -537,6 +537,55 @@ input[type="range"]::-moz-range-thumb {
 }
 .news-link:hover { opacity: 0.7; }
 
+/* ─── CFTC Positioning ─── */
+.cftc-row {
+    padding: 6px 0;
+    border-bottom: 1px solid var(--input-border);
+}
+.cftc-row:last-of-type { border-bottom: none; }
+.cftc-row-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 3px;
+}
+.cftc-cat {
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    flex: 1;
+}
+.cftc-net {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 700;
+}
+.cftc-bar {
+    display: flex;
+    height: 5px;
+    border-radius: 2px;
+    overflow: hidden;
+    background: var(--input-bg);
+}
+.cftc-bar-long {
+    background: var(--accent4, #059669);
+    border-radius: 2px 0 0 2px;
+}
+[data-theme="dark"] .cftc-bar-long { background: #34d399; }
+.cftc-bar-short {
+    background: var(--danger, #dc2626);
+    border-radius: 0 2px 2px 0;
+}
+[data-theme="dark"] .cftc-bar-short { background: #f87171; }
+.cftc-row-footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--mono);
+    font-size: 8px;
+    margin-top: 2px;
+}
+
 /* ─── Chart containers ─── */
 .charts-row {
     display: grid;

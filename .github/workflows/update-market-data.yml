@@ -21,7 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install yfinance pandas playwright feedparser
+          pip install yfinance pandas playwright feedparser cot_reports
           playwright install --with-deps chromium
 
       - name: Fetch market data (Yahoo Finance)
@@ -38,11 +38,15 @@ jobs:
         run: python scripts/fetch_news.py
         continue-on-error: true
 
+      - name: Fetch CFTC COT data
+        run: python scripts/fetch_cftc.py
+        continue-on-error: true
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/market-data.json docs/data/physical-data.json docs/data/opec-watch.json docs/data/news-data.json docs/physical-markets.js
+          git add docs/data/market-data.json docs/data/physical-data.json docs/data/opec-watch.json docs/data/news-data.json docs/data/cftc-data.json docs/physical-markets.js
           if git diff --staged --quiet; then
             echo "No data changes"
           else

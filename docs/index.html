@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy Derivatives Platform</title>
-    <link rel="stylesheet" href="style.css?v=8">
+    <link rel="stylesheet" href="style.css?v=9">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
@@ -339,6 +339,14 @@
             <div id="spot-prices-table" class="mt-8"></div>
         </div>
 
+        <!-- CFTC Positioning -->
+        <div class="panel">
+            <div class="lbl">CFTC POSITIONING</div>
+            <div id="cftc-panel" class="mt-8">
+                <div style="color:var(--text-dim);font-size:11px;text-align:center;padding:8px">Select a commodity above</div>
+            </div>
+        </div>
+
         <!-- Term Structure Controls -->
         <div class="panel">
             <div class="lbl">TERM STRUCTURE</div>
@@ -657,7 +665,7 @@
 
 <script src="engine.js?v=6"></script>
 <script src="energy-data.js?v=8"></script>
-<script src="energy-markets.js?v=9"></script>
+<script src="energy-markets.js?v=10"></script>
 <script src="physical-markets.js?v=9"></script>
 <script src="geopolitics.js?v=2"></script>
 <script src="terminal.js?v=8"></script>
