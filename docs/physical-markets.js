@@ -778,9 +778,12 @@ function renderNewsFeed(category) {
         const timeAgo = formatTimeAgo(a.published);
         const sourceTag = a.source ? getSourceTag(a.source) : '';
 
+        const sentimentBadge = getSentimentBadge(a.sentiment);
+
         html += `<div class="news-item">
             <div class="news-header">
                 ${sourceTag}
+                ${sentimentBadge}
                 <span class="news-time">${timeAgo}</span>
             </div>
             <div class="news-title">${a.title}</div>
@@ -797,6 +800,14 @@ function renderNewsFeed(category) {
     }
 
     container.innerHTML = html;
+}
+
+function getSentimentBadge(sentiment) {
+    if (!sentiment || sentiment === 'neutral') return '';
+    if (sentiment === 'bullish') {
+        return '<span class="news-sentiment sentiment-bull">BULL</span>';
+    }
+    return '<span class="news-sentiment sentiment-bear">BEAR</span>';
 }
 
 function getSourceTag(source) {

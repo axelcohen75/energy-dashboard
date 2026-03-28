@@ -504,6 +504,31 @@ input[type="range"]::-moz-range-thumb {
 [data-theme="dark"] .news-src.src-reuters { background: rgba(251, 146, 60, 0.15); color: #fb923c; }
 [data-theme="dark"] .news-src.src-wsj { background: rgba(255, 255, 255, 0.08); color: var(--text); }
 [data-theme="dark"] .news-src.src-cnbc { background: rgba(52, 211, 153, 0.15); color: #34d399; }
+.news-sentiment {
+    font-family: var(--mono);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 1px 5px;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+.sentiment-bull {
+    background: rgba(5, 150, 105, 0.12);
+    color: #059669;
+}
+.sentiment-bear {
+    background: rgba(220, 38, 38, 0.12);
+    color: #dc2626;
+}
+[data-theme="dark"] .sentiment-bull {
+    background: rgba(52, 211, 153, 0.15);
+    color: #34d399;
+}
+[data-theme="dark"] .sentiment-bear {
+    background: rgba(248, 113, 113, 0.15);
+    color: #f87171;
+}
 .news-time {
     font-family: var(--mono);
     font-size: 9px;

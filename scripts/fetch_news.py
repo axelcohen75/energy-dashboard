@@ -73,6 +73,51 @@ PREFERRED_SOURCES = [
     "oilprice", "rigzone", "energy intelligence",
 ]
 
+# ─── Sentiment Keywords ──────────────────────────────────────────────────────
+
+BULLISH_KEYWORDS = [
+    "surge", "surges", "surging", "soar", "soars", "soaring", "rally", "rallies",
+    "jump", "jumps", "spike", "spikes", "climb", "climbs", "gain", "gains",
+    "rise", "rises", "rising", "higher", "highs", "record high", "bull",
+    "bullish", "upside", "tight", "tighten", "tightening", "shortage",
+    "supply shortage", "supply crunch", "draw", "drawdown", "decline in stocks",
+    "inventory draw", "stocks fell", "stocks decline", "output cut", "cut output",
+    "production cut", "reduce output", "curb", "curtail", "disruption",
+    "supply disruption", "outage", "shut down", "shutdown", "force majeure",
+    "blockade", "embargo", "strike action", "demand surge", "demand growth",
+    "strong demand", "robust demand", "buying", "squeeze", "undersupply",
+    "capacity limit", "bottleneck", "war premium", "risk premium", "escalat",
+    "attack", "conflict", "tension", "sanction", "restrict",
+]
+
+BEARISH_KEYWORDS = [
+    "crash", "crashes", "crashing", "plunge", "plunges", "plunging", "tumble",
+    "tumbles", "slump", "slumps", "slide", "slides", "drop", "drops", "fall",
+    "falls", "falling", "decline", "declines", "declining", "lower", "lows",
+    "record low", "bear", "bearish", "downside", "glut", "oversupply",
+    "surplus", "build", "inventory build", "stocks rose", "stocks increase",
+    "output hike", "hike output", "boost output", "ramp up", "increase output",
+    "production increase", "raise production", "flood", "flooding", "unwind",
+    "unwinding", "ease", "easing", "weak demand", "demand slump", "demand drop",
+    "demand destruction", "recession", "slowdown", "economic weakness",
+    "ceasefire", "peace deal", "de-escalat", "lift sanction", "waiver",
+    "oversupplied", "excess", "tank", "tanks",
+]
+
+
+def compute_sentiment(title, summary):
+    """Compute bullish/bearish sentiment score from keywords."""
+    text = (title + " " + summary).lower()
+    bull_score = sum(1 for kw in BULLISH_KEYWORDS if kw in text)
+    bear_score = sum(1 for kw in BEARISH_KEYWORDS if kw in text)
+
+    if bull_score > bear_score:
+        return "bullish"
+    elif bear_score > bull_score:
+        return "bearish"
+    else:
+        return "neutral"
+
 
 def parse_source(entry):
     """Extract the original source from a Google News entry."""
@@ -167,6 +212,7 @@ def fetch_category(category, feed_configs):
 
                 relevance = compute_relevance(title, summary, category)
                 source_priority = get_source_priority(source)
+                sentiment = compute_sentiment(title, summary)
 
                 articles.append({
                     "title": display_title,
@@ -174,6 +220,7 @@ def fetch_category(category, feed_configs):
                     "source": source,
                     "url": link,
                     "published": pub_date,
+                    "sentiment": sentiment,
                     "relevance": relevance,
                     "sourcePriority": source_priority,
                 })
