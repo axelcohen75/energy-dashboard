@@ -29,6 +29,10 @@ function switchTab(tab) {
         initGeopolitics();
     }
 
+    if (tab === 'cftc' && !cftcInitialized) {
+        initCftc();
+    }
+
     setTimeout(() => {
         if (tab === 'markets') {
             Plotly.Plots.resize('term-structure-chart');
@@ -39,6 +43,8 @@ function switchTab(tab) {
             try { Plotly.Plots.resize('opec-watch-chart'); } catch(e) {}
         } else if (tab === 'geopolitics') {
             try { Plotly.Plots.resize('pm-term-chart'); } catch(e) {}
+        } else if (tab === 'cftc') {
+            try { Plotly.Plots.resize('cftc-net-chart'); Plotly.Plots.resize('cftc-ls-chart'); } catch(e) {}
         } else {
             Plotly.Plots.resize('payoff-chart');
             Plotly.Plots.resize('greeks-chart');
@@ -136,9 +142,6 @@ async function initEnergyMarkets() {
         dateInput.value = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
     }
 
-    // Load CFTC data in background
-    loadCftcData();
-
     // Render everything — no term structure by default (user clicks a commodity)
     renderSpotPrices(true);
     renderSpreadDashboard();
@@ -169,7 +172,6 @@ function selectCommodity(name) {
     selectedCommodity = name;
     renderSpotPrices(true);
     updateTermStructure();
-    renderCftcPanel();
 }
 
 function renderSpotPrices(loaded) {
@@ -631,121 +633,6 @@ function updateSpreadChart() {
     Plotly.react('spread-monitor-chart', traces, layout, CHART_CONFIG);
 }
 
-// ─── CFTC Positioning ──────────────────────────────────────────────────────
-
-let cftcData = null;
-
-async function loadCftcData() {
-    if (cftcData) return;
-    try {
-        const resp = await fetch('data/cftc-data.json');
-        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-        cftcData = await resp.json();
-        console.log(`[CFTC] Loaded — updated ${cftcData.updated}`);
-    } catch (e) {
-        console.warn('[CFTC] Failed to load cftc-data.json:', e.message);
-    }
-}
-
-function renderCftcPanel() {
-    const container = document.getElementById('cftc-panel');
-    if (!container) return;
-
-    if (!selectedCommodity || !cftcData?.commodities?.[selectedCommodity]) {
-        const msg = !selectedCommodity ? 'Select a commodity above' : 'No CFTC data for this commodity';
-        container.innerHTML = `<div style="color:var(--text-dim);font-size:11px;text-align:center;padding:8px">${msg}</div>`;
-        return;
-    }
-
-    const records = cftcData.commodities[selectedCommodity];
-    if (!records || records.length === 0) {
-        container.innerHTML = '<div style="color:var(--text-dim);font-size:11px;text-align:center;padding:8px">No data</div>';
-        return;
-    }
-
-    const latest = records[0];
-    const prev = records[1] || latest;
-    const reportDate = new Date(latest.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: '2-digit' });
-
-    // Net change from previous week
-    const mmChg = latest.mm_net - prev.mm_net;
-    const prodChg = latest.prod_net - prev.prod_net;
-    const swapChg = latest.swap_net - prev.swap_net;
-
-    const fmtK = (v) => {
-        const abs = Math.abs(v);
-        const str = abs >= 1000 ? `${(abs / 1000).toFixed(1)}K` : `${abs}`;
-        return (v >= 0 ? '+' : '-') + str;
-    };
-
-    const chgHtml = (chg) => {
-        if (chg === 0) return '<span style="color:var(--text-dim)">—</span>';
-        const color = chg > 0 ? (isDarkMode ? '#34d399' : '#059669') : (isDarkMode ? '#f87171' : '#dc2626');
-        const arrow = chg > 0 ? '&#9650;' : '&#9660;';
-        return `<span style="color:${color};font-size:9px">${arrow} ${fmtK(chg)}</span>`;
-    };
-
-    const barHtml = (long, short, label, net, chg, color) => {
-        const total = long + short || 1;
-        const longPct = (long / total * 100).toFixed(0);
-        const shortPct = (short / total * 100).toFixed(0);
-        const netColor = net >= 0 ? (isDarkMode ? '#34d399' : '#059669') : (isDarkMode ? '#f87171' : '#dc2626');
-
-        return `<div class="cftc-row">
-            <div class="cftc-row-header">
-                <span class="cftc-cat" style="color:${color}">${label}</span>
-                <span class="cftc-net" style="color:${netColor}">${fmtK(net)}</span>
-                ${chgHtml(chg)}
-            </div>
-            <div class="cftc-bar">
-                <div class="cftc-bar-long" style="width:${longPct}%"></div>
-                <div class="cftc-bar-short" style="width:${shortPct}%"></div>
-            </div>
-            <div class="cftc-row-footer">
-                <span style="color:${isDarkMode ? '#34d399' : '#059669'}">${long.toLocaleString()} L</span>
-                <span style="color:${isDarkMode ? '#f87171' : '#dc2626'}">${short.toLocaleString()} S</span>
-            </div>
-        </div>`;
-    };
-
-    const mmColor = isDarkMode ? '#60a5fa' : '#003061';
-    const prodColor = isDarkMode ? '#fbbf24' : '#d97706';
-    const swapColor = isDarkMode ? '#a78bfa' : '#7c3aed';
-    const otherColor = isDarkMode ? '#94a3b8' : '#64748b';
-
-    let html = `<div style="font-size:8px;color:var(--text-dim);font-family:var(--mono);margin-bottom:6px">
-        COT REPORT: ${reportDate} | OI: ${latest.oi.toLocaleString()}
-    </div>`;
-
-    html += barHtml(latest.mm_long, latest.mm_short, 'MANAGED MONEY', latest.mm_net, mmChg, mmColor);
-    html += barHtml(latest.prod_long, latest.prod_short, 'PRODUCER/MERCHANT', latest.prod_net, prodChg, prodColor);
-    html += barHtml(latest.swap_long, latest.swap_short, 'SWAP DEALER', latest.swap_net, swapChg, swapColor);
-    html += barHtml(latest.other_long, latest.other_short, 'OTHER REPORTABLE', latest.other_net, latest.other_net - (prev.other_net || 0), otherColor);
-
-    // Mini sparkline of MM net over time (last 12 weeks)
-    const spark = records.slice(0, 12).reverse();
-    const mmNets = spark.map(r => r.mm_net);
-    const maxAbs = Math.max(...mmNets.map(Math.abs), 1);
-    const sparkW = 100;
-    const sparkH = 24;
-    const points = mmNets.map((v, i) => {
-        const x = (i / (mmNets.length - 1)) * sparkW;
-        const y = sparkH / 2 - (v / maxAbs) * (sparkH / 2 - 2);
-        return `${x},${y}`;
-    }).join(' ');
-    const sparkColor = mmNets[mmNets.length - 1] >= 0 ? (isDarkMode ? '#34d399' : '#059669') : (isDarkMode ? '#f87171' : '#dc2626');
-
-    html += `<div style="margin-top:8px;border-top:1px solid var(--input-border);padding-top:6px">
-        <div style="font-size:8px;color:var(--text-dim);font-family:var(--mono);margin-bottom:3px">MM NET — 12 WEEKS</div>
-        <svg width="100%" height="${sparkH}" viewBox="0 0 ${sparkW} ${sparkH}" preserveAspectRatio="none">
-            <line x1="0" y1="${sparkH / 2}" x2="${sparkW}" y2="${sparkH / 2}" stroke="var(--input-border)" stroke-width="0.5"/>
-            <polyline points="${points}" fill="none" stroke="${sparkColor}" stroke-width="1.5" stroke-linejoin="round"/>
-        </svg>
-    </div>`;
-
-    container.innerHTML = html;
-}
-
 // ─── Re-render on theme change ──────────────────────────────────────────────
 
 function refreshEnergyMarkets() {
@@ -753,5 +640,4 @@ function refreshEnergyMarkets() {
     renderSpotPrices(true);
     renderSpreadDashboard();
     updateTermStructure();
-    renderCftcPanel();
 }

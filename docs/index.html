@@ -22,6 +22,7 @@
             <button class="tab-btn" data-tab="markets" onclick="switchTab('markets')">ENERGY MARKETS</button>
             <button class="tab-btn" data-tab="physical" onclick="switchTab('physical')">PHYSICAL</button>
             <button class="tab-btn" data-tab="geopolitics" onclick="switchTab('geopolitics')">GEOPOLITICS</button>
+            <button class="tab-btn" data-tab="cftc" onclick="switchTab('cftc')">CFTC</button>
         </nav>
     </div>
     <div class="header-meta">
@@ -337,14 +338,6 @@
         <div class="panel">
             <div class="lbl">SPOT PRICES</div>
             <div id="spot-prices-table" class="mt-8"></div>
-        </div>
-
-        <!-- CFTC Positioning -->
-        <div class="panel">
-            <div class="lbl">CFTC POSITIONING</div>
-            <div id="cftc-panel" class="mt-8">
-                <div style="color:var(--text-dim);font-size:11px;text-align:center;padding:8px">Select a commodity above</div>
-            </div>
         </div>
 
         <!-- Term Structure Controls -->
@@ -663,11 +656,110 @@
 </div>
 </div>
 
+<!-- ═══════════════════════════════════════════════════════════════════════════ -->
+<!-- TAB 5: CFTC POSITIONING                                                   -->
+<!-- ═══════════════════════════════════════════════════════════════════════════ -->
+<div class="tab-content" id="tab-cftc">
+<div class="markets-grid cftc-grid">
+
+    <!-- ─── LEFT SIDEBAR ─── -->
+    <div class="col-left">
+
+        <!-- Commodity Selector -->
+        <div class="panel">
+            <div class="lbl">COMMODITY</div>
+            <select id="cftc-commodity" class="mt-8" onchange="onCftcCommodityChange()">
+                <option value="WTI Crude Oil (CL)">WTI Crude Oil</option>
+                <option value="Brent Crude Oil (BZ)">Brent Crude Oil</option>
+                <option value="Henry Hub Nat Gas (NG)">Henry Hub Nat Gas</option>
+                <option value="RBOB Gasoline (RB)">RBOB Gasoline</option>
+                <option value="Heating Oil (HO)">Heating Oil</option>
+            </select>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="panel">
+            <div class="lbl">TRADER CATEGORY</div>
+            <select id="cftc-category" class="mt-8" onchange="updateCftcCharts()">
+                <option value="mm">MANAGED MONEY</option>
+                <option value="prod">PRODUCER / MERCHANT</option>
+                <option value="swap">SWAP DEALER</option>
+                <option value="other">OTHER REPORTABLE</option>
+                <option value="all">ALL CATEGORIES</option>
+            </select>
+        </div>
+
+        <!-- Compare Commodity -->
+        <div class="panel">
+            <div class="lbl">COMPARE WITH</div>
+            <select id="cftc-compare" class="mt-8" onchange="updateCftcCharts()">
+                <option value="">— None —</option>
+                <option value="WTI Crude Oil (CL)">WTI Crude Oil</option>
+                <option value="Brent Crude Oil (BZ)">Brent Crude Oil</option>
+                <option value="Henry Hub Nat Gas (NG)">Henry Hub Nat Gas</option>
+                <option value="RBOB Gasoline (RB)">RBOB Gasoline</option>
+                <option value="Heating Oil (HO)">Heating Oil</option>
+            </select>
+        </div>
+
+        <!-- Latest Snapshot -->
+        <div class="panel">
+            <div class="lbl">LATEST SNAPSHOT</div>
+            <div id="cftc-snapshot" class="mt-8"></div>
+        </div>
+
+    </div>
+
+    <!-- ─── CENTER: CHARTS + TABLE ─── -->
+    <div class="col-center">
+
+        <!-- Net Positioning Chart -->
+        <div class="charts-row charts-row-single">
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">NET POSITIONING</div>
+                            <div class="sub-label" id="cftc-chart-subtitle">WEEKLY COT DATA // CONTRACTS</div>
+                        </div>
+                    </div>
+                    <div id="cftc-net-chart" class="chart-plot"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Long/Short Breakdown Chart -->
+        <div class="charts-row charts-row-single">
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">LONG / SHORT BREAKDOWN</div>
+                            <div class="sub-label">GROSS POSITIONS // CONTRACTS</div>
+                        </div>
+                    </div>
+                    <div id="cftc-ls-chart" class="chart-plot"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Table -->
+        <div class="panel" style="overflow-x:auto">
+            <div class="lbl" style="margin-bottom:8px">WEEKLY DATA</div>
+            <div id="cftc-table"></div>
+        </div>
+
+    </div>
+
+</div>
+</div>
+
 <script src="engine.js?v=6"></script>
 <script src="energy-data.js?v=8"></script>
 <script src="energy-markets.js?v=10"></script>
 <script src="physical-markets.js?v=9"></script>
 <script src="geopolitics.js?v=2"></script>
+<script src="cftc.js?v=1"></script>
 <script src="terminal.js?v=8"></script>
 </body>
 </html>

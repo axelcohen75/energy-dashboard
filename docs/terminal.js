@@ -146,6 +146,7 @@ function toggleTheme() {
     if (typeof refreshEnergyMarkets === 'function') refreshEnergyMarkets();
     if (typeof refreshPhysicalMarkets === 'function') refreshPhysicalMarkets();
     if (typeof refreshGeopolitics === 'function') refreshGeopolitics();
+    if (typeof refreshCftc === 'function') refreshCftc();
 }
 
 function loadThemePreference() {
