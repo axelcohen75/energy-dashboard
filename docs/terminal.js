@@ -275,6 +275,12 @@ function init() {
     }, 150));
 
     updateCharts();
+
+    // Init default tab (Overview/Energy Markets)
+    if (typeof initEnergyMarkets === 'function' && !marketsInitialized) {
+        initEnergyMarkets();
+        marketsInitialized = true;
+    }
 }
 
 const debouncedUpdate = debounce(() => updateCharts(), 80);

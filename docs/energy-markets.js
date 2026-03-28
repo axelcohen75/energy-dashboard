@@ -145,10 +145,19 @@ async function initEnergyMarkets() {
         dateInput.value = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
     }
 
-    // Render everything — no term structure by default (user clicks a commodity)
+    // Default: select WTI
+    const defaultCommodity = 'WTI Crude Oil (CL)';
+    if (liveSpots[defaultCommodity] != null) {
+        selectedCommodity = defaultCommodity;
+        spotEvoSelected.add(defaultCommodity);
+    }
+
+    // Render everything
     renderSpotPrices(true);
+    renderSpotEvoChips();
     renderSpreadDashboard();
-    updateTermStructure();  // shows empty "Select a commodity" message
+    updateTermStructure();
+    updateSpotEvolution();
 
     // Show data timestamp
     const ts = getDataTimestamp();
@@ -219,11 +228,37 @@ function renderSpotPrices(loaded) {
 // ─── Spot Price Evolution ───────────────────────────────────────────────────
 
 let spotEvoPeriod = '1M';
-let spotEvoComparison = null; // commodity name for overlay
+const spotEvoSelected = new Set(); // selected commodity names for the chart
+
+function toggleSpotEvoCommodity(name) {
+    if (spotEvoSelected.has(name)) {
+        spotEvoSelected.delete(name);
+    } else {
+        spotEvoSelected.add(name);
+    }
+    renderSpotEvoChips();
+    updateSpotEvolution();
+}
+
+function renderSpotEvoChips() {
+    const container = document.getElementById('spot-evo-chips');
+    if (!container) return;
+    let html = '';
+    for (const [name, cfg] of Object.entries(ENERGY_COMMODITIES)) {
+        if (liveSpots[name] == null) continue;
+        const shortName = name.replace(/ \(.*/, '');
+        const isActive = spotEvoSelected.has(name);
+        const color = isDarkMode ? cfg.colorDark : cfg.color;
+        const style = isActive
+            ? `background:${color}22;color:${color};border:1px solid ${color}`
+            : `background:var(--input-bg);color:var(--text-dim);border:1px solid var(--input-border)`;
+        html += `<span class="spot-evo-chip" onclick="toggleSpotEvoCommodity('${name}')" style="${style};font-family:var(--mono);font-size:8px;font-weight:600;padding:2px 7px;border-radius:3px;cursor:pointer;letter-spacing:0.3px;user-select:none">${shortName}</span>`;
+    }
+    container.innerHTML = html;
+}
 
 function setSpotEvoPeriod(period) {
     spotEvoPeriod = period;
-    // Update button states
     document.querySelectorAll('#spot-evo-periods .btn-xs').forEach(btn => {
         btn.classList.toggle('active', btn.textContent.trim() === period);
     });
@@ -245,88 +280,77 @@ function _getPeriodDays(period) {
             return Math.ceil((now - d) / 86400000) + 1;
         }
         case '1Y': return 365;
+        case '5Y': return 1825;
+        case '10Y': return 3650;
         default: return 30;
     }
 }
 
 function updateSpotEvolution() {
-    if (!selectedCommodity || !marketData?.history) {
-        showChartEmpty('spot-evo-chart', 'Select a commodity');
+    if (spotEvoSelected.size === 0) {
+        showChartEmpty('spot-evo-chart', 'Click commodities above to compare');
         return;
     }
-
-    const cfg = ENERGY_COMMODITIES[selectedCommodity];
-    if (!cfg) return;
-
-    const hist = marketData.history[cfg.continuous];
-    if (!hist || !hist.dates || !hist.close) {
-        showChartEmpty('spot-evo-chart', 'No price history');
+    if (!marketData?.history) {
+        showChartEmpty('spot-evo-chart', 'No data');
         return;
     }
-
-    const nDays = _getPeriodDays(spotEvoPeriod);
-    const startIdx = Math.max(0, hist.dates.length - nDays);
-    const dates = hist.dates.slice(startIdx);
-    const prices = hist.close.slice(startIdx);
 
     const cc = getChartColors();
-    const color = isDarkMode ? cfg.colorDark : cfg.color;
+    const nDays = _getPeriodDays(spotEvoPeriod);
+    const traces = [];
+    const multiCommodity = spotEvoSelected.size > 1;
 
-    const traces = [{
-        x: dates,
-        y: prices,
-        type: 'scatter',
-        mode: 'lines',
-        name: selectedCommodity.replace(/ \(.*/, ''),
-        line: { color, width: 2 },
-        fill: 'tozeroy',
-        fillcolor: color + '15',
-    }];
+    for (const name of spotEvoSelected) {
+        const cfg = ENERGY_COMMODITIES[name];
+        if (!cfg) continue;
+        const hist = marketData.history[cfg.continuous];
+        if (!hist?.dates?.length) continue;
 
-    // Subtitle
-    const subtitle = document.getElementById('spot-evo-subtitle');
-    let subText = selectedCommodity.replace(/ \(.*/, '').toUpperCase() + ' // ' + spotEvoPeriod;
+        const startIdx = Math.max(0, hist.dates.length - nDays);
+        const dates = hist.dates.slice(startIdx);
+        const prices = hist.close.slice(startIdx);
+        const color = isDarkMode ? cfg.colorDark : cfg.color;
+        const shortName = name.replace(/ \(.*/, '');
 
-    // Add comparison commodity if set
-    if (spotEvoComparison && spotEvoComparison !== selectedCommodity) {
-        const compCfg = ENERGY_COMMODITIES[spotEvoComparison];
-        if (compCfg) {
-            const compHist = marketData.history[compCfg.continuous];
-            if (compHist?.dates?.length) {
-                const compStart = Math.max(0, compHist.dates.length - nDays);
-                const compColor = isDarkMode ? compCfg.colorDark : compCfg.color;
-
-                // Normalize both to % change from start for comparison
-                const baseStart = prices[0];
-                const compPrices = compHist.close.slice(compStart);
-                const compDates = compHist.dates.slice(compStart);
-                const compStartVal = compPrices[0];
-
-                // Clear fill on main trace and switch to % change
-                traces[0] = {
-                    x: dates,
-                    y: prices.map(p => ((p / baseStart) - 1) * 100),
-                    type: 'scatter',
-                    mode: 'lines',
-                    name: selectedCommodity.replace(/ \(.*/, ''),
-                    line: { color, width: 2 },
-                };
-                traces.push({
-                    x: compDates,
-                    y: compPrices.map(p => ((p / compStartVal) - 1) * 100),
-                    type: 'scatter',
-                    mode: 'lines',
-                    name: spotEvoComparison.replace(/ \(.*/, ''),
-                    line: { color: compColor, width: 2, dash: 'dot' },
-                });
-                subText += ' vs ' + spotEvoComparison.replace(/ \(.*/, '').toUpperCase();
-            }
+        if (multiCommodity) {
+            // Normalize to % change for comparison
+            const base = prices[0];
+            traces.push({
+                x: dates,
+                y: prices.map(p => ((p / base) - 1) * 100),
+                type: 'scatter',
+                mode: 'lines',
+                name: shortName,
+                line: { color, width: 2 },
+            });
+        } else {
+            traces.push({
+                x: dates,
+                y: prices,
+                type: 'scatter',
+                mode: 'lines',
+                name: shortName,
+                line: { color, width: 2 },
+                fill: 'tozeroy',
+                fillcolor: color + '15',
+            });
         }
     }
 
-    if (subtitle) subtitle.textContent = subText;
+    if (traces.length === 0) {
+        showChartEmpty('spot-evo-chart', 'No price history available');
+        return;
+    }
 
-    const isPercent = traces.length > 1;
+    // Subtitle
+    const subtitle = document.getElementById('spot-evo-subtitle');
+    const names = [...spotEvoSelected].map(n => n.replace(/ \(.*/, '').toUpperCase());
+    if (subtitle) subtitle.textContent = names.join(' vs ') + ' // ' + spotEvoPeriod;
+
+    // Pick unit from first selected (only shown in single mode)
+    const firstCfg = ENERGY_COMMODITIES[[...spotEvoSelected][0]];
+
     const layout = {
         paper_bgcolor: cc.bg, plot_bgcolor: cc.bg,
         font: { color: cc.text, family: 'Inter, sans-serif', size: 11 },
@@ -338,9 +362,11 @@ function updateSpotEvolution() {
         yaxis: {
             gridcolor: cc.grid, zerolinecolor: cc.zero,
             tickfont: { size: 9, color: cc.muted },
-            title: isPercent ? { text: '% Change', font: { size: 10, color: cc.muted } } : { text: cfg.unit, font: { size: 10, color: cc.muted } },
-            zeroline: isPercent,
-            zerolinecolor: isPercent ? cc.muted : cc.zero,
+            title: multiCommodity
+                ? { text: '% Change', font: { size: 10, color: cc.muted } }
+                : { text: firstCfg?.unit || '', font: { size: 10, color: cc.muted } },
+            zeroline: multiCommodity,
+            zerolinecolor: multiCommodity ? cc.muted : cc.zero,
         },
         showlegend: traces.length > 1,
         legend: { x: 0, y: 1, font: { size: 9, color: cc.muted }, bgcolor: 'transparent' },
@@ -541,10 +567,6 @@ function addCommodityComparison() {
     const commodity = select.value;
     if (!commodity || !selectedCommodity) return;
 
-    // Set spot evolution comparison
-    spotEvoComparison = commodity;
-    updateSpotEvolution();
-
     // Prevent duplicates on term structure
     if (tsComparisons.find(c => c.type === 'commodity' && c.commodity === commodity)) return;
     if (tsComparisons.length >= 4) tsComparisons.shift();
@@ -566,10 +588,8 @@ function removeComparison(idx) {
 
 function clearComparisons() {
     tsComparisons = [];
-    spotEvoComparison = null;
     renderComparisonTags();
     updateTermStructure();
-    updateSpotEvolution();
 }
 
 function renderComparisonTags() {
@@ -782,6 +802,7 @@ function updateSpreadChart() {
 function refreshEnergyMarkets() {
     if (!marketsInitialized) return;
     renderSpotPrices(true);
+    renderSpotEvoChips();
     renderSpreadDashboard();
     updateTermStructure();
     updateSpotEvolution();
