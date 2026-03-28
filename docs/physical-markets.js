@@ -515,46 +515,100 @@ function renderKeyDates() {
     const container = document.getElementById('key-dates');
     if (!container) return;
 
-    // Recurring key dates
     const now = new Date();
+    const nowStr = now.toISOString().slice(0, 10);
     const dates = [];
 
-    // EIA Weekly Petroleum Status Report: Wednesdays 10:30 ET
+    // ── EIA Weekly Reports (recurring) ──
     const nextWed = getNextWeekday(now, 3);
     dates.push({ date: fmtDate(nextWed), label: 'EIA Petroleum Report', type: 'EIA', recurring: 'Weekly Wed' });
-
-    // EIA Natural Gas Storage: Thursdays 10:30 ET
     const nextThu = getNextWeekday(now, 4);
     dates.push({ date: fmtDate(nextThu), label: 'EIA Gas Storage', type: 'EIA', recurring: 'Weekly Thu' });
 
-    // FOMC 2026 dates
-    const fomc = ['2026-03-18', '2026-05-06', '2026-06-17', '2026-07-29', '2026-09-16', '2026-11-04', '2026-12-16'];
-    const nowStr = now.toISOString().slice(0, 10);
-    const nextFomc = fomc.find(d => d >= nowStr);
-    if (nextFomc) {
-        dates.push({ date: nextFomc, label: 'FOMC Decision', type: 'FED', recurring: '' });
+    // ── FOMC 2026 (statement release dates) ──
+    const fomc2026 = [
+        '2026-01-28', '2026-03-18', '2026-05-06', '2026-06-17',
+        '2026-07-29', '2026-09-16', '2026-11-04', '2026-12-16'
+    ];
+    for (const d of fomc2026) {
+        if (d >= nowStr) { dates.push({ date: d, label: 'FOMC Rate Decision', type: 'FED' }); break; }
+    }
+    // Next FOMC after that
+    const nextFomc2 = fomc2026.filter(d => d >= nowStr);
+    if (nextFomc2.length >= 2) {
+        dates.push({ date: nextFomc2[1], label: 'FOMC Rate Decision', type: 'FED' });
     }
 
-    // US CPI release (typically mid-month)
-    const cpiDates = ['2026-03-12', '2026-04-10', '2026-05-13', '2026-06-10', '2026-07-14'];
-    const nextCpi = cpiDates.find(d => d >= nowStr);
-    if (nextCpi) {
-        dates.push({ date: nextCpi, label: 'US CPI Release', type: 'ECON', recurring: '' });
+    // ── ECB 2026 (Governing Council monetary policy meetings) ──
+    const ecb2026 = [
+        '2026-01-22', '2026-03-05', '2026-04-16', '2026-06-04',
+        '2026-07-16', '2026-09-10', '2026-10-29', '2026-12-17'
+    ];
+    for (const d of ecb2026) {
+        if (d >= nowStr) { dates.push({ date: d, label: 'ECB Rate Decision', type: 'ECB' }); break; }
+    }
+    const nextEcb2 = ecb2026.filter(d => d >= nowStr);
+    if (nextEcb2.length >= 2) {
+        dates.push({ date: nextEcb2[1], label: 'ECB Rate Decision', type: 'ECB' });
     }
 
+    // ── US CPI (Bureau of Labor Statistics, ~mid-month) ──
+    const usCpi2026 = [
+        '2026-01-14', '2026-02-12', '2026-03-12', '2026-04-14',
+        '2026-05-12', '2026-06-10', '2026-07-14', '2026-08-12',
+        '2026-09-11', '2026-10-13', '2026-11-12', '2026-12-10'
+    ];
+    for (const d of usCpi2026) {
+        if (d >= nowStr) { dates.push({ date: d, label: 'US CPI (Inflation)', type: 'ECON' }); break; }
+    }
+
+    // ── US Non-Farm Payrolls (BLS, first Friday of month) ──
+    const usNfp2026 = [
+        '2026-01-09', '2026-02-06', '2026-03-06', '2026-04-03',
+        '2026-05-08', '2026-06-05', '2026-07-02', '2026-08-07',
+        '2026-09-04', '2026-10-02', '2026-11-06', '2026-12-04'
+    ];
+    for (const d of usNfp2026) {
+        if (d >= nowStr) { dates.push({ date: d, label: 'US Non-Farm Payrolls', type: 'JOBS' }); break; }
+    }
+
+    // ── EU HICP (Eurostat flash estimate, ~end of month) ──
+    const euHicp2026 = [
+        '2026-01-07', '2026-02-27', '2026-03-31', '2026-04-30',
+        '2026-05-29', '2026-07-01', '2026-07-31', '2026-08-31',
+        '2026-09-30', '2026-10-30', '2026-11-30', '2026-12-17'
+    ];
+    for (const d of euHicp2026) {
+        if (d >= nowStr) { dates.push({ date: d, label: 'EU Inflation (HICP)', type: 'ECON' }); break; }
+    }
+
+    // ── US Initial Jobless Claims (weekly Thursday) ──
+    dates.push({ date: fmtDate(nextThu), label: 'US Jobless Claims', type: 'JOBS', recurring: 'Weekly Thu' });
+
+    // Sort by date
     dates.sort((a, b) => a.date.localeCompare(b.date));
+
+    // Type colors
+    const typeColors = {
+        EIA:  { light: '#0891b2', dark: '#22d3ee' },
+        FED:  { light: '#7c3aed', dark: '#a78bfa' },
+        ECB:  { light: '#2563eb', dark: '#60a5fa' },
+        ECON: { light: '#d97706', dark: '#fbbf24' },
+        JOBS: { light: '#059669', dark: '#34d399' },
+    };
 
     let html = '';
     for (const d of dates) {
         const dateObj = new Date(d.date + 'T12:00:00');
         const dateStr = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-        const typeColor = d.type === 'EIA' ? (isDarkMode ? '#22d3ee' : '#0891b2')
-            : d.type === 'FED' ? (isDarkMode ? '#a78bfa' : '#7c3aed')
-            : (isDarkMode ? '#fbbf24' : '#d97706');
+        const daysUntil = Math.ceil((dateObj - now) / 86400000);
+        const urgency = daysUntil <= 2 ? (isDarkMode ? '#f87171' : '#dc2626') : '';
+        const tc = typeColors[d.type] || typeColors.ECON;
+        const typeColor = isDarkMode ? tc.dark : tc.light;
 
-        html += `<div style="display:flex;align-items:center;gap:8px;padding:3px 6px;font-size:11px">
-            <span style="font-family:var(--mono);font-size:10px;color:var(--text-muted);min-width:50px">${dateStr}</span>
-            <span style="font-size:8px;font-weight:700;color:${typeColor};min-width:30px">${d.type}</span>
+        html += `<div style="display:flex;align-items:center;gap:8px;padding:4px 6px;font-size:11px;${urgency ? `background:${urgency}11;border-radius:3px` : ''}">
+            <span style="font-family:var(--mono);font-size:10px;color:${urgency || 'var(--text-muted)'};min-width:50px;font-weight:${urgency ? '600' : '400'}">${dateStr}</span>
+            <span style="font-size:7px;font-weight:700;color:${typeColor};min-width:30px;letter-spacing:0.3px">${d.type}</span>
             <span style="color:var(--text);font-size:10px;flex:1">${d.label}</span>
             ${d.recurring ? `<span style="font-size:8px;color:var(--text-dim)">${d.recurring}</span>` : ''}
         </div>`;
@@ -779,11 +833,13 @@ function renderNewsFeed(category) {
         const sourceTag = a.source ? getSourceTag(a.source) : '';
 
         const sentimentBadge = getSentimentBadge(a.sentiment);
+        const impactBadge = getImpactBadge(a.impact);
 
         html += `<div class="news-item">
             <div class="news-header">
                 ${sourceTag}
                 ${sentimentBadge}
+                ${impactBadge}
                 <span class="news-time">${timeAgo}</span>
             </div>
             <div class="news-title">${a.title}</div>
@@ -808,6 +864,12 @@ function getSentimentBadge(sentiment) {
         return '<span class="news-sentiment sentiment-bull">BULL</span>';
     }
     return '<span class="news-sentiment sentiment-bear">BEAR</span>';
+}
+
+function getImpactBadge(impact) {
+    if (!impact || impact === 'low') return '<span class="news-impact impact-low">LOW</span>';
+    if (impact === 'high') return '<span class="news-impact impact-high">HIGH</span>';
+    return '<span class="news-impact impact-med">MED</span>';
 }
 
 function getSourceTag(source) {

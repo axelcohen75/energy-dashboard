@@ -106,17 +106,28 @@ BEARISH_KEYWORDS = [
 
 
 def compute_sentiment(title, summary):
-    """Compute bullish/bearish sentiment score from keywords."""
+    """Compute bullish/bearish sentiment + impact level from keywords."""
     text = (title + " " + summary).lower()
     bull_score = sum(1 for kw in BULLISH_KEYWORDS if kw in text)
     bear_score = sum(1 for kw in BEARISH_KEYWORDS if kw in text)
 
     if bull_score > bear_score:
-        return "bullish"
+        sentiment = "bullish"
     elif bear_score > bull_score:
-        return "bearish"
+        sentiment = "bearish"
     else:
-        return "neutral"
+        sentiment = "neutral"
+
+    # Impact = total keyword intensity
+    total = bull_score + bear_score
+    if total >= 4:
+        impact = "high"
+    elif total >= 2:
+        impact = "med"
+    else:
+        impact = "low"
+
+    return sentiment, impact
 
 
 def parse_source(entry):
@@ -212,7 +223,7 @@ def fetch_category(category, feed_configs):
 
                 relevance = compute_relevance(title, summary, category)
                 source_priority = get_source_priority(source)
-                sentiment = compute_sentiment(title, summary)
+                sentiment, impact = compute_sentiment(title, summary)
 
                 articles.append({
                     "title": display_title,
@@ -221,6 +232,7 @@ def fetch_category(category, feed_configs):
                     "url": link,
                     "published": pub_date,
                     "sentiment": sentiment,
+                    "impact": impact,
                     "relevance": relevance,
                     "sourcePriority": source_priority,
                 })

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy Derivatives Platform</title>
-    <link rel="stylesheet" href="style.css?v=9">
+    <link rel="stylesheet" href="style.css?v=10">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
@@ -340,20 +340,20 @@
             <div id="spot-prices-table" class="mt-8"></div>
         </div>
 
-        <!-- Term Structure Controls -->
+        <!-- Comparison Controls (shared) -->
         <div class="panel">
-            <div class="lbl">TERM STRUCTURE</div>
-            <div class="mt-8" style="border-bottom:1px solid var(--input-border);padding-bottom:10px">
-                <div class="lbl lbl-sm">COMPARE WITH DATE</div>
-                <input type="date" id="ts-compare-date" style="width:100%;background:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text);font-size:11px;font-family:var(--mono);padding:4px 6px;margin-top:4px">
-                <button class="btn btn-full mt-8" onclick="addTermStructureComparison()" style="font-size:10px">ADD COMPARISON</button>
-            </div>
+            <div class="lbl">COMPARISON</div>
             <div class="mt-8">
-                <div class="lbl lbl-sm">COMPARE WITH COMMODITY</div>
+                <div class="lbl lbl-sm">OVERLAY COMMODITY</div>
                 <select id="ts-compare-commodity" style="margin-top:4px">
-                    <option value="">— Select —</option>
+                    <option value="">— None —</option>
                 </select>
-                <button class="btn btn-full mt-8" onclick="addCommodityComparison()" style="font-size:10px">ADD COMPARISON</button>
+                <button class="btn btn-full mt-8" onclick="addCommodityComparison()" style="font-size:10px">ADD TO CHARTS</button>
+            </div>
+            <div class="mt-8" style="border-top:1px solid var(--input-border);padding-top:10px">
+                <div class="lbl lbl-sm">COMPARE FORWARD CURVE DATE</div>
+                <input type="date" id="ts-compare-date" style="width:100%;background:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text);font-size:11px;font-family:var(--mono);padding:4px 6px;margin-top:4px">
+                <button class="btn btn-full mt-8" onclick="addTermStructureComparison()" style="font-size:10px">ADD DATE OVERLAY</button>
             </div>
             <div id="ts-comparisons" class="mt-8"></div>
         </div>
@@ -394,8 +394,30 @@
     <!-- ─── CENTER: CHARTS ─── -->
     <div class="col-center">
 
-        <!-- Term Structure Chart -->
-        <div class="charts-row charts-row-single">
+        <!-- Spot Evolution + Term Structure (side by side) -->
+        <div class="charts-row">
+            <!-- Spot Price Evolution Chart -->
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header" style="flex-wrap:wrap;gap:6px">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">PRICE EVOLUTION</div>
+                            <div class="sub-label" id="spot-evo-subtitle">SELECT A COMMODITY</div>
+                        </div>
+                        <div style="display:flex;gap:3px;flex-wrap:wrap" id="spot-evo-periods">
+                            <button class="btn btn-xs" onclick="setSpotEvoPeriod('1D')">1D</button>
+                            <button class="btn btn-xs" onclick="setSpotEvoPeriod('1W')">1W</button>
+                            <button class="btn btn-xs active" onclick="setSpotEvoPeriod('1M')">1M</button>
+                            <button class="btn btn-xs" onclick="setSpotEvoPeriod('MTD')">MTD</button>
+                            <button class="btn btn-xs" onclick="setSpotEvoPeriod('YTD')">YTD</button>
+                            <button class="btn btn-xs" onclick="setSpotEvoPeriod('1Y')">1Y</button>
+                        </div>
+                    </div>
+                    <div id="spot-evo-chart" class="chart-plot"></div>
+                </div>
+            </div>
+
+            <!-- Term Structure Chart -->
             <div class="chart-box">
                 <div class="panel">
                     <div class="chart-header">
@@ -457,8 +479,14 @@
 <div class="tab-content" id="tab-physical">
 <div class="markets-grid physical-grid">
 
-    <!-- ─── LEFT SIDEBAR: Calendar + News ─── -->
+    <!-- ─── LEFT SIDEBAR: News + Calendar ─── -->
     <div class="col-left">
+
+        <!-- Physical News Feed -->
+        <div class="panel">
+            <div class="lbl">PHYSICAL NEWS</div>
+            <div id="physical-news-feed" class="news-feed mt-8"></div>
+        </div>
 
         <!-- OPEC+ Calendar -->
         <div class="panel">
@@ -466,16 +494,10 @@
             <div id="opec-calendar" class="mt-8"></div>
         </div>
 
-        <!-- Key Dates -->
+        <!-- Economic Calendar / Key Dates -->
         <div class="panel">
-            <div class="lbl">KEY DATES</div>
+            <div class="lbl">ECONOMIC CALENDAR</div>
             <div id="key-dates" class="mt-8"></div>
-        </div>
-
-        <!-- Physical News Feed -->
-        <div class="panel">
-            <div class="lbl">PHYSICAL NEWS</div>
-            <div id="physical-news-feed" class="news-feed mt-8"></div>
         </div>
     </div>
 
@@ -756,8 +778,8 @@
 
 <script src="engine.js?v=6"></script>
 <script src="energy-data.js?v=8"></script>
-<script src="energy-markets.js?v=10"></script>
-<script src="physical-markets.js?v=9"></script>
+<script src="energy-markets.js?v=11"></script>
+<script src="physical-markets.js?v=10"></script>
 <script src="geopolitics.js?v=2"></script>
 <script src="cftc.js?v=1"></script>
 <script src="terminal.js?v=8"></script>
