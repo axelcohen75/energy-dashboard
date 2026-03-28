@@ -155,6 +155,16 @@
                             <div class="lbl" style="font-size:12px;margin-bottom:0">PAYOFF DIAGRAM</div>
                             <div class="sub-label">P&L AT EXPIRY // UNDERLYING F</div>
                         </div>
+                        <div class="hedge-overlay">
+                            <label class="hedge-check">
+                                <input type="checkbox" id="hedge-toggle" onchange="updateCharts()">
+                                <span class="hedge-label">+ UNDERLYING</span>
+                            </label>
+                            <select id="hedge-position" onchange="updateCharts()" style="width:80px;font-size:9px;padding:2px 4px">
+                                <option value="long">LONG</option>
+                                <option value="short">SHORT</option>
+                            </select>
+                        </div>
                     </div>
                     <div id="payoff-chart" class="chart-plot"></div>
                 </div>

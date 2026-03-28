@@ -569,6 +569,28 @@ input[type="range"]::-moz-range-thumb {
     flex-wrap: wrap;
     gap: 8px;
 }
+.hedge-overlay {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.hedge-check {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+.hedge-check input[type="checkbox"] {
+    accent-color: var(--accent);
+    cursor: pointer;
+}
+.hedge-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+}
 .chart-plot {
     flex: 1;
     min-height: 250px;

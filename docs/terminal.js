@@ -573,13 +573,41 @@ function updateCharts() {
     const payoffTraces = [{
         x: spotRange,
         y: payoffData,
-        name: 'PAYOFF',
+        name: 'STRATEGY',
         type: 'scatter',
         mode: 'lines',
         line: { color: LINE_COLORS[0], width: 2.5 },
         fill: 'tozeroy',
-        fillcolor: (isDarkMode ? 'rgba(96,165,250,0.08)' : 'rgba(37,99,235,0.06)'),
+        fillcolor: (isDarkMode ? 'rgba(96,165,250,0.08)' : 'rgba(0,48,97,0.06)'),
     }];
+
+    // Hedge overlay: add underlying + combined payoff
+    const hedgeOn = document.getElementById('hedge-toggle')?.checked;
+    if (hedgeOn) {
+        const hedgePos = document.getElementById('hedge-position')?.value || 'long';
+        const hedgeSign = hedgePos === 'long' ? 1 : -1;
+        const underlyingPnl = spotRange.map(S => hedgeSign * (S - env.F));
+        const combinedPnl = spotRange.map((S, i) => payoffData[i] + underlyingPnl[i]);
+
+        payoffTraces.push({
+            x: spotRange,
+            y: underlyingPnl,
+            name: `${hedgePos.toUpperCase()} UNDERLYING`,
+            type: 'scatter',
+            mode: 'lines',
+            line: { color: isDarkMode ? '#94a3b8' : '#94a3b8', width: 1.5, dash: 'dot' },
+        });
+        payoffTraces.push({
+            x: spotRange,
+            y: combinedPnl,
+            name: 'COMBINED',
+            type: 'scatter',
+            mode: 'lines',
+            line: { color: isDarkMode ? '#34d399' : '#059669', width: 2.5 },
+            fill: 'tozeroy',
+            fillcolor: (isDarkMode ? 'rgba(52,211,153,0.08)' : 'rgba(5,150,105,0.06)'),
+        });
+    }
 
     // Add price overlay on payoff chart
     const priceData = spotRange.map(S => {
