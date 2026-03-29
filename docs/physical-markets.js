@@ -41,7 +41,6 @@ async function initPhysicalMarkets() {
     renderVs5YearAvg();
     renderSeasonalIndicator();
     updateInventoryChart();
-    loadAndRenderNews('physical');
 }
 
 // ─── Inventory Panel ────────────────────────────────────────────────────────
@@ -794,14 +793,13 @@ function refreshPhysicalMarkets() {
     renderVs5YearAvg();
     renderSeasonalIndicator();
     updateInventoryChart();
-    renderNewsFeed('physical');
 }
 
 // ─── News Feed ──────────────────────────────────────────────────────────────
 
 let newsData = null;
 
-async function loadAndRenderNews(category) {
+async function loadAndRenderNews(category, targetId) {
     if (!newsData) {
         try {
             const resp = await fetch('data/news-data.json');
@@ -813,11 +811,11 @@ async function loadAndRenderNews(category) {
             return;
         }
     }
-    renderNewsFeed(category);
+    renderNewsFeed(category, targetId);
 }
 
-function renderNewsFeed(category) {
-    const containerId = category === 'physical' ? 'physical-news-feed' : 'geo-news-feed';
+function renderNewsFeed(category, targetId) {
+    const containerId = targetId || (category === 'physical' ? 'physical-news-feed' : 'geo-news-feed');
     const container = document.getElementById(containerId);
     if (!container || !newsData) return;
 
@@ -833,13 +831,11 @@ function renderNewsFeed(category) {
         const sourceTag = a.source ? getSourceTag(a.source) : '';
 
         const sentimentBadge = getSentimentBadge(a.sentiment);
-        const impactBadge = getImpactBadge(a.impact);
 
         html += `<div class="news-item">
             <div class="news-header">
                 ${sourceTag}
                 ${sentimentBadge}
-                ${impactBadge}
                 <span class="news-time">${timeAgo}</span>
             </div>
             <div class="news-title">${a.title}</div>
@@ -866,11 +862,7 @@ function getSentimentBadge(sentiment) {
     return '<span class="news-sentiment sentiment-bear">BEAR</span>';
 }
 
-function getImpactBadge(impact) {
-    if (!impact || impact === 'low') return '<span class="news-impact impact-low">LOW</span>';
-    if (impact === 'high') return '<span class="news-impact impact-high">HIGH</span>';
-    return '<span class="news-impact impact-med">MED</span>';
-}
+
 
 function getSourceTag(source) {
     const s = source.toLowerCase();

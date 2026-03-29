@@ -40,35 +40,66 @@ const ENERGY_COMMODITIES = {
     },
 };
 
+// ─── Market Indices Config ──────────────────────────────────────────────────
+
+const MARKET_INDICES = {
+    '^GSPC': { label: 'S&P 500', unit: 'pts', color: '#1e40af', colorDark: '#60a5fa' },
+    'XLE': { label: 'XLE Energy ETF', unit: '$/sh', color: '#b45309', colorDark: '#fbbf24' },
+    'XOP': { label: 'XOP Oil & Gas E&P', unit: '$/sh', color: '#9333ea', colorDark: '#c084fc' },
+    'DXY=F': { label: 'DXY Dollar Index', unit: 'pts', color: '#0f766e', colorDark: '#2dd4bf' },
+    'USO': { label: 'USO Oil Fund', unit: '$/sh', color: '#be123c', colorDark: '#fb7185' },
+};
+
 // ─── Timespread Definitions ─────────────────────────────────────────────────
 
 const TIMESPREAD_DEFINITIONS = {
     'WTI Crude Oil (CL)': [
-        { name: 'CL Prompt Spread (M1-M2)', m1: 0, m2: 1 },
-        { name: 'CL 1-3 Month', m1: 0, m2: 2 },
-        { name: 'CL 1-6 Month', m1: 0, m2: 5 },
-        { name: 'CL 1-12 Month', m1: 0, m2: 11 },
-        { name: 'CL 6-12 Month', m1: 5, m2: 11 },
+        { name: 'CL M1-M2 (Prompt)', m1: 0, m2: 1 },
+        { name: 'CL M1-M3', m1: 0, m2: 2 },
+        { name: 'CL M1-M4', m1: 0, m2: 3 },
+        { name: 'CL M1-M6', m1: 0, m2: 5 },
+        { name: 'CL M1-M12', m1: 0, m2: 11 },
+        { name: 'CL M2-M3', m1: 1, m2: 2 },
+        { name: 'CL M3-M6', m1: 2, m2: 5 },
+        { name: 'CL M6-M12', m1: 5, m2: 11 },
+        { name: 'CL M12-M24', m1: 11, m2: 23 },
     ],
     'Brent Crude Oil (BZ)': [
-        { name: 'BZ Prompt Spread (M1-M2)', m1: 0, m2: 1 },
-        { name: 'BZ 1-3 Month', m1: 0, m2: 2 },
-        { name: 'BZ 1-6 Month', m1: 0, m2: 5 },
-        { name: 'BZ 1-12 Month', m1: 0, m2: 11 },
+        { name: 'BZ M1-M2 (Prompt)', m1: 0, m2: 1 },
+        { name: 'BZ M1-M3', m1: 0, m2: 2 },
+        { name: 'BZ M1-M4', m1: 0, m2: 3 },
+        { name: 'BZ M1-M6', m1: 0, m2: 5 },
+        { name: 'BZ M1-M12', m1: 0, m2: 11 },
+        { name: 'BZ M2-M3', m1: 1, m2: 2 },
+        { name: 'BZ M3-M6', m1: 2, m2: 5 },
+        { name: 'BZ M6-M12', m1: 5, m2: 11 },
     ],
     'Henry Hub Nat Gas (NG)': [
-        { name: 'NG Prompt Spread (M1-M2)', m1: 0, m2: 1 },
-        { name: 'NG Summer-Winter', m1: 5, m2: 11 },
-        { name: 'NG 1-6 Month', m1: 0, m2: 5 },
-        { name: 'NG 1-12 Month', m1: 0, m2: 11 },
+        { name: 'NG M1-M2 (Prompt)', m1: 0, m2: 1 },
+        { name: 'NG M1-M3', m1: 0, m2: 2 },
+        { name: 'NG M1-M4', m1: 0, m2: 3 },
+        { name: 'NG M1-M6', m1: 0, m2: 5 },
+        { name: 'NG M1-M12', m1: 0, m2: 11 },
+        { name: 'NG M3-M6', m1: 2, m2: 5 },
+        { name: 'NG M6-M12', m1: 5, m2: 11 },
+        { name: 'NG Summer-Winter (M6-M12)', m1: 5, m2: 11 },
+        { name: 'NG Winter-Summer (M12-M18)', m1: 11, m2: 17 },
     ],
     'RBOB Gasoline (RB)': [
-        { name: 'RB Prompt Spread (M1-M2)', m1: 0, m2: 1 },
-        { name: 'RB 1-6 Month', m1: 0, m2: 5 },
+        { name: 'RB M1-M2 (Prompt)', m1: 0, m2: 1 },
+        { name: 'RB M1-M3', m1: 0, m2: 2 },
+        { name: 'RB M1-M6', m1: 0, m2: 5 },
+        { name: 'RB M1-M12', m1: 0, m2: 11 },
+        { name: 'RB M3-M6', m1: 2, m2: 5 },
+        { name: 'RB M6-M12', m1: 5, m2: 11 },
     ],
     'Heating Oil (HO)': [
-        { name: 'HO Prompt Spread (M1-M2)', m1: 0, m2: 1 },
-        { name: 'HO 1-6 Month', m1: 0, m2: 5 },
+        { name: 'HO M1-M2 (Prompt)', m1: 0, m2: 1 },
+        { name: 'HO M1-M3', m1: 0, m2: 2 },
+        { name: 'HO M1-M6', m1: 0, m2: 5 },
+        { name: 'HO M1-M12', m1: 0, m2: 11 },
+        { name: 'HO M3-M6', m1: 2, m2: 5 },
+        { name: 'HO M6-M12', m1: 5, m2: 11 },
     ],
 };
 

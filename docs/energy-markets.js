@@ -159,6 +159,9 @@ async function initEnergyMarkets() {
     updateTermStructure();
     updateSpotEvolution();
 
+    // Load news feed into Overview tab
+    loadAndRenderNews('physical', 'overview-news-feed');
+
     // Show data timestamp
     const ts = getDataTimestamp();
     if (ts) {
@@ -187,9 +190,48 @@ function selectCommodity(name) {
     updateSpotEvolution();
 }
 
+function _getChange(sym, nDays) {
+    if (!marketData?.history?.[sym]) return null;
+    const hist = marketData.history[sym];
+    if (!hist.close || hist.close.length < 2) return null;
+    const latest = hist.close[hist.close.length - 1];
+    const idx = Math.max(0, hist.close.length - nDays - 1);
+    const prev = hist.close[idx];
+    if (!prev) return null;
+    return ((latest - prev) / prev) * 100;
+}
+
+function _getYtdChange(sym) {
+    if (!marketData?.history?.[sym]) return null;
+    const hist = marketData.history[sym];
+    if (!hist.dates || !hist.close || hist.close.length < 2) return null;
+    const year = new Date().getFullYear();
+    const yearStr = `${year}-01`;
+    const idx = hist.dates.findIndex(d => d >= yearStr);
+    if (idx < 0) return null;
+    const start = hist.close[idx];
+    const latest = hist.close[hist.close.length - 1];
+    return ((latest - start) / start) * 100;
+}
+
+function _fmtChange(pct) {
+    if (pct == null) return '<span style="font-size:9px;color:var(--text-dim)">—</span>';
+    const sign = pct >= 0 ? '+' : '';
+    const c = pct >= 0
+        ? (isDarkMode ? '#34d399' : '#059669')
+        : (isDarkMode ? '#f87171' : '#dc2626');
+    return `<span style="font-family:var(--mono);font-size:9px;color:${c}">${sign}${pct.toFixed(1)}%</span>`;
+}
+
 function renderSpotPrices(loaded) {
     const container = document.getElementById('spot-prices-table');
     let html = '';
+
+    // Header
+    html += `<div style="display:flex;justify-content:flex-end;gap:12px;padding:0 6px 4px;border-bottom:1px solid var(--input-border);margin-bottom:4px">
+        <span style="font-family:var(--mono);font-size:7px;color:var(--text-dim);letter-spacing:0.5px;min-width:36px;text-align:right">1D</span>
+        <span style="font-family:var(--mono);font-size:7px;color:var(--text-dim);letter-spacing:0.5px;min-width:36px;text-align:right">YTD</span>
+    </div>`;
 
     for (const [name, cfg] of Object.entries(ENERGY_COMMODITIES)) {
         const price = liveSpots[name];
@@ -205,17 +247,50 @@ function renderSpotPrices(loaded) {
         const color = isDarkMode ? cfg.colorDark : cfg.color;
         const decimals = price != null && price < 10 ? 3 : 2;
         const isSelected = selectedCommodity === name;
+        const chg1d = loaded ? _getChange(cfg.continuous, 1) : null;
+        const chgYtd = loaded ? _getYtdChange(cfg.continuous) : null;
 
         html += `
             <div class="spot-row${isSelected ? ' spot-row-active' : ''}" onclick="selectCommodity('${name}')" style="cursor:pointer">
                 <div class="spot-name" style="border-left: 3px solid ${color}; padding-left: 8px">
                     ${shortName}
                 </div>
-                <div class="spot-val">
+                <div class="spot-val" style="display:flex;align-items:center;gap:8px">
                     <span class="spot-price">${loaded ? price.toFixed(decimals) : '...'}</span>
                     <span class="spot-unit">${cfg.unit}</span>
+                    ${_fmtChange(chg1d)}
+                    ${_fmtChange(chgYtd)}
                 </div>
             </div>`;
+    }
+
+    // Market indices separator
+    if (loaded && marketData?.indices) {
+        html += `<div style="border-top:1px solid var(--input-border);margin-top:6px;padding-top:6px">
+            <div style="font-family:var(--mono);font-size:7px;color:var(--text-dim);letter-spacing:1px;padding:0 6px 4px">MARKET INDICES</div>`;
+
+        for (const [sym, info] of Object.entries(MARKET_INDICES)) {
+            const data = marketData.indices[sym];
+            if (!data) continue;
+            const price = data.price;
+            const decimals = price < 10 ? 3 : (price > 1000 ? 0 : 2);
+            const chg1d = data.chg1d;
+            const chgYtd = data.chgYtd;
+
+            html += `
+                <div class="spot-row" style="opacity:0.85">
+                    <div class="spot-name" style="border-left: 3px solid ${isDarkMode ? info.colorDark : info.color}; padding-left: 8px">
+                        ${info.label}
+                    </div>
+                    <div class="spot-val" style="display:flex;align-items:center;gap:8px">
+                        <span class="spot-price">${price.toFixed(decimals)}</span>
+                        <span class="spot-unit">${info.unit}</span>
+                        ${_fmtChange(chg1d)}
+                        ${_fmtChange(chgYtd)}
+                    </div>
+                </div>`;
+        }
+        html += '</div>';
     }
 
     if (loaded && !html) {
@@ -806,4 +881,5 @@ function refreshEnergyMarkets() {
     renderSpreadDashboard();
     updateTermStructure();
     updateSpotEvolution();
+    renderNewsFeed('physical', 'overview-news-feed');
 }

@@ -200,12 +200,12 @@ def fetch_term_structures():
 
 
 def fetch_historical():
-    """Fetch 2 years of daily close prices for continuous contracts."""
-    print("\nFetching historical data...")
+    """Fetch max available daily close prices for continuous contracts (up to 10Y)."""
+    print("\nFetching historical data (max available)...")
     history = {}
     symbols = [cfg['continuous'] for cfg in COMMODITIES.values()]
 
-    data, is_multi = safe_download(symbols, period='2y', interval='1d', auto_adjust=True)
+    data, is_multi = safe_download(symbols, period='max', interval='1d', auto_adjust=True)
 
     for name, cfg in COMMODITIES.items():
         sym = cfg['continuous']
@@ -306,6 +306,47 @@ def fetch_contract_history():
     return contract_history
 
 
+MARKET_INDICES = ['^GSPC', 'XLE', 'XOP', 'DXY=F', 'USO']
+
+
+def fetch_indices():
+    """Fetch market indices: current price, 1D change, YTD change."""
+    print("\nFetching market indices...")
+    indices = {}
+
+    # Current prices (5d to get previous close)
+    data_5d, is_multi_5d = safe_download(MARKET_INDICES, period='5d', auto_adjust=True)
+
+    # YTD data
+    year_start = f"{datetime.datetime.now().year}-01-01"
+    data_ytd, is_multi_ytd = safe_download(MARKET_INDICES, start=year_start, auto_adjust=True)
+
+    for sym in MARKET_INDICES:
+        try:
+            close_5d = get_close(data_5d, sym, is_multi_5d)
+            close_ytd = get_close(data_ytd, sym, is_multi_ytd)
+
+            if close_5d is None or len(close_5d) < 2:
+                print(f"  {sym}: NO DATA")
+                continue
+
+            price = round(float(close_5d.iloc[-1]), 2)
+            prev = float(close_5d.iloc[-2])
+            chg1d = round((price - prev) / prev * 100, 2)
+
+            chg_ytd = None
+            if close_ytd is not None and len(close_ytd) > 1:
+                ytd_start = float(close_ytd.iloc[0])
+                chg_ytd = round((price - ytd_start) / ytd_start * 100, 2)
+
+            indices[sym] = {'price': price, 'chg1d': chg1d, 'chgYtd': chg_ytd}
+            print(f"  {sym}: {price} (1D: {chg1d:+.2f}%, YTD: {chg_ytd:+.2f}%)" if chg_ytd is not None else f"  {sym}: {price} (1D: {chg1d:+.2f}%)")
+        except Exception as e:
+            print(f"  {sym}: FAILED ({e})")
+
+    return indices
+
+
 # ─── Main ────────────────────────────────────────────────────────────────────
 
 def main():
@@ -317,6 +358,7 @@ def main():
     history = fetch_historical()
     timespreads = fetch_timespreads()
     contract_history = fetch_contract_history()
+    indices = fetch_indices()
 
     result = {
         'updated': datetime.datetime.now(datetime.timezone.utc).isoformat(),
@@ -325,6 +367,7 @@ def main():
         'history': history,
         'timespreads': timespreads,
         'contractHistory': contract_history,
+        'indices': indices,
     }
 
     with open(output_path, 'w') as f:

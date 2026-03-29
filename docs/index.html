@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy Derivatives Platform</title>
-    <link rel="stylesheet" href="style.css?v=10">
+    <link rel="stylesheet" href="style.css?v=11">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
@@ -329,9 +329,9 @@
 <!-- TAB 2: ENERGY MARKETS                                                     -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 <div class="tab-content active" id="tab-markets">
-<div class="markets-grid">
+<div class="markets-grid overview-grid">
 
-    <!-- ─── LEFT SIDEBAR ─── -->
+    <!-- ─── LEFT: SPOT PRICES + NEWS ─── -->
     <div class="col-left">
 
         <!-- Spot Prices / Commodity Selector -->
@@ -340,55 +340,11 @@
             <div id="spot-prices-table" class="mt-8"></div>
         </div>
 
-        <!-- Comparison Controls (shared) -->
+        <!-- News Feed (shared with Physical) -->
         <div class="panel">
-            <div class="lbl">COMPARISON</div>
-            <div class="mt-8">
-                <div class="lbl lbl-sm">OVERLAY COMMODITY</div>
-                <select id="ts-compare-commodity" style="margin-top:4px">
-                    <option value="">— None —</option>
-                </select>
-                <button class="btn btn-full mt-8" onclick="addCommodityComparison()" style="font-size:10px">ADD TO CHARTS</button>
-            </div>
-            <div class="mt-8" style="border-top:1px solid var(--input-border);padding-top:10px">
-                <div class="lbl lbl-sm">COMPARE FORWARD CURVE DATE</div>
-                <input type="date" id="ts-compare-date" style="width:100%;background:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text);font-size:11px;font-family:var(--mono);padding:4px 6px;margin-top:4px">
-                <button class="btn btn-full mt-8" onclick="addTermStructureComparison()" style="font-size:10px">ADD DATE OVERLAY</button>
-            </div>
-            <div id="ts-comparisons" class="mt-8"></div>
+            <div class="lbl">ENERGY NEWS</div>
+            <div id="overview-news-feed" class="news-feed mt-8"></div>
         </div>
-
-        <!-- Timespread Controls -->
-        <div class="panel">
-            <div class="lbl">TIMESPREAD ANALYSIS</div>
-            <div class="mt-8">
-                <div class="lbl lbl-sm">COMMODITY</div>
-                <select id="ts-spread-commodity"></select>
-            </div>
-            <div class="mt-8">
-                <div class="lbl lbl-sm">SPREAD</div>
-                <select id="ts-spread-select"></select>
-            </div>
-            <div class="mt-8">
-                <div class="lbl lbl-sm">HISTORY</div>
-                <select id="ts-spread-period">
-                    <option value="63">3 MONTHS</option>
-                    <option value="126">6 MONTHS</option>
-                    <option value="252" selected>1 YEAR</option>
-                    <option value="504">2 YEARS</option>
-                </select>
-            </div>
-            <button class="btn btn-accent btn-full mt-10" onclick="updateTimespread()">ANALYZE</button>
-        </div>
-
-        <!-- Hidden spread monitor controls (used by selectSpread from dashboard) -->
-        <select id="spread-category" style="display:none">
-            <option value="all">ALL SPREADS</option>
-        </select>
-        <select id="spread-select" style="display:none"></select>
-        <select id="spread-period" style="display:none">
-            <option value="252" selected>1 YEAR</option>
-        </select>
     </div>
 
     <!-- ─── CENTER: CHARTS ─── -->
@@ -434,21 +390,8 @@
             </div>
         </div>
 
-        <!-- Timespread + Spread Monitor -->
+        <!-- Spread Monitor (left) + Calendar Spread (right) -->
         <div class="charts-row">
-            <!-- Timespread Chart -->
-            <div class="chart-box">
-                <div class="panel">
-                    <div class="chart-header">
-                        <div>
-                            <div class="lbl" style="font-size:12px;margin-bottom:0">CALENDAR SPREAD</div>
-                            <div class="sub-label" id="timespread-subtitle">SELECT A TIMESPREAD TO ANALYZE</div>
-                        </div>
-                    </div>
-                    <div id="timespread-chart" class="chart-plot"></div>
-                </div>
-            </div>
-
             <!-- Spread Monitor Chart -->
             <div class="chart-box">
                 <div class="panel">
@@ -461,17 +404,80 @@
                     <div id="spread-monitor-chart" class="chart-plot"></div>
                 </div>
             </div>
+
+            <!-- Calendar Spread Chart -->
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">CALENDAR SPREAD</div>
+                            <div class="sub-label" id="timespread-subtitle">SELECT A TIMESPREAD TO ANALYZE</div>
+                        </div>
+                    </div>
+                    <div id="timespread-chart" class="chart-plot"></div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- ─── RIGHT: SPREAD TABLE ─── -->
+    <!-- ─── RIGHT: CONTROLS + SPREAD TABLE ─── -->
     <div class="col-right">
 
+        <!-- Comparison Controls -->
+        <div class="panel">
+            <div class="lbl">TERM STRUCTURE</div>
+            <div class="mt-8">
+                <div class="lbl lbl-sm">OVERLAY COMMODITY</div>
+                <select id="ts-compare-commodity" style="margin-top:4px">
+                    <option value="">— None —</option>
+                </select>
+                <button class="btn btn-full mt-8" onclick="addCommodityComparison()" style="font-size:10px">ADD OVERLAY</button>
+            </div>
+            <div class="mt-8" style="border-top:1px solid var(--input-border);padding-top:8px">
+                <div class="lbl lbl-sm">COMPARE DATE</div>
+                <input type="date" id="ts-compare-date" style="width:100%;background:var(--input-bg);border:1px solid var(--input-border);border-radius:4px;color:var(--text);font-size:11px;font-family:var(--mono);padding:4px 6px;margin-top:4px">
+                <button class="btn btn-full mt-8" onclick="addTermStructureComparison()" style="font-size:10px">ADD DATE</button>
+            </div>
+            <div id="ts-comparisons" class="mt-8"></div>
+        </div>
+
+        <!-- Calendar Spread Controls -->
+        <div class="panel">
+            <div class="lbl">CALENDAR SPREAD</div>
+            <div class="mt-8">
+                <div class="lbl lbl-sm">COMMODITY</div>
+                <select id="ts-spread-commodity"></select>
+            </div>
+            <div class="mt-8">
+                <div class="lbl lbl-sm">SPREAD</div>
+                <select id="ts-spread-select"></select>
+            </div>
+            <div class="mt-8">
+                <div class="lbl lbl-sm">HISTORY</div>
+                <select id="ts-spread-period">
+                    <option value="63">3 MONTHS</option>
+                    <option value="126">6 MONTHS</option>
+                    <option value="252" selected>1 YEAR</option>
+                    <option value="504">2 YEARS</option>
+                </select>
+            </div>
+            <button class="btn btn-accent btn-full mt-10" onclick="updateTimespread()">ANALYZE</button>
+        </div>
+
         <!-- Spread Dashboard -->
-        <div class="panel" style="max-height:calc(100vh - 340px);overflow-y:auto">
+        <div class="panel" style="max-height:calc(100vh - 600px);overflow-y:auto">
             <div class="lbl">SPREAD DASHBOARD</div>
             <div id="spread-dashboard" class="mt-8"></div>
         </div>
+
+        <!-- Hidden spread monitor controls -->
+        <select id="spread-category" style="display:none">
+            <option value="all">ALL SPREADS</option>
+        </select>
+        <select id="spread-select" style="display:none"></select>
+        <select id="spread-period" style="display:none">
+            <option value="252" selected>1 YEAR</option>
+        </select>
     </div>
 </div>
 </div>
@@ -482,14 +488,8 @@
 <div class="tab-content" id="tab-physical">
 <div class="markets-grid physical-grid">
 
-    <!-- ─── LEFT SIDEBAR: News + Calendar ─── -->
+    <!-- ─── LEFT SIDEBAR: Calendar ─── -->
     <div class="col-left">
-
-        <!-- Physical News Feed -->
-        <div class="panel">
-            <div class="lbl">PHYSICAL NEWS</div>
-            <div id="physical-news-feed" class="news-feed mt-8"></div>
-        </div>
 
         <!-- OPEC+ Calendar -->
         <div class="panel">
@@ -780,11 +780,11 @@
 </div>
 
 <script src="engine.js?v=6"></script>
-<script src="energy-data.js?v=8"></script>
-<script src="energy-markets.js?v=12"></script>
-<script src="physical-markets.js?v=10"></script>
+<script src="energy-data.js?v=9"></script>
+<script src="energy-markets.js?v=13"></script>
+<script src="physical-markets.js?v=11"></script>
 <script src="geopolitics.js?v=2"></script>
 <script src="cftc.js?v=1"></script>
-<script src="terminal.js?v=9"></script>
+<script src="terminal.js?v=10"></script>
 </body>
 </html>
