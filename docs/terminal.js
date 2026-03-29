@@ -639,11 +639,10 @@ function updateCharts() {
         line: { color: cc.muted, width: 1, dash: 'dot' },
     }];
 
-    // Collect unique strikes for x-axis tick marks
+    // Collect unique strikes for x-axis tick marks (forward shown as annotation instead)
     const strikes = [...new Set(portfolio.map(l => l.strike))].sort((a, b) => a - b);
-    // Add forward price and use as tick values
-    const xTickVals = [...new Set([...strikes, env.F])].sort((a, b) => a - b);
-    const xTickText = xTickVals.map(v => v === env.F ? `F=${v.toFixed(1)}` : `K=${v.toFixed(1)}`);
+    const xTickVals = strikes;
+    const xTickText = strikes.map(v => `K=${v.toFixed(1)}`);
 
     // Add vertical lines at each strike
     for (const k of strikes) {
@@ -652,6 +651,17 @@ function updateCharts() {
             line: { color: cc.grid, width: 1, dash: 'dash' },
         });
     }
+
+    // Forward price annotation at top of the dotted line
+    const fwdAnnotation = {
+        x: env.F, y: 1, xref: 'x', yref: 'paper',
+        text: `F = ${env.F.toFixed(2)}`,
+        showarrow: false,
+        font: { size: 9, color: cc.muted, family: 'JetBrains Mono, monospace' },
+        yanchor: 'bottom',
+        bgcolor: isDarkMode ? 'rgba(17,24,39,0.85)' : 'rgba(255,255,255,0.85)',
+        borderpad: 2,
+    };
 
     Plotly.react('payoff-chart', payoffTraces, {
         ...CHART_LAYOUT,
@@ -666,7 +676,7 @@ function updateCharts() {
         yaxis: { ...CHART_LAYOUT.yaxis, title: { text: 'PAYOFF / PRICE', font: { size: 11, color: cc.muted } } },
         shapes: payoffShapes,
         showlegend: true,
-        annotations: [],
+        annotations: [fwdAnnotation],
     }, CHART_CONFIG);
 
     // ─── GREEKS CHART ───
