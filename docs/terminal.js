@@ -577,19 +577,22 @@ function updateCharts() {
 
     // Payoff trace
     const payoffData = portfolioPayoff(portfolio, spotRange);
+    const hedgeOn = document.getElementById('hedge-toggle')?.checked;
+
     const payoffTraces = [{
         x: spotRange,
         y: payoffData,
         name: 'STRATEGY',
         type: 'scatter',
         mode: 'lines',
-        line: { color: LINE_COLORS[0], width: 2.5 },
-        fill: 'tozeroy',
-        fillcolor: (isDarkMode ? 'rgba(96,165,250,0.08)' : 'rgba(0,48,97,0.06)'),
+        line: hedgeOn
+            ? { color: isDarkMode ? '#64748b' : '#94a3b8', width: 1.5 }
+            : { color: LINE_COLORS[0], width: 2.5 },
+        fill: hedgeOn ? undefined : 'tozeroy',
+        fillcolor: hedgeOn ? undefined : (isDarkMode ? 'rgba(96,165,250,0.08)' : 'rgba(0,48,97,0.06)'),
     }];
 
     // Hedge overlay: add underlying + combined payoff
-    const hedgeOn = document.getElementById('hedge-toggle')?.checked;
     if (hedgeOn) {
         const hedgePos = document.getElementById('hedge-position')?.value || 'long';
         const hedgeSign = hedgePos === 'long' ? 1 : -1;
@@ -610,9 +613,9 @@ function updateCharts() {
             name: 'COMBINED',
             type: 'scatter',
             mode: 'lines',
-            line: { color: isDarkMode ? '#34d399' : '#059669', width: 2.5 },
+            line: { color: LINE_COLORS[0], width: 2.5 },
             fill: 'tozeroy',
-            fillcolor: (isDarkMode ? 'rgba(52,211,153,0.08)' : 'rgba(5,150,105,0.06)'),
+            fillcolor: (isDarkMode ? 'rgba(96,165,250,0.08)' : 'rgba(0,48,97,0.06)'),
         });
     }
 
@@ -636,9 +639,30 @@ function updateCharts() {
         line: { color: cc.muted, width: 1, dash: 'dot' },
     }];
 
+    // Collect unique strikes for x-axis tick marks
+    const strikes = [...new Set(portfolio.map(l => l.strike))].sort((a, b) => a - b);
+    // Add forward price and use as tick values
+    const xTickVals = [...new Set([...strikes, env.F])].sort((a, b) => a - b);
+    const xTickText = xTickVals.map(v => v === env.F ? `F=${v.toFixed(1)}` : `K=${v.toFixed(1)}`);
+
+    // Add vertical lines at each strike
+    for (const k of strikes) {
+        payoffShapes.push({
+            type: 'line', x0: k, x1: k, y0: 0, y1: 1, yref: 'paper',
+            line: { color: cc.grid, width: 1, dash: 'dash' },
+        });
+    }
+
     Plotly.react('payoff-chart', payoffTraces, {
         ...CHART_LAYOUT,
-        xaxis: { ...CHART_LAYOUT.xaxis, title: 'Underlying Price (F)' },
+        xaxis: {
+            ...CHART_LAYOUT.xaxis,
+            title: 'Underlying Price (F)',
+            tickvals: xTickVals,
+            ticktext: xTickText,
+            tickangle: -30,
+            tickfont: { size: 9, color: cc.muted, family: 'JetBrains Mono, monospace' },
+        },
         yaxis: { ...CHART_LAYOUT.yaxis, title: { text: 'PAYOFF / PRICE', font: { size: 11, color: cc.muted } } },
         shapes: payoffShapes,
         showlegend: true,
