@@ -667,7 +667,7 @@ function updateCharts() {
         ...CHART_LAYOUT,
         xaxis: {
             ...CHART_LAYOUT.xaxis,
-            title: 'Underlying Price (F)',
+            title: { text: 'Underlying Price (F)', standoff: 20 },
             tickvals: xTickVals,
             ticktext: xTickText,
             tickangle: -30,
