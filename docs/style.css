@@ -311,6 +311,17 @@ input[type="range"]::-moz-range-thumb {
 }
 .btn-xs:hover { border-color: var(--accent); color: var(--accent); }
 .btn-xs.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.chart-select {
+    font-family: var(--mono);
+    font-size: 9px;
+    padding: 2px 4px;
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 3px;
+    color: var(--text);
+    cursor: pointer;
+    max-width: 140px;
+}
 .btn-theme-toggle {
     background: var(--input-bg);
     border: 1px solid var(--input-border);

@@ -129,9 +129,6 @@ async function initEnergyMarkets() {
         }
     }
 
-    tsSpreadCommodity.addEventListener('change', populateTimespreads);
-    document.getElementById('spread-category').addEventListener('change', populateSpreads);
-
     populateTimespreads();
     populateSpreads();
 
@@ -161,6 +158,9 @@ async function initEnergyMarkets() {
 
     // Load news feed into Overview tab
     loadAndRenderNews('physical', 'overview-news-feed');
+
+    // OPEC Watch in right sidebar
+    renderOpecWatchOverview();
 
     // Show data timestamp
     const ts = getDataTimestamp();
@@ -882,4 +882,67 @@ function refreshEnergyMarkets() {
     updateTermStructure();
     updateSpotEvolution();
     renderNewsFeed('physical', 'overview-news-feed');
+    renderOpecWatchOverview();
+}
+
+// ─── OPEC Watch Overview (right sidebar) ────────────────────────────────────
+
+function renderOpecWatchOverview() {
+    const container = document.getElementById('opec-watch-overview');
+    if (!container || typeof OPEC_WATCH_DATA === 'undefined') return;
+
+    const mtg = getNextOpecMeeting();
+    if (!mtg) {
+        container.innerHTML = '<div style="font-size:10px;color:var(--text-dim)">No data</div>';
+        return;
+    }
+
+    const probs = mtg.probabilities || {};
+    const prev = mtg.previous || {};
+    const dateObj = mtg.date ? new Date(mtg.date + 'T12:00:00') : null;
+    const dateStr = dateObj ? dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
+
+    let html = '';
+
+    // Meeting header
+    if (dateStr) {
+        const daysUntil = dateObj ? Math.ceil((dateObj - new Date()) / 86400000) : null;
+        const urgency = daysUntil != null && daysUntil <= 7;
+        html += `<div style="font-size:10px;color:var(--text-muted);margin-bottom:8px">
+            Next meeting: <span style="font-weight:600;color:${urgency ? (isDarkMode ? '#f87171' : '#dc2626') : 'var(--text)'}">${dateStr}</span>
+            ${daysUntil != null && daysUntil > 0 ? `<span style="font-size:8px;color:var(--text-dim)"> (${daysUntil}d)</span>` : ''}
+        </div>`;
+    }
+
+    // Probability bars
+    const outcomes = Object.entries(probs).sort((a, b) => b[1] - a[1]);
+    for (const [label, pct] of outcomes) {
+        const colors = OPEC_OUTCOME_COLORS[label] || { light: '#6b7280', dark: '#9ca3af' };
+        const color = isDarkMode ? colors.dark : colors.light;
+        const prevVal = prev[label];
+        let shift = '';
+        if (prevVal != null) {
+            const diff = pct - prevVal;
+            if (Math.abs(diff) >= 0.1) {
+                const sc = diff >= 0
+                    ? (isDarkMode ? '#34d399' : '#059669')
+                    : (isDarkMode ? '#f87171' : '#dc2626');
+                shift = `<span style="font-family:var(--mono);font-size:8px;color:${sc}">${diff >= 0 ? '+' : ''}${diff.toFixed(1)}</span>`;
+            }
+        }
+
+        html += `<div style="margin-bottom:6px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2px">
+                <span style="font-size:9px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.3px">${label}</span>
+                <span style="font-family:var(--mono);font-size:10px;font-weight:600;color:${color}">${pct.toFixed(1)}% ${shift}</span>
+            </div>
+            <div style="height:4px;background:var(--input-bg);border-radius:2px;overflow:hidden">
+                <div style="height:100%;width:${pct}%;background:${color};border-radius:2px;transition:width 0.3s"></div>
+            </div>
+        </div>`;
+    }
+
+    html += `<div style="font-size:7px;color:var(--text-dim);font-family:var(--mono);margin-top:6px;text-align:right">SOURCE: CME OPEC WATCH (OPTIONS-IMPLIED)</div>`;
+
+    container.innerHTML = html;
 }
