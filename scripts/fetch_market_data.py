@@ -58,31 +58,29 @@ COMMODITIES = {
 
 TIMESPREADS = {
     'WTI Crude Oil (CL)': [
-        {'name': 'CL Prompt Spread (M1-M2)', 'm1': 0, 'm2': 1},
-        {'name': 'CL 1-3 Month', 'm1': 0, 'm2': 2},
-        {'name': 'CL 1-6 Month', 'm1': 0, 'm2': 5},
-        {'name': 'CL 1-12 Month', 'm1': 0, 'm2': 11},
-        {'name': 'CL 6-12 Month', 'm1': 5, 'm2': 11},
+        {'name': 'CL M1-M2', 'm1': 0, 'm2': 1},
+        {'name': 'CL M2-M3', 'm1': 1, 'm2': 2},
+        {'name': 'CL M1-M12', 'm1': 0, 'm2': 11},
     ],
     'Brent Crude Oil (BZ)': [
-        {'name': 'BZ Prompt Spread (M1-M2)', 'm1': 0, 'm2': 1},
-        {'name': 'BZ 1-3 Month', 'm1': 0, 'm2': 2},
-        {'name': 'BZ 1-6 Month', 'm1': 0, 'm2': 5},
-        {'name': 'BZ 1-12 Month', 'm1': 0, 'm2': 11},
+        {'name': 'BZ M1-M2', 'm1': 0, 'm2': 1},
+        {'name': 'BZ M2-M3', 'm1': 1, 'm2': 2},
+        {'name': 'BZ M1-M12', 'm1': 0, 'm2': 11},
     ],
     'Henry Hub Nat Gas (NG)': [
-        {'name': 'NG Prompt Spread (M1-M2)', 'm1': 0, 'm2': 1},
-        {'name': 'NG Summer-Winter', 'm1': 5, 'm2': 11},
-        {'name': 'NG 1-6 Month', 'm1': 0, 'm2': 5},
-        {'name': 'NG 1-12 Month', 'm1': 0, 'm2': 11},
+        {'name': 'NG M1-M2', 'm1': 0, 'm2': 1},
+        {'name': 'NG M2-M3', 'm1': 1, 'm2': 2},
+        {'name': 'NG M1-M12', 'm1': 0, 'm2': 11},
     ],
     'RBOB Gasoline (RB)': [
-        {'name': 'RB Prompt Spread (M1-M2)', 'm1': 0, 'm2': 1},
-        {'name': 'RB 1-6 Month', 'm1': 0, 'm2': 5},
+        {'name': 'RB M1-M2', 'm1': 0, 'm2': 1},
+        {'name': 'RB M2-M3', 'm1': 1, 'm2': 2},
+        {'name': 'RB M1-M12', 'm1': 0, 'm2': 11},
     ],
     'Heating Oil (HO)': [
-        {'name': 'HO Prompt Spread (M1-M2)', 'm1': 0, 'm2': 1},
-        {'name': 'HO 1-6 Month', 'm1': 0, 'm2': 5},
+        {'name': 'HO M1-M2', 'm1': 0, 'm2': 1},
+        {'name': 'HO M2-M3', 'm1': 1, 'm2': 2},
+        {'name': 'HO M1-M12', 'm1': 0, 'm2': 11},
     ],
 }
 

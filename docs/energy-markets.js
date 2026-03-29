@@ -363,7 +363,7 @@ function _getPeriodDays(period) {
 
 function updateSpotEvolution() {
     if (spotEvoSelected.size === 0) {
-        showChartEmpty('spot-evo-chart', 'Click commodities above to compare');
+        showChartEmpty('spot-evo-chart', 'Select commodities on the left');
         return;
     }
     if (!marketData?.history) {

@@ -120,7 +120,7 @@ body {
     overflow: hidden;
 }
 .col-left, .col-right { overflow-y: auto; overflow-x: hidden; }
-.overview-grid { grid-template-columns: 320px 1fr 260px; }
+.overview-grid { grid-template-columns: 360px 1fr 240px; }
 .physical-grid { grid-template-columns: 240px 1fr 300px; }
 .geo-grid { grid-template-columns: 340px 1fr; }
 .cftc-grid { grid-template-columns: 260px 1fr; }
@@ -892,7 +892,7 @@ input[type="range"]::-moz-range-thumb {
         gap: 8px;
         padding: 8px 10px;
     }
-    .overview-grid { grid-template-columns: 280px 1fr 240px; }
+    .overview-grid { grid-template-columns: 320px 1fr 220px; }
     .physical-grid { grid-template-columns: 220px 1fr 280px; }
     .geo-grid { grid-template-columns: 300px 1fr; }
     .cftc-grid { grid-template-columns: 240px 1fr; }

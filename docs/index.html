@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy Derivatives Platform</title>
-    <link rel="stylesheet" href="style.css?v=11">
+    <link rel="stylesheet" href="style.css?v=12">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
@@ -18,10 +18,10 @@
             <span class="hl">///</span>&nbsp; ENERGY <span class="hl">DERIVATIVES</span>
         </div>
         <nav class="tab-nav">
-            <button class="tab-btn" data-tab="pricer" onclick="switchTab('pricer')">OPTION PRICER</button>
             <button class="tab-btn active" data-tab="markets" onclick="switchTab('markets')">OVERVIEW</button>
             <button class="tab-btn" data-tab="physical" onclick="switchTab('physical')">PHYSICAL</button>
             <button class="tab-btn" data-tab="geopolitics" onclick="switchTab('geopolitics')">GEOPOLITICS</button>
+            <button class="tab-btn" data-tab="pricer" onclick="switchTab('pricer')">OPTION PRICER</button>
             <button class="tab-btn" data-tab="cftc" onclick="switchTab('cftc')">CFTC</button>
         </nav>
     </div>
@@ -331,7 +331,7 @@
 <div class="tab-content active" id="tab-markets">
 <div class="markets-grid overview-grid">
 
-    <!-- ─── LEFT: SPOT PRICES + NEWS ─── -->
+    <!-- ─── LEFT: SPOT PRICES + CHART SELECTOR + NEWS ─── -->
     <div class="col-left">
 
         <!-- Spot Prices / Commodity Selector -->
@@ -340,7 +340,23 @@
             <div id="spot-prices-table" class="mt-8"></div>
         </div>
 
-        <!-- News Feed (shared with Physical) -->
+        <!-- Price Evolution Selector -->
+        <div class="panel">
+            <div class="lbl">PRICE EVOLUTION</div>
+            <div style="display:flex;gap:3px;flex-wrap:wrap;padding:4px 0" id="spot-evo-periods">
+                <button class="btn btn-xs" onclick="setSpotEvoPeriod('1D')">1D</button>
+                <button class="btn btn-xs" onclick="setSpotEvoPeriod('1W')">1W</button>
+                <button class="btn btn-xs active" onclick="setSpotEvoPeriod('1M')">1M</button>
+                <button class="btn btn-xs" onclick="setSpotEvoPeriod('MTD')">MTD</button>
+                <button class="btn btn-xs" onclick="setSpotEvoPeriod('YTD')">YTD</button>
+                <button class="btn btn-xs" onclick="setSpotEvoPeriod('1Y')">1Y</button>
+                <button class="btn btn-xs" onclick="setSpotEvoPeriod('5Y')">5Y</button>
+                <button class="btn btn-xs" onclick="setSpotEvoPeriod('10Y')">10Y</button>
+            </div>
+            <div id="spot-evo-chips" style="display:flex;gap:4px;flex-wrap:wrap;padding:4px 0"></div>
+        </div>
+
+        <!-- News Feed -->
         <div class="panel">
             <div class="lbl">ENERGY NEWS</div>
             <div id="overview-news-feed" class="news-feed mt-8"></div>
@@ -355,23 +371,12 @@
             <!-- Spot Price Evolution Chart -->
             <div class="chart-box">
                 <div class="panel">
-                    <div class="chart-header" style="flex-wrap:wrap;gap:6px">
+                    <div class="chart-header">
                         <div>
                             <div class="lbl" style="font-size:12px;margin-bottom:0">PRICE EVOLUTION</div>
-                            <div class="sub-label" id="spot-evo-subtitle">CLICK COMMODITIES BELOW TO COMPARE</div>
-                        </div>
-                        <div style="display:flex;gap:3px;flex-wrap:wrap" id="spot-evo-periods">
-                            <button class="btn btn-xs" onclick="setSpotEvoPeriod('1D')">1D</button>
-                            <button class="btn btn-xs" onclick="setSpotEvoPeriod('1W')">1W</button>
-                            <button class="btn btn-xs active" onclick="setSpotEvoPeriod('1M')">1M</button>
-                            <button class="btn btn-xs" onclick="setSpotEvoPeriod('MTD')">MTD</button>
-                            <button class="btn btn-xs" onclick="setSpotEvoPeriod('YTD')">YTD</button>
-                            <button class="btn btn-xs" onclick="setSpotEvoPeriod('1Y')">1Y</button>
-                            <button class="btn btn-xs" onclick="setSpotEvoPeriod('5Y')">5Y</button>
-                            <button class="btn btn-xs" onclick="setSpotEvoPeriod('10Y')">10Y</button>
+                            <div class="sub-label" id="spot-evo-subtitle">SELECT COMMODITIES ON THE LEFT</div>
                         </div>
                     </div>
-                    <div id="spot-evo-chips" style="display:flex;gap:4px;flex-wrap:wrap;padding:4px 0"></div>
                     <div id="spot-evo-chart" class="chart-plot"></div>
                 </div>
             </div>
@@ -780,8 +785,8 @@
 </div>
 
 <script src="engine.js?v=6"></script>
-<script src="energy-data.js?v=9"></script>
-<script src="energy-markets.js?v=13"></script>
+<script src="energy-data.js?v=10"></script>
+<script src="energy-markets.js?v=14"></script>
 <script src="physical-markets.js?v=11"></script>
 <script src="geopolitics.js?v=2"></script>
 <script src="cftc.js?v=1"></script>
