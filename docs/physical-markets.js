@@ -239,7 +239,7 @@ const OPEC_WATCH_DATA = {
         {
             date: '2026-04-05',
             label: 'April 5 OPEC Meeting',
-            probabilities: {"Decrease": 61.36, "No Change": 38.46, "Increase": 0.18},
+            probabilities: {"Decrease": 63.69, "No Change": 36.31, "Increase": 0.0},
             previous: {"Decrease": 22.33, "No Change": 67.26, "Increase": 10.41},
             previousDate: '2026-03-27',
         },
