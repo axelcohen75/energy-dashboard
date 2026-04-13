@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy Derivatives Platform</title>
-    <link rel="stylesheet" href="style.css?v=13">
+    <link rel="stylesheet" href="style.css?v=14">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
@@ -38,6 +38,17 @@
 <!-- TAB 1: OPTION PRICER                                                      -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 <div class="tab-content" id="tab-pricer">
+
+<!-- Pricer sub-tabs (vanilla / crack spread) -->
+<div class="pricer-mode-bar">
+    <div class="pricer-mode-tabs">
+        <button class="pricer-mode-btn active" data-mode="vanilla" onclick="switchPricerMode('vanilla')">VANILLA OPTIONS</button>
+        <button class="pricer-mode-btn" data-mode="crack" onclick="switchPricerMode('crack')">CRACK SPREAD</button>
+    </div>
+    <div class="pricer-mode-meta" id="pricer-mode-meta">BLACK&#8209;76 // SINGLE&#8209;ASSET</div>
+</div>
+
+<div id="pricer-vanilla" class="pricer-mode-content active">
 <div class="main-grid">
 
     <!-- ─── LEFT COLUMN ─── -->
@@ -323,7 +334,244 @@
         </div>
     </div>
 </div>
+</div><!-- /#pricer-vanilla -->
+
+<!-- ═══ CRACK SPREAD SUB-TAB ═══ -->
+<div id="pricer-crack" class="pricer-mode-content">
+<div class="crack-grid">
+
+    <!-- ─── LEFT: STRUCTURE + INPUTS ─── -->
+    <div class="col-left">
+
+        <!-- Crack preset -->
+        <div class="panel">
+            <div class="lbl">CRACK STRUCTURE</div>
+            <select id="crack-preset" class="mt-8" onchange="onCrackPresetChange()"></select>
+            <div class="forward-formula mt-10" id="crack-formula" style="font-size:11px"></div>
+            <div class="grid-3 mt-10">
+                <div>
+                    <div class="lbl lbl-sm">CRUDE</div>
+                    <input type="number" id="crack-ratio-wti" value="3" min="1" step="1" onchange="updateCrack()">
+                </div>
+                <div>
+                    <div class="lbl lbl-sm">RBOB</div>
+                    <input type="number" id="crack-ratio-rbob" value="2" min="0" step="1" onchange="updateCrack()">
+                </div>
+                <div>
+                    <div class="lbl lbl-sm">HO</div>
+                    <input type="number" id="crack-ratio-ho" value="1" min="0" step="1" onchange="updateCrack()">
+                </div>
+            </div>
+            <div class="hint mt-8">Quoted per barrel of crude. RBOB &amp; HO must be in $/bbl ($/gal &times; 42).</div>
+        </div>
+
+        <!-- Forward prices -->
+        <div class="panel">
+            <div class="lbl">FORWARD PRICES ($/BBL)</div>
+            <div class="mt-10">
+                <div class="lbl lbl-sm">WTI CRUDE (F<sub>W</sub>)</div>
+                <div class="slider-group">
+                    <input type="range" id="crack-fwti-slider" min="20" max="200" step="0.5" value="75" oninput="syncCrackInput('crack-fwti')">
+                    <input type="number" class="slider-input" id="crack-fwti-input" value="75.0" step="0.5" oninput="syncCrackSlider('crack-fwti')">
+                </div>
+            </div>
+            <div class="mt-10">
+                <div class="lbl lbl-sm">RBOB GASOLINE (F<sub>R</sub>)</div>
+                <div class="slider-group">
+                    <input type="range" id="crack-frbob-slider" min="20" max="250" step="0.5" value="105" oninput="syncCrackInput('crack-frbob')">
+                    <input type="number" class="slider-input" id="crack-frbob-input" value="105.0" step="0.5" oninput="syncCrackSlider('crack-frbob')">
+                </div>
+            </div>
+            <div class="mt-10">
+                <div class="lbl lbl-sm">HEATING OIL (F<sub>H</sub>)</div>
+                <div class="slider-group">
+                    <input type="range" id="crack-fho-slider" min="20" max="250" step="0.5" value="100" oninput="syncCrackInput('crack-fho')">
+                    <input type="number" class="slider-input" id="crack-fho-input" value="100.0" step="0.5" oninput="syncCrackSlider('crack-fho')">
+                </div>
+            </div>
+            <div class="forward-result mt-10">
+                <div class="lbl lbl-sm">SPOT CRACK SPREAD</div>
+                <div class="forward-value" id="crack-spread-value">&mdash;</div>
+            </div>
+        </div>
+
+        <!-- Volatilities -->
+        <div class="panel">
+            <div class="lbl">RELATIVE VOLATILITIES (%)</div>
+            <div class="mt-10">
+                <div class="lbl lbl-sm">WTI &sigma;<sub>W</sub></div>
+                <div class="slider-group">
+                    <input type="range" id="crack-volwti-slider" min="5" max="120" step="0.5" value="35" oninput="syncCrackInput('crack-volwti')">
+                    <input type="number" class="slider-input" id="crack-volwti-input" value="35.0" step="0.5" oninput="syncCrackSlider('crack-volwti')">
+                </div>
+            </div>
+            <div class="mt-10">
+                <div class="lbl lbl-sm">RBOB &sigma;<sub>R</sub></div>
+                <div class="slider-group">
+                    <input type="range" id="crack-volrbob-slider" min="5" max="120" step="0.5" value="38" oninput="syncCrackInput('crack-volrbob')">
+                    <input type="number" class="slider-input" id="crack-volrbob-input" value="38.0" step="0.5" oninput="syncCrackSlider('crack-volrbob')">
+                </div>
+            </div>
+            <div class="mt-10">
+                <div class="lbl lbl-sm">HO &sigma;<sub>H</sub></div>
+                <div class="slider-group">
+                    <input type="range" id="crack-volho-slider" min="5" max="120" step="0.5" value="36" oninput="syncCrackInput('crack-volho')">
+                    <input type="number" class="slider-input" id="crack-volho-input" value="36.0" step="0.5" oninput="syncCrackSlider('crack-volho')">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ─── CENTER: CHARTS ─── -->
+    <div class="col-center">
+
+        <div class="charts-row">
+            <!-- Payoff -->
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">CRACK PAYOFF AT EXPIRY</div>
+                            <div class="sub-label">P&amp;L vs CRACK SPREAD ($/BBL)</div>
+                        </div>
+                        <div class="hedge-overlay">
+                            <label class="hedge-check">
+                                <input type="checkbox" id="crack-show-premium" checked onchange="updateCrack()">
+                                <span class="hedge-label">NET OF PREMIUM</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div id="crack-payoff-chart" class="chart-plot"></div>
+                </div>
+            </div>
+
+            <!-- Sensitivity to correlation -->
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">PRICE vs CORRELATION</div>
+                            <div class="sub-label">OPTION VALUE × &rho;(CRUDE, PRODUCTS)</div>
+                        </div>
+                    </div>
+                    <div id="crack-rho-chart" class="chart-plot"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="charts-row">
+            <!-- Term structure of premium -->
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">PREMIUM × TIME TO EXPIRY</div>
+                            <div class="sub-label">OPTION VALUE DECAY CURVE</div>
+                        </div>
+                    </div>
+                    <div id="crack-term-chart" class="chart-plot"></div>
+                </div>
+            </div>
+
+            <!-- Vega profile -->
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">PRICE × SPOT CRACK</div>
+                            <div class="sub-label">OPTION PREMIUM ALONG SPREAD GRID</div>
+                        </div>
+                    </div>
+                    <div id="crack-spot-chart" class="chart-plot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ─── RIGHT: CONTRACT PARAMS + GREEKS ─── -->
+    <div class="col-right">
+
+        <!-- Contract -->
+        <div class="panel">
+            <div class="lbl">CONTRACT</div>
+            <div class="grid-2 mt-8">
+                <div>
+                    <div class="lbl lbl-sm">TYPE</div>
+                    <select id="crack-opt-type" onchange="updateCrack()">
+                        <option value="call">CALL</option>
+                        <option value="put">PUT</option>
+                    </select>
+                </div>
+                <div>
+                    <div class="lbl lbl-sm">SIDE</div>
+                    <select id="crack-opt-side" onchange="updateCrack()">
+                        <option value="long">LONG</option>
+                        <option value="short">SHORT</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mt-10">
+                <div class="lbl lbl-sm">STRIKE K ($/BBL)</div>
+                <div class="slider-group">
+                    <input type="range" id="crack-strike-slider" min="-30" max="60" step="0.25" value="20" oninput="syncCrackInput('crack-strike')">
+                    <input type="number" class="slider-input" id="crack-strike-input" value="20.0" step="0.25" oninput="syncCrackSlider('crack-strike')">
+                </div>
+            </div>
+            <div class="mt-10">
+                <div class="lbl lbl-sm">EXPIRY T (YEARS)</div>
+                <div class="slider-group">
+                    <input type="range" id="crack-T-slider" min="0.05" max="3" step="0.05" value="0.5" oninput="syncCrackInput('crack-T')">
+                    <input type="number" class="slider-input" id="crack-T-input" value="0.50" step="0.05" oninput="syncCrackSlider('crack-T')">
+                </div>
+            </div>
+            <div class="mt-10">
+                <div class="lbl lbl-sm">RATE r (%)</div>
+                <div class="slider-group">
+                    <input type="range" id="crack-rate-slider" min="0" max="15" step="0.1" value="5" oninput="syncCrackInput('crack-rate')">
+                    <input type="number" class="slider-input" id="crack-rate-input" value="5.0" step="0.1" oninput="syncCrackSlider('crack-rate')">
+                </div>
+            </div>
+        </div>
+
+        <!-- Correlations -->
+        <div class="panel">
+            <div class="lbl">CORRELATIONS</div>
+            <div class="mt-10">
+                <div class="lbl lbl-sm">&rho;(WTI, RBOB)</div>
+                <div class="slider-group">
+                    <input type="range" id="crack-rwr-slider" min="-1" max="1" step="0.01" value="0.85" oninput="syncCrackInput('crack-rwr')">
+                    <input type="number" class="slider-input" id="crack-rwr-input" value="0.85" step="0.01" oninput="syncCrackSlider('crack-rwr')">
+                </div>
+            </div>
+            <div class="mt-10">
+                <div class="lbl lbl-sm">&rho;(WTI, HO)</div>
+                <div class="slider-group">
+                    <input type="range" id="crack-rwh-slider" min="-1" max="1" step="0.01" value="0.88" oninput="syncCrackInput('crack-rwh')">
+                    <input type="number" class="slider-input" id="crack-rwh-input" value="0.88" step="0.01" oninput="syncCrackSlider('crack-rwh')">
+                </div>
+            </div>
+            <div class="mt-10">
+                <div class="lbl lbl-sm">&rho;(RBOB, HO)</div>
+                <div class="slider-group">
+                    <input type="range" id="crack-rrh-slider" min="-1" max="1" step="0.01" value="0.80" oninput="syncCrackInput('crack-rrh')">
+                    <input type="number" class="slider-input" id="crack-rrh-input" value="0.80" step="0.01" oninput="syncCrackSlider('crack-rrh')">
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing output -->
+        <div class="panel">
+            <div class="lbl">PRICING (KIRK)</div>
+            <div class="forward-result mt-10">
+                <div class="lbl lbl-sm">OPTION PREMIUM ($/BBL)</div>
+                <div class="forward-value" id="crack-premium">&mdash;</div>
+            </div>
+            <div id="crack-greeks" class="mt-10"></div>
+        </div>
+    </div>
 </div>
+</div><!-- /#pricer-crack -->
+</div><!-- /#tab-pricer -->
 
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 <!-- TAB 2: ENERGY MARKETS                                                     -->
@@ -777,12 +1025,13 @@
 </div>
 </div>
 
-<script src="engine.js?v=6"></script>
+<script src="engine.js?v=7"></script>
 <script src="energy-data.js?v=10"></script>
 <script src="energy-markets.js?v=15"></script>
 <script src="physical-markets.js?v=11"></script>
 <script src="geopolitics.js?v=2"></script>
 <script src="cftc.js?v=1"></script>
-<script src="terminal.js?v=12"></script>
+<script src="terminal.js?v=13"></script>
+<script src="crack-spread.js?v=1"></script>
 </body>
 </html>

@@ -110,6 +110,65 @@ body {
 .tab-content { display: none; height: calc(100vh - 48px); }
 .tab-content.active { display: block; }
 
+/* ─── Pricer sub-tabs (vanilla / crack spread) ─── */
+.pricer-mode-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 14px 0 14px;
+    gap: 12px;
+}
+.pricer-mode-tabs {
+    display: inline-flex;
+    gap: 2px;
+    background: var(--input-bg);
+    border-radius: 6px;
+    padding: 2px;
+}
+.pricer-mode-btn {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.pricer-mode-btn:hover { color: var(--text-muted); }
+.pricer-mode-btn.active {
+    background: var(--accent);
+    color: #fff;
+}
+.pricer-mode-meta {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-muted);
+    letter-spacing: 0.8px;
+}
+.pricer-mode-content { display: none; height: calc(100% - 32px); }
+.pricer-mode-content.active { display: block; }
+
+/* Crack spread layout — same widths as main pricer grid */
+.crack-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr 280px;
+    gap: 10px;
+    padding: 10px 14px;
+    height: 100%;
+    overflow: hidden;
+}
+.hint {
+    color: var(--text-dim);
+    font-size: 10px;
+    line-height: 1.4;
+    font-style: italic;
+}
+
 /* ─── Layout ─── */
 .main-grid, .markets-grid {
     display: grid;
