@@ -237,11 +237,11 @@ function getWeekOfYear(date) {
 const OPEC_WATCH_DATA = {
     meetings: [
         {
-            date: '2026-04-05',
-            label: 'April 5 OPEC Meeting',
-            probabilities: {"Decrease": 96.74, "No Change": 3.26, "Increase": 0.0},
-            previous: {"Decrease": 6.94, "No Change": 71.2, "Increase": 21.86},
-            previousDate: '2026-04-01',
+            date: '2026-05-03',
+            label: 'May 3 OPEC Meeting',
+            probabilities: {"Decrease": 18.8, "No Change": 64.75, "Increase": 16.45},
+            previous: {"Decrease": 23.39, "No Change": 69.03, "Increase": 7.58},
+            previousDate: '2026-04-02',
         },
     ],
     // Historical OPEC+ decisions (Jan 2024 - Mar 2026)
