@@ -295,11 +295,15 @@ function onCommodityChange() {
     portfolio = [];
     renderLegs();
 
+    // Pick a step size appropriate for the price scale
+    const step = c.spot < 1 ? 0.005 : c.spot < 10 ? 0.05 : c.spot < 100 ? 0.5 : 1;
+
     // Forward curve parameters
     const spotSlider = $('spot-price-slider');
     spotSlider.max = Math.max(c.spot * 3, 50);
-    spotSlider.step = c.spot < 10 ? 0.05 : 0.5;
-    $('spot-price-input').step = c.spot < 10 ? 0.05 : 0.5;
+    spotSlider.min = Math.max(c.spot * 0.1, 0.01);
+    spotSlider.step = step;
+    $('spot-price-input').step = step;
 
     setSlider('spot-price', c.spot);
     setSlider('conv-yield', c.convYield);
@@ -308,19 +312,25 @@ function onCommodityChange() {
     setSlider('volatility', c.vol);
     setSlider('risk-free-rate', c.rate);
 
+    // Reset the auto-strike tracker so the strike default follows the new F
+    _lastAutoStrike = null;
+
     // Compute forward and set futures price slider
     updateForwardPrice();
 
     const env = getEnv();
-    $('new-strike').value = env.F.toFixed(2);
-    $('spot-min').value = +(env.F * 0.5).toFixed(2);
-    $('spot-max').value = +(env.F * 2.0).toFixed(2);
+    $('new-strike').value = env.F.toFixed(c.spot < 5 ? 3 : 2);
+    $('new-strike').step = step;
+    _lastAutoStrike = parseFloat($('new-strike').value);
+    $('spot-min').value = +(env.F * 0.5).toFixed(c.spot < 5 ? 3 : 2);
+    $('spot-max').value = +(env.F * 1.5).toFixed(c.spot < 5 ? 3 : 2);
 
     // Adjust futures price slider range
     const fSlider = $('futures-price-slider');
     fSlider.max = Math.max(env.F * 3, 50);
-    fSlider.step = c.spot < 10 ? 0.05 : 0.5;
-    $('futures-price-input').step = c.spot < 10 ? 0.05 : 0.5;
+    fSlider.min = Math.max(env.F * 0.1, 0.01);
+    fSlider.step = step;
+    $('futures-price-input').step = step;
 
     updateCharts();
 }
@@ -384,8 +394,78 @@ function updateForwardPrice() {
     // Expand futures slider range if needed
     const fSlider = $('futures-price-slider');
     if (F > parseFloat(fSlider.max)) fSlider.max = F * 2;
+    if (F < parseFloat(fSlider.min)) fSlider.min = Math.max(F * 0.25, 0.01);
+
+    // Also keep the spot slider wide enough for the current price
+    const sSlider = $('spot-price-slider');
+    if (S > parseFloat(sSlider.max)) sSlider.max = S * 2;
+    if (S < parseFloat(sSlider.min)) sSlider.min = Math.max(S * 0.25, 0.01);
+
+    // Auto-rescale the payoff plot window whenever F falls outside the current
+    // [spotMin, spotMax] range — this prevents the chart from clustering all
+    // data at one edge when the user switches from a small-price commodity
+    // (WTI at $75) to a large-price one (EU Gasoil at $1135).
+    rescalePlotWindowIfNeeded(F);
 
     return F;
+}
+
+/**
+ * Keep the payoff x-axis range and the new-strike default aligned with
+ * the current forward. Triggered whenever F is recomputed.
+ *
+ * Rules:
+ *   - If F is outside (or near the edge of) the current [spotMin, spotMax],
+ *     reset the window to [0.5·F, 1.5·F] so F sits near the middle.
+ *   - If the user hasn't customised the new-strike value (i.e. it's still
+ *     the previous forward we remembered), update it to the new F.
+ */
+let _lastAutoStrike = null;
+function rescalePlotWindowIfNeeded(F) {
+    if (!isFinite(F) || F <= 0) return;
+
+    const spotMinEl = $('spot-min');
+    const spotMaxEl = $('spot-max');
+    const strikeEl = $('new-strike');
+    if (!spotMinEl || !spotMaxEl) return;
+
+    const sMin = parseFloat(spotMinEl.value);
+    const sMax = parseFloat(spotMaxEl.value);
+    const width = sMax - sMin;
+
+    // Window is invalid, degenerate, or F sits outside the central 80% of it
+    const pad = width * 0.10;
+    const outOfWindow = !isFinite(sMin) || !isFinite(sMax) || sMin >= sMax
+                     || F < sMin + pad || F > sMax - pad;
+    // Also re-center if F differs from the window midpoint by more than 3x the half-width
+    const midpoint = (sMin + sMax) / 2;
+    const halfWidth = width / 2;
+    const offScale = halfWidth > 0 && Math.abs(F - midpoint) > halfWidth * 3;
+
+    if (outOfWindow || offScale) {
+        const newMin = +(F * 0.5).toFixed(F < 5 ? 3 : 2);
+        const newMax = +(F * 1.5).toFixed(F < 5 ? 3 : 2);
+        spotMinEl.value = newMin;
+        spotMaxEl.value = newMax;
+
+        // Sweep presets rescale with the new window too
+        const sweepFrom = $('sweep-from');
+        const sweepTo = $('sweep-to');
+        if (sweepFrom && sweepTo && $('sweep-param')?.value === 'time_to_expiry') {
+            // leave sweep alone for time/vol sweeps — they're not price-based
+        }
+    }
+
+    // Update new-strike default unless the user has manually set it to
+    // something different from the last auto value.
+    if (strikeEl) {
+        const currentStrike = parseFloat(strikeEl.value);
+        if (_lastAutoStrike == null || Math.abs(currentStrike - _lastAutoStrike) < 1e-6) {
+            const fmt = F < 5 ? F.toFixed(3) : F.toFixed(2);
+            strikeEl.value = fmt;
+            _lastAutoStrike = parseFloat(fmt);
+        }
+    }
 }
 
 // ─── Portfolio Management ────────────────────────────────────────────────────

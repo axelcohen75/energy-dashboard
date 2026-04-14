@@ -427,6 +427,7 @@ const COMMODITIES = {
     'Brent Crude Oil (BZ)':          { spot: 78,   vol: 33, rate: 5.0, convYield: 5.5, storageCost: 1.0 },
     'Henry Hub Nat Gas (NG)':        { spot: 3.50, vol: 55, rate: 5.0, convYield: 8.0, storageCost: 4.0 },
     'TTF Natural Gas':               { spot: 35,   vol: 60, rate: 4.0, convYield: 6.0, storageCost: 2.0 },
+    'ICE Gasoil EU (GO)':            { spot: 1135, vol: 32, rate: 4.0, convYield: 5.0, storageCost: 1.5 },
     'German Power Baseload':         { spot: 85,   vol: 50, rate: 4.0, convYield: 0.0, storageCost: 0.0 },
     'RBOB Gasoline (RB)':            { spot: 2.50, vol: 38, rate: 5.0, convYield: 4.0, storageCost: 2.0 },
     'Custom':                        { spot: 100,  vol: 30, rate: 5.0, convYield: 0.0, storageCost: 0.0 },
