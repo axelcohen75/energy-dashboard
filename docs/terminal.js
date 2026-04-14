@@ -521,25 +521,62 @@ function renderLegs() {
         return;
     }
 
+    const globalVolPct = sliderVal('volatility'); // already in %
+    const c = COMMODITIES[$('commodity-select').value];
+    const strikeStep = (c && c.spot < 5) ? 0.05 : (c && c.spot > 500 ? 1 : 0.5);
+
     container.innerHTML = portfolio.map((leg, i) => {
         const side = leg.position === 'long' ? 'Long' : 'Short';
         const typ = leg.type === 'call' ? 'Call' : 'Put';
         const isShort = leg.position === 'short';
         const sign = isShort ? '-' : '+';
+        // Use the leg's own IV if set, otherwise show the global vol as a
+        // placeholder so the user can see what's being used.
+        const hasOverride = typeof leg.iv === 'number' && isFinite(leg.iv) && leg.iv > 0;
+        const ivPctValue = hasOverride ? (leg.iv * 100).toFixed(1) : '';
+        const ivPlaceholder = globalVolPct.toFixed(1);
+        const ivClass = hasOverride ? 'leg-iv-input override' : 'leg-iv-input';
         return `
             <div class="leg-item ${isShort ? 'short' : ''}">
                 <div style="flex:1">
                     <div class="leg-label">
                         ${side} ${typ} K=<input type="number" class="leg-strike-input"
-                            value="${leg.strike.toFixed(2)}" step="0.5"
+                            value="${leg.strike.toFixed(c && c.spot < 5 ? 3 : 2)}" step="${strikeStep}"
                             onchange="updateLegStrike(${i}, this.value)"
                             oninput="updateLegStrike(${i}, this.value)">
                     </div>
-                    <div class="leg-qty">QTY: ${sign}${leg.quantity}</div>
+                    <div class="leg-qty-row">
+                        <span class="leg-qty">QTY: ${sign}${leg.quantity}</span>
+                        <span class="leg-iv-wrap" title="Implied vol override (leave blank to use portfolio σ)">
+                            σ=<input type="number" class="${ivClass}"
+                                value="${ivPctValue}" placeholder="${ivPlaceholder}"
+                                min="0" step="0.5"
+                                onchange="updateLegIv(${i}, this.value)"
+                                oninput="updateLegIv(${i}, this.value)">%
+                        </span>
+                    </div>
                 </div>
                 <button class="leg-remove" onclick="removeLeg(${i})">&times;</button>
             </div>`;
     }).join('');
+}
+
+function updateLegIv(idx, value) {
+    const leg = portfolio[idx];
+    if (!leg) return;
+    const raw = (value ?? '').toString().trim();
+    if (raw === '') {
+        // Clear the override — fall back to portfolio σ
+        delete leg.iv;
+    } else {
+        const pct = parseFloat(raw);
+        if (!isNaN(pct) && pct > 0) {
+            leg.iv = pct / 100; // store as decimal
+        }
+    }
+    // Only rerender the single row's class if we toggled override state;
+    // for simplicity, just update charts. The text input keeps focus.
+    updateCharts();
 }
 
 // ─── Metrics Panel ───────────────────────────────────────────────────────────

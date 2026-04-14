@@ -312,22 +312,36 @@ function computeForward(S, r, u, y, T) {
 
 // ─── Portfolio Helpers ───────────────────────────────────────────────────────
 
+/**
+ * Resolve the volatility to use for a given leg.
+ * If leg.iv (in decimal, e.g. 0.32 for 32%) is set, use it — otherwise
+ * fall back to the portfolio-wide sigma. This is what lets the user
+ * enter a per-option IV to reflect the skew/smile in the real cost of
+ * the structure.
+ */
+function legSigma(leg, fallbackSigma) {
+    return (leg && typeof leg.iv === 'number' && isFinite(leg.iv) && leg.iv > 0)
+        ? leg.iv
+        : fallbackSigma;
+}
+
 function computeGreeks(leg, F, r, sigma, T) {
     const K = leg.strike;
     const isCall = leg.type === 'call';
     const sign = leg.position === 'long' ? 1 : -1;
     const qty = leg.quantity || 1;
     const s = sign * qty;
+    const σ = legSigma(leg, sigma);
 
     return {
-        price:  s * Black76.price(F, K, r, sigma, T, isCall),
-        delta:  s * Black76.delta(F, K, r, sigma, T, isCall),
-        gamma:  s * Black76.gamma(F, K, r, sigma, T),
-        vega:   s * Black76.vega(F, K, r, sigma, T),
-        theta:  s * Black76.theta(F, K, r, sigma, T, isCall),
-        rho:    s * Black76.rho(F, K, r, sigma, T, isCall),
-        vanna:  s * Black76.vanna(F, K, r, sigma, T),
-        volga:  s * Black76.volga(F, K, r, sigma, T),
+        price:  s * Black76.price(F, K, r, σ, T, isCall),
+        delta:  s * Black76.delta(F, K, r, σ, T, isCall),
+        gamma:  s * Black76.gamma(F, K, r, σ, T),
+        vega:   s * Black76.vega(F, K, r, σ, T),
+        theta:  s * Black76.theta(F, K, r, σ, T, isCall),
+        rho:    s * Black76.rho(F, K, r, σ, T, isCall),
+        vanna:  s * Black76.vanna(F, K, r, σ, T),
+        volga:  s * Black76.volga(F, K, r, σ, T),
     };
 }
 
