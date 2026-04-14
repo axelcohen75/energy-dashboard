@@ -38,7 +38,15 @@ const ENERGY_COMMODITIES = {
         unit: '$/gal', continuous: 'HO=F',
         color: '#0891b2', colorDark: '#22d3ee',
     },
+    'ICE Gasoil (GO)': {
+        unit: '$/ton', continuous: 'LGO=F',
+        color: '#ca8a04', colorDark: '#eab308',
+    },
 };
+
+// 1 metric ton of gasoil ≈ 7.45 barrels (specific gravity ~0.845).
+// Used to convert LGO from $/ton into $/bbl for crack spread computations.
+const GASOIL_BBL_PER_TON = 7.45;
 
 // ─── Market Indices Config ──────────────────────────────────────────────────
 
@@ -110,6 +118,12 @@ const SPREAD_DEFINITIONS = {
         long: 'Heating Oil (HO)', short: 'WTI Crude Oil (CL)',
         ratio: { long: 42, short: 1 },
         unit: '$/bbl', description: 'HO × 42 - CL (per barrel)',
+    },
+    'Gasoil Crack (GO-BZ)': {
+        category: 'CRACK',
+        long: 'ICE Gasoil (GO)', short: 'Brent Crude Oil (BZ)',
+        ratio: { long: 1 / 7.45, short: 1 },
+        unit: '$/bbl', description: 'LGO / 7.45 - Brent (per barrel)',
     },
     'EU Gas vs US Gas (TTF-HH)': {
         category: 'GAS',

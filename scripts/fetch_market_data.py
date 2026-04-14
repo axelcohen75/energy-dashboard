@@ -54,6 +54,11 @@ COMMODITIES = {
         'base': 'HO', 'continuous': 'HO=F', 'exchange': 'NYM',
         'months': 12, 'unit': '$/gal',
     },
+    'ICE Gasoil (GO)': {
+        # ICE Low Sulphur Gasoil futures — quoted in USD per metric ton.
+        'continuous': 'LGO=F',
+        'months': 0, 'unit': '$/ton',
+    },
 }
 
 TIMESPREADS = {

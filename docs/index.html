@@ -654,15 +654,16 @@
                             <div class="sub-label" id="spread-subtitle">SELECT A SPREAD</div>
                         </div>
                         <div style="display:flex;gap:4px;align-items:center">
-                            <select id="spread-category" class="chart-select" onchange="populateSpreads()">
-                                <option value="all">ALL</option>
-                            </select>
-                            <select id="spread-period" class="chart-select">
+                            <select id="spread-select" class="chart-select" onchange="updateSpreadChart()"></select>
+                            <select id="spread-period" class="chart-select" onchange="updateSpreadChart()">
+                                <option value="63">3M</option>
+                                <option value="126">6M</option>
                                 <option value="252" selected>1Y</option>
+                                <option value="504">2Y</option>
+                                <option value="1260">5Y</option>
                             </select>
                         </div>
                     </div>
-                    <select id="spread-select" style="display:none"></select>
                     <div id="spread-monitor-chart" class="chart-plot"></div>
                 </div>
             </div>
@@ -676,7 +677,7 @@
                             <div class="sub-label" id="timespread-subtitle">SELECT A TIMESPREAD</div>
                         </div>
                         <div style="display:flex;gap:4px;align-items:center">
-                            <select id="ts-spread-commodity" class="chart-select" onchange="populateTimespreads()"></select>
+                            <select id="ts-spread-commodity" class="chart-select" onchange="onTimespreadCommodityChange()"></select>
                             <select id="ts-spread-select" class="chart-select" onchange="updateTimespread()"></select>
                             <select id="ts-spread-period" class="chart-select" onchange="updateTimespread()">
                                 <option value="63">3M</option>
@@ -1026,8 +1027,8 @@
 </div>
 
 <script src="engine.js?v=7"></script>
-<script src="energy-data.js?v=10"></script>
-<script src="energy-markets.js?v=15"></script>
+<script src="energy-data.js?v=11"></script>
+<script src="energy-markets.js?v=16"></script>
 <script src="physical-markets.js?v=11"></script>
 <script src="geopolitics.js?v=2"></script>
 <script src="cftc.js?v=1"></script>

@@ -132,6 +132,14 @@ async function initEnergyMarkets() {
     populateTimespreads();
     populateSpreads();
 
+    // Draw initial spread + timespread charts now that dropdowns are filled
+    if (document.getElementById('spread-select').options.length > 0) {
+        updateSpreadChart();
+    }
+    if (document.getElementById('ts-spread-select').options.length > 0) {
+        updateTimespread();
+    }
+
     // Set date input default
     const dateInput = document.getElementById('ts-compare-date');
     if (dateInput) {
@@ -791,13 +799,37 @@ function _trimToDays(dates, values, nDays) {
 // ─── Spread Monitor ─────────────────────────────────────────────────────────
 
 function populateSpreads() {
-    const category = document.getElementById('spread-category').value;
     const select = document.getElementById('spread-select');
+    if (!select) return;
+    const currentValue = select.value;
     select.innerHTML = '';
     for (const [name, def] of Object.entries(SPREAD_DEFINITIONS)) {
-        if (category !== 'all' && def.category !== category) continue;
+        // Skip spreads whose underlyings we don't have historical data for
+        if (def.formula !== 'custom') {
+            const longCfg = ENERGY_COMMODITIES[def.long];
+            const shortCfg = ENERGY_COMMODITIES[def.short];
+            if (!longCfg || !shortCfg) continue;
+            if (!marketData?.history?.[longCfg.continuous]
+                || !marketData?.history?.[shortCfg.continuous]) continue;
+        } else {
+            // Custom formulas: all required legs must be present
+            if (!marketData?.history?.['RB=F']
+                || !marketData?.history?.['HO=F']
+                || !marketData?.history?.['CL=F']) continue;
+        }
         select.appendChild(new Option(name, name));
     }
+    // Restore prior selection if still valid, else pick the first
+    if (currentValue && [...select.options].some(o => o.value === currentValue)) {
+        select.value = currentValue;
+    } else if (select.options.length > 0) {
+        select.selectedIndex = 0;
+    }
+}
+
+function onTimespreadCommodityChange() {
+    populateTimespreads();
+    updateTimespread();
 }
 
 function updateSpreadChart() {
