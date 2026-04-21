@@ -1,78 +1,6 @@
 {
   "snapshots": [
     {
-      "date": "2026-03-21",
-      "timestamp": "2026-03-21T18:00:00+00:00",
-      "meetings": [
-        {
-          "date": "2026-04-05",
-          "label": "Apr 5, 2026 \u2014 55th JMMC",
-          "probabilities": {
-            "Large Cut (>1M)": 3.5,
-            "Small Cut": 9.1,
-            "No Change": 53.8,
-            "Small Increase": 26.4,
-            "Large Increase (>1M)": 7.2
-          }
-        },
-        {
-          "date": "2026-05-28",
-          "label": "May 28, 2026 \u2014 39th Ministerial",
-          "probabilities": {
-            "Large Cut (>1M)": 5.4,
-            "Small Cut": 12.8,
-            "No Change": 45.6,
-            "Small Increase": 25.9,
-            "Large Increase (>1M)": 10.3
-          }
-        },
-        {
-          "date": "2026-06-01",
-          "label": "Jun 1, 2026 \u2014 56th JMMC",
-          "probabilities": {
-            "Large Cut (>1M)": 6.3,
-            "Small Cut": 14.5,
-            "No Change": 41.0,
-            "Small Increase": 26.8,
-            "Large Increase (>1M)": 11.4
-          }
-        },
-        {
-          "date": "2026-08-03",
-          "label": "Aug 3, 2026 \u2014 57th JMMC",
-          "probabilities": {
-            "Large Cut (>1M)": 8.8,
-            "Small Cut": 17.2,
-            "No Change": 36.1,
-            "Small Increase": 24.5,
-            "Large Increase (>1M)": 13.4
-          }
-        },
-        {
-          "date": "2026-10-05",
-          "label": "Oct 5, 2026 \u2014 58th JMMC",
-          "probabilities": {
-            "Large Cut (>1M)": 10.6,
-            "Small Cut": 18.9,
-            "No Change": 32.0,
-            "Small Increase": 23.8,
-            "Large Increase (>1M)": 14.7
-          }
-        },
-        {
-          "date": "2026-12-01",
-          "label": "Dec 1, 2026 \u2014 40th Ministerial",
-          "probabilities": {
-            "Large Cut (>1M)": 12.9,
-            "Small Cut": 20.2,
-            "No Change": 28.8,
-            "Small Increase": 22.1,
-            "Large Increase (>1M)": 16.0
-          }
-        }
-      ]
-    },
-    {
       "date": "2026-03-22",
       "timestamp": "2026-03-22T16:17:06.235728+00:00",
       "meetings": [
@@ -371,6 +299,26 @@
           }
         }
       ]
+    },
+    {
+      "date": "2026-04-21",
+      "timestamp": "2026-04-21T14:47:05.442720+00:00",
+      "meetings": [
+        {
+          "date": "2026-05-03",
+          "label": "May 3 OPEC Meeting",
+          "probabilities": {
+            "Decrease": 24.18,
+            "No Change": 68.51,
+            "Increase": 7.31
+          },
+          "previous_day": {
+            "Decrease": 23.39,
+            "No Change": 69.03,
+            "Increase": 7.58
+          }
+        }
+      ]
     }
   ],
   "meetings": [
@@ -378,14 +326,14 @@
       "date": "2026-05-03",
       "label": "May 3 OPEC Meeting",
       "probabilities": {
-        "Decrease": 20.8,
-        "No Change": 73.64,
-        "Increase": 5.56
+        "Decrease": 24.18,
+        "No Change": 68.51,
+        "Increase": 7.31
       },
       "previous_day": {
-        "Decrease": 7.43,
-        "No Change": 69.17,
-        "Increase": 23.41
+        "Decrease": 23.39,
+        "No Change": 69.03,
+        "Increase": 7.58
       }
     }
   ]
