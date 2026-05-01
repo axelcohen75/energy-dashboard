@@ -1,26 +1,6 @@
 {
   "snapshots": [
     {
-      "date": "2026-03-31",
-      "timestamp": "2026-03-31T21:37:16.468688+00:00",
-      "meetings": [
-        {
-          "date": "2026-04-05",
-          "label": "April 5 OPEC Meeting",
-          "probabilities": {
-            "Decrease": 43.45,
-            "No Change": 54.64,
-            "Increase": 1.92
-          },
-          "previous_day": {
-            "Decrease": 11.05,
-            "No Change": 59.28,
-            "Increase": 29.67
-          }
-        }
-      ]
-    },
-    {
       "date": "2026-04-01",
       "timestamp": "2026-04-01T21:39:33.140342+00:00",
       "meetings": [
@@ -319,6 +299,26 @@
           }
         }
       ]
+    },
+    {
+      "date": "2026-05-01",
+      "timestamp": "2026-05-01T14:18:19.537565+00:00",
+      "meetings": [
+        {
+          "date": "2026-05-03",
+          "label": "May 3 OPEC Meeting",
+          "probabilities": {
+            "Decrease": 57.59,
+            "No Change": 42.41,
+            "Increase": 0.0
+          },
+          "previous_day": {
+            "Decrease": 41.69,
+            "No Change": 57.48,
+            "Increase": 0.84
+          }
+        }
+      ]
     }
   ],
   "meetings": [
@@ -326,14 +326,14 @@
       "date": "2026-05-03",
       "label": "May 3 OPEC Meeting",
       "probabilities": {
-        "Decrease": 82.35,
-        "No Change": 17.65,
+        "Decrease": 57.59,
+        "No Change": 42.41,
         "Increase": 0.0
       },
       "previous_day": {
-        "Decrease": 31.86,
-        "No Change": 67.35,
-        "Increase": 0.79
+        "Decrease": 41.69,
+        "No Change": 57.48,
+        "Increase": 0.84
       }
     }
   ]
