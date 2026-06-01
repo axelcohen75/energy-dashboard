@@ -181,7 +181,7 @@ body {
 .col-left, .col-right { overflow-y: auto; overflow-x: hidden; }
 .overview-grid { grid-template-columns: 360px 1fr 240px; }
 .physical-grid { grid-template-columns: 240px 1fr 300px; }
-.geo-grid { grid-template-columns: 340px 1fr; }
+.geo-grid { grid-template-columns: 320px 1fr; }
 .cftc-grid { grid-template-columns: 260px 1fr; }
 .col-center {
     display: flex;
@@ -555,6 +555,18 @@ input[type="range"]::-moz-range-thumb {
 }
 .pm-row:hover { background: rgba(37, 99, 235, 0.03); }
 .pm-row:last-child { border-bottom: none; }
+.pm-row-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 4px;
+    font-family: var(--mono);
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+.pm-label { color: var(--text-muted); }
+.pm-liq { color: var(--accent); white-space: nowrap; }
 .pm-question {
     font-size: 11px;
     color: var(--text);

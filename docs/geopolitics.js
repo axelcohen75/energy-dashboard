@@ -1,8 +1,8 @@
 /**
- * Geopolitics Tab — UI Controller
+ * Polymarket Quote Tab — UI Controller
  *
- * Displays Polymarket predictions (geopolitics + OPEC/physical),
- * Hormuz reopening signals, and summary analytics.
+ * Displays liquid Polymarket quotes for Hormuz traffic, oil prices,
+ * and Iran/Hormuz policy risk.
  * Reads from data/physical-data.json (shared with Physical tab).
  */
 
@@ -23,7 +23,7 @@ async function initGeopolitics() {
     // Reuse physicalData if already loaded, otherwise fetch
     if (!physicalData) {
         try {
-            const resp = await fetch('data/physical-data.json?v=20260601-hormuz');
+            const resp = await fetch('data/physical-data.json?v=20260601-polymarket-quote');
             if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
             physicalData = await resp.json();
             console.log(`[Geopolitics] Loaded — updated ${physicalData.updated}`);
@@ -33,41 +33,54 @@ async function initGeopolitics() {
         }
     }
 
-    renderGeoPolymarketPanels();
+    renderPolymarketQuotePanels();
     renderGeoHormuzMonitor();
-    renderGeoRiskSummary();
-    renderGeoOpecSummary();
     renderGeoMarketStats();
     renderGeoHighProb();
     renderGeoHormuzSummary();
     loadAndRenderNews('geopolitics');
 }
 
-// ─── Polymarket Panels ──────────────────────────────────────────────────────
+// ─── Quote Board Panels ─────────────────────────────────────────────────────
 
-function renderGeoPolymarketPanels() {
-    if (!physicalData?.polymarket) return;
-
-    const geoContainer = document.getElementById('pm-geopolitics');
-    const opecContainer = document.getElementById('pm-opec-physical');
-
-    const geo = [], opec = [];
-    for (const m of physicalData.polymarket) {
-        if (m.category === 'opec_physical') opec.push(m);
-        else geo.push(m);
-    }
-
-    if (geoContainer) geoContainer.innerHTML = renderPmList(geo) || emptyPmHtml('No geopolitics data');
-    if (opecContainer) opecContainer.innerHTML = renderPmList(opec) || emptyPmHtml('No OPEC/physical data');
+function getPolymarketQuotes() {
+    return physicalData?.polymarketQuotes || physicalData?.polymarket || [];
 }
 
-function renderPmList(markets) {
+function byLiquidity(a, b) {
+    return ((b.liquidity || 0) - (a.liquidity || 0)) || ((b.volume || 0) - (a.volume || 0));
+}
+
+function renderPolymarketQuotePanels() {
+    const quotes = getPolymarketQuotes();
+    if (!quotes.length) return;
+
+    const oil = quotes.filter(m => m.quoteGroup === 'oil_price').sort(byLiquidity);
+    const hormuz = quotes
+        .filter(m => ['hormuz_traffic', 'hormuz_policy'].includes(m.quoteGroup))
+        .sort(byLiquidity);
+    const iran = quotes
+        .filter(m => !['oil_price', 'hormuz_traffic', 'hormuz_policy'].includes(m.quoteGroup))
+        .sort(byLiquidity);
+
+    const oilContainer = document.getElementById('pm-oil-quotes');
+    const hormuzContainer = document.getElementById('pm-hormuz-quotes');
+    const iranContainer = document.getElementById('pm-iran-quotes');
+
+    if (oilContainer) oilContainer.innerHTML = renderPmList(oil, 10) || emptyPmHtml('No oil quotes above $50K liquidity');
+    if (hormuzContainer) hormuzContainer.innerHTML = renderPmList(hormuz, 12) || emptyPmHtml('No Hormuz quotes above $50K liquidity');
+    if (iranContainer) iranContainer.innerHTML = renderPmList(iran, 10) || emptyPmHtml('No Iran/macro quotes above $50K liquidity');
+}
+
+function renderPmList(markets, limit = 12) {
     let html = '';
-    for (const m of markets) {
+    for (const m of markets.slice(0, limit)) {
         const probs = m.probabilities || [];
         const mainProb = probs[0] || 0;
         const question = m.question || '';
         const vol = m.volume || 0;
+        const liq = m.liquidity || 0;
+        const label = m.label || m.groupTitle || '';
         const endDate = m.endDate ? new Date(m.endDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: '2-digit' }) : '';
 
         let barColor;
@@ -77,16 +90,22 @@ function renderPmList(markets) {
 
         const volStr = vol >= 1000000 ? `$${(vol / 1000000).toFixed(1)}M`
             : vol >= 1000 ? `$${(vol / 1000).toFixed(0)}K` : `$${vol}`;
+        const liqStr = liq >= 1000000 ? `$${(liq / 1000000).toFixed(1)}M`
+            : liq >= 1000 ? `$${(liq / 1000).toFixed(0)}K` : `$${liq}`;
 
         html += `
             <div class="pm-row">
+                <div class="pm-row-top">
+                    <span class="pm-label">${label}</span>
+                    <span class="pm-liq">LIQ ${liqStr}</span>
+                </div>
                 <div class="pm-question">${question}</div>
                 <div class="pm-bar-wrap">
                     <div class="pm-bar" style="width:${mainProb}%;background:${barColor}"></div>
                 </div>
                 <div class="pm-stats">
                     <span class="pm-prob" style="color:${barColor}">${mainProb.toFixed(0)}%</span>
-                    <span class="pm-vol">${volStr}</span>
+                    <span class="pm-vol">VOL ${volStr}</span>
                     <span class="pm-expiry" style="color:var(--text-dim);font-size:9px;margin-left:4px">${endDate}</span>
                 </div>
             </div>`;
@@ -102,7 +121,7 @@ function emptyPmHtml(msg) {
 
 function renderGeoHormuzMonitor() {
     const cc = getChartColors();
-    const points = physicalData?.hormuzReopeningSignals || [];
+    const points = physicalData?.hormuzTermStructure || physicalData?.hormuzReopeningSignals || [];
     if (!points || !points.length) {
         Plotly.react('pm-term-chart', [], {
             paper_bgcolor: cc.bg, plot_bgcolor: cc.bg,
@@ -111,17 +130,19 @@ function renderGeoHormuzMonitor() {
         return;
     }
 
-    const active = points.filter(p => p.prob > 0);
+    const active = points.filter(p => (p.probabilities || [p.prob || 0])[0] >= 0);
     const labels = active.map(p => p.label);
-    const probs = active.map(p => p.prob);
+    const probs = active.map(p => (p.probabilities || [p.prob || 0])[0]);
     const colors = active.map(p => {
-        if (p.prob >= 60) return isDarkMode ? '#34d399' : '#059669';
-        if (p.prob >= 30) return isDarkMode ? '#fbbf24' : '#d97706';
+        const prob = (p.probabilities || [p.prob || 0])[0];
+        if (prob >= 60) return isDarkMode ? '#34d399' : '#059669';
+        if (prob >= 30) return isDarkMode ? '#fbbf24' : '#d97706';
         return isDarkMode ? '#f87171' : '#dc2626';
     });
 
     const hoverTexts = active.map(p =>
-        `${p.question}<br><b>${p.prob.toFixed(1)}%</b><br>Vol: $${p.volume.toLocaleString()}`);
+        `${p.question}<br><b>${((p.probabilities || [p.prob || 0])[0]).toFixed(1)}%</b><br>` +
+        `Liq: $${(p.liquidity || 0).toLocaleString()}<br>Vol: $${(p.volume || 0).toLocaleString()}`);
 
     const traces = [{
         x: labels, y: probs,
@@ -149,7 +170,7 @@ function renderGeoHormuzMonitor() {
         xaxis: {
             gridcolor: cc.grid, zerolinecolor: cc.zero,
             tickfont: { size: 10, color: cc.muted },
-            title: { text: 'HORMUZ SIGNAL', font: { size: 10, color: cc.muted } },
+            title: { text: 'MATURITY', font: { size: 10, color: cc.muted } },
         },
         yaxis: {
             gridcolor: cc.grid, zerolinecolor: cc.zero,
@@ -170,92 +191,38 @@ function renderGeoHormuzMonitor() {
     Plotly.react('pm-term-chart', traces, layout, CHART_CONFIG);
 }
 
-// ─── Left Sidebar: Risk Summary ─────────────────────────────────────────────
-
-function renderGeoRiskSummary() {
-    const container = document.getElementById('geo-risk-summary');
-    if (!container || !physicalData?.polymarket) return;
-
-    const geo = physicalData.polymarket.filter(m => m.category === 'geopolitics');
-    let html = '<div style="font-size:10px">';
-
-    for (const m of geo.slice(0, 8)) {
-        const prob = (m.probabilities || [])[0] || 0;
-        let barColor;
-        if (prob >= 70) barColor = isDarkMode ? '#34d399' : '#059669';
-        else if (prob >= 40) barColor = isDarkMode ? '#fbbf24' : '#d97706';
-        else barColor = isDarkMode ? '#f87171' : '#dc2626';
-
-        const q = (m.question || '').length > 45 ? m.question.slice(0, 45) + '...' : m.question;
-        html += `<div style="padding:4px 0;border-bottom:1px solid var(--input-border)">
-            <div style="color:var(--text);font-size:10px;margin-bottom:2px">${q}</div>
-            <div style="display:flex;align-items:center;gap:6px">
-                <div style="flex:1;height:4px;background:var(--input-bg);border-radius:2px;overflow:hidden">
-                    <div style="width:${prob}%;height:100%;background:${barColor};border-radius:2px"></div>
-                </div>
-                <span style="font-family:var(--mono);font-size:10px;color:${barColor};min-width:30px;text-align:right">${prob.toFixed(0)}%</span>
-            </div>
-        </div>`;
-    }
-    html += '</div>';
-    container.innerHTML = html;
-}
-
-function renderGeoOpecSummary() {
-    const container = document.getElementById('geo-opec-summary');
-    if (!container || !physicalData?.polymarket) return;
-
-    const opec = physicalData.polymarket.filter(m => m.category === 'opec_physical');
-    let html = '<div style="font-size:10px">';
-
-    for (const m of opec.slice(0, 8)) {
-        const prob = (m.probabilities || [])[0] || 0;
-        let barColor;
-        if (prob >= 70) barColor = isDarkMode ? '#34d399' : '#059669';
-        else if (prob >= 40) barColor = isDarkMode ? '#fbbf24' : '#d97706';
-        else barColor = isDarkMode ? '#f87171' : '#dc2626';
-
-        const q = (m.question || '').length > 45 ? m.question.slice(0, 45) + '...' : m.question;
-        html += `<div style="padding:4px 0;border-bottom:1px solid var(--input-border)">
-            <div style="color:var(--text);font-size:10px;margin-bottom:2px">${q}</div>
-            <div style="display:flex;align-items:center;gap:6px">
-                <div style="flex:1;height:4px;background:var(--input-bg);border-radius:2px;overflow:hidden">
-                    <div style="width:${prob}%;height:100%;background:${barColor};border-radius:2px"></div>
-                </div>
-                <span style="font-family:var(--mono);font-size:10px;color:${barColor};min-width:30px;text-align:right">${prob.toFixed(0)}%</span>
-            </div>
-        </div>`;
-    }
-    html += '</div>';
-    container.innerHTML = html;
-}
-
 // ─── Right Sidebar: Market Stats ────────────────────────────────────────────
 
 function renderGeoMarketStats() {
     const container = document.getElementById('geo-market-stats');
-    if (!container || !physicalData?.polymarket) return;
+    const markets = getPolymarketQuotes();
+    if (!container || !markets.length) return;
 
-    const markets = physicalData.polymarket;
     const totalVol = markets.reduce((sum, m) => sum + (m.volume || 0), 0);
-    const geoCount = markets.filter(m => m.category === 'geopolitics').length;
-    const opecCount = markets.filter(m => m.category === 'opec_physical').length;
+    const totalLiq = markets.reduce((sum, m) => sum + (m.liquidity || 0), 0);
+    const oilCount = markets.filter(m => m.quoteGroup === 'oil_price').length;
+    const hormuzCount = markets.filter(m => ['hormuz_traffic', 'hormuz_policy'].includes(m.quoteGroup)).length;
     const avgProb = markets.reduce((sum, m) => sum + ((m.probabilities || [])[0] || 0), 0) / (markets.length || 1);
 
     const volStr = totalVol >= 1e6 ? `$${(totalVol / 1e6).toFixed(1)}M` : `$${(totalVol / 1e3).toFixed(0)}K`;
+    const liqStr = totalLiq >= 1e6 ? `$${(totalLiq / 1e6).toFixed(1)}M` : `$${(totalLiq / 1e3).toFixed(0)}K`;
 
     let html = `<div style="font-size:10px">
         <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--input-border)">
-            <span style="color:var(--text-muted)">Total Markets</span>
+            <span style="color:var(--text-muted)">Liquid Quotes</span>
             <span style="font-family:var(--mono);color:var(--text)">${markets.length}</span>
         </div>
         <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--input-border)">
-            <span style="color:var(--text-muted)">Geopolitics</span>
-            <span style="font-family:var(--mono);color:var(--text)">${geoCount}</span>
+            <span style="color:var(--text-muted)">Hormuz Quotes</span>
+            <span style="font-family:var(--mono);color:var(--text)">${hormuzCount}</span>
         </div>
         <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--input-border)">
-            <span style="color:var(--text-muted)">OPEC / Physical</span>
-            <span style="font-family:var(--mono);color:var(--text)">${opecCount}</span>
+            <span style="color:var(--text-muted)">Oil Price Quotes</span>
+            <span style="font-family:var(--mono);color:var(--text)">${oilCount}</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--input-border)">
+            <span style="color:var(--text-muted)">Total Liquidity</span>
+            <span style="font-family:var(--mono);color:var(--accent)">${liqStr}</span>
         </div>
         <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--input-border)">
             <span style="color:var(--text-muted)">Total Volume</span>
@@ -281,28 +248,31 @@ function renderGeoMarketStats() {
 
 function renderGeoHighProb() {
     const container = document.getElementById('geo-high-prob');
-    if (!container || !physicalData?.polymarket) return;
+    const markets = getPolymarketQuotes();
+    if (!container || !markets.length) return;
 
-    const highProb = physicalData.polymarket
-        .filter(m => ((m.probabilities || [])[0] || 0) >= 65)
-        .sort((a, b) => ((b.probabilities || [])[0] || 0) - ((a.probabilities || [])[0] || 0))
+    const topLiquid = markets
+        .slice()
+        .sort(byLiquidity)
         .slice(0, 6);
 
-    if (highProb.length === 0) {
-        container.innerHTML = '<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">No high-probability events (>65%)</div>';
+    if (topLiquid.length === 0) {
+        container.innerHTML = '<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">No liquid quotes</div>';
         return;
     }
 
     let html = '<div style="font-size:10px">';
-    for (const m of highProb) {
+    for (const m of topLiquid) {
         const prob = (m.probabilities || [])[0] || 0;
-        const color = isDarkMode ? '#34d399' : '#059669';
+        const color = prob >= 40 ? (isDarkMode ? '#fbbf24' : '#d97706') : (isDarkMode ? '#60a5fa' : '#003061');
         const q = (m.question || '').length > 50 ? m.question.slice(0, 50) + '...' : m.question;
+        const liq = m.liquidity >= 1e6 ? `$${(m.liquidity / 1e6).toFixed(1)}M` : `$${(m.liquidity / 1e3).toFixed(0)}K`;
         html += `<div style="padding:4px 0;border-bottom:1px solid var(--input-border)">
             <div style="display:flex;justify-content:space-between;align-items:center">
                 <span style="color:var(--text);font-size:10px;flex:1">${q}</span>
                 <span style="font-family:var(--mono);font-size:11px;color:${color};font-weight:600;margin-left:8px">${prob.toFixed(0)}%</span>
             </div>
+            <div style="font-family:var(--mono);font-size:9px;color:var(--text-dim);margin-top:2px">LIQ ${liq}</div>
         </div>`;
     }
     html += '</div>';
@@ -315,34 +285,39 @@ function renderGeoHormuzSummary() {
     const container = document.getElementById('geo-hormuz-summary');
     if (!container) return;
 
-    const points = physicalData?.hormuzReopeningSignals;
+    const points = physicalData?.hormuzTermStructure || physicalData?.hormuzReopeningSignals;
     if (!points || !points.length) {
         container.innerHTML = '<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">No Hormuz data</div>';
         return;
     }
 
-    const active = points.filter(p => p.prob > 0);
+    const active = points.filter(p => (p.probabilities || [p.prob || 0])[0] >= 0);
     if (active.length === 0) {
         container.innerHTML = '<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">No active signal</div>';
         return;
     }
 
-    const primary = active[0];
-    const highest = active.reduce((best, p) => p.prob > best.prob ? p : best, active[0]);
-    const avgProb = active.reduce((s, p) => s + p.prob, 0) / active.length;
+    const front = active[0];
+    const back = active[active.length - 1];
+    const mostLiquid = active.reduce((best, p) => (p.liquidity || 0) > (best.liquidity || 0) ? p : best, active[0]);
+    const avgProb = active.reduce((s, p) => s + ((p.probabilities || [p.prob || 0])[0]), 0) / active.length;
 
     let html = `<div style="font-size:10px">
         <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--input-border)">
-            <span style="color:var(--text-muted)">Signals</span>
+            <span style="color:var(--text-muted)">Maturities</span>
             <span style="font-family:var(--mono);color:var(--text)">${active.length}</span>
         </div>
         <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--input-border)">
-            <span style="color:var(--text-muted)">Primary</span>
-            <span style="font-family:var(--mono);font-size:9px;color:var(--text)">${primary.label} (${primary.prob.toFixed(0)}%)</span>
+            <span style="color:var(--text-muted)">Front</span>
+            <span style="font-family:var(--mono);font-size:9px;color:var(--text)">${front.label} (${((front.probabilities || [front.prob || 0])[0]).toFixed(0)}%)</span>
         </div>
         <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--input-border)">
-            <span style="color:var(--text-muted)">Highest</span>
-            <span style="font-family:var(--mono);font-size:9px;color:var(--text)">${highest.label} (${highest.prob.toFixed(0)}%)</span>
+            <span style="color:var(--text-muted)">Back</span>
+            <span style="font-family:var(--mono);font-size:9px;color:var(--text)">${back.label} (${((back.probabilities || [back.prob || 0])[0]).toFixed(0)}%)</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--input-border)">
+            <span style="color:var(--text-muted)">Most Liquid</span>
+            <span style="font-family:var(--mono);font-size:9px;color:var(--text)">${mostLiquid.label} ($${((mostLiquid.liquidity || 0) / 1000).toFixed(0)}K)</span>
         </div>
         <div style="display:flex;justify-content:space-between;padding:4px 0">
             <span style="color:var(--text-muted)">Avg Probability</span>
@@ -357,10 +332,8 @@ function renderGeoHormuzSummary() {
 
 function refreshGeopolitics() {
     if (!geopoliticsInitialized) return;
-    renderGeoPolymarketPanels();
+    renderPolymarketQuotePanels();
     renderGeoHormuzMonitor();
-    renderGeoRiskSummary();
-    renderGeoOpecSummary();
     renderGeoMarketStats();
     renderGeoHighProb();
     renderGeoHormuzSummary();

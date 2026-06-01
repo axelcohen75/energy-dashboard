@@ -23,7 +23,7 @@ async function initPhysicalMarkets() {
     Plotly.newPlot('opec-watch-chart', [], { ...emptyLayout }, CHART_CONFIG);
 
     try {
-        const resp = await fetch('data/physical-data.json?v=20260601-hormuz');
+        const resp = await fetch('data/physical-data.json?v=20260601-polymarket-quote');
         if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
         physicalData = await resp.json();
         console.log(`[Physical] Loaded — updated ${physicalData.updated}`);

@@ -20,7 +20,7 @@
         <nav class="tab-nav">
             <button class="tab-btn active" data-tab="markets" onclick="switchTab('markets')">OVERVIEW</button>
             <button class="tab-btn" data-tab="physical" onclick="switchTab('physical')">PHYSICAL</button>
-            <button class="tab-btn" data-tab="geopolitics" onclick="switchTab('geopolitics')">GEOPOLITICS</button>
+            <button class="tab-btn" data-tab="geopolitics" onclick="switchTab('geopolitics')">POLYMARKET QUOTE</button>
             <button class="tab-btn" data-tab="pricer" onclick="switchTab('pricer')">OPTION PRICER</button>
             <button class="tab-btn" data-tab="cftc" onclick="switchTab('cftc')">CFTC</button>
         </nav>
@@ -838,7 +838,7 @@
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- TAB 4: GEOPOLITICS                                                        -->
+<!-- TAB 4: POLYMARKET QUOTE                                                   -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 <div class="tab-content" id="tab-geopolitics">
 <div class="markets-grid geo-grid">
@@ -848,25 +848,25 @@
 
         <!-- Market Stats -->
         <div class="panel">
-            <div class="lbl">PREDICTION MARKET STATS</div>
+            <div class="lbl">QUOTE BOARD STATS</div>
             <div id="geo-market-stats" class="mt-8"></div>
         </div>
 
-        <!-- High Probability Alerts -->
+        <!-- Most Liquid Quotes -->
         <div class="panel">
-            <div class="lbl">HIGH PROBABILITY EVENTS</div>
+            <div class="lbl">MOST LIQUID QUOTES</div>
             <div id="geo-high-prob" class="mt-8"></div>
         </div>
 
         <!-- Hormuz Summary -->
         <div class="panel">
-            <div class="lbl">HORMUZ OUTLOOK</div>
+            <div class="lbl">HORMUZ TERM SNAPSHOT</div>
             <div id="geo-hormuz-summary" class="mt-8"></div>
         </div>
 
-        <!-- Geopolitics News Feed -->
+        <!-- Market News Feed -->
         <div class="panel">
-            <div class="lbl">GEOPOLITICS NEWS</div>
+            <div class="lbl">MARKET NEWS</div>
             <div id="geo-news-feed" class="news-feed mt-8"></div>
         </div>
 
@@ -875,41 +875,14 @@
     <!-- ─── CENTER: CHARTS ─── -->
     <div class="col-center">
 
-        <!-- Geopolitics Predictions -->
-        <div class="charts-row">
-            <div class="chart-box">
-                <div class="panel">
-                    <div class="chart-header">
-                        <div>
-                            <div class="lbl" style="font-size:12px;margin-bottom:0">GEOPOLITICAL PREDICTIONS</div>
-                            <div class="sub-label">POLYMARKET — CONFLICT, SANCTIONS, DIPLOMACY</div>
-                        </div>
-                    </div>
-                    <div id="pm-geopolitics" class="pm-container" style="max-height:45vh"></div>
-                </div>
-            </div>
-
-            <div class="chart-box">
-                <div class="panel">
-                    <div class="chart-header">
-                        <div>
-                            <div class="lbl" style="font-size:12px;margin-bottom:0">OPEC / PHYSICAL IMPACT</div>
-                            <div class="sub-label">POLYMARKET — OIL, PRODUCTION, TRADE</div>
-                        </div>
-                    </div>
-                    <div id="pm-opec-physical" class="pm-container" style="max-height:45vh"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Hormuz Reopening Monitor -->
+        <!-- Hormuz Term Structure -->
         <div class="charts-row charts-row-single">
             <div class="chart-box">
                 <div class="panel">
                     <div class="chart-header">
                         <div>
-                            <div class="lbl" style="font-size:12px;margin-bottom:0">STRAIT OF HORMUZ — REOPENING MONITOR</div>
-                            <div class="sub-label">IRAN × OMAN AGREEMENT ODDS // POLYMARKET EVENT 514376</div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">STRAIT OF HORMUZ TRAFFIC — TERM STRUCTURE</div>
+                            <div class="sub-label">TRAFFIC RETURNS TO NORMAL // LIQUIDITY FILTER ≥ $50K</div>
                         </div>
                     </div>
                     <div id="pm-term-chart" class="chart-plot"></div>
@@ -917,12 +890,48 @@
             </div>
         </div>
 
-    </div>
+        <!-- Oil + Hormuz Quotes -->
+        <div class="charts-row">
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">OIL PRICE QUOTES</div>
+                            <div class="sub-label">CL / WTI DIRECT PRICE BETS // SORTED BY LIQUIDITY</div>
+                        </div>
+                    </div>
+                    <div id="pm-oil-quotes" class="pm-container" style="max-height:45vh"></div>
+                </div>
+            </div>
 
-    <!-- ─── Hidden containers for removed sidebar panels (keep JS happy) ─── -->
-    <div style="display:none">
-        <div id="geo-risk-summary"></div>
-        <div id="geo-opec-summary"></div>
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">HORMUZ / POLICY QUOTES</div>
+                            <div class="sub-label">TRAFFIC, BLOCKADE, TRANSIT FEES // SORTED BY LIQUIDITY</div>
+                        </div>
+                    </div>
+                    <div id="pm-hormuz-quotes" class="pm-container" style="max-height:45vh"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Iran Macro Quotes -->
+        <div class="charts-row charts-row-single">
+            <div class="chart-box">
+                <div class="panel">
+                    <div class="chart-header">
+                        <div>
+                            <div class="lbl" style="font-size:12px;margin-bottom:0">IRAN / MACRO QUOTES</div>
+                            <div class="sub-label">ENERGY-RELEVANT IRAN RISK // LIQUIDITY FILTER ≥ $50K</div>
+                        </div>
+                    </div>
+                    <div id="pm-iran-quotes" class="pm-container" style="max-height:35vh"></div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </div>
@@ -1029,8 +1038,8 @@
 <script src="engine.js?v=9"></script>
 <script src="energy-data.js?v=11"></script>
 <script src="energy-markets.js?v=16"></script>
-<script src="physical-markets.js?v=12"></script>
-<script src="geopolitics.js?v=3"></script>
+<script src="physical-markets.js?v=13"></script>
+<script src="geopolitics.js?v=4"></script>
 <script src="cftc.js?v=1"></script>
 <script src="terminal.js?v=14"></script>
 <script src="crack-spread.js?v=1"></script>
