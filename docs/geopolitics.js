@@ -23,7 +23,7 @@ async function initGeopolitics() {
     // Reuse physicalData if already loaded, otherwise fetch
     if (!physicalData) {
         try {
-            const resp = await fetch('data/physical-data.json');
+            const resp = await fetch('data/physical-data.json?v=20260601-hormuz');
             if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
             physicalData = await resp.json();
             console.log(`[Geopolitics] Loaded — updated ${physicalData.updated}`);
