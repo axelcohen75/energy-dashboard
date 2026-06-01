@@ -2,7 +2,7 @@
  * Geopolitics Tab — UI Controller
  *
  * Displays Polymarket predictions (geopolitics + OPEC/physical),
- * ceasefire term structure, and summary analytics.
+ * Hormuz reopening signals, and summary analytics.
  * Reads from data/physical-data.json (shared with Physical tab).
  */
 
@@ -34,12 +34,12 @@ async function initGeopolitics() {
     }
 
     renderGeoPolymarketPanels();
-    renderGeoCeasefireTermStructure();
+    renderGeoHormuzMonitor();
     renderGeoRiskSummary();
     renderGeoOpecSummary();
     renderGeoMarketStats();
     renderGeoHighProb();
-    renderGeoCeasefireSummary();
+    renderGeoHormuzSummary();
     loadAndRenderNews('geopolitics');
 }
 
@@ -98,11 +98,11 @@ function emptyPmHtml(msg) {
     return `<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">${msg}</div>`;
 }
 
-// ─── Ceasefire Term Structure ───────────────────────────────────────────────
+// ─── Hormuz Reopening Monitor ───────────────────────────────────────────────
 
-function renderGeoCeasefireTermStructure() {
+function renderGeoHormuzMonitor() {
     const cc = getChartColors();
-    const points = physicalData?.ceasefireTermStructure;
+    const points = physicalData?.hormuzReopeningSignals || [];
     if (!points || !points.length) {
         Plotly.react('pm-term-chart', [], {
             paper_bgcolor: cc.bg, plot_bgcolor: cc.bg,
@@ -149,7 +149,7 @@ function renderGeoCeasefireTermStructure() {
         xaxis: {
             gridcolor: cc.grid, zerolinecolor: cc.zero,
             tickfont: { size: 10, color: cc.muted },
-            title: { text: 'CEASEFIRE DEADLINE', font: { size: 10, color: cc.muted } },
+            title: { text: 'HORMUZ SIGNAL', font: { size: 10, color: cc.muted } },
         },
         yaxis: {
             gridcolor: cc.grid, zerolinecolor: cc.zero,
@@ -309,40 +309,40 @@ function renderGeoHighProb() {
     container.innerHTML = html;
 }
 
-// ─── Right Sidebar: Ceasefire Summary ───────────────────────────────────────
+// ─── Right Sidebar: Hormuz Summary ──────────────────────────────────────────
 
-function renderGeoCeasefireSummary() {
-    const container = document.getElementById('geo-ceasefire-summary');
+function renderGeoHormuzSummary() {
+    const container = document.getElementById('geo-hormuz-summary');
     if (!container) return;
 
-    const points = physicalData?.ceasefireTermStructure;
+    const points = physicalData?.hormuzReopeningSignals;
     if (!points || !points.length) {
-        container.innerHTML = '<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">No ceasefire data</div>';
+        container.innerHTML = '<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">No Hormuz data</div>';
         return;
     }
 
     const active = points.filter(p => p.prob > 0);
     if (active.length === 0) {
-        container.innerHTML = '<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">All maturities expired</div>';
+        container.innerHTML = '<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">No active signal</div>';
         return;
     }
 
-    const nearest = active[0];
-    const farthest = active[active.length - 1];
+    const primary = active[0];
+    const highest = active.reduce((best, p) => p.prob > best.prob ? p : best, active[0]);
     const avgProb = active.reduce((s, p) => s + p.prob, 0) / active.length;
 
     let html = `<div style="font-size:10px">
         <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--input-border)">
-            <span style="color:var(--text-muted)">Maturities</span>
+            <span style="color:var(--text-muted)">Signals</span>
             <span style="font-family:var(--mono);color:var(--text)">${active.length}</span>
         </div>
         <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--input-border)">
-            <span style="color:var(--text-muted)">Nearest</span>
-            <span style="font-family:var(--mono);font-size:9px;color:var(--text)">${nearest.label} (${nearest.prob.toFixed(0)}%)</span>
+            <span style="color:var(--text-muted)">Primary</span>
+            <span style="font-family:var(--mono);font-size:9px;color:var(--text)">${primary.label} (${primary.prob.toFixed(0)}%)</span>
         </div>
         <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--input-border)">
-            <span style="color:var(--text-muted)">Farthest</span>
-            <span style="font-family:var(--mono);font-size:9px;color:var(--text)">${farthest.label} (${farthest.prob.toFixed(0)}%)</span>
+            <span style="color:var(--text-muted)">Highest</span>
+            <span style="font-family:var(--mono);font-size:9px;color:var(--text)">${highest.label} (${highest.prob.toFixed(0)}%)</span>
         </div>
         <div style="display:flex;justify-content:space-between;padding:4px 0">
             <span style="color:var(--text-muted)">Avg Probability</span>
@@ -358,11 +358,11 @@ function renderGeoCeasefireSummary() {
 function refreshGeopolitics() {
     if (!geopoliticsInitialized) return;
     renderGeoPolymarketPanels();
-    renderGeoCeasefireTermStructure();
+    renderGeoHormuzMonitor();
     renderGeoRiskSummary();
     renderGeoOpecSummary();
     renderGeoMarketStats();
     renderGeoHighProb();
-    renderGeoCeasefireSummary();
+    renderGeoHormuzSummary();
     renderNewsFeed('geopolitics');
 }

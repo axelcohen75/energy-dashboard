@@ -208,14 +208,6 @@ def fetch_all_eia():
 
 # ─── Polymarket ──────────────────────────────────────────────────────────────
 
-ENERGY_KEYWORDS = [
-    'oil', 'crude', 'opec', 'petroleum', 'gasoline', 'gas price',
-    'energy', 'iran', 'sanction', 'tariff', 'embargo', 'pipeline',
-    'drilling', 'fracking', 'lng', 'refinery', 'barrel',
-    'russia', 'saudi', 'venezuela', 'ceasefire',
-    'recession', 'inflation', 'houthi', 'strait', 'hormuz',
-]
-
 # Keywords for OPEC/physical impact category (vs geopolitics)
 OPEC_PHYSICAL_KEYWORDS = [
     'opec', 'crude oil', 'barrel', 'oil price', 'gas price',
@@ -226,6 +218,36 @@ OPEC_PHYSICAL_KEYWORDS = [
     'strait', 'hormuz', 'houthi', 'settle over', 'settle under',
 ]
 
+POLYMARKET_EXCLUDED_KEYWORDS = [
+    'fifa', 'world cup', ' vs ', 'vs.', 'spread:', 'both teams to score',
+    'o/u', 'album', 'gta vi', 'parliamentary election', 'core cpi',
+    'ethereum', 'gwei', 'bitcoin', 'pete hegseth', 'house member',
+]
+
+DIRECT_ENERGY_KEYWORDS = [
+    'oil', 'crude', 'opec', 'petroleum', 'gasoline', 'gas price',
+    'natural gas', 'energy', 'pipeline', 'drilling', 'fracking', 'lng',
+    'refinery', 'barrel', 'houthi', 'strait', 'hormuz', 'brent', 'wti',
+    'henry hub', 'ttf', 'cushing',
+]
+
+ENERGY_GEOPOLITICS_ACTORS = [
+    'iran', 'oman', 'saudi', 'venezuela', 'russia', 'qatar', 'kuwait',
+    'uae', 'united arab emirates', 'bahrain',
+]
+
+ENERGY_GEOPOLITICS_CONTEXT = [
+    'sanction', 'tariff', 'embargo', 'ceasefire', 'diplomatic', 'nuclear',
+    'war powers', 'military', 'strike', 'attack', 'airspace', 'regime',
+    'agreement', 'deal', 'transit', 'shipping', 'vessel',
+]
+
+PRIORITY_POLYMARKET_MARKET_IDS = [
+    2333553,  # Iran x Oman Strait of Hormuz agreement by June 15?
+]
+
+HORMUZ_REOPENING_EVENT_ID = 514376
+
 
 def categorize_market(question, description=''):
     """Categorize market as 'opec_physical' or 'geopolitics'."""
@@ -235,12 +257,80 @@ def categorize_market(question, description=''):
     return 'geopolitics'
 
 
+def is_relevant_energy_market(question, description=''):
+    """Keep energy-linked geopolitical markets while dropping broad false positives."""
+    text = f" {question} ".lower()
+    if any(kw in text for kw in POLYMARKET_EXCLUDED_KEYWORDS):
+        return False
+    if any(kw in text for kw in DIRECT_ENERGY_KEYWORDS):
+        return True
+    return (
+        any(actor in text for actor in ENERGY_GEOPOLITICS_ACTORS)
+        and any(ctx in text for ctx in ENERGY_GEOPOLITICS_CONTEXT)
+    )
+
+
+def _parse_json_list(raw):
+    """Gamma returns outcomes/prices as either lists or JSON-encoded strings."""
+    if isinstance(raw, str):
+        try:
+            raw = json.loads(raw)
+        except (json.JSONDecodeError, TypeError):
+            return []
+    return raw if isinstance(raw, list) else []
+
+
+def _parse_volume(raw):
+    try:
+        return round(float(raw or 0))
+    except (ValueError, TypeError):
+        return 0
+
+
+def _is_market_active(m):
+    end_date = m.get('endDate')
+    if not end_date:
+        return True
+    try:
+        expiry = datetime.datetime.fromisoformat(end_date.replace('Z', '+00:00'))
+    except (ValueError, TypeError):
+        return True
+    return expiry >= datetime.datetime.now(datetime.timezone.utc)
+
+
+def _parse_market(m):
+    outcomes = _parse_json_list(m.get('outcomes', []))
+    prices = []
+    for p in _parse_json_list(m.get('outcomePrices', [])):
+        try:
+            prices.append(round(float(p) * 100, 1))
+        except (ValueError, TypeError):
+            prices.append(0)
+
+    return {
+        'question': m.get('question', ''),
+        'outcomes': outcomes,
+        'probabilities': prices,
+        'volume': _parse_volume(m.get('volume', 0)),
+        'slug': m.get('slug', ''),
+        'endDate': m.get('endDate', ''),
+        'category': categorize_market(m.get('question', ''), m.get('description', '')),
+        'groupSlug': m.get('negRiskMarketID', '') or m.get('groupItemTitle', ''),
+        'groupTitle': m.get('groupItemTitle', ''),
+    }
+
+
+def _fetch_market_by_id(market_id):
+    url = f'{POLYMARKET_BASE}/markets/{market_id}'
+    return _get_json(url)
+
+
 def fetch_polymarket():
     print("\nFetching Polymarket data...")
     # Fetch high-volume open markets and filter for energy/geopolitics relevance
     all_markets = []
 
-    for offset in [0, 100, 200]:
+    for offset in range(0, 2000, 100):
         url = f'{POLYMARKET_BASE}/markets?closed=false&limit=100&offset={offset}&order=volume&ascending=false'
         try:
             data = _get_json(url)
@@ -249,54 +339,25 @@ def fetch_polymarket():
             print(f"  Fetch offset={offset} failed: {e}")
             break
 
+    # Force in curated lower-volume markets that are useful for energy traders.
+    for market_id in PRIORITY_POLYMARKET_MARKET_IDS:
+        try:
+            priority = _fetch_market_by_id(market_id)
+            all_markets.append(priority)
+        except Exception as e:
+            print(f"  Priority market {market_id} failed: {e}")
+
     # Filter for energy/geopolitics relevance
-    relevant = []
+    relevant_by_slug = {}
     for m in all_markets:
-        q = (m.get('question', '') + ' ' + m.get('description', '')).lower()
-        if any(kw in q for kw in ENERGY_KEYWORDS):
-            # Parse outcomes and prices (may be JSON strings)
-            outcomes_raw = m.get('outcomes', [])
-            prices_raw = m.get('outcomePrices', [])
-            if isinstance(outcomes_raw, str):
-                try:
-                    outcomes_raw = json.loads(outcomes_raw)
-                except (json.JSONDecodeError, TypeError):
-                    outcomes_raw = []
-            if isinstance(prices_raw, str):
-                try:
-                    prices_raw = json.loads(prices_raw)
-                except (json.JSONDecodeError, TypeError):
-                    prices_raw = []
+        if not _is_market_active(m):
+            continue
+        if is_relevant_energy_market(m.get('question', ''), m.get('description', '')):
+            parsed = _parse_market(m)
+            dedupe_key = parsed['slug'] or parsed['question']
+            relevant_by_slug[dedupe_key] = parsed
 
-            volume = m.get('volume', 0)
-
-            # Parse prices to percentages
-            parsed_prices = []
-            for p in (prices_raw if isinstance(prices_raw, list) else []):
-                try:
-                    parsed_prices.append(round(float(p) * 100, 1))
-                except (ValueError, TypeError):
-                    parsed_prices.append(0)
-
-            try:
-                vol = float(volume)
-            except (ValueError, TypeError):
-                vol = 0
-
-            # Categorize: geopolitics vs OPEC/physical impact
-            category = categorize_market(m.get('question', ''), m.get('description', ''))
-
-            relevant.append({
-                'question': m.get('question', ''),
-                'outcomes': outcomes_raw,
-                'probabilities': parsed_prices,
-                'volume': round(vol),
-                'slug': m.get('slug', ''),
-                'endDate': m.get('endDate', ''),
-                'category': category,
-                'groupSlug': m.get('negRiskMarketID', '') or m.get('groupItemTitle', ''),
-                'groupTitle': m.get('groupItemTitle', ''),
-            })
+    relevant = list(relevant_by_slug.values())
 
     # Sort by volume descending
     relevant.sort(key=lambda x: x['volume'], reverse=True)
@@ -315,71 +376,57 @@ def fetch_polymarket():
     return relevant
 
 
-# ─── Ceasefire Term Structure ────────────────────────────────────────────────
-
-CEASEFIRE_EVENT_ID = 236840  # US x Iran ceasefire event on Polymarket
+# ─── Hormuz Reopening Monitor ────────────────────────────────────────────────
 
 
-def fetch_ceasefire_term_structure():
-    """Fetch ceasefire event from Polymarket and extract term structure."""
-    print("\nFetching ceasefire term structure (event 236840)...")
+def fetch_hormuz_reopening_monitor():
+    """Fetch the Polymarket signal closest to Strait of Hormuz reopening."""
+    print(f"\nFetching Hormuz reopening monitor (event {HORMUZ_REOPENING_EVENT_ID})...")
     try:
-        url = f'{POLYMARKET_BASE}/events/{CEASEFIRE_EVENT_ID}'
+        url = f'{POLYMARKET_BASE}/events/{HORMUZ_REOPENING_EVENT_ID}'
         data = _get_json(url)
     except Exception as e:
-        print(f"  Failed to fetch ceasefire event: {e}")
+        print(f"  Failed to fetch Hormuz event: {e}")
         return []
 
     # data is the event object; markets are nested
     markets = data.get('markets', [])
     if not markets:
-        print("  No markets found in ceasefire event")
+        print("  No markets found in Hormuz event")
         return []
 
-    points = []
+    signals = []
     for m in markets:
+        if not _is_market_active(m):
+            continue
         question = m.get('question', '')
         group_title = m.get('groupItemTitle', '')
-        prices_raw = m.get('outcomePrices', [])
-
-        # Parse prices
-        if isinstance(prices_raw, str):
-            try:
-                prices_raw = json.loads(prices_raw)
-            except (json.JSONDecodeError, TypeError):
-                prices_raw = []
-
+        prices = _parse_json_list(m.get('outcomePrices', []))
         prob = None
-        if prices_raw:
+        if prices:
             try:
-                prob = round(float(prices_raw[0]) * 100, 1)
+                prob = round(float(prices[0]) * 100, 1)
             except (ValueError, TypeError, IndexError):
-                pass
-
-        end_date = m.get('endDate', '')
-
-        try:
-            vol = round(float(m.get('volume', 0)))
-        except (ValueError, TypeError):
-            vol = 0
+                prob = None
 
         if prob is not None:
-            points.append({
-                'label': group_title or question,
+            signals.append({
+                'label': group_title or 'Iran-Oman agreement',
                 'question': question,
                 'prob': prob,
-                'endDate': end_date,
-                'volume': vol,
+                'endDate': m.get('endDate', ''),
+                'volume': _parse_volume(m.get('volume', 0)),
+                'slug': m.get('slug', ''),
+                'eventTitle': data.get('title', 'Strait of Hormuz reopening'),
             })
 
-    # Sort by probability (ascending = by maturity timeline)
-    points.sort(key=lambda x: x['prob'])
+    signals.sort(key=lambda x: x['prob'], reverse=True)
 
-    print(f"  Found {len(points)} ceasefire maturities:")
-    for p in points:
+    print(f"  Found {len(signals)} Hormuz reopening signals:")
+    for p in signals:
         print(f"    {p['label']:>15} → {p['prob']:5.1f}%")
 
-    return points
+    return signals
 
 
 # ─── Main ────────────────────────────────────────────────────────────────────
@@ -390,13 +437,13 @@ def main():
 
     eia = fetch_all_eia()
     pm = fetch_polymarket()
-    ceasefire = fetch_ceasefire_term_structure()
+    hormuz = fetch_hormuz_reopening_monitor()
 
     result = {
         'updated': datetime.datetime.now(datetime.timezone.utc).isoformat(),
         'eia': eia,
         'polymarket': pm,
-        'ceasefireTermStructure': ceasefire,
+        'hormuzReopeningSignals': hormuz,
     }
 
     with open(output_path, 'w') as f:

@@ -16,7 +16,7 @@ Real market data via **Yahoo Finance** (spots, term structures, historical). Tim
 EIA weekly inventory data (crude, Cushing, SPR, gasoline, distillates, natural gas) with up to 43 years of history and 5-year range bands. OPEC Watch with meeting outcome probabilities (implied from options), OPEC+ decisions history (2024–2026), calendar, key dates, supply snapshot, and seasonal indicators.
 
 ### Geopolitics
-Polymarket prediction markets filtered for energy-relevant geopolitical events (conflicts, sanctions, diplomacy) and OPEC/physical impact (oil prices, production, trade). US x Iran ceasefire term structure with probability by deadline.
+Polymarket prediction markets filtered for energy-relevant geopolitical events (conflicts, sanctions, diplomacy) and OPEC/physical impact (oil prices, production, trade). Strait of Hormuz reopening monitor with Iran-Oman agreement odds.
 
 ## Market Data
 
