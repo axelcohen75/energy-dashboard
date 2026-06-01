@@ -36,9 +36,8 @@ function switchTab(tab) {
     setTimeout(() => {
         if (tab === 'markets') {
             try { Plotly.Plots.resize('spot-evo-chart'); } catch(e) {}
-            Plotly.Plots.resize('term-structure-chart');
-            Plotly.Plots.resize('timespread-chart');
-            Plotly.Plots.resize('spread-monitor-chart');
+            try { Plotly.Plots.resize('term-structure-chart'); } catch(e) {}
+            try { Plotly.Plots.resize('timespread-chart'); } catch(e) {}
         } else if (tab === 'physical') {
             Plotly.Plots.resize('inventory-chart');
             try { Plotly.Plots.resize('opec-watch-chart'); } catch(e) {}
@@ -102,7 +101,6 @@ async function initEnergyMarkets() {
     Plotly.newPlot('spot-evo-chart', [], { ...emptyLayout }, CHART_CONFIG);
     Plotly.newPlot('term-structure-chart', [], { ...emptyLayout }, CHART_CONFIG);
     Plotly.newPlot('timespread-chart', [], { ...emptyLayout }, CHART_CONFIG);
-    Plotly.newPlot('spread-monitor-chart', [], { ...emptyLayout }, CHART_CONFIG);
 
     // Show loading
     showChartLoading('term-structure-chart');
@@ -130,12 +128,8 @@ async function initEnergyMarkets() {
     }
 
     populateTimespreads();
-    populateSpreads();
 
-    // Draw initial spread + timespread charts now that dropdowns are filled
-    if (document.getElementById('spread-select').options.length > 0) {
-        updateSpreadChart();
-    }
+    // Draw initial temporal spread chart now that dropdowns are filled
     if (document.getElementById('ts-spread-select').options.length > 0) {
         updateTimespread();
     }
@@ -159,10 +153,10 @@ async function initEnergyMarkets() {
 
     // Render everything
     renderSpotPrices(true);
-    renderSpotEvoChips();
     renderSpreadDashboard();
     updateTermStructure();
     updateSpotEvolution();
+    renderSpotEvolutionInfo();
 
     // Load news feed into Overview tab
     loadAndRenderNews('physical', 'overview-news-feed');
@@ -192,10 +186,21 @@ function _timeAgo(date) {
 let selectedCommodity = null;  // currently selected commodity for term structure
 
 function selectCommodity(name) {
+    selectedSpreadForEvolution = null;
     selectedCommodity = name;
+    if (spotEvoSelected.has(name)) {
+        if (spotEvoSelected.size > 1) {
+            spotEvoSelected.delete(name);
+            selectedCommodity = [...spotEvoSelected][spotEvoSelected.size - 1] || name;
+        }
+    } else {
+        spotEvoSelected.add(name);
+    }
     renderSpotPrices(true);
+    renderSpreadDashboard();
     updateTermStructure();
     updateSpotEvolution();
+    renderSpotEvolutionInfo();
 }
 
 function _getChange(sym, nDays) {
@@ -254,7 +259,7 @@ function renderSpotPrices(loaded) {
             .replace('Heating Oil (HO)', 'Heating Oil');
         const color = isDarkMode ? cfg.colorDark : cfg.color;
         const decimals = price != null && price < 10 ? 3 : 2;
-        const isSelected = selectedCommodity === name;
+        const isSelected = spotEvoSelected.has(name);
         const chg1d = loaded ? _getChange(cfg.continuous, 1) : null;
         const chgYtd = loaded ? _getYtdChange(cfg.continuous) : null;
 
@@ -312,32 +317,24 @@ function renderSpotPrices(loaded) {
 
 let spotEvoPeriod = '1M';
 const spotEvoSelected = new Set(); // selected commodity names for the chart
+let selectedSpreadForEvolution = null;
 
 function toggleSpotEvoCommodity(name) {
+    selectedSpreadForEvolution = null;
     if (spotEvoSelected.has(name)) {
         spotEvoSelected.delete(name);
     } else {
         spotEvoSelected.add(name);
     }
     renderSpotEvoChips();
+    renderSpotPrices(true);
+    renderSpreadDashboard();
     updateSpotEvolution();
+    renderSpotEvolutionInfo();
 }
 
 function renderSpotEvoChips() {
-    const container = document.getElementById('spot-evo-chips');
-    if (!container) return;
-    let html = '';
-    for (const [name, cfg] of Object.entries(ENERGY_COMMODITIES)) {
-        if (liveSpots[name] == null) continue;
-        const shortName = name.replace(/ \(.*/, '');
-        const isActive = spotEvoSelected.has(name);
-        const color = isDarkMode ? cfg.colorDark : cfg.color;
-        const style = isActive
-            ? `background:${color}22;color:${color};border:1px solid ${color}`
-            : `background:var(--input-bg);color:var(--text-dim);border:1px solid var(--input-border)`;
-        html += `<span class="spot-evo-chip" onclick="toggleSpotEvoCommodity('${name}')" style="${style};font-family:var(--mono);font-size:8px;font-weight:600;padding:2px 7px;border-radius:3px;cursor:pointer;letter-spacing:0.3px;user-select:none">${shortName}</span>`;
-    }
-    container.innerHTML = html;
+    // Selection now lives directly in the Spot Prices table.
 }
 
 function setSpotEvoPeriod(period) {
@@ -346,6 +343,7 @@ function setSpotEvoPeriod(period) {
         btn.classList.toggle('active', btn.textContent.trim() === period);
     });
     updateSpotEvolution();
+    renderSpotEvolutionInfo();
 }
 
 function _getPeriodDays(period) {
@@ -370,12 +368,19 @@ function _getPeriodDays(period) {
 }
 
 function updateSpotEvolution() {
+    if (selectedSpreadForEvolution) {
+        updateSpreadEvolutionChart(selectedSpreadForEvolution);
+        return;
+    }
+
     if (spotEvoSelected.size === 0) {
         showChartEmpty('spot-evo-chart', 'Select commodities on the left');
+        renderSpotEvolutionInfo();
         return;
     }
     if (!marketData?.history) {
         showChartEmpty('spot-evo-chart', 'No data');
+        renderSpotEvolutionInfo();
         return;
     }
 
@@ -457,6 +462,245 @@ function updateSpotEvolution() {
     };
 
     Plotly.react('spot-evo-chart', traces, layout, CHART_CONFIG);
+    renderSpotEvolutionInfo();
+}
+
+function updateSpreadEvolutionChart(spreadKey) {
+    const cc = getChartColors();
+    const nDays = _getPeriodDays(spotEvoPeriod);
+    const def = SPREAD_DEFINITIONS[spreadKey];
+    const data = getSpreadHistory(spreadKey, nDays);
+    const subtitle = document.getElementById('spot-evo-subtitle');
+
+    if (!data || !def) {
+        showChartEmpty('spot-evo-chart', `No data for ${spreadKey}`);
+        if (subtitle) subtitle.textContent = 'SPREAD // NO DATA';
+        renderSpotEvolutionInfo();
+        return;
+    }
+
+    if (subtitle) subtitle.textContent = `${spreadKey.toUpperCase()} // ${spotEvoPeriod}`;
+
+    const vals = data.values;
+    const mean = vals.reduce((a, b) => a + b, 0) / vals.length;
+    const current = vals[vals.length - 1];
+    const traces = [
+        {
+            x: data.dates, y: vals,
+            type: 'scatter', mode: 'lines', name: spreadKey,
+            line: { color: isDarkMode ? '#a78bfa' : '#7c3aed', width: 2.5 },
+            fill: 'tozeroy',
+            fillcolor: isDarkMode ? 'rgba(167,139,250,0.08)' : 'rgba(124,58,237,0.06)',
+        },
+        {
+            x: [data.dates[0], data.dates[data.dates.length - 1]], y: [mean, mean],
+            type: 'scatter', mode: 'lines', name: `Mean (${mean.toFixed(2)})`,
+            line: { color: isDarkMode ? '#fbbf24' : '#d97706', width: 1.5, dash: 'dash' },
+        },
+    ];
+
+    const layout = {
+        paper_bgcolor: cc.bg, plot_bgcolor: cc.bg,
+        font: { color: cc.text, family: 'Inter, sans-serif', size: 11 },
+        margin: { l: 55, r: 30, t: 10, b: 40 },
+        xaxis: { gridcolor: cc.grid, zerolinecolor: cc.zero, tickfont: { size: 9, color: cc.muted } },
+        yaxis: {
+            gridcolor: cc.grid, zerolinecolor: cc.zero, tickfont: { size: 9, color: cc.muted },
+            title: { text: def.unit, font: { size: 10, color: cc.muted } },
+        },
+        showlegend: true,
+        legend: { x: 0, y: 1, font: { size: 9, color: cc.muted }, bgcolor: 'transparent' },
+        hovermode: 'x unified',
+        annotations: [{
+            x: 0.01, y: 0.98, xref: 'paper', yref: 'paper',
+            text: `Current: <b>${current.toFixed(2)}</b> ${def.unit}`,
+            showarrow: false,
+            font: { size: 10, color: cc.muted, family: 'JetBrains Mono, monospace' },
+            bgcolor: cc.bg, borderpad: 4,
+        }],
+    };
+
+    Plotly.react('spot-evo-chart', traces, layout, CHART_CONFIG);
+    renderSpotEvolutionInfo();
+}
+
+function _shortCommodityName(name) {
+    return name
+        .replace('WTI Crude Oil (CL)', 'WTI')
+        .replace('Brent Crude Oil (BZ)', 'Brent')
+        .replace('Henry Hub Nat Gas (NG)', 'HH')
+        .replace('TTF Natural Gas', 'TTF')
+        .replace('RBOB Gasoline (RB)', 'RBOB')
+        .replace('Heating Oil (HO)', 'HO')
+        .replace('ICE Gasoil (GO)', 'GO')
+        .replace(/ \(.*/, '');
+}
+
+function _fmtSignedValue(v, suffix = '%') {
+    if (v == null || Number.isNaN(v)) return '<span style="color:var(--text-dim)">—</span>';
+    const color = v >= 0
+        ? (isDarkMode ? '#34d399' : '#059669')
+        : (isDarkMode ? '#f87171' : '#dc2626');
+    const sign = v >= 0 ? '+' : '';
+    return `<span style="color:${color}">${sign}${v.toFixed(2)}${suffix}</span>`;
+}
+
+function _historyStats(sym, lookback = 252) {
+    const hist = marketData?.history?.[sym];
+    if (!hist?.close?.length) return null;
+    const values = hist.close.slice(Math.max(0, hist.close.length - lookback)).filter(v => v != null);
+    if (values.length < 2) return null;
+    const latest = values[values.length - 1];
+    const returns = [];
+    for (let i = 1; i < values.length; i++) {
+        if (values[i - 1]) returns.push((values[i] / values[i - 1]) - 1);
+    }
+    const mean = returns.reduce((a, b) => a + b, 0) / (returns.length || 1);
+    const variance = returns.reduce((s, r) => s + Math.pow(r - mean, 2), 0) / (returns.length || 1);
+    return {
+        latest,
+        high: Math.max(...values),
+        low: Math.min(...values),
+        vol: Math.sqrt(variance) * Math.sqrt(252) * 100,
+    };
+}
+
+function _statRow(label, valueHtml) {
+    return `<div class="overview-stat-row"><span>${label}</span><span>${valueHtml}</span></div>`;
+}
+
+function _renderCommodityStats(name) {
+    const cfg = ENERGY_COMMODITIES[name];
+    if (!cfg) return '<div style="color:var(--text-dim);font-size:11px">No commodity selected</div>';
+    const stats = _historyStats(cfg.continuous);
+    const price = liveSpots[name] ?? stats?.latest;
+    const decimals = price != null && price < 10 ? 3 : 2;
+    const priceHtml = price != null ? `${price.toFixed(decimals)}` : '—';
+
+    return `
+        <div class="overview-stat-title">${_shortCommodityName(name)}</div>
+        ${_statRow('Price', priceHtml)}
+        ${_statRow('1W', _fmtSignedValue(_getChange(cfg.continuous, 5)))}
+        ${_statRow('1M', _fmtSignedValue(_getChange(cfg.continuous, 21)))}
+        ${_statRow('3M', _fmtSignedValue(_getChange(cfg.continuous, 63)))}
+        ${_statRow('YTD', _fmtSignedValue(_getYtdChange(cfg.continuous)))}
+        ${_statRow('1Y', _fmtSignedValue(_getChange(cfg.continuous, 252)))}
+        ${_statRow('Vol (ann.)', stats ? `${stats.vol.toFixed(1)}%` : '—')}
+        ${_statRow('52w High', stats ? stats.high.toFixed(decimals) : '—')}
+        ${_statRow('52w Low', stats ? stats.low.toFixed(decimals) : '—')}
+    `;
+}
+
+function _renderSpreadStats(spreadKey) {
+    const data = getSpreadHistory(spreadKey, 252);
+    const def = SPREAD_DEFINITIONS[spreadKey];
+    if (!data || !def) return '<div style="color:var(--text-dim);font-size:11px">No spread selected</div>';
+    const vals = data.values;
+    const current = vals[vals.length - 1];
+    const delta = days => vals.length > days ? current - vals[vals.length - days - 1] : null;
+    return `
+        <div class="overview-stat-title">${spreadKey}</div>
+        ${_statRow('Current', `${current.toFixed(2)} ${def.unit}`)}
+        ${_statRow('1W Δ', _fmtSignedValue(delta(5), ''))}
+        ${_statRow('1M Δ', _fmtSignedValue(delta(21), ''))}
+        ${_statRow('3M Δ', _fmtSignedValue(delta(63), ''))}
+        ${_statRow('1Y Δ', _fmtSignedValue(delta(252), ''))}
+        ${_statRow('52w High', Math.max(...vals).toFixed(2))}
+        ${_statRow('52w Low', Math.min(...vals).toFixed(2))}
+    `;
+}
+
+function _returnsByDate(name, nDays) {
+    const cfg = ENERGY_COMMODITIES[name];
+    const hist = cfg ? marketData?.history?.[cfg.continuous] : null;
+    if (!hist?.dates?.length || !hist.close?.length) return {};
+    const start = Math.max(1, hist.dates.length - nDays);
+    const out = {};
+    for (let i = start; i < hist.dates.length; i++) {
+        const prev = hist.close[i - 1];
+        const curr = hist.close[i];
+        if (prev && curr != null) out[hist.dates[i]] = (curr / prev) - 1;
+    }
+    return out;
+}
+
+function _corr(a, b) {
+    const dates = Object.keys(a).filter(d => b[d] != null);
+    if (dates.length < 5) return null;
+    const xs = dates.map(d => a[d]);
+    const ys = dates.map(d => b[d]);
+    const mx = xs.reduce((s, v) => s + v, 0) / xs.length;
+    const my = ys.reduce((s, v) => s + v, 0) / ys.length;
+    let cov = 0, vx = 0, vy = 0;
+    for (let i = 0; i < xs.length; i++) {
+        const dx = xs[i] - mx;
+        const dy = ys[i] - my;
+        cov += dx * dy;
+        vx += dx * dx;
+        vy += dy * dy;
+    }
+    return vx && vy ? cov / Math.sqrt(vx * vy) : null;
+}
+
+function _renderCorrelationPanel(names) {
+    const periods = [
+        ['1M', 21],
+        ['3M', 63],
+        ['6M', 126],
+        ['1Y', 252],
+    ];
+    const displayNames = names.map(_shortCommodityName);
+
+    let html = '<div class="overview-stat-title">Correlation</div>';
+    for (const [label, days] of periods) {
+        const maps = names.map(n => _returnsByDate(n, days));
+        html += `<div class="corr-block"><div class="corr-label">${label}</div><table class="corr-table"><thead><tr><th></th>`;
+        for (const n of displayNames) html += `<th>${n}</th>`;
+        html += '</tr></thead><tbody>';
+        for (let i = 0; i < names.length; i++) {
+            html += `<tr><th>${displayNames[i]}</th>`;
+            for (let j = 0; j < names.length; j++) {
+                if (i === j) {
+                    html += '<td class="corr-self">1.00</td>';
+                } else {
+                    const c = _corr(maps[i], maps[j]);
+                    const color = c != null && c >= 0.7
+                        ? (isDarkMode ? '#34d399' : '#059669')
+                        : c != null && c >= 0.4
+                            ? (isDarkMode ? '#fbbf24' : '#d97706')
+                            : (isDarkMode ? '#60a5fa' : '#003061');
+                    html += `<td style="color:${color}">${c == null ? '—' : c.toFixed(2)}</td>`;
+                }
+            }
+            html += '</tr>';
+        }
+        html += '</tbody></table></div>';
+    }
+    return html;
+}
+
+function renderSpotEvolutionInfo() {
+    const title = document.getElementById('spot-evo-info-title');
+    const container = document.getElementById('spot-evo-info');
+    if (!container) return;
+
+    if (selectedSpreadForEvolution) {
+        if (title) title.textContent = 'SPREAD SNAPSHOT';
+        container.innerHTML = _renderSpreadStats(selectedSpreadForEvolution);
+        return;
+    }
+
+    const selected = [...spotEvoSelected];
+    if (selected.length === 0) {
+        if (title) title.textContent = 'MARKET SNAPSHOT';
+        container.innerHTML = '<div style="color:var(--text-dim);font-size:11px">Select a spot row to populate the chart.</div>';
+    } else if (selected.length === 1) {
+        if (title) title.textContent = 'MARKET SNAPSHOT';
+        container.innerHTML = _renderCommodityStats(selected[0]);
+    } else {
+        if (title) title.textContent = 'CORRELATION';
+        container.innerHTML = _renderCorrelationPanel(selected.slice(0, 5));
+    }
 }
 
 // ─── Spread Dashboard ───────────────────────────────────────────────────────
@@ -481,8 +725,10 @@ function renderSpreadDashboard() {
 
         const shortName = name.replace(' Spread', '').replace('Gasoline Crack', 'RBOB Crack').replace('Heating Oil Crack', 'HO Crack');
 
+        const isSpreadSelected = selectedSpreadForEvolution === name;
+
         html += `
-            <div class="spread-row" onclick="selectSpread('${name}')" title="${def.description}">
+            <div class="spread-row${isSpreadSelected ? ' spread-row-active' : ''}" onclick="selectSpread('${name}')" title="${def.description}">
                 <div class="spread-name">${shortName}</div>
                 <div class="spread-val" style="color:${valColor}">${val >= 0 ? '+' : ''}${val.toFixed(2)}</div>
                 <div class="spread-unit">${def.unit}</div>
@@ -497,8 +743,12 @@ function renderSpreadDashboard() {
 }
 
 function selectSpread(name) {
-    document.getElementById('spread-select').value = name;
-    updateSpreadChart();
+    selectedSpreadForEvolution = name;
+    spotEvoSelected.clear();
+    renderSpotPrices(true);
+    renderSpreadDashboard();
+    updateSpotEvolution();
+    renderSpotEvolutionInfo();
 }
 
 // ─── Term Structure ─────────────────────────────────────────────────────────
@@ -796,112 +1046,9 @@ function _trimToDays(dates, values, nDays) {
     return { dates: dates.slice(start), values: values.slice(start) };
 }
 
-// ─── Spread Monitor ─────────────────────────────────────────────────────────
-
-function populateSpreads() {
-    const select = document.getElementById('spread-select');
-    if (!select) return;
-    const currentValue = select.value;
-    select.innerHTML = '';
-    for (const [name, def] of Object.entries(SPREAD_DEFINITIONS)) {
-        // Skip spreads whose underlyings we don't have historical data for
-        if (def.formula !== 'custom') {
-            const longCfg = ENERGY_COMMODITIES[def.long];
-            const shortCfg = ENERGY_COMMODITIES[def.short];
-            if (!longCfg || !shortCfg) continue;
-            if (!marketData?.history?.[longCfg.continuous]
-                || !marketData?.history?.[shortCfg.continuous]) continue;
-        } else {
-            // Custom formulas: all required legs must be present
-            if (!marketData?.history?.['RB=F']
-                || !marketData?.history?.['HO=F']
-                || !marketData?.history?.['CL=F']) continue;
-        }
-        select.appendChild(new Option(name, name));
-    }
-    // Restore prior selection if still valid, else pick the first
-    if (currentValue && [...select.options].some(o => o.value === currentValue)) {
-        select.value = currentValue;
-    } else if (select.options.length > 0) {
-        select.selectedIndex = 0;
-    }
-}
-
 function onTimespreadCommodityChange() {
     populateTimespreads();
     updateTimespread();
-}
-
-function updateSpreadChart() {
-    const cc = getChartColors();
-    const spreadKey = document.getElementById('spread-select').value;
-    const nDays = parseInt(document.getElementById('spread-period').value) || 252;
-    if (!spreadKey) return;
-
-    const def = SPREAD_DEFINITIONS[spreadKey];
-
-    const data = getSpreadHistory(spreadKey, nDays);
-    if (!data) {
-        showChartEmpty('spread-monitor-chart', `No data for ${spreadKey}`);
-        document.getElementById('spread-subtitle').textContent = 'NO DATA';
-        return;
-    }
-
-    document.getElementById('spread-subtitle').textContent = `${def.description} // ${def.unit}`;
-
-    const vals = data.values;
-    const mean = vals.reduce((a, b) => a + b, 0) / vals.length;
-    const sorted = [...vals].sort((a, b) => a - b);
-    const p5 = sorted[Math.floor(sorted.length * 0.05)];
-    const p95 = sorted[Math.floor(sorted.length * 0.95)];
-    const current = vals[vals.length - 1];
-
-    const traces = [
-        {
-            x: data.dates, y: data.values,
-            type: 'scatter', mode: 'lines', name: data.name,
-            line: { color: isDarkMode ? '#a78bfa' : '#7c3aed', width: 2 },
-            fill: 'tozeroy',
-            fillcolor: isDarkMode ? 'rgba(167,139,250,0.08)' : 'rgba(124,58,237,0.06)',
-        },
-        {
-            x: [data.dates[0], data.dates[data.dates.length - 1]], y: [mean, mean],
-            type: 'scatter', mode: 'lines', name: `Mean (${mean.toFixed(2)})`,
-            line: { color: isDarkMode ? '#fbbf24' : '#d97706', width: 1.5, dash: 'dash' },
-        },
-        {
-            x: [data.dates[0], data.dates[data.dates.length - 1]], y: [p5, p5],
-            type: 'scatter', mode: 'lines', name: `P5 (${p5.toFixed(2)})`,
-            line: { color: cc.muted, width: 1, dash: 'dot' },
-        },
-        {
-            x: [data.dates[0], data.dates[data.dates.length - 1]], y: [p95, p95],
-            type: 'scatter', mode: 'lines', name: `P95 (${p95.toFixed(2)})`,
-            line: { color: cc.muted, width: 1, dash: 'dot' },
-        },
-    ];
-
-    const layout = {
-        paper_bgcolor: cc.bg, plot_bgcolor: cc.bg,
-        font: { color: cc.text, family: 'Inter, sans-serif', size: 11 },
-        xaxis: { gridcolor: cc.grid, zerolinecolor: cc.zero, tickfont: { size: 10, color: cc.muted } },
-        yaxis: {
-            gridcolor: cc.grid, zerolinecolor: cc.zero, tickfont: { size: 10, color: cc.muted },
-            title: { text: def.unit, font: { size: 11, color: cc.muted } },
-        },
-        margin: { l: 55, r: 30, t: 25, b: 40 },
-        legend: { bgcolor: 'rgba(0,0,0,0)', font: { size: 10, color: cc.muted }, orientation: 'h', yanchor: 'bottom', y: 1.02 },
-        hovermode: 'x unified',
-        annotations: [{
-            x: 0.01, y: 0.98, xref: 'paper', yref: 'paper',
-            text: `Current: <b>${current.toFixed(2)}</b> ${def.unit}`,
-            showarrow: false,
-            font: { size: 10, color: cc.muted, family: 'JetBrains Mono, monospace' },
-            bgcolor: cc.bg, borderpad: 4,
-        }],
-    };
-
-    Plotly.react('spread-monitor-chart', traces, layout, CHART_CONFIG);
 }
 
 // ─── Re-render on theme change ──────────────────────────────────────────────
@@ -913,6 +1060,7 @@ function refreshEnergyMarkets() {
     renderSpreadDashboard();
     updateTermStructure();
     updateSpotEvolution();
+    renderSpotEvolutionInfo();
     renderNewsFeed('physical', 'overview-news-feed');
     renderOpecWatchOverview();
 }
