@@ -179,7 +179,7 @@ body {
     overflow: hidden;
 }
 .col-left, .col-right { overflow-y: auto; overflow-x: hidden; }
-.overview-grid { grid-template-columns: 360px 1fr 240px; }
+.overview-grid { grid-template-columns: 340px 1fr; }
 .physical-grid { grid-template-columns: 240px 1fr 300px; }
 .geo-grid { grid-template-columns: 320px 1fr; }
 .cftc-grid { grid-template-columns: 260px 1fr; }
@@ -787,8 +787,8 @@ input[type="range"]::-moz-range-thumb {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    height: 42vh;
-    min-height: 300px;
+    height: 38vh;
+    min-height: 280px;
 }
 .charts-row-single {
     grid-template-columns: 1fr;
@@ -797,7 +797,7 @@ input[type="range"]::-moz-range-thumb {
 .chart-box {
     display: flex;
     flex-direction: column;
-    min-height: 300px;
+    min-height: 260px;
 }
 .chart-box .panel {
     flex: 1;
@@ -805,6 +805,68 @@ input[type="range"]::-moz-range-thumb {
     flex-direction: column;
     margin-bottom: 0;
     overflow: hidden;
+}
+
+/* ─── Price Evolution Row (full-width chart + info panel) ─── */
+.price-evo-row {
+    display: flex;
+    gap: 10px;
+    height: 44vh;
+    min-height: 300px;
+    flex-shrink: 0;
+}
+.price-evo-row .chart-box {
+    flex: 1;
+    min-width: 0;
+    min-height: unset;
+}
+.price-evo-info {
+    width: 210px;
+    min-width: 190px;
+    flex-shrink: 0;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 12px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.info-section-lbl {
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+/* ─── Correlation matrix ─── */
+.corr-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--mono);
+    font-size: 9px;
+}
+.corr-table th {
+    color: var(--text-dim);
+    padding: 2px 3px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 8px;
+    white-space: nowrap;
+}
+.corr-table td {
+    padding: 3px;
+    text-align: center;
+    font-size: 9px;
+    border-radius: 2px;
+}
+.corr-table .corr-label {
+    text-align: left;
+    color: var(--text-muted);
+    font-weight: 600;
+    padding-left: 0;
+    white-space: nowrap;
 }
 .chart-header {
     display: flex;
@@ -898,6 +960,11 @@ input[type="range"]::-moz-range-thumb {
     background: rgba(37, 99, 235, 0.04);
     border-left-color: var(--accent);
 }
+.spread-row-active {
+    background: rgba(124, 58, 237, 0.08);
+    border-left-color: var(--accent2) !important;
+}
+.spread-row-active .spread-name { font-weight: 700; }
 .spread-name {
     flex: 1;
     font-weight: 500;
@@ -1008,15 +1075,18 @@ input[type="range"]::-moz-range-thumb {
         gap: 8px;
         padding: 8px 10px;
     }
-    .overview-grid { grid-template-columns: 320px 1fr 220px; }
+    .overview-grid { grid-template-columns: 300px 1fr; }
     .physical-grid { grid-template-columns: 220px 1fr 280px; }
     .geo-grid { grid-template-columns: 300px 1fr; }
     .cftc-grid { grid-template-columns: 240px 1fr; }
+    .price-evo-info { width: 190px; min-width: 170px; }
 }
 
 @media (max-width: 1000px) {
     .charts-row { grid-template-columns: 1fr; height: auto; }
     .charts-row-single { height: auto; }
+    .price-evo-row { flex-direction: column; height: auto; }
+    .price-evo-info { width: 100%; min-width: unset; }
     .header-meta { display: none; }
 }
 
