@@ -1,15 +1,6 @@
 {
-  "updated": "2026-06-10T19:33:24Z",
+  "updated": "2026-06-10T21:57:11Z",
   "physical": [
-    {
-      "title": "U.S. Oil Inventories Continue Slide as Refiners Boost Runs",
-      "summary": "Crude oil inventories in the United States decreased by 7.2 million barrels during the week ending June 5, according to new data from the U.S. Energy Information Administration (EIA) released on We...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Crude-Oil/US-Oil-Inventories-Continue-Slide-as-Refiners-Boost-Runs.html",
-      "published": "2026-06-10T14:39:16Z",
-      "sentiment": "bearish",
-      "impact": "med"
-    },
     {
       "title": "Kazakhstan Oil Buyers Demand More Supply as Hormuz Closure Tightens Market",
       "summary": "Customers buying oil from Kazakhstan are urging the OPEC+ producer to ramp up crude supply and deliver the maximum available volumes, Kazakhstan\u2019s Energy Minister Yerlan Akkenzhenov said on Wednesd...",
@@ -18,6 +9,15 @@
       "published": "2026-06-10T11:30:00Z",
       "sentiment": "bullish",
       "impact": "high"
+    },
+    {
+      "title": "U.S. Oil Inventories Continue Slide as Refiners Boost Runs",
+      "summary": "Crude oil inventories in the United States decreased by 7.2 million barrels during the week ending June 5, according to new data from the U.S. Energy Information Administration (EIA) released on We...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Crude-Oil/US-Oil-Inventories-Continue-Slide-as-Refiners-Boost-Runs.html",
+      "published": "2026-06-10T14:39:16Z",
+      "sentiment": "bearish",
+      "impact": "med"
     },
     {
       "title": "EU Moves Against Russian LNG Shipping As Arctic Gas Imports Surge",
@@ -29,15 +29,6 @@
       "impact": "high"
     },
     {
-      "title": "Alberta Eyes General Corridor for New Pacific Oil Pipeline",
-      "summary": "Alberta is more likely to propose a \u201cgeneral corridor\u201d rather than a specific route for the new 1 million-barrels-per-day oil pipeline to the British Columbia coast that\u2019s expected to receive feder...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Alberta-Eyes-General-Corridor-for-New-Pacific-Oil-Pipeline.html",
-      "published": "2026-06-10T09:30:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
       "title": "Germany's Big LNG Deal With Canada May Never Deliver a Single Cargo",
       "summary": "The Iran war has made supplies of liquefied natural gas, or LNG, the most strategic since Russia\u2019s invasion of Ukraine in 2022. Suddenly, countries are scrambling to get their hands on molecules th...",
       "source": "",
@@ -47,21 +38,12 @@
       "impact": "low"
     },
     {
-      "title": "China Begins Tapping Oil Stockpiles as Middle East Crisis Drags On",
-      "summary": "China began tapping its huge oil reserves in May, three months after the Middle East conflict wiped out about a tenth of global supply, in a sign that Beijing is still refraining from paying top-do...",
+      "title": "Hormuz Shutdown Forces Malaysia to Overhaul Crude Supply Chain",
+      "summary": "Malaysia is looking to diversify its crude sourcing with supply from the U.S., South America, and Africa as the Hormuz crisis has choked off its key Middle Eastern deliveries, Malaysian Economy Min...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Begins-Tapping-Oil-Stockpiles-as-Middle-East-Crisis-Drags-On.html",
-      "published": "2026-06-10T10:30:00Z",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Shutdown-Forces-Malaysia-to-Overhaul-Crude-Supply-Chain.html",
+      "published": "2026-06-10T16:30:00Z",
       "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Central Asia Emerges as a New Front in the Minerals Supply Chain Battle",
-      "summary": "US and Central Asian officials will meet June 11-12 in the Kazakh capital Astana to explore deals concerning the mining and processing of critical minerals. The gathering marks a step forward for t...",
-      "source": "",
-      "url": "https://oilprice.com/Metals/Commodities/Central-Asia-Emerges-as-a-New-Front-in-the-Minerals-Supply-Chain-Battle.html",
-      "published": "2026-06-10T18:00:00Z",
-      "sentiment": "neutral",
       "impact": "low"
     },
     {
@@ -74,6 +56,15 @@
       "impact": "low"
     },
     {
+      "title": "The World's Biggest Battery Maker Is Turning Away From EVs",
+      "summary": "As global energy markets change, companies along the electric vehicles manufacturing supply chain are rushing to expand and diversify. The Trump administration\u2019s stance on clean energy and aggressi...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/The-Worlds-Biggest-Battery-Maker-Is-Turning-Away-From-EVs.html",
+      "published": "2026-06-10T21:00:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
       "title": "EnQuest Bets $833 Million on Malaysia's Offshore Oil",
       "summary": "EnQuest PLC has agreed to buy interests in four production sharing contracts offshore Malaysia from local state firm Petronas for up to $833 million, as the UK-based oil and gas producer bets on gr...",
       "source": "",
@@ -83,12 +74,39 @@
       "impact": "low"
     },
     {
-      "title": "Hormuz Shutdown Forces Malaysia to Overhaul Crude Supply Chain",
-      "summary": "Malaysia is looking to diversify its crude sourcing with supply from the U.S., South America, and Africa as the Hormuz crisis has choked off its key Middle Eastern deliveries, Malaysian Economy Min...",
+      "title": "Central Asia Emerges as a New Front in the Minerals Supply Chain Battle",
+      "summary": "US and Central Asian officials will meet June 11-12 in the Kazakh capital Astana to explore deals concerning the mining and processing of critical minerals. The gathering marks a step forward for t...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Shutdown-Forces-Malaysia-to-Overhaul-Crude-Supply-Chain.html",
-      "published": "2026-06-10T16:30:00Z",
-      "sentiment": "bullish",
+      "url": "https://oilprice.com/Metals/Commodities/Central-Asia-Emerges-as-a-New-Front-in-the-Minerals-Supply-Chain-Battle.html",
+      "published": "2026-06-10T18:00:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "Oil Prices Are Up. Investment Isn't Following",
+      "summary": "When the International Energy Agency issued its 2026 outlook on energy investment, it had a surprise for its audience, predicting a decline in oil investment, instead of an increase, as the current...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Prices-Are-Up-Investment-Isnt-Following.html",
+      "published": "2026-06-10T20:00:00Z",
+      "sentiment": "bearish",
+      "impact": "med"
+    },
+    {
+      "title": "UK Economy Set to Shrink as Iran Energy Shock Hits Growth",
+      "summary": "The UK economy is expected to contract despite a boost at the start of the year, with economists warning that the war in Iran\u2019s energy price shock will now show up in fresh data. Economists believe...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/UK-Economy-Set-to-Shrink-as-Iran-Energy-Shock-Hits-Growth.html",
+      "published": "2026-06-10T16:00:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "KKR Eyes $6.7 Billion Takeover of Irish Energy Distributor DCC",
+      "summary": "A consortium led by private equity firms KKR and Energy Capital Partners is in advanced discussions to acquire Irish energy distributor DCC in a deal that could value the company at more than \u00a35 bi...",
+      "source": "",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/KKR-Eyes-67-Billion-Takeover-of-Irish-Energy-Distributor-DCC.html",
+      "published": "2026-06-10T13:30:00Z",
+      "sentiment": "neutral",
       "impact": "low"
     },
     {
@@ -110,30 +128,12 @@
       "impact": "med"
     },
     {
-      "title": "KKR Eyes $6.7 Billion Takeover of Irish Energy Distributor DCC",
-      "summary": "A consortium led by private equity firms KKR and Energy Capital Partners is in advanced discussions to acquire Irish energy distributor DCC in a deal that could value the company at more than \u00a35 bi...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/KKR-Eyes-67-Billion-Takeover-of-Irish-Energy-Distributor-DCC.html",
-      "published": "2026-06-10T13:30:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
       "title": "Washington Walks a Tightrope After Striking Iran",
       "summary": "The US strikes on Iranian air defense and radar systems appear intended as a limited warning to Tehran rather than the opening salvo of a broader military campaign, according to senior US officials...",
       "source": "",
       "url": "https://oilprice.com/Energy/Energy-General/Washington-Walks-a-Tightrope-After-Striking-Iran.html",
       "published": "2026-06-10T14:00:00Z",
       "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "UK Economy Set to Shrink as Iran Energy Shock Hits Growth",
-      "summary": "The UK economy is expected to contract despite a boost at the start of the year, with economists warning that the war in Iran\u2019s energy price shock will now show up in fresh data. Economists believe...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/UK-Economy-Set-to-Shrink-as-Iran-Energy-Shock-Hits-Growth.html",
-      "published": "2026-06-10T16:00:00Z",
-      "sentiment": "neutral",
       "impact": "low"
     }
   ],
@@ -157,20 +157,20 @@
       "impact": "med"
     },
     {
-      "title": "US military launches new strikes on Iran after Apache downing near Strait of Hormuz",
-      "summary": "US military launches new strikes on Iran after Apache downing near Strait of Hormuz France 24",
-      "source": "France 24",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQakZDcHRFZnJNcU43WFVMLV9UUmhXTTFKS1RzcHRrREozYktBNzhGVkgtdU96bU84dTRRZHRCMXN2MXVQMlFHRVlaZW10SEFkOFRXWVI3a3hvTHBxamJLS245elhsWU50WEg4X2Uwb3A4ZUNISTd6ejNXdTdramZJNEJpcm9CejVpS2hVXzdZUGx2NjFkdm1GYy04OXNHUUVwN1JSR2l0aTFReDJqdEE?oc=5",
-      "published": "2026-06-09T02:41:19Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
       "title": "Strait of Hormuz tensions: EU sanctions Iranian naval command, two officials",
       "summary": "Strait of Hormuz tensions: EU sanctions Iranian naval command, two officials Gulf News",
       "source": "Gulf News",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVDFoSnNURWhtWlBBdVp3ZHRCRm5iREZIelFHSlpGdFJld2owTGNGbXZ6OEUzUmticnUwOXN5WUttNmZmTVJpOWdKVE81enB4N3NvMi1rcEtiNlhmWjE0TTN1TUJGbTlyYWZlUEo0T2YzWDdrWVhiQ1AwRDE4aXd4VE9rdFdhbFNPWGpwVWJ6a0swUVppeWVDeWRkcEhOb0dXYUJFc3hBakJrdjhIQ3JiMmk5ZUdRM1J4X0HSAcwBQVVfeXFMUGtnMFhDZmpIYlQ2b015YUlRZFA3SjhRZDMtQ25teWZZd0NKaFlxZlNBRU9RZE5uOFFjX0gwTDVBUGF4dEgwWXZxZlUwZnVtV1dOT1dsUjNIV2k2WFdvQjM4TjVFSzRLLVBsaDlDdS11bzQxd0xIT3VlVjRFX3NiLURReHlmLTZZZFo2aDBPU1didGRYY0VNUTVBYWU2UVpSb3VoU3lYaUttbmZQNVctbkxqOFhYbHVWRlp3Z2V3Y09NOVF5TVhsX2R1bUJQ?oc=5",
       "published": "2026-06-08T12:00:57Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "EU Sanctions Two Iranians and One Entity Over Strait of Hormuz Blockade",
+      "summary": "EU Sanctions Two Iranians and One Entity Over Strait of Hormuz Blockade energynews.pro",
+      "source": "energynews.pro",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPa0dpTG1ScWRWUXBmWkk1cjgyZnRsd2RleFhRY0ZRZGlZNUlWTTEwWndVdUFydmFMVjJ3ZDItWmh4WG9jSWJXS3pBSUVabjU2eUVMVWlyd0J3TFctb0duM3Fla216M3daYjBSWU1JdFFuOVZOYTB5T1dkZi1iVjhBUWFmVk5XTzJ2TEl2dHZsSkQ1RXRtY0ZxRk5lSFg4UQ?oc=5",
+      "published": "2026-06-08T17:16:48Z",
       "sentiment": "bullish",
       "impact": "med"
     },
@@ -193,13 +193,13 @@
       "impact": "med"
     },
     {
-      "title": "EU Sanctions Two Iranians and One Entity Over Strait of Hormuz Blockade",
-      "summary": "EU Sanctions Two Iranians and One Entity Over Strait of Hormuz Blockade energynews.pro",
-      "source": "energynews.pro",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPa0dpTG1ScWRWUXBmWkk1cjgyZnRsd2RleFhRY0ZRZGlZNUlWTTEwWndVdUFydmFMVjJ3ZDItWmh4WG9jSWJXS3pBSUVabjU2eUVMVWlyd0J3TFctb0duM3Fla216M3daYjBSWU1JdFFuOVZOYTB5T1dkZi1iVjhBUWFmVk5XTzJ2TEl2dHZsSkQ1RXRtY0ZxRk5lSFg4UQ?oc=5",
-      "published": "2026-06-08T17:16:48Z",
+      "title": "New EU sanctions against Iran: \"Blockade of the Strait of Hormuz is unacceptable\"",
+      "summary": "New EU sanctions against Iran: \"Blockade of the Strait of Hormuz is unacceptable\" Eunews",
+      "source": "Eunews",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOYWNWbzFFUjZiUjNqdnBTeklsVHhUbG15Y2FhM0VoZFlwUjgyMFdqZmU3b1FPNldIdTFXaDNMbHRCMEIwT1RIQ2trdlhFdW81dElOUy1HTGdJTXNwV3h4SC1YQlFIbGhyblJOTVoxVTE4cGVGeGd3aURTSFRGb3dNYWRNWXZKUFUwd09iQ2cya1E1NGZ3Wl9RQjR1RzNfMEcyQjhMTl9KRW9UdDJrc1k5X2U5Tl9IaFQ0Y2l1emRreXh2TEJST0c2anhXUmFkanR1Ql9MalFkX0h0bmJleWFjQl9CamN3STBTaXpucnFLamhfQ2Z6aHdyQkpYb0d1ZVRGaDE0QnVBWXQ?oc=5",
+      "published": "2026-06-08T16:04:22Z",
       "sentiment": "bullish",
-      "impact": "med"
+      "impact": "high"
     },
     {
       "title": "2026 Iran war | Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
@@ -211,13 +211,13 @@
       "impact": "low"
     },
     {
-      "title": "New EU sanctions against Iran: \"Blockade of the Strait of Hormuz is unacceptable\"",
-      "summary": "New EU sanctions against Iran: \"Blockade of the Strait of Hormuz is unacceptable\" Eunews",
-      "source": "Eunews",
-      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOYWNWbzFFUjZiUjNqdnBTeklsVHhUbG15Y2FhM0VoZFlwUjgyMFdqZmU3b1FPNldIdTFXaDNMbHRCMEIwT1RIQ2trdlhFdW81dElOUy1HTGdJTXNwV3h4SC1YQlFIbGhyblJOTVoxVTE4cGVGeGd3aURTSFRGb3dNYWRNWXZKUFUwd09iQ2cya1E1NGZ3Wl9RQjR1RzNfMEcyQjhMTl9KRW9UdDJrc1k5X2U5Tl9IaFQ0Y2l1emRreXh2TEJST0c2anhXUmFkanR1Ql9MalFkX0h0bmJleWFjQl9CamN3STBTaXpucnFLamhfQ2Z6aHdyQkpYb0d1ZVRGaDE0QnVBWXQ?oc=5",
-      "published": "2026-06-08T16:04:22Z",
+      "title": "Russian-held Crimea grapples with fuel shortages as Ukraine conducts more drone attacks",
+      "summary": "Russian-held Crimea grapples with fuel shortages as Ukraine conducts more drone attacks Reuters",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPSGllalBfeVQzMUlnOU5VZUZkeTNLUUc2ajJHV1pFU1JhTU9HdmpVeTdLSEpXd0lMVUdscFJMNldHZlZQa0ZvbmdpZzY1V25SeEF4UzRrQllqOXV2M3lwZ21iNlY4TXdDaHYwNFVqLXMtM0syS0RfSFNlTEUtRGgyazVHcXZuS282YlRXVElCTnVkZmt3d2hJbkZrVkxMU3ZNVlBJOG0xTXEtLXktY1h0QzlheW42ZjdYTDI3QkZR?oc=5",
+      "published": "2026-06-10T04:03:00Z",
       "sentiment": "bullish",
-      "impact": "high"
+      "impact": "med"
     },
     {
       "title": "Israel Halts Iran Strikes After Trump Claims Progress Toward Nuclear Talks, Officials Say",
@@ -229,40 +229,13 @@
       "impact": "low"
     },
     {
-      "title": "EU sanctions target Iranian figures over alleged Strait of Hormuz toll scheme",
-      "summary": "EU sanctions target Iranian figures over alleged Strait of Hormuz toll scheme The Brussels Times",
-      "source": "The Brussels Times",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZm9UWWNWNUdhem4wbS15d2lQQ3h2ZzM1WkFlWEwyc0xNOFhBNTVLT1RVSVdOS09DUkJUTTY4WGN4aEVUT0pLSW9Qd3JBVTlNUTVYVmd6Z3pOcFpVblVOQW9wTmVTN3FjejFReURUc2Z2anZkV1dFUTZJcE5zNzJBNExQOGlVRkpycWxUTHpDVDB4OTIzSkpKM0lmdE0yczBqYUQwbjl0RmZ0UEQ5UlVVczB1MHR5Zw?oc=5",
-      "published": "2026-06-08T23:41:56Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Israel/US-Iran conflict 2026: Reopening the Strait of Hormuz",
-      "summary": "Israel/US-Iran conflict 2026: Reopening the Strait of Hormuz The House of Commons Library",
-      "source": "The House of Commons Library",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE80STBNUVB5YWJXbk81b3RHaTlneWRQRGpLY3lMcUtPZFM1Vk9td3UzZU1wc242cmMtU0l2LTVXakxuNC1FcnR0cjBhM0d6SEQ4TVBIbjhJNEZ6OVFrZW8xTzJYUFRVdmcwMDc0YlFSa2E3WHVS?oc=5",
-      "published": "2026-06-08T07:00:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Oil Prices Rise on Renewed U.S.-Iran Tensions After Military Strikes - Low Estimate Range",
-      "summary": "Oil Prices Rise on Renewed U.S.-Iran Tensions After Military Strikes - Low Estimate Range newsline.com",
-      "source": "newsline.com",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRHZ1dm91R0R3TFpaNmVpSmdiQW8xQmFKQ3JaUlJJbzNYNWNGbmZfVFBKMFRhSWlKalJpc0d3VGZQUWJXRUdzbkJCYWJ2Q3o1RHNsTVY1dHk1bU1TSUdpa3BxaHNQa0dGQzF2enF6WldjYmZ2NnlKU2g2aEJManJ4ZktnYTQ4Yjd0dE55UTM4QkZPMGNISTduNi1rSzdjRUlDcExYRXZEakk?oc=5",
-      "published": "2026-06-10T03:26:34Z",
+      "title": "EU Imposes New Sanctions on Iran Over Strait of Hormuz Restrictions",
+      "summary": "EU Imposes New Sanctions on Iran Over Strait of Hormuz Restrictions NTD News",
+      "source": "NTD News",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdWpHQTdJd25GQWhxczdaSFhBZ3dvUHFfVWZlZ0R5WGtoQ3NGSFhxLWJxcjhpTGpiN3M2S2NXcWJ0OWhzMFlvVGZPSGlhNW9XbEMyUUNWUVhTVFNMbTVZSktSM3Vyam9meFVOYmhoby15TU1pbk9ITWo2M0VGNzZIdXRaUC0yeVg3MVN6Q1Z1VEhPXzZNLTFIeVQtVVVVMUgwU3c?oc=5",
+      "published": "2026-06-09T11:23:30Z",
       "sentiment": "bullish",
       "impact": "med"
-    },
-    {
-      "title": "EU Sanctions IRGC Navy Unit Over Strait of Hormuz Toll System",
-      "summary": "EU Sanctions IRGC Navy Unit Over Strait of Hormuz Toll System gCaptain",
-      "source": "gCaptain",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPS2kyV0thNlRWSEk2cmdHWk4wcjQxT2ItS2tBWXZPdW0wRXRxVVJ1SlhRcjFVbE9YWXRlYWdLZjg3RUJ0NXhhN01UTEVPLUhRaUtqT250RVQweG8wVlljelNKT29EUkdZWjBjejF1cWVnR0FzcjZnRXNjalYyTHNZeUp5QVNSNWR3bHN3?oc=5",
-      "published": "2026-06-08T15:01:23Z",
-      "sentiment": "bullish",
-      "impact": "low"
     },
     {
       "title": "EU sanctions Iranian officials over Strait of Hormuz disruptions",
@@ -274,13 +247,49 @@
       "impact": "med"
     },
     {
-      "title": "Russian-held Crimea grapples with fuel shortages as Ukraine conducts more drone attacks",
-      "summary": "Russian-held Crimea grapples with fuel shortages as Ukraine conducts more drone attacks The Detroit News",
-      "source": "The Detroit News",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWjdzZVJoZFBCeGtIcE9lTFFrdzZtcm9qeDZkTXZYcXZjcEk2bk5ENFRIbHJDanRmM05TQjhxSFBzajNBNk9HcS1Db0hKSUw3b3QyN2Vib2RuaGFxdm0tN2VVZExZOE5vM2YtR2dDMFZFWGdJQjFwRHVKRkc2Q1dHWHVBSzJfYnhIV2hKVmZLQ0lqQzlEN3NZZnlrbXluZzF5WnNTS2M2cDAtcEMxSVhVNXphR3ZiS094UUtVYzNPaVpXXzVhWmlQVl9MQzhHc3RQb2VkM3ZRdGR5NFB1dW1yVzhR?oc=5",
-      "published": "2026-06-10T12:25:00Z",
+      "title": "Oil Prices Rise on Renewed U.S.-Iran Tensions After Military Strikes - Low Estimate Range",
+      "summary": "Oil Prices Rise on Renewed U.S.-Iran Tensions After Military Strikes - Low Estimate Range newsline.com",
+      "source": "newsline.com",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRHZ1dm91R0R3TFpaNmVpSmdiQW8xQmFKQ3JaUlJJbzNYNWNGbmZfVFBKMFRhSWlKalJpc0d3VGZQUWJXRUdzbkJCYWJ2Q3o1RHNsTVY1dHk1bU1TSUdpa3BxaHNQa0dGQzF2enF6WldjYmZ2NnlKU2g2aEJManJ4ZktnYTQ4Yjd0dE55UTM4QkZPMGNISTduNi1rSzdjRUlDcExYRXZEakk?oc=5",
+      "published": "2026-06-10T03:26:34Z",
       "sentiment": "bullish",
       "impact": "med"
+    },
+    {
+      "title": "The Geopolitical Importance of the Strait of Hormuz for Iran",
+      "summary": "The Geopolitical Importance of the Strait of Hormuz for Iran Centre for Arab Unity Studies",
+      "source": "Centre for Arab Unity Studies",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRjlEdnBDc01laFVUR2hDa2RtY0ZQcm5QOFB6RFJzT2xNMU5hYU9xYTZDOHI4bzhiZkhSMWsyWnR2OU5aWDhaM3ZUVnMxVTFvSVZmTGNWRXQtQy13UU1LRElFZW51YXhxYldYd0owY0IxTHhSZDV5MnR4aEpHNnVXOGJ4NWt2TW0tcUlUUQ?oc=5",
+      "published": "2026-06-10T13:46:27Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "EU Sanctions IRGC Navy Unit Over Strait of Hormuz Toll System",
+      "summary": "EU Sanctions IRGC Navy Unit Over Strait of Hormuz Toll System gCaptain",
+      "source": "gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPS2kyV0thNlRWSEk2cmdHWk4wcjQxT2ItS2tBWXZPdW0wRXRxVVJ1SlhRcjFVbE9YWXRlYWdLZjg3RUJ0NXhhN01UTEVPLUhRaUtqT250RVQweG8wVlljelNKT29EUkdZWjBjejF1cWVnR0FzcjZnRXNjalYyTHNZeUp5QVNSNWR3bHN3?oc=5",
+      "published": "2026-06-08T15:01:23Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "US tightens pressure on Iran with new sanctions and threats of more strikes",
+      "summary": "US tightens pressure on Iran with new sanctions and threats of more strikes South China Morning Post",
+      "source": "South China Morning Post",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZFJ6NldRQ3BOeS1rZ3ZiWWJUdVVZOTJwQU1vYThpc21tOWhMYzJja1Nsd1NwVFczLXg3Y2QwNkFFajV1UWlaVWUzQXktZzlUMEZvRVpXWS1GOE5hVjBDZnlhS0ZnRXl2cE81OGZjNWRfUUFXWjJmMHFscklIMFlEcnJVMUQxZWhLdzJPNlJGMFlvek5idHlsVHpYNDVEZTNxVnBZQTlFd085alFxNVHSAa4BQVVfeXFMTWRSejZXUUNwTnkta2d2YlliVHVVWTkycEFNb2E4aXNtbTloTGMyY2tTbHdTcFRXMy14N2NkMDZBRWo1dVFpWlVlM0F5LWc5VDBGb0VaV1ktRjhOYVYwQ2Z5YUtGZ0V5dnBPNThmYzVkX1FBV1oyZjBxbHJJSDBZRHJyVTFEMWVoS3cyTzZSRjBZb3pOYnR5bFR6WDQ1RGUzcVZwWUE5RXdPOWpRcTVR?oc=5",
+      "published": "2026-06-10T19:01:23Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "Israel/US-Iran conflict 2026: Reopening the Strait of Hormuz",
+      "summary": "Israel/US-Iran conflict 2026: Reopening the Strait of Hormuz The House of Commons Library",
+      "source": "The House of Commons Library",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE80STBNUVB5YWJXbk81b3RHaTlneWRQRGpLY3lMcUtPZFM1Vk9td3UzZU1wc242cmMtU0l2LTVXakxuNC1FcnR0cjBhM0d6SEQ4TVBIbjhJNEZ6OVFrZW8xTzJYUFRVdmcwMDc0YlFSa2E3WHVS?oc=5",
+      "published": "2026-06-08T07:00:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
     },
     {
       "title": "EU sanctions Iranians over restricting naval traffic in Hormuz",
@@ -292,20 +301,11 @@
       "impact": "med"
     },
     {
-      "title": "TEMPORARY DEAL \u2013 US Eases Russia Oil Sanctions to Tame Price Surge, Riling European Allies",
-      "summary": "TEMPORARY DEAL \u2013 US Eases Russia Oil Sanctions to Tame Price Surge, Riling European Allies EnergyNow.com",
-      "source": "EnergyNow.com",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQejE2ckRVdEhMTlM1dExrQlhHTjIwdk11M24waFF4VV9oSTNxRVBFMGNwYW9fTVhLcXVsd21VaUR0QVFackNpWVluc1I0MWZSdmZpTWpTM0JWTFNSZVh0d3pZYTNRMWRGeEQ4amlsM29kb01KZC01WHJnYW0waTlPbHZ3TDdnV21od0k5QVB0Q1hWSGZvbXc1YUtlNl8xZXJQandFS2otQ3dzMDdsUzRvTGZ3MzJVYUxwRFE?oc=5",
-      "published": "2026-06-08T19:44:18Z",
-      "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "Could Iran shut down global oil supplies? Understanding the Strait of Hormuz threat",
-      "summary": "Could Iran shut down global oil supplies? Understanding the Strait of Hormuz threat Latest news from Azerbaijan",
-      "source": "Latest news from Azerbaijan",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPakNaNmI2X2JId2FJTFZCbVpKeUJkc0o5UVVxbUdCUGJLQTg1cFFjOEk5V2FzSFBoWE91aXNwVWJMSmNjQzNhcDQtOEFGV3h4aFlMbXptcDFUWV9mVTBZb05MQ2tncWVwX1JLcGhXbTR6RkRzRzI1c1hqUGZaWVpiUGU4SWNJTjNKMEphMDRMX1BTTjdxdndTUjltTUU3dnJ3V2FJZ0hB?oc=5",
-      "published": "2026-06-08T23:17:37Z",
+      "title": "EU Proposes Visa Ban on Russian War Veterans and New Oil Sanctions",
+      "summary": "EU Proposes Visa Ban on Russian War Veterans and New Oil Sanctions The Moscow Times",
+      "source": "The Moscow Times",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNY0ozcDIzZllLc3A3V3lPVlRCSktiUDZyV0hfREt3M3lSY0ZSczBKSlJqRkhiV1RUWEstaHBhRlBIbVE1RG9IcFJhbGhJbkhWMVZqTXlJQXFzTFpXamxFcnlPR3Vwa2hWR0x3Xy1tM3BBLThyc1psbnRDYlAyZlFWQ3N4dm1oNEtwZ0dnQjlJRGdoQlQ5MkxrSE5CeXlaNm1KZUFmdkJ2N1MyUVNvbG5vMVhnQnpZUQ?oc=5",
+      "published": "2026-06-09T14:42:14Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -319,24 +319,6 @@
       "impact": "med"
     },
     {
-      "title": "Another 30 shadow fleet vessels on sanctions list for Russia, ban on servicing and more \u2013 von der Leyen",
-      "summary": "Another 30 shadow fleet vessels on sanctions list for Russia, ban on servicing and more \u2013 von der Leyen Interfax-Ukraine",
-      "source": "Interfax-Ukraine",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1yWF9GNkFYQmNHanJEeEFNNmJmUl9GT3A2a0tPbzA1RmRCSkg5WDl5SVJUNldBaXlDOHpDRURYNHcwUnFjelZCdW01QTFLXzJ4RUZEazNScTZDLUFreVZZOGhOZTdQV0HSAWdBVV95cUxNclhfRjZBWEJjR2pyRHhBTTZiZlJfRk9wNmtLT28wNUZkQkpIOVg5eUlSVDZXQWl5Qzh6Q0VEWDR3MFJxY3pWQnVtNUExS18yeEVGRGszUnE2Qy1Ba3lWWThoTmU3UFdB?oc=5",
-      "published": "2026-06-09T11:27:55Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "European Commission proposes 21st sanctions package targeting Russian energy finance and military access",
-      "summary": "European Commission proposes 21st sanctions package targeting Russian energy finance and military access mezha.net",
-      "source": "mezha.net",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5fWmVaNHRick5JdGNaZURXMHpMUXlmN1lMcS1KdEt2MGhUaEtrblV1c3hDRk15X18tTVlRZ1I0aE55NV9JazlHcGlodHRTUE9RQThYeTd4XzB6cXRxenBCZVBsaXBERmpOdW9pRFYxN2dKNnZu?oc=5",
-      "published": "2026-06-09T17:47:59Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
       "title": "Strait of Hormuz: New Era of Transit Fees and Tensions",
       "summary": "Strait of Hormuz: New Era of Transit Fees and Tensions Devdiscourse",
       "source": "Devdiscourse",
@@ -346,13 +328,31 @@
       "impact": "low"
     },
     {
-      "title": "Trump says US will hit Iran \u2018very hard\u2019 after easing sanctions on Russian oil",
-      "summary": "Trump says US will hit Iran \u2018very hard\u2019 after easing sanctions on Russian oil DD News",
-      "source": "DD News",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOR0dORmNSamNoT2U0Yk1fcmh4RUdBZmY0bW1JSWRHc2xSSm83U0p5UlFpNExlODFjVWhhalFLY0stc3RRSncyUVA5MmpSbFhHV2FiMHlFaHJhcDNsQW5rd2hHWTIwU05TZWlQVjRGUEY4OGQza1VyMDhNeTNycTFsdzQyT1ZfT25udHViM3FDUkhOa1REc2JEaDE4REt5X09rSnBN?oc=5",
-      "published": "2026-06-10T08:59:32Z",
-      "sentiment": "neutral",
+      "title": "TEMPORARY DEAL \u2013 US Eases Russia Oil Sanctions to Tame Price Surge, Riling European Allies",
+      "summary": "TEMPORARY DEAL \u2013 US Eases Russia Oil Sanctions to Tame Price Surge, Riling European Allies EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQejE2ckRVdEhMTlM1dExrQlhHTjIwdk11M24waFF4VV9oSTNxRVBFMGNwYW9fTVhLcXVsd21VaUR0QVFackNpWVluc1I0MWZSdmZpTWpTM0JWTFNSZVh0d3pZYTNRMWRGeEQ4amlsM29kb01KZC01WHJnYW0waTlPbHZ3TDdnV21od0k5QVB0Q1hWSGZvbXc1YUtlNl8xZXJQandFS2otQ3dzMDdsUzRvTGZ3MzJVYUxwRFE?oc=5",
+      "published": "2026-06-08T19:44:18Z",
+      "sentiment": "bullish",
       "impact": "med"
+    },
+    {
+      "title": "Ukraine's Drone Assault on Russia Means Gas Shortages and Putin Looks Powerless to Stop It",
+      "summary": "Ukraine's Drone Assault on Russia Means Gas Shortages and Putin Looks Powerless to Stop It National Security Journal",
+      "source": "National Security Journal",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNS2lRS0J0djJhaGhlVF8yeHZyQ1BLejl6cFktalJpbmxRcFlTR2JWMjlyYTdrODRKWnBBOVdkekFPNEpOZGoyVGdEbmpvdUFkVEtOYk5TLUVqUm5IQ0kyOEduRlN4OWVVUEN0eVVGSTFxa1hZWHZZaV9IN21tbUdibFFOa21GYmpUTENoUkViNHZ5SGEwMGRSNTRJTXQ2bW1vbXhkMGtkSXlibE9ac3NCYThsUFFxSlM4YXZfUnNDQlhyZWpy?oc=5",
+      "published": "2026-06-09T12:16:36Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "EU Sanctions Iran Guards Over Closure of Hormuz",
+      "summary": "EU Sanctions Iran Guards Over Closure of Hormuz The Defense Post",
+      "source": "The Defense Post",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBlNWtEeW1jTW94VTBIMlpVZ2JHRFJsc1NUSWRjR3M0ZVN3MER6NTJxY1ZHWUtnU19oNnpIVjJZSml6YXRNRDVxMWJycWtoOUtNa05OUDFCWmFYa3dvWDlzY2JwZ1VRb1kxaDdxSlZJa9IBdEFVX3lxTE5zSDBJemR3MC15SWNtTjBFUlpmRU1PTHN3dkp3UjhsVHBKSGMtUnFzNE9ybk54SE5vREFFUWdqbkU3V0NxRGdNekVDaFFYRDRxWGNoMUpKRUw2XzFnSFhUYTVNLXNERUE4REtaTzUtME0tMEhv?oc=5",
+      "published": "2026-06-09T11:40:15Z",
+      "sentiment": "bullish",
+      "impact": "low"
     },
     {
       "title": "UK targets Russia\u2019s Transneft in nearly 300 new sanctions on war\u2019s fourth anniversary",
