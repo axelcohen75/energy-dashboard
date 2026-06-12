@@ -59,14 +59,14 @@ COMMODITIES = {
         'continuous': 'LGO=F',
         'months': 0, 'unit': '$/ton',
     },
-    'EU Carbon (EUA)': {
-        'continuous': 'KRBN',
-        'months': 0, 'unit': '€/ton',
+    'EU Carbon EUA (CO2)': {
+        # SparkChange Physical Carbon ETC (LSE) — physically backed 1:1 by
+        # EUA allowances, so its USD price tracks the EUA spot price.
+        'continuous': 'CO2.L',
+        'months': 0, 'unit': '$/EUA',
     },
-    'German Power (DE)': {
-        'continuous': '4GBF.DE',
-        'months': 0, 'unit': '€/MWh',
-    },
+    # German Power (DE) comes from the ENTSO-E Transparency Platform,
+    # fetched separately in fetch_entsoe_power() (needs ENTSOE_TOKEN).
 }
 
 TIMESPREADS = {
@@ -317,6 +317,76 @@ def fetch_contract_history():
     return contract_history
 
 
+def fetch_entsoe_power():
+    """Fetch German day-ahead baseload power prices from ENTSO-E.
+
+    Requires the ENTSOE_TOKEN env var (free token from
+    https://transparency.entsoe.eu — register, then request an API key
+    by emailing transparency@entsoe.eu with subject 'Restful API access').
+    Returns (spot_price, history_dict) or (None, None) when unavailable.
+    """
+    import os
+    token = os.environ.get('ENTSOE_TOKEN')
+    if not token:
+        print("\nENTSOE_TOKEN not set — skipping German power (DE)")
+        return None, None
+
+    import urllib.request
+    import xml.etree.ElementTree as ET
+    from collections import defaultdict
+
+    print("\nFetching German day-ahead power (ENTSO-E)...")
+    bzn = '10Y1001A1001A82H'  # DE-LU bidding zone
+    daily = {}  # 'YYYY-MM-DD' -> mean €/MWh
+
+    end = datetime.datetime.now(datetime.timezone.utc)
+    # 4 chunks of ~90 days = 1 year of history
+    for chunk in range(4):
+        c_end = end - datetime.timedelta(days=90 * chunk)
+        c_start = c_end - datetime.timedelta(days=90)
+        url = (
+            'https://web-api.tp.entsoe.eu/api'
+            f'?securityToken={token}&documentType=A44'
+            f'&in_Domain={bzn}&out_Domain={bzn}'
+            f'&periodStart={c_start.strftime("%Y%m%d")}0000'
+            f'&periodEnd={c_end.strftime("%Y%m%d")}0000'
+        )
+        try:
+            with urllib.request.urlopen(url, timeout=60) as resp:
+                xml_data = resp.read()
+            root = ET.fromstring(xml_data)
+            ns = {'ns': root.tag.split('}')[0].strip('{')}
+            day_points = defaultdict(list)
+            for ts in root.findall('.//ns:TimeSeries', ns):
+                for period in ts.findall('.//ns:Period', ns):
+                    start_el = period.find('.//ns:timeInterval/ns:start', ns)
+                    if start_el is None:
+                        continue
+                    p_start = datetime.datetime.fromisoformat(start_el.text.replace('Z', '+00:00'))
+                    for pt in period.findall('.//ns:Point', ns):
+                        pos = int(pt.find('ns:position', ns).text)
+                        price = float(pt.find('ns:price.amount', ns).text)
+                        day = (p_start + datetime.timedelta(hours=pos - 1)).strftime('%Y-%m-%d')
+                        day_points[day].append(price)
+            for day, prices in day_points.items():
+                daily[day] = round(sum(prices) / len(prices), 2)
+        except Exception as e:
+            print(f"  chunk {chunk}: FAILED ({e})")
+
+    if not daily:
+        print("  No ENTSO-E data retrieved")
+        return None, None
+
+    dates = sorted(daily.keys())
+    history = {
+        'dates': dates,
+        'close': [daily[d] for d in dates],
+    }
+    spot = daily[dates[-1]]
+    print(f"  German Power (DE): {len(dates)} days, latest {spot} €/MWh")
+    return spot, history
+
+
 MARKET_INDICES = ['^GSPC', 'XLE', 'XOP', 'DXY=F', 'USO']
 
 
@@ -370,6 +440,12 @@ def main():
     timespreads = fetch_timespreads()
     contract_history = fetch_contract_history()
     indices = fetch_indices()
+
+    # German power via ENTSO-E (optional, requires ENTSOE_TOKEN)
+    de_spot, de_history = fetch_entsoe_power()
+    if de_spot is not None:
+        spots['German Power (DE)'] = de_spot
+        history['DE-PWR'] = de_history
 
     result = {
         'updated': datetime.datetime.now(datetime.timezone.utc).isoformat(),

@@ -38,7 +38,6 @@ function switchTab(tab) {
             try { Plotly.Plots.resize('spot-evo-chart'); } catch(e) {}
             try { Plotly.Plots.resize('term-structure-chart'); } catch(e) {}
             try { Plotly.Plots.resize('timespread-chart'); } catch(e) {}
-            try { Plotly.Plots.resize('briefing-chart'); } catch(e) {}
         } else if (tab === 'physical') {
             Plotly.Plots.resize('inventory-chart');
             try { Plotly.Plots.resize('opec-watch-chart'); } catch(e) {}
@@ -87,30 +86,95 @@ function showChartEmpty(chartId, msg) {
     }, CHART_CONFIG);
 }
 
-// ─── Overview View Switching ────────────────────────────────────────────────
+// ─── Overview Sector Switching ──────────────────────────────────────────────
 
-function switchOverviewView(view) {
+let currentSector = 'oil';
+
+function sectorCommodities() {
+    const cfg = MARKET_SECTORS[currentSector];
+    return (cfg?.commodities || []).filter(name => liveSpots[name] != null);
+}
+
+function switchOverviewSector(sector) {
+    if (!MARKET_SECTORS[sector]) return;
+    currentSector = sector;
+
     document.querySelectorAll('.ov-tab').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.view === view);
+        btn.classList.toggle('active', btn.dataset.sector === sector);
     });
-    document.getElementById('ov-charts-view').style.display = view === 'charts' ? '' : 'none';
-    document.getElementById('ov-briefing-view').style.display = view === 'briefing' ? '' : 'none';
 
-    if (view === 'charts') {
-        setTimeout(() => {
-            try { Plotly.Plots.resize('spot-evo-chart'); } catch(e) {}
-            try { Plotly.Plots.resize('term-structure-chart'); } catch(e) {}
-            try { Plotly.Plots.resize('timespread-chart'); } catch(e) {}
-        }, 50);
-    } else if (view === 'briefing') {
-        if (!document.getElementById('briefing-commodity').value) {
-            populateBriefingDropdown();
+    // Reset selection to the sector's default commodity
+    const cfg = MARKET_SECTORS[sector];
+    selectedSpreadForEvolution = null;
+    spotEvoSelected.clear();
+    tsComparisons = [];
+    renderComparisonTags();
+
+    const def = liveSpots[cfg.defaultCommodity] != null
+        ? cfg.defaultCommodity
+        : sectorCommodities()[0] || null;
+    if (def) {
+        selectedCommodity = def;
+        spotEvoSelected.add(def);
+    } else {
+        selectedCommodity = null;
+    }
+
+    // OPEC panel only makes sense for oil
+    const opecPanel = document.getElementById('overview-opec-panel');
+    if (opecPanel) opecPanel.style.display = cfg.showOpec ? '' : 'none';
+
+    // Re-populate sector-aware dropdowns
+    populateSectorDropdowns();
+
+    // Re-render everything
+    renderTickerStrip();
+    renderSpotPrices(true);
+    renderSpreadDashboard();
+    renderSeasonalOverview();
+    renderSectorBriefing();
+    renderOverviewNews();
+    updateTermStructure();
+    updateSpotEvolution();
+    renderSpotEvolutionInfo();
+    if (document.getElementById('ts-spread-select').options.length > 0) {
+        updateTimespread();
+    } else {
+        showChartEmpty('timespread-chart', 'No futures timespread data for this sector');
+        document.getElementById('timespread-subtitle').textContent = 'NO DATA';
+    }
+
+    setTimeout(() => {
+        try { Plotly.Plots.resize('spot-evo-chart'); } catch(e) {}
+        try { Plotly.Plots.resize('term-structure-chart'); } catch(e) {}
+        try { Plotly.Plots.resize('timespread-chart'); } catch(e) {}
+    }, 50);
+}
+
+function populateSectorDropdowns() {
+    const cfg = MARKET_SECTORS[currentSector];
+
+    // Term structure overlay dropdown: any commodity with curve data
+    const tsCompare = document.getElementById('ts-compare-commodity');
+    if (tsCompare) {
+        tsCompare.innerHTML = '<option value="">+ Overlay</option>';
+        for (const [name] of Object.entries(ENERGY_COMMODITIES)) {
+            if (liveSpots[name] != null && marketData?.termStructures?.[name]) {
+                tsCompare.appendChild(new Option(name, name));
+            }
         }
-        updateMarketBriefing();
-        loadAndRenderNews('physical', 'briefing-news-feed');
-        setTimeout(() => {
-            try { Plotly.Plots.resize('briefing-chart'); } catch(e) {}
-        }, 50);
+    }
+
+    // Timespread commodity dropdown: sector commodities with timespread data
+    const tsSpread = document.getElementById('ts-spread-commodity');
+    if (tsSpread) {
+        tsSpread.innerHTML = '';
+        for (const name of cfg.commodities) {
+            if (liveSpots[name] != null && TIMESPREAD_DEFINITIONS[name]) {
+                tsSpread.appendChild(new Option(name, name));
+            }
+        }
+        populateTimespreads();
     }
 }
 
@@ -132,7 +196,7 @@ function renderTickerStrip() {
             .replace('RBOB Gasoline (RB)', 'RBOB')
             .replace('Heating Oil (HO)', 'HO')
             .replace('ICE Gasoil (GO)', 'GASOIL')
-            .replace('EU Carbon (EUA)', 'EUA')
+            .replace('EU Carbon EUA (CO2)', 'EUA')
             .replace('German Power (DE)', 'DE PWR');
 
         const chg1d = _getChange(cfg.continuous, 1);
@@ -198,24 +262,8 @@ async function initEnergyMarkets() {
     // Load market data
     await loadMarketData();
 
-    // Populate dropdowns (only commodities that have data)
-    const tsCompareCommodity = document.getElementById('ts-compare-commodity');
-    const tsSpreadCommodity = document.getElementById('ts-spread-commodity');
-
-    for (const [name] of Object.entries(ENERGY_COMMODITIES)) {
-        if (liveSpots[name] != null) {
-            // Compare commodity dropdown: only if we have term structure data
-            if (marketData?.termStructures?.[name]) {
-                tsCompareCommodity.appendChild(new Option(name, name));
-            }
-            // Timespread dropdown: only if we have timespread data
-            if (TIMESPREAD_DEFINITIONS[name]) {
-                tsSpreadCommodity.appendChild(new Option(name, name));
-            }
-        }
-    }
-
-    populateTimespreads();
+    // Sector-aware dropdowns
+    populateSectorDropdowns();
 
     // Draw initial temporal spread chart now that dropdowns are filled
     if (document.getElementById('ts-spread-select').options.length > 0) {
@@ -232,9 +280,12 @@ async function initEnergyMarkets() {
         dateInput.value = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
     }
 
-    // Default: select WTI
-    const defaultCommodity = 'WTI Crude Oil (CL)';
-    if (liveSpots[defaultCommodity] != null) {
+    // Default: the current sector's lead commodity
+    const sectorCfg = MARKET_SECTORS[currentSector];
+    const defaultCommodity = liveSpots[sectorCfg.defaultCommodity] != null
+        ? sectorCfg.defaultCommodity
+        : sectorCommodities()[0] || null;
+    if (defaultCommodity) {
         selectedCommodity = defaultCommodity;
         spotEvoSelected.add(defaultCommodity);
     }
@@ -243,12 +294,15 @@ async function initEnergyMarkets() {
     renderTickerStrip();
     renderSpotPrices(true);
     renderSpreadDashboard();
+    renderSeasonalOverview();
+    renderSectorBriefing();
     updateTermStructure();
     updateSpotEvolution();
     renderSpotEvolutionInfo();
 
-    // Load news feed into Overview tab
-    loadAndRenderNews('physical', 'overview-news-feed');
+    // News feed (sector-filtered)
+    await loadAndRenderNews('physical', 'overview-news-feed');
+    renderOverviewNews();
 
     // OPEC Watch in right sidebar
     renderOpecWatchOverview();
@@ -275,6 +329,15 @@ function _timeAgo(date) {
 let selectedCommodity = null;  // currently selected commodity for term structure
 
 function selectCommodity(name) {
+    // Clicking a ticker that belongs to another sector jumps to that sector
+    const home = Object.keys(MARKET_SECTORS)
+        .find(s => MARKET_SECTORS[s].commodities.includes(name));
+    if (home && home !== currentSector) {
+        switchOverviewSector(home);
+        if (selectedCommodity === name) return;
+        spotEvoSelected.clear();
+    }
+
     selectedSpreadForEvolution = null;
     selectedCommodity = name;
     if (spotEvoSelected.has(name)) {
@@ -288,6 +351,7 @@ function selectCommodity(name) {
     renderTickerStrip();
     renderSpotPrices(true);
     renderSpreadDashboard();
+    renderSectorBriefing();
     updateTermStructure();
     updateSpotEvolution();
     renderSpotEvolutionInfo();
@@ -336,7 +400,10 @@ function renderSpotPrices(loaded) {
         <span style="font-family:var(--mono);font-size:7px;color:var(--text-dim);letter-spacing:0.5px;min-width:36px;text-align:right">YTD</span>
     </div>`;
 
-    for (const [name, cfg] of Object.entries(ENERGY_COMMODITIES)) {
+    const sectorList = MARKET_SECTORS[currentSector]?.commodities || Object.keys(ENERGY_COMMODITIES);
+    for (const name of sectorList) {
+        const cfg = ENERGY_COMMODITIES[name];
+        if (!cfg) continue;
         const price = liveSpots[name];
         if (loaded && price == null) continue;
 
@@ -346,7 +413,10 @@ function renderSpotPrices(loaded) {
             .replace('Henry Hub Nat Gas (NG)', 'HH Nat Gas')
             .replace('TTF Natural Gas', 'TTF Gas')
             .replace('RBOB Gasoline (RB)', 'RBOB Gasoline')
-            .replace('Heating Oil (HO)', 'Heating Oil');
+            .replace('Heating Oil (HO)', 'Heating Oil')
+            .replace('ICE Gasoil (GO)', 'ICE Gasoil')
+            .replace('EU Carbon EUA (CO2)', 'EU Carbon EUA')
+            .replace('German Power (DE)', 'German Power');
         const color = isDarkMode ? cfg.colorDark : cfg.color;
         const decimals = price != null && price < 10 ? 3 : 2;
         const isSelected = spotEvoSelected.has(name);
@@ -367,8 +437,8 @@ function renderSpotPrices(loaded) {
             </div>`;
     }
 
-    // Market indices separator
-    if (loaded && marketData?.indices) {
+    // Market indices separator (oil sector only — saves space elsewhere)
+    if (loaded && marketData?.indices && MARKET_SECTORS[currentSector]?.showIndices) {
         html += `<div style="border-top:1px solid var(--input-border);margin-top:6px;padding-top:6px">
             <div style="font-family:var(--mono);font-size:7px;color:var(--text-dim);letter-spacing:1px;padding:0 6px 4px">MARKET INDICES</div>`;
 
@@ -797,10 +867,13 @@ function renderSpotEvolutionInfo() {
 
 function renderSpreadDashboard() {
     const container = document.getElementById('spread-dashboard');
+    const wrap = document.getElementById('spread-dashboard-wrap');
+    const allowedCats = MARKET_SECTORS[currentSector]?.spreadCategories || null;
     let html = '';
     let lastCategory = '';
 
     for (const [name, def] of Object.entries(SPREAD_DEFINITIONS)) {
+        if (allowedCats && !allowedCats.includes(def.category)) continue;
         const val = computeSpreadValue(name);
         if (val == null) continue;
 
@@ -825,10 +898,8 @@ function renderSpreadDashboard() {
             </div>`;
     }
 
-    if (!html) {
-        html = '<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">No spread data</div>';
-    }
-
+    // Hide the whole block when the sector has no computable spreads
+    if (wrap) wrap.style.display = html ? '' : 'none';
     container.innerHTML = html;
 }
 
@@ -1149,14 +1220,13 @@ function refreshEnergyMarkets() {
     renderSpotPrices(true);
     renderSpotEvoChips();
     renderSpreadDashboard();
+    renderSeasonalOverview();
+    renderSectorBriefing();
     updateTermStructure();
     updateSpotEvolution();
     renderSpotEvolutionInfo();
-    renderNewsFeed('physical', 'overview-news-feed');
+    renderOverviewNews();
     renderOpecWatchOverview();
-    if (document.getElementById('ov-briefing-view').style.display !== 'none') {
-        updateMarketBriefing();
-    }
 }
 
 // ─── OPEC Watch Overview (right sidebar) ────────────────────────────────────
@@ -1221,30 +1291,10 @@ function renderOpecWatchOverview() {
     container.innerHTML = html;
 }
 
-// ─── Market Briefing ───────────────────────────────────────────────────────
+// ─── Sector Briefing (AI + computed recap) ─────────────────────────────────
 
-let briefingPeriod = '3M';
-
-function populateBriefingDropdown() {
-    const select = document.getElementById('briefing-commodity');
-    if (!select || select.options.length > 0) return;
-    for (const [name] of Object.entries(ENERGY_COMMODITIES)) {
-        if (liveSpots[name] != null) {
-            select.appendChild(new Option(name, name));
-        }
-    }
-    if (selectedCommodity && liveSpots[selectedCommodity] != null) {
-        select.value = selectedCommodity;
-    }
-}
-
-function setBriefingPeriod(period) {
-    briefingPeriod = period;
-    document.querySelectorAll('#briefing-periods .btn-xs').forEach(btn => {
-        btn.classList.toggle('active', btn.textContent.trim() === period);
-    });
-    updateMarketBriefing();
-}
+let briefingData = null;       // loaded from data/daily-briefing.json
+let briefingLoadAttempted = false;
 
 function _computeMA(close, n) {
     if (close.length < n) return null;
@@ -1272,221 +1322,207 @@ function _pctChange(arr, nDays) {
     return ((current - prev) / prev) * 100;
 }
 
-function updateMarketBriefing() {
-    const commodity = document.getElementById('briefing-commodity')?.value;
-    if (!commodity || !marketData?.history) return;
-
-    const cfg = ENERGY_COMMODITIES[commodity];
-    if (!cfg) return;
-    const hist = marketData.history[cfg.continuous];
-    if (!hist?.close?.length || hist.close.length < 10) {
-        document.getElementById('briefing-cards').innerHTML = '<div class="panel" style="text-align:center;color:var(--text-dim)">No historical data for this commodity</div>';
-        document.getElementById('briefing-recap').innerHTML = '';
-        return;
-    }
-
-    const close = hist.close;
-    const n = close.length;
-    const last = close[n - 1];
-    const prev = n > 1 ? close[n - 2] : last;
-    const decimals = last < 10 ? 4 : 2;
-
-    const chg1d = _pctChange(close, 1);
-    const chg1w = _pctChange(close, 5);
-    const chg1m = _pctChange(close, 21);
-    const chgYtd = _getYtdChange(cfg.continuous);
-    const chg1y = _pctChange(close, 252);
-
-    const ma20 = _computeMA(close, 20);
-    const ma50 = _computeMA(close, 50);
-    const ma200 = _computeMA(close, 200);
-
-    const rvol10 = _computeRealizedVol(close, 10);
-    const rvol30 = _computeRealizedVol(close, 30);
-    const rvol90 = _computeRealizedVol(close, 90);
-
-    const yearData = close.slice(-252);
-    const high52w = Math.max(...yearData);
-    const low52w = Math.min(...yearData);
-    const pctFromHigh = ((last - high52w) / high52w) * 100;
-    const pctFromLow = ((last - low52w) / low52w) * 100;
-
-    const fmtPct = (v) => {
-        if (v == null) return '<span style="color:var(--text-dim)">—</span>';
-        const sign = v >= 0 ? '+' : '';
-        const c = v >= 0
-            ? (isDarkMode ? '#34d399' : '#059669')
-            : (isDarkMode ? '#f87171' : '#dc2626');
-        return `<span style="color:${c}">${sign}${v.toFixed(2)}%</span>`;
-    };
-
-    let cardsHtml = '';
-
-    const dailyChg = last - prev;
-    const dailySign = dailyChg >= 0 ? '+' : '';
-    cardsHtml += `<div class="briefing-card">
-        <div class="briefing-card-label">LAST PRICE</div>
-        <div class="briefing-card-value">${last.toFixed(decimals)}</div>
-        <div class="briefing-card-sub">${dailySign}${dailyChg.toFixed(decimals)} (${fmtPct(chg1d)}) ${cfg.unit}</div>
-    </div>`;
-
-    cardsHtml += `<div class="briefing-card">
-        <div class="briefing-card-label">PERFORMANCE</div>
-        <div class="briefing-stat-row"><span class="briefing-stat-label">1 Day</span><span class="briefing-stat-value">${fmtPct(chg1d)}</span></div>
-        <div class="briefing-stat-row"><span class="briefing-stat-label">1 Week</span><span class="briefing-stat-value">${fmtPct(chg1w)}</span></div>
-        <div class="briefing-stat-row"><span class="briefing-stat-label">1 Month</span><span class="briefing-stat-value">${fmtPct(chg1m)}</span></div>
-        <div class="briefing-stat-row"><span class="briefing-stat-label">YTD</span><span class="briefing-stat-value">${fmtPct(chgYtd)}</span></div>
-        <div class="briefing-stat-row"><span class="briefing-stat-label">1 Year</span><span class="briefing-stat-value">${fmtPct(chg1y)}</span></div>
-    </div>`;
-
-    cardsHtml += `<div class="briefing-card">
-        <div class="briefing-card-label">MOVING AVERAGES</div>
-        <div class="briefing-stat-row"><span class="briefing-stat-label">20-day MA</span><span class="briefing-stat-value">${ma20 ? ma20.toFixed(decimals) : '—'}</span></div>
-        <div class="briefing-stat-row"><span class="briefing-stat-label">50-day MA</span><span class="briefing-stat-value">${ma50 ? ma50.toFixed(decimals) : '—'}</span></div>
-        <div class="briefing-stat-row"><span class="briefing-stat-label">200-day MA</span><span class="briefing-stat-value">${ma200 ? ma200.toFixed(decimals) : '—'}</span></div>
-        <div class="briefing-stat-row"><span class="briefing-stat-label">52w High</span><span class="briefing-stat-value">${high52w.toFixed(decimals)} (${fmtPct(pctFromHigh)})</span></div>
-        <div class="briefing-stat-row"><span class="briefing-stat-label">52w Low</span><span class="briefing-stat-value">${low52w.toFixed(decimals)} (${fmtPct(pctFromLow)})</span></div>
-    </div>`;
-
-    cardsHtml += `<div class="briefing-card">
-        <div class="briefing-card-label">REALIZED VOLATILITY</div>
-        <div class="briefing-stat-row"><span class="briefing-stat-label">10-day</span><span class="briefing-stat-value">${rvol10 ? rvol10.toFixed(1) + '%' : '—'}</span></div>
-        <div class="briefing-stat-row"><span class="briefing-stat-label">30-day</span><span class="briefing-stat-value">${rvol30 ? rvol30.toFixed(1) + '%' : '—'}</span></div>
-        <div class="briefing-stat-row"><span class="briefing-stat-label">90-day</span><span class="briefing-stat-value">${rvol90 ? rvol90.toFixed(1) + '%' : '—'}</span></div>
-    </div>`;
-
-    document.getElementById('briefing-cards').innerHTML = cardsHtml;
-
-    const tsEl = document.getElementById('briefing-timestamp');
-    if (tsEl) {
-        const dataTs = getDataTimestamp();
-        tsEl.textContent = dataTs ? `Data: ${_timeAgo(dataTs)}` : '';
-    }
-
-    _generateRecapText(commodity, cfg, {
-        last, decimals, chg1d, chg1w, chg1m, chgYtd,
-        ma20, ma50, ma200, rvol10, rvol30, rvol90,
-        high52w, low52w, pctFromHigh, pctFromLow,
-    });
-
-    _drawBriefingChart(commodity, cfg);
-}
-
-function _generateRecapText(commodity, cfg, s) {
-    const container = document.getElementById('briefing-recap');
+async function renderSectorBriefing() {
+    const container = document.getElementById('overview-briefing');
     if (!container) return;
 
+    // Load the AI briefing JSON once
+    if (!briefingLoadAttempted) {
+        briefingLoadAttempted = true;
+        try {
+            const resp = await fetch('data/daily-briefing.json');
+            if (resp.ok) briefingData = await resp.json();
+        } catch (e) { /* file absent — show setup notice */ }
+    }
+
+    let html = '';
+
+    // ── AI summary block (from real news + prices via Claude in CI) ──
+    const sec = briefingData?.sectors?.[currentSector];
+    if (sec?.summary) {
+        const gen = briefingData.generated ? new Date(briefingData.generated) : null;
+        html += `<div class="briefing-recap" style="font-size:11.5px;line-height:1.6">${sec.summary}</div>`;
+        if (Array.isArray(sec.drivers) && sec.drivers.length) {
+            html += '<div style="margin-top:8px">';
+            for (const d of sec.drivers) {
+                html += `<div style="display:flex;gap:6px;font-size:10.5px;color:var(--text-muted);padding:2px 0">
+                    <span style="color:var(--accent)">▸</span><span>${d}</span></div>`;
+            }
+            html += '</div>';
+        }
+        const srcs = (sec.sources || []).join(', ');
+        html += `<div style="font-size:7.5px;color:var(--text-dim);font-family:var(--mono);margin-top:8px;line-height:1.5">
+            ${gen ? `GENERATED ${_timeAgo(gen).toUpperCase()} · ` : ''}${briefingData.model || 'CLAUDE'} ·
+            BASED ON ${sec.headlineCount || '?'} HEADLINES${srcs ? ` (${srcs})` : ''}</div>`;
+    } else {
+        html += `<div style="font-size:10.5px;color:var(--text-dim);line-height:1.6;padding:4px 0">
+            AI briefing not yet generated.<br>
+            Add an <span style="font-family:var(--mono);color:var(--text-muted)">ANTHROPIC_API_KEY</span>
+            secret to the GitHub Actions workflow to enable a daily news-based
+            summary written by Claude from the day's real headlines.</div>`;
+    }
+
+    // ── Computed session recap (always available, 100% from price data) ──
+    const lead = selectedCommodity || MARKET_SECTORS[currentSector]?.defaultCommodity;
+    const cfg = ENERGY_COMMODITIES[lead];
+    const hist = cfg ? marketData?.history?.[cfg.continuous] : null;
+    if (cfg && hist?.close?.length >= 10) {
+        const close = hist.close;
+        const last = close[close.length - 1];
+        const decimals = last < 10 ? 4 : 2;
+        const s = {
+            last, decimals,
+            chg1d: _pctChange(close, 1),
+            chg1w: _pctChange(close, 5),
+            chg1m: _pctChange(close, 21),
+            ma50: _computeMA(close, 50),
+            ma200: _computeMA(close, 200),
+            rvol10: _computeRealizedVol(close, 10),
+            rvol30: _computeRealizedVol(close, 30),
+            high52w: Math.max(...close.slice(-252)),
+            low52w: Math.min(...close.slice(-252)),
+        };
+        html += `<div style="border-top:1px solid var(--input-border);margin-top:10px;padding-top:8px">
+            <div class="lbl lbl-sm" style="margin-bottom:6px">SESSION RECAP — ${lead.replace(/ \(.*/, '').toUpperCase()}</div>
+            <div class="briefing-recap" style="font-size:10.5px;line-height:1.55">${_recapHtml(lead, cfg, s)}</div>
+        </div>`;
+    }
+
+    container.innerHTML = html;
+}
+
+function _recapHtml(commodity, cfg, s) {
     const shortName = commodity.replace(/ \(.*/, '');
     const lines = [];
 
     if (s.chg1d != null) {
         const dir = s.chg1d >= 0 ? 'gaining' : 'declining';
         lines.push(`${shortName} closed at <b>${s.last.toFixed(s.decimals)} ${cfg.unit}</b>, ${dir} <b>${Math.abs(s.chg1d).toFixed(2)}%</b> on the session.`);
-    } else {
-        lines.push(`${shortName} last traded at <b>${s.last.toFixed(s.decimals)} ${cfg.unit}</b>.`);
     }
-
     const parts = [];
-    if (s.chg1w != null) parts.push(`${s.chg1w >= 0 ? '+' : ''}${s.chg1w.toFixed(1)}% over the past week`);
-    if (s.chg1m != null) parts.push(`${s.chg1m >= 0 ? '+' : ''}${s.chg1m.toFixed(1)}% over the past month`);
-    if (parts.length) lines.push(`The commodity is ${parts.join(' and ')}.`);
+    if (s.chg1w != null) parts.push(`${s.chg1w >= 0 ? '+' : ''}${s.chg1w.toFixed(1)}% on the week`);
+    if (s.chg1m != null) parts.push(`${s.chg1m >= 0 ? '+' : ''}${s.chg1m.toFixed(1)}% on the month`);
+    if (parts.length) lines.push(`It is ${parts.join(' and ')}.`);
 
-    if (s.ma50 != null) {
-        const above50 = s.last > s.ma50;
-        const dist50 = Math.abs((s.last - s.ma50) / s.ma50 * 100);
-        lines.push(`Price is trading <b>${dist50.toFixed(1)}% ${above50 ? 'above' : 'below'}</b> its 50-day moving average (${s.ma50.toFixed(s.decimals)}).`);
-    }
     if (s.ma200 != null) {
-        const above200 = s.last > s.ma200;
-        const dist200 = Math.abs((s.last - s.ma200) / s.ma200 * 100);
-        const trend = above200 ? 'bullish' : 'bearish';
-        lines.push(`The 200-day MA stands at ${s.ma200.toFixed(s.decimals)}, with price ${dist200.toFixed(1)}% ${above200 ? 'above' : 'below'} — maintaining a ${trend} medium-term trend.`);
+        const above = s.last > s.ma200;
+        const dist = Math.abs((s.last - s.ma200) / s.ma200 * 100);
+        lines.push(`Price is ${dist.toFixed(1)}% ${above ? 'above' : 'below'} the 200-day MA — ${above ? 'bullish' : 'bearish'} medium-term trend.`);
     }
-
     if (s.high52w != null && s.low52w != null) {
         const range = s.high52w - s.low52w;
-        const position = range > 0 ? ((s.last - s.low52w) / range * 100).toFixed(0) : '50';
-        lines.push(`Within its 52-week range of ${s.low52w.toFixed(s.decimals)} – ${s.high52w.toFixed(s.decimals)}, the current price sits at the <b>${position}th percentile</b>.`);
+        const pos = range > 0 ? ((s.last - s.low52w) / range * 100).toFixed(0) : '50';
+        lines.push(`Sitting at the <b>${pos}th percentile</b> of the 52-week range (${s.low52w.toFixed(s.decimals)} – ${s.high52w.toFixed(s.decimals)}).`);
     }
-
     if (s.rvol30 != null) {
-        let volComment = '';
+        let volNote = '';
         if (s.rvol10 != null) {
-            if (s.rvol10 > s.rvol30 * 1.2) volComment = ' Short-term volatility is elevated relative to the 30-day average, signaling increased market activity.';
-            else if (s.rvol10 < s.rvol30 * 0.8) volComment = ' Short-term volatility has compressed, suggesting a period of consolidation.';
+            if (s.rvol10 > s.rvol30 * 1.2) volNote = ' — short-term vol elevated';
+            else if (s.rvol10 < s.rvol30 * 0.8) volNote = ' — short-term vol compressed';
         }
-        lines.push(`30-day realized volatility stands at <b>${s.rvol30.toFixed(1)}%</b> annualized.${volComment}`);
+        lines.push(`30-day realized vol: <b>${s.rvol30.toFixed(1)}%</b>${volNote}.`);
     }
 
     const tsDefs = TIMESPREAD_DEFINITIONS[commodity];
     if (tsDefs && marketData?.timespreads) {
-        const frontSpread = tsDefs[0];
-        const tsData = marketData.timespreads[frontSpread?.name];
+        const front = tsDefs[0];
+        const tsData = marketData.timespreads[front?.name];
         if (tsData?.values?.length) {
-            const currentSpread = tsData.values[tsData.values.length - 1];
-            const structure = currentSpread > 0 ? 'backwardation' : 'contango';
-            lines.push(`The front-month calendar spread (${frontSpread.name}) is at <b>${currentSpread >= 0 ? '+' : ''}${currentSpread.toFixed(s.decimals)}</b>, indicating the market is in <b>${structure}</b>.`);
+            const cur = tsData.values[tsData.values.length - 1];
+            lines.push(`Front spread (${front.name}): <b>${cur >= 0 ? '+' : ''}${cur.toFixed(s.decimals)}</b> — <b>${cur > 0 ? 'backwardation' : 'contango'}</b>.`);
         }
     }
 
-    container.innerHTML = lines.map(l => `<p style="margin-bottom:8px">${l}</p>`).join('');
+    return lines.map(l => `<p style="margin-bottom:5px">${l}</p>`).join('');
 }
 
-function _drawBriefingChart(commodity, cfg) {
-    const hist = marketData?.history?.[cfg.continuous];
-    if (!hist?.close?.length) return;
+// ─── Sector-filtered News ───────────────────────────────────────────────────
 
-    const periodDays = { '1M': 30, '3M': 63, '6M': 126, '1Y': 252 }[briefingPeriod] || 63;
-    const startIdx = Math.max(0, hist.dates.length - periodDays);
-    const dates = hist.dates.slice(startIdx);
-    const close = hist.close.slice(startIdx);
+const SECTOR_NEWS_KEYWORDS = {
+    gas: ['gas', 'lng', 'ttf', 'henry hub', 'storage', 'pipeline', 'freeport',
+          'methane', 'gazprom', 'injection', 'withdrawal', 'nord stream'],
+    power: ['power', 'electricity', 'carbon', 'eua', 'ets', 'emission', 'renewable',
+            'solar', 'wind', 'nuclear', 'grid', 'utility', 'baseload', 'mwh'],
+};
 
-    const cc = getChartColors();
-    const color = isDarkMode ? cfg.colorDark : cfg.color;
+function renderOverviewNews() {
+    const container = document.getElementById('overview-news-feed');
+    if (!container || typeof newsData === 'undefined' || !newsData) return;
 
-    const traces = [{
-        x: dates, y: close,
-        type: 'scatter', mode: 'lines',
-        name: 'Price',
-        line: { color, width: 2 },
-        fill: 'tozeroy', fillcolor: color + '10',
-    }];
-
-    const fullClose = hist.close;
-    const maConfigs = [
-        { n: 20, label: '20d MA', dash: 'dot', color: isDarkMode ? '#fbbf24' : '#d97706' },
-        { n: 50, label: '50d MA', dash: 'dash', color: isDarkMode ? '#34d399' : '#059669' },
-    ];
-
-    for (const mac of maConfigs) {
-        if (fullClose.length >= mac.n + periodDays) {
-            const maValues = [];
-            for (let i = startIdx; i < hist.dates.length; i++) {
-                const slice = fullClose.slice(Math.max(0, i - mac.n + 1), i + 1);
-                maValues.push(slice.reduce((a, b) => a + b, 0) / slice.length);
-            }
-            traces.push({
-                x: dates, y: maValues,
-                type: 'scatter', mode: 'lines',
-                name: mac.label,
-                line: { color: mac.color, width: 1.5, dash: mac.dash },
-            });
-        }
+    const kws = SECTOR_NEWS_KEYWORDS[currentSector];
+    if (!kws) {
+        // Oil: default feed (most articles are oil-centric anyway)
+        renderNewsFeed('physical', 'overview-news-feed');
+        return;
     }
 
-    const layout = {
-        paper_bgcolor: cc.bg, plot_bgcolor: cc.bg,
-        font: { color: cc.text, family: 'Inter, sans-serif', size: 11 },
-        xaxis: { gridcolor: cc.grid, zerolinecolor: cc.zero, tickfont: { size: 9, color: cc.muted } },
-        yaxis: {
-            gridcolor: cc.grid, zerolinecolor: cc.zero,
-            tickfont: { size: 10, color: cc.muted },
-            title: { text: cfg.unit, font: { size: 10, color: cc.muted } },
-        },
-        margin: { l: 55, r: 30, t: 10, b: 40 },
-        legend: { bgcolor: 'rgba(0,0,0,0)', font: { size: 9, color: cc.muted }, orientation: 'h', yanchor: 'bottom', y: 1.02 },
-        hovermode: 'x unified',
-    };
+    const all = [...(newsData.physical || []), ...(newsData.geopolitics || [])];
+    const matches = all.filter(a => {
+        const text = ((a.title || '') + ' ' + (a.summary || '')).toLowerCase();
+        return kws.some(kw => text.includes(kw));
+    });
 
-    Plotly.react('briefing-chart', traces, layout, CHART_CONFIG);
+    // Fall back to the full feed when too few sector hits
+    const articles = matches.length >= 3 ? matches : (newsData.physical || []);
+
+    let html = '';
+    for (const a of articles.slice(0, 12)) {
+        const timeAgo = formatTimeAgo(a.published);
+        const sourceTag = a.source ? getSourceTag(a.source) : '';
+        const sentimentBadge = getSentimentBadge(a.sentiment);
+        html += `<div class="news-item">
+            <div class="news-header">${sourceTag}${sentimentBadge}<span class="news-time">${timeAgo}</span></div>
+            <div class="news-title">${a.title}</div>
+            <div class="news-summary">${a.summary || ''}</div>
+            <a href="${a.url}" target="_blank" rel="noopener" class="news-link">READ ARTICLE &rarr;</a>
+        </div>`;
+    }
+    if (!html) html = '<div style="color:var(--text-dim);font-size:11px;padding:12px;text-align:center">No sector news</div>';
+    container.innerHTML = html;
+}
+
+// ─── Seasonal Pattern (sector-aware) ────────────────────────────────────────
+
+const SECTOR_SEASONS = {
+    oil: [
+        { name: 'Refinery Maintenance', months: [2, 3], desc: 'Spring turnaround — lower runs, crude builds', color: '#d97706' },
+        { name: 'Summer Driving Season', months: [4, 5, 6, 7], desc: 'Peak gasoline demand — draws accelerate', color: '#dc2626' },
+        { name: 'Hurricane Season', months: [5, 6, 7, 8, 9, 10], desc: 'Gulf supply risk — Jun-Nov', color: '#7c3aed' },
+        { name: 'Winter Heating', months: [10, 11, 0, 1], desc: 'Peak distillate demand', color: '#003061' },
+    ],
+    gas: [
+        { name: 'Injection Season', months: [3, 4, 5, 6, 7, 8, 9], desc: 'Apr-Oct — storage builds', color: '#059669' },
+        { name: 'Withdrawal Season', months: [10, 11, 0, 1, 2], desc: 'Nov-Mar — storage draws', color: '#0891b2' },
+        { name: 'Hurricane Season', months: [5, 6, 7, 8, 9, 10], desc: 'Gulf LNG export risk — Jun-Nov', color: '#7c3aed' },
+        { name: 'Winter Heating', months: [10, 11, 0, 1], desc: 'Peak gas demand, TTF/HH volatility', color: '#003061' },
+        { name: 'Summer Cooling', months: [5, 6, 7], desc: 'Power-burn demand for AC load', color: '#dc2626' },
+    ],
+    power: [
+        { name: 'Winter Heating Demand', months: [10, 11, 0, 1], desc: 'Peak load + low solar — price spikes', color: '#003061' },
+        { name: 'Summer Cooling Demand', months: [5, 6, 7], desc: 'AC load peaks, hydro/nuclear constraints', color: '#dc2626' },
+        { name: 'EUA Compliance Cycle', months: [7, 8], desc: 'Surrender deadline Sep 30 — compliance buying', color: '#166534' },
+        { name: 'Solar Peak Season', months: [4, 5, 6, 7], desc: 'Midday price depression, negative hours', color: '#d97706' },
+        { name: 'Dunkelflaute Risk', months: [10, 11, 0], desc: 'Low wind + low solar — scarcity pricing', color: '#7c3aed' },
+    ],
+};
+
+function renderSeasonalOverview() {
+    const container = document.getElementById('overview-seasonal');
+    if (!container) return;
+
+    const month = new Date().getMonth();
+    const seasons = SECTOR_SEASONS[currentSector] || SECTOR_SEASONS.oil;
+
+    let html = '';
+    for (const s of seasons) {
+        const isActive = s.months.includes(month);
+        const opacity = isActive ? '1' : '0.35';
+        const activeColor = isDarkMode ? s.color + 'cc' : s.color;
+        const indicator = isActive ? `<span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:${activeColor};margin-right:4px;animation:pulse 2s infinite"></span>` : '';
+        html += `<div style="padding:4px 6px;opacity:${opacity};font-size:10px;${isActive ? `border-left:2px solid ${activeColor};` : ''}">
+            <div style="color:${isActive ? activeColor : 'var(--text-muted)'};font-weight:${isActive ? '600' : '400'};font-size:10px">${indicator}${s.name}</div>
+            <div style="color:var(--text-dim);font-size:9px;margin-top:1px">${s.desc}</div>
+        </div>`;
+    }
+    container.innerHTML = html;
 }

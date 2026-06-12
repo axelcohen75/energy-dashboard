@@ -42,13 +42,46 @@ const ENERGY_COMMODITIES = {
         unit: '$/ton', continuous: 'LGO=F',
         color: '#ca8a04', colorDark: '#eab308',
     },
-    'EU Carbon (EUA)': {
-        unit: '€/ton', continuous: 'KRBN',
+    'EU Carbon EUA (CO2)': {
+        // SparkChange Physical Carbon ETC (LSE) — each security is backed by
+        // one real EUA allowance, so its USD price tracks the EUA spot price.
+        unit: '$/EUA', continuous: 'CO2.L',
         color: '#166534', colorDark: '#4ade80',
     },
     'German Power (DE)': {
-        unit: '€/MWh', continuous: '4GBF.DE',
+        // Day-ahead baseload price from ENTSO-E Transparency Platform
+        // (requires ENTSOE_TOKEN secret in the data workflow).
+        unit: '€/MWh', continuous: 'DE-PWR',
         color: '#0e7490', colorDark: '#67e8f9',
+    },
+};
+
+// ─── Market Sectors (Overview tab) ──────────────────────────────────────────
+
+const MARKET_SECTORS = {
+    oil: {
+        label: 'OIL',
+        commodities: ['WTI Crude Oil (CL)', 'Brent Crude Oil (BZ)', 'RBOB Gasoline (RB)', 'Heating Oil (HO)', 'ICE Gasoil (GO)'],
+        spreadCategories: ['OIL', 'CRACK'],
+        defaultCommodity: 'WTI Crude Oil (CL)',
+        showIndices: true,
+        showOpec: true,
+    },
+    gas: {
+        label: 'GAS',
+        commodities: ['Henry Hub Nat Gas (NG)', 'TTF Natural Gas'],
+        spreadCategories: ['GAS'],
+        defaultCommodity: 'Henry Hub Nat Gas (NG)',
+        showIndices: false,
+        showOpec: false,
+    },
+    power: {
+        label: 'POWER & CARBON',
+        commodities: ['EU Carbon EUA (CO2)', 'German Power (DE)', 'TTF Natural Gas'],
+        spreadCategories: ['POWER'],
+        defaultCommodity: 'EU Carbon EUA (CO2)',
+        showIndices: false,
+        showOpec: false,
     },
 };
 

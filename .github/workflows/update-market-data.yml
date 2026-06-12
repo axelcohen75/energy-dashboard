@@ -24,7 +24,9 @@ jobs:
           pip install yfinance pandas playwright feedparser cot_reports
           playwright install --with-deps chromium
 
-      - name: Fetch market data (Yahoo Finance)
+      - name: Fetch market data (Yahoo Finance + ENTSO-E)
+        env:
+          ENTSOE_TOKEN: ${{ secrets.ENTSOE_TOKEN }}
         run: python scripts/fetch_market_data.py
 
       - name: Fetch physical data (EIA + Polymarket)
@@ -42,11 +44,17 @@ jobs:
         run: python scripts/fetch_cftc.py
         continue-on-error: true
 
+      - name: Generate AI daily briefing (Claude)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/generate_briefing.py
+        continue-on-error: true
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/market-data.json docs/data/physical-data.json docs/data/opec-watch.json docs/data/news-data.json docs/data/cftc-data.json docs/physical-markets.js
+          git add docs/data/ docs/physical-markets.js
           if git diff --staged --quiet; then
             echo "No data changes"
           else

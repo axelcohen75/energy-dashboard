@@ -111,7 +111,9 @@ body {
 .tab-content.active { display: block; }
 #tab-markets { display: none; flex-direction: column; }
 #tab-markets.active { display: flex; }
-#tab-markets .markets-grid { flex: 1; min-height: 0; }
+#tab-markets .markets-grid { flex: 1; min-height: 0; height: auto; }
+#tab-markets .ticker-strip,
+#tab-markets .overview-subtabs { flex-shrink: 0; }
 
 /* ─── Pricer sub-tabs (vanilla / crack spread) ─── */
 .pricer-mode-bar {
@@ -182,7 +184,28 @@ body {
     overflow: hidden;
 }
 .col-left, .col-right { overflow-y: auto; overflow-x: hidden; }
-.overview-grid { grid-template-columns: 430px 1fr; }
+.overview-grid { grid-template-columns: 350px 1fr 320px; }
+.overview-grid .col-right {
+    display: flex;
+    flex-direction: column;
+}
+.overview-news-panel {
+    flex: 1;
+    min-height: 200px;
+    overflow-y: auto;
+}
+.ai-badge {
+    font-family: var(--mono);
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    color: #fff;
+    border-radius: 3px;
+    padding: 1px 5px;
+    vertical-align: middle;
+    margin-left: 4px;
+}
 
 /* ─── Ticker Strip ─── */
 .ticker-strip {
@@ -254,69 +277,13 @@ body {
 .ov-tab:hover { color: var(--text-muted); }
 .ov-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
 
-/* ─── Market Briefing ─── */
-.briefing-container {
-    display: grid;
-    grid-template-columns: 1fr 320px;
-    gap: 10px;
-}
-.briefing-main { min-width: 0; }
-.briefing-side { min-width: 0; }
-.briefing-selector-panel {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 14px;
-}
-.briefing-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 8px;
-    margin-bottom: 10px;
-}
-.briefing-card {
-    background: var(--panel);
-    border: 1px solid var(--panel-border);
-    border-radius: 8px;
-    padding: 12px 14px;
-}
-.briefing-card-label {
-    font-family: var(--mono);
-    font-size: 8px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: var(--text-dim);
-    text-transform: uppercase;
-    margin-bottom: 6px;
-}
-.briefing-card-value {
-    font-family: var(--mono);
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--text);
-}
-.briefing-card-sub {
-    font-family: var(--mono);
-    font-size: 10px;
-    color: var(--text-muted);
-    margin-top: 2px;
-}
+/* ─── Briefing text ─── */
 .briefing-recap {
     font-family: var(--font);
     font-size: 13px;
     line-height: 1.7;
     color: var(--text);
 }
-.briefing-stat-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 4px 0;
-    border-bottom: 1px solid var(--panel-border);
-    font-size: 11px;
-}
-.briefing-stat-row:last-child { border-bottom: none; }
-.briefing-stat-label { color: var(--text-muted); }
-.briefing-stat-value { font-family: var(--mono); font-weight: 600; color: var(--text); }
 .physical-grid { grid-template-columns: 240px 1fr 300px; }
 .geo-grid { grid-template-columns: 320px 1fr; }
 .cftc-grid { grid-template-columns: 260px 1fr; }
@@ -329,11 +296,17 @@ body {
 }
 .overview-top-row {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 280px;
+    grid-template-columns: minmax(0, 1fr) 260px;
     gap: 10px;
-    min-height: 42vh;
+    height: 44vh;
+    min-height: 320px;
 }
-.overview-price-chart .chart-plot { min-height: 38vh; }
+.overview-top-row .chart-box,
+.overview-top-row .panel { overflow: hidden; }
+.overview-price-chart .chart-plot {
+    flex: 1;
+    min-height: 0;
+}
 .overview-info-box .panel {
     height: 100%;
     overflow-y: auto;
@@ -1213,7 +1186,7 @@ input[type="range"]::-moz-range-thumb {
         gap: 8px;
         padding: 8px 10px;
     }
-    .overview-grid { grid-template-columns: 380px 1fr; }
+    .overview-grid { grid-template-columns: 300px 1fr 280px; }
     .physical-grid { grid-template-columns: 220px 1fr 280px; }
     .geo-grid { grid-template-columns: 300px 1fr; }
     .cftc-grid { grid-template-columns: 240px 1fr; }
@@ -1223,7 +1196,6 @@ input[type="range"]::-moz-range-thumb {
     .charts-row { grid-template-columns: 1fr; height: auto; }
     .charts-row-single { height: auto; }
     .overview-top-row { grid-template-columns: 1fr; height: auto; }
-    .briefing-container { grid-template-columns: 1fr; }
     .header-meta { display: none; }
 }
 
