@@ -42,6 +42,14 @@ const ENERGY_COMMODITIES = {
         unit: '$/ton', continuous: 'LGO=F',
         color: '#ca8a04', colorDark: '#eab308',
     },
+    'EU Carbon (EUA)': {
+        unit: '€/ton', continuous: 'KRBN',
+        color: '#166534', colorDark: '#4ade80',
+    },
+    'German Power (DE)': {
+        unit: '€/MWh', continuous: '4GBF.DE',
+        color: '#0e7490', colorDark: '#67e8f9',
+    },
 };
 
 // 1 metric ton of gasoil ≈ 7.45 barrels (specific gravity ~0.845).

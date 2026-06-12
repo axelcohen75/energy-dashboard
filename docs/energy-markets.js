@@ -38,6 +38,7 @@ function switchTab(tab) {
             try { Plotly.Plots.resize('spot-evo-chart'); } catch(e) {}
             try { Plotly.Plots.resize('term-structure-chart'); } catch(e) {}
             try { Plotly.Plots.resize('timespread-chart'); } catch(e) {}
+            try { Plotly.Plots.resize('briefing-chart'); } catch(e) {}
         } else if (tab === 'physical') {
             Plotly.Plots.resize('inventory-chart');
             try { Plotly.Plots.resize('opec-watch-chart'); } catch(e) {}
@@ -84,6 +85,93 @@ function showChartEmpty(chartId, msg) {
         }],
         margin: { l: 55, r: 30, t: 25, b: 40 },
     }, CHART_CONFIG);
+}
+
+// ─── Overview View Switching ────────────────────────────────────────────────
+
+function switchOverviewView(view) {
+    document.querySelectorAll('.ov-tab').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.view === view);
+    });
+    document.getElementById('ov-charts-view').style.display = view === 'charts' ? '' : 'none';
+    document.getElementById('ov-briefing-view').style.display = view === 'briefing' ? '' : 'none';
+
+    if (view === 'charts') {
+        setTimeout(() => {
+            try { Plotly.Plots.resize('spot-evo-chart'); } catch(e) {}
+            try { Plotly.Plots.resize('term-structure-chart'); } catch(e) {}
+            try { Plotly.Plots.resize('timespread-chart'); } catch(e) {}
+        }, 50);
+    } else if (view === 'briefing') {
+        if (!document.getElementById('briefing-commodity').value) {
+            populateBriefingDropdown();
+        }
+        updateMarketBriefing();
+        loadAndRenderNews('physical', 'briefing-news-feed');
+        setTimeout(() => {
+            try { Plotly.Plots.resize('briefing-chart'); } catch(e) {}
+        }, 50);
+    }
+}
+
+// ─── Ticker Strip ──────────────────────────────────────────────────────────
+
+function renderTickerStrip() {
+    const container = document.getElementById('ticker-strip');
+    if (!container) return;
+    let html = '';
+
+    for (const [name, cfg] of Object.entries(ENERGY_COMMODITIES)) {
+        const price = liveSpots[name];
+        if (price == null) continue;
+        const shortName = name
+            .replace('WTI Crude Oil (CL)', 'WTI')
+            .replace('Brent Crude Oil (BZ)', 'BRENT')
+            .replace('Henry Hub Nat Gas (NG)', 'HH GAS')
+            .replace('TTF Natural Gas', 'TTF')
+            .replace('RBOB Gasoline (RB)', 'RBOB')
+            .replace('Heating Oil (HO)', 'HO')
+            .replace('ICE Gasoil (GO)', 'GASOIL')
+            .replace('EU Carbon (EUA)', 'EUA')
+            .replace('German Power (DE)', 'DE PWR');
+
+        const chg1d = _getChange(cfg.continuous, 1);
+        const decimals = price < 10 ? 3 : 2;
+        const chgStr = chg1d != null ? `${chg1d >= 0 ? '+' : ''}${chg1d.toFixed(2)}%` : '';
+        const chgColor = chg1d == null ? 'var(--text-dim)'
+            : chg1d >= 0 ? (isDarkMode ? '#34d399' : '#059669')
+            : (isDarkMode ? '#f87171' : '#dc2626');
+        const isActive = selectedCommodity === name;
+        const borderColor = isDarkMode ? cfg.colorDark : cfg.color;
+
+        html += `<div class="ticker-card${isActive ? ' active' : ''}" onclick="selectCommodity('${name}')" style="border-bottom:2px solid ${isActive ? borderColor : 'transparent'}">
+            <span class="ticker-name">${shortName}</span>
+            <span class="ticker-price">${price.toFixed(decimals)}</span>
+            <span class="ticker-change" style="color:${chgColor}">${chgStr}</span>
+        </div>`;
+    }
+
+    if (marketData?.indices) {
+        html += `<div style="border-left:2px solid var(--panel-border);margin-left:4px"></div>`;
+        for (const [sym, info] of Object.entries(MARKET_INDICES)) {
+            const data = marketData.indices[sym];
+            if (!data) continue;
+            const p = data.price;
+            const decimals = p > 1000 ? 0 : 2;
+            const chg = data.chg1d;
+            const chgStr = chg != null ? `${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%` : '';
+            const chgColor = chg == null ? 'var(--text-dim)'
+                : chg >= 0 ? (isDarkMode ? '#34d399' : '#059669')
+                : (isDarkMode ? '#f87171' : '#dc2626');
+            html += `<div class="ticker-card" style="opacity:0.8">
+                <span class="ticker-name">${info.label.replace('Energy ETF', 'ETF').replace('Oil & Gas E&P', 'E&P').replace('Dollar Index', 'DXY').replace('Oil Fund', 'USO')}</span>
+                <span class="ticker-price" style="font-size:12px">${p.toFixed(decimals)}</span>
+                <span class="ticker-change" style="color:${chgColor}">${chgStr}</span>
+            </div>`;
+        }
+    }
+
+    container.innerHTML = html;
 }
 
 // ─── Energy Markets Init ────────────────────────────────────────────────────
@@ -152,6 +240,7 @@ async function initEnergyMarkets() {
     }
 
     // Render everything
+    renderTickerStrip();
     renderSpotPrices(true);
     renderSpreadDashboard();
     updateTermStructure();
@@ -196,6 +285,7 @@ function selectCommodity(name) {
     } else {
         spotEvoSelected.add(name);
     }
+    renderTickerStrip();
     renderSpotPrices(true);
     renderSpreadDashboard();
     updateTermStructure();
@@ -1055,6 +1145,7 @@ function onTimespreadCommodityChange() {
 
 function refreshEnergyMarkets() {
     if (!marketsInitialized) return;
+    renderTickerStrip();
     renderSpotPrices(true);
     renderSpotEvoChips();
     renderSpreadDashboard();
@@ -1063,6 +1154,9 @@ function refreshEnergyMarkets() {
     renderSpotEvolutionInfo();
     renderNewsFeed('physical', 'overview-news-feed');
     renderOpecWatchOverview();
+    if (document.getElementById('ov-briefing-view').style.display !== 'none') {
+        updateMarketBriefing();
+    }
 }
 
 // ─── OPEC Watch Overview (right sidebar) ────────────────────────────────────
@@ -1125,4 +1219,274 @@ function renderOpecWatchOverview() {
     html += `<div style="font-size:7px;color:var(--text-dim);font-family:var(--mono);margin-top:6px;text-align:right">SOURCE: CME OPEC WATCH (OPTIONS-IMPLIED)</div>`;
 
     container.innerHTML = html;
+}
+
+// ─── Market Briefing ───────────────────────────────────────────────────────
+
+let briefingPeriod = '3M';
+
+function populateBriefingDropdown() {
+    const select = document.getElementById('briefing-commodity');
+    if (!select || select.options.length > 0) return;
+    for (const [name] of Object.entries(ENERGY_COMMODITIES)) {
+        if (liveSpots[name] != null) {
+            select.appendChild(new Option(name, name));
+        }
+    }
+    if (selectedCommodity && liveSpots[selectedCommodity] != null) {
+        select.value = selectedCommodity;
+    }
+}
+
+function setBriefingPeriod(period) {
+    briefingPeriod = period;
+    document.querySelectorAll('#briefing-periods .btn-xs').forEach(btn => {
+        btn.classList.toggle('active', btn.textContent.trim() === period);
+    });
+    updateMarketBriefing();
+}
+
+function _computeMA(close, n) {
+    if (close.length < n) return null;
+    const slice = close.slice(-n);
+    return slice.reduce((a, b) => a + b, 0) / n;
+}
+
+function _computeRealizedVol(close, n) {
+    if (close.length < n + 1) return null;
+    const returns = [];
+    for (let i = close.length - n; i < close.length; i++) {
+        if (close[i - 1] > 0) returns.push(Math.log(close[i] / close[i - 1]));
+    }
+    if (returns.length < 5) return null;
+    const mean = returns.reduce((a, b) => a + b, 0) / returns.length;
+    const variance = returns.reduce((a, r) => a + (r - mean) ** 2, 0) / (returns.length - 1);
+    return Math.sqrt(variance) * Math.sqrt(252) * 100;
+}
+
+function _pctChange(arr, nDays) {
+    if (!arr || arr.length < nDays + 1) return null;
+    const current = arr[arr.length - 1];
+    const prev = arr[arr.length - 1 - nDays];
+    if (!prev) return null;
+    return ((current - prev) / prev) * 100;
+}
+
+function updateMarketBriefing() {
+    const commodity = document.getElementById('briefing-commodity')?.value;
+    if (!commodity || !marketData?.history) return;
+
+    const cfg = ENERGY_COMMODITIES[commodity];
+    if (!cfg) return;
+    const hist = marketData.history[cfg.continuous];
+    if (!hist?.close?.length || hist.close.length < 10) {
+        document.getElementById('briefing-cards').innerHTML = '<div class="panel" style="text-align:center;color:var(--text-dim)">No historical data for this commodity</div>';
+        document.getElementById('briefing-recap').innerHTML = '';
+        return;
+    }
+
+    const close = hist.close;
+    const n = close.length;
+    const last = close[n - 1];
+    const prev = n > 1 ? close[n - 2] : last;
+    const decimals = last < 10 ? 4 : 2;
+
+    const chg1d = _pctChange(close, 1);
+    const chg1w = _pctChange(close, 5);
+    const chg1m = _pctChange(close, 21);
+    const chgYtd = _getYtdChange(cfg.continuous);
+    const chg1y = _pctChange(close, 252);
+
+    const ma20 = _computeMA(close, 20);
+    const ma50 = _computeMA(close, 50);
+    const ma200 = _computeMA(close, 200);
+
+    const rvol10 = _computeRealizedVol(close, 10);
+    const rvol30 = _computeRealizedVol(close, 30);
+    const rvol90 = _computeRealizedVol(close, 90);
+
+    const yearData = close.slice(-252);
+    const high52w = Math.max(...yearData);
+    const low52w = Math.min(...yearData);
+    const pctFromHigh = ((last - high52w) / high52w) * 100;
+    const pctFromLow = ((last - low52w) / low52w) * 100;
+
+    const fmtPct = (v) => {
+        if (v == null) return '<span style="color:var(--text-dim)">—</span>';
+        const sign = v >= 0 ? '+' : '';
+        const c = v >= 0
+            ? (isDarkMode ? '#34d399' : '#059669')
+            : (isDarkMode ? '#f87171' : '#dc2626');
+        return `<span style="color:${c}">${sign}${v.toFixed(2)}%</span>`;
+    };
+
+    let cardsHtml = '';
+
+    const dailyChg = last - prev;
+    const dailySign = dailyChg >= 0 ? '+' : '';
+    cardsHtml += `<div class="briefing-card">
+        <div class="briefing-card-label">LAST PRICE</div>
+        <div class="briefing-card-value">${last.toFixed(decimals)}</div>
+        <div class="briefing-card-sub">${dailySign}${dailyChg.toFixed(decimals)} (${fmtPct(chg1d)}) ${cfg.unit}</div>
+    </div>`;
+
+    cardsHtml += `<div class="briefing-card">
+        <div class="briefing-card-label">PERFORMANCE</div>
+        <div class="briefing-stat-row"><span class="briefing-stat-label">1 Day</span><span class="briefing-stat-value">${fmtPct(chg1d)}</span></div>
+        <div class="briefing-stat-row"><span class="briefing-stat-label">1 Week</span><span class="briefing-stat-value">${fmtPct(chg1w)}</span></div>
+        <div class="briefing-stat-row"><span class="briefing-stat-label">1 Month</span><span class="briefing-stat-value">${fmtPct(chg1m)}</span></div>
+        <div class="briefing-stat-row"><span class="briefing-stat-label">YTD</span><span class="briefing-stat-value">${fmtPct(chgYtd)}</span></div>
+        <div class="briefing-stat-row"><span class="briefing-stat-label">1 Year</span><span class="briefing-stat-value">${fmtPct(chg1y)}</span></div>
+    </div>`;
+
+    cardsHtml += `<div class="briefing-card">
+        <div class="briefing-card-label">MOVING AVERAGES</div>
+        <div class="briefing-stat-row"><span class="briefing-stat-label">20-day MA</span><span class="briefing-stat-value">${ma20 ? ma20.toFixed(decimals) : '—'}</span></div>
+        <div class="briefing-stat-row"><span class="briefing-stat-label">50-day MA</span><span class="briefing-stat-value">${ma50 ? ma50.toFixed(decimals) : '—'}</span></div>
+        <div class="briefing-stat-row"><span class="briefing-stat-label">200-day MA</span><span class="briefing-stat-value">${ma200 ? ma200.toFixed(decimals) : '—'}</span></div>
+        <div class="briefing-stat-row"><span class="briefing-stat-label">52w High</span><span class="briefing-stat-value">${high52w.toFixed(decimals)} (${fmtPct(pctFromHigh)})</span></div>
+        <div class="briefing-stat-row"><span class="briefing-stat-label">52w Low</span><span class="briefing-stat-value">${low52w.toFixed(decimals)} (${fmtPct(pctFromLow)})</span></div>
+    </div>`;
+
+    cardsHtml += `<div class="briefing-card">
+        <div class="briefing-card-label">REALIZED VOLATILITY</div>
+        <div class="briefing-stat-row"><span class="briefing-stat-label">10-day</span><span class="briefing-stat-value">${rvol10 ? rvol10.toFixed(1) + '%' : '—'}</span></div>
+        <div class="briefing-stat-row"><span class="briefing-stat-label">30-day</span><span class="briefing-stat-value">${rvol30 ? rvol30.toFixed(1) + '%' : '—'}</span></div>
+        <div class="briefing-stat-row"><span class="briefing-stat-label">90-day</span><span class="briefing-stat-value">${rvol90 ? rvol90.toFixed(1) + '%' : '—'}</span></div>
+    </div>`;
+
+    document.getElementById('briefing-cards').innerHTML = cardsHtml;
+
+    const tsEl = document.getElementById('briefing-timestamp');
+    if (tsEl) {
+        const dataTs = getDataTimestamp();
+        tsEl.textContent = dataTs ? `Data: ${_timeAgo(dataTs)}` : '';
+    }
+
+    _generateRecapText(commodity, cfg, {
+        last, decimals, chg1d, chg1w, chg1m, chgYtd,
+        ma20, ma50, ma200, rvol10, rvol30, rvol90,
+        high52w, low52w, pctFromHigh, pctFromLow,
+    });
+
+    _drawBriefingChart(commodity, cfg);
+}
+
+function _generateRecapText(commodity, cfg, s) {
+    const container = document.getElementById('briefing-recap');
+    if (!container) return;
+
+    const shortName = commodity.replace(/ \(.*/, '');
+    const lines = [];
+
+    if (s.chg1d != null) {
+        const dir = s.chg1d >= 0 ? 'gaining' : 'declining';
+        lines.push(`${shortName} closed at <b>${s.last.toFixed(s.decimals)} ${cfg.unit}</b>, ${dir} <b>${Math.abs(s.chg1d).toFixed(2)}%</b> on the session.`);
+    } else {
+        lines.push(`${shortName} last traded at <b>${s.last.toFixed(s.decimals)} ${cfg.unit}</b>.`);
+    }
+
+    const parts = [];
+    if (s.chg1w != null) parts.push(`${s.chg1w >= 0 ? '+' : ''}${s.chg1w.toFixed(1)}% over the past week`);
+    if (s.chg1m != null) parts.push(`${s.chg1m >= 0 ? '+' : ''}${s.chg1m.toFixed(1)}% over the past month`);
+    if (parts.length) lines.push(`The commodity is ${parts.join(' and ')}.`);
+
+    if (s.ma50 != null) {
+        const above50 = s.last > s.ma50;
+        const dist50 = Math.abs((s.last - s.ma50) / s.ma50 * 100);
+        lines.push(`Price is trading <b>${dist50.toFixed(1)}% ${above50 ? 'above' : 'below'}</b> its 50-day moving average (${s.ma50.toFixed(s.decimals)}).`);
+    }
+    if (s.ma200 != null) {
+        const above200 = s.last > s.ma200;
+        const dist200 = Math.abs((s.last - s.ma200) / s.ma200 * 100);
+        const trend = above200 ? 'bullish' : 'bearish';
+        lines.push(`The 200-day MA stands at ${s.ma200.toFixed(s.decimals)}, with price ${dist200.toFixed(1)}% ${above200 ? 'above' : 'below'} — maintaining a ${trend} medium-term trend.`);
+    }
+
+    if (s.high52w != null && s.low52w != null) {
+        const range = s.high52w - s.low52w;
+        const position = range > 0 ? ((s.last - s.low52w) / range * 100).toFixed(0) : '50';
+        lines.push(`Within its 52-week range of ${s.low52w.toFixed(s.decimals)} – ${s.high52w.toFixed(s.decimals)}, the current price sits at the <b>${position}th percentile</b>.`);
+    }
+
+    if (s.rvol30 != null) {
+        let volComment = '';
+        if (s.rvol10 != null) {
+            if (s.rvol10 > s.rvol30 * 1.2) volComment = ' Short-term volatility is elevated relative to the 30-day average, signaling increased market activity.';
+            else if (s.rvol10 < s.rvol30 * 0.8) volComment = ' Short-term volatility has compressed, suggesting a period of consolidation.';
+        }
+        lines.push(`30-day realized volatility stands at <b>${s.rvol30.toFixed(1)}%</b> annualized.${volComment}`);
+    }
+
+    const tsDefs = TIMESPREAD_DEFINITIONS[commodity];
+    if (tsDefs && marketData?.timespreads) {
+        const frontSpread = tsDefs[0];
+        const tsData = marketData.timespreads[frontSpread?.name];
+        if (tsData?.values?.length) {
+            const currentSpread = tsData.values[tsData.values.length - 1];
+            const structure = currentSpread > 0 ? 'backwardation' : 'contango';
+            lines.push(`The front-month calendar spread (${frontSpread.name}) is at <b>${currentSpread >= 0 ? '+' : ''}${currentSpread.toFixed(s.decimals)}</b>, indicating the market is in <b>${structure}</b>.`);
+        }
+    }
+
+    container.innerHTML = lines.map(l => `<p style="margin-bottom:8px">${l}</p>`).join('');
+}
+
+function _drawBriefingChart(commodity, cfg) {
+    const hist = marketData?.history?.[cfg.continuous];
+    if (!hist?.close?.length) return;
+
+    const periodDays = { '1M': 30, '3M': 63, '6M': 126, '1Y': 252 }[briefingPeriod] || 63;
+    const startIdx = Math.max(0, hist.dates.length - periodDays);
+    const dates = hist.dates.slice(startIdx);
+    const close = hist.close.slice(startIdx);
+
+    const cc = getChartColors();
+    const color = isDarkMode ? cfg.colorDark : cfg.color;
+
+    const traces = [{
+        x: dates, y: close,
+        type: 'scatter', mode: 'lines',
+        name: 'Price',
+        line: { color, width: 2 },
+        fill: 'tozeroy', fillcolor: color + '10',
+    }];
+
+    const fullClose = hist.close;
+    const maConfigs = [
+        { n: 20, label: '20d MA', dash: 'dot', color: isDarkMode ? '#fbbf24' : '#d97706' },
+        { n: 50, label: '50d MA', dash: 'dash', color: isDarkMode ? '#34d399' : '#059669' },
+    ];
+
+    for (const mac of maConfigs) {
+        if (fullClose.length >= mac.n + periodDays) {
+            const maValues = [];
+            for (let i = startIdx; i < hist.dates.length; i++) {
+                const slice = fullClose.slice(Math.max(0, i - mac.n + 1), i + 1);
+                maValues.push(slice.reduce((a, b) => a + b, 0) / slice.length);
+            }
+            traces.push({
+                x: dates, y: maValues,
+                type: 'scatter', mode: 'lines',
+                name: mac.label,
+                line: { color: mac.color, width: 1.5, dash: mac.dash },
+            });
+        }
+    }
+
+    const layout = {
+        paper_bgcolor: cc.bg, plot_bgcolor: cc.bg,
+        font: { color: cc.text, family: 'Inter, sans-serif', size: 11 },
+        xaxis: { gridcolor: cc.grid, zerolinecolor: cc.zero, tickfont: { size: 9, color: cc.muted } },
+        yaxis: {
+            gridcolor: cc.grid, zerolinecolor: cc.zero,
+            tickfont: { size: 10, color: cc.muted },
+            title: { text: cfg.unit, font: { size: 10, color: cc.muted } },
+        },
+        margin: { l: 55, r: 30, t: 10, b: 40 },
+        legend: { bgcolor: 'rgba(0,0,0,0)', font: { size: 9, color: cc.muted }, orientation: 'h', yanchor: 'bottom', y: 1.02 },
+        hovermode: 'x unified',
+    };
+
+    Plotly.react('briefing-chart', traces, layout, CHART_CONFIG);
 }

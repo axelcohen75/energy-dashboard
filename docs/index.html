@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy Derivatives Platform</title>
-    <link rel="stylesheet" href="style.css?v=16">
+    <link rel="stylesheet" href="style.css?v=17">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
@@ -577,6 +577,18 @@
 <!-- TAB 2: ENERGY MARKETS                                                     -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 <div class="tab-content active" id="tab-markets">
+
+<!-- ─── TICKER STRIP ─── -->
+<div class="ticker-strip" id="ticker-strip"></div>
+
+<!-- ─── SUB-TABS ─── -->
+<div class="overview-subtabs">
+    <button class="ov-tab active" data-view="charts" onclick="switchOverviewView('charts')">CHARTS</button>
+    <button class="ov-tab" data-view="briefing" onclick="switchOverviewView('briefing')">MARKET BRIEFING</button>
+</div>
+
+<!-- ═══ CHARTS VIEW ═══ -->
+<div id="ov-charts-view">
 <div class="markets-grid overview-grid">
 
     <!-- ─── LEFT: SPOT PRICES + SPREADS + OPEC + NEWS ─── -->
@@ -700,7 +712,46 @@
         </div>
     </div>
 </div>
+</div><!-- /ov-charts-view -->
+
+<!-- ═══ MARKET BRIEFING VIEW ═══ -->
+<div id="ov-briefing-view" style="display:none;padding:10px 14px">
+    <div class="briefing-container">
+        <!-- Left: Stats + Recap -->
+        <div class="briefing-main">
+            <div class="panel briefing-selector-panel">
+                <select id="briefing-commodity" class="chart-select" onchange="updateMarketBriefing()" style="font-size:12px;font-weight:600;padding:6px 10px"></select>
+                <span id="briefing-timestamp" style="font-size:9px;color:var(--text-dim);font-family:var(--mono)"></span>
+            </div>
+            <div class="briefing-cards" id="briefing-cards"></div>
+            <div class="panel">
+                <div class="lbl">DAILY MARKET RECAP</div>
+                <div id="briefing-recap" class="briefing-recap mt-8"></div>
+            </div>
+            <div class="panel">
+                <div class="chart-header">
+                    <div class="lbl" style="font-size:12px;margin-bottom:0">PRICE CHART</div>
+                    <div style="display:flex;gap:3px" id="briefing-periods">
+                        <button class="btn btn-xs" onclick="setBriefingPeriod('1M')">1M</button>
+                        <button class="btn btn-xs active" onclick="setBriefingPeriod('3M')">3M</button>
+                        <button class="btn btn-xs" onclick="setBriefingPeriod('6M')">6M</button>
+                        <button class="btn btn-xs" onclick="setBriefingPeriod('1Y')">1Y</button>
+                    </div>
+                </div>
+                <div id="briefing-chart" class="chart-plot" style="min-height:320px"></div>
+            </div>
+        </div>
+        <!-- Right: News -->
+        <div class="briefing-side">
+            <div class="panel">
+                <div class="lbl">ENERGY NEWS</div>
+                <div id="briefing-news-feed" class="news-feed mt-8"></div>
+            </div>
+        </div>
+    </div>
 </div>
+
+</div><!-- /tab-markets -->
 
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 <!-- TAB 3: PHYSICAL MARKETS                                                    -->
@@ -1009,8 +1060,8 @@
 </div>
 
 <script src="engine.js?v=9"></script>
-<script src="energy-data.js?v=11"></script>
-<script src="energy-markets.js?v=17"></script>
+<script src="energy-data.js?v=12"></script>
+<script src="energy-markets.js?v=18"></script>
 <script src="physical-markets.js?v=13"></script>
 <script src="geopolitics.js?v=4"></script>
 <script src="cftc.js?v=1"></script>

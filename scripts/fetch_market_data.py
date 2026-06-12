@@ -59,6 +59,14 @@ COMMODITIES = {
         'continuous': 'LGO=F',
         'months': 0, 'unit': '$/ton',
     },
+    'EU Carbon (EUA)': {
+        'continuous': 'KRBN',
+        'months': 0, 'unit': '€/ton',
+    },
+    'German Power (DE)': {
+        'continuous': '4GBF.DE',
+        'months': 0, 'unit': '€/MWh',
+    },
 }
 
 TIMESPREADS = {

@@ -107,8 +107,11 @@ body {
 }
 
 /* ─── Tab Content ─── */
-.tab-content { display: none; height: calc(100vh - 48px); }
+.tab-content { display: none; height: calc(100vh - 48px); overflow: hidden; }
 .tab-content.active { display: block; }
+#tab-markets { display: none; flex-direction: column; }
+#tab-markets.active { display: flex; }
+#tab-markets .markets-grid { flex: 1; min-height: 0; }
 
 /* ─── Pricer sub-tabs (vanilla / crack spread) ─── */
 .pricer-mode-bar {
@@ -180,6 +183,140 @@ body {
 }
 .col-left, .col-right { overflow-y: auto; overflow-x: hidden; }
 .overview-grid { grid-template-columns: 430px 1fr; }
+
+/* ─── Ticker Strip ─── */
+.ticker-strip {
+    display: flex;
+    gap: 0;
+    padding: 6px 14px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background: var(--panel);
+    border-bottom: 1px solid var(--panel-border);
+    scrollbar-width: none;
+}
+.ticker-strip::-webkit-scrollbar { display: none; }
+.ticker-card {
+    display: flex;
+    flex-direction: column;
+    padding: 6px 14px;
+    border-right: 1px solid var(--panel-border);
+    cursor: pointer;
+    white-space: nowrap;
+    min-width: 110px;
+    transition: background 0.15s;
+}
+.ticker-card:first-child { padding-left: 4px; }
+.ticker-card:last-child { border-right: none; }
+.ticker-card:hover { background: rgba(59,130,246,0.06); }
+.ticker-card.active { background: rgba(59,130,246,0.1); }
+.ticker-name {
+    font-family: var(--mono);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: var(--text-dim);
+    margin-bottom: 2px;
+}
+.ticker-price {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+}
+.ticker-change {
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 600;
+}
+
+/* ─── Overview Sub-tabs ─── */
+.overview-subtabs {
+    display: flex;
+    gap: 0;
+    padding: 0 14px;
+    border-bottom: 1px solid var(--panel-border);
+    background: var(--panel);
+}
+.ov-tab {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--text-dim);
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+}
+.ov-tab:hover { color: var(--text-muted); }
+.ov-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* ─── Market Briefing ─── */
+.briefing-container {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 10px;
+}
+.briefing-main { min-width: 0; }
+.briefing-side { min-width: 0; }
+.briefing-selector-panel {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+}
+.briefing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.briefing-card {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 12px 14px;
+}
+.briefing-card-label {
+    font-family: var(--mono);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+.briefing-card-value {
+    font-family: var(--mono);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+}
+.briefing-card-sub {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+.briefing-recap {
+    font-family: var(--font);
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--text);
+}
+.briefing-stat-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    border-bottom: 1px solid var(--panel-border);
+    font-size: 11px;
+}
+.briefing-stat-row:last-child { border-bottom: none; }
+.briefing-stat-label { color: var(--text-muted); }
+.briefing-stat-value { font-family: var(--mono); font-weight: 600; color: var(--text); }
 .physical-grid { grid-template-columns: 240px 1fr 300px; }
 .geo-grid { grid-template-columns: 320px 1fr; }
 .cftc-grid { grid-template-columns: 260px 1fr; }
@@ -1086,6 +1223,7 @@ input[type="range"]::-moz-range-thumb {
     .charts-row { grid-template-columns: 1fr; height: auto; }
     .charts-row-single { height: auto; }
     .overview-top-row { grid-template-columns: 1fr; height: auto; }
+    .briefing-container { grid-template-columns: 1fr; }
     .header-meta { display: none; }
 }
 
@@ -1097,11 +1235,13 @@ input[type="range"]::-moz-range-thumb {
     }
     body { overflow-y: auto; overflow-x: hidden; height: auto; }
     .tab-content { height: auto; }
+    #tab-markets { height: auto; }
     .col-left, .col-right { overflow: visible; }
     .col-center { overflow: visible; }
     .header-title { font-size: 12px; letter-spacing: 1px; }
     .header-left { gap: 12px; }
     .tab-btn { font-size: 9px; padding: 4px 10px; }
+    .ticker-strip { padding: 4px 8px; }
 }
 
 .opec-meeting-label {
