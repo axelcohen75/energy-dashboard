@@ -1,0 +1,45 @@
+{
+ "generated": "2026-06-15T11:22:41.348301+00:00",
+ "model": "claude-sonnet-4-6",
+ "sectors": {
+  "oil": {
+   "summary": "Crude markets suffered one of their sharpest single-session sell-offs in months, with WTI tumbling 3.90% to $84.29/bbl and Brent shedding 4.06% to $86.71 \u2014 both now off roughly 17% over the past month. The catalyst is a rapid unwinding of the geopolitical risk premium that had built around Strait of Hormuz disruption fears. Conflicting signals from Washington and Tehran over a potential nuclear deal have flipped the narrative: prospects of sanctions relief and restored Iranian supply flows are now outweighing escalation fears flagged by Rystad's $150 tail-risk scenario. Energy Secretary Wright's disclosure that the U.S. military is facilitating movement of 7 million bpd through the Persian Gulf further reassured markets. CME options now price a 77% probability of an OPEC cut at the next meeting, suggesting the group may need to defend prices. Nigeria's 15-month production high adds modest additional supply pressure.",
+   "drivers": [
+    "US-Iran diplomacy rapidly deflating the Hormuz risk premium, driving the sharpest leg of the monthly decline",
+    "Energy Secretary Wright confirmed U.S. military support for 7 mn bpd Persian Gulf flows, capping supply-disruption fears",
+    "OPEC options market now pricing 77% probability of a production cut, signalling concern about further price erosion"
+   ],
+   "headlineCount": 12,
+   "sources": [
+    "Bitcoin World",
+    "Discovery Alert",
+    "South China Morning Post"
+   ]
+  },
+  "gas": {
+   "summary": "The US-European gas complex showed a notable divergence today. Henry Hub edged up 1.75% to $3.141/MMBtu, consolidating a solid 9.67% monthly gain, while TTF dropped sharply by 6.18% to \u20ac46.62/MWh, weighed down by broader energy complex weakness and the easing of Middle East supply fears. European buyers are proving reluctant to lock in long-term U.S. LNG contracts despite the ongoing EU exit from Russian gas, a hesitancy that limits upside for Henry Hub export-linked pricing. Norway is actively pitching Arctic resources to the EU as an alternative supply backstop. Ukraine's drone campaign is disrupting Russian oil and gas infrastructure, applying some structural support to European supply concerns even as spot prices retreat.",
+   "drivers": [
+    "Henry Hub outperforms on monthly basis (+9.67%) while TTF falls sharply intraday (-6.18%), reflecting diverging regional dynamics",
+    "European buyers resisting long-term U.S. LNG commitments despite Russian gas phase-out, capping structural demand signals",
+    "Ukrainian drone strikes on Russian energy infrastructure inject ongoing supply uncertainty into the European market"
+   ],
+   "headlineCount": 6,
+   "sources": [
+    "Daily Mirror",
+    "Devdiscourse"
+   ]
+  },
+  "power": {
+   "summary": "News flow for the power and carbon sector is thin today. EU Carbon (EUA) traded virtually flat at $73.05/EUA, up just 0.01% on the day, with a modest 3.03% gain over the past month providing modest directional support. The sharp 6.18% drop in TTF gas prices is the dominant cross-market input, as lower gas costs reduce fuel-switching incentives and can soften short-term carbon demand from the power sector. The continued US-Iran diplomatic back-and-forth, which drove broader energy volatility, had no discernible direct impact on EUA pricing today. Beyond these cross-commodity linkages, dedicated power and carbon headlines are limited in today's feed.",
+   "drivers": [
+    "EUA prices nearly unchanged (+0.01%) as carbon market holds steady despite broader energy complex sell-off",
+    "Sharp TTF decline (-6.18%) reduces fuel-switching pressure, a mild near-term headwind for carbon demand from power generators",
+    "Headline flow for the power/carbon sector is sparse today; cross-commodity signals from oil and gas dominate the read-through"
+   ],
+   "headlineCount": 2,
+   "sources": [
+    "IOL"
+   ]
+  }
+ }
+}

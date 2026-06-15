@@ -573,6 +573,13 @@ function updateSpotEvolution() {
                 line: { color, width: 2 },
             });
         } else {
+            const yMin = prices.reduce((a, b) => a < b ? a : b, prices[0]);
+            traces.push({
+                x: dates, y: dates.map(() => yMin),
+                type: 'scatter', mode: 'lines',
+                line: { width: 0, color: 'transparent' },
+                showlegend: false, hoverinfo: 'skip',
+            });
             traces.push({
                 x: dates,
                 y: prices,
@@ -580,7 +587,7 @@ function updateSpotEvolution() {
                 mode: 'lines',
                 name: shortName,
                 line: { color, width: 2 },
-                fill: 'tozeroy',
+                fill: 'tonexty',
                 fillcolor: color + '15',
             });
         }

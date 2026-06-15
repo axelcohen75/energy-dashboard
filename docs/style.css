@@ -184,7 +184,7 @@ body {
     overflow: hidden;
 }
 .col-left, .col-right { overflow-y: auto; overflow-x: hidden; }
-.overview-grid { grid-template-columns: 350px 1fr 320px; }
+.overview-grid { grid-template-columns: 340px 1fr 380px; }
 .overview-grid .col-right {
     display: flex;
     flex-direction: column;
