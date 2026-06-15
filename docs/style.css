@@ -253,6 +253,26 @@ body {
     font-size: 12px;
 }
 .leg-tag .tag-close:hover { opacity: 1; }
+.leg-tag .tag-iv {
+    font-size: 8px;
+    color: var(--text-dim);
+    font-weight: 400;
+}
+.tag-iv-input {
+    width: 36px;
+    padding: 0 2px;
+    font-size: 8px;
+    font-family: var(--mono);
+    background: transparent;
+    border: 1px solid var(--input-border);
+    border-radius: 2px;
+    color: var(--text-muted);
+    text-align: center;
+}
+.tag-iv-input.override {
+    color: var(--accent);
+    border-color: var(--accent);
+}
 
 /* Gas Storage layout */
 .storage-grid {
@@ -260,6 +280,10 @@ body {
     grid-template-columns: 280px 1fr;
     gap: 10px;
     padding: 10px 14px;
+}
+.storage-grid > .col-left {
+    overflow-y: auto;
+    max-height: calc(100vh - 130px);
 }
 
 /* Crack spread layout — same widths as main pricer grid */
@@ -287,6 +311,22 @@ body {
     min-height: 0;
 }
 .col-left, .col-right { overflow-y: auto; overflow-x: hidden; }
+
+/* Pricer 2-column layout */
+.pricer-grid {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 10px;
+    padding: 0 10px 10px;
+}
+.pricer-sidebar {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(100vh - 130px);
+}
+.pricer-charts {
+    min-width: 0;
+}
 .overview-grid { grid-template-columns: 340px 1fr 380px; }
 .overview-grid .col-right {
     display: flex;

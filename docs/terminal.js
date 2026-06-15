@@ -239,13 +239,10 @@ function init() {
     }
 
     // Wire up other number inputs
-    for (const id of ['spot-min', 'spot-max', 'sweep-from', 'sweep-to', 'sweep-steps']) {
-        $(id).addEventListener('input', debouncedUpdate);
+    for (const id of ['spot-min', 'spot-max']) {
+        const el = $(id);
+        if (el) el.addEventListener('input', debouncedUpdate);
     }
-    $('sweep-param').addEventListener('change', debouncedUpdate);
-
-    // Build metrics panel
-    buildMetricsPanel();
 
     // Init charts
     Plotly.newPlot('payoff-chart', [], { ...CHART_LAYOUT }, CHART_CONFIG);
@@ -640,26 +637,6 @@ function updateLegIv(idx, value) {
 
 // ─── Metrics Panel ───────────────────────────────────────────────────────────
 
-function buildMetricsPanel() {
-    const container = $('metrics-container');
-    let html = '';
-
-    for (const name of ALL_METRICS) {
-        if (SECTION_BREAKS[name]) {
-            html += `<div class="metric-section">${SECTION_BREAKS[name]}</div>`;
-        }
-        const isPayoff = name === 'payoff';
-        html += `
-            <div class="metric-row ${activeMetrics.includes(name) ? 'active' : ''} ${isPayoff ? 'payoff-metric' : ''}"
-                 id="metric-${name}" onclick="${isPayoff ? '' : `toggleMetric('${name}')`}"
-                 ${isPayoff ? 'title="Payoff is always shown in the payoff chart above"' : ''}>
-                <span>${name.toUpperCase()}${isPayoff ? ' ↑' : ''}</span>
-                <span class="metric-val" id="mval-${name}">&mdash;</span>
-            </div>`;
-    }
-    container.innerHTML = html;
-}
-
 function toggleMetric(name) {
     if (name === 'payoff') return;
     const idx = activeMetrics.indexOf(name);
@@ -685,33 +662,12 @@ function updateQuickGreekBtns() {
         const g = btn.textContent.toLowerCase();
         btn.classList.toggle('active', activeMetrics.includes(g));
     });
+    const sub = document.getElementById('greeks-subtitle');
+    if (sub) sub.textContent = activeMetrics.map(m => m.toUpperCase()).join(' / ');
 }
 
 function updateMetricStyles() {
-    for (const name of ALL_METRICS) {
-        const el = document.getElementById(`metric-${name}`);
-        if (!el) continue;
-
-        if (name === 'payoff') {
-            el.style.borderLeftColor = LINE_COLORS[0];
-            el.style.backgroundColor = isDarkMode ? 'rgba(96,165,250,0.1)' : 'rgba(37,99,235,0.08)';
-            el.style.opacity = '0.7';
-            el.style.cursor = 'default';
-            continue;
-        }
-
-        const isActive = activeMetrics.includes(name);
-        el.classList.toggle('active', isActive);
-
-        if (isActive) {
-            const ci = activeMetrics.indexOf(name) % LINE_COLORS.length;
-            el.style.borderLeftColor = LINE_COLORS[ci];
-            el.style.backgroundColor = `${LINE_COLORS[ci]}18`;
-        } else {
-            el.style.borderLeftColor = 'transparent';
-            el.style.backgroundColor = 'transparent';
-        }
-    }
+    updateQuickGreekBtns();
 }
 
 // ─── Chart Updates ───────────────────────────────────────────────────────────
@@ -926,9 +882,9 @@ function updateCharts() {
         });
     }
 
-    // Sweep lines on greeks chart
+    // Sweep lines on greeks chart (disabled if sweep panel absent)
     const sweepMetric = activeGreeks[0];
-    if (sweepMetric) {
+    if (sweepMetric && $('sweep-param')) {
         const param = $('sweep-param').value;
         let from = numVal('sweep-from');
         let to = numVal('sweep-to');
@@ -1119,14 +1075,21 @@ function updateGreeksByLeg() {
 
     const env = getEnv();
 
-    // Leg tags
+    const globalVolPct = sliderVal('volatility');
     tagsEl.innerHTML = portfolio.map((leg, i) => {
         const sign = leg.position === 'long' ? '+' : '-';
         const type = leg.type === 'call' ? 'CALL' : 'PUT';
         const g = computeGreeks(leg, env.F, env.r, env.sigma, env.T);
         const price = Math.abs(g.price || 0);
+        const hasIv = typeof leg.iv === 'number' && isFinite(leg.iv) && leg.iv > 0;
+        const ivVal = hasIv ? (leg.iv * 100).toFixed(1) : '';
+        const ivPh = globalVolPct.toFixed(1);
         return `<span class="leg-tag">${sign}${leg.quantity} ${type} K=${leg.strike.toFixed(1)}
             <span class="tag-price">${price.toFixed(2)}</span>
+            <span class="tag-iv" title="IV override (blank = portfolio σ)">σ=<input type="number"
+                class="tag-iv-input${hasIv ? ' override' : ''}" value="${ivVal}" placeholder="${ivPh}"
+                min="0" step="0.5" onchange="updateLegIv(${i}, this.value)"
+                oninput="updateLegIv(${i}, this.value)">%</span>
             <span class="tag-close" onclick="removeLeg(${i})">&times;</span></span>`;
     }).join('');
 

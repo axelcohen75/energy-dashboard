@@ -51,21 +51,24 @@
 
 <div id="pricer-vanilla" class="pricer-mode-content active">
 
-<!-- Portfolio Legs bar + Greeks by Leg table -->
+<!-- ─── Top bar: Portfolio Legs tags + Greeks by Leg table ─── -->
 <div class="panel" style="margin:0 10px 8px">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-        <div class="lbl" style="margin-bottom:0">PORTFOLIO LEGS</div>
+        <div class="lbl" style="margin-bottom:0">PORTFOLIO LEGS <span class="leg-count" id="leg-count" style="margin-left:6px">0</span></div>
         <div id="portfolio-leg-tags" style="display:flex;gap:6px;flex-wrap:wrap"></div>
     </div>
     <div id="greeks-by-leg-table"></div>
 </div>
+<!-- Hidden container for legacy renderLegs (keeps slider sync working) -->
+<div id="legs-container" style="display:none"></div>
 
-<div class="main-grid">
+<!-- ─── 2-column layout: sidebar + charts ─── -->
+<div class="pricer-grid">
 
-    <!-- ─── LEFT COLUMN ─── -->
-    <div class="col-left">
+    <!-- ─── LEFT SIDEBAR ─── -->
+    <div class="pricer-sidebar">
 
-        <!-- Commodity Preset -->
+        <!-- Underlying + F display -->
         <div class="panel">
             <div class="lbl">UNDERLYING</div>
             <select id="commodity-select" class="mt-8"></select>
@@ -80,10 +83,53 @@
             </div>
         </div>
 
-        <!-- Forward Pricing -->
+        <!-- Parameters -->
+        <div class="panel">
+            <div class="lbl">PARAMETERS</div>
+            <div class="mt-10">
+                <div class="lbl lbl-sm">FUTURES PRICE (F)</div>
+                <div class="slider-group">
+                    <input type="range" id="futures-price-slider" min="1" max="2000" step="0.5" value="75">
+                    <input type="number" class="slider-input" id="futures-price-input" value="75" step="0.5">
+                </div>
+            </div>
+            <div class="mt-10">
+                <div class="lbl lbl-sm">EXPIRY T (YEARS)</div>
+                <div class="slider-group">
+                    <input type="range" id="time-to-expiry-slider" min="0.01" max="5" step="0.01" value="1">
+                    <input type="number" class="slider-input" id="time-to-expiry-input" value="1.00" step="0.01">
+                </div>
+            </div>
+            <div class="mt-10">
+                <div class="lbl lbl-sm">VOLATILITY &sigma; (%)</div>
+                <div class="slider-group">
+                    <input type="range" id="volatility-slider" min="1" max="150" step="0.5" value="35">
+                    <input type="number" class="slider-input" id="volatility-input" value="35.0" step="0.5">
+                </div>
+            </div>
+            <div class="mt-10">
+                <div class="lbl lbl-sm">RATE r (%)</div>
+                <div class="slider-group">
+                    <input type="range" id="risk-free-rate-slider" min="0" max="20" step="0.1" value="5">
+                    <input type="number" class="slider-input" id="risk-free-rate-input" value="5.0" step="0.1">
+                </div>
+            </div>
+            <div class="grid-2 mt-10">
+                <div>
+                    <div class="lbl lbl-sm">SPOT MIN</div>
+                    <input type="number" id="spot-min" value="50">
+                </div>
+                <div>
+                    <div class="lbl lbl-sm">SPOT MAX</div>
+                    <input type="number" id="spot-max" value="150">
+                </div>
+            </div>
+            <button class="btn btn-ghost btn-full mt-12" onclick="resetEnv()">RESET</button>
+        </div>
+
+        <!-- Forward Curve (cost-of-carry) -->
         <div class="panel">
             <div class="lbl">FORWARD CURVE</div>
-            <div class="forward-formula mt-8" id="forward-formula">f<sup>T</sup>(t) = S(t) &middot; e<sup>(r &minus; (y&#8321; &minus; c)) &middot; (T&minus;t)</sup></div>
             <div class="mt-10">
                 <div class="lbl lbl-sm">SPOT PRICE (S)</div>
                 <div class="slider-group">
@@ -118,21 +164,9 @@
             </div>
         </div>
 
-        <!-- Portfolio Legs -->
+        <!-- Strategies -->
         <div class="panel">
-            <div style="display:flex;justify-content:space-between;align-items:center">
-                <div class="lbl">PORTFOLIO LEGS</div>
-                <span class="leg-count" id="leg-count">0</span>
-            </div>
-            <div id="legs-container" class="mt-8">
-                <div class="legs-empty">No positions</div>
-            </div>
-            <button class="btn btn-danger btn-full mt-8" style="font-size:10px;padding:6px" onclick="clearLegs()">CLEAR ALL</button>
-        </div>
-
-        <!-- Strategy -->
-        <div class="panel">
-            <div class="lbl">OPTION STRATEGIES</div>
+            <div class="lbl">STRATEGIES</div>
             <div class="flex-row mt-8">
                 <div class="flex-1">
                     <select id="strategy-select"></select>
@@ -170,22 +204,22 @@
                     <input type="number" id="new-qty" value="1" min="1" step="1">
                 </div>
             </div>
-            <button class="btn btn-accent btn-full mt-12" onclick="addLeg()">APPEND LEG</button>
+            <button class="btn btn-accent btn-full mt-12" onclick="addLeg()">ADD LEG</button>
+            <button class="btn btn-danger btn-full mt-8" style="font-size:10px;padding:6px" onclick="clearLegs()">CLEAR ALL</button>
         </div>
+
     </div>
 
-    <!-- ─── CENTER COLUMN ─── -->
-    <div class="col-center">
+    <!-- ─── CHARTS AREA ─── -->
+    <div class="pricer-charts">
 
-        <!-- Top row: Payoff + Greeks side by side -->
+        <!-- Top row: Payoff + Greeks -->
         <div class="charts-row">
-            <!-- Payoff Chart -->
             <div class="chart-box">
                 <div class="panel">
                     <div class="chart-header">
                         <div>
                             <div class="lbl" style="font-size:12px;margin-bottom:0">PAYOFF DIAGRAM</div>
-                            <div class="sub-label">P&L AT EXPIRY // UNDERLYING F</div>
                         </div>
                         <div class="hedge-overlay">
                             <label class="hedge-check">
@@ -202,13 +236,12 @@
                 </div>
             </div>
 
-            <!-- Greeks Chart -->
             <div class="chart-box">
                 <div class="panel">
                     <div class="chart-header">
                         <div>
                             <div class="lbl" style="font-size:12px;margin-bottom:0">GREEKS ANALYTICS</div>
-                            <div class="sub-label">SENSITIVITIES // UNDERLYING F</div>
+                            <div class="sub-label" id="greeks-subtitle">DELTA</div>
                         </div>
                         <div class="greek-quick-btns" id="greek-quick-btns">
                             <button class="greek-qbtn active" onclick="quickGreek('delta')">Delta</button>
@@ -225,139 +258,42 @@
 
         <!-- Bottom row: 3D Surface + Theta Decay -->
         <div class="charts-row">
-            <!-- 3D Surface -->
             <div class="chart-box">
                 <div class="panel">
                     <div class="chart-header">
                         <div>
                             <div class="lbl" style="font-size:12px;margin-bottom:0">3D GREEK SURFACE</div>
-                            <div class="sub-label">METRIC × SPOT × VARIABLE</div>
+                            <div class="sub-label" id="surface-subtitle">DELTA</div>
                         </div>
                         <div class="flex-row">
-                            <div>
-                                <div class="lbl lbl-sm">GREEK</div>
-                                <select id="surface-greek" style="width:110px">
-                                    <option value="delta">DELTA</option>
-                                    <option value="gamma">GAMMA</option>
-                                    <option value="vega">VEGA</option>
-                                    <option value="theta">THETA</option>
-                                    <option value="rho">RHO</option>
-                                    <option value="price">PRICE</option>
-                                </select>
-                            </div>
-                            <div>
-                                <div class="lbl lbl-sm">2ND AXIS</div>
-                                <select id="surface-axis" style="width:120px">
-                                    <option value="time_to_expiry">EXPIRY T</option>
-                                    <option value="volatility">VOLATILITY σ</option>
-                                </select>
-                            </div>
-                            <button class="btn btn-accent" onclick="generateSurface()">GENERATE</button>
+                            <select id="surface-greek" style="width:90px;font-size:9px" onchange="generateSurface()">
+                                <option value="delta">Delta</option>
+                                <option value="gamma">Gamma</option>
+                                <option value="vega">Vega</option>
+                                <option value="theta">Theta</option>
+                                <option value="rho">Rho</option>
+                                <option value="price">Price</option>
+                            </select>
+                            <select id="surface-axis" style="width:90px;font-size:9px" onchange="generateSurface()">
+                                <option value="time_to_expiry">vs Time</option>
+                                <option value="volatility">vs Vol</option>
+                            </select>
                         </div>
                     </div>
                     <div id="surface-chart" class="chart-plot"></div>
                 </div>
             </div>
 
-            <!-- Theta Decay -->
             <div class="chart-box">
                 <div class="panel">
                     <div class="chart-header">
                         <div>
                             <div class="lbl" style="font-size:12px;margin-bottom:0">THETA DECAY</div>
-                            <div class="sub-label">PORTFOLIO VALUE × TIME TO EXPIRY</div>
                         </div>
                     </div>
                     <div id="theta-chart" class="chart-plot"></div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- ─── RIGHT COLUMN ─── -->
-    <div class="col-right">
-
-        <!-- Parameters -->
-        <div class="panel">
-            <div class="lbl">PARAMETERS</div>
-
-            <div class="mt-10">
-                <div class="lbl lbl-sm">FUTURES PRICE (F)</div>
-                <div class="slider-group">
-                    <input type="range" id="futures-price-slider" min="1" max="2000" step="0.5" value="75">
-                    <input type="number" class="slider-input" id="futures-price-input" value="75" step="0.5">
-                </div>
-            </div>
-
-            <div class="mt-10">
-                <div class="lbl lbl-sm">EXPIRY T (YEARS)</div>
-                <div class="slider-group">
-                    <input type="range" id="time-to-expiry-slider" min="0.01" max="5" step="0.01" value="1">
-                    <input type="number" class="slider-input" id="time-to-expiry-input" value="1.00" step="0.01">
-                </div>
-            </div>
-
-            <div class="mt-10">
-                <div class="lbl lbl-sm">VOLATILITY σ (%)</div>
-                <div class="slider-group">
-                    <input type="range" id="volatility-slider" min="1" max="150" step="0.5" value="35">
-                    <input type="number" class="slider-input" id="volatility-input" value="35.0" step="0.5">
-                </div>
-            </div>
-
-            <div class="mt-10">
-                <div class="lbl lbl-sm">RATE r (%)</div>
-                <div class="slider-group">
-                    <input type="range" id="risk-free-rate-slider" min="0" max="20" step="0.1" value="5">
-                    <input type="number" class="slider-input" id="risk-free-rate-input" value="5.0" step="0.1">
-                </div>
-            </div>
-
-            <div class="grid-2 mt-10">
-                <div>
-                    <div class="lbl lbl-sm">SPOT MIN</div>
-                    <input type="number" id="spot-min" value="50">
-                </div>
-                <div>
-                    <div class="lbl lbl-sm">SPOT MAX</div>
-                    <input type="number" id="spot-max" value="150">
-                </div>
-            </div>
-
-            <button class="btn btn-ghost btn-full mt-12" onclick="resetEnv()">RESET</button>
-        </div>
-
-        <!-- Parameter Sweep -->
-        <div class="panel">
-            <div class="lbl">PARAMETER SWEEP</div>
-            <div class="mt-8">
-                <div class="lbl lbl-sm">ANIMATE VARIABLE</div>
-                <select id="sweep-param">
-                    <option value="time_to_expiry">EXPIRY T (YRS)</option>
-                    <option value="volatility">VOLATILITY σ</option>
-                    <option value="risk_free_rate">RATE r</option>
-                </select>
-            </div>
-            <div class="grid-3 mt-8">
-                <div>
-                    <div class="lbl lbl-sm">FROM</div>
-                    <input type="number" id="sweep-from" value="0.05" step="0.05">
-                </div>
-                <div>
-                    <div class="lbl lbl-sm">TO</div>
-                    <input type="number" id="sweep-to" value="2.0" step="0.05">
-                </div>
-                <div>
-                    <div class="lbl lbl-sm">STEPS</div>
-                    <input type="number" id="sweep-steps" value="8" min="2" max="30" step="1">
-                </div>
-            </div>
-        </div>
-
-        <!-- Active Metrics -->
-        <div class="panel" style="max-height:calc(100vh - 580px);overflow-y:auto">
-            <div class="lbl">ACTIVE METRICS</div>
-            <div id="metrics-container" class="mt-8"></div>
         </div>
     </div>
 </div>
@@ -724,8 +660,8 @@
         </div>
     </div>
 
-    <!-- CENTER + RIGHT: Charts -->
-    <div class="col-center" style="grid-column: span 2">
+    <!-- Charts -->
+    <div style="min-width:0">
         <div class="panel">
             <div class="lbl" style="font-size:12px">HENRY HUB FORWARD CURVE</div>
             <div class="sub-label">NYMEX FUTURES PRICES BY DELIVERY MONTH</div>
