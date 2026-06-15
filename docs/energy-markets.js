@@ -1298,36 +1298,10 @@ function renderOpecWatchOverview() {
     container.innerHTML = html;
 }
 
-// ─── Sector Briefing (AI + computed recap) ─────────────────────────────────
+// ─── Sector Briefing (AI daily briefing) ──────────────────────────────────
 
 let briefingData = null;       // loaded from data/daily-briefing.json
 let briefingLoadAttempted = false;
-
-function _computeMA(close, n) {
-    if (close.length < n) return null;
-    const slice = close.slice(-n);
-    return slice.reduce((a, b) => a + b, 0) / n;
-}
-
-function _computeRealizedVol(close, n) {
-    if (close.length < n + 1) return null;
-    const returns = [];
-    for (let i = close.length - n; i < close.length; i++) {
-        if (close[i - 1] > 0) returns.push(Math.log(close[i] / close[i - 1]));
-    }
-    if (returns.length < 5) return null;
-    const mean = returns.reduce((a, b) => a + b, 0) / returns.length;
-    const variance = returns.reduce((a, r) => a + (r - mean) ** 2, 0) / (returns.length - 1);
-    return Math.sqrt(variance) * Math.sqrt(252) * 100;
-}
-
-function _pctChange(arr, nDays) {
-    if (!arr || arr.length < nDays + 1) return null;
-    const current = arr[arr.length - 1];
-    const prev = arr[arr.length - 1 - nDays];
-    if (!prev) return null;
-    return ((current - prev) / prev) * 100;
-}
 
 async function renderSectorBriefing() {
     const container = document.getElementById('overview-briefing');
@@ -1344,21 +1318,27 @@ async function renderSectorBriefing() {
 
     let html = '';
 
-    // ── AI summary block (from real news + prices via Claude in CI) ──
     const sec = briefingData?.sectors?.[currentSector];
     if (sec?.summary) {
         const gen = briefingData.generated ? new Date(briefingData.generated) : null;
-        html += `<div class="briefing-recap" style="font-size:11.5px;line-height:1.6">${sec.summary}</div>`;
+
+        // Split summary: first sentence as headline, rest as body
+        const sentences = sec.summary.match(/[^.!?]+[.!?]+/g) || [sec.summary];
+        const headline = sentences[0].trim();
+        const body = sentences.slice(1).join(' ').trim();
+
+        html += `<div class="briefing-headline">${headline}</div>`;
+        if (body) html += `<div class="briefing-body">${body}</div>`;
+
         if (Array.isArray(sec.drivers) && sec.drivers.length) {
-            html += '<div style="margin-top:8px">';
+            html += '<div class="briefing-drivers"><div class="lbl lbl-sm" style="margin-bottom:5px">KEY DRIVERS</div>';
             for (const d of sec.drivers) {
-                html += `<div style="display:flex;gap:6px;font-size:10.5px;color:var(--text-muted);padding:2px 0">
-                    <span style="color:var(--accent)">▸</span><span>${d}</span></div>`;
+                html += `<div class="briefing-driver-item"><span class="briefing-driver-dot"></span><span>${d}</span></div>`;
             }
             html += '</div>';
         }
         const srcs = (sec.sources || []).join(', ');
-        html += `<div style="font-size:7.5px;color:var(--text-dim);font-family:var(--mono);margin-top:8px;line-height:1.5">
+        html += `<div class="briefing-meta">
             ${gen ? `GENERATED ${_timeAgo(gen).toUpperCase()} · ` : ''}${briefingData.model || 'CLAUDE'} ·
             BASED ON ${sec.headlineCount || '?'} HEADLINES${srcs ? ` (${srcs})` : ''}</div>`;
     } else {
@@ -1369,78 +1349,7 @@ async function renderSectorBriefing() {
             summary written by Claude from the day's real headlines.</div>`;
     }
 
-    // ── Computed session recap (always available, 100% from price data) ──
-    const lead = selectedCommodity || MARKET_SECTORS[currentSector]?.defaultCommodity;
-    const cfg = ENERGY_COMMODITIES[lead];
-    const hist = cfg ? marketData?.history?.[cfg.continuous] : null;
-    if (cfg && hist?.close?.length >= 10) {
-        const close = hist.close;
-        const last = close[close.length - 1];
-        const decimals = last < 10 ? 4 : 2;
-        const s = {
-            last, decimals,
-            chg1d: _pctChange(close, 1),
-            chg1w: _pctChange(close, 5),
-            chg1m: _pctChange(close, 21),
-            ma50: _computeMA(close, 50),
-            ma200: _computeMA(close, 200),
-            rvol10: _computeRealizedVol(close, 10),
-            rvol30: _computeRealizedVol(close, 30),
-            high52w: Math.max(...close.slice(-252)),
-            low52w: Math.min(...close.slice(-252)),
-        };
-        html += `<div style="border-top:1px solid var(--input-border);margin-top:10px;padding-top:8px">
-            <div class="lbl lbl-sm" style="margin-bottom:6px">SESSION RECAP — ${lead.replace(/ \(.*/, '').toUpperCase()}</div>
-            <div class="briefing-recap" style="font-size:10.5px;line-height:1.55">${_recapHtml(lead, cfg, s)}</div>
-        </div>`;
-    }
-
     container.innerHTML = html;
-}
-
-function _recapHtml(commodity, cfg, s) {
-    const shortName = commodity.replace(/ \(.*/, '');
-    const lines = [];
-
-    if (s.chg1d != null) {
-        const dir = s.chg1d >= 0 ? 'gaining' : 'declining';
-        lines.push(`${shortName} closed at <b>${s.last.toFixed(s.decimals)} ${cfg.unit}</b>, ${dir} <b>${Math.abs(s.chg1d).toFixed(2)}%</b> on the session.`);
-    }
-    const parts = [];
-    if (s.chg1w != null) parts.push(`${s.chg1w >= 0 ? '+' : ''}${s.chg1w.toFixed(1)}% on the week`);
-    if (s.chg1m != null) parts.push(`${s.chg1m >= 0 ? '+' : ''}${s.chg1m.toFixed(1)}% on the month`);
-    if (parts.length) lines.push(`It is ${parts.join(' and ')}.`);
-
-    if (s.ma200 != null) {
-        const above = s.last > s.ma200;
-        const dist = Math.abs((s.last - s.ma200) / s.ma200 * 100);
-        lines.push(`Price is ${dist.toFixed(1)}% ${above ? 'above' : 'below'} the 200-day MA — ${above ? 'bullish' : 'bearish'} medium-term trend.`);
-    }
-    if (s.high52w != null && s.low52w != null) {
-        const range = s.high52w - s.low52w;
-        const pos = range > 0 ? ((s.last - s.low52w) / range * 100).toFixed(0) : '50';
-        lines.push(`Sitting at the <b>${pos}th percentile</b> of the 52-week range (${s.low52w.toFixed(s.decimals)} – ${s.high52w.toFixed(s.decimals)}).`);
-    }
-    if (s.rvol30 != null) {
-        let volNote = '';
-        if (s.rvol10 != null) {
-            if (s.rvol10 > s.rvol30 * 1.2) volNote = ' — short-term vol elevated';
-            else if (s.rvol10 < s.rvol30 * 0.8) volNote = ' — short-term vol compressed';
-        }
-        lines.push(`30-day realized vol: <b>${s.rvol30.toFixed(1)}%</b>${volNote}.`);
-    }
-
-    const tsDefs = TIMESPREAD_DEFINITIONS[commodity];
-    if (tsDefs && marketData?.timespreads) {
-        const front = tsDefs[0];
-        const tsData = marketData.timespreads[front?.name];
-        if (tsData?.values?.length) {
-            const cur = tsData.values[tsData.values.length - 1];
-            lines.push(`Front spread (${front.name}): <b>${cur >= 0 ? '+' : ''}${cur.toFixed(s.decimals)}</b> — <b>${cur > 0 ? 'backwardation' : 'contango'}</b>.`);
-        }
-    }
-
-    return lines.map(l => `<p style="margin-bottom:5px">${l}</p>`).join('');
 }
 
 // ─── Sector-filtered News ───────────────────────────────────────────────────

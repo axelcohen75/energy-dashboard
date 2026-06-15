@@ -207,6 +207,51 @@ body {
     margin-left: 4px;
 }
 
+/* ─── Briefing ─── */
+.briefing-headline {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.55;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+.briefing-body {
+    font-size: 11px;
+    line-height: 1.65;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+.briefing-drivers {
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+}
+.briefing-driver-item {
+    display: flex;
+    gap: 8px;
+    font-size: 10.5px;
+    line-height: 1.5;
+    color: var(--text-muted);
+    padding: 3px 0;
+}
+.briefing-driver-dot {
+    flex-shrink: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-top: 5px;
+}
+.briefing-meta {
+    font-size: 7.5px;
+    color: var(--text-dim);
+    font-family: var(--mono);
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+}
+
 /* ─── Ticker Strip ─── */
 .ticker-strip {
     display: flex;
