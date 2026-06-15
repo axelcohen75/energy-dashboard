@@ -1,48 +1,48 @@
 {
- "generated": "2026-06-15T18:02:16.019735+00:00",
+ "generated": "2026-06-15T23:03:16.672090+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets are under severe pressure, with WTI settling at $80.47/bbl (-5.20%) and Brent at $83.12/bbl (-4.82%), extending a bruising month that has erased more than 20% from both benchmarks. The dominant driver today is the US-Iran preliminary agreement to reopen the Strait of Hormuz, confirmed by an LNG tanker successfully transiting the chokepoint for the first time since the deal was announced. Markets are pricing in a meaningful supply-risk premium unwind, though analysts caution that a swift restoration of Iranian oil and gas flows is not guaranteed. Options markets reflect the bearish skew, with CME OPEC Watch assigning a 77.26% probability to a production increase at the next meeting. Countering the downside somewhat, Ukraine's intensified drone campaign against Russian refinery infrastructure and Russia's consequent decision to ease environmental fuel standards signal tightening domestic Russian supply, though this is insufficient to offset the Hormuz relief rally reversal.",
+   "summary": "Crude cratered today as a US-Iran preliminary peace deal and agreement to reopen the Strait of Hormuz blindsided the market. WTI shed 4.06% to $81.43/bbl and Brent fell 4.23% to $83.64, extending brutal month-to-date losses of roughly 20% on both benchmarks. RBOB gasoline dropped 4.85% while heating oil led the complex lower at -5.50%. The Hormuz reopening removes a significant geopolitical risk premium that had been supporting prices, with options markets now pricing a 77% probability of an OPEC cut at the next meeting, suggesting the cartel faces renewed pressure. Cross-currents remain: Ukraine drone strikes hit a Russian oil facility on June 14, Britain intercepted a Russian shadow-fleet tanker in the English Channel, and the EU announced fresh sanctions targeting Russian energy revenues \u2014 but none were sufficient to offset the Hormuz supply relief.",
    "drivers": [
-    "US-Iran preliminary deal and first LNG tanker clearing Strait of Hormuz triggers large geopolitical risk-premium unwind, sending WTI and Brent down ~5% on the day",
-    "CME OPEC Watch pricing 77.26% probability of a production increase at the next meeting, amplifying bearish sentiment",
-    "Ukraine drone strikes on Russian oil infrastructure and Russia easing fuel-quality standards signal internal Russian supply stress, providing only marginal downside offset"
+    "US-Iran preliminary agreement to halt hostilities and reopen the Strait of Hormuz triggered the day's sharp sell-off, removing a key geopolitical risk premium",
+    "Month-to-date losses of ~20% on WTI and Brent reflect a sustained supply-return narrative; CME options now price a 77% chance of an OPEC production cut at the next meeting",
+    "Offsetting geopolitical noise \u2014 UK interception of a Russian shadow-fleet tanker, new EU energy sanctions on Russia, and Ukrainian drone strikes on Russian oil infrastructure \u2014 failed to materially support prices"
    ],
    "headlineCount": 12,
    "sources": [
-    "GMA Network",
+    "ABC News - Breaking News, Latest News and Videos",
+    "AFR",
+    "Al Arabiya English",
     "Oil & Gas Middle East",
     "The Hindu",
-    "The Sunday Guardian"
+    "The Straits Times"
    ]
   },
   "gas": {
-   "summary": "European and US natural gas markets are diverging sharply. TTF collapsed 10.25% to 41.98 \u20ac/MWh on the day, continuing a steep 15.75% weekly decline, as the Hormuz reopening raises expectations of resumed LNG flows into Europe and Asia from the Gulf. Henry Hub, by contrast, edged up 0.90% to $3.148/MMBtu, sustaining a solid month-on-month gain of 8.78%, insulated from the Hormuz narrative by domestic supply-demand dynamics. A potential supply disruption at Inpex's 9.2-mtpa Ichthys LNG facility in Australia remains live after the Fair Work Commission denied an employer request to block a strike, which could tighten Asian spot LNG supply and partially offset European relief from Hormuz reopening. The Russia fuel-quality story is a gas-adjacent negative for European energy security assumptions, though the headline impact today is dwarfed by the Hormuz development.",
+   "summary": "Henry Hub edged up 0.99% to $3.151/MMBtu, holding a solid +8.88% gain over the past month even as the broader energy complex sold off sharply. The US domestic market appears relatively insulated from the Hormuz deal that hammered oil, though European natural gas prices tumbled roughly 6% on the same news as LNG supply route risk eased. GasBuddy's petroleum analyst confirmed US national average retail gasoline has slipped below $4/gallon, a politically significant threshold. Goldman Sachs-backed Danish trader InCommodities is expanding into US physical gas markets after European trading profits collapsed as volatility faded \u2014 a signal that the European gas market is settling while US markets retain relative appeal. The data provided is somewhat limited for a full Henry Hub fundamental picture today.",
    "drivers": [
-    "Hormuz reopening and first successful LNG transit crush TTF by more than 10% as European market prices in restored Gulf LNG availability",
-    "Australian Fair Work Commission clears an Inpex Ichthys LNG strike, introducing near-term supply risk for Asian buyers that could redirect spot cargoes away from Europe",
-    "Henry Hub outperforms, up 0.90% on the day and +8.78% month-on-month, reflecting domestic US fundamentals largely decoupled from the Hormuz-driven sell-off"
+    "Henry Hub diverged from the oil sell-off, edging higher on the day and sustaining a near 9% monthly gain, reflecting distinct US domestic supply-demand dynamics",
+    "European gas prices fell ~6% on the US-Iran Hormuz agreement, easing LNG supply-route risk premiums that had supported European prices",
+    "US retail gasoline slipping below $4/gallon reduces consumer inflation pressure but may dampen near-term refinery throughput and associated gas demand signals"
    ],
-   "headlineCount": 8,
+   "headlineCount": 7,
    "sources": [
     "Oil & Gas Middle East"
    ]
   },
   "power": {
-   "summary": "EU carbon EUAs bucked the broader energy sell-off, gaining 3.46% to $75.575/EUA, extending a weekly rise of 3.72% and a monthly gain of 6.65%. The move is notable given that TTF's sharp 10.25% decline should theoretically reduce gas-to-coal switching incentives and lower carbon demand from the power sector; the EUA rally therefore suggests structural buying or compliance-driven demand is overriding short-term fuel-price signals. On the structural side, India's solar capacity is forecast to grow 22% annually through 2035 driven by data-centre power demand per a Nuvama report, while New Delhi is simultaneously pushing states to fast-track nuclear and battery storage approvals, signalling a broadening of the energy mix beyond renewables. The Iran deal and Hormuz reopening are primarily an oil and LNG story for power markets, with second-order effects on European generation costs likely to materialise only as TTF softness feeds through to gas-fired dispatch economics.",
+   "summary": "EU carbon allowances (EUA) bucked the broader energy sell-off, gaining 3.46% on the day to $75.575/EUA and posting a solid +6.65% monthly advance. The headline driver set for this sector is relatively thin today, but a handful of meaningful themes emerge. UK Prime Minister Starmer pledged new sanctions on Russia and nuclear energy support for Ukraine, while a separate UK energy deal was announced to support Ukrainian power infrastructure suffering from Russian attacks. India's federal government urged states to fast-track approvals for nuclear and battery storage projects. JP Morgan flagged that falling oil prices could prompt central bank rate cuts \u2014 a potential tailwind for capital-intensive clean energy investment. The divergence of EUA strength against weaker fossil fuel prices is consistent with a market repricing the longer-term energy transition.",
    "drivers": [
-    "EU carbon EUAs rally 3.46% despite falling gas prices, suggesting compliance or structural buying is dominating short-term fuel-switching logic",
-    "India's solar capacity projected at 22% annual growth to 2035, with federal government accelerating nuclear and battery storage approvals, underlining long-run demand transformation",
-    "Hormuz reopening and TTF collapse create a lagged downward pressure on European gas-fired power generation costs, but direct power-market impact is not yet reflected in today's carbon price action"
+    "EU carbon EUAs rose 3.46% against the grain of the broader energy sell-off, extending a monthly gain of 6.65% as lower fossil fuel prices may reinforce structural decarbonisation policy momentum",
+    "UK government pledged nuclear energy support for Ukraine and new Russia sanctions targeting energy revenues, reinforcing European energy security and clean-power investment themes",
+    "India's push to fast-track nuclear and battery storage approvals signals emerging-market policy acceleration toward low-carbon capacity, a medium-term demand signal for carbon markets"
    ],
-   "headlineCount": 8,
+   "headlineCount": 6,
    "sources": [
-    "GMA Network",
-    "Khaama Press",
-    "MSN",
-    "Outlook India",
-    "The Sunday Guardian"
+    "The Guardian",
+    "The Mirror",
+    "The Straits Times"
    ]
   }
  }
