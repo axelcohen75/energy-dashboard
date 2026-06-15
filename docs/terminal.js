@@ -332,7 +332,69 @@ function onCommodityChange() {
     fSlider.step = step;
     $('futures-price-input').step = step;
 
+    // Update underlying display
+    updateUnderlyingDisplay();
+    computeRealizedVolDisplay();
+
     updateCharts();
+}
+
+function updateUnderlyingDisplay() {
+    const env = getEnv();
+    const c = COMMODITIES[$('commodity-select')?.value];
+    const el = $('underlying-f-display');
+    if (el) {
+        const unit = c ? (c.spot < 5 ? '$/MMBtu' : '¢/lb') : '';
+        el.textContent = `F = ${env.F.toFixed(c && c.spot < 5 ? 3 : 2)} ${unit}`;
+    }
+}
+
+function computeRealizedVolDisplay() {
+    const row = $('realized-vol-row');
+    const display = $('realized-vol-display');
+    if (!row || !display) return;
+
+    const commodityName = $('commodity-select')?.value;
+    const edCfg = typeof ENERGY_COMMODITIES !== 'undefined' ? ENERGY_COMMODITIES[commodityName] : null;
+    const sym = edCfg?.continuous;
+    const hist = sym && typeof marketData !== 'undefined' ? marketData?.history?.[sym] : null;
+
+    if (!hist?.close || hist.close.length < 30) {
+        row.style.display = 'none';
+        return;
+    }
+
+    const close = hist.close;
+    const rv20 = _annualizedRV(close, 20);
+    const rv60 = _annualizedRV(close, 60);
+    const rv120 = _annualizedRV(close, 120);
+
+    row.style.display = '';
+    const fmt = v => v !== null ? `${v.toFixed(1)}%` : '—';
+    display.innerHTML = `20d: <b>${fmt(rv20)}</b>&nbsp;&nbsp;60d: <b>${fmt(rv60)}</b>&nbsp;&nbsp;120d: <b>${fmt(rv120)}</b>`;
+
+    _cachedRV60 = rv60;
+}
+
+let _cachedRV60 = null;
+
+function _annualizedRV(close, n) {
+    if (close.length < n + 1) return null;
+    const returns = [];
+    for (let i = close.length - n; i < close.length; i++) {
+        if (close[i - 1] > 0) returns.push(Math.log(close[i] / close[i - 1]));
+    }
+    if (returns.length < 5) return null;
+    const mean = returns.reduce((a, b) => a + b, 0) / returns.length;
+    const variance = returns.reduce((a, r) => a + (r - mean) ** 2, 0) / (returns.length - 1);
+    return Math.sqrt(variance * 252) * 100;
+}
+
+function useRealizedVol() {
+    if (_cachedRV60 != null) {
+        setSlider('volatility', _cachedRV60.toFixed(1));
+        updateCharts();
+    }
 }
 
 function setSlider(id, value) {
@@ -401,10 +463,7 @@ function updateForwardPrice() {
     if (S > parseFloat(sSlider.max)) sSlider.max = S * 2;
     if (S < parseFloat(sSlider.min)) sSlider.min = Math.max(S * 0.25, 0.01);
 
-    // Auto-rescale the payoff plot window whenever F falls outside the current
-    // [spotMin, spotMax] range — this prevents the chart from clustering all
-    // data at one edge when the user switches from a small-price commodity
-    // (WTI at $75) to a large-price one (EU Gasoil at $1135).
+    updateUnderlyingDisplay();
     rescalePlotWindowIfNeeded(F);
 
     return F;
@@ -602,7 +661,7 @@ function buildMetricsPanel() {
 }
 
 function toggleMetric(name) {
-    if (name === 'payoff') return; // payoff has its own chart
+    if (name === 'payoff') return;
     const idx = activeMetrics.indexOf(name);
     if (idx >= 0) {
         activeMetrics.splice(idx, 1);
@@ -610,7 +669,22 @@ function toggleMetric(name) {
         activeMetrics.push(name);
     }
     updateMetricStyles();
+    updateQuickGreekBtns();
     updateCharts();
+}
+
+function quickGreek(name) {
+    activeMetrics = [name];
+    updateMetricStyles();
+    updateQuickGreekBtns();
+    updateCharts();
+}
+
+function updateQuickGreekBtns() {
+    document.querySelectorAll('.greek-qbtn').forEach(btn => {
+        const g = btn.textContent.toLowerCase();
+        btn.classList.toggle('active', activeMetrics.includes(g));
+    });
 }
 
 function updateMetricStyles() {
@@ -647,6 +721,8 @@ function updateCharts() {
     const cc = getChartColors();
     const env = getEnv();
     if (env.spotMin >= env.spotMax || env.spotMin < 0) return;
+
+    updateGreeksByLeg();
 
     const spotRange = linspace(env.spotMin, env.spotMax, 200);
 
@@ -1026,6 +1102,304 @@ function generateSurface() {
     };
 
     Plotly.react('surface-chart', [trace], layout, CHART_CONFIG);
+}
+
+// ─── Portfolio Leg Tags + Greeks-by-Leg Table ────────────────────────────────
+
+function updateGreeksByLeg() {
+    const tagsEl = document.getElementById('portfolio-leg-tags');
+    const tableEl = document.getElementById('greeks-by-leg-table');
+    if (!tagsEl || !tableEl) return;
+
+    if (portfolio.length === 0) {
+        tagsEl.innerHTML = '<span style="color:var(--text-dim);font-size:10px">No positions</span>';
+        tableEl.innerHTML = '';
+        return;
+    }
+
+    const env = getEnv();
+
+    // Leg tags
+    tagsEl.innerHTML = portfolio.map((leg, i) => {
+        const sign = leg.position === 'long' ? '+' : '-';
+        const type = leg.type === 'call' ? 'CALL' : 'PUT';
+        const g = computeGreeks(leg, env.F, env.r, env.sigma, env.T);
+        const price = Math.abs(g.price || 0);
+        return `<span class="leg-tag">${sign}${leg.quantity} ${type} K=${leg.strike.toFixed(1)}
+            <span class="tag-price">${price.toFixed(2)}</span>
+            <span class="tag-close" onclick="removeLeg(${i})">&times;</span></span>`;
+    }).join('');
+
+    // Greeks table
+    const cols = ['Leg', 'Value', 'Delta', 'Gamma', 'Vega', 'Theta/d', 'Rho'];
+    let rows = '';
+    const totals = { price: 0, delta: 0, gamma: 0, vega: 0, theta: 0, rho: 0 };
+
+    for (const leg of portfolio) {
+        const g = computeGreeks(leg, env.F, env.r, env.sigma, env.T);
+        const sign = leg.position === 'long' ? '+' : '-';
+        const type = leg.type === 'call' ? 'CALL' : 'PUT';
+        const label = `${sign}${leg.quantity} ${type} K=${leg.strike.toFixed(1)}`;
+        const style = leg.position === 'short' ? ' style="color:#ef4444"' : ' style="color:#22c55e"';
+
+        totals.price += g.price || 0;
+        totals.delta += g.delta || 0;
+        totals.gamma += g.gamma || 0;
+        totals.vega  += g.vega || 0;
+        totals.theta += g.theta || 0;
+        totals.rho   += g.rho || 0;
+
+        rows += `<tr>
+            <td${style}>${label}</td>
+            <td>${fmtG(g.price)}</td><td>${fmtG(g.delta, 4)}</td><td>${fmtG(g.gamma, 6)}</td>
+            <td>${fmtG(g.vega, 4)}</td><td>${fmtG(g.theta, 4)}</td><td>${fmtG(g.rho, 4)}</td>
+        </tr>`;
+    }
+
+    rows += `<tr class="row-total">
+        <td>TOTAL</td>
+        <td>${fmtG(totals.price)}</td><td>${fmtG(totals.delta, 4)}</td><td>${fmtG(totals.gamma, 6)}</td>
+        <td>${fmtG(totals.vega, 4)}</td><td>${fmtG(totals.theta, 4)}</td><td>${fmtG(totals.rho, 4)}</td>
+    </tr>`;
+
+    tableEl.innerHTML = `<table class="greeks-leg-table">
+        <thead><tr>${cols.map(c => `<th>${c}</th>`).join('')}</tr></thead>
+        <tbody>${rows}</tbody></table>`;
+}
+
+function fmtG(v, dec = 2) {
+    if (typeof v !== 'number' || isNaN(v)) return '—';
+    return v.toFixed(dec);
+}
+
+// ─── Risk Management ─────────────────────────────────────────────────────────
+
+function runRiskAnalysis() {
+    if (portfolio.length === 0) return;
+    const env = getEnv();
+    const conf = parseFloat(document.getElementById('risk-confidence')?.value || 0.99);
+    const horizon = parseInt(document.getElementById('risk-horizon')?.value || 10);
+    const nSims = parseInt(document.getElementById('risk-mc-sims')?.value || 10000);
+
+    const sigma = env.sigma;
+    const F = env.F;
+    const dt = horizon / 252;
+    const sqrtDt = Math.sqrt(dt);
+
+    // Current portfolio value
+    const curVal = portfolioValue(portfolio, F, env.r, sigma, env.T);
+
+    // --- Monte Carlo simulation ---
+    const pnls = [];
+    for (let i = 0; i < nSims; i++) {
+        const z = randomNormal();
+        const Fnew = F * Math.exp(-0.5 * sigma * sigma * dt + sigma * sqrtDt * z);
+        const Tnew = Math.max(env.T - dt, 0.001);
+        const newVal = portfolioValue(portfolio, Fnew, env.r, sigma, Tnew);
+        pnls.push(newVal - curVal);
+    }
+    pnls.sort((a, b) => a - b);
+
+    const mcVarIdx = Math.floor(nSims * (1 - conf));
+    const mcVar1d = -pnls[Math.floor(nSims * (1 - conf) * (1 / horizon))] || 0;
+    const mcVarHorizon = -pnls[mcVarIdx] || 0;
+
+    // CVaR (expected shortfall)
+    const tailPnls = pnls.slice(0, mcVarIdx + 1);
+    const mcES = tailPnls.length > 0 ? -(tailPnls.reduce((a, b) => a + b, 0) / tailPnls.length) : 0;
+
+    // --- Parametric (delta-gamma) VaR ---
+    const greeks = portfolioGreeks(portfolio, F, env.r, sigma, env.T);
+    const zConf = conf === 0.99 ? 2.326 : 1.645;
+    const dollarDelta = (greeks.delta || 0) * F;
+    const dollarGamma = 0.5 * (greeks.gamma || 0) * F * F;
+    const paramVar1d = Math.abs(dollarDelta * sigma * Math.sqrt(1/252) * zConf + dollarGamma * (sigma * Math.sqrt(1/252) * zConf) ** 2);
+    const paramVarH = paramVar1d * Math.sqrt(horizon);
+
+    // --- Historical simulation (using MC as proxy for daily shocks) ---
+    const dailyPnls = [];
+    const dt1d = 1 / 252;
+    const sqrt1d = Math.sqrt(dt1d);
+    for (let i = 0; i < 500; i++) {
+        const z = randomNormal();
+        const Fd = F * Math.exp(-0.5 * sigma * sigma * dt1d + sigma * sqrt1d * z);
+        const Td = Math.max(env.T - dt1d, 0.001);
+        dailyPnls.push(portfolioValue(portfolio, Fd, env.r, sigma, Td) - curVal);
+    }
+    dailyPnls.sort((a, b) => a - b);
+    const histVar1d = -dailyPnls[Math.floor(500 * (1 - conf))] || 0;
+    const histVarH = histVar1d * Math.sqrt(horizon);
+    const histTail = dailyPnls.slice(0, Math.floor(500 * (1 - conf)) + 1);
+    const histES = histTail.length > 0 ? -(histTail.reduce((a, b) => a + b, 0) / histTail.length) : 0;
+
+    // --- Maximum Drawdown from MC paths ---
+    let avgDD = 0, dd95 = 0, worstDD = 0;
+    const ddSamples = [];
+    for (let i = 0; i < Math.min(nSims, 2000); i++) {
+        let peak = curVal, maxDD = 0, val = curVal;
+        for (let d = 1; d <= horizon; d++) {
+            const z = randomNormal();
+            const Fd = F * Math.exp(-0.5 * sigma * sigma * (d / 252) + sigma * Math.sqrt(d / 252) * z);
+            val = portfolioValue(portfolio, Fd, env.r, sigma, Math.max(env.T - d / 252, 0.001));
+            if (val > peak) peak = val;
+            const dd = peak - val;
+            if (dd > maxDD) maxDD = dd;
+        }
+        ddSamples.push(maxDD);
+    }
+    ddSamples.sort((a, b) => a - b);
+    avgDD = ddSamples.reduce((a, b) => a + b, 0) / ddSamples.length;
+    dd95 = ddSamples[Math.floor(ddSamples.length * 0.95)] || 0;
+    worstDD = ddSamples[ddSamples.length - 1] || 0;
+
+    // Render tables
+    renderVarTable(conf, horizon, histVar1d, histVarH, paramVar1d, paramVarH, mcVar1d, mcVarHorizon);
+    renderCvarTable(conf, histES, mcES);
+    renderDrawdownTable(avgDD, dd95, worstDD);
+    renderMcChart(pnls, mcVarHorizon, conf);
+    renderStressTests(env, curVal);
+}
+
+function portfolioValue(legs, F, r, sigma, T) {
+    let val = 0;
+    for (const leg of legs) {
+        const s = legSigma(leg, sigma);
+        const price = Black76.price(F, leg.strike, r, s, T, leg.type === 'call');
+        const sign = leg.position === 'long' ? 1 : -1;
+        val += sign * leg.quantity * price;
+    }
+    return val;
+}
+
+function randomNormal() {
+    let u = 0, v = 0;
+    while (u === 0) u = Math.random();
+    while (v === 0) v = Math.random();
+    return Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
+}
+
+function renderVarTable(conf, horizon, hVar1d, hVarH, pVar1d, pVarH, mcVar1d, mcVarH) {
+    const confPct = (conf * 100).toFixed(0);
+    const el = document.getElementById('risk-var-table');
+    if (!el) return;
+    el.innerHTML = `<table class="risk-table">
+        <thead><tr><th style="text-align:left">VALUE-AT-RISK</th><th>VaR 1d (${confPct}%)</th><th>VaR ${horizon}d (${confPct}%)</th></tr></thead>
+        <tbody>
+            <tr><td>Historical</td><td class="val-neg">${hVar1d.toFixed(2)}</td><td class="val-neg">${hVarH.toFixed(2)}</td></tr>
+            <tr><td>Parametric (&Delta;-&Gamma;)</td><td class="val-neg">${pVar1d.toFixed(2)}</td><td class="val-neg">${pVarH.toFixed(2)}</td></tr>
+            <tr><td>Monte Carlo</td><td class="val-neg">${mcVar1d.toFixed(2)}</td><td class="val-neg">${mcVarH.toFixed(2)}</td></tr>
+        </tbody></table>`;
+}
+
+function renderCvarTable(conf, histES, mcES) {
+    const confPct = (conf * 100).toFixed(0);
+    const el = document.getElementById('risk-cvar-table');
+    if (!el) return;
+    el.innerHTML = `<table class="risk-table">
+        <thead><tr><th colspan="2" style="text-align:left">CVaR / EXPECTED SHORTFALL (${confPct}%)</th></tr></thead>
+        <tbody>
+            <tr><td>Historical ES</td><td class="val-neg">${histES.toFixed(2)}</td></tr>
+            <tr><td>Monte Carlo ES</td><td class="val-neg">${mcES.toFixed(2)}</td></tr>
+        </tbody></table>`;
+}
+
+function renderDrawdownTable(avg, p95, worst) {
+    const el = document.getElementById('risk-drawdown-table');
+    if (!el) return;
+    const horizon = parseInt(document.getElementById('risk-horizon')?.value || 10);
+    el.innerHTML = `<table class="risk-table">
+        <thead><tr><th colspan="2" style="text-align:left">MAXIMUM DRAWDOWN (${horizon}D, MC)</th></tr></thead>
+        <tbody>
+            <tr><td>Avg Drawdown</td><td class="val-neg">${avg.toFixed(2)}</td></tr>
+            <tr><td>95th pctl DD</td><td class="val-neg">${p95.toFixed(2)}</td></tr>
+            <tr><td>Worst-case DD</td><td class="val-neg">${worst.toFixed(2)}</td></tr>
+        </tbody></table>`;
+}
+
+function renderMcChart(pnls, varLine, conf) {
+    const cc = getChartColors();
+    const layout = {
+        ...getChartLayout(),
+        xaxis: { ...getChartLayout().xaxis, title: 'P&L' },
+        yaxis: { ...getChartLayout().yaxis, title: 'Frequency' },
+        margin: { l: 50, r: 20, t: 30, b: 40 },
+        bargap: 0.02,
+        shapes: [{
+            type: 'line', x0: -varLine, x1: -varLine, y0: 0, y1: 1, yref: 'paper',
+            line: { color: '#ef4444', width: 2, dash: 'dash' },
+        }],
+        annotations: [{
+            x: -varLine, y: 1, yref: 'paper', text: `VaR ${(conf * 100).toFixed(0)}%`,
+            showarrow: true, arrowhead: 2, ax: 30, ay: -20,
+            font: { size: 10, color: '#ef4444' },
+        }],
+        title: { text: 'MC P&L DISTRIBUTION', font: { size: 12, color: cc.text } },
+    };
+
+    const trace = {
+        x: pnls, type: 'histogram', nbinsx: 80,
+        marker: { color: isDarkMode ? '#2dd4bf' : '#0d9488' },
+    };
+
+    Plotly.react('risk-mc-chart', [trace], layout, CHART_CONFIG);
+}
+
+function renderStressTests(env, curVal) {
+    const el = document.getElementById('risk-stress-table');
+    if (!el) return;
+
+    const scenarios = [
+        { name: 'Crash -20%',      dPrice: -0.20, dVol: 0.50 },
+        { name: 'Sell-off -10%',    dPrice: -0.10, dVol: 0.25 },
+        { name: 'Dip -5%',          dPrice: -0.05, dVol: 0.10 },
+        { name: 'Rally +5%',        dPrice: 0.05,  dVol: -0.05 },
+        { name: 'Rally +10%',       dPrice: 0.10,  dVol: -0.10 },
+        { name: 'Rally +20%',       dPrice: 0.20,  dVol: -0.15 },
+        { name: 'Vol Spike +50%',   dPrice: 0,     dVol: 0.50 },
+        { name: 'Vol Crush -50%',   dPrice: 0,     dVol: -0.50 },
+        { name: '1 Week Decay',     dPrice: 0,     dVol: 0,     dT: 5/252 },
+        { name: '1 Month Decay',    dPrice: 0,     dVol: 0,     dT: 21/252 },
+    ];
+
+    // Add commodity-specific scenarios
+    const preset = COMMODITIES[$('commodity-select')?.value];
+    if (preset) {
+        const label = $('commodity-select')?.value || 'Commodity';
+        if (label.includes('Coffee') || label.includes('KC')) {
+            scenarios.push({ name: 'Frost Event', dPrice: 0.30, dVol: 0.80 });
+            scenarios.push({ name: 'Brazil Crisis', dPrice: 0.15, dVol: 0.40 });
+        } else if (label.includes('NG') || label.includes('Gas')) {
+            scenarios.push({ name: 'Cold Snap', dPrice: 0.25, dVol: 0.60 });
+            scenarios.push({ name: 'Storage Surplus', dPrice: -0.15, dVol: 0.20 });
+        } else if (label.includes('CL') || label.includes('Crude')) {
+            scenarios.push({ name: 'OPEC Cut', dPrice: 0.10, dVol: 0.15 });
+            scenarios.push({ name: 'Demand Shock', dPrice: -0.25, dVol: 0.40 });
+        }
+    }
+
+    let rows = '';
+    for (const s of scenarios) {
+        const Fnew = env.F * (1 + s.dPrice);
+        const sigNew = env.sigma * (1 + s.dVol);
+        const Tnew = Math.max(env.T - (s.dT || 0), 0.001);
+        const newVal = portfolioValue(portfolio, Fnew, env.r, sigNew, Tnew);
+        const pnl = newVal - curVal;
+        const pnlPct = curVal !== 0 ? (pnl / Math.abs(curVal) * 100) : 0;
+        const priceLbl = s.dPrice ? `${(s.dPrice * 100).toFixed(0)}%` : '—';
+        const volLbl = s.dVol ? `${(s.dVol * 100).toFixed(0)}%` : (s.dT ? '—' : '—');
+        const cls = pnl >= 0 ? 'val-pos' : 'val-neg';
+        rows += `<tr>
+            <td>${s.name}</td>
+            <td>${priceLbl}</td><td>${volLbl}</td>
+            <td>${newVal.toFixed(2)}</td>
+            <td class="${cls}">${pnl >= 0 ? '+' : ''}${pnl.toFixed(2)}</td>
+            <td class="${cls}">${pnlPct >= 0 ? '+' : ''}${pnlPct.toFixed(1)}%</td>
+        </tr>`;
+    }
+
+    el.innerHTML = `<table class="risk-table">
+        <thead><tr><th style="text-align:left">STRESS TESTS</th><th>Price &Delta;</th><th>Vol &Delta;</th><th>New Value</th><th>P&L</th><th>P&L %</th></tr></thead>
+        <tbody>${rows}</tbody></table>`;
 }
 
 // ─── Boot ────────────────────────────────────────────────────────────────────

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy Derivatives Platform</title>
-    <link rel="stylesheet" href="style.css?v=19">
+    <link rel="stylesheet" href="style.css?v=20">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
@@ -21,7 +21,7 @@
             <button class="tab-btn active" data-tab="markets" onclick="switchTab('markets')">OVERVIEW</button>
             <button class="tab-btn" data-tab="physical" onclick="switchTab('physical')">PHYSICAL</button>
             <button class="tab-btn" data-tab="geopolitics" onclick="switchTab('geopolitics')">POLYMARKET QUOTE</button>
-            <button class="tab-btn" data-tab="pricer" onclick="switchTab('pricer')">OPTION PRICER</button>
+            <button class="tab-btn" data-tab="pricer" onclick="switchTab('pricer')">PRICER</button>
             <button class="tab-btn" data-tab="cftc" onclick="switchTab('cftc')">CFTC</button>
         </nav>
     </div>
@@ -44,11 +44,22 @@
     <div class="pricer-mode-tabs">
         <button class="pricer-mode-btn active" data-mode="vanilla" onclick="switchPricerMode('vanilla')">VANILLA OPTIONS</button>
         <button class="pricer-mode-btn" data-mode="crack" onclick="switchPricerMode('crack')">CRACK SPREAD</button>
+        <button class="pricer-mode-btn" data-mode="storage" onclick="switchPricerMode('storage')">GAS STORAGE</button>
     </div>
     <div class="pricer-mode-meta" id="pricer-mode-meta">BLACK&#8209;76 // SINGLE&#8209;ASSET</div>
 </div>
 
 <div id="pricer-vanilla" class="pricer-mode-content active">
+
+<!-- Portfolio Legs bar + Greeks by Leg table -->
+<div class="panel" style="margin:0 10px 8px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <div class="lbl" style="margin-bottom:0">PORTFOLIO LEGS</div>
+        <div id="portfolio-leg-tags" style="display:flex;gap:6px;flex-wrap:wrap"></div>
+    </div>
+    <div id="greeks-by-leg-table"></div>
+</div>
+
 <div class="main-grid">
 
     <!-- ─── LEFT COLUMN ─── -->
@@ -56,8 +67,17 @@
 
         <!-- Commodity Preset -->
         <div class="panel">
-            <div class="lbl">COMMODITY PRESET</div>
+            <div class="lbl">UNDERLYING</div>
             <select id="commodity-select" class="mt-8"></select>
+            <div class="forward-result mt-8">
+                <div class="lbl lbl-sm">FUTURES PRICE</div>
+                <div class="forward-value" id="underlying-f-display" style="font-size:18px">—</div>
+            </div>
+            <div id="realized-vol-row" class="mt-8" style="display:none">
+                <div class="lbl lbl-sm">REALIZED VOLATILITY</div>
+                <div id="realized-vol-display" style="font-size:10px;font-family:var(--mono);color:var(--text-muted);margin-top:3px"></div>
+                <button class="btn btn-ghost mt-8" style="font-size:8px;padding:3px 8px" id="use-rv-btn" onclick="useRealizedVol()">Use 60d RV</button>
+            </div>
         </div>
 
         <!-- Forward Pricing -->
@@ -189,6 +209,13 @@
                         <div>
                             <div class="lbl" style="font-size:12px;margin-bottom:0">GREEKS ANALYTICS</div>
                             <div class="sub-label">SENSITIVITIES // UNDERLYING F</div>
+                        </div>
+                        <div class="greek-quick-btns" id="greek-quick-btns">
+                            <button class="greek-qbtn active" onclick="quickGreek('delta')">Delta</button>
+                            <button class="greek-qbtn" onclick="quickGreek('gamma')">Gamma</button>
+                            <button class="greek-qbtn" onclick="quickGreek('vega')">Vega</button>
+                            <button class="greek-qbtn" onclick="quickGreek('theta')">Theta</button>
+                            <button class="greek-qbtn" onclick="quickGreek('rho')">Rho</button>
                         </div>
                     </div>
                     <div id="greeks-chart" class="chart-plot"></div>
@@ -334,6 +361,45 @@
         </div>
     </div>
 </div>
+
+<!-- ═══ RISK MANAGEMENT SECTION ═══ -->
+<div class="panel" style="margin:8px 10px">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+        <div class="lbl" style="font-size:13px;margin-bottom:0"><span class="hl">///</span> RISK MANAGEMENT</div>
+        <div style="display:flex;gap:12px;align-items:center">
+            <div>
+                <span class="lbl lbl-sm">CONFIDENCE</span>
+                <select id="risk-confidence" style="width:70px;font-size:10px">
+                    <option value="0.95">95%</option>
+                    <option value="0.99" selected>99%</option>
+                </select>
+            </div>
+            <div>
+                <span class="lbl lbl-sm">HORIZON (DAYS)</span>
+                <input type="number" id="risk-horizon" value="10" min="1" max="252" step="1" style="width:60px">
+            </div>
+            <div>
+                <span class="lbl lbl-sm">MC SIMS</span>
+                <input type="number" id="risk-mc-sims" value="10000" min="1000" max="100000" step="1000" style="width:80px">
+            </div>
+            <button class="btn btn-accent" onclick="runRiskAnalysis()">RUN</button>
+        </div>
+    </div>
+    <div class="risk-grid mt-10">
+        <div class="risk-left">
+            <div id="risk-var-table"></div>
+            <div style="display:flex;gap:10px;margin-top:10px">
+                <div id="risk-cvar-table" style="flex:1"></div>
+                <div id="risk-drawdown-table" style="flex:1"></div>
+            </div>
+        </div>
+        <div class="risk-right">
+            <div id="risk-mc-chart" class="chart-plot" style="height:260px"></div>
+        </div>
+    </div>
+    <div id="risk-stress-table" class="mt-10"></div>
+</div>
+
 </div><!-- /#pricer-vanilla -->
 
 <!-- ═══ CRACK SPREAD SUB-TAB ═══ -->
@@ -571,6 +637,109 @@
     </div>
 </div>
 </div><!-- /#pricer-crack -->
+
+<!-- ═══ GAS STORAGE SUB-TAB ═══ -->
+<div id="pricer-storage" class="pricer-mode-content">
+<div class="storage-grid">
+
+    <!-- LEFT: Parameters -->
+    <div class="col-left">
+        <div class="panel">
+            <div class="lbl">STORAGE PARAMETERS</div>
+            <div class="grid-2 mt-8">
+                <div>
+                    <div class="lbl lbl-sm">CAPACITY (MMBtu)</div>
+                    <input type="number" id="gs-capacity" value="1000000" min="1" step="10000">
+                </div>
+                <div>
+                    <div class="lbl lbl-sm">INITIAL INVENTORY</div>
+                    <input type="number" id="gs-init-inv" value="0" min="0" step="10000">
+                </div>
+            </div>
+            <div class="grid-2 mt-8">
+                <div>
+                    <div class="lbl lbl-sm">MAX INJECT/MO</div>
+                    <input type="number" id="gs-max-inj" value="300000" min="1" step="10000">
+                </div>
+                <div>
+                    <div class="lbl lbl-sm">MAX WITHDRAW/MO</div>
+                    <input type="number" id="gs-max-wdw" value="500000" min="1" step="10000">
+                </div>
+            </div>
+            <div class="grid-2 mt-8">
+                <div>
+                    <div class="lbl lbl-sm">INJ COST ($/MMBtu)</div>
+                    <input type="number" id="gs-inj-cost" value="0.01" min="0" step="0.001">
+                </div>
+                <div>
+                    <div class="lbl lbl-sm">WDW COST ($/MMBtu)</div>
+                    <input type="number" id="gs-wdw-cost" value="0.01" min="0" step="0.001">
+                </div>
+            </div>
+            <div class="mt-10">
+                <div class="lbl lbl-sm">MONTHS</div>
+                <div style="display:flex;gap:8px">
+                    <label class="hedge-check"><input type="radio" name="gs-months" value="12" checked> <span class="hedge-label">12</span></label>
+                    <label class="hedge-check"><input type="radio" name="gs-months" value="24"> <span class="hedge-label">24</span></label>
+                </div>
+            </div>
+            <button class="btn btn-accent btn-full mt-12" onclick="loadGasStorageCurve()">LOAD FORWARD CURVE</button>
+            <button class="btn btn-accent btn-full mt-8" onclick="runGasStorageCalc()" id="gs-calc-btn" disabled>CALCULATE INTRINSIC VALUE</button>
+        </div>
+
+        <!-- Results -->
+        <div class="panel" id="gs-results-panel" style="display:none">
+            <div class="lbl">RESULTS</div>
+            <div class="grid-3 mt-8">
+                <div>
+                    <div class="lbl lbl-sm">INTRINSIC VALUE</div>
+                    <div class="forward-value" id="gs-value" style="color:var(--accent)">—</div>
+                </div>
+                <div>
+                    <div class="lbl lbl-sm">TOTAL INJECTED</div>
+                    <div class="forward-value" id="gs-total-inj">—</div>
+                </div>
+                <div>
+                    <div class="lbl lbl-sm">TOTAL WITHDRAWN</div>
+                    <div class="forward-value" id="gs-total-wdw">—</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How it works -->
+        <div class="panel">
+            <div class="lbl">HOW IT WORKS</div>
+            <div class="mt-8" style="font-size:10px;color:var(--text-muted);line-height:1.65">
+                <p>This model computes the <b>intrinsic value</b> of a gas storage asset by solving a linear program over the Henry Hub forward curve.</p>
+                <p style="margin-top:6px"><b>Objective</b> — Maximize: withdrawal revenue &minus; injection cost &minus; operational costs.</p>
+                <p style="margin-top:6px"><b>Constraints</b></p>
+                <ul style="margin:4px 0 0 16px;padding:0">
+                    <li>Inventory &le; maximum capacity</li>
+                    <li>Storage level &ge; 0 at all times</li>
+                    <li>Injection and withdrawal volumes capped per month</li>
+                    <li>Final inventory = initial inventory</li>
+                </ul>
+                <p style="margin-top:6px">Data is loaded from the NYMEX Henry Hub term structure (fetched via Yahoo Finance in the market data pipeline).</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CENTER + RIGHT: Charts -->
+    <div class="col-center" style="grid-column: span 2">
+        <div class="panel">
+            <div class="lbl" style="font-size:12px">HENRY HUB FORWARD CURVE</div>
+            <div class="sub-label">NYMEX FUTURES PRICES BY DELIVERY MONTH</div>
+            <div id="gs-curve-chart" class="chart-plot" style="height:280px"></div>
+        </div>
+        <div class="panel" style="margin-top:10px">
+            <div class="lbl" style="font-size:12px">OPTIMAL INJECTION / WITHDRAWAL SCHEDULE</div>
+            <div class="sub-label">VOLUME (MMBtu) &amp; INVENTORY PATH</div>
+            <div id="gs-schedule-chart" class="chart-plot" style="height:320px"></div>
+        </div>
+    </div>
+</div>
+</div><!-- /#pricer-storage -->
+
 </div><!-- /#tab-pricer -->
 
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
@@ -1029,7 +1198,8 @@
 <script src="physical-markets.js?v=13"></script>
 <script src="geopolitics.js?v=4"></script>
 <script src="cftc.js?v=1"></script>
-<script src="terminal.js?v=14"></script>
-<script src="crack-spread.js?v=1"></script>
+<script src="terminal.js?v=15"></script>
+<script src="crack-spread.js?v=2"></script>
+<script src="gas-storage.js?v=1"></script>
 </body>
 </html>

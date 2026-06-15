@@ -383,13 +383,15 @@ function switchPricerMode(mode) {
     });
     const meta = _$('pricer-mode-meta');
     if (meta) {
-        meta.innerHTML = mode === 'crack'
-            ? "KIRK&nbsp;APPROX // SPREAD&nbsp;OPTION"
-            : "BLACK\u201176 // SINGLE\u2011ASSET";
+        if (mode === 'crack') meta.innerHTML = "KIRK&nbsp;APPROX // SPREAD&nbsp;OPTION";
+        else if (mode === 'storage') meta.innerHTML = "LINEAR&nbsp;PROGRAM // INTRINSIC&nbsp;VALUE";
+        else meta.innerHTML = "BLACK\u201176 // SINGLE\u2011ASSET";
     }
     if (mode === 'crack') {
         initCrackSpread();
-        // Trigger a redraw in case theme changed while hidden
         setTimeout(() => updateCrack(), 30);
+    }
+    if (mode === 'storage' && typeof initGasStorage === 'function') {
+        initGasStorage();
     }
 }
