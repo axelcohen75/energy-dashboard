@@ -1,49 +1,50 @@
 {
- "generated": "2026-06-16T18:02:52.921436+00:00",
+ "generated": "2026-06-16T23:04:03.417803+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets suffered one of the sharpest single-day collapses in recent memory as the U.S.-Iran agreement to reopen the Strait of Hormuz drained the geopolitical war premium in one session. WTI shed 7.18% to $74.95/bbl and Brent fell 5.49% to $78.60/bbl, extending a brutal month that has now wiped roughly 28-29% off both benchmarks. The deal, expected to be formally signed in Geneva on June 19, includes an Iranian oil sanctions waiver allowing crude sales to resume immediately without waiting for inspections or certifications. Demand headwinds compounded the supply relief: Chinese refinery runs hit a four-year low as crude imports dropped to an eight-year low. Morgan Stanley and Goldman Sachs cut year-end and 2027 price forecasts in response. Trump also flagged the possibility of reimposing Russian crude sanctions, a residual upside tail risk that traders are not yet pricing meaningfully.",
+   "summary": "Crude collapsed on Tuesday as the US-Iran Hormuz deal drained months of war-premium from the market. WTI fell 6.02% to $75.89/bbl and Brent shed 4.42% to $79.49, extending a brutal month that has now erased roughly 27-28% from both benchmarks. The catalyst is unambiguous: a preliminary US-Iran agreement reopens the Strait of Hormuz and, critically, suspends oil sanctions on Tehran with immediate effect \u2014 no waiting period for inspections or certifications. That prospect of rapid Iranian barrel re-entry overwhelmed an otherwise supportive API print showing US crude stocks down 8.33 million barrels last week, the ninth consecutive draw totalling 52 million barrels. G7 leaders simultaneously escalated Russia sanctions on oil revenues, and Ukraine strikes continue to bite Russian refinery output, but neither offset the Hormuz relief trade. CME options now price a 77% probability of an OPEC production cut at the next meeting, signalling the cartel may be forced to defend prices.",
    "drivers": [
-    "U.S.-Iran Hormuz deal triggers immediate unwinding of geopolitical risk premium; Iranian barrels to re-enter market without delay",
-    "China demand destruction \u2014 refinery runs at four-year low, crude imports at eight-year low \u2014 amplifies bearish price pressure",
-    "Major bank forecast cuts (Morgan Stanley, Goldman Sachs) and CME options implying 77% probability of an OPEC production increase reinforce downside bias"
+    "Strait of Hormuz reopening and immediate US suspension of Iran oil sanctions flood market with supply expectations",
+    "API reports ninth straight weekly US crude draw (-8.33 mb), but bullish inventory signal overwhelmed by geopolitical relief selling",
+    "G7 escalates Russia oil-revenue sanctions and Ukraine attacks crimp Russian output, yet net price impact muted vs. Iran deal; OPEC cut odds rise to 77%"
    ],
    "headlineCount": 12,
    "sources": [
-    "ABC News - Breaking News, Latest News and Videos",
+    "Cryptopolitan",
+    "France 24",
     "GMA Network",
     "Oil & Gas Middle East",
-    "The Times of India",
-    "consilium.europa.eu"
+    "The Eastern Herald",
+    "The Sunday Guardian"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets are sending divergent signals across geographies. Henry Hub edged up 2.89% on the day to $3.238/MMBtu, extending a month-long grind higher of 9.39%, supported partly by a labour strike at Inpex's Australian LNG facilities that threatens to disrupt global supply chains. TTF, by contrast, dropped 1.96% to \u20ac41.675/MWh and is down 14.50% on the week, as the Hormuz deal raises expectations of a near-term Qatari LNG restart within weeks. ConocoPhillips is also reportedly set to become the first U.S. major to sign a post-war Syrian gas development deal, signalling medium-term supply additions. News flow for this sector today is moderate; the Australian strike and Qatar restart timeline are the primary near-term swing factors for LNG pricing.",
+   "summary": "Natural gas markets split sharply on Tuesday, with Henry Hub gaining 3.40% to $3.254/MMBtu while TTF dropped 1.96% to \u20ac41.675/MWh, extending TTF's steep one-month slide of nearly 17%. The divergence reflects competing forces: the Hormuz reopening and prospect of restored Middle East LNG flows weigh on European prices, while US Henry Hub draws support from an ongoing strike at Inpex's Australian LNG facilities that threatens to tighten Pacific Basin supply and redirect spot cargoes. Qatar recovery from prior conflict-related damage also remains incomplete per the Inpex headline, adding a further upside risk to Asian and, indirectly, US LNG export demand. Egypt clearing $6 billion in energy debt to foreign operators is a medium-term positive, potentially unlocking new Eastern Mediterranean gas development, though near-term impact is limited.",
    "drivers": [
-    "Ongoing strike at Inpex Australian LNG facilities introduces near-term supply disruption, supporting Henry Hub",
-    "Qatar signalling rapid LNG output restoration post-Hormuz reopening weighs on TTF and European forward prices",
-    "ConocoPhillips Syria gas deal adds medium-term supply optionality to the regional market"
+    "Strike action at Inpex Australian LNG facilities disrupts supply and supports Henry Hub via tighter global LNG balances",
+    "Hormuz reopening and expected recovery of Middle East LNG flows pressure TTF, extending its sharp one-month decline",
+    "Egypt clearing $6 billion in energy arrears to foreign oil firms opens the door to resumed Mediterranean gas investment"
    ],
-   "headlineCount": 5,
+   "headlineCount": 4,
    "sources": [
     "Oil & Gas Middle East"
    ]
   },
   "power": {
-   "summary": "Power and carbon markets were relatively quiet on the day. EU EUAs were essentially flat at $75.56, down just 0.02%, though the contract has gained 5.06% over the past week and 5.75% over the month \u2014 a divergence from TTF's sharp slide that may reflect tightening EU policy expectations rather than fuel-switching dynamics. TTF's 14.50% weekly decline would ordinarily reduce carbon abatement incentives in gas-for-coal switching, a relationship worth monitoring. On the geopolitical side, UK PM Starmer used the G7 to announce a \u00a3210 million nuclear energy support package for Ukraine alongside fresh Russia sanctions, adding a structural nuclear signal. The Hormuz-related headlines feeding this sector are largely spillovers from the oil story. Dedicated power-market price data beyond EUAs and TTF was not provided today; commentary on power spot or capacity prices is therefore limited to available inputs.",
+   "summary": "EU carbon EUAs bucked falling energy prices, rising 3.46% to $75.575/EUA, an apparent decoupling from TTF's continued slide. The move likely reflects structural demand expectations rather than near-term fuel-switching dynamics. At the G7, UK Prime Minister Starmer pledged a \u00a3210 million nuclear energy support package for Ukraine alongside fresh Russia sanctions, signalling continued political commitment to low-carbon capacity in Europe's east. AI and data centre power demand continues to register as a macro driver per today's headlines, with commentary highlighting soaring electricity bills and grid stress from compute buildout. China claimed a new efficiency record with a large-area perovskite solar panel, extending its dominance in solar manufacturing. Data flow for this sector is thinner than oil; the EUA rally's precise driver beyond broad macro sentiment is not fully explained by today's available headlines.",
    "drivers": [
-    "EUAs hold firm near $75.56 despite TTF weakness, suggesting carbon pricing is being driven by policy expectations rather than near-term fuel-switching economics",
-    "UK G7 pledge of \u00a3210 million nuclear energy package for Ukraine highlights continued European nuclear investment momentum",
-    "Hormuz reopening and prospective Iranian crude return may soften energy import costs across Europe, potentially easing power generation cost pressures medium-term"
+    "EU EUAs +3.46% despite falling TTF gas prices, suggesting structural long positioning or demand-side expectations disconnected from near-term fuel costs",
+    "G7/Starmer pledges \u00a3210 million nuclear energy package for Ukraine and new Russia sanctions, reinforcing European low-carbon energy security narrative",
+    "AI data centre power demand highlighted as growing systemic grid pressure; China sets perovskite solar efficiency record, cementing manufacturing leadership"
    ],
-   "headlineCount": 7,
+   "headlineCount": 8,
    "sources": [
     "GMA Network",
     "MSN",
-    "Outlook India",
     "The Guardian",
-    "The Sunday Guardian"
+    "The Sunday Guardian",
+    "newsline.com"
    ]
   }
  }
