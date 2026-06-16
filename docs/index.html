@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy Derivatives Platform</title>
-    <link rel="stylesheet" href="style.css?v=20">
+    <link rel="stylesheet" href="style.css?v=21">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
@@ -722,7 +722,7 @@
 
         <!-- Price Evolution + Stats/Correlation -->
         <div class="overview-top-row">
-            <div class="chart-box overview-price-chart">
+            <div class="chart-box" style="flex:1">
                 <div class="panel">
                     <div class="chart-header" style="flex-wrap:wrap;gap:6px">
                         <div>
@@ -741,12 +741,6 @@
                         </div>
                     </div>
                     <div id="spot-evo-chart" class="chart-plot"></div>
-                </div>
-            </div>
-            <div class="overview-info-box">
-                <div class="panel">
-                    <div class="lbl" id="spot-evo-info-title">MARKET SNAPSHOT</div>
-                    <div id="spot-evo-info" class="mt-8"></div>
                 </div>
             </div>
         </div>
@@ -797,13 +791,16 @@
         </div>
     </div>
 
-    <!-- ─── RIGHT: BRIEFING + OPEC + NEWS ─── -->
+    <!-- ─── RIGHT: SNAPSHOT + BRIEFING + OPEC + NEWS ─── -->
     <div class="col-right">
 
-        <!-- AI Daily Briefing -->
+        <!-- Market Snapshot + AI Daily Briefing (merged) -->
         <div class="panel">
-            <div class="lbl">DAILY BRIEFING <span class="ai-badge">AI</span></div>
-            <div id="overview-briefing" class="mt-8"></div>
+            <div id="spot-evo-info" class="mt-4"></div>
+            <div style="border-top:1px solid var(--input-border);margin-top:10px;padding-top:10px">
+                <div class="lbl">DAILY BRIEFING <span class="ai-badge">AI</span></div>
+                <div id="overview-briefing" class="mt-8"></div>
+            </div>
         </div>
 
         <!-- OPEC Watch (oil sector only) -->
@@ -1130,7 +1127,7 @@
 
 <script src="engine.js?v=9"></script>
 <script src="energy-data.js?v=13"></script>
-<script src="energy-markets.js?v=20"></script>
+<script src="energy-markets.js?v=21"></script>
 <script src="physical-markets.js?v=13"></script>
 <script src="geopolitics.js?v=4"></script>
 <script src="cftc.js?v=1"></script>

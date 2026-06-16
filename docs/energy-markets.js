@@ -744,17 +744,40 @@ function _renderCommodityStats(name) {
     const decimals = price != null && price < 10 ? 3 : 2;
     const priceHtml = price != null ? `${price.toFixed(decimals)}` : '—';
 
+    const perfItems = [
+        ['1W', _getChange(cfg.continuous, 5)],
+        ['1M', _getChange(cfg.continuous, 21)],
+        ['3M', _getChange(cfg.continuous, 63)],
+        ['YTD', _getYtdChange(cfg.continuous)],
+        ['1Y', _getChange(cfg.continuous, 252)],
+    ];
+
+    let perfHtml = perfItems.map(([label, val]) => {
+        if (val == null) return '';
+        const color = val >= 0
+            ? (isDarkMode ? '#34d399' : '#059669')
+            : (isDarkMode ? '#f87171' : '#dc2626');
+        return `<div style="text-align:center"><div class="lbl lbl-sm" style="margin-bottom:2px">${label}</div><span style="color:${color};font-family:var(--mono);font-size:11px;font-weight:600">${val >= 0 ? '+' : ''}${val.toFixed(2)}%</span></div>`;
+    }).join('');
+
+    const volHtml = stats ? `${stats.vol.toFixed(1)}%` : '—';
+    const highHtml = stats ? stats.high.toFixed(decimals) : '—';
+    const lowHtml = stats ? stats.low.toFixed(decimals) : '—';
+
     return `
-        <div class="overview-stat-title">${_shortCommodityName(name)}</div>
-        ${_statRow('Price', priceHtml)}
-        ${_statRow('1W', _fmtSignedValue(_getChange(cfg.continuous, 5)))}
-        ${_statRow('1M', _fmtSignedValue(_getChange(cfg.continuous, 21)))}
-        ${_statRow('3M', _fmtSignedValue(_getChange(cfg.continuous, 63)))}
-        ${_statRow('YTD', _fmtSignedValue(_getYtdChange(cfg.continuous)))}
-        ${_statRow('1Y', _fmtSignedValue(_getChange(cfg.continuous, 252)))}
-        ${_statRow('Vol (ann.)', stats ? `${stats.vol.toFixed(1)}%` : '—')}
-        ${_statRow('52w High', stats ? stats.high.toFixed(decimals) : '—')}
-        ${_statRow('52w Low', stats ? stats.low.toFixed(decimals) : '—')}
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px">
+            <div>
+                <div class="overview-stat-title" style="margin-bottom:2px">${_shortCommodityName(name)}</div>
+                <span style="font-family:var(--mono);font-size:16px;font-weight:700;color:var(--text)">${priceHtml}</span>
+                <span style="font-size:10px;color:var(--text-dim);margin-left:4px">${cfg.unit}</span>
+            </div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:8px">${perfHtml}</div>
+        <div style="display:flex;gap:12px;font-size:10px;color:var(--text-dim);font-family:var(--mono)">
+            <span>Vol: <b>${volHtml}</b></span>
+            <span>52w H: <b>${highHtml}</b></span>
+            <span>52w L: <b>${lowHtml}</b></span>
+        </div>
     `;
 }
 

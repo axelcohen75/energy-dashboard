@@ -491,14 +491,6 @@ body {
 }
 .overview-top-row .chart-box,
 .overview-top-row .panel { overflow: hidden; }
-.overview-price-chart .chart-plot {
-    flex: 1;
-    min-height: 0;
-}
-.overview-info-box .panel {
-    height: 100%;
-    overflow-y: auto;
-}
 
 /* ─── Panel ─── */
 .panel {
