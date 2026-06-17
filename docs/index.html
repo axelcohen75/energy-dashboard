@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy Derivatives Platform</title>
-    <link rel="stylesheet" href="style.css?v=21">
+    <link rel="stylesheet" href="style.css?v=22">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
@@ -626,18 +626,18 @@
         <!-- Results -->
         <div class="panel" id="gs-results-panel" style="display:none">
             <div class="lbl">RESULTS</div>
-            <div class="grid-3 mt-8">
-                <div>
-                    <div class="lbl lbl-sm">INTRINSIC VALUE</div>
-                    <div class="forward-value" id="gs-value" style="color:var(--accent)">—</div>
-                </div>
+            <div class="mt-8">
+                <div class="lbl lbl-sm">INTRINSIC VALUE</div>
+                <div class="forward-value" id="gs-value" style="color:var(--accent);font-size:16px">—</div>
+            </div>
+            <div class="grid-2 mt-8">
                 <div>
                     <div class="lbl lbl-sm">TOTAL INJECTED</div>
-                    <div class="forward-value" id="gs-total-inj">—</div>
+                    <div id="gs-total-inj" style="font-family:var(--mono);font-size:12px;font-weight:600;margin-top:2px">—</div>
                 </div>
                 <div>
                     <div class="lbl lbl-sm">TOTAL WITHDRAWN</div>
-                    <div class="forward-value" id="gs-total-wdw">—</div>
+                    <div id="gs-total-wdw" style="font-family:var(--mono);font-size:12px;font-weight:600;margin-top:2px">—</div>
                 </div>
             </div>
         </div>
@@ -714,6 +714,12 @@
         <div class="panel">
             <div class="lbl">SEASONAL PATTERN</div>
             <div id="overview-seasonal" class="mt-8"></div>
+        </div>
+
+        <!-- OPEC Watch (oil sector only) -->
+        <div class="panel" id="overview-opec-panel">
+            <div class="lbl">CME OPEC WATCH <span style="font-size:7px;color:var(--text-dim);font-weight:400;letter-spacing:0">WTI CRUDE OIL</span></div>
+            <div id="opec-watch-overview" class="mt-8"></div>
         </div>
     </div>
 
@@ -801,12 +807,6 @@
                 <div class="lbl">DAILY BRIEFING <span class="ai-badge">AI</span></div>
                 <div id="overview-briefing" class="mt-8"></div>
             </div>
-        </div>
-
-        <!-- OPEC Watch (oil sector only) -->
-        <div class="panel" id="overview-opec-panel">
-            <div class="lbl">CME OPEC WATCH <span style="font-size:7px;color:var(--text-dim);font-weight:400;letter-spacing:0">WTI CRUDE OIL</span></div>
-            <div id="opec-watch-overview" class="mt-8"></div>
         </div>
 
         <!-- News Feed -->
