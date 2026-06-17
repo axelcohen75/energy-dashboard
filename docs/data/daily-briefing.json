@@ -1,49 +1,48 @@
 {
- "generated": "2026-06-17T16:51:39.408609+00:00",
+ "generated": "2026-06-17T23:00:30.570697+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude prices traded in a narrow range on the day \u2014 WTI edged fractionally lower to $75.99/bbl while Brent firmed 0.84% to $79.62 \u2014 but the month-long collapse of roughly 29-30% dominates the tape. The dominant driver remains the US-Iran ceasefire framework, due to be signed in Geneva on June 19, which has unlocked Strait of Hormuz traffic: tankers previously diverted to Africa are reversing course and Iran's first crude exports in two months have already cleared the US blockade. Falling Murban and Dubai benchmarks are opening arbitrage windows to Western buyers. Bearish supply-side pressure is partially offset by a larger-than-expected 8.3 million barrel draw in US crude inventories per EIA, escalating G7 and EU sanctions on Russian oil revenues, and TotalEnergies flagging that a key Saudi refinery will not fully recover until early 2027. RBOB gasoline fell the sharpest on the day, down 2.21%.",
+   "summary": "Crude remains under severe pressure with WTI at $75.34 (-0.93% on the day, -30.66% over the month) and Brent barely holding $79 after the Strait of Hormuz reopening removed the geopolitical risk premium that had supported prices. Despite a bullish EIA print \u2014 US crude stocks drew 8.3 million barrels in the week ending June 12 \u2014 the macro supply narrative is overwhelmingly bearish. Analysts warn that global inventory builds in the region will absorb Iranian barrels swiftly, undermining any Iran-peace optimism. Meanwhile, G7 leaders agreed to escalate sanctions on Russian crude, with Trump vowing reimposition 'soon,' though the market appears to be pricing this as a lagging offset rather than an immediate bullish catalyst. TotalEnergies flagged that a key Saudi refinery damaged during the conflict will not fully recover until early 2027, adding a modest downstream supply-quality caveat. Falling Murban and Dubai benchmarks have opened arbitrage windows to the US and Europe.",
    "drivers": [
-    "US-Iran deal and Hormuz reopening flooding market with returning supply, crashing Middle East benchmark prices and enabling trans-ocean arbitrage",
-    "US crude inventories drew 8.3 million barrels for the week ending June 12, providing a modest demand-side cushion against the broader selloff",
-    "G7 and EU escalation of sanctions on Russian oil revenues adds geopolitical uncertainty to the supply picture, though near-term price impact is overshadowed by the Iran normalization"
+    "Hormuz reopening and anticipated Iranian supply return dominating sentiment, overwhelming a large 8.3 mb crude draw reported by EIA",
+    "G7 agreement on escalated Russian crude sanctions and Trump's reimposition signals add geopolitical optionality but not yet price support",
+    "TotalEnergies warns damaged Saudi refinery offline until 2027, creating product-quality and refinery-throughput uncertainty in the medium term"
    ],
    "headlineCount": 12,
    "sources": [
+    "Audacy",
+    "Crypto Briefing",
     "Cryptopolitan",
-    "Oil & Gas Middle East",
-    "The Tribune-Democrat",
-    "UNITED24 Media",
-    "consilium.europa.eu"
+    "The Economic Times",
+    "The National News Desk",
+    "The Times of India"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets saw divergent moves: Henry Hub slipped 2.32% on the day to $3.164/MMBtu, though it remains up 4.63% on the month, while European TTF fell 0.74% to \u20ac41.46/MWh and is down sharply \u2014 over 17% \u2014 on both the week and month. Two simultaneous supply-side relief events weighed on TTF: the Ichthys LNG strike in Australia has ended after unions and operator Inpex reached an agreement, and Qatar is repositioning LNG tankers toward the Middle East ahead of an imminent Hormuz reopening, signalling a resumption of Qatari LNG exports that were disrupted during the Iran crisis. ExxonMobil's preliminary agreement to supply South Africa's first LNG import terminal points to incremental long-term demand, while G7 sanctions on Russian gas exports remain a structural upside tail risk for European prices.",
+   "summary": "Natural gas markets are diverging sharply across hubs. Henry Hub slipped 2.32% on the day to $3.164/MMBtu but remains up 4.63% on the month, suggesting US domestic fundamentals are relatively firmer. TTF, by contrast, fell 0.74% today and is down 17.06% on the week and the month, consistent with the post-Hormuz easing of European supply anxiety. The G7's agreement to escalate sanctions on Russian gas exports introduces a potential upside risk for TTF that the market has not yet priced fully. On the supply side, ExxonMobil signing a preliminary LNG supply deal for South Africa's first import terminal underscores the continued build-out of Atlantic Basin LNG demand. Headline flow for this sector is limited today; the dominant driver remains the geopolitical repricing post-Iran ceasefire.",
    "drivers": [
-    "Ichthys LNG strike resolution in Australia removes a weeks-long supply disruption, adding relief to global LNG markets",
-    "Qatar repositioning LNG tankers ahead of Hormuz reopening signals imminent resumption of Gulf LNG flows, weighing heavily on TTF",
-    "G7 escalation of sanctions on Russian gas exports represents a structural upside risk for European gas prices despite today's softness"
+    "TTF under heavy weekly and monthly selling pressure as Hormuz reopening eases European supply stress",
+    "G7 sanctions escalation on Russian gas exports represents an unpriced upside risk for TTF that traders are watching",
+    "ExxonMobil LNG supply deal for South Africa's first import terminal signals ongoing incremental demand growth in emerging markets"
    ],
-   "headlineCount": 8,
+   "headlineCount": 4,
    "sources": [
-    "Oil & Gas Middle East",
+    "Il Sole 24 ORE",
     "UNITED24 Media"
    ]
   },
   "power": {
-   "summary": "EU carbon EUAs held near flat on the day at $75.44/EUA (-0.17%) but remain the relative outperformer across the energy complex, up 3.05% on the week and 5.61% on the month. The divergence with TTF \u2014 down over 17% on both the week and month \u2014 is notable and may reflect regulatory and policy flows rather than pure fuel-switching economics. Key political developments include UK Prime Minister Starmer's pledge at the G7 of a \u00a3210 million nuclear energy support package for Ukraine alongside fresh Russia sanctions, signalling sustained Western commitment to low-carbon energy infrastructure. Poland has moved to tax windfall profits earned by fuel companies during the Iran war period. Supply-side headlines \u2014 the Hormuz reopening and Australian LNG resolution \u2014 are modestly bearish for gas-fired generation costs but have not yet pulled EUAs lower.",
+   "summary": "EU carbon EUAs held near flat today at $75.44 (-0.17%) but are up 3.05% on the week and 5.61% on the month, a notable divergence from the collapsing energy commodity complex \u2014 likely reflecting structural decarbonization demand rather than near-term fuel-switching dynamics. TTF's 17% weekly drop reduces gas-to-coal switching pressure, a mild near-term headwind for EUA demand. At the G7, UK PM Starmer pledged a \u00a3210 million nuclear energy package for Ukraine alongside fresh Russia sanctions. The IEA reported clean energy investment hit $2.2 trillion globally, nearly double fossil fuel spending \u2014 a structural tailwind for the power transition. AI-driven geothermal development is emerging as a niche but credible new demand theme. Poland approved a one-off windfall tax on fuel companies that profited during the Iran war, signalling broader European policy responses to the recent energy price shock.",
    "drivers": [
-    "EU EUAs outperforming the broader energy selloff, up over 5% on the month, likely supported by policy demand and the EU's latest Russia sanctions package",
-    "UK's \u00a3210 million nuclear energy package for Ukraine signals continued G7 commitment to non-fossil power infrastructure",
-    "Poland's approval of a windfall tax on fuel companies that profited from the Iran war highlights regulatory risk now surfacing across European energy markets"
+    "EU EUAs outperforming broader energy complex with +5.61% monthly gain, underpinned by structural decarbonization demand despite weak gas prices",
+    "IEA data showing clean energy investment at $2.2 trillion \u2014 nearly double fossil fuels \u2014 reinforces long-run power transition momentum",
+    "G7 nuclear support for Ukraine and Poland's fuel windfall tax illustrate the widening policy response to the recent conflict-driven energy shock"
    ],
    "headlineCount": 7,
    "sources": [
     "MSN",
-    "Outlook India",
-    "The Guardian",
-    "newsline.com"
+    "The Guardian"
    ]
   }
  }

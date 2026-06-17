@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17T21:29:48Z",
+  "updated": "2026-06-17T23:00:03Z",
   "physical": [
     {
       "title": "US Crude Oil, Gasoline Inventories Still Falling: EIA",
@@ -20,6 +20,15 @@
       "impact": "med"
     },
     {
+      "title": "State of Global Oil Inventories Ruins Iran Peace Optimism",
+      "summary": "As oil benchmarks crash and Brent slips below $80 per barrel, a growing number of analysts are sounding an alarm: Hormuz may reopen, but oil production in the region would not rebound immediately\u2014a...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Crude-Oil/State-of-Global-Oil-Inventories-Ruins-Iran-Peace-Optimism.html",
+      "published": "2026-06-17T23:00:00Z",
+      "sentiment": "bearish",
+      "impact": "low"
+    },
+    {
       "title": "Exxon Set to Supply LNG to South Africa\u2019s First Import Terminal",
       "summary": "ExxonMobil and the company developing South Africa\u2019s first LNG import terminal have signed a preliminary agreement for the U.S. supermajor to supply LNG to the proposed import terminal at the Port ...",
       "source": "",
@@ -29,12 +38,12 @@
       "impact": "low"
     },
     {
-      "title": "First Iranian Oil Moves Past U.S. Blockade Ahead of Deal Signing",
-      "summary": "Iran\u2019s first observed crude oil exports in two months have moved past the U.S. blockade outside the Strait of Hormuz in a sign that Iran is wasting no time to take advantage of the tentative deal w...",
+      "title": "The Diesel Demand Shock Nobody Is Pricing In",
+      "summary": "The Truck Exception Isn't as Big as You Think When I recently argued that the internal combustion engine may already have passed its peak, many readers responded with a familiar objection. Cars are...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/First-Iranian-Oil-Moves-Past-US-Blockade-Ahead-of-Deal-Signing.html",
-      "published": "2026-06-17T11:30:00Z",
-      "sentiment": "bullish",
+      "url": "https://oilprice.com/Energy/Energy-General/The-Diesel-Demand-Shock-Nobody-Is-Pricing-In.html",
+      "published": "2026-06-17T22:00:00Z",
+      "sentiment": "neutral",
       "impact": "low"
     },
     {
@@ -53,6 +62,24 @@
       "url": "https://oilprice.com/Latest-Energy-News/World-News/TotalEnergies-Saudi-Refinery-Wont-Fully-Recover-Until-2027.html",
       "published": "2026-06-17T15:30:00Z",
       "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Whatever Happened to the Promise of Cheaper Electricity?",
+      "summary": "As readers of Adam Smith know, the market functions to provide consumers with goods and services at the lowest price (within limits set by law). Yet, several years ago, we submitted a piece claimin...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/Whatever-Happened-to-the-Promise-of-Cheaper-Electricity.html",
+      "published": "2026-06-17T20:00:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "How the Oil Sands Became the Lowest-Cost North American Producer",
+      "summary": "After the oil price crash of 2014-15, global energy majors like BP (NYSE:BP), Chevron (NYSE:CVX), and TotalEnergies (NYSE:TTE) sold their interests in the Canadian oil sands, at the time classifyin...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Crude-Oil/How-the-Oil-Sands-Became-the-Lowest-Cost-North-American-Producer.html",
+      "published": "2026-06-17T19:00:00Z",
+      "sentiment": "bearish",
       "impact": "low"
     },
     {
@@ -92,38 +119,11 @@
       "impact": "med"
     },
     {
-      "title": "How the Oil Sands Became the Lowest-Cost North American Producer",
-      "summary": "After the oil price crash of 2014-15, global energy majors like BP (NYSE:BP), Chevron (NYSE:CVX), and TotalEnergies (NYSE:TTE) sold their interests in the Canadian oil sands, at the time classifyin...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Crude-Oil/How-the-Oil-Sands-Became-the-Lowest-Cost-North-American-Producer.html",
-      "published": "2026-06-17T19:00:00Z",
-      "sentiment": "bearish",
-      "impact": "low"
-    },
-    {
       "title": "Shipping Industry Remains Wary Despite U.S.-Iran Agreement",
       "summary": "Shipping firms remain reluctant to navigate the Strait of Hormuz sea passage despite this week\u2019s peace deal, according to a boss of the industry\u2019s lobby group who warned that trade volumes will not...",
       "source": "",
       "url": "https://oilprice.com/Energy/Oil-Prices/Shipping-Industry-Remains-Wary-Despite-US-Iran-Agreement.html",
       "published": "2026-06-17T16:00:00Z",
-      "sentiment": "bearish",
-      "impact": "low"
-    },
-    {
-      "title": "Whatever Happened to the Promise of Cheaper Electricity?",
-      "summary": "As readers of Adam Smith know, the market functions to provide consumers with goods and services at the lowest price (within limits set by law). Yet, several years ago, we submitted a piece claimin...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/Whatever-Happened-to-the-Promise-of-Cheaper-Electricity.html",
-      "published": "2026-06-17T20:00:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "ECB: Iran Peace Deal Won't Erase Europe's Energy Price Shock",
-      "summary": "Europe will have to contend with the energy price shock for months despite the tentative U.S.-Iran agreement to end the war and reopen the Strait of Hormuz, European Central Bank (ECB) officials sa...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/ECB-Iran-Peace-Deal-Wont-Erase-Europes-Energy-Price-Shock.html",
-      "published": "2026-06-17T12:30:00Z",
       "sentiment": "bearish",
       "impact": "low"
     },
@@ -139,87 +139,6 @@
   ],
   "geopolitics": [
     {
-      "title": "US-Israel-Iran War Latest News: Tehran Claims Peace Deal Ends US Blockade as Trump Says Ships Move Through Strait of Hormuz",
-      "summary": "US-Israel-Iran War Latest News: Tehran Claims Peace Deal Ends US Blockade as Trump Says Ships Move Through Strait of Hormuz The Sunday Guardian",
-      "source": "The Sunday Guardian",
-      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQeDRHZDdQWktJYS1LNHFPTmFzOUdsZVdLRHhxSWxIRnNrZHl1azAwbURzeUZ4bXZHcjkybDJ5ZXY2U3IydmtGdDJxYWpfT1hZTUNmdVJ4eERjcG1PcmhrYmNxRlVXZDBVRVctMk04N1ZMdTF2b3Ryc1VyM0x6UEEwc2Y2aVZubUxiR0VkYkJfOUFYOFRPTlY5UmtlQWNya1FzMkFSSTBOenpLOGFObU5wZUF3cE9uaEFWaWhMWVk0OUEtQWFhRHZWQTFSYkxHUm8wbUd2VzgtT0RyZWw2VFB0bGRGR3p6VnlxaGZVZlY2My0tV1lWVFk1TjVkQ2EyTGJ40gGAAkFVX3lxTFB4NEdkN1BaS0lhLUs0cU9OYXM5R2xlV0tEeHFJbEhGc2tkeXVrMDBtRHN5RnhtdkdyOTJsMnlldjZTcjJ2a0Z0MnFhal9PWFlNQ2Z1Unh4RGNwbU9yaGtiY3FGVVdkMFVFVy0yTTg3Vkx1MXZvdHJzVXIzTHpQQTBzZjZpVm5tTGJHRWRiQl85QVg4VE9OVjlSa2VBY3JrUXMyQVJJME56eks4YU5tTnBlQXdwT25oQVZpaExZWTQ5QS1BYWFEdlZBMVJiTEdSbzBtR3ZXOC1PRHJlbDZUUHRsZEZHenpWeXFoZlVmVjYzLS1XWVZUWTVONWRDYTJMYng?oc=5",
-      "published": "2026-06-15T14:31:02Z",
-      "sentiment": "neutral",
-      "impact": "med"
-    },
-    {
-      "title": "U.S.-Iran Deal Aims to Restore Strait of Hormuz Amid Middle East Tensions",
-      "summary": "U.S.-Iran Deal Aims to Restore Strait of Hormuz Amid Middle East Tensions Devdiscourse",
-      "source": "Devdiscourse",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPOWlMWEl5M1Y5b09kYWFOQnhWVkZScjJ5WERJT0d3Tm5yOU5jYldoNE5rVHhrZkM2Ump4Q3RCU2tNdmhmY1UwMWRzSjVrUVRRZ3NVeXFOSnZYSVlzcU13UTFoQmlDSkhhLTE5VURNVWV4MzFPMS1kWktSUE9XWDE2aXNqMnBsMm1RYXRzVjFLbVZsdkRBTDFjWXlfVWVWQUZwcEo3MTZDLXFBVXVVVDRoMmdoTDY2azkxTl96ODRNaDhxTXJzZzNQRlVR0gHKAUFVX3lxTE85aUxYSXkzVjlvT2RhYU5CeFZWRlJyMnlYRElPR3dObnI5TmNiV2g0TmtUeGtmQzZSanhDdEJTa012aGZjVTAxZHNKNWtRVFFnc1V5cU5KdlhJWXNxTXdRMWhCaUNKSGEtMTlVRE1VZXgzMU8xLWRaS1JQT1dYMTZpc2oycGwybVFhdHNWMUttVmx2REFMMWNZeV9VZVZBRnBwSjcxNkMtcUFVdVVUNGgyZ2hMNjZrOTFOX3o4NE1oOHFNcnNnM1BGVVE?oc=5",
-      "published": "2026-06-16T06:30:08Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "On Sunday, Trump announced that the U.S. and Iran had reached a ceasefire agreement. The deal includes a 60-day ceasefire, the reopening of the Strait of Hormuz, and an end to the U.S. naval blockade of Iran. It is set to be signed in Switzerland and take ef",
-      "summary": "On Sunday, Trump announced that the U.S. and Iran had reached a ceasefire agreement. The deal includes a 60-day ceasefire, the reopening of the Strait of Hormuz, and an end to the U.S. naval blocka...",
-      "source": "instagram.com",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1QOHZQTDEtWnFPb3lXdEpyU0NLTU1XT3pEUXVCd1NRN215Z0RuaFdOOTdEYnEwSFZWckR5LUg0cWN0OFBSUzl3bDQ3Y2dZTWZDRVE?oc=5",
-      "published": "2026-06-15T14:01:26Z",
-      "sentiment": "bearish",
-      "impact": "med"
-    },
-    {
-      "title": "Lebanon ceasefire, Hormuz reopening, sanctions relief: What the 14-point US-Iran peace deal contains",
-      "summary": "Lebanon ceasefire, Hormuz reopening, sanctions relief: What the 14-point US-Iran peace deal contains The Times of India",
-      "source": "The Times of India",
-      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNY1JvMDA5QkRBWkwtaWhrR0dhS25XeGlXZ19ISkp5WmJKTGhSUkQ3eXN5c1NPVk10M2xOajRJNHZuQk9CSmstclpzT1VIMVZHNDEwYk56U0Fla2VRT0JyTHFCcGtVOS01Q1ZETHZWOHYtRnh5RlViaUxnRkN1LXRSUktxRHRVWWpLSUxIaWpJZFFZakxmU0RPeTFVOW9YelNRamUtcWxHb2E0ZmQ4djJ0NF92UXUyUWZCMmFDQUx4UlRpa0pJaWFudTRRWTdJVUtEaVJxbWxvRzZRX3B0RjRXVW00OC0tWDdOa1dsejhEUXFKOHFOUm5OWDBMcDZXWmJoaFhzVzdnM3rSAY4CQVVfeXFMUE1mRE9yQWlwMkNIVkZrN1RiQlJPZU9tUlE0ZVVUY3pMUVh3c1V6WndJb3E4cExOd0Z3US02WkZnS2NNRmd0UVl4UGZOVjJGQWU5ajJHb3pORXBnQlZ3SWh0RFFWdVRvVHZocUJEakpCNWVYd0ItRmdrTDlWMnNrczJNb05KamQ3OG5zWkJoQk5nWk4yWVBHR0NiVGladTBPM05kNGwyLXFoTWxpWWhoTG9XZXloV3NwVnBrYUR6a1BPOHhPTFBBRTVUZlFOSmFBLTYyN2NQVHMxLUNJanliOVlvenVrXzJPT00wb19KSzc1V3VwcXdUTmZsTVBHYnpGWE55SXR3a3ZVRmtFMk1B?oc=5",
-      "published": "2026-06-15T03:54:00Z",
-      "sentiment": "bearish",
-      "impact": "high"
-    },
-    {
-      "title": "US-Iran deal takeaways: reopening the strait of Hormuz, waived oil sanctions and Lebanon",
-      "summary": "US-Iran deal takeaways: reopening the strait of Hormuz, waived oil sanctions and Lebanon The Guardian",
-      "source": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5YUDZrM3c2c2NVT3hZd2Rqd3VHX0o4NGlSdkZkV09EN0tvLU5LRG5OVDNYUmdIWVBMTVpCNmZyZFZoZkp4WmY0YjVqV0hMSXhLekhOb3Y5U3ZXcU5lNlhKcTNKMGRYOURDdmQwTWZnYXFUdw?oc=5",
-      "published": "2026-06-17T21:05:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "US and Iran agree deal to end war and reopen Strait of Hormuz, Trump says",
-      "summary": "US and Iran agree deal to end war and reopen Strait of Hormuz, Trump says Gulf Business",
-      "source": "Gulf Business",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNT0oydmFYTDNISUhycFRJYl9xYUFQMW5jemxOaXBTVVZUUi1KQVdPLW5MalpObFkwVnE5T1NMazJfUVBZdjB4NGx5OHk5YWhocnFuS21BeFJwdU96ekUxdG5uMHVjeXE1eTdCSHNKRzFVcXpwc3EtMWNYVmFpWUhJVVlVOGJxT2g2NW9GN054YlgzQkpoSkhKOVVMbjlJR0k4?oc=5",
-      "published": "2026-06-15T02:58:05Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "U.S., Iran Reach Peace Deal to End Conflict, Reopen Strait of Hormuz",
-      "summary": "U.S., Iran Reach Peace Deal to End Conflict, Reopen Strait of Hormuz Investors King",
-      "source": "Investors King",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNMjVJVjZiWmNSZUxBcExGQ3Rkc2ZlLWtvUWVtLXRuWXhUazdveG56QXJMdno3YjY5R3kxQ1JrOW1IMFVfN1RFZnhXZXAtMkxmcE5XcXdySWh1Q1ZPSllzWFgtdFVZdVY4LUFpZEdSN3k1cXBOV0FWQTFHZDRiWmVXd25RLWg2amtYZXFiZUk0eUIyY1lia3RmTm5fLWNCU3p3QVRwalVuOFJUTmpDYVJCQTcycVN5RUnSAbwBQVVfeXFMTnQ2Nlg3WjlMM1FRZ0N3VnNVUmI1aGxNQTFNWVNOcVlvcWhDQ3RfbmNBUktpWmx6Ynp3dVd6TG1VaHMzd0pzaFNGQkRUUGZLcU5aejk2cE1zVG9HZVdvSkNmaUJFSElfTmQwRDlleXpXXzVCblEwTG5PYjRnaW5mODRYT29HNGQ0TWxKekREZnpMZDBhQkFoS3dSRlRqdm03UG5zU2VNemM2N3ZOa28tRkpXMmhWZzI3WWJST1k?oc=5",
-      "published": "2026-06-15T09:36:16Z",
-      "sentiment": "neutral",
-      "impact": "med"
-    },
-    {
-      "title": "U.S. and Iran reach framework deal to end war and reopen the Strait of Hormuz",
-      "summary": "U.S. and Iran reach framework deal to end war and reopen the Strait of Hormuz NBC News",
-      "source": "NBC News",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPSzM1S1Y0dFF6T1BQZzlLb3BiamN2YmtZMi1CYW1DczZqanlTRHYtcVdOUEtqdUlVNnZMa2xLaE9jUTBrM0N0TlM4RkdaUUJrRTVpdWtpMTU2Rmt2RmJvZThBSjNaNmpEOHNldXp3MUJOVEdudmpwNXItdnlDek0xQWNuLXdadFpOVDBJ?oc=5",
-      "published": "2026-06-15T10:45:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "US and Iran agree deal to end war as Trump says Strait of Hormuz to reopen",
-      "summary": "US and Iran agree deal to end war as Trump says Strait of Hormuz to reopen BBC",
-      "source": "BBC",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE54NjFDN2JpbVBfMkp1QzZXZWdhamNlZWd5UFVrb1FIVUhaRjVrMS1DNUZEaVl1UERBX2cxUWhiWF9YWGh3YmE1Mi1oOVFmdW9OQldwa2xvSlBMZw?oc=5",
-      "published": "2026-06-15T14:59:22Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
       "title": "G7 leaders agree to escalate sanctions on Russia\u2019s oil revenues after Trump-Iran ceasefire",
       "summary": "G7 leaders agree to escalate sanctions on Russia\u2019s oil revenues after Trump-Iran ceasefire Cryptopolitan",
       "source": "Cryptopolitan",
@@ -229,22 +148,13 @@
       "impact": "high"
     },
     {
-      "title": "US and Iran reach preliminary agreement to end conflict and reopen Strait of Hormuz",
-      "summary": "US and Iran reach preliminary agreement to end conflict and reopen Strait of Hormuz Oil & Gas Middle East",
-      "source": "Oil & Gas Middle East",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNa2toanlSbTlrTVpsSHhBNkxoNUcwMG81YXJpb0M0bERvNXpTaUJsZ2s0MnlWcEJpd2piOXA3R1ZyZXZrMl9qMzBNMTZ3OGhjVXhPRVBfZnRsSzBtWXVXb053NnFwSnllSFhfcXhSUEo3Z2RkVmVkd3c3NThGT1g2MUdiT1YzM0lBakpyOHBleVFaRUpLSHNGU21lZFBTN3dGVGdMbVk4V2ZfRzVpX3BEVnhhTW9ZLXU5RGZBZWF2NmhpUQ?oc=5",
-      "published": "2026-06-15T06:56:24Z",
+      "title": "G7 Discusses Strengthening Energy Sanctions Against Russia Amid Ukraine War",
+      "summary": "G7 Discusses Strengthening Energy Sanctions Against Russia Amid Ukraine War aju press",
+      "source": "aju press",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1YV0c5cWVIQXBtTTFJaGRPSDVlM3A1ZlZHWVl5VmItS1lyNWt4UWQ1empJQ192eTRGMTd4bENtRzVYRHRMYks2Rnh0UlRDMHBIZ2lPcmczQkUwZ0nSAVdBVV95cUxPbHNVdldCN2J5bF9laTlZbjdKc1Z4V3d0UHdEU3l3TEJQMXpraWVMRVlMWVVNZUtNOV9qWHFlQ2JCQlZwakVTYW9UM285eV9IRTdrcWdOVkU?oc=5",
+      "published": "2026-06-16T21:40:00Z",
       "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "World leaders welcome U.S.-Iran deal as Europe signals sanctions relief, urges Hormuz reopening",
-      "summary": "World leaders welcome U.S.-Iran deal as Europe signals sanctions relief, urges Hormuz reopening CNBC",
-      "source": "CNBC",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcVk3aDBWdC1Gc3Nyb1N3R20zbmFRaWphRzN3aDFpT1p0STFlQWtfemRoTXRSVkVhQm5UV1BUdnpxRU5oemxsYXhyMzNUM3FqTjhiRXZncDBSdC1lMVlSdWNub25BSmpvSnYzbHZHVjVnTmJGaE1wc1RORUR4NmVvcUJRb2ZoQWZNYzJaN3psVFZpVVdVX3o3aEVlZDJDbTNYenVkUHkwelhLa0XSAbABQVVfeXFMTWJCQzFOTnhCM19HZ2lNcURDUU02bUE1ZnpvU1NlYUY4QU03aGxBbXktQmpHNHdmdDdBb1pvWG9JeHhnVzBVXzBaT093RG1HM1RoOGxfVFpKN2NDSUJ0UGwxbmtSVkFjQXlZNWNvZXY4d29UeXRBS0ROWWFMOC1paE1SdlI2UEZHUW9uRFB6U3BBUDBVVWpnVU5RRldZa19aN2pBaEdvZXBLT3lpQ1VyNUQ?oc=5",
-      "published": "2026-06-15T00:57:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
+      "impact": "med"
     },
     {
       "title": "Starmer vows new sanctions on Russia and nuclear energy support for Ukraine",
@@ -252,6 +162,15 @@
       "source": "The Guardian",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOOF9oTExoRFgtLXBSdzh5QUN6X082b19HYW9lUnFqdkZLRVg4NmVMdEtUMUMyOS1MTGZOZGE1Zm04TkYtLVpDNWFaT1FjZk51NzQyY29uaGtYQVFVZEcyRDlzSXpGVmg4QVdNQ284NC1tdkFwdEVWd2pTTW5ERUtlN3VKNjZPMThxOEk0SkVXVHhUbVBQdTdZQVExZXJoaGhBR3dCMnVfQQ?oc=5",
       "published": "2026-06-15T21:30:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "At G7, Starmer vows fresh Russia sanctions, \u00a3210 million nuclear energy package for Ukraine",
+      "summary": "At G7, Starmer vows fresh Russia sanctions, \u00a3210 million nuclear energy package for Ukraine MSN",
+      "source": "MSN",
+      "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxOSEd0OV9PbnJGdUt3RGNETU4xdnNCcDVoaHBXcktjWEF4MmloZVlBd20xVzBNTWNhb2U5eVB3ZjdHTW5iUEQxRkZhQVRLZ2p6UVdBRFJyVWp4S3BWdTRrRnc3SENPdGFxNVNvdHNrWDE3TW1za1pTS3dTQ0swT3FwcV83ZjVPTXBUZFZVUkliVjlVWnVjaFZSS05FM21MRktSLVI5ZUkxSkdJZ25kUUpYNUg0a0JtenFJNVAwVzV2aVdKYWRlSE1ONGZPVlJVQmlGS0RoeUtlOVpOZmtTT1ZlRjQ3dEg5QW01aURueUxxQU1NcjJsUjNsaFhKQVlkV3V2S2JZY2w5VTJhZHFCLVl4ZldYYi1reS1oZldwXzFwTHZWSlFrc2taMnRHQ1d2ZzhuU2x1a3RIRnZ2N3d1NldoUVNpSHMyV3Z2Rnh2V0hGdjdyOEg0Ul9zbktoMW90RlFWNVRfLXNndzA?oc=5",
+      "published": "2026-06-16T11:36:30Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -265,83 +184,29 @@
       "impact": "med"
     },
     {
-      "title": "G7 Discusses Strengthening Energy Sanctions Against Russia Amid Ukraine War",
-      "summary": "G7 Discusses Strengthening Energy Sanctions Against Russia Amid Ukraine War aju press",
-      "source": "aju press",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1YV0c5cWVIQXBtTTFJaGRPSDVlM3A1ZlZHWVl5VmItS1lyNWt4UWQ1empJQ192eTRGMTd4bENtRzVYRHRMYks2Rnh0UlRDMHBIZ2lPcmczQkUwZ0nSAVdBVV95cUxPbHNVdldCN2J5bF9laTlZbjdKc1Z4V3d0UHdEU3l3TEJQMXpraWVMRVlMWVVNZUtNOV9qWHFlQ2JCQlZwakVTYW9UM285eV9IRTdrcWdOVkU?oc=5",
-      "published": "2026-06-16T21:40:00Z",
-      "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "Iran will reopen Strait of Hormuz and can sell oil freely under deal with U.S., officials say",
-      "summary": "Iran will reopen Strait of Hormuz and can sell oil freely under deal with U.S., officials say The Tribune-Democrat",
-      "source": "The Tribune-Democrat",
-      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQS2h6eS1CMm9veHdjNjE5akR0eWpfWlhONDZRNkxJZnVOLXpmLUhWSUhqWW8tMms0SEJ6NG1MSWRkdFhrb19wOEZzdGxFOGdKZjdtUlBxVENYQnhwdURzWHNvRVdfREhsNEl4OHN6cGRnc2lwZ3RQbGVOUGFwZ2t2UFZaYklyOUxvWmgyU0hSbmVCR29mWS1pb3JTZG9oUWxvNFZYS0JrVE1pallsQU9jUGxzNlJ0SGg0dWNVT3dMVVB1RklONE1mQmJVcl9pSmJMOVQ2U1h0Uk9BU0JzU3dwX0VnU3dQUU1NWGUydkV4VU9vRzVmM0plUkl3?oc=5",
-      "published": "2026-06-17T16:13:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "At G7, Starmer vows fresh Russia sanctions, \u00a3210 million nuclear energy package for Ukraine",
-      "summary": "At G7, Starmer vows fresh Russia sanctions, \u00a3210 million nuclear energy package for Ukraine MSN",
-      "source": "MSN",
-      "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxOSEd0OV9PbnJGdUt3RGNETU4xdnNCcDVoaHBXcktjWEF4MmloZVlBd20xVzBNTWNhb2U5eVB3ZjdHTW5iUEQxRkZhQVRLZ2p6UVdBRFJyVWp4S3BWdTRrRnc3SENPdGFxNVNvdHNrWDE3TW1za1pTS3dTQ0swT3FwcV83ZjVPTXBUZFZVUkliVjlVWnVjaFZSS05FM21MRktSLVI5ZUkxSkdJZ25kUUpYNUg0a0JtenFJNVAwVzV2aVdKYWRlSE1ONGZPVlJVQmlGS0RoeUtlOVpOZmtTT1ZlRjQ3dEg5QW01aURueUxxQU1NcjJsUjNsaFhKQVlkV3V2S2JZY2w5VTJhZHFCLVl4ZldYYi1reS1oZldwXzFwTHZWSlFrc2taMnRHQ1d2ZzhuU2x1a3RIRnZ2N3d1NldoUVNpSHMyV3Z2Rnh2V0hGdjdyOEg0Ul9zbktoMW90RlFWNVRfLXNndzA?oc=5",
-      "published": "2026-06-16T11:36:30Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "US-Iran Peace Deal To Be Signed In Geneva On June 19, Launching 60-Day Talks On Nuclear Issues And Sanctions",
-      "summary": "US-Iran Peace Deal To Be Signed In Geneva On June 19, Launching 60-Day Talks On Nuclear Issues And Sanctions Outlook India",
-      "source": "Outlook India",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPUkI5b2dyS0RlYzZuVEpHRGZJTS1KdVVhT0t5bWduVElaanhVQnpHakhwaEE4Ty1EbVp5enl6OHplMFJ5alhzWjlfeEpEdEdHdWgxd3JwRWZnRXB0UVZtbUtMbEpYSkxOZ0wxSWMxLVZ6cHV4cE5jUDNrb0pvemhfUS1mOVpoeHBxTWh3RmxoRWFrbGxCX3lESEsyWnNYQzlTYkQ4MW1PRGNjd1VhZWxPTkc2Y1FSbVFJMUloM3FyS3JCZTVQbkJJb1dNRG1YZHZoRWRCSkYzSHN4TXc1MDJ6MGc0LUzSAfIBQVVfeXFMTjF1UHAxRkhwVnM4Z29HZFIzUVMxUjNCUUd6OTlXY29nRXloYlRNcExUTWZCWV9maTFPVlA1WHlxd1BDQmdaVTZZR3hndUtnUmVHNmZ0VlZ2c1hzSnR5NEN1cHQ5ZFFWMzJ6TVNIZ0dxeFpRNXVpZTNSWXBWZ1RkZUluYlZDR05UU2k3TGhVTmpncGMwNENxQWNHOGZKc3NzdE9ESXlCNEZrTjZ0aTZzSWlYRlhNbnIweS12TGFOVHB0SmJ6Zy1UXzBlQ2Z1QWFFa09sVmFUM3NYZy1aWklGZWxDd1hFS2xQWURGcHlGZk9aR0E?oc=5",
-      "published": "2026-06-15T02:32:24Z",
-      "sentiment": "neutral",
-      "impact": "med"
-    },
-    {
-      "title": "Draft US-Iran Deal Outlines Ceasefire, Sanctions Relief, Nuke Commitments",
-      "summary": "Draft US-Iran Deal Outlines Ceasefire, Sanctions Relief, Nuke Commitments tovima.com",
-      "source": "tovima.com",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaGZoVFB6dm9OS3Z5d3V6X2tGbGhNblVPM19IOUJQQ0VoVGlHQ0FuTWZBbzVxWjJ6RUEwS01kM1VkSVQ1dUZDX3B4bWNqTERsMDJyempBS0k1RnBrbGxVMnh5Q3cySmprMnFRQUk0c0ZydnExZGxVaC1DLW5DQmh2RG1GR0NjRF9nRzJEMUpMdzY4TWtrOHRwTnR0aEl0bEROT0ZaNFJWUkXSAagBQVVfeXFMTWhmaFRQenZvTkt2eXd1el9rRmxoTW5VTzNfSDlCUENFaFRpR0NBbk1mQW81cVoyekVBMEtNZDNVZElUNXVGQ19weG1jakxEbDAycnpqQUtJNUZwa2xsVTJ4eUN3MkpqazJxUUFJNHNGcnZxMWRsVWgtQy1uQ0JodkRtRkdDY0RfZ0cyRDFKTHc2OE1razh0cE50dGhJdGxETk9GWjRSVlJF?oc=5",
-      "published": "2026-06-17T18:29:15Z",
-      "sentiment": "bearish",
-      "impact": "med"
-    },
-    {
-      "title": "US and Iran Reach Agreement to End War with Trump Announcing Reopening of Strait of Hormuz",
-      "summary": "US and Iran Reach Agreement to End War with Trump Announcing Reopening of Strait of Hormuz International Business Times Australia",
-      "source": "International Business Times Australia",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRnM1ZGljSHlJNnNZM2prVWppc2s3ZWQxQzQ2X2VfYUhwdGZsOG5ka3pNdmZXVFBqOG1MeHlxUXQ3cUNQb3JKRmc4TENRS0Qya0JYOGI1cG82U21jZXBvb0dnTW1SanNiVS1Odkg3bFh1WkNnMm9HYnpCR1RkMFhEUA?oc=5",
-      "published": "2026-06-15T11:51:18Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Senator Warnock questions US rationale for Iran war after ceasefire deal",
-      "summary": "Senator Warnock questions US rationale for Iran war after ceasefire deal \u0627\u06cc\u0631\u0627\u0646 \u0627\u06cc\u0646\u062a\u0631\u0646\u0634\u0646\u0627\u0644",
-      "source": "\u0627\u06cc\u0631\u0627\u0646 \u0627\u06cc\u0646\u062a\u0631\u0646\u0634\u0646\u0627\u0644",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4wV2RTZmk3aTE3aTlIT21CYjNnalZXcFNlMmFyU3I2R2xiYWl3RmlHTy0zTVdNdW1DN0dPRmZpbzU3SE5BQTlMRVlHTWNiNjFCaXc?oc=5",
-      "published": "2026-06-16T22:56:11Z",
-      "sentiment": "bearish",
-      "impact": "med"
-    },
-    {
-      "title": "U.S. and Iran reach deal to end the Mideast war, with agreement set to be signed Friday",
-      "summary": "U.S. and Iran reach deal to end the Mideast war, with agreement set to be signed Friday CNBC",
-      "source": "CNBC",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBjNGxVa3lZMkJjRHVYcWxfNE5WWC1JN203RldsX2dsQ2lmbngyMDdoM0VRT2ZIamxoYXE3TDJ1YmY2UUhDN3o3X2NMbUZSNl9OMVQ2dFl4ZWlFVUYxQnA2NUZzZkRoRUlhZ0RV0gFwQVVfeXFMUDQyX3ZFd0w4c0JpWEViWUJpYTlJY2VQZlhPaFBqWkQtZTBxOFQwWWlkeXkwS2pJMThiNWxUeGJEVDh2eW5tSnR3aEdrVGdIWEdyUVZGNVM4OVlqemctdGl1WkJ2NEl0cEVMSTBEXzBhSA?oc=5",
-      "published": "2026-06-14T21:39:57Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
       "title": "Trump signals swift return of sanctions on Russian oil as G7 refocuses on Ukraine",
       "summary": "Trump signals swift return of sanctions on Russian oil as G7 refocuses on Ukraine Audacy",
       "source": "Audacy",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQN2k3NTc3dzAyUExjRHMxdm1LZFByUUJxVlJBNGtINEQwTzBXeDFmWGl3MTdsLUVjOGUtN05DcE1xWXNza2stQU1CaGpqLW5zWmlnZm5LSzZQQmlCUUNvZFRpR1FhdzdlYm5EdTBPa3IxU29CaExGTm5BYjVCSkJNSEhpczJuX1l2M3hBbDVtWmN3eXlaSjV2OXpKbXhZTlhPZGVkZl96OUZEVU5ULXVV?oc=5",
       "published": "2026-06-16T16:00:39Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "New sanctions against Russia and arms supplies to Ukraine: G7 countries' promise",
+      "summary": "New sanctions against Russia and arms supplies to Ukraine: G7 countries' promise 1Lurer",
+      "source": "1Lurer",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQVg5NllGRjVmZXMzbTRJN1JqU3pHY3pScnZ4bTEyVEN6ZkxTYURvakhZczlrdUE2cU9HWTFxMC03c1luYzNnMWoxUmNFdTFRRjNyaEQ5ZU95aTNWVzB6aVp6akFpaTRjZTk0NjFlcTRtRVMxTWhBamRVN2JJUFExUkpyXzhxZ0hvMDljbG1jUF9lSzdpejFwR29HVHZhN09wZS16cDhQLWNzRGRrVDNMMkZzOXpZZ0lCbDkyaS1rZw?oc=5",
+      "published": "2026-06-17T07:04:32Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "G7 leaders reaffirm support for Ukraine, announce expanded sanctions on Russia's energy sector",
+      "summary": "G7 leaders reaffirm support for Ukraine, announce expanded sanctions on Russia's energy sector Crypto Briefing",
+      "source": "Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1nOWZHWDdLb1ZxM1g4Q2RLdkV0NzdPRTc2WXEzTDZiV2EwNjhLME9QcGI0OXZIMGF3dGdseWdfRm11UDczSEkyWGhDYjNlWW0wNk52bTJfNC0tdDh5REdQb2dIb3NWTEFqYWVaSFBmbw?oc=5",
+      "published": "2026-06-17T08:28:42Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -355,11 +220,146 @@
       "impact": "med"
     },
     {
-      "title": "Trump Says Iran Will Soon Be In \u2018Rearview Mirror,\u2019 Wants Sanctions Back On Russian Oil",
-      "summary": "Trump Says Iran Will Soon Be In \u2018Rearview Mirror,\u2019 Wants Sanctions Back On Russian Oil The Daily Wire",
-      "source": "The Daily Wire",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWVNVdUhJSmdlZzFHRzVweDVvSVkwNWxHcUJQME5oeGVlWGU2aUdNMkpOZjAtMFpBTXB2V1daN3Izb1ZTaEpRQUJVLXZxVXNGUVlydUdnT29ocXlQWVdGVXlOWGgxQnl5bEVfTEhLUV90aWVnUU1nVVFzZWoxYVFJWEJralF6aXhvb0J6SjZGZ2gteTRnSThZazgzTzA3SnRFcDdwRHpJWEdRYTNYb3FfWV9wWDE?oc=5",
-      "published": "2026-06-16T23:36:33Z",
+      "title": "G7 boosts arms aid to Ukraine, sanctions on Russia \u1409 News from Fakti.bg - World",
+      "summary": "G7 boosts arms aid to Ukraine, sanctions on Russia \u1409 News from Fakti.bg - World fakti.bg",
+      "source": "fakti.bg",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbEZndTZ2X1NjRWtmV2paYkpoZ2xrY1ZvT3JjTENyM2NXRDYzaFVmM3NRdWVPTV9INWRyWnhrcEtDQzl1Tm15N1JudEo5QlBnanRhaVdoUGlvVFpMUjl3WUZUZUJycTdZSzNoSjdscW5JdWFNamtDb2JmSEczWFJsSlFtM2V1bGROOWJz?oc=5",
+      "published": "2026-06-17T02:19:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "G7 leaders agree to boost Ukraine's defence and energy capabilities, strengthen sanctions on Russia",
+      "summary": "G7 leaders agree to boost Ukraine's defence and energy capabilities, strengthen sanctions on Russia ANI News",
+      "source": "ANI News",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUlh3U3l4ZXNsM1BxVHJhMWlJckk2dFRuSTZab1RqNkxuWW5BU0FTYU4tWnhRMmpUQl9PYTBLWGFJakxVa2xhRWtCTUJfRFFxdkUxcUR5RzBha3FkM2FJTGh4bmVoQVhGeXdhZlJiWHdrUDZ6d0VrbDh3VzFEYnJvV09kVDFCMGNENHB4OVRLdHNobVExYWNyM1AtN1BQaFBVYkdacjczcEdEV0h2QWVTd1FLVzd4NUJpMk5EMWZMSVdFOFRrZ3ZJdjZ2UUpDcUVHVF9ZOWxOTHVwQ3pOZUpSNjFucGNYM1E?oc=5",
+      "published": "2026-06-17T11:02:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "G7 leaders announce tough new sanctions on Russia's energy sector - Media",
+      "summary": "G7 leaders announce tough new sanctions on Russia's energy sector - Media RBC-Ukraine",
+      "source": "RBC-Ukraine",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTUhXdU1MX2RIcGV3c09DVURkcXEtRGlMWlljaExqaXFRQVlNWXVTdTV2NlNUQk8xRkxxdTFZTkcyamQtUkVYWkQxOV8zWVZmbjBuNEhZak1NeGY3ZjI5cGFEX2QtTURvLXZwWm1GdU5neG9ZUDhmNC1HMHl6aXNBbjd3Z2RKdm04R1FJeG9memFWNHl3?oc=5",
+      "published": "2026-06-16T13:45:15Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Russia-Ukraine Conflict 'Much More Difficult': Trump Says Putin, Zelenskyy 'Not Liking Each Other Too Much'",
+      "summary": "Russia-Ukraine Conflict 'Much More Difficult': Trump Says Putin, Zelenskyy 'Not Liking Each Other Too Much' Republic World",
+      "source": "Republic World",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQSkpIY1RRWWg5X250Q2lZTC1jajRvZkJIYldVbWNmUjhPYVBqNkJ0UVBnZE1oYUJ4bm9vVnNFSXVJWm03S092U01ueXc1UnZuV0VjNXM0RmNNNVhUODl3SVV2b09vdVdaUFJ1VGdKYktXVmZPZ2owVTNtUlFRV2Zzd0dILVVKbVZPWk56TmkzMEFGc0JhOE1LSktGUzY2alZwMGxGeXdvZjRJc2dvektUbkI2XzRpX2cxRkIwVXpydHI0Rl9fampJTl8xWnkzUy1ZVmJGOUFUbG9naksxVkkwdjZVZ01oNVZwdmY5TmNyOC1Qd9IB9wFBVV95cUxNU0VyemVlMWd3Q2pRSnQyb3ppTnN1SVViVGVVTm9LX2ZVYk9pNjVEdjBVdWdUQmN3NXlPdGxlRWl4TkQwQWJIQm9uN0FPdEZJOW9GcmJYQzNsLXNKRWhJT0xhLUlYaXBHUGMtY3JsWTR3T1ZxN1MzYzBrVkN0cXE5SVV1TlJqd1hzSGw4R2JvQ2Z4LVZ6UU9CMURqT2VZSGZaTUdNekRWV2tBU09uUWRERHVZbVhYeEQ0alowRTh0ZEI2bTVOWEc3SEdZOWNzckVCZVVYUDdSSHhSeDB2SmlibTNPS3E0ZU9Nd2VXd2tZOFplT0lzQkU4?oc=5",
+      "published": "2026-06-17T19:42:27Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "G7 slams Russia with energy sanctions, pledges new air defenses for Ukraine",
+      "summary": "G7 slams Russia with energy sanctions, pledges new air defenses for Ukraine The New Voice of Ukraine",
+      "source": "The New Voice of Ukraine",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOOENuMlFkejVuaGJpVXFtS1B6aS1yVndaaEFQREd6dmNoV19YMGZBd2t1MmdmN01wOXY2QmRwdHNNVVNPcFA4VXlsS2pnVWxnMEtHLTMzTU5tV0IxQUZnZFp2UWVzS1AxY013QmkxMF9UeTdsSElLYWpUQUFoSXo1MFRDLUYyOU9qakdRTFdGMlFxdXdNSTlIcllOQ2NIbUFsVERfejRrX19SdFg5QUFxb2s4VHdNcVV1V0lGdXRYdmdxU2vSAb8BQVVfeXFMTjhiRnBHUUJzR1gzem5sRE5IMkFBZ051ZDNYbUotT3QyWGtzakZqNzJBYzRiMFhyOFFrWTlNRHVTQVQ2dE9qMVFMYUNsWDY4MG9RLWNRMUxjUXZvRlREWFRHU19iOU04alc4RlktbXpRaVNZcDQ5cW9XNEVZSlhEMU80OFpxTVgtXzZjbHZqMWdSclB1aW1ZaGV2SHlQUUZGdFNxR1k3LWdmc2JsZlFFRUtmWlZjQkQ5UHAtYWhRTFk?oc=5",
+      "published": "2026-06-17T06:10:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "G7 vows new Russia sanctions amid optimism for Ukraine peace",
+      "summary": "G7 vows new Russia sanctions amid optimism for Ukraine peace DW.com",
+      "source": "DW.com",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNnV6SnBoZHVDUTB6R21tXzhSMmF6QnE4T25VazFnbjU2STRWLXgyeTNxaUZUTlY1bFlTWFN0cXpYbGxHM2lrQUh2UElUMnNzREJqWDF0aVJZdG0zeFB6NDhJOW5sX05URU9mck92R2xqTW9qNVFpWHZUSl9RZUhiLXdFQ0taRzdKUDNIYVo4MHJ4WDBINUF4edIBmAFBVV95cUxOZGJsalN4bFVYOXFrY2t1VG1RS2xaWnZNSE1Ic2dDcC1IYUVpbEE1am5MV0YwbzV2ZUZWNkg4ZDIxa1dxNExJX0dWRGhnZVRudHdRNWVndUdJWXJaMGFTZDlPSk93ODBIeGJUVExvNElKMFQ5U1BUeXcweHlZNjhhNl9jRzh3U1k1Ylpab1dscjJwWFNxb3NJeg?oc=5",
+      "published": "2026-06-17T03:55:16Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "\u2018Oil now flowing\u2019: Donald Trump says US can \u2018soon\u2019 reimpose Russian crude sanctions after Hormuz reopenin",
+      "summary": "\u2018Oil now flowing\u2019: Donald Trump says US can \u2018soon\u2019 reimpose Russian crude sanctions after Hormuz reopenin The Times of India",
+      "source": "The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQMllUWFItQTlQcEZPcU5lbkpiV0cxcUV4Q0dRR2EtQV9DX09TemhsejEwLXRxcTQ2WXJHaVlYamExWGpJelNhcWl2MEkwZTVuX0psRHJPZ3pGR1Z6aFJaRExsNUxYZmhWOHhCX3dWSWlySTJySXJ4eU1pbXY0dFdHNGgydVNmdmt1dzhuVkVNLUV1d1hFaHdaci12YnVub2c5NV9qM0xOUlNvdnp6SERfSk9ndmZOeFRLb2lqeEVmUDBOWTBHeFRkcVo0aTdMRHBxelcxMk9LRTZlVXRXdzY2QWdBRkNZdWtVNjU4X2JpVlJjVzUtNTRHVEtQc0FPbThtSjhIaXR6dHo2ekc1NF9leHZvZ09GWEhqckRvUGk1S0bSAaYCQVVfeXFMUDZFdzFtMy1JWUYyZThYNl9sNHhlWjhuTFU4bmxheE9LNE9Zbk1MS1pPaHlCVUVsVFo1THJRMnNmUFhQbVVUR3duZU9OUmI2dHZCUnJBenlhbXV0RmNfRzJYVFJiV283M2RXWjItNGZMYmNLTUJaajNKVVQxdk5mZDdVRUlKWEM5cUZNRWZUOVpDM3lJdmd1YzFFTnA4YWtLUW1rOWZuY3gzVlNLRUJQLUxMVGw4RTRYUkRtcmg0R2VSdzlfLWVPZXh6TVVCZmhpYjNCd2VZUE5xdXJnMllQTnFrREVLYjVWa2ZoZlQwNjBHamh6aWR3eXhOWnBvZFJkOU5WdllnaEthRnktRVc0N0hhV3J1VDFJUno3NC1zZ1lRb2t1MVpn?oc=5",
+      "published": "2026-06-16T14:02:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "G7 Leaders Agree to Escalate Sanctions on Russian Oil and Gas Exports",
+      "summary": "G7 Leaders Agree to Escalate Sanctions on Russian Oil and Gas Exports UNITED24 Media",
+      "source": "UNITED24 Media",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSXJTbDIzaC1aNTVBNjF3RDAwY2t1cEEyMDlEbTgwZjBvbzdxS1B5WmFiaGtNUmhMQ2twdWp0ajRoY0J3NWtxMFRleTR0d3FSUEJmc21mRk5peTdMVFUtejdERUgycms1T2R5TnNSZ2t4RzJTY2FQWE5HSmE5cFRDTmZRYXpWYXlrZU1nX2ctdWpJS0lwUGdSamVFalVOT0N0b2VrTHlwRnZGNnc?oc=5",
+      "published": "2026-06-16T20:20:15Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "Trump vows to reimpose US sanctions on Russian crude 'soon' as truce with Iran takes shape",
+      "summary": "Trump vows to reimpose US sanctions on Russian crude 'soon' as truce with Iran takes shape The Economic Times",
+      "source": "The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNek1yQ095MXlURWtrZ0dDdFRVZS02Z2labWY0Uk9TWkdITXpudDdac3pVLXg4MGg5R0hRMmEtb1I3amdza013NUJoNEZWXzc3NElFU2hWRUZud3JKT1I2aVM1dFpZUzB3dmhWRkVnclhkUVJHWDlLY3g5UEllR25MYWZRMGNQNENNVm5BdWZpZ0toLUV4UXVvZU9xYk1GdWUtbnBXMGc1N1FUYW9nTHgyOFBCTTdTUFhYU1JmTWFTQmlQRG9qUXJSQlA1aGNUMEp3OE5ESnpBYXVwcTlxeXhYVEFZNGM2MGFtblJnV3JvZ1hiZWZPWXZzSnJ30gH_AUFVX3lxTE4tYlpMdWlfYVJhTXhUcWNtZkNNRTNqUjVjQWg0M2RVMEJzcG11ZXN6YlhTakEwdDJMT01qUjFIQ0hKNWRVVGdpRWstWDdfZ1VpNHdPc0ZPRXJCejNGVkROYk5xZ0c5dklQMXhReDZSQ095Vi05aVRnOHJ0cFRDRGJuY1hITHNYdW1rZDN0N1h3QjFob2xDaDgxdEdlb3JlMzczb2FZSEtFZDAxMlNET1A5N1RnNmo5aFZnSUVOd3RpT2tYSjBuVUxSRmM2ZHBDYnlzRlBzMUkxTkpyN3g3TnluazNRZkctSHd2bzd2V2o4czNiYWppVFJBNXBCOHZkUQ?oc=5",
+      "published": "2026-06-17T08:16:49Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Trump Joins G7 Pledge To Boost Ukraine Support, Tighten Sanctions On Russia's Energy Sector",
+      "summary": "Trump Joins G7 Pledge To Boost Ukraine Support, Tighten Sanctions On Russia's Energy Sector Benzinga",
+      "source": "Benzinga",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPUHJEWVpsVTk1UEtIY0NSNDhfMTg3RnI4SUpHT21HTEVWMU5YR2ZmZ25VSks3bUdUdEZDeF9rWF9lYk9mTGIxV3F3cXBTaTE2M1VmeVNuZXV5ZnlvNUt5UXpkeTlPeUxidDl0X3RHMVRibHFEM2RmSElmVWkweEF0OTN4UldMd3h0YmdUbWt3UkpnUjYySnJIUDRvQ1gtR09GbEpCYmVSaHFYd01UeUt1ZVpUNi0xazF4N01INkZhVzhiclB6VDZlWmtwQjJuNFRhUng5ZVpyNlEwUEk?oc=5",
+      "published": "2026-06-17T10:10:16Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "G7 leaders agree to increase sanctions on Russian energy",
+      "summary": "G7 leaders agree to increase sanctions on Russian energy Financial Times",
+      "source": "Financial Times",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRkNvSzJReVYxc1lsQkI0NDFDbHFaVzd4RU45c2p1X0dVYWlPZ1l2bDBORTcwVjQzNHpyMXpBOVhldWh1TzN6R25uakEtYVoxNkptZWZLSlJnN0tkOXpsbVZzTS1oeUp1NHhoQWFEOW9nalY1Qnc2dWk3TFVBNTZ2REVSVUM?oc=5",
+      "published": "2026-06-16T13:42:11Z",
+      "sentiment": "neutral",
+      "impact": "med"
+    },
+    {
+      "title": "G7 'agrees to ramp up pressure' on Russia through energy 'sanctions'",
+      "summary": "G7 'agrees to ramp up pressure' on Russia through energy 'sanctions' The Brussels Times",
+      "source": "The Brussels Times",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNXFFSS02NDREenZZY0FubThOZDdzeTU5bXphQVIzajYxSWJlNGhoOEpHSFRCZzVFZHE0bG5PMWQ5NThpbHNlTzRoQ28xb1hiMjVXYW1lbThxRHptQXBHM3B3bU9EdnBtOEJCRk4yZEE5UURXZTV1ODFVSU9Qa21vZ3lRbHh4NWFIUTJHcEVHZHlfUm4xSTFDQ1ltYnBJSmpkWjd1Qg?oc=5",
+      "published": "2026-06-17T04:27:34Z",
+      "sentiment": "neutral",
+      "impact": "med"
+    },
+    {
+      "title": "Trump suggests oil sanctions for Russia at G7 summit",
+      "summary": "Trump suggests oil sanctions for Russia at G7 summit The National News Desk",
+      "source": "The National News Desk",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPNE5pVDFvX0RxM3dJSXVFdTExNWVfejAzMW5hWnl6UnVSUEFDblFSUjFUSGd6b0dHZnJlLUJHZWFQNFZaTk1sd0hJbDlzaXBxSmg5OXpHcGx5TGlacVBSUm5tbXdpSHJFUEdMU01RUW9xRG4teHdjV3BxM29DV1hYbFMwb0E3R1R2Y3ltWm1WR2k3LVMxc1F5MWU2WHoxeEtLMVBpZU5QZ0tFWl9Wd2tRbnVCVTB4R1lPRDVXLWEybVVFSWNKdEdXdml2LXBkZEctRHNwOXQ3TThGemRncGJrZm9XczlFZjBxMU10eFF3?oc=5",
+      "published": "2026-06-16T17:35:44Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "IEA Forecasts Massive 2027 Oil Surplus After Strait of Hormuz Reopening",
+      "summary": "IEA Forecasts Massive 2027 Oil Surplus After Strait of Hormuz Reopening Discovery Alert",
+      "source": "Discovery Alert",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPYjhhb3piclVuOTA4SERGWEFnMWJpaUVCVElWTkcxa0JNaWFveWVOWVJadF9LSWg0WUJYcTk3UXhGUmtPdndtRUtzQUxlX0JzOC1XUWl0Vm5wUGgtUWhVb19ncXpzblV1a0ZEQV9TU2NTOVNFSFM1NkV5TFZVVldwXzlDTQ?oc=5",
+      "published": "2026-06-17T11:13:19Z",
+      "sentiment": "bearish",
+      "impact": "low"
+    },
+    {
+      "title": "Iran war energy crisis defies expectations as oil prices settle and Bitcoin hash rate recovers",
+      "summary": "Iran war energy crisis defies expectations as oil prices settle and Bitcoin hash rate recovers Crypto Briefing",
+      "source": "Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5KU0lrMGVsY2hNbEtPUFh2WFRKbHNjNzNKTWpsdjYxZHYtaTBJRWd6M3NvTkVadXN2VVh3RVljN2ZBRVRReEV1VmVsaGdScHRBek9MbXhVbldPT09Gd0p6Z2d3anNXTHVlVVg5WDlKa0puSXM?oc=5",
+      "published": "2026-06-16T13:59:56Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "Ukraine: G7 steps up pressure on Moscow \u2013 new sanctions on gas and oil on the horizon",
+      "summary": "Ukraine: G7 steps up pressure on Moscow \u2013 new sanctions on gas and oil on the horizon Il Sole 24 ORE",
+      "source": "Il Sole 24 ORE",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQejB0WXdESjBtdUZzajRjZUI5cUFIYjNZSm5hWXdScWVSQkQ1ZnBXWmxHNmdrb3BXakVPd3NIVjNHYmh4M0ZuSmFDMjhBMlFZVE5Vam9GN1RWbWc0TGZNdGZyaEVvQUZxdzJVbklUTjBkLVRCc2FmbElaQkx3M0k1WGpyWGNCdHBDMHZMSXN6QWlxMjZHZVJDZ01zSkV5bUU?oc=5",
+      "published": "2026-06-16T20:06:45Z",
       "sentiment": "bullish",
       "impact": "low"
     }
