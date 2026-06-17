@@ -483,14 +483,13 @@ body {
     overflow-x: hidden;
 }
 .overview-top-row {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 260px;
+    display: flex;
     gap: 10px;
-    height: 44vh;
-    min-height: 320px;
+    height: 38vh;
+    min-height: 280px;
 }
 .overview-top-row .chart-box,
-.overview-top-row .panel { overflow: hidden; }
+.overview-top-row .panel { overflow: hidden; flex: 1; min-width: 0; }
 
 /* ─── Panel ─── */
 .panel {
