@@ -1,50 +1,49 @@
 {
- "generated": "2026-06-18T16:28:13.761113+00:00",
+ "generated": "2026-06-18T23:28:45.349803+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude prices extended their brutal multi-week rout on Thursday, with WTI shedding another 3.48% to $74.10/bbl and Heating Oil leading losses at -4.81%. The proximate catalyst is the formal signing of the US-Iran ceasefire deal, which reopens the Strait of Hormuz and immediately unleashes pent-up supply: reports indicate more than 60 million barrels of Persian Gulf crude are queued for Asia-bound shipments. Iranian tankers have already reappeared, signalling a swift export restart. Meanwhile, G7 nations agreed to escalate sanctions on Russian crude revenues, and Trump's sanctions waiver on Russian oil expired today \u2014 adding complexity for key buyers such as India. Analysts warn that even with Russian sanctions tightening, the state of global inventories is sufficiently bearish to cap any recovery. Options markets price a 77% probability of an OPEC cut at the next meeting, reflecting how deeply the market is now pricing in oversupply.",
+   "summary": "Crude markets are under severe pressure, with WTI settling at $75.28/bbl (-1.97% on the day) and extending a brutal month-long slide of more than 30%. The dominant catalyst is the Trump-Iran ceasefire deal, formally signed and confirmed by multiple sources, which reopens the Strait of Hormuz and grants Iran the right to sell oil freely \u2014 removing a major supply-risk premium built up over prior weeks. G7 escalation of sanctions on Russian oil revenues adds a modest offsetting tightness, but markets are clearly prioritising the Iranian supply unlock. Separately, high supertanker rates are disrupting Persian Gulf loadings to Asia, creating near-term logistical friction for Chinese and Indian refiners. Options markets now price a 77.26% probability of an OPEC output cut at the next meeting, reflecting producer anxiety about the price collapse.",
    "drivers": [
-    "Hormuz reopening and Iranian tanker restart flood market with 60+ million barrels of deferred supply",
-    "US-Iran ceasefire deal formally signed, removing the geopolitical risk premium that had supported prices",
-    "G7 escalates Russian oil sanctions and Trump's waiver expires, but bearish inventory backdrop limits any offsetting price support"
+    "US-Iran deal reopens Strait of Hormuz and waives oil sanctions on Iran, flooding the market with supply-side relief",
+    "G7 escalation of Russian oil sanctions provides a partial but insufficient counterweight to bearish sentiment",
+    "High supertanker rates disrupting Persian Gulf crude loadings to Asia, complicating near-term demand absorption"
    ],
    "headlineCount": 12,
    "sources": [
-    "Audacy",
+    "Al-Monitor",
     "Cryptopolitan",
-    "MSN",
-    "The Economic Times",
+    "Economy Middle East",
+    "Mathrubhumi English",
     "The Guardian",
-    "The Times of India"
+    "The Sunday Guardian"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets delivered a stark divergence on Thursday. Henry Hub edged up 2.51% to $3.224/MMBtu, continuing a modest four-week grind higher, while European TTF plunged 2.82% to \u20ac40.735/MWh \u2014 now down over 21% in a month. The TTF weakness mirrors the crude complex, as Hormuz reopening eases broader energy supply anxiety and reduces LNG diversion premiums into Europe. G7 sanctions on Russian gas exports add a structural uncertainty to European supply, but this was insufficient to stem today's selling. On the demand side, India's energy import bill surged 82% in May driven by LNG and crude arrivals, though domestic fuel prices are likely to remain sticky according to the country's petroleum ministry. The gas-specific news flow is relatively thin beyond these macro cross-currents.",
+   "summary": "The gas complex is sending divergent signals across the Atlantic. Henry Hub edged up 2.16% on the day to $3.213/MMBtu, extending a modest month-long gain of just over 3%, suggesting domestic US fundamentals remain constructive. TTF, by contrast, fell 2.82% on the day to \u20ac40.735/MWh and is down more than 18% on the week and over 21% on the month \u2014 a sharp reversal that likely reflects reduced geopolitical risk premium following the Iran deal and the easing of Hormuz concerns. News flow directly relevant to gas is thin today beyond the G7 agreement to escalate sanctions on Russian gas exports, which could tighten European supply over time but has not arrested TTF's slide. India's sticky domestic pump prices, despite falling crude, have limited read-across to gas markets.",
    "drivers": [
-    "TTF drops sharply as Hormuz reopening deflates European energy supply risk premium",
-    "G7 sanctions on Russian gas exports introduce medium-term European supply uncertainty but provided no price floor today",
-    "Henry Hub diverges higher on domestic US dynamics; India LNG import surge highlights ongoing Asian demand strength"
+    "Henry Hub up modestly on supportive domestic US fundamentals, diverging sharply from European prices",
+    "TTF under heavy selling pressure, down 18% on the week, as Hormuz re-opening reduces geopolitical risk premium",
+    "G7 agreement to escalate sanctions on Russian gas exports is a medium-term supply risk for Europe but not yet market-moving"
    ],
-   "headlineCount": 5,
+   "headlineCount": 2,
    "sources": [
-    "UNITED24 Media",
-    "inkorr.com"
+    "UNITED24 Media"
    ]
   },
   "power": {
-   "summary": "EU carbon EUAs held essentially flat at $75.38 (-0.07%), showing unusual resilience against a backdrop of crashing energy input costs. Over the past month EUAs are up 6.48%, even as TTF has collapsed 21% \u2014 a decoupling worth watching. The power and carbon desk faces a mixed macro backdrop: UK PM Starmer pledged a \u00a3210 million nuclear energy package for Ukraine alongside fresh Russia sanctions at the G7, while the US-Iran deal's nuclear program ambiguities \u2014 including the unresolved fate of Iran's enriched uranium stockpile \u2014 keep geopolitical risk alive. Australia's renewable pipeline surged roughly 30% following government tenders for nearly 10 gigawatts of new capacity, a positive structural signal. A separate note flags an emerging power infrastructure deficit as a key risk to AI-sector growth forecasts, though detail on that piece is limited.",
+   "summary": "The EU carbon market is holding firm, with EUAs at $75.44 (+3.05% on the week, +5.61% on the month), decoupling from the sharp sell-off in TTF gas \u2014 a notable divergence suggesting structural demand for carbon permits is supported by factors beyond near-term gas burn economics. The headline story in European power is a nuclear renaissance: a report describes Europe as having entered a 'nuclear golden age' driven by surging AI-related electricity demand, and Sweden concretely advanced that theme by selecting Rolls-Royce SMR for three units at Videberg Kraft, backed by Vattenfall \u2014 the first new Swedish reactor order since the 1980s. The UK's Starmer also pledged a \u00a3210 million nuclear energy package for Ukraine at the G7. In the US, a court ruling dealt a setback to Trump's anti-wind policy, though detail is limited. The US-Iran nuclear deal terms remain a background watch item for proliferation risk but have no direct power market impact today.",
    "drivers": [
-    "EUA prices resilient and up ~6.5% on the month despite collapsing gas costs, suggesting carbon market tightness is decoupled from energy input deflation",
-    "G7 nuclear energy support package for Ukraine and unresolved Iran nuclear stockpile question keep geopolitical uncertainty elevated in the power complex",
-    "Australia's renewable pipeline jumps ~30% post-government tenders; AI power demand infrastructure gap flagged as a latent systemic risk"
+    "Sweden selects Rolls-Royce SMR for three new reactor units, underscoring Europe's accelerating nuclear revival driven by AI power demand",
+    "EU EUAs holding gains (+5.6% on the month) despite collapsing TTF gas prices, pointing to structural carbon demand decoupled from near-term fuel switching",
+    "G7 nuclear energy package for Ukraine and broader pro-nuclear regulatory shift add medium-term support for low-carbon power investment themes"
    ],
-   "headlineCount": 9,
+   "headlineCount": 8,
    "sources": [
     "CBS News",
     "MSN",
-    "TFIGlobal",
-    "The Guardian"
+    "Mathrubhumi English",
+    "TFIGlobal"
    ]
   }
  }
