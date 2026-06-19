@@ -1,47 +1,44 @@
 {
- "generated": "2026-06-18T23:28:45.349803+00:00",
+ "generated": "2026-06-19T16:00:29.975518+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets are under severe pressure, with WTI settling at $75.28/bbl (-1.97% on the day) and extending a brutal month-long slide of more than 30%. The dominant catalyst is the Trump-Iran ceasefire deal, formally signed and confirmed by multiple sources, which reopens the Strait of Hormuz and grants Iran the right to sell oil freely \u2014 removing a major supply-risk premium built up over prior weeks. G7 escalation of sanctions on Russian oil revenues adds a modest offsetting tightness, but markets are clearly prioritising the Iranian supply unlock. Separately, high supertanker rates are disrupting Persian Gulf loadings to Asia, creating near-term logistical friction for Chinese and Indian refiners. Options markets now price a 77.26% probability of an OPEC output cut at the next meeting, reflecting producer anxiety about the price collapse.",
+   "summary": "Crude markets endured a volatile session bookended by a sharp week-long sell-off and an intraday whipsaw. WTI settled near $76.34 (-0.34% on the day) after losing roughly 10% on the week, while Brent clawed back 0.61% to $80.34. The dominant driver has been the US-Iran framework deal that reopened the Strait of Hormuz and waived Iranian oil sanctions, flushing the geopolitical risk premium out of prices. An estimated 80 million barrels of crude are queued to exit Hormuz, amplifying supply-return fears. However, prices caught a brief bid in Asian trade after peace talks were reported postponed, injecting fresh uncertainty. RBOB gasoline bore the sharpest single-day pain at -3.06%. On the macro side, G7 nations agreed to escalate sanctions on Russian oil revenues, while India\u2014well-stocked with two months of crude\u2014is not rushing to re-engage Middle Eastern barrels.",
    "drivers": [
-    "US-Iran deal reopens Strait of Hormuz and waives oil sanctions on Iran, flooding the market with supply-side relief",
-    "G7 escalation of Russian oil sanctions provides a partial but insufficient counterweight to bearish sentiment",
-    "High supertanker rates disrupting Persian Gulf crude loadings to Asia, complicating near-term demand absorption"
+    "US-Iran deal reopens Strait of Hormuz and waives Iranian oil sanctions, erasing the geopolitical premium and driving ~10% weekly decline in WTI",
+    "80 million barrels queued through Hormuz signal a near-term supply surge; Indian refiners sitting on two-month stocks, limiting immediate demand pull",
+    "Peace-talk postponement triggered a short-covering bounce; outcome remains binary and headline-sensitive"
    ],
    "headlineCount": 12,
    "sources": [
-    "Al-Monitor",
     "Cryptopolitan",
     "Economy Middle East",
+    "MSN",
     "Mathrubhumi English",
     "The Guardian",
     "The Sunday Guardian"
    ]
   },
   "gas": {
-   "summary": "The gas complex is sending divergent signals across the Atlantic. Henry Hub edged up 2.16% on the day to $3.213/MMBtu, extending a modest month-long gain of just over 3%, suggesting domestic US fundamentals remain constructive. TTF, by contrast, fell 2.82% on the day to \u20ac40.735/MWh and is down more than 18% on the week and over 21% on the month \u2014 a sharp reversal that likely reflects reduced geopolitical risk premium following the Iran deal and the easing of Hormuz concerns. News flow directly relevant to gas is thin today beyond the G7 agreement to escalate sanctions on Russian gas exports, which could tighten European supply over time but has not arrested TTF's slide. India's sticky domestic pump prices, despite falling crude, have limited read-across to gas markets.",
+   "summary": "Natural gas sent mixed signals across regions. Henry Hub edged down 0.90% on the day to $3.204/MMBtu but remains up 6.66% on the month, suggesting underlying domestic support. TTF surged 4.08% to \u20ac42.175/MWh on the day despite a steep 9.83% weekly loss, possibly reflecting short-covering or near-term supply uncertainty as Hormuz tanker traffic reportedly stalled later in the session. The first post-deal LNG cargo transited the Strait and arrived in India, a symbolic but modest positive for Atlantic-basin flow normalization. On the supply side, Equinor committed more than $400 million to expand subsea development at the Troll gas field, adding longer-dated Norwegian supply. India also ordered a major strategic petroleum reserve expansion through ONGC. News flow specific to Henry Hub fundamentals is thin today.",
    "drivers": [
-    "Henry Hub up modestly on supportive domestic US fundamentals, diverging sharply from European prices",
-    "TTF under heavy selling pressure, down 18% on the week, as Hormuz re-opening reduces geopolitical risk premium",
-    "G7 agreement to escalate sanctions on Russian gas exports is a medium-term supply risk for Europe but not yet market-moving"
+    "First post-deal LNG cargo clears Hormuz and reaches India, signalling nascent normalization of Asian LNG flows",
+    "TTF daily spike (+4.08%) contrasts with steep weekly loss, pointing to short-covering as Hormuz tanker traffic stalled again late in the session",
+    "Equinor's $412 million Troll subsea investment adds future Norwegian gas supply, bearish for medium-term European prices"
    ],
-   "headlineCount": 2,
-   "sources": [
-    "UNITED24 Media"
-   ]
+   "headlineCount": 3,
+   "sources": []
   },
   "power": {
-   "summary": "The EU carbon market is holding firm, with EUAs at $75.44 (+3.05% on the week, +5.61% on the month), decoupling from the sharp sell-off in TTF gas \u2014 a notable divergence suggesting structural demand for carbon permits is supported by factors beyond near-term gas burn economics. The headline story in European power is a nuclear renaissance: a report describes Europe as having entered a 'nuclear golden age' driven by surging AI-related electricity demand, and Sweden concretely advanced that theme by selecting Rolls-Royce SMR for three units at Videberg Kraft, backed by Vattenfall \u2014 the first new Swedish reactor order since the 1980s. The UK's Starmer also pledged a \u00a3210 million nuclear energy package for Ukraine at the G7. In the US, a court ruling dealt a setback to Trump's anti-wind policy, though detail is limited. The US-Iran nuclear deal terms remain a background watch item for proliferation risk but have no direct power market impact today.",
+   "summary": "EU carbon EUAs continued their quiet grind higher, adding 1.01% on the day to $76.14 and posting a solid 6.79% monthly gain\u2014decoupling from the sharp monthly drop in TTF gas (-14.67%), which would ordinarily be EUA-negative via reduced gas-burn economics. The divergence may reflect structural compliance buying or broader carbon policy support. TTF's 4.08% single-day spike does, however, provide some near-term upward co-movement incentive for power-sector emitters. The Hormuz traffic stall reported late in the day\u2014tanker movement dwindling as shippers pulled back amid renewed uncertainty\u2014could keep short-term gas supply tighter than the deal initially implied, supporting power prices. The headline noting electricity as the binding bottleneck for AI growth underscores sustained long-run demand. Direct power-price data is not provided today, limiting further precision.",
    "drivers": [
-    "Sweden selects Rolls-Royce SMR for three new reactor units, underscoring Europe's accelerating nuclear revival driven by AI power demand",
-    "EU EUAs holding gains (+5.6% on the month) despite collapsing TTF gas prices, pointing to structural carbon demand decoupled from near-term fuel switching",
-    "G7 nuclear energy package for Ukraine and broader pro-nuclear regulatory shift add medium-term support for low-carbon power investment themes"
+    "EUAs up 1.01% on the day and +6.79% on the month, defying the broader gas price slide\u2014structural compliance demand appears to be the key support",
+    "TTF's 4.08% intraday spike and renewed Hormuz tanker traffic stall reintroduce near-term gas supply risk, offering short-run upward pressure on power generation costs",
+    "AI-driven electricity demand growth cited as a structural long-term load driver, reinforcing bullish sentiment on baseload power and carbon allowances"
    ],
-   "headlineCount": 8,
+   "headlineCount": 6,
    "sources": [
     "CBS News",
-    "MSN",
     "Mathrubhumi English",
     "TFIGlobal"
    ]
