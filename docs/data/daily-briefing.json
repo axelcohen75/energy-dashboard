@@ -1,13 +1,13 @@
 {
- "generated": "2026-06-19T16:00:29.975518+00:00",
+ "generated": "2026-06-19T21:07:37.598757+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets endured a volatile session bookended by a sharp week-long sell-off and an intraday whipsaw. WTI settled near $76.34 (-0.34% on the day) after losing roughly 10% on the week, while Brent clawed back 0.61% to $80.34. The dominant driver has been the US-Iran framework deal that reopened the Strait of Hormuz and waived Iranian oil sanctions, flushing the geopolitical risk premium out of prices. An estimated 80 million barrels of crude are queued to exit Hormuz, amplifying supply-return fears. However, prices caught a brief bid in Asian trade after peace talks were reported postponed, injecting fresh uncertainty. RBOB gasoline bore the sharpest single-day pain at -3.06%. On the macro side, G7 nations agreed to escalate sanctions on Russian oil revenues, while India\u2014well-stocked with two months of crude\u2014is not rushing to re-engage Middle Eastern barrels.",
+   "summary": "Crude markets extended a brutal multi-week sell-off as the US-Iran deal dominated price action. WTI settled near $76.54 (-0.08% on the day) while Brent edged to $80.59 (+0.93%), masking a catastrophic weekly loss of roughly 9% for WTI as geopolitical risk premium evaporated. The framework agreement, formally signed by Trump, includes Strait of Hormuz reopening terms and waived Iranian oil sanctions, with tankers beginning to resume transit. One analyst outlet lowered its Brent outlook to $82 citing expected full Hormuz operations. Complicating the picture: tanker traffic reportedly stalled again intraday amid residual uncertainty, and Russia faces fuel rationing in Moscow following Ukrainian drone strikes. G7 leaders separately agreed to escalate sanctions on Russian oil revenues, adding a cross-current to the bearish Iran supply narrative. RBOB gasoline bore the sharpest single-day loss at -2.76%.",
    "drivers": [
-    "US-Iran deal reopens Strait of Hormuz and waives Iranian oil sanctions, erasing the geopolitical premium and driving ~10% weekly decline in WTI",
-    "80 million barrels queued through Hormuz signal a near-term supply surge; Indian refiners sitting on two-month stocks, limiting immediate demand pull",
-    "Peace-talk postponement triggered a short-covering bounce; outcome remains binary and headline-sensitive"
+    "US-Iran ceasefire deal with Strait of Hormuz reopening terms strips ~9% weekly risk premium from WTI",
+    "Iran's return to oil export market and waived sanctions point to near-term supply surplus",
+    "Russia fuel rationing in Moscow and new G7 sanctions on Russian oil revenues add offsetting supply-side risk"
    ],
    "headlineCount": 12,
    "sources": [
@@ -16,27 +16,27 @@
     "MSN",
     "Mathrubhumi English",
     "The Guardian",
-    "The Sunday Guardian"
+    "The New Voice of Ukraine"
    ]
   },
   "gas": {
-   "summary": "Natural gas sent mixed signals across regions. Henry Hub edged down 0.90% on the day to $3.204/MMBtu but remains up 6.66% on the month, suggesting underlying domestic support. TTF surged 4.08% to \u20ac42.175/MWh on the day despite a steep 9.83% weekly loss, possibly reflecting short-covering or near-term supply uncertainty as Hormuz tanker traffic reportedly stalled later in the session. The first post-deal LNG cargo transited the Strait and arrived in India, a symbolic but modest positive for Atlantic-basin flow normalization. On the supply side, Equinor committed more than $400 million to expand subsea development at the Troll gas field, adding longer-dated Norwegian supply. India also ordered a major strategic petroleum reserve expansion through ONGC. News flow specific to Henry Hub fundamentals is thin today.",
+   "summary": "Natural gas markets delivered a split verdict on Friday. Henry Hub edged down 1.08% to $3.198/MMBtu but retains a solid +6.46% monthly gain, suggesting domestic fundamentals remain constructive even as geopolitical noise recedes. European TTF surged 3.82% to \u20ac42.07/MWh on the day, a notable divergence from its -14.88% monthly trend, with the session bounce potentially linked to residual Hormuz transit uncertainty and the first post-deal Indian LNG cargo passing through the strait\u2014signalling route normalisation rather than a demand shock. Equinor's announcement of a $412 million subsea investment to boost output from the Troll gas field is a medium-term bearish signal for European supply but had limited immediate price impact today.",
    "drivers": [
-    "First post-deal LNG cargo clears Hormuz and reaches India, signalling nascent normalization of Asian LNG flows",
-    "TTF daily spike (+4.08%) contrasts with steep weekly loss, pointing to short-covering as Hormuz tanker traffic stalled again late in the session",
-    "Equinor's $412 million Troll subsea investment adds future Norwegian gas supply, bearish for medium-term European prices"
+    "India receives first LNG cargo through a reopened Strait of Hormuz, confirming route normalisation post-US-Iran deal",
+    "Equinor commits $412 million to boost Troll field output, adding future European supply",
+    "TTF rebounds 3.82% intraday despite steep monthly losses, likely reflecting lingering Hormuz transit uncertainty"
    ],
    "headlineCount": 3,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs continued their quiet grind higher, adding 1.01% on the day to $76.14 and posting a solid 6.79% monthly gain\u2014decoupling from the sharp monthly drop in TTF gas (-14.67%), which would ordinarily be EUA-negative via reduced gas-burn economics. The divergence may reflect structural compliance buying or broader carbon policy support. TTF's 4.08% single-day spike does, however, provide some near-term upward co-movement incentive for power-sector emitters. The Hormuz traffic stall reported late in the day\u2014tanker movement dwindling as shippers pulled back amid renewed uncertainty\u2014could keep short-term gas supply tighter than the deal initially implied, supporting power prices. The headline noting electricity as the binding bottleneck for AI growth underscores sustained long-run demand. Direct power-price data is not provided today, limiting further precision.",
+   "summary": "The power and carbon complex offered limited dedicated news flow today; commentary is necessarily constrained to what the data and adjacent headlines support. EU Carbon EUAs firmed 1.01% to $76.14/EUA, extending a healthy +6.79% monthly trend, suggesting carbon market participants are not reading the broader geopolitical de-escalation as a near-term demand-destruction event. TTF's sharp 3.82% intraday spike is the dominant power-sector input to watch, as higher gas prices typically lift marginal power generation costs across European markets. An Israel-Hezbollah truce announced Friday and the broader Iran framework agreement inject some optimism about regional stability, but a separate headline noted Hormuz tanker traffic stalling again intraday, leaving supply-chain clarity incomplete. Dedicated power-sector data flow was thin on this date.",
    "drivers": [
-    "EUAs up 1.01% on the day and +6.79% on the month, defying the broader gas price slide\u2014structural compliance demand appears to be the key support",
-    "TTF's 4.08% intraday spike and renewed Hormuz tanker traffic stall reintroduce near-term gas supply risk, offering short-run upward pressure on power generation costs",
-    "AI-driven electricity demand growth cited as a structural long-term load driver, reinforcing bullish sentiment on baseload power and carbon allowances"
+    "EU Carbon EUAs up 1.01% on the day, holding a +6.79% monthly gain despite macro de-escalation",
+    "TTF +3.82% intraday spike pressures European power generation margins",
+    "Israel-Hezbollah truce and US-Iran deal reduce geopolitical tail risk but Hormuz traffic stalls temper near-term certainty"
    ],
-   "headlineCount": 6,
+   "headlineCount": 7,
    "sources": [
     "CBS News",
     "Mathrubhumi English",
