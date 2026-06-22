@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-22T20:21:50Z",
+  "updated": "2026-06-22T22:23:03Z",
   "physical": [
     {
       "title": "China Builds New LNG Hub as Russian Imports Surge",
@@ -8,15 +8,6 @@
       "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Builds-New-LNG-Hub-as-Russian-Imports-Surge.html",
       "published": "2026-06-22T13:30:00Z",
       "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "U.S. Airlines Set To Pocket $40 Billion As Jet Fuel Prices Crash",
-      "summary": "U.S. airlines stand to save billions in dollars on jet fuel costs after the US-Iran peace deal sent oil prices sharply lower. Brent crude was trading at $79.22 per barrel at 6.05 am ET on Monday, n...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Airlines-Set-To-Pocket-40-Billion-As-Jet-Fuel-Prices-Crash.html",
-      "published": "2026-06-22T16:30:00Z",
-      "sentiment": "bearish",
       "impact": "med"
     },
     {
@@ -38,6 +29,15 @@
       "impact": "med"
     },
     {
+      "title": "U.S. Airlines Set To Pocket $40 Billion As Jet Fuel Prices Crash",
+      "summary": "U.S. airlines stand to save billions in dollars on jet fuel costs after the US-Iran peace deal sent oil prices sharply lower. Brent crude was trading at $79.22 per barrel at 6.05 am ET on Monday, n...",
+      "source": "",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Airlines-Set-To-Pocket-40-Billion-As-Jet-Fuel-Prices-Crash.html",
+      "published": "2026-06-22T16:30:00Z",
+      "sentiment": "bearish",
+      "impact": "med"
+    },
+    {
       "title": "Saudis Turn to Russian Fuel Oil as Iran War Saps Fossil Power Supplies",
       "summary": "Saudi Arabia continues to snap up high volumes of Russia\u2019s fuel oil as the Hormuz crisis has forced shut oil and gas wells and reduced domestic supply for power generation amid rising temperatures....",
       "source": "",
@@ -45,6 +45,15 @@
       "published": "2026-06-22T17:30:00Z",
       "sentiment": "bullish",
       "impact": "low"
+    },
+    {
+      "title": "Global EV Industry Faces Outsized Risk From Cobalt Supply Disruptions",
+      "summary": "Back in 2020, the electric vehicle sector witnessed a major evolutionary change after leading EV makers started using cobalt-free batteries at scale. Back then, Tesla Inc. (NASDAQ:TSLA) officially ...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/Global-EV-Industry-Faces-Outsized-Risk-From-Cobalt-Supply-Disruptions.html",
+      "published": "2026-06-22T22:00:00Z",
+      "sentiment": "bullish",
+      "impact": "med"
     },
     {
       "title": "Chinese Grid Operators Resist Plans to Boost Renewables to Power AI",
@@ -56,30 +65,30 @@
       "impact": "low"
     },
     {
-      "title": "Iran\u2019s Oil Exports Through Hormuz Hit Wartime High",
-      "summary": "Iran isn\u2019t wasting any time moving its oil out of the Gulf via the Strait of Hormuz after the U.S. lifted the naval blockade outside the chokepoint and the U.S. and Iran discuss a framework on a la...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Irans-Oil-Exports-Through-Hormuz-Hit-Wartime-High.html",
-      "published": "2026-06-22T12:30:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Denmark and Germany Launch Europe\u2019s First Hydrogen Superhighway",
-      "summary": "For the past few years, hydrogen has suffered from a credibility problem. Not because the technology itself stopped making sense, but because expectations ran too far ahead of reality. Governments ...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/Denmark-and-Germany-Launch-Europes-First-Hydrogen-Superhighway.html",
-      "published": "2026-06-22T20:00:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
       "title": "Greek Energy Pulls In $26B As Europe Scrambles To Replace Russian Gas",
       "summary": "Billions of dollars in investments are flowing into Greece\u2019s energy sector as the country tries to establish itself as a vital energy transit hub for Central, Eastern, and Southeastern Europe as th...",
       "source": "",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Greek-Energy-Pulls-In-26B-As-Europe-Scrambles-To-Replace-Russian-Gas.html",
       "published": "2026-06-22T18:30:00Z",
       "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "The Race to Revive Venezuela\u2019s Vast Oil Wealth Is Underway",
+      "summary": "After Washington snatched Venezuela\u2019s authoritarian president, Nicolas Maduro, in a daring January 2026 night raid, the country\u2019s long road to recovery began. Under the leadership of Maduro\u2019s forme...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/The-Race-to-Revive-Venezuelas-Vast-Oil-Wealth-Is-Underway.html",
+      "published": "2026-06-22T17:00:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "Russia Rations Fuel in Crimea as Ukraine Targets Oil Infrastructure",
+      "summary": "Russian-installed authorities in occupied Crimea have suspended fuel sales to private individuals and businesses amid a severe fuel shortage and a weak tourist season, as Ukrainian drone strikes co...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/Russia-Rations-Fuel-in-Crimea-as-Ukraine-Targets-Oil-Infrastructure.html",
+      "published": "2026-06-22T16:00:00Z",
+      "sentiment": "bullish",
       "impact": "low"
     },
     {
@@ -110,29 +119,20 @@
       "impact": "low"
     },
     {
-      "title": "Russia Rations Fuel in Crimea as Ukraine Targets Oil Infrastructure",
-      "summary": "Russian-installed authorities in occupied Crimea have suspended fuel sales to private individuals and businesses amid a severe fuel shortage and a weak tourist season, as Ukrainian drone strikes co...",
+      "title": "The Hormuz Threat Oil Markets Are Ignoring",
+      "summary": "Threats from President Trump to bomb Iran again and Iranian negotiators leaving the talks in Switzerland once again clouded the outlook for one of the world\u2019s busiest oil chokepoints. Talks are pro...",
       "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/Russia-Rations-Fuel-in-Crimea-as-Ukraine-Targets-Oil-Infrastructure.html",
-      "published": "2026-06-22T16:00:00Z",
+      "url": "https://oilprice.com/Energy/Oil-Prices/The-Hormuz-Threat-Oil-Markets-Are-Ignoring.html",
+      "published": "2026-06-22T21:00:00Z",
       "sentiment": "bullish",
       "impact": "low"
     },
     {
-      "title": "Kuwait Offers Gulf Oil Loadings as Producers Seek Hormuz Outlet",
-      "summary": "Kuwait is offering naphtha for loading at its ports deep into the Persian Gulf in the first such tender in months, as Middle Eastern oil producers seek to raise shipments through the Strait of Horm...",
+      "title": "Denmark and Germany Launch Europe\u2019s First Hydrogen Superhighway",
+      "summary": "For the past few years, hydrogen has suffered from a credibility problem. Not because the technology itself stopped making sense, but because expectations ran too far ahead of reality. Governments ...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Kuwait-Offers-Gulf-Oil-Loadings-as-Producers-Seek-Hormuz-Outlet.html",
-      "published": "2026-06-22T11:30:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "The Race to Revive Venezuela\u2019s Vast Oil Wealth Is Underway",
-      "summary": "After Washington snatched Venezuela\u2019s authoritarian president, Nicolas Maduro, in a daring January 2026 night raid, the country\u2019s long road to recovery began. Under the leadership of Maduro\u2019s forme...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/The-Race-to-Revive-Venezuelas-Vast-Oil-Wealth-Is-Underway.html",
-      "published": "2026-06-22T17:00:00Z",
+      "url": "https://oilprice.com/Energy/Energy-General/Denmark-and-Germany-Launch-Europes-First-Hydrogen-Superhighway.html",
+      "published": "2026-06-22T20:00:00Z",
       "sentiment": "neutral",
       "impact": "low"
     }
@@ -157,22 +157,13 @@
       "impact": "med"
     },
     {
-      "title": "Ukraine hits Russia-controlled Crimea in deadly drone attack",
-      "summary": "Ukraine hits Russia-controlled Crimea in deadly drone attack dw.com",
-      "source": "dw.com",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9LeU0wazBqQzRWX2pxd3ZhYmZTSlhUWW9LejVwSGU3M2tKbDR0WUhLRXhURUQ0c3JUSnFVakJia2dZb2VUb215S1FhZFozQk9VbWQ0bzRHWDRhY2NOY0kweU4xOWVDdmQ3My0xQjZFQks1bi01Nm1nRFhfajXSAXxBVV95cUxQNmJRbVRnUHk0Q3FVWG9VMTh0bG1qaldydDNIa3lzNVN1T3B1ZHhKcUphVkxDbHRrSjA5bjZLekFCekdGbDhjc01JZ2YzdGt6RDB2VGNOdEZjMGZORXRjdXNPUFIyVjlQZG8xTW5jMThpMExmR29JXzN4VS0w?oc=5",
-      "published": "2026-06-22T07:06:41Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Russia-Ukraine War Latest News: Ukrainian Attacks Disrupt Fuel Supplies in Russian-Held Crimea, Civilian Sales Stopped",
-      "summary": "Russia-Ukraine War Latest News: Ukrainian Attacks Disrupt Fuel Supplies in Russian-Held Crimea, Civilian Sales Stopped The Sunday Guardian",
-      "source": "The Sunday Guardian",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQU2V1a3ZzeEI3LWoybVFvVG1saVkwTS1scVR0Xy0tZVhyUm92WFVLM1dkWkdXaHRFV2lRNm9sQ2lZa1daUjRsaXBOQmlPUUZpM04tWjhZWnpiV2dEa1g4VDB2M09sd0p0Zm1mbnZaWGRWTW54cFJ5RllGZURyT0JDZGoxYkJOX0dPWXRjUGhFM1Q0STRlNUxYNEtBNWo0ekQ1WnFVeUQ1MGVwWGNBSDJtNVFUUVROODN0Ni1kelE1V2lLTGVLeUZaNW84Uk1ZLVBfd0tfZ3RScHJtMEhwQklfQWZ6RE9RR0I5b1BfX1puSlRnN2_SAfgBQVVfeXFMTWp0bjVncTdydXR4TnZhVERvNEg4QTVNUDFKbElidzRMTTU0SGQ0eXFGOWRiY3dMT1Z6LWVpQWxwM0JpV18wbHdmRkdWWXNJSXJMOUlNdHM5RW1ySm9YOEt5REp1NHlvcHpqX1BQRkYwUHpnQU1KdnhHQklhRUVfSlBfYzRibm5pR3R6S081ei1fT3RZU3A1cjkxVzhDVGxyMEJpeU01SzVQRW1iQ05mR1Rnbkc5cDM4TXFUOTRqY3c2dmZFMmFMd05qRHRhNS0xVnRKVVVwXzEtWm9ZS2l5QUJ4dU5mRUR5SmtkOU1jRTctMGJaNXlUNGs?oc=5",
-      "published": "2026-06-21T15:04:51Z",
-      "sentiment": "bullish",
-      "impact": "low"
+      "title": "Iran-US Talks 2026: Lebanon Ceasefire and Strait of Hormuz",
+      "summary": "Iran-US Talks 2026: Lebanon Ceasefire and Strait of Hormuz Discovery Alert",
+      "source": "Discovery Alert",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMFE5amJ5UXdyRDRMaWlkRkJJdHZHX1pyNGgwN01zMXFsTm00d0pFQjFEM3lvWWhLZDRfN1A0S2t0SnJQaU5DUGxFcmFVUFpveU9mbnpUV0MzaUxRUXRGZEdQUElINW51V0xrVTZmaXhkdEoyR0UzUnJLUHZ5NldBT254Mkk2WjRn?oc=5",
+      "published": "2026-06-22T11:24:04Z",
+      "sentiment": "bearish",
+      "impact": "med"
     },
     {
       "title": "Iran demands end to Hezbollah war, oil curbs before reopening Hormuz",
@@ -182,15 +173,6 @@
       "published": "2026-06-21T15:52:00Z",
       "sentiment": "bullish",
       "impact": "low"
-    },
-    {
-      "title": "Iran-US Talks 2026: Lebanon Ceasefire and Strait of Hormuz",
-      "summary": "Iran-US Talks 2026: Lebanon Ceasefire and Strait of Hormuz Discovery Alert",
-      "source": "Discovery Alert",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMFE5amJ5UXdyRDRMaWlkRkJJdHZHX1pyNGgwN01zMXFsTm00d0pFQjFEM3lvWWhLZDRfN1A0S2t0SnJQaU5DUGxFcmFVUFpveU9mbnpUV0MzaUxRUXRGZEdQUElINW51V0xrVTZmaXhkdEoyR0UzUnJLUHZ5NldBT254Mkk2WjRn?oc=5",
-      "published": "2026-06-22T11:24:04Z",
-      "sentiment": "bearish",
-      "impact": "med"
     },
     {
       "title": "Iran, US-Israel War Live Updates | US waives sanctions on Iranian oil until August 21 under interim peace deal",
@@ -211,58 +193,31 @@
       "impact": "low"
     },
     {
-      "title": "Marco Rubio Embarks on Middle East Tour to Strengthen Peace with Iran and Ensure Energy Security",
-      "summary": "Marco Rubio Embarks on Middle East Tour to Strengthen Peace with Iran and Ensure Energy Security CubaHeadlines",
-      "source": "CubaHeadlines",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9GZGlUcFNqcXZDaWczSTREQjZLSmdZQTZzM3BpaUw3cXpzUjhLMVJhVl91a0ppT0ktTDZTYzVtVmpnQXdDMFJVWG5xcXRZN0dDQ3B0RGxpNG8?oc=5",
-      "published": "2026-06-22T19:01:43Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Trump, Putin talk of war and peace as US weighs easing Russian oil sanctions",
-      "summary": "Trump, Putin talk of war and peace as US weighs easing Russian oil sanctions DD News",
-      "source": "DD News",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVFc3VURUOWlGU19kdFpCNXY5N0VEVTNLSlRzaVFfSlZnMGNnamFFdk1yekJnN05HVFNxRFdKam50NGhMdHBSYmNpV21CdWJCLVFTY0FFVk5ReF9OVDRCMUNlR3IwR1dXZy14TERWYTdWSWpIaTd4S3pXbV9jNEZ4eFhIT2tVeW0tdXFZWnp0QXEzRFlCcTZFQ1d2NzVROVlwdXdF?oc=5",
-      "published": "2026-06-22T07:36:14Z",
+      "title": "Trump lifts sanctions on Iran, undercutting China as American energy prices begin to ease",
+      "summary": "Trump lifts sanctions on Iran, undercutting China as American energy prices begin to ease Read Lion",
+      "source": "Read Lion",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQbDBaWl9KSGV1aEQzNDdXUk5SNnJLeEtLM2tHTFZibU9sRm00N1R5TWFxMlE1bFQ2Y3ctcW03RldVUk80aDRKanZ5TmVUUDZHUWMzVGh2SFZGS1F3QTlSV0g4d2pnako3NHZsZE43ZGxYaVdRSGdQSWtiQ0xzaFprbGE2SWhtNG1CUEEyZmRWZU1wTEpQaFYydklDa25oNlpmRVdEbUxJWDByZ3JocXRB?oc=5",
+      "published": "2026-06-22T20:31:29Z",
       "sentiment": "neutral",
       "impact": "med"
     },
     {
-      "title": "UK targets Russia\u2019s Transneft in nearly 300 new sanctions on war\u2019s fourth anniversary",
-      "summary": "UK targets Russia\u2019s Transneft in nearly 300 new sanctions on war\u2019s fourth anniversary DD News",
-      "source": "DD News",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdTkyTnJiSFpvdmNwOFAxbFZwcmlpeFEwY0NteUFkLXJiRjNQQUlSR2txbXpjdjdyUmJsZDl1OGxiWmRRS1ctNnc3VEN2RVN6TTYxOGtzeDI3NWV6cHE3T2dsWTBIc0xKckZhZEpMSDh4MHJWZmxUODJfX0NvZFdPT2xLN2hVVldoSmJ4MGRma3NidVk0Tm9UYVN6S0NwOTBuVElKM0U1NnVrd3dFVHc?oc=5",
-      "published": "2026-06-22T08:03:44Z",
+      "title": "Oil now flowing: Donald Trump says US can soon reimpose Russian crude sanctions after Hormuz reopening",
+      "summary": "Oil now flowing: Donald Trump says US can soon reimpose Russian crude sanctions after Hormuz reopening MSN",
+      "source": "MSN",
+      "url": "https://news.google.com/rss/articles/CBMirgNBVV95cUxPRDlYQnVMYklUZ2ZFU0hDUFY3Q1BxOXRkMlpBa25BMXVHdkJQN0djbmR3WFZmSE9RSGZhNWY2RGZYeEVHZkYxRWNLbjE5RnVGeXliYk1aUGpIZmYtWnJCeUxsT2VtNjNLbFY1dkdZYWJMNXRkYmZPVXdsU3gzbEhXLU54aFQtUFZ3ZG9jakZWTm00dy1KMXg2dHh1RkVscERSbWJzemE2aWtkSHQ0UG9wdUxNTlVqcXM1V3NTeVl3OFRhZy1QMVYxNlBaeE9KN2c1V2tJSlBRYzlnUkhWVVhBZG8xMVhMZ1kxZ1dFc29jQnBWRWhCNGMtLXc2cUdBWVBfUzNDTWhmOVVTNzZxdWFhMmwwaUlab3htYWsyUHBZRzZoYXQyWXJBR0oySkNYUWMzLUFpLVdTeU05cHZMTHJtczN2TFJGbGRZZURLOWlZTjVIRE5wRGVDUGJXX2Jzc0tGYXMyTHpBaG1wRzVVUnB5Q1ZjSEpqTzRVbTkwZG9tMjB5bnp2Q1N2Qk9BQ2dnOHdlaVFqcEhNYjY5ZXczTkctdTh0MWtsOHRFZTRhRlZn?oc=5",
+      "published": "2026-06-20T03:34:19Z",
       "sentiment": "bullish",
       "impact": "low"
     },
     {
-      "title": "US, Iran agree on roadmap for final deal to end war #ANCHeadlines",
-      "summary": "US, Iran agree on roadmap for final deal to end war #ANCHeadlines Facebook",
-      "source": "Facebook",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNa2c4bTRiaU9PMmRMUWRiTXVfNmZUdUJJOWJxXzM1QnpNRUs4bC1vVDZsWkR1VjVXLWZKNFFWYXNnYkhuNTRaZ1BUSlRUX2Z2cnZDM2RSNjJNcGRSMEhSWWNIS3d0RUxHQnc3UHdnV3dqMURCTzdKTjBrd3BDRkUtVGh6QUNkamRld09FS0JjYVlrZlhfZnFPT3MyVEwtbG9LLVN4bUNDUXNyZ0tqc2EyVzJuTFdZek5uVFdoUExLVHQ?oc=5",
-      "published": "2026-06-22T07:02:58Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Oil prices jump as Iran shuts Hormuz again, Trump threatens new attacks",
-      "summary": "Oil prices jump as Iran shuts Hormuz again, Trump threatens new attacks kimskashmir.com",
-      "source": "kimskashmir.com",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObm43aThYVU9pRU81WHJqRmNpbDFsT3pTWmNpaVdLVm5PaGdFcG9uSGRKM2hRcVBoY3NOay1EZHN4cm05U04tVnc3dG9XMUNMOG8xam1VTC1HbnAwVHZNX0RuSzA1Rmd1eG9JLXNLeDg4S1plTk1aNVB4NGo4QXVKWVM0Uk8waUhReGR0NnBvSElRVmFQa1pXc1JTUQ?oc=5",
-      "published": "2026-06-22T04:28:02Z",
+      "title": "Vance says UN nuclear inspectors will return to Iran as US suspends sanctions",
+      "summary": "Vance says UN nuclear inspectors will return to Iran as US suspends sanctions France 24",
+      "source": "France 24",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQcUxBRWRaVnU3T2Z0Rl9iWDBkZnhNaXV4TWJxWGhvRlIzczVRaWtIVHFMdVZEZjl3NW5BbzA0TUItRDV6aXUwWXlZdDJzN1JlSnVILTBWNmtyZGVSZGpqOGNySDFfS0NVNmJtcVdPbU5kZ01JOFZiQ0tPSVhFS3lfZHJlSXlWRGsyT1dMZm5WUm12MG9GQVhoOHRTWm9nVUVDbWEtYVo3RWMtVzc0WTR0VElNS193QmVVOHNZOEhTeFNHRXlr?oc=5",
+      "published": "2026-06-22T21:49:19Z",
       "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "Trump says US will hit Iran \u2018very hard\u2019 after easing sanctions on Russian oil",
-      "summary": "Trump says US will hit Iran \u2018very hard\u2019 after easing sanctions on Russian oil DD News",
-      "source": "DD News",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOR0dORmNSamNoT2U0Yk1fcmh4RUdBZmY0bW1JSWRHc2xSSm83U0p5UlFpNExlODFjVWhhalFLY0stc3RRSncyUVA5MmpSbFhHV2FiMHlFaHJhcDNsQW5rd2hHWTIwU05TZWlQVjRGUEY4OGQza1VyMDhNeTNycTFsdzQyT1ZfT25udHViM3FDUkhOa1REc2JEaDE4REt5X09rSnBN?oc=5",
-      "published": "2026-06-22T07:49:21Z",
-      "sentiment": "neutral",
-      "impact": "med"
+      "impact": "low"
     },
     {
       "title": "Trump vows to reimpose US sanctions on Russian crude 'soon' as truce with Iran takes shape",
@@ -274,22 +229,22 @@
       "impact": "low"
     },
     {
-      "title": "Three Tankers Damaged in Gulf as US-Iran Conflict Escalates",
-      "summary": "Three Tankers Damaged in Gulf as US-Iran Conflict Escalates EnergyNow.com",
-      "source": "EnergyNow.com",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQVRBMEZTU1ZkSU45YVJobzBpREJWc1E1bEV3Q2hkY2piREhRQkhCWlN2Z3NNRW80TDZwWGZkZ1RBYnVocEVuaDF1cElrZjctVmVCWFdZbnc0XzZoS0xRSjhpcGs1Um0wX2xBWmVHNGpuQjdub2FXbjFDcC1ibDVocEV4UFc3MzYybHFsTnZMYlJ1cFd5?oc=5",
-      "published": "2026-06-20T07:20:42Z",
+      "title": "US Treasury Waives Sanctions on Iranian Oil Through Aug. 21 Under Interim Deal",
+      "summary": "US Treasury Waives Sanctions on Iranian Oil Through Aug. 21 Under Interim Deal mb.ntd.com",
+      "source": "mb.ntd.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOTREZjRJVTJBM3lzeTEyblZSQWtsLXNPV21VQlJaMkNyaUZLektkcXEwU0ktQWdleHVkWE55Y05HTlQzb1p3YWIyYnN6Z2Q5aURGNXRGNmJkeE1aYVY0d2wtYVNSWjdUOUs2ZFRSYjBITXZjR1RHNnF2aWR3cUV5dVBVQUdYM1dnMjFyY25rOXQtY2oyRjZwNW8xbXkySDhMclUwZFY5WFJMTVR6cWc?oc=5",
+      "published": "2026-06-22T15:02:43Z",
       "sentiment": "bullish",
-      "impact": "med"
+      "impact": "low"
     },
     {
-      "title": "Fuel Shortages in Russia After Ukraine Attacks on Energy",
-      "summary": "Fuel Shortages in Russia After Ukraine Attacks on Energy Daily Beirut",
-      "source": "Daily Beirut",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTkZ4c25hWk9zSzJFai1tTmVSLVZ3dS1HUkU3UmZON0VzUHF5RXpUUC1odGc0QThnNDMyREFhbFVxTEVLNmRYeE5Lb2MxU2hSc0lHbFBadzdFWHdXbGQ2VDEzdEhHQ0NNTmlDVkdWRDBPSnBWWWl3WF9pcXZMMnEwa2RudnFSd0V0RV9tcTdMbjRRTmRiYUhzM0h3YUh1cDRGdVBhem5VTENNLTZm?oc=5",
-      "published": "2026-06-20T13:20:45Z",
+      "title": "US Treasury Waives Sanctions on Iranian Oil Under Interim Deal",
+      "summary": "US Treasury Waives Sanctions on Iranian Oil Under Interim Deal NTD News",
+      "source": "NTD News",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSnVscWxEOTZhMUtlLUwyWENYWkRBSmIzdUJudm1palI0ZWowQVRDNjlhRGMzd1dQQ1ljZFItLXZ5RDR2TW5idmJSX1hyQ0JxMTBhVWEtMXRIVDBhTW4wZW9VaVF4VUxVZDY1MjZOZDRnQ21TZ3JKaUlEWmlfd3dzeng5Zk4za1NLVW5kdjVSOV9VQW5fb1NrcmtBeWtHOHoycGFoNDhUVmx3UWk2OGU0?oc=5",
+      "published": "2026-06-22T15:02:43Z",
       "sentiment": "bullish",
-      "impact": "med"
+      "impact": "low"
     },
     {
       "title": "US-Iran Deal Allows Immediate Oil Sales: Key Terms of Trump\u2019s Ceasefire Agreement and Market Impact",
@@ -301,15 +256,6 @@
       "impact": "med"
     },
     {
-      "title": "Malaysia\u2019s energy supplies secure \u2018for decades\u2019 after talks with Russia, deals with Turkmenistan: Anwar",
-      "summary": "Malaysia\u2019s energy supplies secure \u2018for decades\u2019 after talks with Russia, deals with Turkmenistan: Anwar CNA",
-      "source": "CNA",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOekFzNXkzX2FPLTZDNVpaLUg5MEJ6SVlzbk5xczZ4OFJwYnhxbDBKVW9qQUIxZ2ZFb1NNY3ZVOU5kRGJOQ0V3eWtMN1NKeEdxMmo5dGhMMjk3cWFydTlTR0lmN2VuR21GeWM0a1dDMUZ5MUNxMTJNX3VfZ3IySkZTWTRSLVVYYXc2aVFUYXNldTdwQTcyRVZzblFFTkt5Zw?oc=5",
-      "published": "2026-06-20T10:30:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
       "title": "U.S., Iran open high-level talks in Switzerland as Hormuz dispute deepens",
       "summary": "U.S., Iran open high-level talks in Switzerland as Hormuz dispute deepens The New Voice of Ukraine",
       "source": "The New Voice of Ukraine",
@@ -319,12 +265,30 @@
       "impact": "low"
     },
     {
-      "title": "Oil now flowing: Donald Trump says US can soon reimpose Russian crude sanctions after Hormuz reopening",
-      "summary": "Oil now flowing: Donald Trump says US can soon reimpose Russian crude sanctions after Hormuz reopening MSN",
-      "source": "MSN",
-      "url": "https://news.google.com/rss/articles/CBMirgNBVV95cUxPRDlYQnVMYklUZ2ZFU0hDUFY3Q1BxOXRkMlpBa25BMXVHdkJQN0djbmR3WFZmSE9RSGZhNWY2RGZYeEVHZkYxRWNLbjE5RnVGeXliYk1aUGpIZmYtWnJCeUxsT2VtNjNLbFY1dkdZYWJMNXRkYmZPVXdsU3gzbEhXLU54aFQtUFZ3ZG9jakZWTm00dy1KMXg2dHh1RkVscERSbWJzemE2aWtkSHQ0UG9wdUxNTlVqcXM1V3NTeVl3OFRhZy1QMVYxNlBaeE9KN2c1V2tJSlBRYzlnUkhWVVhBZG8xMVhMZ1kxZ1dFc29jQnBWRWhCNGMtLXc2cUdBWVBfUzNDTWhmOVVTNzZxdWFhMmwwaUlab3htYWsyUHBZRzZoYXQyWXJBR0oySkNYUWMzLUFpLVdTeU05cHZMTHJtczN2TFJGbGRZZURLOWlZTjVIRE5wRGVDUGJXX2Jzc0tGYXMyTHpBaG1wRzVVUnB5Q1ZjSEpqTzRVbTkwZG9tMjB5bnp2Q1N2Qk9BQ2dnOHdlaVFqcEhNYjY5ZXczTkctdTh0MWtsOHRFZTRhRlZn?oc=5",
-      "published": "2026-06-20T03:34:19Z",
+      "title": "Trump says US will hit Iran \u2018very hard\u2019 after easing sanctions on Russian oil",
+      "summary": "Trump says US will hit Iran \u2018very hard\u2019 after easing sanctions on Russian oil DD News",
+      "source": "DD News",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOR0dORmNSamNoT2U0Yk1fcmh4RUdBZmY0bW1JSWRHc2xSSm83U0p5UlFpNExlODFjVWhhalFLY0stc3RRSncyUVA5MmpSbFhHV2FiMHlFaHJhcDNsQW5rd2hHWTIwU05TZWlQVjRGUEY4OGQza1VyMDhNeTNycTFsdzQyT1ZfT25udHViM3FDUkhOa1REc2JEaDE4REt5X09rSnBN?oc=5",
+      "published": "2026-06-22T07:49:21Z",
+      "sentiment": "neutral",
+      "impact": "med"
+    },
+    {
+      "title": "Three Tankers Damaged in Gulf as US-Iran Conflict Escalates",
+      "summary": "Three Tankers Damaged in Gulf as US-Iran Conflict Escalates EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQVRBMEZTU1ZkSU45YVJobzBpREJWc1E1bEV3Q2hkY2piREhRQkhCWlN2Z3NNRW80TDZwWGZkZ1RBYnVocEVuaDF1cElrZjctVmVCWFdZbnc0XzZoS0xRSjhpcGs1Um0wX2xBWmVHNGpuQjdub2FXbjFDcC1ibDVocEV4UFc3MzYybHFsTnZMYlJ1cFd5?oc=5",
+      "published": "2026-06-20T07:20:42Z",
       "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "Marco Rubio Embarks on Middle East Tour to Strengthen Peace with Iran and Ensure Energy Security",
+      "summary": "Marco Rubio Embarks on Middle East Tour to Strengthen Peace with Iran and Ensure Energy Security CubaHeadlines",
+      "source": "CubaHeadlines",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9GZGlUcFNqcXZDaWczSTREQjZLSmdZQTZzM3BpaUw3cXpzUjhLMVJhVl91a0ppT0ktTDZTYzVtVmpnQXdDMFJVWG5xcXRZN0dDQ3B0RGxpNG8?oc=5",
+      "published": "2026-06-22T19:01:43Z",
+      "sentiment": "neutral",
       "impact": "low"
     },
     {
@@ -337,22 +301,13 @@
       "impact": "med"
     },
     {
-      "title": "US Treasury Waives Sanctions on Iranian Oil Through Aug. 21 Under Interim Deal",
-      "summary": "US Treasury Waives Sanctions on Iranian Oil Through Aug. 21 Under Interim Deal mb.ntd.com",
-      "source": "mb.ntd.com",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOTREZjRJVTJBM3lzeTEyblZSQWtsLXNPV21VQlJaMkNyaUZLektkcXEwU0ktQWdleHVkWE55Y05HTlQzb1p3YWIyYnN6Z2Q5aURGNXRGNmJkeE1aYVY0d2wtYVNSWjdUOUs2ZFRSYjBITXZjR1RHNnF2aWR3cUV5dVBVQUdYM1dnMjFyY25rOXQtY2oyRjZwNW8xbXkySDhMclUwZFY5WFJMTVR6cWc?oc=5",
-      "published": "2026-06-22T15:02:43Z",
+      "title": "Iran's $10 Billion Payday: Trump Waives Oil Sanctions Amid Nuclear Talks",
+      "summary": "Iran's $10 Billion Payday: Trump Waives Oil Sanctions Amid Nuclear Talks Times Now",
+      "source": "Times Now",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNRWJ3RmF1VGFNUkcxUGZFNEhicGJBbS1CT0RLYlhfMWJZZUJWSlNsRXNHeUtPNjdiVEFtZmNaSW40MlJOVUxrb2l1bTctS2lqOXNneG93SDdHQ0haSkpXZUwydG5SeXV3M3RMNWotZFNVR0FpU3NYR2VYVllGUV9JckZwNXFOSFZuRHdVUmxqYW1aRHNnMkdka2xJak9CbHFFdTMwalFLTnlELWRGSXZJWGIta2dDby1yVXJwaFR4T2l0MFFxZm9QbWpCQ21aTE9ST2ZmN1VTUEZIQUNCRHJQMnJB?oc=5",
+      "published": "2026-06-22T21:38:05Z",
       "sentiment": "bullish",
       "impact": "low"
-    },
-    {
-      "title": "Oil Rises Amid Uncertainty Over Strait of Hormuz",
-      "summary": "Oil Rises Amid Uncertainty Over Strait of Hormuz The New York Times",
-      "source": "The New York Times",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVW5rSlhvME50bWNVSnRHVm5lZGRNSklQY202M2FPTm9PZG4yN1BfeFd3QTBJbXhxR2FDb05hOFVSVzlvODBKSHVRLVI2VFNOeEhBanNQblV2Wjd0TTlzVEZjRTVKZDBIcm5LVEVrNWhraHZrSHd6TnVGU0ZNUVcwZ2hmQkhUNVFsMExZTmtxdVlfaDktM2VDQTQtS0tNQQ?oc=5",
-      "published": "2026-06-21T22:12:06Z",
-      "sentiment": "bullish",
-      "impact": "med"
     },
     {
       "title": "Vance Issues Blunt Warning to Israel as He Defends Trump\u2019s Deal",
@@ -362,6 +317,51 @@
       "published": "2026-06-20T07:00:00Z",
       "sentiment": "neutral",
       "impact": "low"
+    },
+    {
+      "title": "U.S. Temporarily Lifts Oil Sanctions Against Iran, Citing \u2018Productive\u2019 Talks",
+      "summary": "U.S. Temporarily Lifts Oil Sanctions Against Iran, Citing \u2018Productive\u2019 Talks The New York Times",
+      "source": "The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeE9NSGVjUEtnSWVnMDMzRjJrd2R5X1FYaHl1NUhxb0toRzhTZGc0SFpuTW1xT21raVBEOU9NanRNMXIwRldOMlp4cVFOc0NsUkc5U1lOS05hd3ZNMXR2bEZLcHFZQW9SYUtWYkxBQTYwbFF4SXM5U3E5MlJKeWNzNS1hMXI?oc=5",
+      "published": "2026-06-22T21:00:05Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "US may remove sanctions on Iranian oil stranded in tankers, Bessent says",
+      "summary": "US may remove sanctions on Iranian oil stranded in tankers, Bessent says DD News",
+      "source": "DD News",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVVpBMDM2Y1dvd0J2djNxSFBSbHY5VW1HbG9QenA4ZlpvSVVMekFEQXFfaTkzdk54VkIzUXYwQnVxYXJsaW94V2RuNm1RLUZiOGRSdXl1emMtT1Mxdi1qbnM5emtZVnpQNTZlb2c4THVMVnFvWlVBMjZwMktieWlQcGVNR05DNXVpdDMtam5BOXZXNUxkblJuVHV4cW40Zw?oc=5",
+      "published": "2026-06-22T07:56:31Z",
+      "sentiment": "neutral",
+      "impact": "med"
+    },
+    {
+      "title": "US and Iran open Swiss talks after fragile peace deal",
+      "summary": "US and Iran open Swiss talks after fragile peace deal MSN",
+      "source": "MSN",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQN0EyMGRHb29jU2kxTE5BYlhyNTB3Y0t4T25SemVjbUdRdThvVUV3UjZoR3E3NGxaUFpwTU5SVm5fcUJvSG5wVWEzQWpEclU5V2RfQ1JXd1hxMDk3SGlETWxMV1gzYTNWMGdNTXlGSVkxSTVoRlkxQlVVOUxoc25JdDl5cnduOHZYN0tXaThvUG9LY3RrU0YyMi1FY1kyc0xsOTJVTVZHVVRxUWdIbkc2c0dBZVE3MENKcDFuX0VnckU0SG9YaEItUl9YWGJrUjZhWXJ3SVpYWDRLa3ZQdk10RW9zaHhGR2FnbEIxRw?oc=5",
+      "published": "2026-06-21T10:48:06Z",
+      "sentiment": "bearish",
+      "impact": "low"
+    },
+    {
+      "title": "Agreement reached in Switzerland to lift oil sanctions, but the Lebanon issue remains unresolved. Iran walks out of talks following threats from Trump",
+      "summary": "Agreement reached in Switzerland to lift oil sanctions, but the Lebanon issue remains unresolved. Iran walks out of talks following threats from Trump Il Sole 24 ORE",
+      "source": "Il Sole 24 ORE",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNbERKczlaYkVfMkR6T20tci1HWUt2aS1PbHNab1pLTjNxV3hLcW1mUnVqRUF1MldoUWc2UXk2TWRpZk5tWHRONGZKclE0RURKdmZGSGRuZXpGZ28xbkdySFpWUk9INUZIQnBtbkZUMF9rbUNmTEdkTzUyRXBEVHNKRU5KbWxVUjlSZ3B1QmpveHFtV0l1SGlJUER2R1NfYVZzSF9WMUp2bUhNQVgtbUFRZmUwa0xQTmVSd3UtTFkxNDI5N1pQU0EwQ1lmSi1lQQ?oc=5",
+      "published": "2026-06-21T03:36:01Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Trump Dismisses Critics of Iran Deal as \u2018Fools\u2019 Amid Falling Oil Prices",
+      "summary": "Trump Dismisses Critics of Iran Deal as \u2018Fools\u2019 Amid Falling Oil Prices TVC News",
+      "source": "TVC News",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTTFMTXI3a1R4ZGJSYU5YUzllU280b2ZhZmVUTmg4MDkxTW9CWWdiUHg4bG5sanpIZ0JUa0F1UHRuZ0IyT2F5LXU3U1RXaTNTWF9GZ3R4QkNjYkVVNUl6Qk50eWZCbnY5SnRlQ1piU2hDYjVReTRDNlpwNlN2Ylh1cFhRMVRtOW1RT0pMMExCampPeURVM2huYQ?oc=5",
+      "published": "2026-06-20T12:30:00Z",
+      "sentiment": "bearish",
+      "impact": "med"
     }
   ]
 }
