@@ -1,43 +1,53 @@
 {
- "generated": "2026-06-22T17:30:28.280544+00:00",
+ "generated": "2026-06-23T15:47:16.477372+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude cratered for a second consecutive session as the US-Iran ceasefire deal and Hormuz reopening continued to unwind the geopolitical risk premium built up during the conflict. WTI shed 3.98% to $73.56/bbl and Brent fell 2.69% to $77.70/bbl, extending month-to-date losses beyond 25%. RBOB led the product complex lower, off 4.15%. The deal allows immediate Iranian oil sales, swamping the supply outlook. Options markets now price a 77% probability of an OPEC cut at the next meeting, signalling producer pain. Offsetting factors remain: Trump flagged reimposition of Russian crude sanctions 'soon', India is on track for record Russian crude imports in June amid US waivers, and Saudi Arabia is still absorbing Russian fuel oil to offset domestic supply disrupted by the conflict. China, sitting on full storage, shows no urgency to resume imports.",
+   "summary": "Crude sold off sharply on Tuesday, with WTI settling near $72.85 (-2.62%) and RBOB gasoline cratering 5.77% on the day, extending a brutal month-long rout of roughly 24% for the benchmark. The dominant driver is the U.S. granting Iran a 60-day sanctions waiver through 21 August, allowing crude flows to India and broader Asian markets and removing a significant supply-risk premium. Hormuz ambiguity persists \u2014 IOC failed to attract a single bid on a tanker tender, underscoring residual freight risk even as peace talks progress. Partially offsetting the bearish impulse: Trump signalled reimposition of Russian crude sanctions 'soon,' and Russia is weighing a full diesel export ban amid domestic refinery disruptions. Options markets price a 77% probability of an OPEC cut at the next meeting, reflecting deepening demand anxiety.",
    "drivers": [
-    "US-Iran ceasefire and Hormuz reopening removes supply-disruption premium; Iranian barrels cleared for immediate sale",
-    "OPEC cut probability surges to 77% on options markets as prices collapse 25%+ in a month",
-    "Competing cross-currents: imminent reimposition of Russian sanctions threatens to tighten supply, while China's full inventories dampen near-term demand recovery"
+    "US grants 60-day Iran sanctions waiver, unlocking potential crude supply to India and Asia and deflating the geopolitical risk premium",
+    "Hormuz traffic remains erratic \u2014 IOC tanker tender drew zero bids, keeping freight risk elevated despite ceasefire talk",
+    "Countervailing sanction signals: Trump threatens to reimpose Russia oil sanctions; Russia mulls full diesel export ban amid domestic refinery strain"
    ],
    "headlineCount": 12,
    "sources": [
+    "Audacy",
     "DD News",
     "EnergyNow.com",
-    "KuCoin",
     "MSN",
-    "PressReader",
-    "The New Voice of Ukraine"
+    "MarketWatch",
+    "Swarajyamag"
    ]
   },
   "gas": {
-   "summary": "Natural gas prices diverged sharply by region. Henry Hub gained 2.78% to $3.323/MMBtu, extending a solid one-month rally of 10.62%, while European TTF surged 3.82% to \u20ac42.07/MWh on a confluence of acute risks. A major explosion and fire at Qatar's Ras Laffan LNG facility injured over 50 people and left 18 unaccounted for, threatening a key global LNG supply node at a precarious moment. Simultaneously, a European heatwave is lifting near-term power demand, and residual Hormuz uncertainty continues to cloud regional supply routes. On the structural side, China is developing a second terminal for sanctioned Russian LNG as its gas imports surge, reshaping long-term trade flows. Saudi Arabia's turn to Russian fuel oil for power generation underscores how the Iran-war supply shock continues to reverberate through fossil fuel markets.",
+   "summary": "Natural gas markets diverged sharply by geography. Henry Hub edged down 0.98% on the day to $3.221/MMBtu but remains up 6.73% over the past month, supported in part by record U.S. LPG exports to India \u2014 which is replacing disrupted Middle East flows with American supply. TTF in Europe was nearly flat on the day at \u20ac41.855/MWh but is down 15.29% over the month, reflecting some easing of Hormuz-driven supply anxiety. Gas-specific headline flow was thin today; the most relevant cross-market dynamic remains India's pivot toward U.S. LNG and LPG as IOC struggles to secure tankers for Gulf cargoes. European battery storage installations projected to quadruple by 2030 (per SolarPower Europe) represent a medium-term structural headwind to gas-fired power demand.",
    "drivers": [
-    "Explosion at Qatar's Ras Laffan LNG facility raises immediate supply-disruption fears for global LNG flows",
-    "European heatwave boosting short-term power and gas demand, pushing TTF up nearly 4% on the day",
-    "China building second terminal for Russian LNG as imports surge, reshaping structural demand patterns away from traditional suppliers"
+    "India boosting U.S. LPG imports to a record high in June, substituting disrupted Middle East supply and supporting Henry Hub-linked export demand",
+    "TTF soft on the month as Iran sanctions waiver reduces European supply-shock fears, though Hormuz tanker market remains impaired",
+    "Europe's battery storage capacity set to quadruple by 2030, a structural long-term drag on gas demand in the power mix"
    ],
-   "headlineCount": 5,
-   "sources": []
+   "headlineCount": 7,
+   "sources": [
+    "Audacy",
+    "Egypt Oil & Gas",
+    "Oil & Gas Middle East"
+   ]
   },
   "power": {
-   "summary": "EU carbon EUAs firmed 1.12% to $76.995/EUA, notching a one-month gain of 8.63%, supported by tightening power-sector fundamentals. A European heatwave is driving near-term demand, while the Qatar LNG blast and residual Hormuz risk keep gas prices elevated, incentivising heavier carbon-intensive dispatch and supporting allowance prices. Saudi Arabia's pivot to Russian fuel oil for domestic power generation highlights how broadly the Iran conflict disrupted fossil-fuel power supply chains. On structural themes, major corporates publicly urged governments to accelerate electrification to reduce exposure to volatile fuel markets, while Chinese grid operators pushed back on plans to channel more renewables into AI data-centre loads, citing peak-demand reliability risks. Russia's fuel rationing in Crimea following Ukrainian strikes on oil infrastructure adds a further note of tightness to European energy balances.",
+   "summary": "EU carbon (EUA) slipped 1.38% on the day to $75.93 but holds a 4.50% gain over the past month, a contrast to the sharp retreat in TTF (-15.29% over the month) that would normally weigh on carbon through reduced gas-burn economics. The U.S. suspension of Iran oil sanctions until 21 August \u2014 with nuclear inspectors returning \u2014 is the dominant macro backdrop, easing some of the energy security stress that had buoyed carbon in recent weeks. UK grid operator NESO confirmed sufficient electricity supply for winter despite Hormuz disruption, removing an acute scarcity narrative for British power. SolarPower Europe's forecast of quadrupling utility-scale battery storage by 2030 adds a longer-term bearish structural layer to carbon demand from the power sector.",
    "drivers": [
-    "European heatwave lifting power demand and gas burn, supporting EUA prices alongside elevated TTF",
-    "Qatar LNG explosion and lingering Hormuz uncertainty sustain fossil-fuel supply risk premium in carbon markets",
-    "Big business electrification push versus Chinese grid operator resistance to renewables-for-AI plans highlight divergent structural pathways for power-sector carbon demand"
+    "EUA holding monthly gains despite falling TTF, suggesting carbon is pricing structural demand rather than near-term gas substitution",
+    "UK NESO confirms adequate winter electricity supply, removing an acute bullish catalyst tied to the Hormuz crisis",
+    "European battery storage set to quadruple by 2030 per SolarPower Europe, a medium-term headwind to fossil-fuel power demand and carbon burn"
    ],
-   "headlineCount": 5,
-   "sources": []
+   "headlineCount": 10,
+   "sources": [
+    "DD News",
+    "Harici",
+    "H\u00fcrriyet Daily News",
+    "Swarajyamag",
+    "The New York Times"
+   ]
   }
  }
 }
