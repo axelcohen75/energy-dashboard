@@ -1,51 +1,52 @@
 {
- "generated": "2026-06-23T21:30:51.065951+00:00",
+ "generated": "2026-06-24T15:35:01.596471+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude sold off sharply on Tuesday, with WTI down 2.37% to $73.05/bbl and RBOB gasoline cratering 4.80%, extending a brutal month that has erased more than 24% from WTI. The dominant driver is a broad sanctions-relief narrative: the US Treasury granted Iran a 60-day oil sanctions waiver, with suspension running until 21 August, citing nuclear-talks progress and the return of inspectors. Simultaneously, Washington temporarily eased Russia oil sanctions to cap a prior price surge, drawing European criticism. These dual supply unlocks overwhelmed bullish offsets: API reported US crude inventories fell 765,000 barrels for the week ending June 19, and Russia's Deputy PM Novak signalled a potential complete ban on diesel exports amid domestic refinery disruptions. Heating oil bucked the trend, edging up 0.78%, likely reflecting that Russian diesel export risk. Markets assign a 77% probability of an OPEC cut at the next meeting.",
+   "summary": "Brent cratered 4.61% today to $73.53/bbl, extending a brutal month that has now wiped nearly 29% off the front contract. The dominant driver is the US-Iran sanctions d\u00e9tente: Washington granted Tehran a 60-day oil sanctions waiver through 21 August, with nuclear inspectors returning and an MOU reportedly in place. The prospect of stranded Persian Gulf barrels re-entering global supply is overwhelming bulls, despite a supportive 6.1-million-barrel draw in US crude inventories for the week ending 19 June. RBOB bore the brunt intraday, off 6.36%, while heating oil was relatively insulated at -2.05%. VLCC spot earnings spiked near $470,000/day as importers scramble for tonnage, but that is a logistical response, not a price floor. CME options now price a 77% probability of an OPEC production cut at the next meeting, signalling the market expects the group to defend prices.",
    "drivers": [
-    "US grants Iran 60-day oil sanctions waiver, opening flows to India and global markets through 21 August",
-    "Washington also temporarily eases Russia oil sanctions, adding dual supply-side relief that pressures flat prices",
-    "Partial offsets: API crude draw of 765k bbl and Russia considering a full diesel export ban to protect domestic supply"
+    "US grants Iran 60-day oil sanctions waiver, opening Persian Gulf barrels to India and global markets and weighing heavily on Brent and products",
+    "EIA reports a large 6.1-million-barrel US crude inventory draw, providing only partial offset to the bearish supply backdrop",
+    "OPEC options market prices 77% probability of a production cut at next meeting, reflecting producer-side alarm at the sharp month-long selloff"
    ],
    "headlineCount": 12,
    "sources": [
-    "DW.com",
     "Discovery Alert",
     "Egypt Oil & Gas",
-    "EnergyNow.com",
+    "EnergyNow",
     "H\u00fcrriyet Daily News",
-    "MSN"
+    "NTD News",
+    "Oil & Gas Middle East"
    ]
   },
   "gas": {
-   "summary": "Natural gas price action was divergent today. Henry Hub slipped 1.78% to $3.195/MMBtu on the session but remains up 5.86% on the month, suggesting the broader trend is still constructive even as today saw some profit-taking or demand-side softness. European TTF ticked up a modest 0.39% to \u20ac42.05/MWh but is down nearly 15% over the past month. Gas-specific headline flow was thin today. Italgas, described as Europe's top gas distributor, announced a plan to invest roughly $14.8 billion through 2032 in AI-backed network infrastructure, signalling long-term confidence in gas distribution assets. On the structural side, a SolarPower Europe report noted battery storage installations are set to quadruple by 2030, which over time could reduce gas peaking demand. No supply disruption headlines specific to gas were published today.",
+   "summary": "Henry Hub and TTF diverged sharply today. Henry Hub gained 3.30% to $3.251/MMBtu, sustaining an 11.83% monthly rally, while TTF fell 2.06% to \u20ac41.15/MWh and is down 15.47% on the month. The European softness aligns with Qatar's prime minister signalling that LNG exports could return to normal production within weeks following disruptions tied to the Hormuz crisis \u2014 a direct supply-restoration signal for Atlantic Basin markets. On the US side, the Trump administration moved to cut red tape for oil and gas drillers on federal lands, a medium-term bearish supply signal, while Trump separately ordered a price-gouging probe at fuel stations. Petronas reported a new offshore gas discovery in Suriname, though near-term market impact is limited.",
    "drivers": [
-    "Henry Hub dips 1.78% intraday but holds a +5.86% monthly gain, suggesting near-term consolidation within a firm trend",
-    "Italgas announces ~$14.8bn investment through 2032 in AI-integrated gas networks, signalling long-term infrastructure commitment",
-    "Gas-specific headline flow is thin today; broader energy geopolitics (Iran/Russia sanctions) carry indirect read-through to LNG and European supply diversification"
+    "Qatar PM signals LNG exports could normalise within weeks, pressuring TTF lower as European supply anxiety eases",
+    "Henry Hub outperforms on domestic demand dynamics; Trump administration's deregulation push for federal-land drilling adds a medium-term supply overhang",
+    "Trump orders price-gouging investigation at retail fuel stations, adding political headline risk for downstream gas and fuel prices"
    ],
-   "headlineCount": 4,
+   "headlineCount": 7,
    "sources": [
     "Egypt Oil & Gas",
     "Oil & Gas Middle East"
    ]
   },
   "power": {
-   "summary": "EU carbon EUAs edged down 0.55% to $76.57/EUA, consolidating after a 5.38% monthly gain. TTF, the key marginal fuel signal for European power, ticked up slightly today at \u20ac42.05/MWh. Structural headlines dominate: SolarPower Europe projects European battery storage installations will quadruple by 2030, with utility-scale projects leading growth, a dynamic that would lower gas burn in power and structurally dampen EUA demand over time. A separate piece highlights China's accelerating nuclear buildout driven by AI power demand, contrasting with US political ambivalence on new nuclear capacity. The Iran sanctions waiver, if sustained, could lower fuel input costs for power generation globally. Headline coverage for the power sector specifically is limited today; the EUA price drift lower with thin news is consistent with a market pausing after last month's rally.",
+   "summary": "EU carbon EUAs held relatively stable at $76.41, down a marginal 0.21% on the day and up 3.50% on the month, decoupling from TTF's sharp monthly decline. Power sector news flow was dominated by structural longer-term themes: Adani Group announced a target of 10 GW of nuclear capacity in India by 2035, and India separately reported cutting coal imports as domestic coal output and renewables expansion reduce reliance on seaborne fuel. Nine North Sea nations including the UK formalised a clean energy and offshore power collaboration. An AI power demand piece flagged electricity infrastructure as the key investable theme of the current cycle. The euro sinking to a one-year low on falling oil prices raises ECB rate-cut expectations, which could ease financing costs for European clean-energy investment.",
    "drivers": [
-    "EU EUAs slip 0.55% in quiet trade, consolidating after a 5.38% monthly gain; TTF edges up marginally, offering little directional catalyst",
-    "SolarPower Europe: European battery storage set to quadruple by 2030, a long-term structural headwind to gas-fired generation and carbon demand",
-    "China's AI-driven nuclear expansion accelerating while US domestic nuclear capacity lags, reshaping long-term global power and carbon market dynamics"
+    "EUA prices hold firm despite TTF weakness, supported by structural clean-energy policy signals including the nine-nation North Sea offshore power initiative",
+    "Adani targets 10 GW Indian nuclear capacity by 2035; India cuts coal imports as domestic supply and renewables expand \u2014 both reshaping long-run power generation mix",
+    "Euro hits one-year low as oil-price disinflation fuels ECB rate-cut bets, potentially lowering cost of capital for European power and infrastructure projects"
    ],
-   "headlineCount": 8,
+   "headlineCount": 11,
    "sources": [
     "DD News",
     "Harici",
     "H\u00fcrriyet Daily News",
     "Swarajyamag",
-    "The New York Times"
+    "The New York Times",
+    "Travel And Tour World"
    ]
   }
  }
