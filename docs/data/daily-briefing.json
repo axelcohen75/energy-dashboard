@@ -1,52 +1,52 @@
 {
- "generated": "2026-06-25T15:39:49.015587+00:00",
+ "generated": "2026-06-25T22:08:18.537042+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude caught a modest bid Thursday \u2014 WTI +1.73% to $71.52 and Brent +1.65% to $74.96 \u2014 but the recovery looks technical against a brutal monthly backdrop of roughly -24%. The dominant macro driver remains the Iran accord: the U.S. granted Tehran a 60-day sanctions waiver, nuclear inspectors have returned, and tankers are flowing freely through the Strait of Hormuz again. ADNOC's move to cut Murban OSP to $101.48 from $104.44 confirms Gulf producers are pricing in the supply re-entry. Middle East fuel oil exports are tracking toward a four-month high. On the other side of the ledger, Ukraine strikes continue to degrade Russian refinery capacity across 17 regions, offering a modest supply offset. RBOB lagged peers at -0.52%, consistent with the bearish demand-season read. CME options still price a 77% probability of a further OPEC cut at the next meeting.",
+   "summary": "Crude posted a modest recovery Thursday \u2014 WTI +1.61% to $71.47, Brent +1.71% to $75.00 \u2014 but the one-month picture remains brutal, with both benchmarks down roughly 24% since late May. The day's bounce reflects a stabilisation rather than a reversal: Hormuz flows have resumed and Washington has temporarily lifted Iran oil sanctions, flooding the market with supply expectations that had already been priced in aggressively to the downside. ADNOC trimmed its Murban July OSP to $101.48 from $104.44, confirming easing Gulf premiums. Asian buying interest, which had driven spot markets for three weeks, is now fading. Russia's domestic fuel crunch \u2014 17 regions with mandatory sales restrictions following Ukrainian strikes on refineries \u2014 adds a geopolitical wildcard, though Moscow is reportedly using the post-Hormuz chaos to deepen crude ties with Indonesia. Gasoline and heating oil barely moved, suggesting the crude bounce is tentative.",
    "drivers": [
-    "Iran 60-day sanctions waiver and Hormuz reopening restoring tanker flows, pressuring medium-term price outlook",
-    "ADNOC cuts Murban OSP by ~$3/bbl, signaling Gulf producers adjusting to easing geopolitical risk premium",
-    "Ukrainian strikes on Russian refineries in Krasnodar and Ufa tightening domestic Russian fuel supply, partially offsetting bearish global supply impulse"
-   ],
-   "headlineCount": 12,
-   "sources": [
-    "Discovery Alert",
-    "Egypt Oil & Gas",
-    "Global Banking & Finance Review",
-    "Harici",
-    "H\u00fcrriyet Daily News",
-    "NDTV"
-   ]
-  },
-  "gas": {
-   "summary": "TTF slipped 2.71% on the day to \u20ac40.876/MWh, extending a -16% monthly decline as the Hormuz reopening narrative weighed heavily. The head of the Gas Exporting Countries Forum stated that markets are on course to rebalance in Q3 as Qatar restores LNG output \u2014 a direct bearish signal for European spot prices. ADNOC separately brought BP and TotalEnergies into Abu Dhabi's largest gas cap project, signaling continued upstream investment. Countervailing risks include a joint U.S.-Qatar warning to the EU that stricter methane regulations could exacerbate a gas crunch, and UK Energy Secretary Ed Miliband's veto of a Treasury plan to boost North Sea drilling for defense funding \u2014 removing a potential incremental supply source. President Trump publicly called out Exxon, Chevron, Shell, and BP over high fuel prices following recent market moves.",
-   "drivers": [
-    "Qatar LNG output restoration post-Hormuz reopening driving GECF forecast of Q3 market rebalancing, pressuring TTF",
-    "U.S.-Qatar warning to EU on methane regulation risks introducing a policy-driven supply constraint to watch",
-    "UK Energy Secretary veto of North Sea drilling expansion removes a near-term upside supply catalyst for European gas"
-   ],
-   "headlineCount": 9,
-   "sources": [
-    "Egypt Oil & Gas",
-    "Oil & Gas Middle East"
-   ]
-  },
-  "power": {
-   "summary": "EU carbon EUAs edged up 0.37% to $76.73, a modest but notable divergence from falling TTF gas prices, which typically act as a drag on carbon via reduced power-sector combustion demand. The week-on-week +1.79% and month-on-month +3.15% trend suggests EUAs are finding support independent of the gas selloff, possibly anchored by broader clean-energy policy momentum. Nine North Sea nations including the UK formalized a joint offshore clean energy initiative. On the demand side, Rystad projects the AI data center boom could drive the fuel cell market to $30 billion by 2030 as developers bypass congested grids. Global battery storage installations are accelerating, with Tesla securing a major multi-year utility-scale supply agreement. Ukraine's strike on Sevastopol causing a significant power outage adds a conflict-driven infrastructure risk dimension to the European power complex.",
-   "drivers": [
-    "EUA carbon price holding positive momentum (+3.15% month-on-month) despite falling gas prices, supported by North Sea clean energy coalition policy signals",
-    "AI data center power demand surge underpinning fuel cell and battery storage investment, with Rystad flagging a potential $30bn fuel cell market by 2030",
-    "Ukraine strike on Sevastopol power infrastructure highlights ongoing physical risk to European grid security"
+    "Hormuz reopening and temporary US suspension of Iran oil sanctions cap the upside, keeping WTI pinned near $71 despite today's bounce",
+    "Asian spot crude buying running out of steam after a three-week spree, removing a key demand-side support",
+    "Ukrainian strikes deepening Russia's domestic fuel crunch, but Moscow pivoting commercially toward Southeast Asia as a partial offset"
    ],
    "headlineCount": 12,
    "sources": [
     "DD News",
-    "Energy News Beat",
-    "Harici",
-    "H\u00fcrriyet Daily News",
-    "MSN",
+    "Discovery Alert",
+    "Egypt Oil & Gas",
+    "MillenniumPost",
+    "The Financial Express",
     "The New York Times"
+   ]
+  },
+  "gas": {
+   "summary": "Henry Hub and TTF are diverging sharply. Henry Hub gained 1.58% on the day to $3.272/MMBtu, extending a strong one-month rally of +13.06%, while TTF slid 2.71% to \u20ac40.876/MWh and is off 16% over the past month. The US demand side is the dominant Henry Hub driver: the Tennessee Valley Authority's preliminary 2026 integrated resource plan confirms AI-driven load growth is already outpacing reserve capacity, pointing to sustained gas-fired power demand. SpaceX's plan to break ground next month on an eight-mile gas pipeline to fuel its operations adds a novel but real demand signal. On the supply side, Ukraine struck a major Russian natural gas plant in its latest long-range attack, compounding the refinery damage that has left 17 Russian regions rationing fuel. TTF weakness likely reflects the broader Hormuz-easing narrative reducing European energy risk premiums.",
+   "drivers": [
+    "AI and data-centre load growth driving US gas demand expectations higher, underpinning Henry Hub's +13% one-month rally",
+    "Ukrainian long-range strike on a major Russian natural gas plant adds supply disruption risk on the European side",
+    "TTF retreating as Hormuz normalisation deflates the geopolitical risk premium that had supported European gas prices"
+   ],
+   "headlineCount": 7,
+   "sources": [
+    "Egypt Oil & Gas",
+    "PBS"
+   ]
+  },
+  "power": {
+   "summary": "EU carbon EUAs were nearly flat at $76.36 (-0.12% on the day), holding a modest +2.65% one-month gain even as TTF \u2014 the key marginal cost input for gas-fired power \u2014 fell 2.71% on the day and 16% over the month. The decoupling suggests carbon has its own floor from policy and compliance demand. The headline story for the power sector today is structural: Rystad Energy projects the AI data-centre boom could drive the fuel cell market to $30 billion by 2030 as developers bypass congested grids for on-site generation. The DOE separately says geothermal could power 65 million US homes by 2050. On the geopolitical front, the UK vetoed a Treasury plan to expand North Sea oil and gas drilling for defence funding, while a broad North Sea clean-energy coalition \u2014 eight European nations \u2014 signals continued offshore power investment. Lithium carbonate futures in China fell roughly 10% over two sessions to a ten-week low, a negative signal for battery storage economics.",
+   "drivers": [
+    "AI data-centre power demand accelerating adoption of on-site fuel cells and straining grid capacity, per Rystad Energy analysis",
+    "Lithium carbonate prices dropping ~10% in two sessions to a ten-week low, pressuring battery storage project economics",
+    "UK Energy Secretary blocking North Sea drilling expansion for defence funding, keeping UK carbon-reduction policy intact despite fiscal pressure"
+   ],
+   "headlineCount": 12,
+   "sources": [
+    "DD News",
+    "Indonesia at Melbourne",
+    "MSN",
+    "The Financial Express",
+    "The New York Times",
+    "The Sunday Guardian"
    ]
   }
  }
