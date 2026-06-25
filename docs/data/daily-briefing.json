@@ -1,51 +1,51 @@
 {
- "generated": "2026-06-24T21:21:57.670717+00:00",
+ "generated": "2026-06-25T15:39:49.015587+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude collapsed on Wednesday, with WTI shedding 4.56% to $69.87/bbl and Brent off 5.06% to $73.18, extending a brutal monthly drawdown of roughly 27-29%. The dominant driver is the U.S.-Iran d\u00e9tente: Washington granted a 60-day sanctions waiver through 21 August, with Treasury formally waiving restrictions and nuclear inspectors set to return, unlocking Persian Gulf barrels for India and global buyers. VLCC day-rates reportedly surged near $470,000 as charterers scrambled for tonnage, a sign physical demand for Iranian crude is real. Bears were reinforced by China's crude imports plunging to their lowest since 2018, crimping the demand side. A 6.1-million-barrel U.S. inventory draw and CME options pricing a 77% probability of an OPEC cut at the next meeting provided modest offsets but failed to stem the selloff. Rosneft's Sechin separately proposed a 30% domestic-refining mandate to address Russia's fuel crunch.",
+   "summary": "Crude caught a modest bid Thursday \u2014 WTI +1.73% to $71.52 and Brent +1.65% to $74.96 \u2014 but the recovery looks technical against a brutal monthly backdrop of roughly -24%. The dominant macro driver remains the Iran accord: the U.S. granted Tehran a 60-day sanctions waiver, nuclear inspectors have returned, and tankers are flowing freely through the Strait of Hormuz again. ADNOC's move to cut Murban OSP to $101.48 from $104.44 confirms Gulf producers are pricing in the supply re-entry. Middle East fuel oil exports are tracking toward a four-month high. On the other side of the ledger, Ukraine strikes continue to degrade Russian refinery capacity across 17 regions, offering a modest supply offset. RBOB lagged peers at -0.52%, consistent with the bearish demand-season read. CME options still price a 77% probability of a further OPEC cut at the next meeting.",
    "drivers": [
-    "U.S. 60-day Iran sanctions waiver unlocks fresh Persian Gulf supply, reversing the Hormuz risk premium",
-    "China crude imports hit lowest level since 2018, undermining the demand outlook",
-    "OPEC options market prices 77% probability of a production cut, but has not yet arrested the slide; U.S. stocks drew 6.1 mb"
+    "Iran 60-day sanctions waiver and Hormuz reopening restoring tanker flows, pressuring medium-term price outlook",
+    "ADNOC cuts Murban OSP by ~$3/bbl, signaling Gulf producers adjusting to easing geopolitical risk premium",
+    "Ukrainian strikes on Russian refineries in Krasnodar and Ufa tightening domestic Russian fuel supply, partially offsetting bearish global supply impulse"
    ],
    "headlineCount": 12,
    "sources": [
     "Discovery Alert",
     "Egypt Oil & Gas",
+    "Global Banking & Finance Review",
     "Harici",
-    "NTD News",
-    "Oil & Gas Middle East",
-    "Swarajyamag"
+    "H\u00fcrriyet Daily News",
+    "NDTV"
    ]
   },
   "gas": {
-   "summary": "Henry Hub edged up 3.72% to $3.264/MMBtu, extending a 12% monthly gain, while European TTF eased 2.06% to \u20ac41.15/MWh \u2014 now down 15% on the month. The divergence likely reflects U.S. domestic tightness contrasting with European relief as Iran-related supply risk fades and LNG flows normalise. Headline flow for gas-specific catalysts is thin today; the only proximate headlines concern Russian seaborne fuel-oil and VGO export declines of 6% in May due to Ukrainian strikes, and the Iran sanctions waiver which may free up some associated gas and LNG volumes. Traders should note the data gap and treat today's Henry Hub move cautiously until storage or weather data clarifies.",
+   "summary": "TTF slipped 2.71% on the day to \u20ac40.876/MWh, extending a -16% monthly decline as the Hormuz reopening narrative weighed heavily. The head of the Gas Exporting Countries Forum stated that markets are on course to rebalance in Q3 as Qatar restores LNG output \u2014 a direct bearish signal for European spot prices. ADNOC separately brought BP and TotalEnergies into Abu Dhabi's largest gas cap project, signaling continued upstream investment. Countervailing risks include a joint U.S.-Qatar warning to the EU that stricter methane regulations could exacerbate a gas crunch, and UK Energy Secretary Ed Miliband's veto of a Treasury plan to boost North Sea drilling for defense funding \u2014 removing a potential incremental supply source. President Trump publicly called out Exxon, Chevron, Shell, and BP over high fuel prices following recent market moves.",
    "drivers": [
-    "Henry Hub +3.72% on the day, supported by ongoing U.S. domestic tightness and a +12% monthly trend",
-    "TTF -2.06% on the day and -15% over one month as Iran-deal optimism eases European supply-risk premium",
-    "Gas-specific headline flow is sparse today; Russian seaborne fuel-oil/VGO exports fell 6% in May due to Ukraine strikes, a marginal supply signal"
+    "Qatar LNG output restoration post-Hormuz reopening driving GECF forecast of Q3 market rebalancing, pressuring TTF",
+    "U.S.-Qatar warning to EU on methane regulation risks introducing a policy-driven supply constraint to watch",
+    "UK Energy Secretary veto of North Sea drilling expansion removes a near-term upside supply catalyst for European gas"
    ],
-   "headlineCount": 2,
+   "headlineCount": 9,
    "sources": [
     "Egypt Oil & Gas",
     "Oil & Gas Middle East"
    ]
   },
   "power": {
-   "summary": "EU Carbon EUAs held nearly flat at $76.45/EUA (-0.16%), supported by a positive one-month trend (+3.56%) even as TTF continued to soften. The macro backdrop for carbon is shaped by falling gas prices pressuring fuel-switching economics, partially offset by structural power-demand optimism. The standout thematic today is nuclear: Canada broke ground on the Western world's first grid-scale SMR; Trump's nuclear push is framed as a response to an estimated $800 billion in U.S. data-centre capex this year alone; and India's Adani Group targeted 10 GW of nuclear capacity by 2035. On the geopolitical side, the UK joined eight North Sea nations on a clean-energy offshore initiative, and the euro sank to a one-year low as cheaper oil fuelled ECB rate-cut expectations, an indirect headwind for EUA demand via lower industrial output assumptions.",
+   "summary": "EU carbon EUAs edged up 0.37% to $76.73, a modest but notable divergence from falling TTF gas prices, which typically act as a drag on carbon via reduced power-sector combustion demand. The week-on-week +1.79% and month-on-month +3.15% trend suggests EUAs are finding support independent of the gas selloff, possibly anchored by broader clean-energy policy momentum. Nine North Sea nations including the UK formalized a joint offshore clean energy initiative. On the demand side, Rystad projects the AI data center boom could drive the fuel cell market to $30 billion by 2030 as developers bypass congested grids. Global battery storage installations are accelerating, with Tesla securing a major multi-year utility-scale supply agreement. Ukraine's strike on Sevastopol causing a significant power outage adds a conflict-driven infrastructure risk dimension to the European power complex.",
    "drivers": [
-    "Nuclear buildout accelerating on multiple fronts: Canada's first grid-scale SMR under construction, U.S. nuclear push tied to $800bn data-centre capex, Adani targeting 10 GW in India by 2035",
-    "EU EUAs broadly stable (+3.56% monthly) despite TTF softness; falling gas prices compress fuel-switching support for carbon",
-    "UK and eight North Sea partners launch clean-energy offshore initiative; weaker euro on oil-drop/ECB cut bets signals softer near-term industrial demand"
+    "EUA carbon price holding positive momentum (+3.15% month-on-month) despite falling gas prices, supported by North Sea clean energy coalition policy signals",
+    "AI data center power demand surge underpinning fuel cell and battery storage investment, with Rystad flagging a potential $30bn fuel cell market by 2030",
+    "Ukraine strike on Sevastopol power infrastructure highlights ongoing physical risk to European grid security"
    ],
-   "headlineCount": 11,
+   "headlineCount": 12,
    "sources": [
     "DD News",
     "Energy News Beat",
     "Harici",
-    "Swarajyamag",
-    "The Financial Express",
+    "H\u00fcrriyet Daily News",
+    "MSN",
     "The New York Times"
    ]
   }
