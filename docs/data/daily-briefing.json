@@ -1,49 +1,50 @@
 {
- "generated": "2026-06-26T15:23:46.945428+00:00",
+ "generated": "2026-06-26T21:06:41.453101+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets suffered their worst single-day selloff in months on Friday, with WTI dropping 4.34% to $68.80/bbl and Brent falling 4.05% to $72.21/bbl, extending a punishing weekly loss of roughly 10% and a month-to-date collapse exceeding 22%. The dominant catalyst is a swift unwinding of the Hormuz risk premium: tanker traffic through the strait has rebounded sharply following a tentative Iran accord, and Saudi Arabia is expected to cut its August official selling prices to Asian buyers in response to crashing Middle East benchmarks. Demand headwinds compound the supply-side pressure \u2014 China's crude imports are tracking toward their weakest monthly level since 2016 at approximately 6.4 mb/d per Kpler, and Asian refiners have broadly pulled back from spot purchases. Additional bearish flow came from news that the US has temporarily eased Russian oil sanctions, opening a further potential supply channel. Options markets now price a 77% probability of an OPEC production increase at the next meeting.",
+   "summary": "Crude collapsed for a second consecutive week as the Iran war-risk premium evaporated. WTI settled at $70.25/bbl (-2.32% on the day, -8.29% on the week, -20.78% on the month) while Brent shed comparable ground to $73.55/bbl, with Middle East benchmarks slipping into contango as Hormuz transit showed signs of recovery. The US suspension of Iran oil sanctions and the announced return of nuclear inspectors drove traders to price in incremental Iranian barrels, more than offsetting Ukrainian drone strikes on Russian facilities in Krasnodar, Ufa, and the Karachaganak processing plant. China's crude imports are tracking their weakest month since 2016 at roughly 6.4 mb/d per Kpler, adding demand-side pressure. Saudi Arabia is expected to cut August official selling prices for Asia. RBOB gasoline bore the sharpest single-day loss at -5.85%, amplifying the bearish signal across the complex.",
    "drivers": [
-    "Strait of Hormuz risk premium collapses as tanker traffic rebounds and Iran accord advances, triggering broad long liquidation",
-    "China crude imports on course for weakest month since 2016 at ~6.4 mb/d; broader Asian refiner spot buying also cooling",
-    "US temporarily eases Russian oil sanctions and Saudi Arabia expected to slash August OSPs, adding further supply-side pressure"
+    "US sanctions suspension on Iran and Hormuz flow recovery erasing the conflict risk premium, with Brent down ~10% on the week",
+    "China crude imports on pace for weakest month since 2016 (~6.4 mb/d), compressing demand expectations",
+    "Saudi Arabia expected to slash August OSPs for Asia; CME options pricing a 77% probability of an OPEC output increase at the next meeting"
    ],
    "headlineCount": 12,
    "sources": [
-    "DD News",
+    "Arise News",
     "EnergyNow",
-    "Fox Business",
-    "Global Banking & Finance Review",
+    "MSN",
     "MillenniumPost",
+    "The Financial Express",
     "The Sunday Guardian"
    ]
   },
   "gas": {
-   "summary": "Henry Hub natural gas edged down just 0.21% on the day to $3.336/MMBtu, but remains a relative outperformer with a 1-week gain of 3.19% and a 1-month gain of nearly 10%, in contrast to TTF's sharp monthly decline. The key bullish supply development is Ukraine's ongoing long-range drone campaign targeting Russian energy infrastructure: strikes hit a major Russian natural gas processing plant this week, and Kazakhstan has since cut output at the large Karachaganak field by approximately 25% as a result of damage to the Russian processing facility that handles its output. LNG supply lines are showing early signs of normalization, however, with reports of up to eight empty carriers massing at Qatar's Ras Laffan hub ready to load. TTF ticked up 0.61% on the day, though it remains 12.42% lower on the month, reflecting the partial easing of prior geopolitical tensions. SpaceX separately announced plans to begin construction next month on an eight-mile gas pipeline to support its operations.",
+   "summary": "Natural gas markets sent mixed signals on the day. Henry Hub edged down 1.71% to $3.286/MMBtu but remains up 8.09% on the month, while TTF firmed modestly to \u20ac40.65/MWh (+0.61% on the day) though it is still down 12.42% over the past month. The dominant supply-side story was Ukraine's continued long-range drone campaign: strikes on a major Russian natural gas plant were confirmed by multiple sources, and a hit on a Russian processing facility linked to Kazakhstan's Karachaganak field forced a roughly 25% cut in gas output there. Russia's reported attempt to source replacement gasoline from a hesitant Kazakhstan adds to CIS supply stress. Baker Hughes data showed US drillers adding oil and gas rigs this week as Hormuz transit resumes, a mild bearish offset on the US side.",
    "drivers": [
-    "Ukraine drone strikes on Russian gas infrastructure, including a major processing plant, have forced Kazakhstan to cut Karachaganak field output by ~25%",
-    "Henry Hub outperforms on a monthly basis (+9.74%), likely underpinned by supply disruption concerns, while TTF remains under pressure month-on-month (-12.42%)",
-    "LNG supply normalization signal: up to eight empty carriers reported at Qatar's Ras Laffan awaiting loading"
+    "Ukraine drone strikes on Russian gas processing infrastructure, including Karachaganak-linked facilities, disrupting CIS gas output",
+    "Kazakhstan cutting gas production by ~25% following the drone strike on the Russian processing plant it relies on",
+    "US rig count rising week-on-week per Baker Hughes, signalling incremental domestic supply growth"
    ],
-   "headlineCount": 5,
+   "headlineCount": 7,
    "sources": [
     "MSN",
     "PBS"
    ]
   },
   "power": {
-   "summary": "EU carbon (EUA) was largely unmoved on the day at $76.12/EUA (-0.31%), broadly stable on the week and up just 0.63% on the month, suggesting carbon markets are not yet pricing significant disruption from the geopolitical newsflow dominating oil and gas. The policy backdrop is constructive for renewables: the UK has joined eight other North Sea nations to advance offshore clean energy, and a DOE report cited potential for geothermal to power 65 million US homes by 2050. Power-sector demand dynamics are being shaped by the AI infrastructure build-out, with one analysis describing electricity as the scarcest commodity in the AI boom. TTF's mild daily uptick (+0.61%) is relevant for gas-fired power economics but the month-on-month decline of 12.42% continues to soften generation costs. News flow on Big Oil's retreat from green investment may weigh on longer-term capex sentiment for the sector.",
+   "summary": "EU carbon (EUA) was largely unchanged at $75.99/EUA (-0.48% on the day, -0.20% on the week), with a modest +0.46% month-on-month gain offering little directional conviction. TTF's slight daily uptick provides a marginal uplift to gas-fired generation costs but the month-long 12.42% TTF decline keeps fuel-switching pressure subdued. China's new five-year energy plan notably omits restrictions on coal power, framing coal as a 'bottom-line guarantee,' which weighs on any global carbon convergence narrative. Equinor's exit from Japan's offshore wind market signals ongoing retrenchment in renewable expansion by majors. Conversely, a separate report points to AI demand, geopolitical instability, and climate pressure collectively reviving interest in nuclear power globally. The Iran nuclear verification dispute \u2014 with conflicting US-Iranian accounts and IAEA access questions unresolved \u2014 keeps the geopolitical backdrop unsettled for power sector policy.",
    "drivers": [
-    "EU EUA prices flat to marginally lower; near-term carbon market appears insulated from oil and gas geopolitical volatility",
-    "North Sea clean energy coalition expands to nine European nations; DOE geothermal report adds longer-term structural demand signal",
-    "AI-driven power demand framed as the dominant near-term growth driver for electricity consumption, intensifying grid investment urgency"
+    "China's new five-year plan preserves coal power growth as a strategic backstop, undermining global decarbonisation momentum",
+    "EUA prices flat near $76/EUA with little macro catalyst; month-long TTF decline limiting carbon abatement incentives from fuel switching",
+    "Growing nuclear interest driven by AI power demand, war-related energy disruption, and climate pressure, though Iran IAEA access dispute complicates the policy picture"
    ],
-   "headlineCount": 7,
+   "headlineCount": 11,
    "sources": [
-    "MSN",
-    "The Sunday Guardian",
-    "Travel And Tour World"
+    "DD News",
+    "The Financial Express",
+    "The New York Times",
+    "The Sunday Guardian"
    ]
   }
  }
