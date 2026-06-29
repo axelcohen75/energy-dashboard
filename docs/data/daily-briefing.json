@@ -1,16 +1,17 @@
 {
- "generated": "2026-06-29T16:39:05.499332+00:00",
+ "generated": "2026-06-29T22:38:00.819349+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude staged a firm intraday bounce \u2014 WTI +2.24% to $70.79 and Brent +2.76% to $73.98 \u2014 after a fresh U.S.-Iran escalation rattled the ceasefire narrative, even as both benchmarks sit roughly 21% below their month-ago peaks. The 60-day US-Iran ceasefire had already dragged prices sharply lower on expectations of a supply surge, with Middle East output rebounding to 14.6\u201315 million bpd. Markets are now questioning whether that supply wave materialises, per today's analysis flagging the guarantee risk. Offsetting the bearish ceasefire tone, Ukraine continued striking Russian refineries \u2014 with Putin publicly admitting fuel shortages for the first time \u2014 while RBOB gasoline slipped 2.14% on the session, diverging from crude. The CME options market prices a 77% probability of an OPEC cut at the next meeting, underlining the fragility of current price levels.",
+   "summary": "Crude staged a modest intraday recovery \u2014 WTI +1.65% to $70.37, Brent +2.26% to $73.62 \u2014 but both benchmarks remain in freefall on a monthly basis, each down roughly 21% as the Iran war premium evaporates. ING flagged that prices have overshot to the downside, with a potential U.S.-Iran peace deal dragging Brent back to pre-war levels near $72. The divergence within the complex is notable: RBOB gasoline shed 2.07% and heating oil slipped 1.26%, suggesting physical demand signals are not yet supporting the crude bounce. Supply-side noise persists \u2014 Ukrainian drones hit at least two major Russian refineries, prompting Putin's first public acknowledgment of domestic fuel shortages \u2014 while CME options markets price a 77% probability of an OPEC cut at the next meeting, reflecting how deeply the market is discounting the group's ability to defend prices.",
    "drivers": [
-    "US-Iran 60-day ceasefire triggered a ~21% monthly crude selloff on expected supply surge, but ceasefire durability remains in doubt following weekend flare-ups",
-    "Ukrainian drone strikes ignited multiple Russian refineries; Putin acknowledged domestic fuel shortages for the first time, adding a supply-disruption counter-narrative",
-    "CME options imply 77% probability of an OPEC production cut at next meeting, signalling producer discomfort with sub-$75 Brent"
+    "Hormuz ceasefire and U.S.-Iran peace talks deflate war premium; Brent down ~21% month-on-month",
+    "Ukrainian drone strikes ignite multiple Russian refineries; Putin admits fuel shortages, adding geopolitical noise without reversing bearish trend",
+    "CME options imply 77% probability of OPEC production cut, signaling market expects cartel action to arrest the slide"
    ],
    "headlineCount": 12,
    "sources": [
+    "DD News",
     "EnergyNow.com",
     "International Business Times UK",
     "MSN",
@@ -19,24 +20,25 @@
    ]
   },
   "gas": {
-   "summary": "Henry Hub softened modestly, falling 1.27% to $3.19/MMBtu, while European TTF surged 4.84% to \u20ac42.755/MWh \u2014 a sharp transatlantic divergence driven by renewed Hormuz anxiety and supply-chain stress. Pakistan's state LNG importer issued an emergency cargo tender after weekend Hormuz flare-ups, illustrating spot-market tightness among vulnerable importers. Gulf producers \u2014 Saudi Arabia, UAE, and Qatar \u2014 continued loading LNG despite attacks on two commercial vessels, keeping flows intact for now. Ukraine's strike on a Russian gas plant added to European jitters. On the structural side, Williams is reportedly in late-stage talks to acquire pipeline operator Mo- in a deal worth ~$5.5 billion, reflecting continued U.S. LNG infrastructure buildout. Australian gas exploration investment hit a 10-year high amid energy-security concerns.",
+   "summary": "A sharp transatlantic split defined today's gas session. TTF surged 4.84% to \u20ac42.755/MWh, extending its weekly gain to over 2%, while Henry Hub continued to drift lower, off 1.83% to $3.172/MMBtu and down 3.44% on the month. European tightness is being driven by multiple simultaneous supply threats: Ukraine struck a Russian gas plant as Zelensky pledged further attacks, Gulf LNG exporters \u2014 Saudi Arabia, UAE, and Qatar \u2014 are scrambling to accelerate loadings while the Strait of Hormuz remains technically open but fragile, and Russia's Arctic LNG 2 project added a newly flagged dark-fleet tanker to circumvent sanctions. ADNOC and Eni's entry into Argentine LNG blocks points to longer-term diversification efforts. Henry Hub weakness reflects no equivalent supply shock on the U.S. domestic market.",
    "drivers": [
-    "TTF spiked 4.84% on renewed Hormuz tensions and Ukrainian strike on a Russian gas plant, while Henry Hub eased 1.27% on softer domestic sentiment",
-    "Pakistan issued an emergency LNG cargo tender post-weekend Hormuz escalation; Gulf producers continue loading despite vessel attacks",
-    "Williams reportedly near a ~$5.5bn pipeline acquisition, and Australian gas exploration hit a 10-year high, both reflecting structural LNG infrastructure expansion"
+    "Ukrainian strike on Russian gas infrastructure and Zelensky's escalation pledge tighten European supply outlook, lifting TTF sharply",
+    "Gulf producers accelerating LNG loadings through Hormuz, but fragile ceasefire keeps risk premium elevated in European markets",
+    "Henry Hub continues to soften on domestic fundamentals, disconnected from geopolitical-driven European tightness"
    ],
-   "headlineCount": 9,
+   "headlineCount": 8,
    "sources": [
+    "DD News",
     "Devdiscourse",
     "MSN"
    ]
   },
   "power": {
-   "summary": "EU carbon EUAs slipped 1.49% to $74.855/EUA, extending a modest weekly decline of 2.78%, as lower crude prices and ceasefire-driven fuel expectations reduced near-term decarbonisation urgency. However, TTF's sharp 4.84% one-day jump introduces upward cost pressure on gas-fired generation, which could tighten the carbon-to-gas spread for power producers. The geopolitical backdrop remains turbulent: Iran's announcement of a $6 billion asset release from Qatar redraws Gulf power dynamics and tests the ceasefire's credibility. On the demand side, China's summer power surge is pulling LNG imports back toward last year's levels per Kpler data, adding load to global gas-linked power markets. The Philippines emerged as the world's top solar panel buyer since the Iran war began, signalling accelerating clean-power substitution in energy-insecure emerging markets.",
+   "summary": "EU carbon eased 1.49% to $74.855/EUA and remains modestly softer on the week and month, while the contradictory signal from TTF's 4.84% spike \u2014 which raises gas-fired generation costs \u2014 has yet to translate into EUA support. The dominant narrative today is the accelerating structural shift away from fossil-fuel power in regions exposed to the Hormuz crisis: the Philippines emerged as the world's top solar panel buyer, reportedly driven by soaring electricity prices linked to the Iran war, and a broader Southeast Asian solar buildout is underway according to multiple reports. In the U.S., AI-driven power demand is reopening the public utility debate, highlighted by political developments in New York City. Iran's $6 billion asset release from Qatar and the fragile Gulf ceasefire remain the macro backdrop, with the Hormuz situation continuing to redraw energy investment flows globally.",
    "drivers": [
-    "EUAs fell 1.49% as the ceasefire-driven crude selloff dampened carbon market urgency, though TTF's 4.84% daily surge pressures gas-fired power generation economics",
-    "Iran's $6 billion Qatar asset release and fragile ceasefire dynamics keep geopolitical risk elevated, sustaining uncertainty over European energy supply costs",
-    "Philippines became the world's top solar panel buyer since the Iran war, while China's summer power demand is lifting LNG imports back to year-ago levels"
+    "Philippines becomes world's top solar panel buyer amid Iran-war-linked electricity price spikes, accelerating Southeast Asian renewables buildout",
+    "TTF's 4.84% daily surge raises gas-fired power costs but has not yet transmitted into EUA price support",
+    "AI power demand boom reigniting U.S. public utility debate, while Gulf ceasefire fragility sustains long-term diversification investment signals"
    ],
    "headlineCount": 7,
    "sources": [
