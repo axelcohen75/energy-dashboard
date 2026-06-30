@@ -1,45 +1,45 @@
 {
- "generated": "2026-06-30T15:26:14.227566+00:00",
+ "generated": "2026-06-30T21:16:01.763345+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets ended June 30 in a split session: Brent edged up 0.83% to $73.76/bbl while WTI slipped 0.75% to $70.23/bbl, masking a brutal month that saw both benchmarks shed nearly 20%. The dominant narrative remains the Strait of Hormuz reopening, which is accelerating fears of a fresh supply glut \u2014 Morgan Stanley cut its Brent forecast to $75/bbl citing exactly that dynamic. Secretary Bessent's signal that the US may lift sanctions on Iranian oil stranded in tankers compounded the bearish pressure, with DD News reporting intraday declines of up to 3% on the headline. Refined products were hit harder: RBOB gasoline cratered 4.97% and heating oil fell 3.00% on the session. Asian refiners are redirecting recovered Persian Gulf cargoes to the US West Coast, though Asia's total crude imports remain well below pre-war levels. Ukraine's strikes on Russian refineries add a minor offsetting supply risk.",
+   "summary": "Crude closed a turbulent June on a mixed note: WTI slipped 1.02% to $70.03/bbl while Brent edged up 0.30% to $73.37, though both contracts are nursing losses of roughly 20% on the month \u2014 the steepest monthly sell-off in recent memory. RBOB gasoline was the session's standout laggard, cratering 5.17%. The bearish macro backdrop is dominated by Morgan Stanley cutting its Brent forecast to $75/bbl, citing an expected acceleration of supply as Hormuz flows normalise, while the EIA reported U.S. crude output hitting a record 13.934 mb/d. Partially offsetting that, the API logged a 6.072 mb/d inventory draw and Ukraine's drone campaign against Russian refineries deepened, with Putin publicly acknowledging domestic fuel shortages for the first time. A contrarian piece today argued that an Iranian supply crunch could paradoxically push prices below $40, complicating the near-term outlook.",
    "drivers": [
-    "Strait of Hormuz reopening accelerating supply glut fears; Morgan Stanley cuts Brent target to $75/bbl",
-    "Bessent signals possible removal of sanctions on Iranian oil in tankers, adding bearish supply expectations",
-    "Sharp refined-product sell-off (RBOB -4.97%, HO -3.00%) as Asian refiners redirect Middle East cargoes, pressuring crack spreads"
+    "Record U.S. crude production at 13.934 mb/d and Morgan Stanley's $75/bbl Brent forecast cut reinforce oversupply narrative after a 20% monthly price collapse",
+    "Strait of Hormuz tension persists \u2014 renewed U.S.-Iran strikes keep summer volatility elevated even as flows partially resume, with options markets pricing no OPEC production increase",
+    "Ukraine drone strikes ignite multiple Russian refineries; Putin admits domestic fuel shortages, injecting a geopolitical supply-disruption premium into an otherwise bearish tape"
    ],
    "headlineCount": 12,
    "sources": [
     "DD News",
-    "Discovery Alert",
-    "EnergyNow.com",
-    "MSN"
+    "International Business Times UK",
+    "MSN",
+    "Mathrubhumi English",
+    "The Sunday Guardian"
    ]
   },
   "gas": {
-   "summary": "Natural gas staged a notable recovery on both sides of the Atlantic today. Henry Hub surged 4.02% to $3.31/MMBtu, extending a strong weekly gain of 5.15%, while TTF climbed 2.61% to \u20ac43.675/MWh. The Hormuz corridor remains an active flashpoint for LNG flows, with Middle East producers reported to be pushing on with loadings despite ship attacks. Pakistan's emergency spot LNG purchase at a roughly $1/MMBtu premium to regional prices underscores near-term tightness in Asian markets. Longer-dated sentiment received support from Shell's forecast that global LNG demand will rise 65% by 2050, driven by South and Southeast Asian growth. ADNOC and Eni acquiring stakes in gas blocks tied to Argentina's LNG project adds upstream supply optionality on a multi-year horizon. Trump's public pressure on fuel retailers to cut pump prices adds political noise but limited fundamental impact.",
+   "summary": "Natural gas firmed on both sides of the Atlantic on the final day of June. Henry Hub gained 2.39% to $3.257/MMBtu, extending a 3.50% weekly advance, while TTF rose 2.61% to \u20ac43.675/MWh, also up nearly 4% on the week. The positive session comes despite both benchmarks sitting in the red on a monthly basis. The primary headline catalyst is Shell's long-term demand outlook projecting a 65% surge in global LNG demand by 2050, led by South and Southeast Asia \u2014 Thailand's state-owned PTT is already in early-stage talks to invest directly in U.S. LNG export projects to lock in long-term supply. Hormuz tensions remain a secondary watch item given the strait's importance to LNG transit, though flows have continued so far.",
    "drivers": [
-    "Pakistan paying spot LNG premium signals near-term Asian tightness, supporting Henry Hub and TTF",
-    "Hormuz LNG flows continuing despite ship attacks, with supply disruption risk keeping prices bid",
-    "Shell's 65% LNG demand growth forecast to 2050 reinforces bullish structural backdrop"
+    "Shell projects 65% global LNG demand growth by 2050, anchored by Asian appetite, supporting longer-dated sentiment",
+    "Thailand's PTT in talks to invest in U.S. LNG export projects, reflecting buyers' urgency to secure supply amid tightening long-term availability",
+    "Hormuz flows continuing despite geopolitical stress, limiting acute supply-disruption premium, but remaining a live tail risk for the sector"
    ],
-   "headlineCount": 7,
+   "headlineCount": 3,
    "sources": [
-    "BNN Bloomberg",
-    "DD News",
     "Devdiscourse"
    ]
   },
   "power": {
-   "summary": "EU carbon allowances (EUA) gained 2.08% to $76.41/EUA today, broadly consistent with TTF's 2.61% rise \u2014 higher gas prices lift the cost of coal-to-gas switching, supporting carbon prices. The month-to-date EUA gain of 2.19% contrasts with TTF's 5.06% monthly decline, suggesting carbon has found a near-term floor independent of gas. On the demand side, a new report identified the US as the leading driver of global CO2 emissions growth in 2025, accounting for roughly 30% of the increase \u2014 a politically sensitive data point as nuclear talks with Iran remain unresolved. A separate analysis warned that without $1.4 trillion in new US grid infrastructure, electricity prices could surge up to 58% by an unspecified future date, underscoring AI-driven power demand stress. The Hormuz crisis is credited with accelerating solar build-out across Southeast Asia, a structural shift with long-run implications for fossil fuel power demand in the region.",
+   "summary": "EU carbon allowances (EUA) added 1.35% to $75.865/EUA, recovering modestly after a flat week and building on a marginal 1.46% monthly gain \u2014 a notable contrast to the sharp sell-offs in oil. The session lacked dedicated power-sector headlines, so the driver set is thin. Geopolitically, Iran's $6 billion asset release from Qatar and the partial reopening of the Strait of Hormuz are reshaping Gulf energy dynamics in ways that could reduce LNG supply-risk premia, indirectly weighing on gas-linked power costs. The UK announced nearly 300 new sanctions targeting Russia's Transneft, adding further stress to Russian energy export infrastructure. China's latest five-year plan confirms continued parallel investment in both coal and solar/wind, signalling no near-term reduction in Chinese carbon intensity.",
    "drivers": [
-    "EUA up 2.08%, tracking TTF's gas price gain as higher gas costs support carbon's role in the switching stack",
-    "Report flagging US as top 2025 CO2 emissions growth driver adds regulatory risk premium to carbon outlook",
-    "Hormuz crisis cited as catalyst for Southeast Asian solar acceleration, signaling structural fossil-fuel demand erosion in the region"
+    "EUA prices hold above $75 with modest daily and monthly gains, suggesting carbon market participants are not yet pricing in a sharp demand destruction scenario despite the oil rout",
+    "UK sanctions on Transneft and ongoing Russian refinery disruptions tighten European energy supply chains, providing indirect floor support for continental gas and power prices",
+    "China's five-year plan confirms dual coal-and-renewables expansion strategy, limiting expectations of a near-term structural reduction in global carbon emissions"
    ],
-   "headlineCount": 6,
+   "headlineCount": 8,
    "sources": [
+    "DD News",
     "Defence Security Asia",
     "France 24",
     "The Sunday Guardian"
