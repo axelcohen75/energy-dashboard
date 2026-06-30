@@ -1,46 +1,44 @@
 {
- "generated": "2026-06-29T22:38:00.819349+00:00",
+ "generated": "2026-06-30T15:26:14.227566+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude staged a modest intraday recovery \u2014 WTI +1.65% to $70.37, Brent +2.26% to $73.62 \u2014 but both benchmarks remain in freefall on a monthly basis, each down roughly 21% as the Iran war premium evaporates. ING flagged that prices have overshot to the downside, with a potential U.S.-Iran peace deal dragging Brent back to pre-war levels near $72. The divergence within the complex is notable: RBOB gasoline shed 2.07% and heating oil slipped 1.26%, suggesting physical demand signals are not yet supporting the crude bounce. Supply-side noise persists \u2014 Ukrainian drones hit at least two major Russian refineries, prompting Putin's first public acknowledgment of domestic fuel shortages \u2014 while CME options markets price a 77% probability of an OPEC cut at the next meeting, reflecting how deeply the market is discounting the group's ability to defend prices.",
+   "summary": "Crude markets ended June 30 in a split session: Brent edged up 0.83% to $73.76/bbl while WTI slipped 0.75% to $70.23/bbl, masking a brutal month that saw both benchmarks shed nearly 20%. The dominant narrative remains the Strait of Hormuz reopening, which is accelerating fears of a fresh supply glut \u2014 Morgan Stanley cut its Brent forecast to $75/bbl citing exactly that dynamic. Secretary Bessent's signal that the US may lift sanctions on Iranian oil stranded in tankers compounded the bearish pressure, with DD News reporting intraday declines of up to 3% on the headline. Refined products were hit harder: RBOB gasoline cratered 4.97% and heating oil fell 3.00% on the session. Asian refiners are redirecting recovered Persian Gulf cargoes to the US West Coast, though Asia's total crude imports remain well below pre-war levels. Ukraine's strikes on Russian refineries add a minor offsetting supply risk.",
    "drivers": [
-    "Hormuz ceasefire and U.S.-Iran peace talks deflate war premium; Brent down ~21% month-on-month",
-    "Ukrainian drone strikes ignite multiple Russian refineries; Putin admits fuel shortages, adding geopolitical noise without reversing bearish trend",
-    "CME options imply 77% probability of OPEC production cut, signaling market expects cartel action to arrest the slide"
+    "Strait of Hormuz reopening accelerating supply glut fears; Morgan Stanley cuts Brent target to $75/bbl",
+    "Bessent signals possible removal of sanctions on Iranian oil in tankers, adding bearish supply expectations",
+    "Sharp refined-product sell-off (RBOB -4.97%, HO -3.00%) as Asian refiners redirect Middle East cargoes, pressuring crack spreads"
    ],
    "headlineCount": 12,
    "sources": [
     "DD News",
+    "Discovery Alert",
     "EnergyNow.com",
-    "International Business Times UK",
-    "MSN",
-    "Mathrubhumi English",
-    "The Sunday Guardian"
-   ]
-  },
-  "gas": {
-   "summary": "A sharp transatlantic split defined today's gas session. TTF surged 4.84% to \u20ac42.755/MWh, extending its weekly gain to over 2%, while Henry Hub continued to drift lower, off 1.83% to $3.172/MMBtu and down 3.44% on the month. European tightness is being driven by multiple simultaneous supply threats: Ukraine struck a Russian gas plant as Zelensky pledged further attacks, Gulf LNG exporters \u2014 Saudi Arabia, UAE, and Qatar \u2014 are scrambling to accelerate loadings while the Strait of Hormuz remains technically open but fragile, and Russia's Arctic LNG 2 project added a newly flagged dark-fleet tanker to circumvent sanctions. ADNOC and Eni's entry into Argentine LNG blocks points to longer-term diversification efforts. Henry Hub weakness reflects no equivalent supply shock on the U.S. domestic market.",
-   "drivers": [
-    "Ukrainian strike on Russian gas infrastructure and Zelensky's escalation pledge tighten European supply outlook, lifting TTF sharply",
-    "Gulf producers accelerating LNG loadings through Hormuz, but fragile ceasefire keeps risk premium elevated in European markets",
-    "Henry Hub continues to soften on domestic fundamentals, disconnected from geopolitical-driven European tightness"
-   ],
-   "headlineCount": 8,
-   "sources": [
-    "DD News",
-    "Devdiscourse",
     "MSN"
    ]
   },
-  "power": {
-   "summary": "EU carbon eased 1.49% to $74.855/EUA and remains modestly softer on the week and month, while the contradictory signal from TTF's 4.84% spike \u2014 which raises gas-fired generation costs \u2014 has yet to translate into EUA support. The dominant narrative today is the accelerating structural shift away from fossil-fuel power in regions exposed to the Hormuz crisis: the Philippines emerged as the world's top solar panel buyer, reportedly driven by soaring electricity prices linked to the Iran war, and a broader Southeast Asian solar buildout is underway according to multiple reports. In the U.S., AI-driven power demand is reopening the public utility debate, highlighted by political developments in New York City. Iran's $6 billion asset release from Qatar and the fragile Gulf ceasefire remain the macro backdrop, with the Hormuz situation continuing to redraw energy investment flows globally.",
+  "gas": {
+   "summary": "Natural gas staged a notable recovery on both sides of the Atlantic today. Henry Hub surged 4.02% to $3.31/MMBtu, extending a strong weekly gain of 5.15%, while TTF climbed 2.61% to \u20ac43.675/MWh. The Hormuz corridor remains an active flashpoint for LNG flows, with Middle East producers reported to be pushing on with loadings despite ship attacks. Pakistan's emergency spot LNG purchase at a roughly $1/MMBtu premium to regional prices underscores near-term tightness in Asian markets. Longer-dated sentiment received support from Shell's forecast that global LNG demand will rise 65% by 2050, driven by South and Southeast Asian growth. ADNOC and Eni acquiring stakes in gas blocks tied to Argentina's LNG project adds upstream supply optionality on a multi-year horizon. Trump's public pressure on fuel retailers to cut pump prices adds political noise but limited fundamental impact.",
    "drivers": [
-    "Philippines becomes world's top solar panel buyer amid Iran-war-linked electricity price spikes, accelerating Southeast Asian renewables buildout",
-    "TTF's 4.84% daily surge raises gas-fired power costs but has not yet transmitted into EUA price support",
-    "AI power demand boom reigniting U.S. public utility debate, while Gulf ceasefire fragility sustains long-term diversification investment signals"
+    "Pakistan paying spot LNG premium signals near-term Asian tightness, supporting Henry Hub and TTF",
+    "Hormuz LNG flows continuing despite ship attacks, with supply disruption risk keeping prices bid",
+    "Shell's 65% LNG demand growth forecast to 2050 reinforces bullish structural backdrop"
    ],
    "headlineCount": 7,
+   "sources": [
+    "BNN Bloomberg",
+    "DD News",
+    "Devdiscourse"
+   ]
+  },
+  "power": {
+   "summary": "EU carbon allowances (EUA) gained 2.08% to $76.41/EUA today, broadly consistent with TTF's 2.61% rise \u2014 higher gas prices lift the cost of coal-to-gas switching, supporting carbon prices. The month-to-date EUA gain of 2.19% contrasts with TTF's 5.06% monthly decline, suggesting carbon has found a near-term floor independent of gas. On the demand side, a new report identified the US as the leading driver of global CO2 emissions growth in 2025, accounting for roughly 30% of the increase \u2014 a politically sensitive data point as nuclear talks with Iran remain unresolved. A separate analysis warned that without $1.4 trillion in new US grid infrastructure, electricity prices could surge up to 58% by an unspecified future date, underscoring AI-driven power demand stress. The Hormuz crisis is credited with accelerating solar build-out across Southeast Asia, a structural shift with long-run implications for fossil fuel power demand in the region.",
+   "drivers": [
+    "EUA up 2.08%, tracking TTF's gas price gain as higher gas costs support carbon's role in the switching stack",
+    "Report flagging US as top 2025 CO2 emissions growth driver adds regulatory risk premium to carbon outlook",
+    "Hormuz crisis cited as catalyst for Southeast Asian solar acceleration, signaling structural fossil-fuel demand erosion in the region"
+   ],
+   "headlineCount": 6,
    "sources": [
     "Defence Security Asia",
     "France 24",
