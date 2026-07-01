@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T21:24:52Z",
+  "updated": "2026-07-01T22:47:46Z",
   "physical": [
     {
       "title": "EIA: U.S. Crude Inventories Post Another Major Draw",
@@ -9,6 +9,24 @@
       "published": "2026-07-01T14:47:00Z",
       "sentiment": "neutral",
       "impact": "med"
+    },
+    {
+      "title": "Wall Street Is Pivoting From Solar To Solar Plus Storage",
+      "summary": "The global solar energy boom is showing no signs of slowing down, with falling costs and ambitious clean energy targets continuing to drive rapid adoption. Last year, solar capacity additions surge...",
+      "source": "",
+      "url": "https://oilprice.com/Alternative-Energy/Renewable-Energy/Wall-Street-Is-Pivoting-From-Solar-To-Solar-Plus-Storage.html",
+      "published": "2026-07-01T22:00:00Z",
+      "sentiment": "bearish",
+      "impact": "med"
+    },
+    {
+      "title": "Japan's Biggest LNG Buyer Creates Standalone Trading Arm",
+      "summary": "Japan\u2019s JERA is creating a wholly-owned subsidiary to develop and manage its LNG, upstream, low-carbon fuels, and shipping businesses, the biggest Japanese LNG importer and largest power producer s...",
+      "source": "",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Japans-Biggest-LNG-Buyer-Creates-Standalone-Trading-Arm.html",
+      "published": "2026-07-01T14:30:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
     },
     {
       "title": "Ukraine\u2019s Drone Campaign Forces Russia to Buy Gasoline From India",
@@ -29,15 +47,6 @@
       "impact": "low"
     },
     {
-      "title": "Japan's Biggest LNG Buyer Creates Standalone Trading Arm",
-      "summary": "Japan\u2019s JERA is creating a wholly-owned subsidiary to develop and manage its LNG, upstream, low-carbon fuels, and shipping businesses, the biggest Japanese LNG importer and largest power producer s...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Japans-Biggest-LNG-Buyer-Creates-Standalone-Trading-Arm.html",
-      "published": "2026-07-01T14:30:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
       "title": "Putin Admits Shortage of Fuel After Weeks of Refinery Strikes",
       "summary": "Russia has confirmed its government is currently in negotiations with other countries to purchase gasoline while desperately seeking to stabilize its domestic market after months drone mayhem out o...",
       "source": "",
@@ -47,21 +56,12 @@
       "impact": "low"
     },
     {
-      "title": "Europe\u2019s Nuclear Ambitions Drive New Interest in Italian Uranium Exploration",
-      "summary": "A firm planning to mine uranium in northern Italy has drawn up plans for a London float as it seeks to capitalise on renewed interest in nuclear technology. Reveille Resources, which will be operat...",
+      "title": "Same Fear, Different Fallout: Oil and Gold's Diverging Collapse",
+      "summary": "Gold and oil spent five months moving like they were tied to the same rope. Both caught a bid from fear that war between the United States and Iran would spiral into something markets couldn\u2019t quit...",
       "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/Europes-Nuclear-Ambitions-Drive-New-Interest-in-Italian-Uranium-Exploration.html",
-      "published": "2026-07-01T16:00:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "How the U.S. and U.K. Are Redrawing Syria's Energy Map",
-      "summary": "The agreement signed last week between the Syrian Petroleum Company (SPC), the U.S.\u2019s ConocoPhillips and Great Britain\u2019s Novaterra ConocoPhillips \u2014 covering the development of new gas fields and th...",
-      "source": "",
-      "url": "https://oilprice.com/Geopolitics/Middle-East/How-the-US-and-UK-Are-Redrawing-Syrias-Energy-Map.html",
-      "published": "2026-07-01T20:00:00Z",
-      "sentiment": "bullish",
+      "url": "https://oilprice.com/Energy/Energy-General/Same-Fear-Different-Fallout-Oil-and-Golds-Diverging-Collapse.html",
+      "published": "2026-07-01T19:00:00Z",
+      "sentiment": "bearish",
       "impact": "low"
     },
     {
@@ -70,6 +70,33 @@
       "source": "",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/EU-Industry-Splits-Over-Emissions-Trading-Scheme-Overhaul.html",
       "published": "2026-07-01T13:30:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Renewables Hit Record 58% Share of Germany's Power Consumption",
+      "summary": "Renewable energy accounted for a record-high 58% of Germany\u2019s electricity consumption in the first half of 2026, up from 55.8% for the same period last year, the latest estimates by industry associ...",
+      "source": "",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Renewables-Hit-Record-58-Share-of-Germanys-Power-Consumption.html",
+      "published": "2026-07-01T15:30:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "U.S. Raises Pressure on Iran With Renewed Military Warning",
+      "summary": "US Vice President JD Vance has again signaled that the White House is prepared to use force against Iran if diplomacy fails, raising the stakes around a 60-day memorandum of understanding (MOU) tha...",
+      "source": "",
+      "url": "https://oilprice.com/Geopolitics/Middle-East/US-Raises-Pressure-on-Iran-With-Renewed-Military-Warning.html",
+      "published": "2026-07-01T14:00:00Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "How the U.S. and U.K. Are Redrawing Syria's Energy Map",
+      "summary": "The agreement signed last week between the Syrian Petroleum Company (SPC), the U.S.\u2019s ConocoPhillips and Great Britain\u2019s Novaterra ConocoPhillips \u2014 covering the development of new gas fields and th...",
+      "source": "",
+      "url": "https://oilprice.com/Geopolitics/Middle-East/How-the-US-and-UK-Are-Redrawing-Syrias-Energy-Map.html",
+      "published": "2026-07-01T20:00:00Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -83,56 +110,29 @@
       "impact": "low"
     },
     {
-      "title": "The Hydrogen Industry's Efficiency Problem May Have Just Met Its Fix",
-      "summary": "A team of researchers in Germany has discovered a highly efficient way to convert sunlight into hydrogen fuel, potentially solving some of the most critical challenges facing the green hydrogen sec...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/The-Hydrogen-Industrys-Efficiency-Problem-May-Have-Just-Met-Its-Fix.html",
-      "published": "2026-07-01T21:00:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Same Fear, Different Fallout: Oil and Gold's Diverging Collapse",
-      "summary": "Gold and oil spent five months moving like they were tied to the same rope. Both caught a bid from fear that war between the United States and Iran would spiral into something markets couldn\u2019t quit...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/Same-Fear-Different-Fallout-Oil-and-Golds-Diverging-Collapse.html",
-      "published": "2026-07-01T19:00:00Z",
-      "sentiment": "bearish",
-      "impact": "low"
-    },
-    {
-      "title": "Eni Forms Trading Venture With Mercuria to Boost Commodity Profits",
-      "summary": "Eni is forming an energy commodity joint venture with global trader Mercuria as the Italian energy major eyes higher profits to rival the most active traders among the European energy giants. Eni o...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Eni-Forms-Trading-Venture-With-Mercuria-to-Boost-Commodity-Profits.html",
-      "published": "2026-07-01T12:30:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "U.S. Raises Pressure on Iran With Renewed Military Warning",
-      "summary": "US Vice President JD Vance has again signaled that the White House is prepared to use force against Iran if diplomacy fails, raising the stakes around a 60-day memorandum of understanding (MOU) tha...",
-      "source": "",
-      "url": "https://oilprice.com/Geopolitics/Middle-East/US-Raises-Pressure-on-Iran-With-Renewed-Military-Warning.html",
-      "published": "2026-07-01T14:00:00Z",
-      "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "Renewables Hit Record 58% Share of Germany's Power Consumption",
-      "summary": "Renewable energy accounted for a record-high 58% of Germany\u2019s electricity consumption in the first half of 2026, up from 55.8% for the same period last year, the latest estimates by industry associ...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Renewables-Hit-Record-58-Share-of-Germanys-Power-Consumption.html",
-      "published": "2026-07-01T15:30:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
       "title": "KKR Makes Largest Ever Clean Energy Investment With $4.2B EDF Purchase",
       "summary": "Global investment firm KKR has agreed to acquire EDF Power Solutions North America in a landmark $4.2-billion deal, marking the largest single renewable energy investment in the company\u2019s history. ...",
       "source": "",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/KKR-Makes-Largest-Ever-Clean-Energy-Investment-With-42B-EDF-Purchase.html",
       "published": "2026-07-01T17:30:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "Europe\u2019s Nuclear Ambitions Drive New Interest in Italian Uranium Exploration",
+      "summary": "A firm planning to mine uranium in northern Italy has drawn up plans for a London float as it seeks to capitalise on renewed interest in nuclear technology. Reveille Resources, which will be operat...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/Europes-Nuclear-Ambitions-Drive-New-Interest-in-Italian-Uranium-Exploration.html",
+      "published": "2026-07-01T16:00:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "The Hydrogen Industry's Efficiency Problem May Have Just Met Its Fix",
+      "summary": "A team of researchers in Germany has discovered a highly efficient way to convert sunlight into hydrogen fuel, potentially solving some of the most critical challenges facing the green hydrogen sec...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/The-Hydrogen-Industrys-Efficiency-Problem-May-Have-Just-Met-Its-Fix.html",
+      "published": "2026-07-01T21:00:00Z",
       "sentiment": "neutral",
       "impact": "low"
     }
@@ -175,11 +175,11 @@
       "impact": "low"
     },
     {
-      "title": "Russia-Ukraine War Update: Putin Admits Fuel Problems as Ukraine Attacks Two Russo Oil Refineries",
-      "summary": "Russia-Ukraine War Update: Putin Admits Fuel Problems as Ukraine Attacks Two Russo Oil Refineries International Business Times UK",
-      "source": "International Business Times UK",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPY1dEMGJTZUo2LUdNTTdOR0dlS0Y1SzRqVm9faVFTM2J3Zm5DR1lNdkRhZlVJUEFVRkFQUkpqeFBKaGtvZlplMGo0TEl5N1ZpRkVuVzlnUGU1bTJtbEhFNEl0RnJ1Q2tPMHhxYlRPRnViZl9rUldoOU5YbnUtSnc3Z3hCbjJyVkZnVDNB?oc=5",
-      "published": "2026-06-29T09:11:49Z",
+      "title": "Putin admits fuel shortages. Why Ukraine's drone war is becoming Russia's costliest challenge",
+      "summary": "Putin admits fuel shortages. Why Ukraine's drone war is becoming Russia's costliest challenge Firstpost",
+      "source": "Firstpost",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPSEE4c3hoVFJ1WHQ5TjV1dnlpU0JXcUl1Wl9EV2JiQW85YVpxUFRCblFBVHJZMzkxRmE0YS1iUnZUMV93NURrMkhMdjVhN0dWdEJucm1XTDJjTjVaUkhRdktEWEJwZEJwX0U2aFpFcGRvNlAzckNldzVWWi01cENxbU4xXzl4b0tucExwN0RpVXRkdGJHZFVMVWcwOG0yWkR4UkdnbXZObDlCdzh0Z2NWUFVlbERlakdwMHlkUjJKd0xiei1HX25mVGhad2dIOXdnRnBwRjJxRkpmS2PSAdsBQVVfeXFMT0hBOHN4aFRSdVh0OU41dXZ5aVNCV3FJdVpfRFdiYkFvOWFacVBUQm5RQVRyWTM5MUZhNGEtYlJ2VDFfdzVEazJITHY1YTdHVnRCbnJtV0wyY041WlJIUXZLRFhCcGRCcF9FNmhaRXBkbzZQM3JDZXc1VlotNXBDcW1OMV85eG9LbnBMcDdEaVV0ZHRiR2RVTFVnMDhtMlpEeFJHZ212Tmw5Qnc4dGdjVlBVZWxEZWpHcDB5ZFIySndMYnotR19uZlRoWndnSDl3Z0ZwcEYycUZKZktj?oc=5",
+      "published": "2026-06-28T23:59:38Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -193,21 +193,48 @@
       "impact": "med"
     },
     {
-      "title": "UK targets Russia\u2019s Transneft in nearly 300 new sanctions on war\u2019s fourth anniversary",
-      "summary": "UK targets Russia\u2019s Transneft in nearly 300 new sanctions on war\u2019s fourth anniversary DD News",
-      "source": "DD News",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdTkyTnJiSFpvdmNwOFAxbFZwcmlpeFEwY0NteUFkLXJiRjNQQUlSR2txbXpjdjdyUmJsZDl1OGxiWmRRS1ctNnc3VEN2RVN6TTYxOGtzeDI3NWV6cHE3T2dsWTBIc0xKckZhZEpMSDh4MHJWZmxUODJfX0NvZFdPT2xLN2hVVldoSmJ4MGRma3NidVk0Tm9UYVN6S0NwOTBuVElKM0U1NnVrd3dFVHc?oc=5",
-      "published": "2026-06-30T06:33:20Z",
+      "title": "Russia-Ukraine War Update: Putin Admits Fuel Problems as Ukraine Attacks Two Russo Oil Refineries",
+      "summary": "Russia-Ukraine War Update: Putin Admits Fuel Problems as Ukraine Attacks Two Russo Oil Refineries International Business Times UK",
+      "source": "International Business Times UK",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPY1dEMGJTZUo2LUdNTTdOR0dlS0Y1SzRqVm9faVFTM2J3Zm5DR1lNdkRhZlVJUEFVRkFQUkpqeFBKaGtvZlplMGo0TEl5N1ZpRkVuVzlnUGU1bTJtbEhFNEl0RnJ1Q2tPMHhxYlRPRnViZl9rUldoOU5YbnUtSnc3Z3hCbjJyVkZnVDNB?oc=5",
+      "published": "2026-06-29T09:11:49Z",
       "sentiment": "bullish",
       "impact": "low"
     },
     {
-      "title": "Putin admits Ukrainian drone strikes are driving Russian fuel shortages",
-      "summary": "Putin admits Ukrainian drone strikes are driving Russian fuel shortages The Guardian",
-      "source": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOFlITVV5cGRQcnFJRVlPUmR2MHNLenhSMnZOSHVNMElYNlBKakdZRTQ2T1FmWjdWYjFpTzlBZXhWT1ZkTHNtemlZeWxaMW5zOVpJZG5oa2xTVUtvM0tXRXZ6ejNWUFg0ZFpVd0YzcVVmOWRncTZpNnBmenp5Sm14TFNPc010NDg3ckJsellHVUdfWEl2clNCZWw3NDVqaDRadVFLTFlKUnJ5QXc?oc=5",
-      "published": "2026-06-28T21:52:00Z",
+      "title": "'Big concern': How the Iran war and Strait of Hormuz closure could drive up prices for helium, fertilizer and other goods",
+      "summary": "'Big concern': How the Iran war and Strait of Hormuz closure could drive up prices for helium, fertilizer and other goods ABC News - Breaking News, Latest News and Videos",
+      "source": "ABC News - Breaking News, Latest News and Videos",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWUEwbGQzcGczbVRKcXRoNHB3QmtLMENVMzFfd0xnWmN3aWRILU5CRTRWR0pFdnhQdGFsLXJwa01WR2N1S0JCQUxxdFRkRGZHaWFlakYxMk1YdDBCRDFXQjhDeFNMZmlyWnFsVjFaY21FZUdNdDg1RXdKM1JSb19jVVFTVTJFREFfRFN3TTRVbzNpY21mYXdZVmhwYl9wM0JrTGRvLUJ30gGrAUFVX3lxTE13aGdnRGlNem9jTGFaMTYwZjc3SVZ3bGFhYVhQVnVXVVJQZ2lzVHFqT3VONnBFbWpGVUw2VE52U0xSTmozSGJSM2d6dEF6Z2FiZjF3VWdMdHRUcWRYYjhKRjltNGVNeElDNGY2UVlvLVZRUkJrZGxvTERNRDF0MUk1dTRUWWFMNnpTWTM0b1BHU0JLeTBBZVJON2s2dE5jblB5Nzl5dEFiMnNPcw?oc=5",
+      "published": "2026-07-01T18:09:48Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "U.S. envoys arrive in Qatar for meetings on Iran amid tensions following weekend attacks",
+      "summary": "U.S. envoys arrive in Qatar for meetings on Iran amid tensions following weekend attacks Rocky Mount Telegram",
+      "source": "Rocky Mount Telegram",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQVlRNM3JJbFRkWC1EaGkxNnFxSnkxaTU0WGhyR20wN1NEOFVHYXFLYXBKX2hCc2czQ1E5dHc4V3JBc2hSNTZkMTFQTFBaMl9yaEhTLU9kUjY2eGRIOWZaRVZGQllXN29MeVRJWkJZYzdsZklUR040c2tnalJhWGhKZEswdlFicHUtZEZNV3VhZ2NsbW5sNVlpeFNpUHdaaF9IZ1NtUVh3RnJmeEdIVlE0M1pXTkd6bEJSdWZnQXJJZHlGZlpOTG9NcmZRUzBjaGQ4U0tVUWc3N2wtVzhlcENqNmJLMG44MjNYeXpaWUtGOG92eWw1czBOQlZZYjVLQmcwTEZXQlUxbEszZjF0S083WQ?oc=5",
+      "published": "2026-06-30T12:19:38Z",
       "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "Trump, Putin talk of war and peace as US weighs easing Russian oil sanctions",
+      "summary": "Trump, Putin talk of war and peace as US weighs easing Russian oil sanctions DD News",
+      "source": "DD News",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVFc3VURUOWlGU19kdFpCNXY5N0VEVTNLSlRzaVFfSlZnMGNnamFFdk1yekJnN05HVFNxRFdKam50NGhMdHBSYmNpV21CdWJCLVFTY0FFVk5ReF9OVDRCMUNlR3IwR1dXZy14TERWYTdWSWpIaTd4S3pXbV9jNEZ4eFhIT2tVeW0tdXFZWnp0QXEzRFlCcTZFQ1d2NzVROVlwdXdF?oc=5",
+      "published": "2026-06-30T06:46:11Z",
+      "sentiment": "neutral",
+      "impact": "med"
+    },
+    {
+      "title": "Why Russia is importing gasoline from India? The changing India-Russia oil partnership after the Ukraine war",
+      "summary": "Why Russia is importing gasoline from India? The changing India-Russia oil partnership after the Ukraine war financialexpress.com",
+      "source": "financialexpress.com",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQbUc5X1ZzWWxBNDdKaXlGQUUwanRtaWc5QUNyQ0M2NjlZRUNiTmxrUGxNYzlMaHBTT01Ea0Q5SjlhMVc2b1NDN3BEZmk4MnNEZHdvd1FqOW91TWNmSXVxTjBJRVZ2MEVCYmJMMmZyTjBjV1BrRkZTcFR0b3VjQUtjalpRbk4yNE43WlpDZ3Z6c3I4Q0ZvekM0b25NeldYdC1rSVlpNDI4TFNhNkJfOFNUR0JRNVY3SW1kdmtnZ3Z1dF9DVDhhV0psbFB3WEQtVjlyX2VNRkpzcFlkNldaNWtsUDhSUmEtZHR6TGVrOG11YVRfQdIB-AFBVV95cUxNVHJjOGZxc2hINUdwcXZyOFF3VG1ZUUtiZUN4UVptaXJBSHdfRlVYRUJ2M01uZ2FKbU1CdUY2N2d2VHlyQ3FqRktxaTA4UGU0dGxtOERMZXZyR3JNb21DRjktbjJjNXdRNzBmTFpjRnB5STg1RGJDN0l6ODlxb2JBVE9Ub0VrejBGSUZ4YUY3NEtnNm9vdVRocTdlRy1FdkU1b2QtLTdnRnI4U3dMSzdfNGFkaktZT2Y4TEQ1bGE1cV82UDJnY2p3bjZESGlnV3FuZGFQSWJibDY3ajB2WnprZWZNU3JUdjkyRVlPOF9xZG5rd0QxT2F6ZQ?oc=5",
+      "published": "2026-07-01T15:14:05Z",
+      "sentiment": "neutral",
       "impact": "low"
     },
     {
@@ -220,11 +247,74 @@
       "impact": "low"
     },
     {
+      "title": "Iran says oil blockade will continue until attacks end, Trump threatens to hit harder",
+      "summary": "Iran says oil blockade will continue until attacks end, Trump threatens to hit harder DD News",
+      "source": "DD News",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVnZuZjFZZWlMU0lEYTQtWDhXblhYclIzT2xWXzRCMzdYYXFfOEUxS25MeUhuakp2X096MlZRR3lpVUV2UThRem1UN1JjQ2VvSkZCa2YyT1dMc285STFTM2N5dXFGaXRZY1NQNjBCWXFRVFM1ZklQSkJiTF9MN3J1TXdIbUpLaTFmWVpOZ0JWNC1qc2dHeDlVNmlGOWFGbmViOW0yZFMwdS13ZGx6UVFV?oc=5",
+      "published": "2026-06-30T05:35:14Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "Iran refuses US talks as Hormuz dispute escalates",
+      "summary": "Iran refuses US talks as Hormuz dispute escalates MSN",
+      "source": "MSN",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQRmU0Q01mRDdUTW8zdjVNTlUwbkpiTDJrTlFWUVdJVzljM0o4QkNHNUJqaXNxRHBHanpTN0RLZGRUY3NGUEhKbHBtM1c0RTRnWHlDektFMFJnNXdZUWt5blN0MVctYklVTDBxTktXZTF3SFQ3bTUxU0ZaVVl5ZlZQcEpJVlBpamNsSVdadm00OXVSRVcxWGQ1eWo3UWZUeXpFX2VnRGl3TGJQczQ2dTY3NU4zWUZTNURkX0owRU05R1RMSTl1d3FoWjB2UGdmYnJCMmxZRjdiN1c1VXVhQnJYRG9XRFBEQQ?oc=5",
+      "published": "2026-07-01T07:00:12Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Iran, US to conduct peace talks in Qatar, aim to reopen Strait of Hormuz",
+      "summary": "Iran, US to conduct peace talks in Qatar, aim to reopen Strait of Hormuz The Jerusalem Post",
+      "source": "The Jerusalem Post",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5UdkFDZlVFWlcxcDg4TnhyTnlsU0VmRHhjSVJXdHpCcUpGRWdhemRkcnZWNlJFYUtRM2ZORnBHOS1uajF5OHNhSkxyZHRiLTM3X2JmaUljcmUzQnpSdmFWX1k5cVJVZlhNZlE?oc=5",
+      "published": "2026-06-29T10:50:23Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "TEMPORARY DEAL \u2013 US Eases Russia Oil Sanctions to Tame Price Surge, Riling European Allies",
+      "summary": "TEMPORARY DEAL \u2013 US Eases Russia Oil Sanctions to Tame Price Surge, Riling European Allies EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQejE2ckRVdEhMTlM1dExrQlhHTjIwdk11M24waFF4VV9oSTNxRVBFMGNwYW9fTVhLcXVsd21VaUR0QVFackNpWVluc1I0MWZSdmZpTWpTM0JWTFNSZVh0d3pZYTNRMWRGeEQ4amlsM29kb01KZC01WHJnYW0waTlPbHZ3TDdnV21od0k5QVB0Q1hWSGZvbXc1YUtlNl8xZXJQandFS2otQ3dzMDdsUzRvTGZ3MzJVYUxwRFE?oc=5",
+      "published": "2026-06-30T22:38:09Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
       "title": "Iran's chief negotiator says Strait of Hormuz will be administered by Tehran",
       "summary": "Iran's chief negotiator says Strait of Hormuz will be administered by Tehran IOL",
       "source": "IOL",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQkx6ZEdzOWZhV1Q3TzFIVFlXV3BzM2tURl9xZWt2djlPUG1ncENKdU13T1F5eFdwSHB4ZWlTbVpweXNGQU00ZzBYUkVwZVVqZk9WcGFJV0pMQUFrM0tEQWVNMlk4azJpZ1FIaTU3b2dVeFFJUFpsQzdkdmdaUFJYTkF3MlljMktPZXUyZWl0ZE9UakVIMzlmM1E0MDNhQ1VCMk5WeHVRZFRhTGc1TThZLXQ3dTBXQk0?oc=5",
       "published": "2026-06-29T07:00:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "Strait Of Hormuz Still A \u2018Warlike Operations Area\u2019",
+      "summary": "Strait Of Hormuz Still A \u2018Warlike Operations Area\u2019 Radio Free Europe/Radio Liberty",
+      "source": "Radio Free Europe/Radio Liberty",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWnhyaS1tS3NVV19VeVRlS1RUeUhFblVCTkRCWmg2Z2YwTW1uR051ZFctc3F2eEcyN29hbkJkLUY3THpPVzVaYVRlcTRybGlrTGVsX3ZvTFJyQmRELVNHckg3Nk9uOUw3V2RyN2lZY0dIMW1jLWVQSUVTdXBTZGpuVE55cDBQcG01?oc=5",
+      "published": "2026-07-01T05:00:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "US-Israel-Iran War Latest News: Iran President Announces $6 Billion Frozen in Qatar to Be Released as US Nuclear Talks Face Fresh Challenges",
+      "summary": "US-Israel-Iran War Latest News: Iran President Announces $6 Billion Frozen in Qatar to Be Released as US Nuclear Talks Face Fresh Challenges The Sunday Guardian",
+      "source": "The Sunday Guardian",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPR2d1MDZOUndqdDhLLVpURnBrR3hiZ2FkMl8wMGxTcmFMbmpLODdtMzRqQjBzUE1XY1hZVGF5a1hqaHhwU1hNeGxzTUZja0JGeVdvX1c5Y3VyQzJ0NUhLLXFHbG5VdzB6TUVyRzJmMzl2bXNWQXZqN1RSRlU2VVJTRGJOZXBCT3ZTRFhmSF9vcDJCbG9aRXc0QWttNDNZM0pQSmlQRHpjZjdhQWh5VG9OclhHRDhWTEd3eTdEQWF5WEpFekkxNUhoeW90Nk9GZVBoUUFNVk43RDNaR0NublNGRUJDMGN3SFdHQmU3aktGSEt4bWZfNUJmdi14aW4wUGx4eHFWTnFNcGZOcU5Zd0tlStIBlgJBVV95cUxNX2lXVlBnblhmNGh1TWdFaGdoMjl0S3dYM1FBdkFkd1hCZ0JlZzBNMTVzdUlsQUtGbXZ0cmJLOUVZc19mNUx5bGZBUzV1a1VwMm0ta3JuYm9KR2gzZE9zMW9Ka19jZVFoenlSWWZRSjhyS29rb0cteG9ldWQtdk5CS0FFNVkzU3g4Q1BJdW5OenV4NTFPZ3lyallFa0YzOWtUbnRhVzVuaEJyS1JlazJfNDR1aEFOYTM5MmlTaUZiNXlFQkFmVDBta1BqNnhXdy1RMTVGSmdITlpYcE1hMnJYZ1RaaWlTMFRkZW82ZVF6NExWeEZXcE4tZ25ndkY5WTBMOXI1Y1hPemk1NE54WDZkRFlaZlRDZw?oc=5",
+      "published": "2026-06-29T12:04:17Z",
+      "sentiment": "bearish",
+      "impact": "low"
+    },
+    {
+      "title": "Iran says \u2018no need\u2019 for outside help in Hormuz mine clearance",
+      "summary": "Iran says \u2018no need\u2019 for outside help in Hormuz mine clearance Middle East Monitor",
+      "source": "Middle East Monitor",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQLWZlSVBDekxISzVMZzBsNUhMSkg4cW9yeWZ3SjY2NzZQSWtNWWRvX1JZaVNQajBNa2tOUGhrdmszVWhvTFpqZGt0THA3cDg0THBlTHJ4UUR3MXUwMThQWjFCc1AyVVktSlE0djNvZWxNSzJfUTEtSkdjRTdJV3ZlTl93ZXFMSTE4X2taUUpWTDh2MTN6QU9LOVRHbmlzX2VSTmp4cVRB0gGrAUFVX3lxTE0xSWhDYnhnOTVUUmIzYTJ0MjBBNkNKUTQxTW5MSUg1UW5FOGtOTlN4Q2UzdENEclRYMVBydXlhUXJOaDI3dFYyZFlKcFRGSjFjQmlxZndtQmp1eDJUNndQTXdxZmZfMmxvZFhwaDBoMkdIek8zcGlKbS12Q3ZtSWxoQmxiNF9vLVU3TUI4dWtFdXpzR3I2TF9qa0dTdDBNMHBDYVRtcEZFR0tXRQ?oc=5",
+      "published": "2026-06-30T17:42:00Z",
       "sentiment": "neutral",
       "impact": "low"
     },
@@ -247,13 +337,13 @@
       "impact": "med"
     },
     {
-      "title": "TEMPORARY DEAL \u2013 US Eases Russia Oil Sanctions to Tame Price Surge, Riling European Allies",
-      "summary": "TEMPORARY DEAL \u2013 US Eases Russia Oil Sanctions to Tame Price Surge, Riling European Allies EnergyNow.com",
+      "title": "Iranian Oil Flows Through Strait of Hormuz Even as Gulf Neighbors\u2019 Exports Shut",
+      "summary": "Iranian Oil Flows Through Strait of Hormuz Even as Gulf Neighbors\u2019 Exports Shut EnergyNow.com",
       "source": "EnergyNow.com",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQejE2ckRVdEhMTlM1dExrQlhHTjIwdk11M24waFF4VV9oSTNxRVBFMGNwYW9fTVhLcXVsd21VaUR0QVFackNpWVluc1I0MWZSdmZpTWpTM0JWTFNSZVh0d3pZYTNRMWRGeEQ4amlsM29kb01KZC01WHJnYW0waTlPbHZ3TDdnV21od0k5QVB0Q1hWSGZvbXc1YUtlNl8xZXJQandFS2otQ3dzMDdsUzRvTGZ3MzJVYUxwRFE?oc=5",
-      "published": "2026-06-30T22:38:09Z",
-      "sentiment": "bullish",
-      "impact": "med"
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVXRfbXZ1NlNBbHZhWXFvQmRjbDUxaHh2V21jN2JGSlZqQmo1NnBTSWRXUWEzSEVTWDN3S3lIRE5ObkRKbEZWdUxwLTQ1Umg5SnlMLWtXVUh0UldNZWJxRDU4bVRiUi1CZXBqRUhsaDVpMWhlN3Z5T2FEel83cmdMa3VvRXN0NHNsWGlXX2pCemZRQWVaZ3JrQ2xLZUQyb24wdUlQUUZIWWZackhieUE?oc=5",
+      "published": "2026-06-30T22:03:27Z",
+      "sentiment": "bearish",
+      "impact": "low"
     },
     {
       "title": "Ukraine takes the war to Moscow: Why Kyiv unleashed its biggest attacks after G7 summit",
@@ -265,102 +355,12 @@
       "impact": "low"
     },
     {
-      "title": "US-Israel-Iran War Latest News: Iran President Announces $6 Billion Frozen in Qatar to Be Released as US Nuclear Talks Face Fresh Challenges",
-      "summary": "US-Israel-Iran War Latest News: Iran President Announces $6 Billion Frozen in Qatar to Be Released as US Nuclear Talks Face Fresh Challenges The Sunday Guardian",
-      "source": "The Sunday Guardian",
-      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPR2d1MDZOUndqdDhLLVpURnBrR3hiZ2FkMl8wMGxTcmFMbmpLODdtMzRqQjBzUE1XY1hZVGF5a1hqaHhwU1hNeGxzTUZja0JGeVdvX1c5Y3VyQzJ0NUhLLXFHbG5VdzB6TUVyRzJmMzl2bXNWQXZqN1RSRlU2VVJTRGJOZXBCT3ZTRFhmSF9vcDJCbG9aRXc0QWttNDNZM0pQSmlQRHpjZjdhQWh5VG9OclhHRDhWTEd3eTdEQWF5WEpFekkxNUhoeW90Nk9GZVBoUUFNVk43RDNaR0NublNGRUJDMGN3SFdHQmU3aktGSEt4bWZfNUJmdi14aW4wUGx4eHFWTnFNcGZOcU5Zd0tlStIBlgJBVV95cUxNX2lXVlBnblhmNGh1TWdFaGdoMjl0S3dYM1FBdkFkd1hCZ0JlZzBNMTVzdUlsQUtGbXZ0cmJLOUVZc19mNUx5bGZBUzV1a1VwMm0ta3JuYm9KR2gzZE9zMW9Ka19jZVFoenlSWWZRSjhyS29rb0cteG9ldWQtdk5CS0FFNVkzU3g4Q1BJdW5OenV4NTFPZ3lyallFa0YzOWtUbnRhVzVuaEJyS1JlazJfNDR1aEFOYTM5MmlTaUZiNXlFQkFmVDBta1BqNnhXdy1RMTVGSmdITlpYcE1hMnJYZ1RaaWlTMFRkZW82ZVF6NExWeEZXcE4tZ25ndkY5WTBMOXI1Y1hPemk1NE54WDZkRFlaZlRDZw?oc=5",
-      "published": "2026-06-29T12:04:17Z",
-      "sentiment": "bearish",
-      "impact": "low"
-    },
-    {
-      "title": "U.S. envoys arrive in Qatar for meetings on Iran amid tensions following weekend attacks",
-      "summary": "U.S. envoys arrive in Qatar for meetings on Iran amid tensions following weekend attacks Rocky Mount Telegram",
-      "source": "Rocky Mount Telegram",
-      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQVlRNM3JJbFRkWC1EaGkxNnFxSnkxaTU0WGhyR20wN1NEOFVHYXFLYXBKX2hCc2czQ1E5dHc4V3JBc2hSNTZkMTFQTFBaMl9yaEhTLU9kUjY2eGRIOWZaRVZGQllXN29MeVRJWkJZYzdsZklUR040c2tnalJhWGhKZEswdlFicHUtZEZNV3VhZ2NsbW5sNVlpeFNpUHdaaF9IZ1NtUVh3RnJmeEdIVlE0M1pXTkd6bEJSdWZnQXJJZHlGZlpOTG9NcmZRUzBjaGQ4U0tVUWc3N2wtVzhlcENqNmJLMG44MjNYeXpaWUtGOG92eWw1czBOQlZZYjVLQmcwTEZXQlUxbEszZjF0S083WQ?oc=5",
-      "published": "2026-06-30T12:19:38Z",
-      "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "Fragile Peace: U.S.-Iran Interim Deal Faces New Strikes",
-      "summary": "Fragile Peace: U.S.-Iran Interim Deal Faces New Strikes Devdiscourse",
-      "source": "Devdiscourse",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNElaekxhZjllMGw2UVFDLWVaVDh6Q2hiZm9ESk40b3BWazA3QVBhbnQzcTl6akdtMW1DQWsxRFhFUUFjY09IemY1THVpYUxzVk5oZmRETVhpUjJ0Yk5wbUJYbUhualhpTlcyNnMxX2JGblI1SjU3Wmxzb0JwNFpmYzdDeWYtTS03eUlCRVVQblZiVG9OR0pmZkwwSHFONzBwUFVVOEk2UnAwNW0tYmRN0gGvAUFVX3lxTE00SVp6TGFmOWUwbDZRUUMtZVpUOHpDaGJmb0RKTjRvcFZrMDdBUGFudDNxOXpqR20xbUNBazFEWEVRQWNjT0h6ZjVMdWlhTHNWTmhmZERNWGlSMnRiTnBtQlhtSG5qWGlOVzI2czFfYkZuUjVKNTdabHNvQnA0WmZjN0N5Zi1NLTd5SUJFVVBuVmJUb05HSmZmTDBIcU43MHBQVVU4STZScDA1bS1iZE0?oc=5",
-      "published": "2026-06-29T10:33:36Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Why Russia is importing gasoline from India? The changing India-Russia oil partnership after the Ukraine war",
-      "summary": "Why Russia is importing gasoline from India? The changing India-Russia oil partnership after the Ukraine war financialexpress.com",
-      "source": "financialexpress.com",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQbUc5X1ZzWWxBNDdKaXlGQUUwanRtaWc5QUNyQ0M2NjlZRUNiTmxrUGxNYzlMaHBTT01Ea0Q5SjlhMVc2b1NDN3BEZmk4MnNEZHdvd1FqOW91TWNmSXVxTjBJRVZ2MEVCYmJMMmZyTjBjV1BrRkZTcFR0b3VjQUtjalpRbk4yNE43WlpDZ3Z6c3I4Q0ZvekM0b25NeldYdC1rSVlpNDI4TFNhNkJfOFNUR0JRNVY3SW1kdmtnZ3Z1dF9DVDhhV0psbFB3WEQtVjlyX2VNRkpzcFlkNldaNWtsUDhSUmEtZHR6TGVrOG11YVRfQdIB-AFBVV95cUxNVHJjOGZxc2hINUdwcXZyOFF3VG1ZUUtiZUN4UVptaXJBSHdfRlVYRUJ2M01uZ2FKbU1CdUY2N2d2VHlyQ3FqRktxaTA4UGU0dGxtOERMZXZyR3JNb21DRjktbjJjNXdRNzBmTFpjRnB5STg1RGJDN0l6ODlxb2JBVE9Ub0VrejBGSUZ4YUY3NEtnNm9vdVRocTdlRy1FdkU1b2QtLTdnRnI4U3dMSzdfNGFkaktZT2Y4TEQ1bGE1cV82UDJnY2p3bjZESGlnV3FuZGFQSWJibDY3ajB2WnprZWZNU3JUdjkyRVlPOF9xZG5rd0QxT2F6ZQ?oc=5",
-      "published": "2026-07-01T15:14:05Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Trump, Putin talk of war and peace as US weighs easing Russian oil sanctions",
-      "summary": "Trump, Putin talk of war and peace as US weighs easing Russian oil sanctions DD News",
-      "source": "DD News",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVFc3VURUOWlGU19kdFpCNXY5N0VEVTNLSlRzaVFfSlZnMGNnamFFdk1yekJnN05HVFNxRFdKam50NGhMdHBSYmNpV21CdWJCLVFTY0FFVk5ReF9OVDRCMUNlR3IwR1dXZy14TERWYTdWSWpIaTd4S3pXbV9jNEZ4eFhIT2tVeW0tdXFZWnp0QXEzRFlCcTZFQ1d2NzVROVlwdXdF?oc=5",
-      "published": "2026-06-30T06:46:11Z",
-      "sentiment": "neutral",
-      "impact": "med"
-    },
-    {
-      "title": "Iran refuses US talks as Hormuz dispute escalates",
-      "summary": "Iran refuses US talks as Hormuz dispute escalates MSN",
-      "source": "MSN",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQRmU0Q01mRDdUTW8zdjVNTlUwbkpiTDJrTlFWUVdJVzljM0o4QkNHNUJqaXNxRHBHanpTN0RLZGRUY3NGUEhKbHBtM1c0RTRnWHlDektFMFJnNXdZUWt5blN0MVctYklVTDBxTktXZTF3SFQ3bTUxU0ZaVVl5ZlZQcEpJVlBpamNsSVdadm00OXVSRVcxWGQ1eWo3UWZUeXpFX2VnRGl3TGJQczQ2dTY3NU4zWUZTNURkX0owRU05R1RMSTl1d3FoWjB2UGdmYnJCMmxZRjdiN1c1VXVhQnJYRG9XRFBEQQ?oc=5",
-      "published": "2026-07-01T07:00:12Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Iran says \u2018no need\u2019 for outside help in Hormuz mine clearance",
-      "summary": "Iran says \u2018no need\u2019 for outside help in Hormuz mine clearance Middle East Monitor",
-      "source": "Middle East Monitor",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQLWZlSVBDekxISzVMZzBsNUhMSkg4cW9yeWZ3SjY2NzZQSWtNWWRvX1JZaVNQajBNa2tOUGhrdmszVWhvTFpqZGt0THA3cDg0THBlTHJ4UUR3MXUwMThQWjFCc1AyVVktSlE0djNvZWxNSzJfUTEtSkdjRTdJV3ZlTl93ZXFMSTE4X2taUUpWTDh2MTN6QU9LOVRHbmlzX2VSTmp4cVRB0gGrAUFVX3lxTE0xSWhDYnhnOTVUUmIzYTJ0MjBBNkNKUTQxTW5MSUg1UW5FOGtOTlN4Q2UzdENEclRYMVBydXlhUXJOaDI3dFYyZFlKcFRGSjFjQmlxZndtQmp1eDJUNndQTXdxZmZfMmxvZFhwaDBoMkdIek8zcGlKbS12Q3ZtSWxoQmxiNF9vLVU3TUI4dWtFdXpzR3I2TF9qa0dTdDBNMHBDYVRtcEZFR0tXRQ?oc=5",
-      "published": "2026-06-30T17:42:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Iran, US to conduct peace talks in Qatar, aim to reopen Strait of Hormuz",
-      "summary": "Iran, US to conduct peace talks in Qatar, aim to reopen Strait of Hormuz The Jerusalem Post",
-      "source": "The Jerusalem Post",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5UdkFDZlVFWlcxcDg4TnhyTnlsU0VmRHhjSVJXdHpCcUpGRWdhemRkcnZWNlJFYUtRM2ZORnBHOS1uajF5OHNhSkxyZHRiLTM3X2JmaUljcmUzQnpSdmFWX1k5cVJVZlhNZlE?oc=5",
-      "published": "2026-06-29T10:50:23Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
       "title": "Middle East producers push on with oil and LNG loadings despite ship attacks",
       "summary": "Middle East producers push on with oil and LNG loadings despite ship attacks Reuters",
       "source": "Reuters",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQaXRmOXJlc21RaE15d095S1BmUzNld3VIT1dVbzV6YkpqT0N2elU5aUZ2MmpnelV2VnlNNmZScEkxWWNGUXU4bzBGYnlMQlVITlhJR1A4MzFJWnBRVWltTDhxNFFiNnNzT0FGN2xienl4VWxyaVFNc0hTX0JBV19GTTg0Q1VUZ2FrLU9TTE55SllpWlFNVnh0UzNFa2RwVnFiendwc05tSExzRHRSeDFSMFBiZnhSQndzV3RiU3Vn?oc=5",
       "published": "2026-06-29T11:44:44Z",
       "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Serbia's Russian-owned NIS oil firm gets another sanctions reprieve from US",
-      "summary": "Serbia's Russian-owned NIS oil firm gets another sanctions reprieve from US Reuters",
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORkFjYjZsWkUzY2l1dFR5eEZmTXVnb0ZCSFYxcVU1Ym5TZ01MelpxQ3hVY3NDVVhvUjRKeTJ0dHQwdWQ0eGltczEtVDVNX1J1UHp1eElsaE1TbkRWT29jbFRoOHRldTgxTmR2Um9WSl94Qy1yUGR5YnIxYXMwNEJRaTdQc3FObXBCZGx2Zmh2d2tYOWhtODhueEY3UklZR0xVcVQwcnlrQ2dMUXN6dllOSGdpeC1aenBOc0NPSFBn?oc=5",
-      "published": "2026-06-30T21:27:52Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Hormuz oil shock sends India back to Russia: Is this a peak or the new normal?",
-      "summary": "Hormuz oil shock sends India back to Russia: Is this a peak or the new normal? The Times of India",
-      "source": "The Times of India",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNM1N2SEtLd1V6YUlnR0RnWW45T05xdTJLSG9QRGVjN0J3ZlR3cXRWYW5jMXVkT0t1WG5IVkNxN1ZOTkh1c0lySlU1RjJPdGxLNkMtbXpjRkJsWFl6TGNIX3RoUUpZMFFaYU1XVFlMbkZRNWhMZkFlN3p6eHRzZDhMYUkzS256WVduUVh0LXJHeGU5NnNfVXRmWWpLMWtwRFVVSFdtREJtNElXdzI5aU42andoQnMtTFRVUTVnMC1LdUlYUU5qTmZsaW94ai1VWkN2VUctQlJsQVdzanNZZWZ4cTZCNnVVNGJRTC1tOG5hdzNWVlNk?oc=5",
-      "published": "2026-07-01T09:01:00Z",
-      "sentiment": "neutral",
       "impact": "low"
     }
   ]
