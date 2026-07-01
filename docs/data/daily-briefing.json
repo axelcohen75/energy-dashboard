@@ -1,47 +1,48 @@
 {
- "generated": "2026-06-30T21:16:01.763345+00:00",
+ "generated": "2026-07-01T15:40:51.392080+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude closed a turbulent June on a mixed note: WTI slipped 1.02% to $70.03/bbl while Brent edged up 0.30% to $73.37, though both contracts are nursing losses of roughly 20% on the month \u2014 the steepest monthly sell-off in recent memory. RBOB gasoline was the session's standout laggard, cratering 5.17%. The bearish macro backdrop is dominated by Morgan Stanley cutting its Brent forecast to $75/bbl, citing an expected acceleration of supply as Hormuz flows normalise, while the EIA reported U.S. crude output hitting a record 13.934 mb/d. Partially offsetting that, the API logged a 6.072 mb/d inventory draw and Ukraine's drone campaign against Russian refineries deepened, with Putin publicly acknowledging domestic fuel shortages for the first time. A contrarian piece today argued that an Iranian supply crunch could paradoxically push prices below $40, complicating the near-term outlook.",
+   "summary": "Crude closed out Q2 with a brutal session and an even grimmer quarterly scorecard \u2014 Brent -24.91% and WTI -25.98% on the month, the steepest quarterly decline since 2020. Today's 1d losses of 2.19% and 1.84% respectively extend the bleeding. The dominant macro driver remains optimism around a Hormuz/Iran peace deal, which has repriced a substantial geopolitical risk premium out of the market. A contrarian note worth flagging: one analysis argues an Iranian supply crunch could paradoxically push prices below $40, not above it. Bullish offsets are limited: the EIA reported a 3.8 mb draw for the week ending June 26, and Ukrainian drone strikes on two Russian refineries prompted Putin to acknowledge domestic fuel problems. India set a record 5 mb/d import pace in June, absorbing Hormuz-disrupted flows. RBOB and heating oil outperformed crude on the week, up modestly.",
    "drivers": [
-    "Record U.S. crude production at 13.934 mb/d and Morgan Stanley's $75/bbl Brent forecast cut reinforce oversupply narrative after a 20% monthly price collapse",
-    "Strait of Hormuz tension persists \u2014 renewed U.S.-Iran strikes keep summer volatility elevated even as flows partially resume, with options markets pricing no OPEC production increase",
-    "Ukraine drone strikes ignite multiple Russian refineries; Putin admits domestic fuel shortages, injecting a geopolitical supply-disruption premium into an otherwise bearish tape"
+    "Iran peace-deal optimism has stripped a large geopolitical premium from Brent and WTI, driving the steepest quarterly selloff since 2020",
+    "EIA reported a 3.8 mb crude inventory draw for the week ending June 26, providing limited near-term support",
+    "Ukrainian drone strikes hit two Russian refineries; Putin admitted fuel supply problems, but market impact muted relative to macro bearish sentiment"
    ],
    "headlineCount": 12,
    "sources": [
     "DD News",
     "International Business Times UK",
-    "MSN",
-    "Mathrubhumi English",
-    "The Sunday Guardian"
+    "RBC-Ukraine",
+    "The Sunday Guardian",
+    "financialexpress.com"
    ]
   },
   "gas": {
-   "summary": "Natural gas firmed on both sides of the Atlantic on the final day of June. Henry Hub gained 2.39% to $3.257/MMBtu, extending a 3.50% weekly advance, while TTF rose 2.61% to \u20ac43.675/MWh, also up nearly 4% on the week. The positive session comes despite both benchmarks sitting in the red on a monthly basis. The primary headline catalyst is Shell's long-term demand outlook projecting a 65% surge in global LNG demand by 2050, led by South and Southeast Asia \u2014 Thailand's state-owned PTT is already in early-stage talks to invest directly in U.S. LNG export projects to lock in long-term supply. Hormuz tensions remain a secondary watch item given the strait's importance to LNG transit, though flows have continued so far.",
+   "summary": "Henry Hub slipped 1.62% on the day to $3.221/MMBtu but remains marginally positive on the month (+1.35%), suggesting steady underlying demand. TTF shed 0.68% to \u20ac43.15/MWh but is up 5.56% on the week, reflecting lingering European supply anxiety even as LNG flows through the Strait of Hormuz reportedly continued uninterrupted despite regional tensions. The EU's formal ruling-out of any Russian gas return reinforces the structural bid under European prices. On the demand side, the IEA flagged $50 billion in planned U.S. coal and gas power investment this year as electricity demand surges, underpinning longer-dated gas consumption. JERA's creation of a standalone LNG trading subsidiary signals Japanese buyers are institutionalising supply security. News flow for domestic U.S. gas fundamentals is thin today beyond the power-sector demand angle.",
    "drivers": [
-    "Shell projects 65% global LNG demand growth by 2050, anchored by Asian appetite, supporting longer-dated sentiment",
-    "Thailand's PTT in talks to invest in U.S. LNG export projects, reflecting buyers' urgency to secure supply amid tightening long-term availability",
-    "Hormuz flows continuing despite geopolitical stress, limiting acute supply-disruption premium, but remaining a live tail risk for the sector"
+    "EU formally rules out a return of Russian gas, maintaining a structural floor under TTF despite the monthly pullback",
+    "LNG flows through the Strait of Hormuz continued despite escalating Iran-related tensions, capping the upside spike risk",
+    "IEA estimates $50 billion in U.S. coal and gas power investment in 2026, supporting the medium-term demand outlook for natural gas"
    ],
-   "headlineCount": 3,
+   "headlineCount": 6,
    "sources": [
-    "Devdiscourse"
+    "Devdiscourse",
+    "RBC-Ukraine",
+    "financialexpress.com"
    ]
   },
   "power": {
-   "summary": "EU carbon allowances (EUA) added 1.35% to $75.865/EUA, recovering modestly after a flat week and building on a marginal 1.46% monthly gain \u2014 a notable contrast to the sharp sell-offs in oil. The session lacked dedicated power-sector headlines, so the driver set is thin. Geopolitically, Iran's $6 billion asset release from Qatar and the partial reopening of the Strait of Hormuz are reshaping Gulf energy dynamics in ways that could reduce LNG supply-risk premia, indirectly weighing on gas-linked power costs. The UK announced nearly 300 new sanctions targeting Russia's Transneft, adding further stress to Russian energy export infrastructure. China's latest five-year plan confirms continued parallel investment in both coal and solar/wind, signalling no near-term reduction in Chinese carbon intensity.",
+   "summary": "EU carbon EUAs edged down 0.60% to $75.41, broadly range-bound on the month (+0.61%), as lower TTF gas prices reduce marginal fuel-switching incentives and keep near-term abatement pressure subdued. The key structural story is bifurcating demand: Germany reported a record 58% renewable share of electricity consumption in H1 2026, up from 55.8% a year earlier, pointing to accelerating displacement of carbon-intensive generation in Europe. Simultaneously, the IEA's $50 billion U.S. coal-and-gas power capex figure underscores that fossil-fuel power investment is surging where renewables capacity has yet to catch up with AI-driven load growth \u2014 a theme reinforced by a separate commentary on the electricity intensity of the AI infrastructure buildout. KKR and SK's launch of South Korea's largest renewable platform adds to the global capacity build narrative. European industry remains divided on the upcoming ETS overhaul, creating near-term policy uncertainty for carbon pricing.",
    "drivers": [
-    "EUA prices hold above $75 with modest daily and monthly gains, suggesting carbon market participants are not yet pricing in a sharp demand destruction scenario despite the oil rout",
-    "UK sanctions on Transneft and ongoing Russian refinery disruptions tighten European energy supply chains, providing indirect floor support for continental gas and power prices",
-    "China's five-year plan confirms dual coal-and-renewables expansion strategy, limiting expectations of a near-term structural reduction in global carbon emissions"
+    "Germany hit a record 58% renewable electricity share in H1 2026, structurally reducing carbon exposure in the EU power stack",
+    "IEA-cited $50 billion U.S. fossil power investment and AI-driven electricity demand growth highlight a global supply-demand tightness narrative that supports longer-term gas and carbon prices",
+    "EU ETS overhaul uncertainty is generating industry splits, introducing near-term headline risk for EUA price direction"
    ],
-   "headlineCount": 8,
+   "headlineCount": 10,
    "sources": [
     "DD News",
     "Defence Security Asia",
-    "France 24",
     "The Sunday Guardian"
    ]
   }
