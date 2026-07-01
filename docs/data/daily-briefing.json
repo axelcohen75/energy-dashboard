@@ -1,48 +1,49 @@
 {
- "generated": "2026-07-01T15:40:51.392080+00:00",
+ "generated": "2026-07-01T21:25:21.817774+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude closed out Q2 with a brutal session and an even grimmer quarterly scorecard \u2014 Brent -24.91% and WTI -25.98% on the month, the steepest quarterly decline since 2020. Today's 1d losses of 2.19% and 1.84% respectively extend the bleeding. The dominant macro driver remains optimism around a Hormuz/Iran peace deal, which has repriced a substantial geopolitical risk premium out of the market. A contrarian note worth flagging: one analysis argues an Iranian supply crunch could paradoxically push prices below $40, not above it. Bullish offsets are limited: the EIA reported a 3.8 mb draw for the week ending June 26, and Ukrainian drone strikes on two Russian refineries prompted Putin to acknowledge domestic fuel problems. India set a record 5 mb/d import pace in June, absorbing Hormuz-disrupted flows. RBOB and heating oil outperformed crude on the week, up modestly.",
+   "summary": "Crude sold off hard on Tuesday, with WTI dropping 2.03% to $68.09/bbl and Brent off 2.44% to $71.14/bbl, extending a brutal month that has erased more than 25% from both benchmarks. The dominant macro driver is the US decision to temporarily ease Russian oil sanctions \u2014 reportedly to tame a price surge \u2014 which rattled European allies and injected fresh supply-side relief into the market. That move overshadowed what would normally be bullish data: the EIA reported a 3.8-million-barrel draw in US crude inventories for the week ending June 26. On the geopolitical side, Ukrainian drone strikes on two major Russian refineries forced Moscow to begin importing refined gasoline from India by sea, with Putin publicly acknowledging a 'difficult period' for domestic fuel supply. Markets appear to be pricing the sanctions easing as the dominant signal, with options markets assigning a 77% probability of an OPEC production decrease at the next meeting.",
    "drivers": [
-    "Iran peace-deal optimism has stripped a large geopolitical premium from Brent and WTI, driving the steepest quarterly selloff since 2020",
-    "EIA reported a 3.8 mb crude inventory draw for the week ending June 26, providing limited near-term support",
-    "Ukrainian drone strikes hit two Russian refineries; Putin admitted fuel supply problems, but market impact muted relative to macro bearish sentiment"
+    "US temporarily eases Russian oil sanctions, overriding bullish inventory and geopolitical risk signals and pressuring prices lower",
+    "EIA reports a 3.8-million-barrel US crude inventory draw for w/e June 26, providing partial support that was insufficient to offset macro bearish flow",
+    "Ukrainian drone strikes ignite major Russian refineries; Russia begins importing gasoline from India, with Putin admitting domestic fuel shortages"
    ],
    "headlineCount": 12,
    "sources": [
+    "CityNews Winnipeg",
     "DD News",
+    "EnergyNow.com",
     "International Business Times UK",
-    "RBC-Ukraine",
-    "The Sunday Guardian",
-    "financialexpress.com"
+    "Middle East Monitor",
+    "Reuters"
    ]
   },
   "gas": {
-   "summary": "Henry Hub slipped 1.62% on the day to $3.221/MMBtu but remains marginally positive on the month (+1.35%), suggesting steady underlying demand. TTF shed 0.68% to \u20ac43.15/MWh but is up 5.56% on the week, reflecting lingering European supply anxiety even as LNG flows through the Strait of Hormuz reportedly continued uninterrupted despite regional tensions. The EU's formal ruling-out of any Russian gas return reinforces the structural bid under European prices. On the demand side, the IEA flagged $50 billion in planned U.S. coal and gas power investment this year as electricity demand surges, underpinning longer-dated gas consumption. JERA's creation of a standalone LNG trading subsidiary signals Japanese buyers are institutionalising supply security. News flow for domestic U.S. gas fundamentals is thin today beyond the power-sector demand angle.",
+   "summary": "Henry Hub slipped 1.95% on the day to $3.211/MMBtu, though the monthly picture remains modestly positive at +1.01%. TTF edged down 0.68% to \u20ac43.15/MWh but is up 5.56% on the week, suggesting European gas markets remain better supported than US benchmarks. News flow for the sector is thinner than oil today. JERA, Japan's largest LNG buyer, announced the creation of a standalone trading subsidiary to manage LNG, upstream, and low-carbon fuel businesses \u2014 a structural development that signals continued institutional investment in the global LNG supply chain. Saudi Aramco and Algeria cut July LPG contract prices amid swelling global supply, applying modest bearish pressure to gas-adjacent markets. Middle East producers have continued LNG loadings despite reported ship attacks in the region.",
    "drivers": [
-    "EU formally rules out a return of Russian gas, maintaining a structural floor under TTF despite the monthly pullback",
-    "LNG flows through the Strait of Hormuz continued despite escalating Iran-related tensions, capping the upside spike risk",
-    "IEA estimates $50 billion in U.S. coal and gas power investment in 2026, supporting the medium-term demand outlook for natural gas"
+    "Henry Hub falls nearly 2% on the day; TTF holds weekly gains of over 5%, reflecting divergent US vs. European gas market dynamics",
+    "JERA creates a standalone LNG and low-carbon fuels trading arm, underscoring long-term institutional commitment to global LNG markets",
+    "Saudi Aramco and Algeria slash July LPG contract prices as global supply increases, adding bearish pressure to gas-adjacent commodities"
    ],
-   "headlineCount": 6,
+   "headlineCount": 7,
    "sources": [
-    "Devdiscourse",
-    "RBC-Ukraine",
+    "Reuters",
     "financialexpress.com"
    ]
   },
   "power": {
-   "summary": "EU carbon EUAs edged down 0.60% to $75.41, broadly range-bound on the month (+0.61%), as lower TTF gas prices reduce marginal fuel-switching incentives and keep near-term abatement pressure subdued. The key structural story is bifurcating demand: Germany reported a record 58% renewable share of electricity consumption in H1 2026, up from 55.8% a year earlier, pointing to accelerating displacement of carbon-intensive generation in Europe. Simultaneously, the IEA's $50 billion U.S. coal-and-gas power capex figure underscores that fossil-fuel power investment is surging where renewables capacity has yet to catch up with AI-driven load growth \u2014 a theme reinforced by a separate commentary on the electricity intensity of the AI infrastructure buildout. KKR and SK's launch of South Korea's largest renewable platform adds to the global capacity build narrative. European industry remains divided on the upcoming ETS overhaul, creating near-term policy uncertainty for carbon pricing.",
+   "summary": "EU carbon EUAs dipped 0.67% to $75.36/EUA and are off 1.43% on the week, though the monthly trend remains marginally positive at +0.54%. The headline structural story is Germany recording a record 58% renewable share of electricity consumption in H1 2026, up from 55.8% in the same period last year \u2014 a milestone that carries long-run bearish implications for carbon demand in the power sector. European industry is split over the upcoming ETS overhaul, with companies voicing divergent concerns about the scheme's revamp. On the investment side, KKR agreed to acquire EDF Power Solutions North America for $4.2 billion, described as the largest single renewable energy investment the firm has ever made. Europe's nuclear ambitions are also drawing attention, with a uranium exploration firm in northern Italy reportedly planning a London listing to capitalise on renewed interest in nuclear power.",
    "drivers": [
-    "Germany hit a record 58% renewable electricity share in H1 2026, structurally reducing carbon exposure in the EU power stack",
-    "IEA-cited $50 billion U.S. fossil power investment and AI-driven electricity demand growth highlight a global supply-demand tightness narrative that supports longer-term gas and carbon prices",
-    "EU ETS overhaul uncertainty is generating industry splits, introducing near-term headline risk for EUA price direction"
+    "Germany hits a record 58% renewable share of electricity consumption in H1 2026, structurally bearish for long-run carbon demand in the power sector",
+    "KKR acquires EDF Power Solutions North America for $4.2 billion in its largest-ever clean energy deal, signalling strong private capital appetite for renewables",
+    "EU ETS overhaul debate intensifies as European industry voices split concerns, adding regulatory uncertainty to the carbon market outlook"
    ],
-   "headlineCount": 10,
+   "headlineCount": 11,
    "sources": [
     "DD News",
     "Defence Security Asia",
+    "Reuters",
     "The Sunday Guardian"
    ]
   }
