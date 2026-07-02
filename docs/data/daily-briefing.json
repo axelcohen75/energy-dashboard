@@ -1,47 +1,47 @@
 {
- "generated": "2026-07-02T15:13:06.091473+00:00",
+ "generated": "2026-07-02T20:18:47.244486+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude prices extended their brutal slide on July 2, with WTI settling at $67.75/bbl (-1.24% on the day, -5.83% on the week, and a staggering -27.76% on the month) as supply-side relief overwhelmed lingering geopolitical noise. Saudi Arabia rushed roughly 10 million barrels through the reopened Strait of Hormuz via Ras Tanura, while Chinese teapot refiners opportunistically snapped up discounted Middle Eastern spot cargoes. Iran continued to complicate the picture: Tehran is demanding approved routes through the Strait under threat of a 'forceful response,' and unsold Iranian barrels are accumulating in floating storage as most buyers \u2014 except China \u2014 shy away from sanctions exposure. A temporary US easing of Russian oil sanctions, aimed at taming earlier price spikes, drew European objections but added to the bearish supply narrative. CME OPEC Watch options now price a further OPEC cut at 77% probability, reflecting market concern that the group will be forced to defend prices.",
+   "summary": "Crude markets are caught in a tug-of-war between supply relief and renewed Hormuz risk. WTI held near $68.47 (-0.17%) and Brent was effectively flat at $71.57 after a brutal month that has stripped roughly 25-27% from both benchmarks. The dominant narrative today: Iran simultaneously issued warnings to tankers in the Strait of Hormuz threatening a 'forceful response' to unapproved routes while Doha talks continue, underscoring that the passage remains contested. A temporary U.S. easing of Russian oil sanctions \u2014 reported to tame the prior price surge \u2014 riled European allies but provided some supply-side comfort. Options markets assign a 77% probability of an OPEC production decrease at the next meeting, reflecting producer unease at current price levels. RBOB gasoline shed 0.89% and heating oil fell 1.05% on the session, consistent with the broader demand-uncertainty overhang.",
    "drivers": [
-    "Saudi exports surging through reopened Strait of Hormuz flood the market with supply, accelerating the one-month -28% collapse in WTI",
-    "US temporary easing of Russian oil sanctions adds incremental supply and riles European allies, compounding bearish sentiment",
-    "Iran-related risk remains two-sided: floating storage of unsold barrels builds bearishly, but Tehran's 'forceful response' threat to tankers injects a residual geopolitical floor"
+    "Iran tightening grip on Strait of Hormuz tanker routing, threatening 'forceful response' \u2014 keeping geopolitical risk premium alive despite partial reopening narrative",
+    "U.S. temporary easing of Russian oil sanctions announced to counter prior price surge, adding supply relief but straining trans-Atlantic relations",
+    "CME options pricing a 77% chance of OPEC output cut at next meeting, signalling producer pain at sub-$70 WTI after a 27% monthly collapse"
    ],
    "headlineCount": 12,
    "sources": [
     "DD News",
+    "EnergyNow",
     "EnergyNow.com",
     "Middle East Monitor",
-    "The Tribune-Democrat",
-    "financialexpress.com"
+    "Reuters",
+    "The Tribune-Democrat"
    ]
   },
   "gas": {
-   "summary": "Henry Hub slipped to $3.172/MMBtu (-1.49% on the day, -5.12% on the week) as domestic fundamentals remained soft, keeping the one-month change essentially flat at +0.16%. In contrast, European TTF surged to \u20ac43.995/MWh (+2.84% on the day, +8.89% on the week), driven by supply-security anxiety. Ukraine struck a Russian gas plant and Zelensky vowed further attacks; separately, Ukrainian drone strikes have triggered a severe fuel shortage inside Russia whose ripple effects are already reaching Central Asian importers \u2014 Kyrgyzstan, which sources over 90% of its gasoline from Russia, is scrambling for alternative supply. LNG flows through the Strait of Hormuz have continued despite tensions, providing some offset, but the European market is clearly pricing escalating Russian supply risk more aggressively than the US domestic market.",
+   "summary": "European gas surged, with TTF gaining 3.78% on the day to \u20ac44.40/MWh and up nearly 10% on the week, as Ukrainian drone strikes on Russian gas infrastructure continued to rattle supply confidence \u2014 Zelensky explicitly vowed further attacks. The ripple effect is now visible in Central Asia: Kyrgyzstan, which sources over 90% of its gasoline from Russia, is scrambling for backup supplies as Russian fuel shortages deepen. Henry Hub was essentially unchanged at $3.217/MMBtu (-0.09%), reflecting a U.S. market insulated from the European supply shock. The TTF-Henry Hub spread widening is the central gas trade dynamic today, driven by war-related infrastructure risk rather than demand fundamentals.",
    "drivers": [
-    "Ukrainian drone strikes on Russian gas infrastructure push TTF sharply higher on European supply-security concerns",
-    "Russian fuel crisis spills into Central Asia, with Kyrgyzstan seeking emergency alternatives as seasonal demand rises",
-    "Henry Hub softness persists; US domestic market decoupled from European tightness with one-month change near flat"
+    "Ukrainian strikes on Russian gas plant infrastructure, with Zelensky vowing escalation, fuelling TTF's near-10% weekly rally",
+    "Russian fuel crisis spreading to Central Asia \u2014 Kyrgyzstan scrambling for alternatives \u2014 illustrating downstream supply disruption beyond Europe",
+    "Henry Hub near-flat on the session, with the growing TTF-HH spread reflecting divergent geopolitical exposure between European and U.S. gas markets"
    ],
-   "headlineCount": 9,
+   "headlineCount": 8,
    "sources": [
-    "Inspenet",
     "MSN",
     "financialexpress.com"
    ]
   },
   "power": {
-   "summary": "EU carbon EUAs held broadly steady at $75.55/EUA (+0.26% on the day), with the one-month trend modestly positive at +1.53%, even as TTF's sharp weekly rally of +8.89% raises generation-cost pressure on gas-fired power. The key policy headline was the EU conceding to Big Tech pressure and dropping its ten-year renewables rule for data centers, a move that could slow the pace of clean-energy offtake contracting. Offsetting that, Wall Street's pivot toward solar-plus-storage and an AI-driven record surge in battery demand signal robust long-run investment appetite for low-carbon capacity. Japanese banks committing $496 million to India's grid expansion underscores growing cross-border infrastructure financing. US-Iran Doha talks in Qatar focused on the Strait of Hormuz remain a background risk for LNG and power fuel supply chains.",
+   "summary": "Power and carbon newsflow is relatively thin today. EU carbon EUAs dipped marginally to $75.14 (-0.29% on the day, -1.60% on the week) despite TTF's sharp 3.78% daily rise \u2014 a decoupling that may reflect softer near-term power demand expectations or carbon-specific positioning. On the structural side, Japanese banks committed up to $496 million to India's grid transmission infrastructure under an Asian financing framework, a notable long-cycle investment signal for emerging-market power buildout. Separately, the U.S. was reported to lead all nations with 28 SMR siting announcements as of 2026, underscoring the accelerating nuclear pipeline. Iran-related Strait of Hormuz tensions and ongoing US-Iran Doha talks remain a background risk for fuel-fired generation cost assumptions globally.",
    "drivers": [
-    "EU drops ten-year renewables obligation for data centers under Big Tech lobbying, potentially softening near-term clean power demand signals",
-    "TTF's +8.89% weekly rally increases gas-fired generation costs and could support carbon prices if coal-to-gas switching reverses",
-    "AI-driven battery demand surge and Wall Street shift to solar-plus-storage point to accelerating clean power investment despite policy headwinds"
+    "EU EUAs slightly lower at $75.14 despite a sharp TTF rally, suggesting near-term carbon-power demand decoupling worth monitoring",
+    "Japanese banks commit $496 million to India grid expansion \u2014 a significant infrastructure investment signal under a new Asian financing framework",
+    "U.S. leads globally with 28 SMR project siting announcements as of 2026, highlighting accelerating long-term decarbonised baseload capacity pipeline"
    ],
-   "headlineCount": 8,
+   "headlineCount": 4,
    "sources": [
-    "EnergyNow.com",
+    "Reuters",
     "The Sunday Guardian"
    ]
   }
