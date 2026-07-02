@@ -1,49 +1,47 @@
 {
- "generated": "2026-07-01T21:25:21.817774+00:00",
+ "generated": "2026-07-02T15:13:06.091473+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude sold off hard on Tuesday, with WTI dropping 2.03% to $68.09/bbl and Brent off 2.44% to $71.14/bbl, extending a brutal month that has erased more than 25% from both benchmarks. The dominant macro driver is the US decision to temporarily ease Russian oil sanctions \u2014 reportedly to tame a price surge \u2014 which rattled European allies and injected fresh supply-side relief into the market. That move overshadowed what would normally be bullish data: the EIA reported a 3.8-million-barrel draw in US crude inventories for the week ending June 26. On the geopolitical side, Ukrainian drone strikes on two major Russian refineries forced Moscow to begin importing refined gasoline from India by sea, with Putin publicly acknowledging a 'difficult period' for domestic fuel supply. Markets appear to be pricing the sanctions easing as the dominant signal, with options markets assigning a 77% probability of an OPEC production decrease at the next meeting.",
+   "summary": "Crude prices extended their brutal slide on July 2, with WTI settling at $67.75/bbl (-1.24% on the day, -5.83% on the week, and a staggering -27.76% on the month) as supply-side relief overwhelmed lingering geopolitical noise. Saudi Arabia rushed roughly 10 million barrels through the reopened Strait of Hormuz via Ras Tanura, while Chinese teapot refiners opportunistically snapped up discounted Middle Eastern spot cargoes. Iran continued to complicate the picture: Tehran is demanding approved routes through the Strait under threat of a 'forceful response,' and unsold Iranian barrels are accumulating in floating storage as most buyers \u2014 except China \u2014 shy away from sanctions exposure. A temporary US easing of Russian oil sanctions, aimed at taming earlier price spikes, drew European objections but added to the bearish supply narrative. CME OPEC Watch options now price a further OPEC cut at 77% probability, reflecting market concern that the group will be forced to defend prices.",
    "drivers": [
-    "US temporarily eases Russian oil sanctions, overriding bullish inventory and geopolitical risk signals and pressuring prices lower",
-    "EIA reports a 3.8-million-barrel US crude inventory draw for w/e June 26, providing partial support that was insufficient to offset macro bearish flow",
-    "Ukrainian drone strikes ignite major Russian refineries; Russia begins importing gasoline from India, with Putin admitting domestic fuel shortages"
+    "Saudi exports surging through reopened Strait of Hormuz flood the market with supply, accelerating the one-month -28% collapse in WTI",
+    "US temporary easing of Russian oil sanctions adds incremental supply and riles European allies, compounding bearish sentiment",
+    "Iran-related risk remains two-sided: floating storage of unsold barrels builds bearishly, but Tehran's 'forceful response' threat to tankers injects a residual geopolitical floor"
    ],
    "headlineCount": 12,
    "sources": [
-    "CityNews Winnipeg",
     "DD News",
     "EnergyNow.com",
-    "International Business Times UK",
     "Middle East Monitor",
-    "Reuters"
+    "The Tribune-Democrat",
+    "financialexpress.com"
    ]
   },
   "gas": {
-   "summary": "Henry Hub slipped 1.95% on the day to $3.211/MMBtu, though the monthly picture remains modestly positive at +1.01%. TTF edged down 0.68% to \u20ac43.15/MWh but is up 5.56% on the week, suggesting European gas markets remain better supported than US benchmarks. News flow for the sector is thinner than oil today. JERA, Japan's largest LNG buyer, announced the creation of a standalone trading subsidiary to manage LNG, upstream, and low-carbon fuel businesses \u2014 a structural development that signals continued institutional investment in the global LNG supply chain. Saudi Aramco and Algeria cut July LPG contract prices amid swelling global supply, applying modest bearish pressure to gas-adjacent markets. Middle East producers have continued LNG loadings despite reported ship attacks in the region.",
+   "summary": "Henry Hub slipped to $3.172/MMBtu (-1.49% on the day, -5.12% on the week) as domestic fundamentals remained soft, keeping the one-month change essentially flat at +0.16%. In contrast, European TTF surged to \u20ac43.995/MWh (+2.84% on the day, +8.89% on the week), driven by supply-security anxiety. Ukraine struck a Russian gas plant and Zelensky vowed further attacks; separately, Ukrainian drone strikes have triggered a severe fuel shortage inside Russia whose ripple effects are already reaching Central Asian importers \u2014 Kyrgyzstan, which sources over 90% of its gasoline from Russia, is scrambling for alternative supply. LNG flows through the Strait of Hormuz have continued despite tensions, providing some offset, but the European market is clearly pricing escalating Russian supply risk more aggressively than the US domestic market.",
    "drivers": [
-    "Henry Hub falls nearly 2% on the day; TTF holds weekly gains of over 5%, reflecting divergent US vs. European gas market dynamics",
-    "JERA creates a standalone LNG and low-carbon fuels trading arm, underscoring long-term institutional commitment to global LNG markets",
-    "Saudi Aramco and Algeria slash July LPG contract prices as global supply increases, adding bearish pressure to gas-adjacent commodities"
+    "Ukrainian drone strikes on Russian gas infrastructure push TTF sharply higher on European supply-security concerns",
+    "Russian fuel crisis spills into Central Asia, with Kyrgyzstan seeking emergency alternatives as seasonal demand rises",
+    "Henry Hub softness persists; US domestic market decoupled from European tightness with one-month change near flat"
    ],
-   "headlineCount": 7,
+   "headlineCount": 9,
    "sources": [
-    "Reuters",
+    "Inspenet",
+    "MSN",
     "financialexpress.com"
    ]
   },
   "power": {
-   "summary": "EU carbon EUAs dipped 0.67% to $75.36/EUA and are off 1.43% on the week, though the monthly trend remains marginally positive at +0.54%. The headline structural story is Germany recording a record 58% renewable share of electricity consumption in H1 2026, up from 55.8% in the same period last year \u2014 a milestone that carries long-run bearish implications for carbon demand in the power sector. European industry is split over the upcoming ETS overhaul, with companies voicing divergent concerns about the scheme's revamp. On the investment side, KKR agreed to acquire EDF Power Solutions North America for $4.2 billion, described as the largest single renewable energy investment the firm has ever made. Europe's nuclear ambitions are also drawing attention, with a uranium exploration firm in northern Italy reportedly planning a London listing to capitalise on renewed interest in nuclear power.",
+   "summary": "EU carbon EUAs held broadly steady at $75.55/EUA (+0.26% on the day), with the one-month trend modestly positive at +1.53%, even as TTF's sharp weekly rally of +8.89% raises generation-cost pressure on gas-fired power. The key policy headline was the EU conceding to Big Tech pressure and dropping its ten-year renewables rule for data centers, a move that could slow the pace of clean-energy offtake contracting. Offsetting that, Wall Street's pivot toward solar-plus-storage and an AI-driven record surge in battery demand signal robust long-run investment appetite for low-carbon capacity. Japanese banks committing $496 million to India's grid expansion underscores growing cross-border infrastructure financing. US-Iran Doha talks in Qatar focused on the Strait of Hormuz remain a background risk for LNG and power fuel supply chains.",
    "drivers": [
-    "Germany hits a record 58% renewable share of electricity consumption in H1 2026, structurally bearish for long-run carbon demand in the power sector",
-    "KKR acquires EDF Power Solutions North America for $4.2 billion in its largest-ever clean energy deal, signalling strong private capital appetite for renewables",
-    "EU ETS overhaul debate intensifies as European industry voices split concerns, adding regulatory uncertainty to the carbon market outlook"
+    "EU drops ten-year renewables obligation for data centers under Big Tech lobbying, potentially softening near-term clean power demand signals",
+    "TTF's +8.89% weekly rally increases gas-fired generation costs and could support carbon prices if coal-to-gas switching reverses",
+    "AI-driven battery demand surge and Wall Street shift to solar-plus-storage point to accelerating clean power investment despite policy headwinds"
    ],
-   "headlineCount": 11,
+   "headlineCount": 8,
    "sources": [
-    "DD News",
-    "Defence Security Asia",
-    "Reuters",
+    "EnergyNow.com",
     "The Sunday Guardian"
    ]
   }
