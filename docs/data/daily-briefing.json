@@ -1,48 +1,50 @@
 {
- "generated": "2026-07-02T20:18:47.244486+00:00",
+ "generated": "2026-07-03T16:54:39.084257+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets are caught in a tug-of-war between supply relief and renewed Hormuz risk. WTI held near $68.47 (-0.17%) and Brent was effectively flat at $71.57 after a brutal month that has stripped roughly 25-27% from both benchmarks. The dominant narrative today: Iran simultaneously issued warnings to tankers in the Strait of Hormuz threatening a 'forceful response' to unapproved routes while Doha talks continue, underscoring that the passage remains contested. A temporary U.S. easing of Russian oil sanctions \u2014 reported to tame the prior price surge \u2014 riled European allies but provided some supply-side comfort. Options markets assign a 77% probability of an OPEC production decrease at the next meeting, reflecting producer unease at current price levels. RBOB gasoline shed 0.89% and heating oil fell 1.05% on the session, consistent with the broader demand-uncertainty overhang.",
+   "summary": "Crude markets are effectively flat on the day \u2014 WTI holding at $68.60 (-0.13%) and Brent edging marginally higher to $71.93 (+0.18%) \u2014 but the one-month collapse of roughly 27-28% tells the real story. The dominant macro narrative is a gradually normalizing Strait of Hormuz: Citi flagged today that Brent could slide to $60 if Hormuz traffic fully resumes, and market chatter around US-Iran Doha talks supports that directional call. Offsetting slightly is geopolitical noise \u2014 Iran's stated intention to maintain its blockade and Trump's escalation threats \u2014 but traders appear increasingly numb to the headlines. Russia's refining crisis, deepened by Ukraine's strike on the Ufa refinery, has paradoxically turned Moscow into a fuel importer, while Washington has reportedly eased Russian sanctions on a temporary basis to cap price volatility. RBOB gasoline's sharp -5% single-day drop stands out and warrants monitoring.",
    "drivers": [
-    "Iran tightening grip on Strait of Hormuz tanker routing, threatening 'forceful response' \u2014 keeping geopolitical risk premium alive despite partial reopening narrative",
-    "U.S. temporary easing of Russian oil sanctions announced to counter prior price surge, adding supply relief but straining trans-Atlantic relations",
-    "CME options pricing a 77% chance of OPEC output cut at next meeting, signalling producer pain at sub-$70 WTI after a 27% monthly collapse"
+    "Hormuz normalization expectations weighing on flat-to-soft crude; Citi targets $60 Brent by year-end",
+    "US temporarily easing Russian oil sanctions to dampen price pressure, irking European allies",
+    "Ukraine strikes on Russian refinery infrastructure accelerating Russia's domestic fuel shortage and import dependency"
    ],
    "headlineCount": 12,
    "sources": [
-    "DD News",
     "EnergyNow",
     "EnergyNow.com",
-    "Middle East Monitor",
-    "Reuters",
-    "The Tribune-Democrat"
+    "Kyiv Post",
+    "TVP World",
+    "facebook.com",
+    "financialexpress.com"
    ]
   },
   "gas": {
-   "summary": "European gas surged, with TTF gaining 3.78% on the day to \u20ac44.40/MWh and up nearly 10% on the week, as Ukrainian drone strikes on Russian gas infrastructure continued to rattle supply confidence \u2014 Zelensky explicitly vowed further attacks. The ripple effect is now visible in Central Asia: Kyrgyzstan, which sources over 90% of its gasoline from Russia, is scrambling for backup supplies as Russian fuel shortages deepen. Henry Hub was essentially unchanged at $3.217/MMBtu (-0.09%), reflecting a U.S. market insulated from the European supply shock. The TTF-Henry Hub spread widening is the central gas trade dynamic today, driven by war-related infrastructure risk rather than demand fundamentals.",
+   "summary": "Henry Hub firmed modestly to $3.244/MMBtu (+1.47% on the day), while TTF added 0.53% to \u20ac44.25/MWh, though TTF's 8.5% weekly gain signals tighter European sentiment. News flow supporting gas is thin today: the most relevant headline is Japan's 7% drop in LNG imports as utilities switched to cheaper coal, suggesting demand-side softness in Asia that could weigh on spot LNG. On the infrastructure side, Alberta and Ottawa jointly greenlighted a new Pacific-facing pipeline, which may over time improve North American gas export optionality. The DOJ's push for state-level fuel price-gouging enforcement is a political signal but lacks near-term market impact. Overall, today's news flow for natural gas is limited and the modest price moves reflect that absence of a clear catalyst.",
    "drivers": [
-    "Ukrainian strikes on Russian gas plant infrastructure, with Zelensky vowing escalation, fuelling TTF's near-10% weekly rally",
-    "Russian fuel crisis spreading to Central Asia \u2014 Kyrgyzstan scrambling for alternatives \u2014 illustrating downstream supply disruption beyond Europe",
-    "Henry Hub near-flat on the session, with the growing TTF-HH spread reflecting divergent geopolitical exposure between European and U.S. gas markets"
+    "Japan cutting LNG imports by 7% in favor of coal, softening Asian demand",
+    "TTF up 8.5% on the week, suggesting European tightness despite monthly decline of 9.4%",
+    "Canada greenlights new Pacific pipeline, improving longer-term North American export infrastructure optionality"
    ],
-   "headlineCount": 8,
+   "headlineCount": 5,
    "sources": [
-    "MSN",
+    "facebook.com",
     "financialexpress.com"
    ]
   },
   "power": {
-   "summary": "Power and carbon newsflow is relatively thin today. EU carbon EUAs dipped marginally to $75.14 (-0.29% on the day, -1.60% on the week) despite TTF's sharp 3.78% daily rise \u2014 a decoupling that may reflect softer near-term power demand expectations or carbon-specific positioning. On the structural side, Japanese banks committed up to $496 million to India's grid transmission infrastructure under an Asian financing framework, a notable long-cycle investment signal for emerging-market power buildout. Separately, the U.S. was reported to lead all nations with 28 SMR siting announcements as of 2026, underscoring the accelerating nuclear pipeline. Iran-related Strait of Hormuz tensions and ongoing US-Iran Doha talks remain a background risk for fuel-fired generation cost assumptions globally.",
+   "summary": "The power sector is the sharpest story of the day. PJM, the largest US grid operator, issued a maximum generation alert on July 3 amid an extreme heat wave, and separately, power prices on PJM reportedly tripled \u2014 with data center load cited as a material contributing factor alongside the heat event. EU carbon EUAs continued their recent recovery, rising 1.56% to $76.315 and now up 4.64% on the month, consistent with higher TTF gas prices feeding through to generation cost signals. In Asia, India's coal-fired generation jumped 14% year-on-year in June to 120.20 billion kWh, driven by hotter and drier weather. Geopolitical context \u2014 ongoing US-Iran tensions around Hormuz \u2014 remains a background risk to fuel supply for gas-fired generation, though oil markets appear to be discounting ceasefire progress.",
    "drivers": [
-    "EU EUAs slightly lower at $75.14 despite a sharp TTF rally, suggesting near-term carbon-power demand decoupling worth monitoring",
-    "Japanese banks commit $496 million to India grid expansion \u2014 a significant infrastructure investment signal under a new Asian financing framework",
-    "U.S. leads globally with 28 SMR project siting announcements as of 2026, highlighting accelerating long-term decarbonised baseload capacity pipeline"
+    "PJM near all-time demand records as heat wave and data center load collide, pushing power prices sharply higher",
+    "EU carbon EUAs up 1.56% on the day and +4.64% on the month, supported by elevated TTF gas benchmarks",
+    "India coal-fired generation surging 14% year-on-year in June on hot, dry weather conditions"
    ],
-   "headlineCount": 4,
+   "headlineCount": 9,
    "sources": [
-    "Reuters",
-    "The Sunday Guardian"
+    "Kyiv Post",
+    "TVP World",
+    "The Sunday Guardian",
+    "www.lvivherald.com"
    ]
   }
  }
