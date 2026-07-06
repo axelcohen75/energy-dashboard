@@ -1,47 +1,47 @@
 {
- "generated": "2026-07-06T16:18:44.186074+00:00",
+ "generated": "2026-07-06T21:56:04.175122+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets present a split picture on 6 July: WTI was flat on the day at $68.69/bbl while Brent edged up 0.42% to $72.10, but both contracts remain deeply scarred by a 26-28% monthly collapse. The distillate complex is the standout mover, with RBOB +3.1% and Heating Oil +3.6%, likely reflecting supply-route anxiety. The geopolitical backdrop is intensely bearish on supply risk: Ukraine's Special Forces struck a Russian tanker and the Kerch oil terminal today, while U.S. intelligence reportedly guided earlier drone strikes on Russian refineries. Iran's oil blockade of Gulf neighbours remains in force, Hormuz tanker traffic is recovering only slowly, and Trump is weighing seizure of Iranian crude as leverage over China. The muted crude response suggests the market is discounting near-term supply continuity against the weight of a month-long selloff.",
+   "summary": "Crude edged marginally higher on the day \u2014 WTI +0.13% to $68.78, Brent +0.46% to $72.13 \u2014 but the one-month collapse of roughly 27-28% dominates the picture. The structural bearish driver is clear: the UAE, following its OPEC exit, ramped production above 3.8 mb/d in June, adding supply pressure the market is struggling to absorb. Russian Urals has crashed to ~$41.66/bbl, erasing the war premium accumulated during the Iran conflict. Ukrainian drone strikes on a Crimean tanker and the St. Petersburg oil terminal are keeping a geopolitical floor under prices without materially tightening supply. Iran's ongoing blockade posture and Trump's reported consideration of seizing Iranian oil add headline risk. Refined products outperformed sharply \u2014 Heating Oil +2.34%, RBOB +1.23% \u2014 suggesting some near-term crack spread support.",
    "drivers": [
-    "Ukraine strikes on Russian tanker, Kerch terminal, St Petersburg oil infrastructure raise supply disruption risk on the Russian export corridor",
-    "Iran's Hormuz blockade persists; Gulf neighbour exports remain shut, but Iranian crude continues to flow and Hormuz traffic is slowly recovering",
-    "Sharp monthly price decline (-28% WTI) dominates the tape despite acute geopolitical risk, with distillates outperforming crude on refined-product supply concerns"
+    "UAE post-OPEC exit production surge to 3.8 mb/d adds significant supply, compounding month-long price rout",
+    "Urals crashes to ~$41.66/bbl as Ukraine drone strikes degrade Russian export infrastructure at St. Petersburg and Crimea",
+    "Iran blockade and Trump's threat to seize Iranian cargoes maintain geopolitical risk premium; options market prices 77% probability of further OPEC cuts at next meeting"
    ],
    "headlineCount": 12,
    "sources": [
-    "EnergyNow",
+    "ABC News - Breaking News, Latest News and Videos",
     "EnergyNow.com",
     "International Business Times",
-    "Kyiv Post",
-    "Modern Diplomacy",
+    "National Security Journal",
+    "Readers.id",
     "Sky News"
    ]
   },
   "gas": {
-   "summary": "Henry Hub gained 1.56% to $3.246/MMBtu, extending a modest weekly and monthly recovery, while TTF added 0.53% to \u20ac44.25/MWh, capping a strong 8.5% weekly rally. The Hormuz disruption continues to ripple through LNG markets: Pakistan has purchased its second spot cargo in as many weeks as Persian Gulf LNG supply recovers slowly, and Germany's LNG import share rose to 12% of total gas supply in H1 2026, up from 10% a year earlier, as American LNG fills the gap. A structural narrative is also building: one report argues the era of cheap U.S. natural gas is ending as AI data-centre power demand and LNG export capacity expansion tighten the Henry Hub balance through 2035. On the downside, Russia struck Ukrainian gas infrastructure today in what Upstream Online described as a retaliation attack.",
+   "summary": "Henry Hub edged up 1.53% to $3.245/MMBtu, extending a modest but steady recovery with the one-month gain now nearly 1%. TTF added 0.53% to \u20ac44.25/MWh, though the more significant story is the 8.5% weekly surge in European gas, likely reflecting residual Hormuz/LNG supply anxiety. Tanker traffic through the Strait of Hormuz is described as recovering but still disrupted, with at least six LNG-carrying vessels affected by persistent risks. Russia's retaliatory strikes on Ukrainian gas sites add supply-side concern for European flows. News flow for this sector today is relatively thin beyond these two drivers; the Iran-war renewables-investment narrative is forward-looking rather than an immediate price catalyst.",
    "drivers": [
-    "Hormuz LNG supply disruption keeps Asian spot demand elevated \u2014 Pakistan's repeat spot purchases signal Persian Gulf flows have not normalised",
-    "Germany's rising dependence on U.S. LNG and structural AI/data-centre demand growth support a long-term bullish Henry Hub thesis",
-    "Russia retaliatory strikes on Ukrainian gas infrastructure introduce fresh European supply-security risk alongside ongoing Hormuz constraints"
+    "Hormuz tanker traffic recovering slowly but LNG disruptions persist, supporting TTF's sharp 8.5% weekly gain",
+    "Russia strikes Ukrainian gas infrastructure in retaliation, raising near-term European supply-continuity concerns",
+    "Henry Hub holding a modest positive trend; broader gas news flow today is limited"
    ],
-   "headlineCount": 7,
+   "headlineCount": 4,
    "sources": [
     "Upstream Online"
    ]
   },
   "power": {
-   "summary": "EU Carbon EUAs continued their grind higher, up 1.59% on the day to $77.53/EUA, extending gains of +3.6% on the week and +6.6% on the month \u2014 the strongest trend across the three sectors covered today. TTF's 8.5% weekly rally feeds directly into carbon as higher gas-fired generation costs incentivise fuel switching and lift the carbon price floor. Headline risk is elevated: a drone attack on a UAE nuclear power plant was cited as pushing oil to a two-week high earlier in the week, illustrating how the broader Middle East conflict bleeds into power markets. On the demand side, India's power consumption is forecast to grow 6% annually through 2030, with super El Ni\u00f1o conditions expected to materially boost coal-fired generation over the next 12 months. Domestically, severe U.S. storms left over 620,000 customers without power as of Sunday.",
+   "summary": "EU Carbon (EUA) continued its grind higher, up 1.59% on the day to $77.53/EUA, with a +6.56% one-month gain standing in stark contrast to the crude selloff. A headline noting carbon markets have reached what is described as their most important credibility inflection point in years may be supporting sentiment. On the demand side, India's power consumption is projected to grow ~6% annually through 2030, with a Super El Ni\u00f1o expected to accelerate coal-fired generation over the next 12 months \u2014 a bearish clean-energy signal but bullish for carbon pricing. The UK's estimated \u00a3500bn net-zero bill is flagged as a potential competitiveness risk. North America reportedly drove nearly half of global emissions growth in 2025, per the Energy Institute's 2026 Statistical Review.",
    "drivers": [
-    "EUA prices in a clear uptrend (+6.6% monthly) supported by elevated TTF and the broader energy supply shock lifting fossil-fuel generation costs",
-    "Drone strike on UAE nuclear plant highlights how Middle East conflict poses direct risk to low-carbon power capacity, adding a geopolitical premium",
-    "India's 6% annual demand growth and super El Ni\u00f1o-driven coal demand surge signal a sustained rise in emerging-market power and carbon-intensive generation"
+    "EUA carbon prices up 1.59% on the day and +6.57% on the month, bolstered by reported credibility milestone in carbon markets",
+    "India Super El Ni\u00f1o expected to lift coal-fired power demand materially over next 12 months; India power demand seen growing 6%/yr to 2030",
+    "North America accounted for nearly half of global emissions growth in 2025 per Energy Institute; UK faces $667bn net-zero bill flagged as competitiveness risk"
    ],
-   "headlineCount": 9,
+   "headlineCount": 12,
    "sources": [
     "Anadolu Ajans\u0131",
-    "EnergyNow",
+    "National Security Journal",
     "Sky News",
     "The Sunday Guardian"
    ]
