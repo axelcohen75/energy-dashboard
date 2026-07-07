@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T19:49:41Z",
+  "updated": "2026-07-07T21:20:40Z",
   "physical": [
     {
       "title": "UAE Oil Output Climbs After Leaving OPEC",
@@ -11,12 +11,12 @@
       "impact": "high"
     },
     {
-      "title": "India Resumes Iraqi Oil Imports Despite Hormuz Shipping Risks",
-      "summary": "Indian state refiners are back to buying Iraqi crude that would have to transit the Strait of Hormuz, in a sign that the world\u2019s third-largest crude oil importer seeks to bring supply from the Midd...",
+      "title": "US Crude Oil, Product Inventories Fall Even As Hormuz Traffic Begins to Flow",
+      "summary": "The American Petroleum Institute (API) estimated that crude oil inventories in the United States fell by 399,000 barrels in the week ending July 3. In the week prior, US crude oil inventories fell ...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Resumes-Iraqi-Oil-Imports-Despite-Hormuz-Shipping-Risks.html",
-      "published": "2026-07-07T10:30:00Z",
-      "sentiment": "bullish",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Crude-Oil-Product-Inventories-Fall-Even-As-Hormuz-Traffic-Begins-to-Flow.html",
+      "published": "2026-07-07T20:48:00Z",
+      "sentiment": "bearish",
       "impact": "low"
     },
     {
@@ -47,42 +47,6 @@
       "impact": "low"
     },
     {
-      "title": "Shell Signals Oil and Gas Trading Windfall in Q2 Amid Iran War",
-      "summary": "Shell expects to have booked significantly higher oil and LNG trading results in the second quarter of the year as the Iran war drove extreme volatility in energy commodity markets. Shell expects i...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Shell-Signals-Oil-and-Gas-Trading-Windfall-in-Q2-Amid-Iran-War.html",
-      "published": "2026-07-07T09:30:00Z",
-      "sentiment": "neutral",
-      "impact": "med"
-    },
-    {
-      "title": "Kazakhstan Bets on Iran Port Despite Regional Tensions",
-      "summary": "Despite lingering tension between the United States and Iran, Kazakhstan is planning to build a terminal at the Iranian port of Bandar Abbas to facilitate exports. In comments made before a joint s...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/Kazakhstan-Bets-on-Iran-Port-Despite-Regional-Tensions.html",
-      "published": "2026-07-07T18:00:00Z",
-      "sentiment": "neutral",
-      "impact": "med"
-    },
-    {
-      "title": "Middle East Conflict Clouds LNG Outlook as Global Trade Hits Record High",
-      "summary": "The Middle East conflict has made forecasting LNG market trends more difficult as infrastructure was hit and price volatility has exposed buyers to new challenges, according to the International Ga...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Middle-East-Conflict-Clouds-LNG-Outlook-as-Global-Trade-Hits-Record-High.html",
-      "published": "2026-07-07T11:30:00Z",
-      "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "Drone Strike Shuts Russia's Largest Refinery as Fuel Shortages Worsen",
-      "summary": "Ukraine has landed one of its most consequential blows yet against Russia's energy sector, knocking out the country's largest oil refinery just as Moscow is scrambling to contain a widening fuel cr...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Drone-Strike-Shuts-Russias-Largest-Refinery-as-Fuel-Shortages-Worsen.html",
-      "published": "2026-07-07T17:30:00Z",
-      "sentiment": "bullish",
-      "impact": "high"
-    },
-    {
       "title": "Germany Plans $1.7 Billion Strategic Natural Gas Reserve",
       "summary": "Germany is moving to create a state-owned strategic emergency reserve of natural gas to boost its energy security, the Economy Ministry of Europe\u2019s biggest economy said on Tuesday. Earlier today, R...",
       "source": "",
@@ -110,13 +74,22 @@
       "impact": "med"
     },
     {
-      "title": "Six Key Issues to Watch at NATO\u2019s Ankara Summit",
-      "summary": "NATO leaders are meeting in the Turkish capital, Ankara, for the alliance\u2019s annual summit on July 7-8 in the shadow of the Iran war and American complaints that not all European allies are pulling ...",
+      "title": "Drone Strike Shuts Russia's Largest Refinery as Fuel Shortages Worsen",
+      "summary": "Ukraine has landed one of its most consequential blows yet against Russia's energy sector, knocking out the country's largest oil refinery just as Moscow is scrambling to contain a widening fuel cr...",
       "source": "",
-      "url": "https://oilprice.com/Geopolitics/Europe/Six-Key-Issues-to-Watch-at-NATOs-Ankara-Summit.html",
-      "published": "2026-07-07T15:00:00Z",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Drone-Strike-Shuts-Russias-Largest-Refinery-as-Fuel-Shortages-Worsen.html",
+      "published": "2026-07-07T17:30:00Z",
+      "sentiment": "bullish",
+      "impact": "high"
+    },
+    {
+      "title": "Kazakhstan Bets on Iran Port Despite Regional Tensions",
+      "summary": "Despite lingering tension between the United States and Iran, Kazakhstan is planning to build a terminal at the Iranian port of Bandar Abbas to facilitate exports. In comments made before a joint s...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/Kazakhstan-Bets-on-Iran-Port-Despite-Regional-Tensions.html",
+      "published": "2026-07-07T18:00:00Z",
       "sentiment": "neutral",
-      "impact": "low"
+      "impact": "med"
     },
     {
       "title": "Geopolitical Risk Returns as Drone Strikes Hit Hormuz Shipping",
@@ -135,6 +108,33 @@
       "published": "2026-07-07T17:00:00Z",
       "sentiment": "bullish",
       "impact": "low"
+    },
+    {
+      "title": "Big Oil's Windfall Earnings Threaten to Reignite Trump's Price-Gouging Push",
+      "summary": "Chevron and Exxon are expected to report their best quarter since 2022 this month, as the war that the United States and Israel started against Iran on February 28 drove much tighter oil and gas su...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Big-Oils-Windfall-Earnings-Threaten-to-Reignite-Trumps-Price-Gouging-Push.html",
+      "published": "2026-07-07T20:00:00Z",
+      "sentiment": "bullish",
+      "impact": "high"
+    },
+    {
+      "title": "Six Key Issues to Watch at NATO\u2019s Ankara Summit",
+      "summary": "NATO leaders are meeting in the Turkish capital, Ankara, for the alliance\u2019s annual summit on July 7-8 in the shadow of the Iran war and American complaints that not all European allies are pulling ...",
+      "source": "",
+      "url": "https://oilprice.com/Geopolitics/Europe/Six-Key-Issues-to-Watch-at-NATOs-Ankara-Summit.html",
+      "published": "2026-07-07T15:00:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "Trump's Nuclear Loan Program Won't Fix What's Really Broken",
+      "summary": "Donald Trump is trying to push forward a nuclear power renaissance in the United States as the AI boom presents the country with a major looming energy deficit. The federal government recently anno...",
+      "source": "",
+      "url": "https://oilprice.com/Alternative-Energy/Nuclear-Power/Trumps-Nuclear-Loan-Program-Wont-Fix-Whats-Really-Broken.html",
+      "published": "2026-07-07T21:00:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
     }
   ],
   "geopolitics": [
@@ -146,6 +146,87 @@
       "published": "2026-07-07T02:15:37Z",
       "sentiment": "bearish",
       "impact": "med"
+    },
+    {
+      "title": "Tensions Flare in Strait of Hormuz: US Cuts Iranian Oil Sales",
+      "summary": "Tensions Flare in Strait of Hormuz: US Cuts Iranian Oil Sales Devdiscourse",
+      "source": "Devdiscourse",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOFFPOUN0SG9GY0MzVEJtaW4tUkRiOHA3Q3BXV2IzWENWT0FiTmhYZENScHVhTUx6WFZsdzJXYkpkWVZrNk5NaGpXYnFST19ZeFRYMEt0Tm9vM1VoUUJZVjUxYnRuZ3o4Z05KTFlMSFBBdktzYnF2OWJfcmZGNkgtS3MwUWJpSE9qai1DUGJwZEM2S1duUTJKQ3N4UkFVaTFGSzVDa0hKbXhJZGFVV29BVjRXc0xBTEEwdm1VcUNVU1pFWVRQQ09LZdIByAFBVV95cUxNOFFPOUN0SG9GY0MzVEJtaW4tUkRiOHA3Q3BXV2IzWENWT0FiTmhYZENScHVhTUx6WFZsdzJXYkpkWVZrNk5NaGpXYnFST19ZeFRYMEt0Tm9vM1VoUUJZVjUxYnRuZ3o4Z05KTFlMSFBBdktzYnF2OWJfcmZGNkgtS3MwUWJpSE9qai1DUGJwZEM2S1duUTJKQ3N4UkFVaTFGSzVDa0hKbXhJZGFVV29BVjRXc0xBTEEwdm1VcUNVU1pFWVRQQ09LZQ?oc=5",
+      "published": "2026-07-07T18:50:07Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "US revokes Iran oil sanctions waiver after tanker attacks in Hormuz",
+      "summary": "US revokes Iran oil sanctions waiver after tanker attacks in Hormuz Newagebd.net",
+      "source": "Newagebd.net",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOM3A5UU9FWnRjRGxWNVc1M0VUNm92VXBiLUd4dDY1cGlXWVZ2VHV4aXdfOUFjZUZDZjhoQ0JHRzF4MHZHZHNRcEFIc1d0M01DZ2Y2SWtTQ2xnRFF6ZG9adWFpbERWWldLejVKNlFzR2UxSXNfZm9rVy04aGxwdlN4dVNXNWgzelAycTN6YWdnM3dCdFotUEh2WWpWdEdfR2R2SEpZb05MSGxaaTBwNFI1am1sTzJPYlU?oc=5",
+      "published": "2026-07-07T19:58:25Z",
+      "sentiment": "neutral",
+      "impact": "high"
+    },
+    {
+      "title": "Three tankers hit in latest attacks in the Strait of Hormuz, British military says",
+      "summary": "Three tankers hit in latest attacks in the Strait of Hormuz, British military says The Tribune-Democrat",
+      "source": "The Tribune-Democrat",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQTGNzS2hFU0dZVGhzcEhEVkFwaDdxeTFqUllJUWE4cTN6OGRUeWVwdFN2NXVmT29ZaGh5LUVmNk9LcVRnazFpcW51NU1naTE3bFdOc0F6ZmJleVRweElyMklMcVNqY2J1alIwSWZFWWlXTy00MW5rQTBZWW9VUGd0LTR1V25PM19mcmQyd1FqbHIyYVRycHBteEhDMVpPRzUxeGhFempROUp0N1VPUVh0RnJwd3NTUzdHYVZXcVcweWlGcjQyWm1qdmVkdWRzQkhSanFxN0dJQ1RwYjcxd0htT19BX3hiaWs1MDIyNFhBcV9hTl8wbmJCOXhFTUpEMXluOEE?oc=5",
+      "published": "2026-07-07T15:09:00Z",
+      "sentiment": "neutral",
+      "impact": "med"
+    },
+    {
+      "title": "US revokes temporary sanctions waiver on Iran oil after vessels struck in Hormuz",
+      "summary": "US revokes temporary sanctions waiver on Iran oil after vessels struck in Hormuz South China Morning Post",
+      "source": "South China Morning Post",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQaHQ2em5aVkRTT3djX2pqRWN1T19NQ0U0dFNJTTEycV9KcnBHYjBxc0hKVHBMaXE1V0NFZnRsQnhUTHRxRHBCN2RQZG9mT21NTWgwQzVTcl9VLV9NY3Iwb1lESjZxZjFyRF9PVXpWUDRmTVVmSVM2Z1VOdjFTVFRwaDZFb3BRVF9KeFFQQ1FRVmc2YjEwSEoxT2s1b3FOdWZ4cmo4WG5PRE5SYmVweUhqWVdSNThMSUhDSEVHOEJLV1lPU25iMGF2Zm5NZVhka2lxUldSbGhR?oc=5",
+      "published": "2026-07-07T20:41:19Z",
+      "sentiment": "neutral",
+      "impact": "med"
+    },
+    {
+      "title": "US claws back key concession to Iran after fresh attacks on commercial ships in Strait of Hormuz",
+      "summary": "US claws back key concession to Iran after fresh attacks on commercial ships in Strait of Hormuz Fox News",
+      "source": "Fox News",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTk0zRHhnMWN2UTYwYVpnSGcwUlJFakMxWXpaMUlYSTdtQ0lka3pTZ2d1Z1pKOHdDaTloaXprc195ZjJPdzJBWWVvVFd1amJfNGpTd2ZnMmpSd2pjRG1hZ0dEa2hCb29UYk9mSHdRdy1IWnFKUUpETTZJajZHSW9aR2xreGp1S3U0WUlialRWZGRja1ozZHBwaU95RTV5Ql9wOVpHLXoyRWhFdTc4QXRRbUpJajlXYU1WdzJhc1JR?oc=5",
+      "published": "2026-07-07T18:24:45Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Drones Strike Shadow Fleet: Ukraine Targets Russian Tankers",
+      "summary": "Drones Strike Shadow Fleet: Ukraine Targets Russian Tankers Devdiscourse",
+      "source": "Devdiscourse",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNFNRUzFWVWpwM180ZzFLQ1AwWTlSZ2NkTmcxOU1ocHdGdWhpVWZvYVhHTG5LUzdscC0wSGZjaHhma2ttczBNanE0ZE9OT3FvWWNMb3FWRFVYSmFKUDZyZE0tY21oUm9rSmtCaVNWUkdJTWxuQ1FhRUtWZktJc2VJYjl0Vl85OW1mOHJzb3VaV0tDamdudWMxeXNtR21xclRacndUekNMUks1bDhLcHljLTRfNVlJbU9T0gG4AUFVX3lxTE00U1FTMVZVanAzXzRnMUtDUDBZOVJnY2ROZzE5TWhwd0Z1aGlVZm9hWEdMbktTN2xwLTBIZmNoeGZra21zME1qcTRkT05PcW9ZY0xvcVZEVVhKYUpQNnJkTS1jbWhSb2tKa0JpU1ZSR0lNbG5DUWFFS1ZmS0lzZUliOXRWXzk5bWY4cnNvdVpXS0NqZ251YzF5c21HbXFyVFpyd1R6Q0xSSzVsOEtweWMtNF81WUltT1M?oc=5",
+      "published": "2026-07-07T10:56:18Z",
+      "sentiment": "bearish",
+      "impact": "low"
+    },
+    {
+      "title": "Missiles in the Maritime: Iran Strikes at Hormuz",
+      "summary": "Missiles in the Maritime: Iran Strikes at Hormuz Devdiscourse",
+      "source": "Devdiscourse",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNX1h6ZllCbGR4VE8xMTBILWRQeXZFWkRTT3NwZzRLQldhTTI5OFRvVVFfTk4yRzRNX1BRcXM4cF9ycnFoVkhJYzhtS285Y2ZtdXZrdVdraXhhQ09sM0VPSnJiUU9VSTFseG5CSFduSWR5aExCMjc5cEpINExDcmpLbUlYQUJCckFxaFRlTF9jbXlYREtLYnI2M0oxSm5NYzFVbTQycjhQd05yX1psRkU2MWFoMVdLU2PSAbcBQVVfeXFMTV9YemZZQmxkeFRPMTEwSC1kUHl2RVpEU09zcGc0S0JXYU0yOThUb1VRX05OMkc0TV9QUXFzOHBfcnJxaFZISWM4bUtvOWNmbXV2a3VXa2l4YUNPbDNFT0pyYlFPVUkxbHhuQkhXbklkeWhMQjI3OXBKSDRMQ3JqS21JWEFCQnJBcWhUZUxfY215WERLS2JyNjNKMUpuTWMxVW00MnI4UHdOcl9abEZFNjFhaDFXS1Nj?oc=5",
+      "published": "2026-07-07T02:02:42Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "U.S. Revokes Iran Oil Sanctions Waiver After Tanker Attacks, Now Pressure Escalates on Tehran",
+      "summary": "U.S. Revokes Iran Oil Sanctions Waiver After Tanker Attacks, Now Pressure Escalates on Tehran International Business Times",
+      "source": "International Business Times",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNX01oczVDM0ZSd1ZVSFJvNXlTc3FZT0N4M3Z0OWI2UnZvY08tZzlnTkRBWXJiZ1RiMEVCaU5YRTNhcFItTmFiRi1felNfSXFmdXdTV2txeGhsdWtya3lmVThibDZqR2JzVXgwX2FBdWdfY0ZsVEJaT09EQThYRm9WYXpuZUdXN3RrbkRvaE1yREZJRXE5dTBlWlM3NXNtTTFGYndraGpsX0phcGY1azZFckVHbDh4cGpraE5F?oc=5",
+      "published": "2026-07-07T20:13:46Z",
+      "sentiment": "bullish",
+      "impact": "high"
+    },
+    {
+      "title": "Azerbaijan Condemns Alleged Russian Drone Strike on SOCAR Fuel Station in Ukraine",
+      "summary": "Azerbaijan Condemns Alleged Russian Drone Strike on SOCAR Fuel Station in Ukraine Devdiscourse",
+      "source": "Devdiscourse",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPV01iZ1hzRTQ2eHNfTHJRRFh6STJfbDBnUTZ4bkN3SHlBa3VLSGtkQmFFaGE2ZWhOdDRZeDZrcDc5RTd2eTV2TktaSENLMFQzQ2tYeW03bzluc3Q5bjhmelFiRVB1cXFaZEMxSXkxUGNCR1FqeGI4Tl9VenVwRjR3YlFycWRXLUVfOGprSUdkZTFyZTBiSTVkU05CVk1sbnkwT3Jld2JSNFR2LUhacEp0TjM3U29fTzFWY2ktYzR0UTNMTHdodzV0SGp1bnJWeGtWakg1bUFkb9IB1wFBVV95cUxPV01iZ1hzRTQ2eHNfTHJRRFh6STJfbDBnUTZ4bkN3SHlBa3VLSGtkQmFFaGE2ZWhOdDRZeDZrcDc5RTd2eTV2TktaSENLMFQzQ2tYeW03bzluc3Q5bjhmelFiRVB1cXFaZEMxSXkxUGNCR1FqeGI4Tl9VenVwRjR3YlFycWRXLUVfOGprSUdkZTFyZTBiSTVkU05CVk1sbnkwT3Jld2JSNFR2LUhacEp0TjM3U29fTzFWY2ktYzR0UTNMTHdodzV0SGp1bnJWeGtWakg1bUFkbw?oc=5",
+      "published": "2026-07-06T13:55:36Z",
+      "sentiment": "neutral",
+      "impact": "low"
     },
     {
       "title": "U.S. intelligence data guided Ukrainian drone strikes on Russian refineries",
@@ -166,58 +247,31 @@
       "impact": "low"
     },
     {
-      "title": "Missiles in the Maritime: Iran Strikes at Hormuz",
-      "summary": "Missiles in the Maritime: Iran Strikes at Hormuz Devdiscourse",
-      "source": "Devdiscourse",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNX1h6ZllCbGR4VE8xMTBILWRQeXZFWkRTT3NwZzRLQldhTTI5OFRvVVFfTk4yRzRNX1BRcXM4cF9ycnFoVkhJYzhtS285Y2ZtdXZrdVdraXhhQ09sM0VPSnJiUU9VSTFseG5CSFduSWR5aExCMjc5cEpINExDcmpLbUlYQUJCckFxaFRlTF9jbXlYREtLYnI2M0oxSm5NYzFVbTQycjhQd05yX1psRkU2MWFoMVdLU2PSAbcBQVVfeXFMTV9YemZZQmxkeFRPMTEwSC1kUHl2RVpEU09zcGc0S0JXYU0yOThUb1VRX05OMkc0TV9QUXFzOHBfcnJxaFZISWM4bUtvOWNmbXV2a3VXa2l4YUNPbDNFT0pyYlFPVUkxbHhuQkhXbklkeWhMQjI3OXBKSDRMQ3JqS21JWEFCQnJBcWhUZUxfY215WERLS2JyNjNKMUpuTWMxVW00MnI4UHdOcl9abEZFNjFhaDFXS1Nj?oc=5",
-      "published": "2026-07-07T02:02:42Z",
+      "title": "U.S. Revokes Iran Oil Sanctions Waiver After Attack on Tankers",
+      "summary": "U.S. Revokes Iran Oil Sanctions Waiver After Attack on Tankers The New York Times",
+      "source": "The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNM2xwTVNTSXppMElLNmFvbUpTTzF6a3U3cU1Jb3M5dHg0TXN1d2JaazktcVNyT0dMZG5pNzlDQk8zX2V4dFRUY1ViM3NyaUVVNmdjQWVDQmZ1X2V1SHhWUkZRUHRXLXBUd0YzYUVWLTF4RnJHT1NVek1SOVNHenB5WmNxYVdrZFhvWE5TZ0Rn?oc=5",
+      "published": "2026-07-07T20:21:41Z",
       "sentiment": "neutral",
-      "impact": "low"
+      "impact": "high"
     },
     {
-      "title": "Azerbaijan Condemns Alleged Russian Drone Strike on SOCAR Fuel Station in Ukraine",
-      "summary": "Azerbaijan Condemns Alleged Russian Drone Strike on SOCAR Fuel Station in Ukraine Devdiscourse",
-      "source": "Devdiscourse",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPV01iZ1hzRTQ2eHNfTHJRRFh6STJfbDBnUTZ4bkN3SHlBa3VLSGtkQmFFaGE2ZWhOdDRZeDZrcDc5RTd2eTV2TktaSENLMFQzQ2tYeW03bzluc3Q5bjhmelFiRVB1cXFaZEMxSXkxUGNCR1FqeGI4Tl9VenVwRjR3YlFycWRXLUVfOGprSUdkZTFyZTBiSTVkU05CVk1sbnkwT3Jld2JSNFR2LUhacEp0TjM3U29fTzFWY2ktYzR0UTNMTHdodzV0SGp1bnJWeGtWakg1bUFkb9IB1wFBVV95cUxPV01iZ1hzRTQ2eHNfTHJRRFh6STJfbDBnUTZ4bkN3SHlBa3VLSGtkQmFFaGE2ZWhOdDRZeDZrcDc5RTd2eTV2TktaSENLMFQzQ2tYeW03bzluc3Q5bjhmelFiRVB1cXFaZEMxSXkxUGNCR1FqeGI4Tl9VenVwRjR3YlFycWRXLUVfOGprSUdkZTFyZTBiSTVkU05CVk1sbnkwT3Jld2JSNFR2LUhacEp0TjM3U29fTzFWY2ktYzR0UTNMTHdodzV0SGp1bnJWeGtWakg1bUFkbw?oc=5",
-      "published": "2026-07-06T13:55:36Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Drones Strike Shadow Fleet: Ukraine Targets Russian Tankers",
-      "summary": "Drones Strike Shadow Fleet: Ukraine Targets Russian Tankers Devdiscourse",
-      "source": "Devdiscourse",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNFNRUzFWVWpwM180ZzFLQ1AwWTlSZ2NkTmcxOU1ocHdGdWhpVWZvYVhHTG5LUzdscC0wSGZjaHhma2ttczBNanE0ZE9OT3FvWWNMb3FWRFVYSmFKUDZyZE0tY21oUm9rSmtCaVNWUkdJTWxuQ1FhRUtWZktJc2VJYjl0Vl85OW1mOHJzb3VaV0tDamdudWMxeXNtR21xclRacndUekNMUks1bDhLcHljLTRfNVlJbU9T0gG4AUFVX3lxTE00U1FTMVZVanAzXzRnMUtDUDBZOVJnY2ROZzE5TWhwd0Z1aGlVZm9hWEdMbktTN2xwLTBIZmNoeGZra21zME1qcTRkT05PcW9ZY0xvcVZEVVhKYUpQNnJkTS1jbWhSb2tKa0JpU1ZSR0lNbG5DUWFFS1ZmS0lzZUliOXRWXzk5bWY4cnNvdVpXS0NqZ251YzF5c21HbXFyVFpyd1R6Q0xSSzVsOEtweWMtNF81WUltT1M?oc=5",
-      "published": "2026-07-07T10:56:18Z",
+      "title": "How Russia-Ukraine war is reshaping energy flows, food prices, defence spending and India\u2019s strategy | WION Decodes",
+      "summary": "How Russia-Ukraine war is reshaping energy flows, food prices, defence spending and India\u2019s strategy | WION Decodes WION",
+      "source": "WION",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPR2E3MzFSYlJuTXlGajRkU1BFaEQtS1VtNUZqU1FoZG12bHBQSi1OVGRyTlplOUNmOVl4ZUZRZ3JLMEZCZXJRLWtZb2RyeUYwbGZpTUhZQXdIMFZuUTA0cm90c3FneHlSczNNOWZVZXgwRDlBUnFIUlpuUk53aWVxRk92ZWpEeFd2aW1QeExRdFNrb2ZMOEowODctOUJWRFpEcXl3MU41b3VySjNQQ28xbXRkOFppSEd1UFBzUUJlcS1Cd0J5emRZUXFQcXJNTjVmajA0cVB2Y29sbWc0Z1RUUFlESmx3c2VRd29wOHc5TnfSAfABQVVfeXFMT0dhNzMxUmJSbk15Rmo0ZFNQRWhELUtVbTVGalNRaGRtdmxwUEotTlRkck5aZTlDZjlZeGVGUWdySzBGQmVyUS1rWW9kcnlGMGxmaU1IWUF3SDBWblEwNHJvdHNxZ3h5UnMzTTlmVWV4MEQ5QVJxSFJablJOd2llcUZPdmVqRHhXdmltUHhMUXRTa29mTDhKMDg3LTlCVkRaRHF5dzFONW91ckozUENvMW10ZDhaaUhHdVBQc1FCZXEtQndCeXpkWVFxUHFyTU41ZmowNHFQdmNvbG1nNGdUVFBZREpsd3NlUXdvcDh3OU53?oc=5",
+      "published": "2026-07-06T11:48:00Z",
       "sentiment": "bearish",
       "impact": "low"
     },
     {
-      "title": "Three tankers hit in latest attacks in the Strait of Hormuz, British military says",
-      "summary": "Three tankers hit in latest attacks in the Strait of Hormuz, British military says The Tribune-Democrat",
+      "title": "British military says second ship hit in Strait of Hormuz",
+      "summary": "British military says second ship hit in Strait of Hormuz The Tribune-Democrat",
       "source": "The Tribune-Democrat",
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdkdOR0RNRnI0d210MlF3aTN5Y1lTWVBqbmdudnNNRlZTZVlkNHZnVVVEYzA5LVJyMGhpSkRCa1MxLWt2Mkt1aWtVaGZLZU9GSVI1aEtPZTliTV9zQnZTRE14Z1JXNjRJdmF4Y1FvNVppekw4VEp0X0UwS3ZtS1hjX3hMRW04OWFkSDh2eEVQRXZ4ajFuSkZObmd4ZnlFWGFFUVZmTTVrbHhYY3pvdWhoakJxZkl4YUg1dE56M1dTMjNGRU5SV2FpZU0wSQ?oc=5",
-      "published": "2026-07-07T15:09:00Z",
+      "published": "2026-07-07T13:35:00Z",
       "sentiment": "neutral",
-      "impact": "med"
-    },
-    {
-      "title": "Russia hits Ukraine gas sites in retaliation attack",
-      "summary": "Russia hits Ukraine gas sites in retaliation attack Upstream Online",
-      "source": "Upstream Online",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPXy05ektMTkZHbFZIcDUwNnh2RWc3dUxZR21icEFGeG9pdHhzTWtyWTBKNG1RNXp2ajhpRVBfVlktS0luNDdzSm5TakJFbVlwSndKQndfOHlZNENlT3pqdm1rYjBQT1I5ZU1ZNlplaEtHMEc1ckQtTzJMRFZnbjhENm9meTRVR2RiU1l4LXNWTU1hRmlvcUpnMzJWbVU1VHhmRDI0c25PS3VhenhIYXIw?oc=5",
-      "published": "2026-07-06T13:50:49Z",
-      "sentiment": "bullish",
       "impact": "low"
-    },
-    {
-      "title": "Putin Just Lost the Oil Windfall That Should Have Saved His War: Russia's Crude Crashed to Half Its Peak as Ukraine Guts Refineries",
-      "summary": "Putin Just Lost the Oil Windfall That Should Have Saved His War: Russia's Crude Crashed to Half Its Peak as Ukraine Guts Refineries National Security Journal",
-      "source": "National Security Journal",
-      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQdDY4T2NkV2hucGZqRS1iWkY4NnloVjZkNi1EUVhGeVdvbk4zdVhzOTBNTk1UZUlmM3BxUE5CVWM3dzBPOHlseUtFRTE0RkxfWE02YWJBSUhJdVVyN1kyc1BtVTVXNVI2bURaZmZMQ3JjSG1IRWk1aUJPZU1UYk9wZnFvMXZlQUZyT0FaYXF3cl9WVkU3QUNjRE5LTWxFQ1lBV1ZpalVfQUNIWWROODdES1JXTFZMZ05oT0hWVHBfUnFYOW81RUJxdXN5OFdPR0pVSFIwV1d3aC1ZWnVZUTJDaElXREdwbFJuM2VtOEloWWxqc2xxbjdaNzln?oc=5",
-      "published": "2026-07-06T18:55:17Z",
-      "sentiment": "bearish",
-      "impact": "med"
     },
     {
       "title": "Ukraine strikes Russian oil tanker, Kerch terminal in Crimea",
@@ -229,57 +283,12 @@
       "impact": "low"
     },
     {
-      "title": "Trump\u2019s Iran war is over, but central banks are still dealing with the fallout",
-      "summary": "Trump\u2019s Iran war is over, but central banks are still dealing with the fallout Crypto Briefing",
-      "source": "Crypto Briefing",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBFLU1taHhHRnNMcVNtT20zUjExelR2UVJMOHVNbFFqRWU4aDZoWk8tYjZsVXFDTTdGc20tWEpqZDlaajBUNXRfeUxOS05wMGF3LXNZT2Q0eVp1eFBWaWpPbkswbVlDVEUyVnNFci1BUlNRZw?oc=5",
-      "published": "2026-07-06T11:48:58Z",
-      "sentiment": "bearish",
-      "impact": "low"
-    },
-    {
-      "title": "Tanker set ablaze after being struck by projectile in Strait of Hormuz as Iran mourns Khamenei",
-      "summary": "Tanker set ablaze after being struck by projectile in Strait of Hormuz as Iran mourns Khamenei The Tribune-Democrat",
-      "source": "The Tribune-Democrat",
-      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQaDhuRGJrb3FtNXB0eUxsRkVDZnJEdnNMME5xOW0wb0JHdlNMYUJ0OWViaGpxdXJBelI1OGlBNkdPdktPaUZNTklEMDlMOW9fdU1VV1JRYlZ4WUktLUdRT1hNNkJPM1FOUTQ4YjhsSW5SQS1Hd2hpcDlyMmNkbUVOYkxKYjlDT3pSQ1JxR1F1Tm1rTG9kNmhkTzBPclpjNGhnamQ0VlZDVDREaU9naW0tbmpGTHgtZ1JTR0J6QVRKUHJ0WmxvdGduSndRUjFmaHdac1FMWWxPTmxDNXpDOGRLdzRXQW1rMnFBZDZCN1BlWGx3eDhGRU1QZ18wTXhHQ0J1Y1NTV2taMA?oc=5",
-      "published": "2026-07-07T13:18:00Z",
-      "sentiment": "bearish",
-      "impact": "low"
-    },
-    {
-      "title": "Strait of Hormuz reopening proposal signals major shift in global energy security",
-      "summary": "Strait of Hormuz reopening proposal signals major shift in global energy security The Eastleigh Voice",
-      "source": "The Eastleigh Voice",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQUzByQmdob1pHWUpXSUMtMmYyRy14Wno1Zl9sR29iZUM0Y2ZCUUQ5b0VoenFoLWQ0c0hTN1VGcy0tMjMyQkx3S0RtVktVVllYS0llR1NFeEdXNndfWTBMUXhYUGYxNjZiSXVYRnVKbTN0MkN6RVljRnhrZXdSdDJQU3V2Y1lhVzhWVG5WWDc3NENManFrWWlCYldKYm0yaGxnOVIzanhUTEJyNzJVVUhpSzZDdmhLbWY4bFBZOGNnSThRMDgyMEtQUnozc1RXZw?oc=5",
-      "published": "2026-07-05T07:19:43Z",
+      "title": "Ukraine war is not going well for Russia \u2013 how dangerous is this for Vladimir Putin?",
+      "summary": "Ukraine war is not going well for Russia \u2013 how dangerous is this for Vladimir Putin? The Conversation",
+      "source": "The Conversation",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQzFDWk5Ud1hISnBYN0NNUE53c2wzbzFjMF9wS3ZiYURzd0pCNTlLUmZaSUZrNkJNSzU1MHlDcHVWOEtwOXYwMlFiRkhtdjE5UFF2bFc0LUh6XzJvM1NVTVYyeWVLTF9kTkJ1TG9WWlFxXzdqcDVQX2pfcWV5bWZFdVdLQ2tHN3Z4V29XYVFSZjdoZTlGLWtFRHFVeTlfOFVrbDBFRzVJMnpMQmVLcFRieG1sbjk1TG8?oc=5",
+      "published": "2026-07-07T09:52:19Z",
       "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Saudi Arabia slashes crude oil prices for Asian buyers as US-Iran deal reshapes energy markets",
-      "summary": "Saudi Arabia slashes crude oil prices for Asian buyers as US-Iran deal reshapes energy markets Crypto Briefing",
-      "source": "Crypto Briefing",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBSc0VhcVZZankyQVdzWkJUNnBESXhfQm1Cd3ZxbmY4TGRSTjJLWHJlU0tQNjRMQ1EzTE9NOXlHZVFxU2J5R3lqS3JWQVB1bjFPRGZzcExqT2dGZEJ2ZVNDMER1RlczWV9SVDFIYUwzb09jb05wZ3c?oc=5",
-      "published": "2026-07-06T16:44:57Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Iran and Oman negotiate a pay model for the Strait of Hormuz",
-      "summary": "Iran and Oman negotiate a pay model for the Strait of Hormuz EL PA\u00cdS English",
-      "source": "EL PA\u00cdS English",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbWdvSktZZVl4OG5vSUFjM0dJajFhaWdWRVhNRUFmaGlNZkxrR3dFdExFbmZRZDhSWHBQd2g3X2hpSUhSclF4aUppOEQ1cVczVHVLWk84cmw3WTdqSzlac0NtUUk3M1FmWWVqNmlaQ3NJb09RTTdubS03SFJ6UXpTNFA0R0hYajJ4ZnI2TzhlbENLeXBCSEt6Tjlkb3loa05rQkRwdEY2V0l2YzdQaE1ja2JNcXRaT3Nn0gHMAUFVX3lxTE02NFhQWFNwdXdoYUU3SElFRUtOMF92SHZUV2JFck5xT09iZ0RGU2lHaThuZW5zWmhURkMxSkNVM1VlTlRtNUQwZ2lJZ1pseURxeklWb04wcFlMcC0yX0o4cUR2MUlLZHdCUHF6OHlmM2UxUXhtaDFyTXdnV0xYU0Fvd0dDRERUaUNQSi1nU0FWOVRXV1V3ODU0RFUzMGN6VWtOQ1hkMTdjOWNFdVhtVllrOWdLSS1jZVZjd2Q2THNnTHNISVNxMGRTNnAwUQ?oc=5",
-      "published": "2026-07-06T09:05:18Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Ukraine Strikes Eight Russian Shadow Fleet Tankers in Sea of Azov",
-      "summary": "Ukraine Strikes Eight Russian Shadow Fleet Tankers in Sea of Azov Global Banking & Finance Review",
-      "source": "Global Banking & Finance Review",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZE43amdMOG93c0RHVlBHVmgyTTlRbFRFNFRrVjZKdXFEUGxmSmdkYUhPUkNtUktNRms3SjhlUnlhT0pGZ29EbVBUcDJCR2tBNUFqWHVaaS1mQk5HNWFBbjFoMlNWSUhCeXlkQmhBWXZzQS1wYkItb1NKMFA0czRjVzRBOTRrN1RhbC1PaVhNd2RMdU50dkloQ3g1NU8?oc=5",
-      "published": "2026-07-07T11:02:54Z",
-      "sentiment": "bearish",
       "impact": "low"
     },
     {
@@ -292,66 +301,57 @@
       "impact": "med"
     },
     {
-      "title": "Ukraine war is not going well for Russia \u2013 how dangerous is this for Vladimir Putin?",
-      "summary": "Ukraine war is not going well for Russia \u2013 how dangerous is this for Vladimir Putin? The Conversation",
-      "source": "The Conversation",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQzFDWk5Ud1hISnBYN0NNUE53c2wzbzFjMF9wS3ZiYURzd0pCNTlLUmZaSUZrNkJNSzU1MHlDcHVWOEtwOXYwMlFiRkhtdjE5UFF2bFc0LUh6XzJvM1NVTVYyeWVLTF9kTkJ1TG9WWlFxXzdqcDVQX2pfcWV5bWZFdVdLQ2tHN3Z4V29XYVFSZjdoZTlGLWtFRHFVeTlfOFVrbDBFRzVJMnpMQmVLcFRieG1sbjk1TG8?oc=5",
-      "published": "2026-07-07T09:52:19Z",
+      "title": "Can the World Withstand Another Oil Shock After the Iran War?",
+      "summary": "Can the World Withstand Another Oil Shock After the Iran War? Modern Diplomacy",
+      "source": "Modern Diplomacy",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONzNlbUpmYzdaQWdjTjVrWjV3UWtCb2RydkFaRERfZktLa2J2NkthNFY3UENUT3drYkxQV3c4ZkFSRkxOV3M2MTUzUlM5M3BHZUJZeDJ5eEk2VlktMUtPbzNfdDRjeG9Iam1uelMzT2dDc3FlWDItRVdxaEFVTHczSl9RTlAzNDJoYzJoVEJ6bWlYSm5fZnJ1R09wZ0JnNHRV?oc=5",
+      "published": "2026-07-06T08:02:31Z",
       "sentiment": "neutral",
       "impact": "low"
     },
     {
-      "title": "Ukraine's Special Forces Strike Russian Oil Tanker, Kerch Oil Terminal",
-      "summary": "Ukraine's Special Forces Strike Russian Oil Tanker, Kerch Oil Terminal Kyiv Post",
-      "source": "Kyiv Post",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1sUDdKWXEwOVNwSlh5LUFqWHhQalp6SFBwVHkzRXlrTE9kdE13U1ZYMmt1SHpVWHR3d3dqOTg1bzRoZlFnV3NpQzFDcw?oc=5",
-      "published": "2026-07-06T13:35:19Z",
-      "sentiment": "bearish",
-      "impact": "low"
-    },
-    {
-      "title": "Three Tankers Damaged in Gulf as US-Iran Conflict Escalates",
-      "summary": "Three Tankers Damaged in Gulf as US-Iran Conflict Escalates EnergyNow.com",
-      "source": "EnergyNow.com",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQVRBMEZTU1ZkSU45YVJobzBpREJWc1E1bEV3Q2hkY2piREhRQkhCWlN2Z3NNRW80TDZwWGZkZ1RBYnVocEVuaDF1cElrZjctVmVCWFdZbnc0XzZoS0xRSjhpcGs1Um0wX2xBWmVHNGpuQjdub2FXbjFDcC1ibDVocEV4UFc3MzYybHFsTnZMYlJ1cFd5?oc=5",
-      "published": "2026-07-06T13:46:19Z",
+      "title": "UK sanctions Russian institutes SC Signal and GNIII VM for chemical attacks, adding to growing sanctions web",
+      "summary": "UK sanctions Russian institutes SC Signal and GNIII VM for chemical attacks, adding to growing sanctions web Crypto Briefing",
+      "source": "Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPek1nZkVfVVAwcGFLLTlmQThxRFozQzFybnc2bnRSMVJRWmUtLW1TQVVPSEhFTVlsRUFRa3gyUHhfaXM4T1pYOC0wWGZjU3VzUVBHRXlaeXNXV1ZuY1VyVk5nMF84OXluekhWNkgwZ3lDMzRkQWFLNXZjN1Uta1RUNl9R?oc=5",
+      "published": "2026-07-06T13:37:53Z",
       "sentiment": "bullish",
       "impact": "med"
     },
     {
-      "title": "Iranian Oil Flows Through Strait of Hormuz Even as Gulf Neighbors\u2019 Exports Shut",
-      "summary": "Iranian Oil Flows Through Strait of Hormuz Even as Gulf Neighbors\u2019 Exports Shut EnergyNow.com",
-      "source": "EnergyNow.com",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVXRfbXZ1NlNBbHZhWXFvQmRjbDUxaHh2V21jN2JGSlZqQmo1NnBTSWRXUWEzSEVTWDN3S3lIRE5ObkRKbEZWdUxwLTQ1Umg5SnlMLWtXVUh0UldNZWJxRDU4bVRiUi1CZXBqRUhsaDVpMWhlN3Z5T2FEel83cmdMa3VvRXN0NHNsWGlXX2pCemZRQWVaZ3JrQ2xLZUQyb24wdUlQUUZIWWZackhieUE?oc=5",
-      "published": "2026-07-06T13:44:53Z",
-      "sentiment": "bearish",
-      "impact": "low"
-    },
-    {
-      "title": "Ukraine\u2019s Forced Energy Crisis On Russia: The Catalyst To End The War? \u2013 OpEd",
-      "summary": "Ukraine\u2019s Forced Energy Crisis On Russia: The Catalyst To End The War? \u2013 OpEd Eurasia Review",
-      "source": "Eurasia Review",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPb3NkdDR5X1BsUVVKWHVuMGlkV3lmWlhHQkpxRHM5cDBmbHFId3pmWmg2WW5WdmZUNXlXYTRoOHRvQ2hQcGtXb1FLcmJIX3BBdHBDM1dVNGFySV83Wk93TTFueEJYa0lNMDlXNmJyMjI4NFhjVTh4QVZyTHNUZzJzNVAxbjVpM0pNeVQ2WkEyYUgyaHpkQzhqdGJnLWVYeHFJaEVPYUNsUnppT0RCZlRVS0VR?oc=5",
-      "published": "2026-07-05T21:44:52Z",
+      "title": "Iran Rejects Trump\u2019s Claims of a Hormuz Strait Deal as Talks Approach Deadline",
+      "summary": "Iran Rejects Trump\u2019s Claims of a Hormuz Strait Deal as Talks Approach Deadline CryptoRank",
+      "source": "CryptoRank",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPd01tUmZ6Nk83VjJHWFB6dTFIejZkSjdrcGVuc1hqZ003bE1VRHYzTGlxeC1XczZsaWhUVXhMVHU1NXVyaGpqU25mUGVoZ1hNMHdJR2w2OFpDYUpOQTFZSmlGcEhqUEFHeVA2OVByZGlldjM0UktCb3B0UkxEaTh6RQ?oc=5",
+      "published": "2026-07-06T10:36:56Z",
       "sentiment": "neutral",
       "impact": "low"
     },
     {
-      "title": "Russia Is Losing Its War Against Ukraine \u2013 Analysis",
-      "summary": "Russia Is Losing Its War Against Ukraine \u2013 Analysis Eurasia Review",
-      "source": "Eurasia Review",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPRXFoOVhPcmdKNFoxSERlQ0lsVXNUc2QxODBldUdqNzN4enR0VW9lNy1ZTFRyVXg2ZkJQSkJzZXRZdXJzdEVUdWxKOXlublYtcEltOUtfSDdHempfYnZhMmhhZHJicFg0X0N5cnIza0VVc2laalNlNkQ2Yk5WOWNqV0Ewa1hHVDUxZGRQUmhZOUVDRzQ?oc=5",
-      "published": "2026-07-05T23:30:47Z",
+      "title": "US reimposes sanctions on Iranian oil after tanker attacks",
+      "summary": "US reimposes sanctions on Iranian oil after tanker attacks \u041c\u0435\u0436\u0430. \u041d\u043e\u0432\u0438\u043d\u0438 \u0423\u043a\u0440\u0430\u0457\u043d\u0438.",
+      "source": "\u041c\u0435\u0436\u0430. \u041d\u043e\u0432\u0438\u043d\u0438 \u0423\u043a\u0440\u0430\u0457\u043d\u0438.",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBuWjBXWW5EQXhKazNtWlZ1VHZ6V3RKYXV2cjBNWW02RzhaNUhCVVBtVjhLUGxTSmRJX2tGRVctWTM1VlEwQk9uTHFJbXc5RGdKXzlWbmNEMFRzR3hzTnpReEpvLVlrc2tiZUhFWA?oc=5",
+      "published": "2026-07-07T21:19:34Z",
       "sentiment": "bullish",
       "impact": "med"
     },
     {
-      "title": "Iran reviewing US proposal as Trump pressures Tehran on deal to end war",
-      "summary": "Iran reviewing US proposal as Trump pressures Tehran on deal to end war BreakingNews.ie",
-      "source": "BreakingNews.ie",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPalNUMWhERFBmYUNwTlNhR3F0WjMzdDY5Nm5mekZBR3BuRmFzU2tUb0E3S3Jfdl9fcy10T0daNE4yekszOTBvNTlfRjFFVmNrZUJEZ1llM1VsNm1iVnBXNWpQZ1FKamp0eHk3d2dETWttVl9jUHZLano1N0RiWnhBRDFvdjE0bGlqTHhaZXRlbGY2U0w5TmpqTGxoMnpZQ2pvTklxaDZDQS1XTHZZdGFjSmlLNFAyRC13TGc?oc=5",
-      "published": "2026-07-04T23:22:29Z",
+      "title": "Russia's Fuel Crisis Deepens as Ukrainian Drone Strikes Hit Energy Infrastructure",
+      "summary": "Russia's Fuel Crisis Deepens as Ukrainian Drone Strikes Hit Energy Infrastructure International Business Times UK",
+      "source": "International Business Times UK",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOel9OOU9VWXJEZVpaRTBfNGY1QUw5VzRzaGMwVE54ZVpxSEYwZlBGUWhMWUVEVFg1Wno3Z0EwZ1pPVXByYUxSVEhKa0VBY3ZwTEdiN01BLWJpa1h6Q0dEM2ptdzlwQ3VHLWpwSW5LOWhtcVFEN05QbVFMTWMzZWpFRg?oc=5",
+      "published": "2026-07-06T08:55:09Z",
       "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "Ukraine strikes eight Russian \u2018shadow fleet\u2019 tankers, Kyiv says",
+      "summary": "Ukraine strikes eight Russian \u2018shadow fleet\u2019 tankers, Kyiv says The Mighty 790 KFGO",
+      "source": "The Mighty 790 KFGO",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaXZVd1llY05TVEJ6TUppN1NKUkVEOXRIczYyc3lfQ045WFgxWXExSGw5NUlfOGdvVWgyczdwU3YzWS1sS29aa3QzYmlyQ3JmVVFNa0stTEVmTEpJYmdjVVdGT0hvR05FSkthbXdEaG5QRlZSX2RLck12ZHE3V3Uwb1I0c19YdkpmY0dPbVY5ZGRnbmM?oc=5",
+      "published": "2026-07-07T11:25:53Z",
+      "sentiment": "bearish",
       "impact": "low"
     },
     {
