@@ -1,49 +1,49 @@
 {
- "generated": "2026-07-06T21:56:04.175122+00:00",
+ "generated": "2026-07-07T15:44:16.609572+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude edged marginally higher on the day \u2014 WTI +0.13% to $68.78, Brent +0.46% to $72.13 \u2014 but the one-month collapse of roughly 27-28% dominates the picture. The structural bearish driver is clear: the UAE, following its OPEC exit, ramped production above 3.8 mb/d in June, adding supply pressure the market is struggling to absorb. Russian Urals has crashed to ~$41.66/bbl, erasing the war premium accumulated during the Iran conflict. Ukrainian drone strikes on a Crimean tanker and the St. Petersburg oil terminal are keeping a geopolitical floor under prices without materially tightening supply. Iran's ongoing blockade posture and Trump's reported consideration of seizing Iranian oil add headline risk. Refined products outperformed sharply \u2014 Heating Oil +2.34%, RBOB +1.23% \u2014 suggesting some near-term crack spread support.",
+   "summary": "WTI and Brent each posted roughly 2.4% gains on the session, recouping some of the month's steep losses \u2014 WTI is still down 24.55% on the month \u2014 as drone strikes in the Strait of Hormuz reignited geopolitical risk premiums. Two VLCCs carrying some 4 million barrels of Saudi crude are transiting Hormuz, underscoring how critical the chokepoint remains. Ukrainian forces also struck a Russian tanker, the Kerch terminal in Crimea, and Russian Baltic port infrastructure, adding supply-disruption anxiety. Offsetting the bullish narrative: Saudi Arabia slashed official selling prices for Asian buyers following a US-Iran deal, the UAE ramped output above 3.8 mb/d after quitting OPEC, and Indian refiners are weighing a return to Iranian crude if sanctions waivers are extended. RBOB gasoline cratered 6.93% on the day, a sharp divergence from crude that warrants attention. CME options market prices a 77% probability of a further OPEC cut at the next meeting.",
    "drivers": [
-    "UAE post-OPEC exit production surge to 3.8 mb/d adds significant supply, compounding month-long price rout",
-    "Urals crashes to ~$41.66/bbl as Ukraine drone strikes degrade Russian export infrastructure at St. Petersburg and Crimea",
-    "Iran blockade and Trump's threat to seize Iranian cargoes maintain geopolitical risk premium; options market prices 77% probability of further OPEC cuts at next meeting"
+    "Drone strikes on Hormuz shipping and Ukrainian attacks on Russian tankers/terminals lifted crude ~2.4% on geopolitical risk premium",
+    "Saudi OSP cuts for Asia and UAE post-OPEC output surge above 3.8 mb/d cap the upside and reflect weak physical fundamentals",
+    "RBOB gasoline collapsed 6.93% on the session, diverging sharply from crude, signalling demand-side or crack-spread pressure"
    ],
    "headlineCount": 12,
    "sources": [
-    "ABC News - Breaking News, Latest News and Videos",
-    "EnergyNow.com",
+    "Crypto Briefing",
     "International Business Times",
-    "National Security Journal",
-    "Readers.id",
-    "Sky News"
+    "Kyiv Post",
+    "Sky News",
+    "Truthmeter"
    ]
   },
   "gas": {
-   "summary": "Henry Hub edged up 1.53% to $3.245/MMBtu, extending a modest but steady recovery with the one-month gain now nearly 1%. TTF added 0.53% to \u20ac44.25/MWh, though the more significant story is the 8.5% weekly surge in European gas, likely reflecting residual Hormuz/LNG supply anxiety. Tanker traffic through the Strait of Hormuz is described as recovering but still disrupted, with at least six LNG-carrying vessels affected by persistent risks. Russia's retaliatory strikes on Ukrainian gas sites add supply-side concern for European flows. News flow for this sector today is relatively thin beyond these two drivers; the Iran-war renewables-investment narrative is forward-looking rather than an immediate price catalyst.",
+   "summary": "TTF surged 4.96% on the day to 46.32 \u20ac/MWh and is up 8.82% on the week, driven by heightened geopolitical anxiety and supply uncertainty stemming from the broader Middle East conflict. Shell flagged materially higher LNG trading profits in Q2, crediting Iran-war-driven volatility \u2014 a reminder that price spikes translate directly into trading-desk windfalls even as buyers face stress. ADNOC locked in a 15-year LNG supply agreement with Japan's Inpex from its Ruwais project, reflecting long-term buyer appetite for secured volumes. Germany announced a \u20ac1.57 billion ($1.7 billion) strategic natural gas reserve plan, a clear signal that European energy security fears are driving policy action. Henry Hub was comparatively quiet, adding just 0.55% to $3.263/MMBtu, suggesting the volatility remains a European and LNG phenomenon.",
    "drivers": [
-    "Hormuz tanker traffic recovering slowly but LNG disruptions persist, supporting TTF's sharp 8.5% weekly gain",
-    "Russia strikes Ukrainian gas infrastructure in retaliation, raising near-term European supply-continuity concerns",
-    "Henry Hub holding a modest positive trend; broader gas news flow today is limited"
+    "TTF +4.96% on the day and +8.82% on the week as Middle East conflict disrupts LNG infrastructure and inflates risk premiums",
+    "Germany's $1.7 billion strategic gas reserve plan underscores European security-driven demand for physical storage",
+    "ADNOC 15-year LNG deal with Inpex highlights long-term buyer scramble for supply security amid market uncertainty"
    ],
-   "headlineCount": 4,
+   "headlineCount": 6,
    "sources": [
     "Upstream Online"
    ]
   },
   "power": {
-   "summary": "EU Carbon (EUA) continued its grind higher, up 1.59% on the day to $77.53/EUA, with a +6.56% one-month gain standing in stark contrast to the crude selloff. A headline noting carbon markets have reached what is described as their most important credibility inflection point in years may be supporting sentiment. On the demand side, India's power consumption is projected to grow ~6% annually through 2030, with a Super El Ni\u00f1o expected to accelerate coal-fired generation over the next 12 months \u2014 a bearish clean-energy signal but bullish for carbon pricing. The UK's estimated \u00a3500bn net-zero bill is flagged as a potential competitiveness risk. North America reportedly drove nearly half of global emissions growth in 2025, per the Energy Institute's 2026 Statistical Review.",
+   "summary": "EU carbon EUAs eased 1.91% on the day to $76.05, though the contract remains up 4.37% on the month, leaving the medium-term trend intact. The session's power-sector story is largely imported from gas and geopolitics: TTF's 4.96% spike feeds directly into European power generation costs and carbon dispatch economics. A drone attack on a UAE nuclear power plant reported Monday adds a nuclear-supply angle to an already stressed regional grid backdrop. Ukrainian strikes on Russian Baltic and Black Sea oil and energy infrastructure \u2014 including the Kerch terminal \u2014 continue to threaten Russia-linked energy flows with downstream effects across risk markets. Headline flow for dedicated power and carbon data was thin today; the dominant driver remains the TTF-EUA cost linkage in a high-volatility geopolitical environment.",
    "drivers": [
-    "EUA carbon prices up 1.59% on the day and +6.57% on the month, bolstered by reported credibility milestone in carbon markets",
-    "India Super El Ni\u00f1o expected to lift coal-fired power demand materially over next 12 months; India power demand seen growing 6%/yr to 2030",
-    "North America accounted for nearly half of global emissions growth in 2025 per Energy Institute; UK faces $667bn net-zero bill flagged as competitiveness risk"
+    "EUA slipped 1.91% on the day despite a firm monthly trend; TTF's 4.96% jump raises gas-fired generation costs and complicates carbon dispatch economics",
+    "Reported drone strike on a UAE nuclear power plant adds nuclear supply risk to an already geopolitically disrupted regional energy complex",
+    "Ongoing Ukrainian strikes on Russian energy infrastructure sustain tail-risk premium across European power and carbon markets"
    ],
-   "headlineCount": 12,
+   "headlineCount": 8,
    "sources": [
-    "Anadolu Ajans\u0131",
-    "National Security Journal",
-    "Sky News",
-    "The Sunday Guardian"
+    "A News",
+    "Crypto Briefing",
+    "Devdiscourse",
+    "EnergyNow.com",
+    "Sky News"
    ]
   }
  }
