@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08T15:16:59Z",
+  "updated": "2026-07-08T16:58:20Z",
   "physical": [
     {
       "title": "EIA: Crude Oil Inventories in US See Rare Build",
@@ -11,24 +11,6 @@
       "impact": "med"
     },
     {
-      "title": "US Crude Oil, Product Inventories Fall Even As Hormuz Traffic Begins to Flow",
-      "summary": "The American Petroleum Institute (API) estimated that crude oil inventories in the United States fell by 399,000 barrels in the week ending July 3. In the week prior, US crude oil inventories fell ...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Crude-Oil-Product-Inventories-Fall-Even-As-Hormuz-Traffic-Begins-to-Flow.html",
-      "published": "2026-07-07T20:48:00Z",
-      "sentiment": "bearish",
-      "impact": "low"
-    },
-    {
-      "title": "Has Iraq Finally Run Out of Road in Its Double-Dealings with the West?",
-      "summary": "Late June/early July normally brings twin events from Iraq for the global oil industry: an announcement that it intends to increase its crude oil production to either 6 or 7 million barrels per day...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/Has-Iraq-Finally-Run-Out-of-Road-in-Its-Double-Dealings-with-the-West.html",
-      "published": "2026-07-07T22:00:00Z",
-      "sentiment": "bearish",
-      "impact": "low"
-    },
-    {
       "title": "Oil and LNG Tankers Make U-Turns After Fresh Hormuz Escalation",
       "summary": "The renewed hostilities and attacks on vessels in the Strait of Hormuz again put an abrupt end to the steady flow of oil and gas tankers moving in and out of the Persian Gulf. At least four oil and...",
       "source": "",
@@ -36,15 +18,6 @@
       "published": "2026-07-08T08:30:00Z",
       "sentiment": "bullish",
       "impact": "high"
-    },
-    {
-      "title": "China Lifts Fuel Export Curbs as Refiners Ramp Up Overseas Shipments",
-      "summary": "China has lifted restrictions on the exports of refined fuels, allowing state-owned refiners to resume shipments overseas this month, as well as one private refiner, Reuters reported today, citing ...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Lifts-Fuel-Export-Curbs-as-Refiners-Ramp-Up-Overseas-Shipments.html",
-      "published": "2026-07-08T07:30:00Z",
-      "sentiment": "bullish",
-      "impact": "med"
     },
     {
       "title": "Oil Prices Jump After Iran Attacks Commercial Vessels",
@@ -56,13 +29,13 @@
       "impact": "high"
     },
     {
-      "title": "Why the AI Boom Is About to Break the U.S. Power Grid",
-      "summary": "The American power grid is about to fail the most important industry it has ever been asked to support. In fact\u2026the dominoes in this potentially disastrous scenario have already begun to fall. Larg...",
+      "title": "Oil Prices Surge 6% Even as Tankers Push Through Hormuz",
+      "summary": "Thin tanker traffic through the Strait of Hormuz continued early on Wednesday despite the fresh flare-up in the Middle East, but more vessels appear to be reconsidering moving toward the chokepoint...",
       "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/Why-the-AI-Boom-Is-About-to-Break-the-US-Power-Grid.html",
-      "published": "2026-07-08T00:00:00Z",
-      "sentiment": "bearish",
-      "impact": "low"
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Surge-6-Even-as-Tankers-Push-Through-Hormuz.html",
+      "published": "2026-07-08T10:30:00Z",
+      "sentiment": "neutral",
+      "impact": "med"
     },
     {
       "title": "TotalEnergies Eyes Offshore Exploration Deal in Syria",
@@ -74,6 +47,42 @@
       "impact": "low"
     },
     {
+      "title": "China Lifts Fuel Export Curbs as Refiners Ramp Up Overseas Shipments",
+      "summary": "China has lifted restrictions on the exports of refined fuels, allowing state-owned refiners to resume shipments overseas this month, as well as one private refiner, Reuters reported today, citing ...",
+      "source": "",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Lifts-Fuel-Export-Curbs-as-Refiners-Ramp-Up-Overseas-Shipments.html",
+      "published": "2026-07-08T07:30:00Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "Global Nuclear Power Capacity Set to Jump by 44% by 2036",
+      "summary": "The world\u2019s fleet of nuclear power capacity is expected to surge by 44% over the next decade as China will topple the United States as the biggest nuclear power capacity holder and India will hike ...",
+      "source": "",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Global-Nuclear-Power-Capacity-Set-to-Jump-by-44-by-2036.html",
+      "published": "2026-07-08T15:30:00Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "Why the AI Boom Is About to Break the U.S. Power Grid",
+      "summary": "The American power grid is about to fail the most important industry it has ever been asked to support. In fact\u2026the dominoes in this potentially disastrous scenario have already begun to fall. Larg...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/Why-the-AI-Boom-Is-About-to-Break-the-US-Power-Grid.html",
+      "published": "2026-07-08T00:00:00Z",
+      "sentiment": "bearish",
+      "impact": "low"
+    },
+    {
+      "title": "UK Airline Turns Fuel Price Surge Into $500 Million Windfall Through Hedging",
+      "summary": "Jet2 recorded a nearly \u00a3400m boost from the rising price of jet fuel which caused widespread fear that summer holidays could be cancelled and airlines could go bust. The package holiday provider re...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/UK-Airline-Turns-Fuel-Price-Surge-Into-500-Million-Windfall-Through-Hedging.html",
+      "published": "2026-07-08T16:00:00Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
       "title": "63 Million Barrels Of Crude Stuck At Sea As U.S. Pulls Iran Sanction Waiver",
       "summary": "Iran was struggling to sell its crude to buyers in Asia outside China even before the U.S. rescinded overnight the sanctions waiver that allowed Tehran to sell its oil without penalties. The Irania...",
       "source": "",
@@ -83,22 +92,13 @@
       "impact": "med"
     },
     {
-      "title": "Oil Prices Surge 6% Even as Tankers Push Through Hormuz",
-      "summary": "Thin tanker traffic through the Strait of Hormuz continued early on Wednesday despite the fresh flare-up in the Middle East, but more vessels appear to be reconsidering moving toward the chokepoint...",
+      "title": "Oil Prices Jump over 7% as Iran Ceasefire Declared \u2018Over\u2019",
+      "summary": "Oil prices surged over 7% to a two-week high on Wednesday after U.S. President Donald Trump declared that the interim ceasefire agreement with Iran is officially over and dismissed the recently sig...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Surge-6-Even-as-Tankers-Push-Through-Hormuz.html",
-      "published": "2026-07-08T10:30:00Z",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Jump-over-7-as-Iran-Ceasefire-Declared-Over.html",
+      "published": "2026-07-08T15:31:00Z",
       "sentiment": "neutral",
-      "impact": "med"
-    },
-    {
-      "title": "The Next Oil Price Spike Could Come Sooner Than Traders Think",
-      "summary": "Oil prices have dropped back to pre-war levels since the United States and Iran agreed to negotiate a deal under a framework that included the reopening of the Strait of Hormuz. With oil flows out ...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Crude-Oil/The-Next-Oil-Price-Spike-Could-Come-Sooner-Than-Traders-Think.html",
-      "published": "2026-07-07T23:00:00Z",
-      "sentiment": "bearish",
-      "impact": "med"
+      "impact": "high"
     },
     {
       "title": "Bahrain and Kuwait Restore Power After Iranian Attacks",
@@ -110,13 +110,22 @@
       "impact": "low"
     },
     {
-      "title": "Trump's Nuclear Loan Program Won't Fix What's Really Broken",
-      "summary": "Donald Trump is trying to push forward a nuclear power renaissance in the United States as the AI boom presents the country with a major looming energy deficit. The federal government recently anno...",
+      "title": "Trump Declares Iran Deal \u201cOver\u201d After Fresh Military Escalation",
+      "summary": "US President Donald Trump has said the deal with Iran \u201cis over\u201d following renewed fighting in recent hours. Speaking at the NATO summit in Ankara, Turkey, he also said that the Iranian leadership w...",
       "source": "",
-      "url": "https://oilprice.com/Alternative-Energy/Nuclear-Power/Trumps-Nuclear-Loan-Program-Wont-Fix-Whats-Really-Broken.html",
-      "published": "2026-07-07T21:00:00Z",
-      "sentiment": "neutral",
+      "url": "https://oilprice.com/Energy/Energy-General/Trump-Declares-Iran-Deal-Over-After-Fresh-Military-Escalation.html",
+      "published": "2026-07-08T14:00:00Z",
+      "sentiment": "bullish",
       "impact": "low"
+    },
+    {
+      "title": "The Next Oil Price Spike Could Come Sooner Than Traders Think",
+      "summary": "Oil prices have dropped back to pre-war levels since the United States and Iran agreed to negotiate a deal under a framework that included the reopening of the Strait of Hormuz. With oil flows out ...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Crude-Oil/The-Next-Oil-Price-Spike-Could-Come-Sooner-Than-Traders-Think.html",
+      "published": "2026-07-07T23:00:00Z",
+      "sentiment": "bearish",
+      "impact": "med"
     },
     {
       "title": "Vitol Eyes Venezuela Expansion as Oil Industry Returns",
@@ -124,15 +133,6 @@
       "source": "",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Vitol-Eyes-Venezuela-Expansion-as-Oil-Industry-Returns.html",
       "published": "2026-07-08T13:00:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Trump Declares Iran Deal \u201cOver\u201d After Fresh Military Escalation",
-      "summary": "US President Donald Trump has said the deal with Iran \u201cis over\u201d following renewed fighting in recent hours. Speaking at the NATO summit in Ankara, Turkey, he also said that the Iranian leadership w...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/Trump-Declares-Iran-Deal-Over-After-Fresh-Military-Escalation.html",
-      "published": "2026-07-08T14:00:00Z",
       "sentiment": "bullish",
       "impact": "low"
     }
@@ -166,22 +166,22 @@
       "impact": "low"
     },
     {
-      "title": "U.S. hits dozens of Iranian targets in retaliatory strikes after ship attacks in Strait of Hormuz",
-      "summary": "U.S. hits dozens of Iranian targets in retaliatory strikes after ship attacks in Strait of Hormuz CBS News",
-      "source": "CBS News",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNU0xMeTgxMmpSdFlramJmMVhMaVJieVh2Q2N4YmJkMm1MSk03QVcteENWQjFjblJhcEJkNTJ3V0JYLUg2YlUzNzRmbFFEZVlYZHFTTTFDZ3pKZUhsaHgtellmUFpESm03WWZIcEJSUnNkUUhiRlp2bGcyempZR1U2U0VqTQ?oc=5",
-      "published": "2026-07-07T10:15:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
+      "title": "US and Iran trade strikes around strait of Hormuz as ceasefire is violated again",
+      "summary": "US and Iran trade strikes around strait of Hormuz as ceasefire is violated again The Guardian",
+      "source": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONlRxOVFtRHI1U3pmLWdYVHJoR2lMS2xZbFlFMzVjdzZUMXMwdl8ycXhGaTNsSEphNUxjbnZTWS0wNHN5ZjJfMEU0dmZrdEZvYU9TY1NPN0hBeTNWQ2h6Q3BaX18xd1ZRSDR0Q3hXS1NNWkdQc3RwZnYwb1h5bjdiVDBCWVpZSS1peU9zNk9jUnNnVFZNei10Z2hpTEJJb1BDSzNNcTg4S2xtbWNK?oc=5",
+      "published": "2026-07-08T01:15:00Z",
+      "sentiment": "bearish",
+      "impact": "med"
     },
     {
-      "title": "US Launches Airstrikes on Iran After Attacks on 3 Merchant Ships in Strait of Hormuz",
-      "summary": "US Launches Airstrikes on Iran After Attacks on 3 Merchant Ships in Strait of Hormuz bloomingbit",
-      "source": "bloomingbit",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE85eDROT1JKajJEMktYczdCa05hNlJSMEdXSHhCSE5WZzJBMHRHaC1kR3RzM0ZvZTQzWnlwSnR6dDUzTjltTlduaERUdmRmYV9aU0RndQ?oc=5",
-      "published": "2026-07-07T22:03:01Z",
-      "sentiment": "bullish",
-      "impact": "low"
+      "title": "US revokes Iran oil license and launches airstrikes following Strait of Hormuz tanker attacks",
+      "summary": "US revokes Iran oil license and launches airstrikes following Strait of Hormuz tanker attacks Harici",
+      "source": "Harici",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOU1CTDlhcVFlZ3lpSmFNVlktdjZ6YUxGWThhMXU4M1pWNlc3QXptV3dlaFo4WHczOExhWmtnZU1qNTlrb0c3eEdkdWNBOFNYLUFPdTNTempiOGw3ZTdBYUNHclJfNzFvWFlzeFZkUWxXbTNNTmtzdlQ1QWVqamNULXFVc3FJME92V3VfWHpjeGtENzZWQ3NBZDRWMThfM3BpaXEzRFJzemxpc2pTOVhGOTBscXdGWlRuaTFJ0gG7AUFVX3lxTFA5TUJMOWFxUWVneWlKYU1WWS12NnphTEZZOGExdTgzWlY2VzdBem1Xd2VoWjhYdzM4TGFaa2dlTWo1OWtvRzd4R2R1Y0E4U1gtQU91M1N6amI4bDdlN0FhQ0dyUl83MW9YWXN4VmRRbFdtM01Oa3N2VDVBZWpqY1QtcVVzcUkwT3ZXdV9YemN4a0Q3NlZDc0FkNFYxOF8zcGlpcTNEUnN6bGlzalM5WEY5MGxxd0ZaVG5pMUk?oc=5",
+      "published": "2026-07-08T09:14:31Z",
+      "sentiment": "neutral",
+      "impact": "med"
     },
     {
       "title": "Trump declares Iran ceasefire \u2018over\u2019 as Strait of Hormuz attacks intensify",
@@ -191,6 +191,15 @@
       "published": "2026-07-08T10:08:54Z",
       "sentiment": "bearish",
       "impact": "med"
+    },
+    {
+      "title": "U.S. hits dozens of Iranian targets in retaliatory strikes after ship attacks in Strait of Hormuz",
+      "summary": "U.S. hits dozens of Iranian targets in retaliatory strikes after ship attacks in Strait of Hormuz CBS News",
+      "source": "CBS News",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNU0xMeTgxMmpSdFlramJmMVhMaVJieVh2Q2N4YmJkMm1MSk03QVcteENWQjFjblJhcEJkNTJ3V0JYLUg2YlUzNzRmbFFEZVlYZHFTTTFDZ3pKZUhsaHgtellmUFpESm03WWZIcEJSUnNkUUhiRlp2bGcyempZR1U2U0VqTQ?oc=5",
+      "published": "2026-07-07T10:15:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
     },
     {
       "title": "US revokes sanctions relief on Iranian oil after tanker attacks in Strait of Hormuz",
@@ -211,15 +220,6 @@
       "impact": "med"
     },
     {
-      "title": "US and Iran trade strikes around strait of Hormuz as ceasefire is violated again",
-      "summary": "US and Iran trade strikes around strait of Hormuz as ceasefire is violated again The Guardian",
-      "source": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONlRxOVFtRHI1U3pmLWdYVHJoR2lMS2xZbFlFMzVjdzZUMXMwdl8ycXhGaTNsSEphNUxjbnZTWS0wNHN5ZjJfMEU0dmZrdEZvYU9TY1NPN0hBeTNWQ2h6Q3BaX18xd1ZRSDR0Q3hXS1NNWkdQc3RwZnYwb1h5bjdiVDBCWVpZSS1peU9zNk9jUnNnVFZNei10Z2hpTEJJb1BDSzNNcTg4S2xtbWNK?oc=5",
-      "published": "2026-07-08T01:15:00Z",
-      "sentiment": "bearish",
-      "impact": "med"
-    },
-    {
       "title": "US launches new strikes on Iran after reinstating oil sanctions over shipping attacks",
       "summary": "US launches new strikes on Iran after reinstating oil sanctions over shipping attacks Reuters",
       "source": "Reuters",
@@ -236,69 +236,6 @@
       "published": "2026-07-08T03:37:11Z",
       "sentiment": "bullish",
       "impact": "med"
-    },
-    {
-      "title": "Russia energy sanctions briefing: UK and EU responses to the war in Iran",
-      "summary": "Russia energy sanctions briefing: UK and EU responses to the war in Iran Mishcon de Reya LLP",
-      "source": "Mishcon de Reya LLP",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaEpZNi1CVHJOVFp6NnJuVDl2U2tjOG1EVEZIYWNtM0NabkVyejNDM0NZZlNuODdIV2JUM0VwWVpzUTJvNmcwYlNyX3J0Skd5UWt0SEVPTU42Q3YzMUh0UUQwY0cwSHM1TkZRdFdZb2lQQXQ2Ymx6a1BUeEV6eTlWbnRDazlhMDBuS2cyRXhzR3NkajRlU0ttX1dudHpfa2ZnZFE?oc=5",
-      "published": "2026-07-08T12:00:21Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "US launches strikes on Iran after tankers hit in Strait of Hormuz",
-      "summary": "US launches strikes on Iran after tankers hit in Strait of Hormuz BBC",
-      "source": "BBC",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1MbzNFYURjUGo4T1hRZnJ0WjZFNVAzSzk1b28yVS1NR3g4NVpZMjNsUzhVREdqZFdLNm5TOWtzOS1QSDVzV0szbGFfZmFaV1lLWjlOTzBaVHg4QQ?oc=5",
-      "published": "2026-07-08T08:11:50Z",
-      "sentiment": "bearish",
-      "impact": "low"
-    },
-    {
-      "title": "From Hormuz To Airstrikes: 5 Events That Shattered The Fragile US-Iran Ceasefire",
-      "summary": "From Hormuz To Airstrikes: 5 Events That Shattered The Fragile US-Iran Ceasefire News18",
-      "source": "News18",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPXzdGZ2xaS0s2V1F3VjVGdE1EVm50MkhKeGpTak5GUjdZWVR0dHRmcm05Snd5WTMxbVdIWkFhMXVhbUthMFUyYTdSQVptSEFMeHFEak5JSE5lN1RJZVN6OUM0SFl2ZUJ3YzByV0RYQnFOU1RpVHVkTjVkZ0I3X28zQktLbnN3c0k2a0Zab3RzMkRtRXZwZkgtNHk5bFg2TUlGT1VHd3EyZXZIQmY5QjBuTGhlUTBVZHpXNTFYQmpWODRZUzZnR2JSTFNxVXVTbXdSTUxrZU1jS1JySS1PUmktNWJfR2wyNW85bm9nbElmay1aZkZWbUHSAfsBQVVfeXFMUDhiZmxGLUw5b193YVlfMGk5cTIzQmp6aVBEQk45dVp5d19fdlJ5X3hyeFh0OTRCc1hxT3NEbGE3RDVLRFZlMmpmNXNFajNxRmlSVG9wV0t0dFljckxycWt6TnZTclFYX2g0S25hbHBTQVpwMHRNSzlHT2xmczNDQmxHNFM5RkxDV3lEVkFObzg4cHR6R1NWcDFiQnpUMlJ6cFVfSHRqNWpIU2ttbTA0eHhnYzlFcmxPc1JjS2pMUzd3UlFwX3o0OG5vNkUtLXpsTUJXTFpEOXFqWnZzVU1aNVpUQWxzdzU3X0xUYUJMek03QW9OVm5NSEY3UEE?oc=5",
-      "published": "2026-07-08T09:07:32Z",
-      "sentiment": "bearish",
-      "impact": "med"
-    },
-    {
-      "title": "Tensions Flare in Strait of Hormuz: US Cuts Iranian Oil Sales",
-      "summary": "Tensions Flare in Strait of Hormuz: US Cuts Iranian Oil Sales Devdiscourse",
-      "source": "Devdiscourse",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOFFPOUN0SG9GY0MzVEJtaW4tUkRiOHA3Q3BXV2IzWENWT0FiTmhYZENScHVhTUx6WFZsdzJXYkpkWVZrNk5NaGpXYnFST19ZeFRYMEt0Tm9vM1VoUUJZVjUxYnRuZ3o4Z05KTFlMSFBBdktzYnF2OWJfcmZGNkgtS3MwUWJpSE9qai1DUGJwZEM2S1duUTJKQ3N4UkFVaTFGSzVDa0hKbXhJZGFVV29BVjRXc0xBTEEwdm1VcUNVU1pFWVRQQ09LZdIByAFBVV95cUxNOFFPOUN0SG9GY0MzVEJtaW4tUkRiOHA3Q3BXV2IzWENWT0FiTmhYZENScHVhTUx6WFZsdzJXYkpkWVZrNk5NaGpXYnFST19ZeFRYMEt0Tm9vM1VoUUJZVjUxYnRuZ3o4Z05KTFlMSFBBdktzYnF2OWJfcmZGNkgtS3MwUWJpSE9qai1DUGJwZEM2S1duUTJKQ3N4UkFVaTFGSzVDa0hKbXhJZGFVV29BVjRXc0xBTEEwdm1VcUNVU1pFWVRQQ09LZQ?oc=5",
-      "published": "2026-07-07T18:50:07Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Drones Strike Shadow Fleet: Ukraine Targets Russian Tankers",
-      "summary": "Drones Strike Shadow Fleet: Ukraine Targets Russian Tankers Devdiscourse",
-      "source": "Devdiscourse",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNFNRUzFWVWpwM180ZzFLQ1AwWTlSZ2NkTmcxOU1ocHdGdWhpVWZvYVhHTG5LUzdscC0wSGZjaHhma2ttczBNanE0ZE9OT3FvWWNMb3FWRFVYSmFKUDZyZE0tY21oUm9rSmtCaVNWUkdJTWxuQ1FhRUtWZktJc2VJYjl0Vl85OW1mOHJzb3VaV0tDamdudWMxeXNtR21xclRacndUekNMUks1bDhLcHljLTRfNVlJbU9T0gG4AUFVX3lxTE00U1FTMVZVanAzXzRnMUtDUDBZOVJnY2ROZzE5TWhwd0Z1aGlVZm9hWEdMbktTN2xwLTBIZmNoeGZra21zME1qcTRkT05PcW9ZY0xvcVZEVVhKYUpQNnJkTS1jbWhSb2tKa0JpU1ZSR0lNbG5DUWFFS1ZmS0lzZUliOXRWXzk5bWY4cnNvdVpXS0NqZ251YzF5c21HbXFyVFpyd1R6Q0xSSzVsOEtweWMtNF81WUltT1M?oc=5",
-      "published": "2026-07-07T10:56:18Z",
-      "sentiment": "bearish",
-      "impact": "low"
-    },
-    {
-      "title": "Missiles in the Maritime: Iran Strikes at Hormuz",
-      "summary": "Missiles in the Maritime: Iran Strikes at Hormuz Devdiscourse",
-      "source": "Devdiscourse",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNX1h6ZllCbGR4VE8xMTBILWRQeXZFWkRTT3NwZzRLQldhTTI5OFRvVVFfTk4yRzRNX1BRcXM4cF9ycnFoVkhJYzhtS285Y2ZtdXZrdVdraXhhQ09sM0VPSnJiUU9VSTFseG5CSFduSWR5aExCMjc5cEpINExDcmpLbUlYQUJCckFxaFRlTF9jbXlYREtLYnI2M0oxSm5NYzFVbTQycjhQd05yX1psRkU2MWFoMVdLU2PSAbcBQVVfeXFMTV9YemZZQmxkeFRPMTEwSC1kUHl2RVpEU09zcGc0S0JXYU0yOThUb1VRX05OMkc0TV9QUXFzOHBfcnJxaFZISWM4bUtvOWNmbXV2a3VXa2l4YUNPbDNFT0pyYlFPVUkxbHhuQkhXbklkeWhMQjI3OXBKSDRMQ3JqS21JWEFCQnJBcWhUZUxfY215WERLS2JyNjNKMUpuTWMxVW00MnI4UHdOcl9abEZFNjFhaDFXS1Nj?oc=5",
-      "published": "2026-07-07T02:02:42Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Azerbaijan Condemns Alleged Russian Drone Strike on SOCAR Fuel Station in Ukraine",
-      "summary": "Azerbaijan Condemns Alleged Russian Drone Strike on SOCAR Fuel Station in Ukraine Devdiscourse",
-      "source": "Devdiscourse",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPV01iZ1hzRTQ2eHNfTHJRRFh6STJfbDBnUTZ4bkN3SHlBa3VLSGtkQmFFaGE2ZWhOdDRZeDZrcDc5RTd2eTV2TktaSENLMFQzQ2tYeW03bzluc3Q5bjhmelFiRVB1cXFaZEMxSXkxUGNCR1FqeGI4Tl9VenVwRjR3YlFycWRXLUVfOGprSUdkZTFyZTBiSTVkU05CVk1sbnkwT3Jld2JSNFR2LUhacEp0TjM3U29fTzFWY2ktYzR0UTNMTHdodzV0SGp1bnJWeGtWakg1bUFkb9IB1wFBVV95cUxPV01iZ1hzRTQ2eHNfTHJRRFh6STJfbDBnUTZ4bkN3SHlBa3VLSGtkQmFFaGE2ZWhOdDRZeDZrcDc5RTd2eTV2TktaSENLMFQzQ2tYeW03bzluc3Q5bjhmelFiRVB1cXFaZEMxSXkxUGNCR1FqeGI4Tl9VenVwRjR3YlFycWRXLUVfOGprSUdkZTFyZTBiSTVkU05CVk1sbnkwT3Jld2JSNFR2LUhacEp0TjM3U29fTzFWY2ktYzR0UTNMTHdodzV0SGp1bnJWeGtWakg1bUFkbw?oc=5",
-      "published": "2026-07-06T13:55:36Z",
-      "sentiment": "neutral",
-      "impact": "low"
     },
     {
       "title": "U.S. intelligence data guided Ukrainian drone strikes on Russian refineries",
@@ -328,12 +265,75 @@
       "impact": "high"
     },
     {
-      "title": "Trump says interim accord to end war is 'over' after Iranian strikes",
-      "summary": "Trump says interim accord to end war is 'over' after Iranian strikes Reuters",
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQeXVzMnQ5aVh0S2MxNlBNWXBLcWZ0TFNrUWJuVFRRWjhKSmFVb2UtcGVWNWNVajcwb2dGVERnc3E5QVZseV9qN3RqdFBueUtRUUp3WTA0UVlSREdxOHN4UmV1QUdxSDh1cHVjNFZCWkRqVGpudXpHRnNiOWlMamoyaXY3Tl9ZT0pua1lDTHFNR3hUY1BxWWxHWktDSmpSNEVSOTVTQVZLb1VXaHg0dHc?oc=5",
-      "published": "2026-07-08T04:21:00Z",
+      "title": "Missiles in the Maritime: Iran Strikes at Hormuz",
+      "summary": "Missiles in the Maritime: Iran Strikes at Hormuz Devdiscourse",
+      "source": "Devdiscourse",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNX1h6ZllCbGR4VE8xMTBILWRQeXZFWkRTT3NwZzRLQldhTTI5OFRvVVFfTk4yRzRNX1BRcXM4cF9ycnFoVkhJYzhtS285Y2ZtdXZrdVdraXhhQ09sM0VPSnJiUU9VSTFseG5CSFduSWR5aExCMjc5cEpINExDcmpLbUlYQUJCckFxaFRlTF9jbXlYREtLYnI2M0oxSm5NYzFVbTQycjhQd05yX1psRkU2MWFoMVdLU2PSAbcBQVVfeXFMTV9YemZZQmxkeFRPMTEwSC1kUHl2RVpEU09zcGc0S0JXYU0yOThUb1VRX05OMkc0TV9QUXFzOHBfcnJxaFZISWM4bUtvOWNmbXV2a3VXa2l4YUNPbDNFT0pyYlFPVUkxbHhuQkhXbklkeWhMQjI3OXBKSDRMQ3JqS21JWEFCQnJBcWhUZUxfY215WERLS2JyNjNKMUpuTWMxVW00MnI4UHdOcl9abEZFNjFhaDFXS1Nj?oc=5",
+      "published": "2026-07-07T02:02:42Z",
       "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "US launches strikes on Iran after tankers hit in Strait of Hormuz",
+      "summary": "US launches strikes on Iran after tankers hit in Strait of Hormuz BBC",
+      "source": "BBC",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1MbzNFYURjUGo4T1hRZnJ0WjZFNVAzSzk1b28yVS1NR3g4NVpZMjNsUzhVREdqZFdLNm5TOWtzOS1QSDVzV0szbGFfZmFaV1lLWjlOTzBaVHg4QQ?oc=5",
+      "published": "2026-07-08T08:11:50Z",
+      "sentiment": "bearish",
+      "impact": "low"
+    },
+    {
+      "title": "From Hormuz To Airstrikes: 5 Events That Shattered The Fragile US-Iran Ceasefire",
+      "summary": "From Hormuz To Airstrikes: 5 Events That Shattered The Fragile US-Iran Ceasefire News18",
+      "source": "News18",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPXzdGZ2xaS0s2V1F3VjVGdE1EVm50MkhKeGpTak5GUjdZWVR0dHRmcm05Snd5WTMxbVdIWkFhMXVhbUthMFUyYTdSQVptSEFMeHFEak5JSE5lN1RJZVN6OUM0SFl2ZUJ3YzByV0RYQnFOU1RpVHVkTjVkZ0I3X28zQktLbnN3c0k2a0Zab3RzMkRtRXZwZkgtNHk5bFg2TUlGT1VHd3EyZXZIQmY5QjBuTGhlUTBVZHpXNTFYQmpWODRZUzZnR2JSTFNxVXVTbXdSTUxrZU1jS1JySS1PUmktNWJfR2wyNW85bm9nbElmay1aZkZWbUHSAfsBQVVfeXFMUDhiZmxGLUw5b193YVlfMGk5cTIzQmp6aVBEQk45dVp5d19fdlJ5X3hyeFh0OTRCc1hxT3NEbGE3RDVLRFZlMmpmNXNFajNxRmlSVG9wV0t0dFljckxycWt6TnZTclFYX2g0S25hbHBTQVpwMHRNSzlHT2xmczNDQmxHNFM5RkxDV3lEVkFObzg4cHR6R1NWcDFiQnpUMlJ6cFVfSHRqNWpIU2ttbTA0eHhnYzlFcmxPc1JjS2pMUzd3UlFwX3o0OG5vNkUtLXpsTUJXTFpEOXFqWnZzVU1aNVpUQWxzdzU3X0xUYUJMek03QW9OVm5NSEY3UEE?oc=5",
+      "published": "2026-07-08T09:07:32Z",
+      "sentiment": "bearish",
+      "impact": "med"
+    },
+    {
+      "title": "Azerbaijan Condemns Alleged Russian Drone Strike on SOCAR Fuel Station in Ukraine",
+      "summary": "Azerbaijan Condemns Alleged Russian Drone Strike on SOCAR Fuel Station in Ukraine Devdiscourse",
+      "source": "Devdiscourse",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPV01iZ1hzRTQ2eHNfTHJRRFh6STJfbDBnUTZ4bkN3SHlBa3VLSGtkQmFFaGE2ZWhOdDRZeDZrcDc5RTd2eTV2TktaSENLMFQzQ2tYeW03bzluc3Q5bjhmelFiRVB1cXFaZEMxSXkxUGNCR1FqeGI4Tl9VenVwRjR3YlFycWRXLUVfOGprSUdkZTFyZTBiSTVkU05CVk1sbnkwT3Jld2JSNFR2LUhacEp0TjM3U29fTzFWY2ktYzR0UTNMTHdodzV0SGp1bnJWeGtWakg1bUFkb9IB1wFBVV95cUxPV01iZ1hzRTQ2eHNfTHJRRFh6STJfbDBnUTZ4bkN3SHlBa3VLSGtkQmFFaGE2ZWhOdDRZeDZrcDc5RTd2eTV2TktaSENLMFQzQ2tYeW03bzluc3Q5bjhmelFiRVB1cXFaZEMxSXkxUGNCR1FqeGI4Tl9VenVwRjR3YlFycWRXLUVfOGprSUdkZTFyZTBiSTVkU05CVk1sbnkwT3Jld2JSNFR2LUhacEp0TjM3U29fTzFWY2ktYzR0UTNMTHdodzV0SGp1bnJWeGtWakg1bUFkbw?oc=5",
+      "published": "2026-07-06T13:55:36Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "US-Iran Strikes Resume as MoU Ends: The Middle East Edges Closer to All-Out War",
+      "summary": "US-Iran Strikes Resume as MoU Ends: The Middle East Edges Closer to All-Out War Brandsynario",
+      "source": "Brandsynario",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNMzEwMzd3UFN0SU00bDNMVXh6VmRKV3cxSWstemNFT3U1cE80eFhISGtodFFyY2ZpbDhIVmdzT0ZoQWU2NDQ5YmhuV2NEWS1fU0tFZ2NNYmItY0F4QzNaQkd5VEhTdVlSYjBDMWpza29vRjQzQVpXN0s5VXBSNGUyMXNR?oc=5",
+      "published": "2026-07-08T12:23:23Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "Drones Strike Shadow Fleet: Ukraine Targets Russian Tankers",
+      "summary": "Drones Strike Shadow Fleet: Ukraine Targets Russian Tankers Devdiscourse",
+      "source": "Devdiscourse",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNFNRUzFWVWpwM180ZzFLQ1AwWTlSZ2NkTmcxOU1ocHdGdWhpVWZvYVhHTG5LUzdscC0wSGZjaHhma2ttczBNanE0ZE9OT3FvWWNMb3FWRFVYSmFKUDZyZE0tY21oUm9rSmtCaVNWUkdJTWxuQ1FhRUtWZktJc2VJYjl0Vl85OW1mOHJzb3VaV0tDamdudWMxeXNtR21xclRacndUekNMUks1bDhLcHljLTRfNVlJbU9T0gG4AUFVX3lxTE00U1FTMVZVanAzXzRnMUtDUDBZOVJnY2ROZzE5TWhwd0Z1aGlVZm9hWEdMbktTN2xwLTBIZmNoeGZra21zME1qcTRkT05PcW9ZY0xvcVZEVVhKYUpQNnJkTS1jbWhSb2tKa0JpU1ZSR0lNbG5DUWFFS1ZmS0lzZUliOXRWXzk5bWY4cnNvdVpXS0NqZ251YzF5c21HbXFyVFpyd1R6Q0xSSzVsOEtweWMtNF81WUltT1M?oc=5",
+      "published": "2026-07-07T10:56:18Z",
+      "sentiment": "bearish",
+      "impact": "low"
+    },
+    {
+      "title": "Tensions Flare in Strait of Hormuz: US Cuts Iranian Oil Sales",
+      "summary": "Tensions Flare in Strait of Hormuz: US Cuts Iranian Oil Sales Devdiscourse",
+      "source": "Devdiscourse",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOFFPOUN0SG9GY0MzVEJtaW4tUkRiOHA3Q3BXV2IzWENWT0FiTmhYZENScHVhTUx6WFZsdzJXYkpkWVZrNk5NaGpXYnFST19ZeFRYMEt0Tm9vM1VoUUJZVjUxYnRuZ3o4Z05KTFlMSFBBdktzYnF2OWJfcmZGNkgtS3MwUWJpSE9qai1DUGJwZEM2S1duUTJKQ3N4UkFVaTFGSzVDa0hKbXhJZGFVV29BVjRXc0xBTEEwdm1VcUNVU1pFWVRQQ09LZdIByAFBVV95cUxNOFFPOUN0SG9GY0MzVEJtaW4tUkRiOHA3Q3BXV2IzWENWT0FiTmhYZENScHVhTUx6WFZsdzJXYkpkWVZrNk5NaGpXYnFST19ZeFRYMEt0Tm9vM1VoUUJZVjUxYnRuZ3o4Z05KTFlMSFBBdktzYnF2OWJfcmZGNkgtS3MwUWJpSE9qai1DUGJwZEM2S1duUTJKQ3N4UkFVaTFGSzVDa0hKbXhJZGFVV29BVjRXc0xBTEEwdm1VcUNVU1pFWVRQQ09LZQ?oc=5",
+      "published": "2026-07-07T18:50:07Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Russia energy sanctions briefing: UK and EU responses to the war in Iran",
+      "summary": "Russia energy sanctions briefing: UK and EU responses to the war in Iran Mishcon de Reya LLP",
+      "source": "Mishcon de Reya LLP",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaEpZNi1CVHJOVFp6NnJuVDl2U2tjOG1EVEZIYWNtM0NabkVyejNDM0NZZlNuODdIV2JUM0VwWVpzUTJvNmcwYlNyX3J0Skd5UWt0SEVPTU42Q3YzMUh0UUQwY0cwSHM1TkZRdFdZb2lQQXQ2Ymx6a1BUeEV6eTlWbnRDazlhMDBuS2cyRXhzR3NkajRlU0ttX1dudHpfa2ZnZFE?oc=5",
+      "published": "2026-07-08T12:00:21Z",
+      "sentiment": "bullish",
       "impact": "low"
     },
     {
@@ -346,20 +346,20 @@
       "impact": "high"
     },
     {
-      "title": "Ukraine war is not going well for Russia \u2013 how dangerous is this for Vladimir Putin?",
-      "summary": "Ukraine war is not going well for Russia \u2013 how dangerous is this for Vladimir Putin? The Conversation",
-      "source": "The Conversation",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQzFDWk5Ud1hISnBYN0NNUE53c2wzbzFjMF9wS3ZiYURzd0pCNTlLUmZaSUZrNkJNSzU1MHlDcHVWOEtwOXYwMlFiRkhtdjE5UFF2bFc0LUh6XzJvM1NVTVYyeWVLTF9kTkJ1TG9WWlFxXzdqcDVQX2pfcWV5bWZFdVdLQ2tHN3Z4V29XYVFSZjdoZTlGLWtFRHFVeTlfOFVrbDBFRzVJMnpMQmVLcFRieG1sbjk1TG8?oc=5",
-      "published": "2026-07-07T09:52:19Z",
-      "sentiment": "neutral",
-      "impact": "low"
+      "title": "Crude Oil Prices Surge 3% as US Strikes Iran and Revokes Oil Sanctions Waiver",
+      "summary": "Crude Oil Prices Surge 3% as US Strikes Iran and Revokes Oil Sanctions Waiver Markets.com",
+      "source": "Markets.com",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbEhwenE5WURiTGVybnJmVmRqcDdsckxOYjNSSF8wNXExWXltQW1Sc3otQmFXaUhmZmlVamRPd1NSRmJscmE1XzIwUkp3RTJ2NDFLUzlmaEk2V0dnLVMyUXYxWVNzMFp2bk4yQ1p1MHFjbkk0R0FrSWJBYk1kdUM2dlE2cEtBdEVxYW9rV0pOQTY?oc=5",
+      "published": "2026-07-07T16:05:00Z",
+      "sentiment": "bullish",
+      "impact": "med"
     },
     {
-      "title": "Russia's Fuel Crisis Deepens as Ukrainian Drone Strikes Hit Energy Infrastructure",
-      "summary": "Russia's Fuel Crisis Deepens as Ukrainian Drone Strikes Hit Energy Infrastructure International Business Times UK",
-      "source": "International Business Times UK",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOel9OOU9VWXJEZVpaRTBfNGY1QUw5VzRzaGMwVE54ZVpxSEYwZlBGUWhMWUVEVFg1Wno3Z0EwZ1pPVXByYUxSVEhKa0VBY3ZwTEdiN01BLWJpa1h6Q0dEM2ptdzlwQ3VHLWpwSW5LOWhtcVFEN05QbVFMTWMzZWpFRg?oc=5",
-      "published": "2026-07-06T08:55:09Z",
+      "title": "US Renews Strikes On Iran After Vessels Hit In Hormuz Strait",
+      "summary": "US Renews Strikes On Iran After Vessels Hit In Hormuz Strait Radio Free Europe/Radio Liberty",
+      "source": "Radio Free Europe/Radio Liberty",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaDFqVEdDOWxiWGV5by1XVDgwWk4wakdYZDA1VkZrcl9lNTR3X2tHSGdxcnJCdnNvMHZjZGI3cWtQR3ljcWhMVmJndmxHbU9ENi1XRkFnQVkwdVVLNjZadHdxeHFIWjJXU29LeUFJYkpFSUNTd3U2SUQ4d2t3b2xpS19NczlYMy1VdHN4cERpNE1MQ1pzVXfSAZYBQVVfeXFMT2gxalRHQzlsYlhleW8tV1Q4MFpOMGpHWGQwNVZGa3JfZTU0d19rR0hncXJyQnZzbzB2Y2RiN3FrUEd5Y3FoTFZiZ3ZsR21PRDYtV0ZBZ0FZMHVVSzY2WnR3cXhxSFoyV1NvS3lBSWJKRUlDU3d1NklEOHdrd29saUtfTXM5WDMtVXRzeHBEaTRNTENac1V3?oc=5",
+      "published": "2026-07-07T22:17:44Z",
       "sentiment": "neutral",
       "impact": "low"
     }
