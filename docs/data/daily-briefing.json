@@ -1,45 +1,46 @@
 {
- "generated": "2026-07-07T21:21:07.023497+00:00",
+ "generated": "2026-07-08T15:17:25.217893+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "WTI and Brent surged roughly 5.3-5.4% on the day, recovering sharply from a brutal month that has erased more than 20% from both benchmarks. The catalyst was a clear geopolitical shock: drone strikes in the Strait of Hormuz disrupted shipping, and the US subsequently revoked Iran's oil sanctions waiver in direct response to tanker attacks, ratcheting up pressure on Tehran. Ukraine compounded supply-side anxiety by striking Russia's largest refinery and a Kerch terminal in Crimea. Against that backdrop, the UAE's post-OPEC output surge to above 3.8 mb/d and an API crude draw of only 399,000 barrels for the week ending July 3 offered mixed signals on fundamentals. RBOB gasoline bucked the crude rally, falling 5.6% on the day, suggesting crack-spread compression rather than demand strength. Saudi Arabia's reported plans to expand its East-West pipeline capacity by up to 2 mb/d signal Riyadh is preparing longer-term Hormuz bypass optionality.",
+   "summary": "Crude surged sharply on Tuesday, with WTI settling at $75.64/bbl (+7.35%) and Brent at $79.94/bbl (+7.77%), as a cascade of geopolitical shocks dominated the tape. Iran attacked commercial vessels in the Strait of Hormuz, prompting U.S. retaliatory strikes on Iranian targets and the immediate revocation of Iran's sanctions waiver, leaving an estimated 63 million barrels of crude stranded at sea. Simultaneously, Ukraine struck eight Russian dark-fleet tankers in the Sea of Azov, with U.S. intelligence reportedly guiding separate drone strikes on Russian refineries. Heating oil outperformed dramatically (+10.73%), reflecting acute supply-chain anxiety. The one bearish note came from EIA data showing a surprise 3.0 million-barrel crude inventory build for the week ending July 3, contrasting with the API's earlier draw estimate of 399,000 barrels. The month-on-month losses of 14-16% underscore how sharply the geopolitical risk premium has re-entered the market.",
    "drivers": [
-    "US revocation of Iran oil sanctions waiver following Hormuz tanker drone attacks drove a sharp geopolitical risk premium into crude prices",
-    "Ukraine struck Russia's largest oil refinery and Kerch terminal in Crimea, adding further supply disruption concerns",
-    "UAE raised output to above 3.8 mb/d after quitting OPEC, while API data showed a modest US crude stock draw of 399,000 barrels, keeping fundamental picture mixed"
+    "U.S. revocation of Iran sanctions waiver and mutual military strikes on Strait of Hormuz shipping lanes, threatening crude flow disruption",
+    "Ukraine drone campaign targeting eight Russian dark-fleet tankers in the Sea of Azov, adding further supply-side risk",
+    "Bearish offset: EIA reported a surprise 3.0 million-barrel U.S. crude inventory build for the week ending July 3"
    ],
    "headlineCount": 12,
    "sources": [
-    "Crypto Briefing",
-    "International Business Times",
-    "Newagebd.net",
-    "The New York Times",
-    "\u041c\u0435\u0436\u0430. \u041d\u043e\u0432\u0438\u043d\u0438 \u0423\u043a\u0440\u0430\u0457\u043d\u0438."
+    "ANI News",
+    "Devdiscourse",
+    "Energy News Beat",
+    "Reuters",
+    "The New Voice of Ukraine",
+    "The New York Times"
    ]
   },
   "gas": {
-   "summary": "European TTF jumped 4.96% on the day to 46.32 \u20ac/MWh, extending a strong weekly gain of 8.82% that likely reflects spillover from Hormuz supply-risk anxiety and broader energy security concerns. Henry Hub was more subdued, adding 1.11% to $3.281/MMBtu, still up over 3% on the week. On the structural side, ADNOC signed a 15-year LNG supply agreement with Japan's Inpex for volumes from the Ruwais LNG project, underscoring ongoing Asian demand for long-term contracted LNG. Germany announced a $1.7 billion plan to create a state-owned strategic natural gas reserve, signalling continued European appetite for supply security buffers. A headline noting Chevron and Exxon are expected to report their best quarter since 2022 points to the supportive revenue environment for gas-weighted majors.",
+   "summary": "European gas prices bore the brunt of the Hormuz escalation, with TTF jumping 5.81% on the day to \u20ac49.28/MWh and extending a sharp 13.43% weekly rally. The sole headline available today directly links the move to LNG tankers making U-turns after fresh hostilities disrupted vessel traffic through the Strait of Hormuz, a critical artery for LNG flows into Europe. Henry Hub was comparatively unmoved, ticking up just 0.28% to $3.274/MMBtu, consistent with the U.S. market's limited direct exposure to Hormuz transit risk. News flow for this sector is thin beyond the Hormuz disruption headline; further commentary would require additional data.",
    "drivers": [
-    "TTF surged nearly 5% on the day, likely driven by Hormuz geopolitical risk spilling into European gas supply anxiety",
-    "Germany announced a $1.7 billion state-owned strategic natural gas reserve, reinforcing European energy security demand",
-    "ADNOC signed a 15-year LNG supply deal with Japan's Inpex for Ruwais LNG volumes, highlighting durable long-term Asian LNG contracting appetite"
+    "LNG tankers diverting or turning back amid renewed Strait of Hormuz hostilities, tightening European supply expectations",
+    "TTF weekly gain of 13.43% signals sustained European market anxiety over Middle East supply routes",
+    "Henry Hub largely insulated, rising only 0.28% given minimal U.S. direct exposure to Hormuz LNG flows"
    ],
-   "headlineCount": 5,
+   "headlineCount": 1,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs slipped 1.99% on the day to $75.985/EUA, a modest pullback that sits against a still-positive one-month gain of 4.28%. The softness in EUAs despite a sharp TTF rally is notable; higher gas prices would normally lift carbon as coal-to-gas switching dynamics tighten. Headline flow for the power and carbon space is thin today beyond the Hormuz and Ukraine drone-strike themes that pervade all three sectors. A drone attack on a UAE nuclear power plant \u2014 reported on July 6 \u2014 added a nuclear supply-risk dimension. Trump's nuclear loan programme drew commentary that it fails to address deeper structural issues in the US power market even as AI-driven electricity demand accelerates. Direct power-market price data beyond TTF and EUAs was not available in today's feed.",
+   "summary": "The power and carbon complex presented a mixed picture. EU carbon allowances (EUA) slipped 1.45% to $74.88/EUA, giving back a fraction of the prior month's 4.12% gain, even as TTF's surge nominally raises the cost of gas-fired generation and could support carbon demand. Gulf power infrastructure came into focus as Bahrain and Kuwait moved to restore electricity supplies following Iranian retaliatory strikes on both nations. On the structural side, two separate commentaries flagged growing U.S. grid stress driven by AI-sector electricity demand, with one piece questioning whether Trump's nuclear loan program is adequately sized to address the underlying capacity shortfall. News flow is limited for this sector beyond these themes.",
    "drivers": [
-    "EUA prices dipped ~2% despite a nearly 5% TTF rally, suggesting carbon-specific selling pressure overrode the usual gas-price correlation",
-    "Drone attack on a UAE nuclear power plant introduced a new dimension of generation-asset geopolitical risk",
-    "Trump's nuclear loan programme is under scrutiny for failing to address structural US power market gaps as AI-driven load growth accelerates"
+    "Iranian strikes on Gulf nations disrupted power infrastructure in Kuwait and Bahrain, highlighting direct conflict risk to regional grids",
+    "EUA slipped 1.45% despite higher gas prices; disconnect may reflect near-term demand uncertainty offsetting fuel-switching signals",
+    "Structural AI-driven power demand growth is intensifying U.S. grid capacity concerns, with nuclear loan program questioned as insufficient"
    ],
-   "headlineCount": 7,
+   "headlineCount": 6,
    "sources": [
+    "CBS News",
     "Devdiscourse",
-    "EnergyNow.com",
-    "Sky News"
+    "Indiablooms"
    ]
   }
  }
