@@ -1,42 +1,42 @@
 {
- "generated": "2026-07-09T15:56:21.597707+00:00",
+ "generated": "2026-07-09T21:21:06.539773+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude pulled back sharply on the day \u2014 WTI -2.09% to $71.98, Brent -1.83% to $76.60 \u2014 despite a geopolitically charged backdrop, as markets digested conflicting signals. The week-on-week gains (WTI +4.96%, Brent +7.01%) reflect the earlier shock from U.S.-Iran re-escalation, tanker attacks in the Strait of Hormuz, and Washington's revocation of Iranian sanctions relief. However, today's softness appears driven by Saudi Arabia slashing Asia-loading prices by the most in two decades, reigniting Gulf market-share competition, while Indonesia's receipt of Russian crude under its April deal signals alternative supply routes are holding. RBOB gasoline cratered 6.89%, the session's standout mover. Ukraine's continued drone campaign against Russian depots in Stavropol and Tver, and strikes on up to 12 tankers, adds tail-risk but has yet to tighten balances enough to offset the demand-side and competitive pricing pressure.",
+   "summary": "Crude sold off sharply on the day despite a geopolitically charged backdrop: WTI fell 2.33% to $71.81 and Brent dropped 2.54% to $76.04, though both benchmarks remain well bid on a weekly basis (+4.71% and +6.25% respectively) following last week's risk premium build. The steepest move was in RBOB gasoline, off 8.16% to $2.8501, suggesting demand-side pressure is overwhelming supply fears for now. The news flow is intensely bullish on paper \u2014 Ukraine struck 8 Russian shadow-fleet tankers in the Sea of Azov, hit oil depots in Stavropol and Tver, and Russia has banned diesel exports citing refinery damage. Separately, the US revoked Iran's sanctions waiver after tanker attacks in the Strait of Hormuz and launched retaliatory strikes on Iranian targets. Indonesia took delivery of its first Russian crude under the April deal, illustrating continued rerouting of sanctioned barrels. The monthly loss of over 19-21% signals the market is pricing demand weakness above geopolitical risk.",
    "drivers": [
-    "Saudi Arabia cuts Asia-loading crude prices by the most in two decades, reigniting OPEC+ market-share competition",
-    "Strait of Hormuz tanker traffic near standstill following renewed U.S.-Iran missile exchanges and reinstated Iranian oil sanctions",
-    "Ukraine escalates drone campaign, striking Russian oil depots in Stavropol and Tver and targeting up to 12 shadow-fleet tankers"
+    "Ukraine drone campaign escalating against Russian shadow fleet and refinery infrastructure, Russia bans diesel exports in response",
+    "US revokes Iran sanctions waiver and launches strikes after Strait of Hormuz tanker attacks, tightening Iranian supply outlook",
+    "RBOB gasoline -8.16% on the day signals demand-side deterioration overwhelming geopolitical risk premium; WTI -21% over 30 days reflects macro bear trend"
    ],
    "headlineCount": 12,
    "sources": [
     "ANI News",
     "Al Jazeera",
+    "Crude Oil Prices Today | OilPrice.com",
     "Devdiscourse",
     "Energy News Beat",
-    "Reuters",
-    "South China Morning Post"
+    "Reuters"
    ]
   },
   "gas": {
-   "summary": "The Henry Hub/TTF divergence widened dramatically today: Henry Hub fell 5.64% to $3.029/MMBtu, extending a weekly loss of 5.87%, while TTF surged 2.09% to \u20ac50.045/MWh on a week-on-week gain of nearly 17%. The split reflects the direct European exposure to Hormuz disruption \u2014 Qatari LNG cargoes to Pakistan have already been canceled, forcing spot-market scrambles \u2014 while U.S. domestic gas remains insulated from the physical supply shock. Venture Global's reported 69% jump in Q2 liquefaction fees to $6.45/MMBtu illustrates how U.S. LNG exporters are capturing the arbitrage windfall. The European Commission's anticipated 2040 electrification target adds a medium-term demand-erosion narrative but is not a near-term price mover.",
+   "summary": "A sharp divergence between Henry Hub and TTF defined the session. Henry Hub fell 6.23% to $3.012/MMBtu, extending a weekly loss of 6.46% and pointing to ample domestic supply conditions in the US. TTF moved in the opposite direction, gaining 2.04% to \u20ac50.02/MWh and surging 16.93% on the week, driven by Hormuz disruption anxiety. Pakistan was forced into the spot LNG market after a Qatari cargo was cancelled, a direct consequence of Strait of Hormuz re-escalation \u2014 a concrete demand signal for spot cargoes. The European Commission is set to announce a 2040 electrification target next week, a medium-term bearish structural signal for gas, though it offers no near-term relief to the TTF spike.",
    "drivers": [
-    "Hormuz tanker traffic disruption cuts Qatari LNG flows, forcing Pakistan to emergency spot buying and tightening European supply",
-    "Venture Global reports 69% quarterly surge in liquefaction fees to $6.45/MMBtu, reflecting Middle East turmoil premium in LNG freight",
-    "Henry Hub continues to weaken domestically (-5.64% today, -5.87% on the week), decoupling sharply from European TTF stress"
+    "Pakistan forced into emergency spot LNG buying after Qatar cargo cancellation tied to Strait of Hormuz disruption, tightening spot market",
+    "TTF surges 16.93% on the week as European buyers price in Hormuz and Russian supply risk simultaneously",
+    "Henry Hub -6.23% on the day and -6.46% on the week, reflecting US-specific supply sufficiency decoupled from global geopolitical tensions"
    ],
-   "headlineCount": 4,
+   "headlineCount": 3,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs were essentially flat on the day (-0.08% to $74.725/EUA), holding near the monthly high (+2.08% on the month), as the market awaits a clearer read on how sustained gas tightness feeds through to power-sector switching. TTF's 17% weekly surge is the dominant input cost signal for European utilities. The Hormuz disruption and Ukrainian strikes on Russian energy infrastructure compound supply-side risk, with commentary noting markets had been too complacent about the U.S.-Iran situation. The European Commission's forthcoming 2040 electrification target, due next week, is a structural positive for carbon over the medium term. On the demand side, the shipping industry's retreat from green fuels on cost grounds highlights that carbon abatement economics remain challenged outside of regulated markets.",
+   "summary": "EU carbon EUAs were broadly flat on the day, slipping just 0.08% to $74.725/EUA, with the monthly gain of 2.08% intact. The key market mover for the power complex remains TTF, up 2.04% on the day and 16.93% on the week, which raises gas-fired generation costs across Europe. On the structural side, the European Commission is expected to unveil a 2040 electrification target next week aimed at reducing fossil fuel dependence and expanding renewables \u2014 a long-run EUA demand dampener if successful. A US firm advancing thorium molten-salt reactor development and the shipping industry's retreat from green fuels due to cost pressures are noteworthy longer-dated signals, though neither moves markets today. Overall, the power and carbon sector has limited fresh price catalysts today; geopolitical spillovers from oil and gas dominate the macro backdrop.",
    "drivers": [
-    "TTF +16.98% on the week raises European power generation costs materially, supporting carbon prices at current levels",
-    "EU Commission set to unveil a 2040 electrification target next week, a medium-term structural support for EUA demand",
-    "Shipping sector pulling back from green fuels due to high costs, signaling continued carbon-intensive activity outside ETS-regulated sectors"
+    "TTF +16.93% on the week raises gas-fired power generation costs across Europe, pressuring power margins",
+    "European Commission set to reveal 2040 electrification target next week, a structural medium-term signal for reduced fossil fuel demand",
+    "EUA prices near flat on the day; near-term carbon price direction remains hostage to TTF and broader macro sentiment rather than policy catalysts"
    ],
-   "headlineCount": 10,
+   "headlineCount": 9,
    "sources": [
     "Al Jazeera",
     "CBS News",
