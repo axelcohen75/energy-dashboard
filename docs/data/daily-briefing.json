@@ -1,46 +1,44 @@
 {
- "generated": "2026-07-09T21:21:06.539773+00:00",
+ "generated": "2026-07-10T15:30:40.890886+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude sold off sharply on the day despite a geopolitically charged backdrop: WTI fell 2.33% to $71.81 and Brent dropped 2.54% to $76.04, though both benchmarks remain well bid on a weekly basis (+4.71% and +6.25% respectively) following last week's risk premium build. The steepest move was in RBOB gasoline, off 8.16% to $2.8501, suggesting demand-side pressure is overwhelming supply fears for now. The news flow is intensely bullish on paper \u2014 Ukraine struck 8 Russian shadow-fleet tankers in the Sea of Azov, hit oil depots in Stavropol and Tver, and Russia has banned diesel exports citing refinery damage. Separately, the US revoked Iran's sanctions waiver after tanker attacks in the Strait of Hormuz and launched retaliatory strikes on Iranian targets. Indonesia took delivery of its first Russian crude under the April deal, illustrating continued rerouting of sanctioned barrels. The monthly loss of over 19-21% signals the market is pricing demand weakness above geopolitical risk.",
+   "summary": "Crude ended Friday modestly lower on the day \u2014 WTI -0.99% to $71.35, Brent -0.63% to $75.82 \u2014 but both contracts locked in strong weekly gains of roughly 4-6% driven by a sharp re-escalation in Middle East risk. The U.S. revoked Iran's sanctions waiver following tanker attacks in the Strait of Hormuz, and reports of U.S. strikes on 80 Iranian targets kept the risk premium elevated. Ukraine's drone campaign against Russian oil depots in Stavropol and Tver, as well as strikes targeting 12 tankers, prompted Moscow to ban diesel exports, tightening distillate supply globally and pushing refining margins to reported record highs. RBOB gasoline was the stark outlier, cratering 8.02% on the session. Partially offsetting supply concerns, the UAE posted record output of 4.1 million bpd in June, and India's ONGC announced a 12.8-million-barrel strategic reserve build.",
    "drivers": [
-    "Ukraine drone campaign escalating against Russian shadow fleet and refinery infrastructure, Russia bans diesel exports in response",
-    "US revokes Iran sanctions waiver and launches strikes after Strait of Hormuz tanker attacks, tightening Iranian supply outlook",
-    "RBOB gasoline -8.16% on the day signals demand-side deterioration overwhelming geopolitical risk premium; WTI -21% over 30 days reflects macro bear trend"
+    "U.S. revocation of Iran sanctions waiver and Hormuz tensions sustain weekly crude risk premium",
+    "Russia's diesel export ban and Ukrainian strikes on depots/tankers drive distillate tightness and record refining margins",
+    "UAE record output of 4.1 mb/d and ONGC strategic reserve build provide partial demand/supply offsets"
    ],
    "headlineCount": 12,
    "sources": [
     "ANI News",
     "Al Jazeera",
     "Crude Oil Prices Today | OilPrice.com",
-    "Devdiscourse",
-    "Energy News Beat",
-    "Reuters"
+    "South China Morning Post",
+    "The Daily Jagran",
+    "The New York Times"
    ]
   },
   "gas": {
-   "summary": "A sharp divergence between Henry Hub and TTF defined the session. Henry Hub fell 6.23% to $3.012/MMBtu, extending a weekly loss of 6.46% and pointing to ample domestic supply conditions in the US. TTF moved in the opposite direction, gaining 2.04% to \u20ac50.02/MWh and surging 16.93% on the week, driven by Hormuz disruption anxiety. Pakistan was forced into the spot LNG market after a Qatari cargo was cancelled, a direct consequence of Strait of Hormuz re-escalation \u2014 a concrete demand signal for spot cargoes. The European Commission is set to announce a 2040 electrification target next week, a medium-term bearish structural signal for gas, though it offers no near-term relief to the TTF spike.",
+   "summary": "Natural gas markets delivered a split session on July 10. Henry Hub slid 3.98% to $2.891/MMBtu, extending a steep weekly loss of 9.51%, suggesting domestic U.S. fundamentals remain bearish despite the broader geopolitical backdrop. European TTF also softened on the day, down 3.37% to \u20ac48.415/MWh, though it retained a strong 10% weekly gain, reflecting greater European sensitivity to Hormuz and Russian supply disruptions. LNG flow data offered a nuanced signal: close to half a dozen LNG carriers transited the Strait of Hormuz in recent days, suggesting trade has not fully halted despite hostilities. ADNOC's $900 million order for four newbuild LNG carriers signals longer-term Abu Dhabi export ambition. A UK High Court ruling denied Nord Stream AG's $662 million insurance claim, applying a war exclusion clause.",
    "drivers": [
-    "Pakistan forced into emergency spot LNG buying after Qatar cargo cancellation tied to Strait of Hormuz disruption, tightening spot market",
-    "TTF surges 16.93% on the week as European buyers price in Hormuz and Russian supply risk simultaneously",
-    "Henry Hub -6.23% on the day and -6.46% on the week, reflecting US-specific supply sufficiency decoupled from global geopolitical tensions"
+    "Henry Hub in sharp weekly retreat (-9.51%), pointing to loose U.S. domestic balances despite geopolitical noise",
+    "TTF retains large weekly gain (+10%) on European exposure to Hormuz LNG transit risk and Russian supply disruption",
+    "LNG carriers continuing Hormuz transits and ADNOC's $900M newbuild order underline long-term Gulf export expansion intent"
    ],
-   "headlineCount": 3,
+   "headlineCount": 6,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs were broadly flat on the day, slipping just 0.08% to $74.725/EUA, with the monthly gain of 2.08% intact. The key market mover for the power complex remains TTF, up 2.04% on the day and 16.93% on the week, which raises gas-fired generation costs across Europe. On the structural side, the European Commission is expected to unveil a 2040 electrification target next week aimed at reducing fossil fuel dependence and expanding renewables \u2014 a long-run EUA demand dampener if successful. A US firm advancing thorium molten-salt reactor development and the shipping industry's retreat from green fuels due to cost pressures are noteworthy longer-dated signals, though neither moves markets today. Overall, the power and carbon sector has limited fresh price catalysts today; geopolitical spillovers from oil and gas dominate the macro backdrop.",
+   "summary": "EU carbon EUAs edged up 0.84% on the day to $75.35/EUA, holding a month-to-date gain of 3.16% even as TTF softened, a modest divergence worth watching. Headline flow for the power and carbon complex was thin on direct price catalysts today. Thematically, NTPC \u2014 India's largest utility \u2014 disclosed it is actively seeking to acquire global uranium assets to underpin a planned nuclear expansion, signalling long-term emerging-market baseload investment. A commentary piece flagged permitting bureaucracy as a structural bottleneck strangling U.S. clean energy development, while a separate piece framed power \u2014 particularly for AI data centres \u2014 as the defining resource competition of the current era. The broader geopolitical polycrisis, including Hormuz tensions and the Russia-Ukraine infrastructure war, was cited as compounding pressure on already strained power and carbon markets.",
    "drivers": [
-    "TTF +16.93% on the week raises gas-fired power generation costs across Europe, pressuring power margins",
-    "European Commission set to reveal 2040 electrification target next week, a structural medium-term signal for reduced fossil fuel demand",
-    "EUA prices near flat on the day; near-term carbon price direction remains hostage to TTF and broader macro sentiment rather than policy catalysts"
+    "EUAs inch higher (+0.84%) despite softer TTF, maintaining a positive month-to-date trend",
+    "NTPC pursuing global uranium acquisitions to fuel India's planned nuclear buildout, a structural long-term demand signal",
+    "U.S. clean energy permitting bottlenecks and AI-driven power demand growth identified as key medium-term structural themes"
    ],
-   "headlineCount": 9,
+   "headlineCount": 8,
    "sources": [
     "Al Jazeera",
-    "CBS News",
-    "Devdiscourse",
     "Indiablooms",
     "The Sunday Guardian",
     "upi.com"
