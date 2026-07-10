@@ -1,44 +1,43 @@
 {
- "generated": "2026-07-10T15:30:40.890886+00:00",
+ "generated": "2026-07-10T21:36:08.534718+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude ended Friday modestly lower on the day \u2014 WTI -0.99% to $71.35, Brent -0.63% to $75.82 \u2014 but both contracts locked in strong weekly gains of roughly 4-6% driven by a sharp re-escalation in Middle East risk. The U.S. revoked Iran's sanctions waiver following tanker attacks in the Strait of Hormuz, and reports of U.S. strikes on 80 Iranian targets kept the risk premium elevated. Ukraine's drone campaign against Russian oil depots in Stavropol and Tver, as well as strikes targeting 12 tankers, prompted Moscow to ban diesel exports, tightening distillate supply globally and pushing refining margins to reported record highs. RBOB gasoline was the stark outlier, cratering 8.02% on the session. Partially offsetting supply concerns, the UAE posted record output of 4.1 million bpd in June, and India's ONGC announced a 12.8-million-barrel strategic reserve build.",
+   "summary": "Crude markets ended Thursday with a modest pullback \u2014 WTI off 0.79% to $71.51, Brent down 0.39% to $76.00 \u2014 but both benchmarks retain strong weekly gains of roughly 4-6% as the Hormuz risk premium reasserts itself. U.S. strikes on 80 Iranian targets and the reimposition of sanctions following tanker attacks have brought traffic through the Strait to a near standstill, according to Reuters. Simultaneously, Ukraine's drone campaign against Russian depots in Stavropol and Tver, targeting 12 tankers, is tightening supply on a second front and pushing Central Asia into an energy crisis. Kazakhstan's six-month extension of its petroleum export ban compounds regional tightness. The one bearish offset: UAE crude output hit an all-time high of 4.1 million bpd in June. RBOB gasoline's sharp 7.19% single-day drop warrants monitoring and appears disconnected from the crude complex.",
    "drivers": [
-    "U.S. revocation of Iran sanctions waiver and Hormuz tensions sustain weekly crude risk premium",
-    "Russia's diesel export ban and Ukrainian strikes on depots/tankers drive distillate tightness and record refining margins",
-    "UAE record output of 4.1 mb/d and ONGC strategic reserve build provide partial demand/supply offsets"
+    "Strait of Hormuz near-standstill: U.S. strikes on Iran and reimposed sanctions following tanker attacks have severely curtailed traffic through the world's most critical oil chokepoint",
+    "Russian supply disruption: Ukraine drone strikes on Stavropol and Tver oil depots and 12 tankers are deepening fuel shortages across Russia and Central Asia",
+    "UAE output offset: Record UAE production of 4.1 million bpd in June provides a partial bearish counterweight to geopolitical supply fears"
    ],
    "headlineCount": 12,
    "sources": [
     "ANI News",
-    "Al Jazeera",
-    "Crude Oil Prices Today | OilPrice.com",
-    "South China Morning Post",
+    "BBC",
+    "Crypto Briefing",
+    "Reuters",
     "The Daily Jagran",
     "The New York Times"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets delivered a split session on July 10. Henry Hub slid 3.98% to $2.891/MMBtu, extending a steep weekly loss of 9.51%, suggesting domestic U.S. fundamentals remain bearish despite the broader geopolitical backdrop. European TTF also softened on the day, down 3.37% to \u20ac48.415/MWh, though it retained a strong 10% weekly gain, reflecting greater European sensitivity to Hormuz and Russian supply disruptions. LNG flow data offered a nuanced signal: close to half a dozen LNG carriers transited the Strait of Hormuz in recent days, suggesting trade has not fully halted despite hostilities. ADNOC's $900 million order for four newbuild LNG carriers signals longer-term Abu Dhabi export ambition. A UK High Court ruling denied Nord Stream AG's $662 million insurance claim, applying a war exclusion clause.",
+   "summary": "Natural gas prices diverged sharply across regions today. Henry Hub fell 2.12% on the day to $2.948/MMBtu, extending a steep 7.76% weekly decline, suggesting U.S. domestic fundamentals remain loose despite the broader geopolitical turbulence. TTF, by contrast, dropped 3.67% on the day to \u20ac48.265/MWh but still holds a 9.66% weekly gain, reflecting European markets' sensitivity to supply disruption risk earlier in the week. Headlines were relatively thin on gas-specific catalysts: ADNOC placed a $900 million order for four LNG newbuilds to expand its fleet, signaling longer-term supply-side investment. The Baker Hughes rig count edged higher in the U.S. this week, though drillers are described as cautious in the volatile environment. The Nord Stream insurance case was definitively closed by a UK High Court ruling in favor of war exclusion clauses.",
    "drivers": [
-    "Henry Hub in sharp weekly retreat (-9.51%), pointing to loose U.S. domestic balances despite geopolitical noise",
-    "TTF retains large weekly gain (+10%) on European exposure to Hormuz LNG transit risk and Russian supply disruption",
-    "LNG carriers continuing Hormuz transits and ADNOC's $900M newbuild order underline long-term Gulf export expansion intent"
+    "Henry Hub weakness: U.S. gas continues to slide on loose domestic supply-demand balance, down nearly 8% on the week despite global geopolitical stress",
+    "TTF weekly premium: European gas held a 9.66% weekly gain before today's pullback, reflecting earlier Hormuz and Russian supply disruption fears feeding into LNG re-routing concerns",
+    "ADNOC LNG fleet expansion: $900 million newbuild order signals confidence in sustained LNG demand growth, though impact is longer-dated"
    ],
-   "headlineCount": 6,
+   "headlineCount": 5,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs edged up 0.84% on the day to $75.35/EUA, holding a month-to-date gain of 3.16% even as TTF softened, a modest divergence worth watching. Headline flow for the power and carbon complex was thin on direct price catalysts today. Thematically, NTPC \u2014 India's largest utility \u2014 disclosed it is actively seeking to acquire global uranium assets to underpin a planned nuclear expansion, signalling long-term emerging-market baseload investment. A commentary piece flagged permitting bureaucracy as a structural bottleneck strangling U.S. clean energy development, while a separate piece framed power \u2014 particularly for AI data centres \u2014 as the defining resource competition of the current era. The broader geopolitical polycrisis, including Hormuz tensions and the Russia-Ukraine infrastructure war, was cited as compounding pressure on already strained power and carbon markets.",
+   "summary": "The power and carbon complex offered limited dedicated price catalysts today. EU EUAs ticked up 0.45% to $75.06/EUA, consolidating a 2.76% monthly gain while remaining 1.64% lower on the week. The softer TTF day-on-day (-3.67%) may ease near-term gas-to-power generation costs in Europe, marginally reducing carbon demand at the margin. Britain's grid operator issued a warning that extreme heatwave temperatures could stress power supplies Thursday night as household demand spiked \u2014 a reminder that weather-driven demand events are increasingly routine. India's NTPC is actively seeking global uranium asset stakes to fuel a planned nuclear buildout, a structurally significant signal for long-term power mix. Broader headlines on permitting bottlenecks strangling U.S. clean energy development add to the narrative of constrained low-carbon supply growth. Data for this sector was relatively thin today.",
    "drivers": [
-    "EUAs inch higher (+0.84%) despite softer TTF, maintaining a positive month-to-date trend",
-    "NTPC pursuing global uranium acquisitions to fuel India's planned nuclear buildout, a structural long-term demand signal",
-    "U.S. clean energy permitting bottlenecks and AI-driven power demand growth identified as key medium-term structural themes"
+    "EUA stability: Carbon permits edged marginally higher, underpinned by a positive monthly trend, while softer TTF eases immediate gas-fired generation pressure in Europe",
+    "UK grid heat stress: Britain's grid operator warned extreme heatwave temperatures risk hitting power supplies, highlighting growing weather sensitivity of European grids",
+    "India nuclear push: NTPC actively seeking global uranium assets to underpin a major nuclear expansion, a long-term bullish signal for low-carbon baseload power investment"
    ],
-   "headlineCount": 8,
+   "headlineCount": 6,
    "sources": [
-    "Al Jazeera",
     "Indiablooms",
     "The Sunday Guardian",
     "upi.com"
