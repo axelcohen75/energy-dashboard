@@ -1,42 +1,42 @@
 {
- "generated": "2026-07-13T15:42:23.451320+00:00",
+ "generated": "2026-07-13T21:54:11.410329+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "WTI and Brent surged 4.34% and 4.22% respectively on Monday, with Brent touching $79.23 and pressing toward the $80 handle, as the Strait of Hormuz crisis entered a new and more dangerous phase. Iran closed the strait following a third consecutive weekend of U.S. military strikes, with the IRGC warning of further oil and gas disruptions should U.S. interference continue. Oil and LNG tankers are once again going dark on transponders through the passage. Separately, Ukraine struck a Russian oil refinery, while a White House-backed sanctions bill threatens 500% tariffs on Chinese and Indian buyers of Russian crude. Nigerian production hitting a six-year high provides a partial offset. The notable exception is RBOB gasoline, which fell 2.65% on the day, suggesting some demand-side softness even as crude rallied hard on geopolitical risk premia.",
+   "summary": "Crude posted its sharpest single-day rally in recent memory, with WTI surging 9.23% to $78.00/bbl and Brent jumping 9.43% to $83.18, as President Trump reimposed a blockade on Iran following a third consecutive weekend of U.S. strikes on Iranian targets. Iran's closure of the Strait of Hormuz lit the fuse, forcing traders to reprice supply-disruption risk across the complex. Heating oil led refined products higher (+4.73%), while RBOB lagged (-0.30%), suggesting the demand read is cautious even as supply fears dominate. On the supply side, Ukraine's reported strikes on all 10 of Russia's largest oil refineries\u2014gutting up to 42% of domestic refining capacity\u2014and attacks on 21 Russian shadow-fleet tankers in the Azov Sea add a second major supply overhang. Nigeria's output reaching a six-year high offers only partial offset.",
    "drivers": [
-    "Iran's closure of the Strait of Hormuz after a third weekend of U.S. strikes triggers acute supply-disruption fears, lifting WTI +4.34% and Brent +4.22%",
-    "Compounding supply risk: Ukraine struck a Russian refinery and proposed U.S. secondary sanctions threaten 500% tariffs on buyers of Russian crude",
-    "Partial offsets\u2014Nigeria's six-year-high output and Iranian barrels stuck at sea as Chinese teapots pivot away\u2014cap the upside; RBOB's -2.65% drop signals demand-side caution"
+    "Iran's Strait of Hormuz closure following Trump's reimposed blockade and a third weekend of U.S. airstrikes drove the headline spike in Brent and WTI",
+    "Ukraine's drone campaign has now struck all 10 of Russia's largest refineries, reportedly cutting up to 42% of Russian refining capacity, while 21 shadow-fleet tankers were hit in the Azov Sea",
+    "Nigeria's crude output hitting a six-year high in June provides incremental supply relief, but is insufficient to offset the Hormuz and Russia supply risk premium"
    ],
    "headlineCount": 12,
    "sources": [
-    "Arab News",
-    "Devdiscourse",
+    "Chosunbiz",
+    "Crypto Briefing",
     "Tech Times",
-    "The Business Standard",
+    "The National Interest",
     "Whalesbook",
     "finance.biggo.com"
    ]
   },
   "gas": {
-   "summary": "The Atlantic gas complex is sharply bifurcated today. TTF rocketed 6.43% to \u20ac51.785/MWh, extending a weekly gain now exceeding 17%, as the Hormuz escalation directly threatens LNG transit routes from the Gulf. Iran's reported strikes against five Gulf countries hosting U.S. forces add a broader regional dimension to the supply threat. Tankers going dark in the strait amplify the risk premium. Against this backdrop, the EU is scrambling to secure alternatives, with Russian Yamal LNG imports hitting a record 9.97 million metric tons ahead of the 2027 ban\u2014a politically uncomfortable but commercially rational hedge. Henry Hub, insulated from Middle East logistics, slid 1.90% to $2.884/MMBtu and is off more than 11% on the week, reflecting abundant domestic supply and a structurally different market dynamic.",
+   "summary": "The gas complex is deeply bifurcated today. TTF surged 5.63% to \u20ac51.395/MWh on the week's +16.46% move, almost certainly tracking the Hormuz closure and its implications for global LNG re-routing and Middle East supply risk. Henry Hub, by contrast, fell 1.29% to $2.902/MMBtu, extending a -10.57% weekly slide and suggesting ample domestic U.S. supply with limited spot demand pull. On the structural side, EU Russian LNG imports hit a record 9.97 million metric tons ahead of the 2027 ban\u2014underscoring how dependent European buyers remain on Yamal LNG even as geopolitical pressure mounts. News flow on this sector is limited beyond these data points; the UAE's reported move to acquire a stake in a U.S. LNG export project adds a longer-term geopolitical dimension to Atlantic Basin LNG flows.",
    "drivers": [
-    "Hormuz closure and LNG tanker transponder blackouts drive TTF +6.43% on the day and +17.34% on the week as European spot markets price acute supply disruption risk",
-    "Iran striking five Gulf nations hosting U.S. forces widens the regional threat perimeter, putting Gulf LNG export infrastructure at risk",
-    "Henry Hub continues to diverge sharply, down 1.90% on the day and -11.12% on the week, reflecting domestic U.S. supply insulation from Middle East events"
+    "TTF's 5.63% single-day jump reflects Hormuz closure fears and re-routing risk for LNG tankers transiting the Persian Gulf",
+    "EU Russian LNG imports reached a record 9.97 million metric tons ahead of the 2027 ban, highlighting persistent European dependency on Yamal supply",
+    "Henry Hub continues to slide (-1.29% on the day, -10.57% on the week), reflecting domestic U.S. oversupply conditions decoupled from the European geopolitical premium"
    ],
-   "headlineCount": 7,
+   "headlineCount": 3,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs edged up just 0.59% to $75.50, a muted session relative to the volatility seen in the underlying energy complex, though the one-month trend remains modestly positive at +3.35%. The key power-sector story today is France's forced curtailment of 6.4 GW of nuclear capacity due to a heatwave raising river temperatures and limiting cooling water availability\u2014precisely the wrong moment as gas-fired backup becomes more expensive with TTF at \u20ac51.785/MWh and rising. On the structural side, Masdar announced $5.1 billion in financing for the world's largest solar-and-battery round-the-clock renewable project, a notable milestone. However, utility-scale solar costs have risen 18% to $40\u2013$98/MWh due to tariffs, capital costs, and supply chain pressure. The Energy Institute's 2026 Statistical Review confirmed global emissions hit yet another record high despite the clean energy expansion.",
+   "summary": "EU carbon EUAs edged up 2.05% to $76.60, supported by the TTF spike feeding through to gas-fired generation costs, though the weekly EUA move remains slightly negative (-1.20%). France cut 6.4 GW of nuclear capacity on Monday as a heatwave raised river temperatures and constrained cooling water, tightening the continental power balance at a peak demand moment. Exelon's CEO publicly flagged U.S. blackout risk for 2027, citing inadequate supply additions against AI-driven load growth. On the cost curve, utility-scale solar rose 18% to a range of $40\u2013$98/MWh due to tariffs, capital costs, and supply chain pressure, yet remains the cheapest unsubsidized generation source. Masdar secured $5.1 billion for the world's largest solar-and-battery project, and a separate report highlights geothermal beginning to undercut nuclear on cost.",
    "drivers": [
-    "France cuts 6.4 GW of nuclear output due to heatwave-driven river temperature constraints, tightening European power balances as gas backup costs surge with TTF at multi-month highs",
-    "EU EUA carbon price adds only 0.59% despite the broader energy volatility, suggesting the market is watching macro risk rather than pricing immediate carbon demand shifts",
-    "Structural tensions persist: Masdar's $5.1bn gigascale solar-and-battery financing signals clean energy momentum, but global emissions hit a fresh record and utility-scale solar costs are up 18%"
+    "France's 6.4 GW nuclear curtailment during a heatwave tightens European power supply and supports EUA prices alongside the TTF-driven gas generation cost increase",
+    "Exelon's CEO warned of U.S. blackouts in 2027 as AI-related load growth outpaces grid additions, reinforcing structural demand concerns for the power sector",
+    "Utility-scale solar LCOE rose 18% to $40\u2013$98/MWh on tariff and capital cost pressures, while the Energy Institute's 2026 review confirmed global emissions hit another record high despite the clean energy build-out"
    ],
-   "headlineCount": 7,
+   "headlineCount": 10,
    "sources": [
     "Startup Fortune",
     "The Tribune-Democrat",
