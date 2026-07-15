@@ -1,45 +1,44 @@
 {
- "generated": "2026-07-15T14:47:01.033319+00:00",
+ "generated": "2026-07-15T20:33:59.304954+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets are digesting a sharp intraday reversal after a strong weekly run. WTI settled near $79.19 (-0.23%) and Brent at $84.10 (-0.78%), both pulling back modestly despite a weekly gain of roughly 7.7% fuelled by US-Iran hostilities and Strait of Hormuz tanker strikes. The day's sharper losses were concentrated in products: RBOB gasoline cratered 5.17% and heating oil fell 4.24%, suggesting some demand-side concern is creeping in. Bearish undercurrents include China's refinery runs crashing to pandemic-era lows as crude imports collapse, and Chinese teapot refiners pivoting away from Iranian barrels toward Qatari, Iraqi, and UAE grades. On the supply side, API reported a 564,000-barrel draw in US crude inventories. The US-backed Iraq-Syria Mediterranean pipeline proposal and expanded sanctions targeting the Shamkhani network add further complexity to the supply outlook.",
+   "summary": "Crude posted its fourth consecutive session of gains, with WTI settling at $80.24/bbl (+1.13%) and Brent at $85.72/bbl (+1.17%), extending a near 9-10% weekly rally driven by escalating US-Iran hostilities. Three tankers were damaged in the Gulf, Hormuz shipping risk was raised to severe, and the collapsed US-Iran ceasefire prompted Trump to threaten strikes on Iranian energy targets while expanding sanctions targeting the Shamkhani network. A 1.7-million-barrel draw in US crude inventories (week ending July 10) added fuel, and Brent futures flipped into backwardation for the first time in a month, signalling tight prompt supply. On the Russian side, ~135 million barrels remain stranded at sea following Ukraine's airstrike campaign on refineries, while a bipartisan Senate bill targets Russia's shadow fleet. RBOB and heating oil both shed roughly 3.7% on the day despite the crude bid, a divergence worth monitoring. The monthly reading for WTI remains down 5.47%, underscoring how sharp this week's geopolitical premium has been.",
    "drivers": [
-    "Strait of Hormuz tanker strikes and US-Iran conflict drove a ~7.7% weekly crude rally, now partially unwinding in products",
-    "China's refinery runs at pandemic lows and teapot refiners shunning Iranian crude signal weakening Asian demand and trade-flow realignment",
-    "US expands Iran sanctions (Shamkhani network) and backs Iraq-Syria pipeline bypass, reshaping medium-term supply routes"
+    "US-Iran conflict intensifying: tanker strikes in the Gulf, Hormuz shipping risk raised to severe, and renewed US sanctions on Iran's oil network",
+    "~135 million barrels of Russian crude stranded at sea amid Ukraine's tanker/refinery strike campaign, compounding supply-side tightness",
+    "US crude inventories fell 1.7 million barrels for the week ending July 10; Brent curve flipped into backwardation signalling tight prompt supply"
    ],
    "headlineCount": 12,
    "sources": [
     "DD News",
+    "DW.com",
     "Devdiscourse",
-    "DhanamOnline",
-    "GMA Network",
-    "T\u00fcrkiye Today",
-    "dw.com"
+    "EnergyNow.com",
+    "The Business Standard",
+    "T\u00fcrkiye Today"
    ]
   },
   "gas": {
-   "summary": "Natural gas headlines today are thin on sector-specific catalysts. Henry Hub slipped to $2.924/MMBtu (+0.62% on the day), but the weekly picture is sharply negative at -9.03%, consistent with a market that ran ahead of itself. The available headlines are predominantly oil-focused; no direct LNG, storage, or weather drivers were provided for US gas today. TTF, covered under Power & Carbon, tells a very different story with a 13.70% weekly surge to \u20ac52.959/MWh, likely reflecting Middle East supply anxiety feeding into European energy security concerns. Traders should note the widening US-European gas price divergence as a potential arbitrage and LNG export theme to monitor.",
+   "summary": "Natural gas price action today presented a stark divergence between US and European benchmarks. Henry Hub edged up a modest 0.65% to $2.923/MMBtu, though the contract remains deeply in the red over the past week (-9.00%) and month (-6.31%), suggesting domestic fundamentals remain bearish. TTF, by contrast, surged 3.28% to \u20ac52.959/MWh and is up 13.70% on the week, likely reflecting European anxiety over Middle East supply route disruptions stemming from the Hormuz crisis and broader geopolitical stress. News flow directly relevant to the gas sector today is thin; the sole headline concerns a floating wind technology debut in China aimed at powering oil rigs. Traders should treat the Henry Hub/TTF spread widening as the primary story here.",
    "drivers": [
-    "Henry Hub down sharply on the week (-9.03%) with no specific bullish US gas catalyst evident in today's feed",
-    "TTF surging +13.70% on the week, diverging strongly from Henry Hub amid Middle East supply disruption fears in Europe",
-    "Gas-specific news flow is limited today; oil and pipeline headlines dominate without direct Henry Hub implications"
+    "TTF rallied sharply (+3.28% on the day, +13.70% on the week), likely reflecting European supply-risk premium tied to the Hormuz crisis",
+    "Henry Hub remains under pressure on a weekly (-9.00%) and monthly (-6.31%) basis, indicating bearish US domestic fundamentals",
+    "Direct gas-specific news flow today is minimal; the TTF move appears to be importing risk premia from the oil/geopolitical complex"
    ],
-   "headlineCount": 4,
+   "headlineCount": 1,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs edged marginally lower to $76.70/EUA (-0.43%) on the day but remain modestly bid on the month (+1.51%) and week (+2.56%). The dominant power-sector story is TTF's sharp weekly surge of 13.70% to \u20ac52.959/MWh, driven by Middle East tension and Trump's resumption of Iran port blockades with threatened strikes on energy targets \u2014 developments that directly pressure European gas-fired generation costs. A geothermal energy piece flagged Germany's efforts to balance energy security and decarbonization amid this summer's heat wave. Bangladesh's nuclear ambitions and India's solar pivot add longer-term emerging-market power context. The bipartisan US Sanctioning Russia Act of 2026, targeting Russia's oil exports and shadow fleet, could further tighten European energy supply assumptions.",
+   "summary": "The power and carbon complex offered a mixed but eventful session. EU EUAs dipped marginally (-0.28%) to $76.815, though the contract holds modest weekly and monthly gains. The dominant structural story is PJM's capacity auction falling 6.8 GW short for a third consecutive year as data-centre load growth continues to overwhelm grid planning. China connected what is described as the world's largest hybrid solar plant to the grid, a signal of accelerating capacity build-out. Engie Brasil raised $1.66 billion in a share offering, underscoring continued private capital appetite for power infrastructure. On the nuclear front, a data breach exposed ~19,000 sensitive files from India's Kudankulam plant, and Kazakhstan's atomic energy chief is touring Chinese nuclear facilities amid expanding Sino-Central Asian energy partnerships. The Iran/Hormuz collapse is also reshaping power-sector planning, with a separate piece noting China actively hedging its energy exposure.",
    "drivers": [
-    "TTF +13.70% on the week as Iran conflict and port blockade threats tighten European gas supply expectations, lifting gas-fired generation costs",
-    "EU EUAs holding above \u20ac76, supported by elevated gas prices raising carbon intensity of the European power mix",
-    "New US Sanctioning Russia Act of 2026 and Trump threats on Iranian energy infrastructure add upside risk to European energy supply security"
+    "PJM capacity auction came up 6.8 GW short for a third straight year as data-centre demand growth outpaces supply commitments, raising medium-term reliability concerns",
+    "China grid-connected the world's largest hybrid solar plant and is expanding nuclear partnerships in Central Asia, reinforcing the shift in energy-security strategy away from Middle East oil dependency",
+    "Iran port blockade and Hormuz crisis are pressuring European gas (TTF +13.70% on the week), which feeds through to carbon via fuel-switching economics, even as EUAs held nearly flat today"
    ],
-   "headlineCount": 5,
+   "headlineCount": 10,
    "sources": [
-    "Reuters",
-    "streamlinefeed.co.ke"
+    "Reuters"
    ]
   }
  }
