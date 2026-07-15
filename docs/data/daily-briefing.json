@@ -1,44 +1,45 @@
 {
- "generated": "2026-07-14T20:39:20.143759+00:00",
+ "generated": "2026-07-15T14:47:01.033319+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets surged on Monday after Iran struck two UAE tankers in the Strait of Hormuz, lifting Brent above $86 intraday and settling near $85.57 (+2.73%) while WTI closed at $79.99 (+2.35%). The Hormuz shipping risk rating has been raised to severe, effectively burying the oversupply narrative that had weighed on prices through June. The week-on-week moves are striking \u2014 Brent +15.39%, Heating Oil +17.94% \u2014 reflecting a sustained geopolitical risk premium following ceasefire collapse and renewed U.S.-Iran hostilities. Trump's threat to hit Iran 'very hard' adds further tail risk. On the supply side, Ukraine continued calculated drone strikes on Russian oil refineries, compounding supply concerns. RBOB gasoline was the outlier, off 3.68% on the day despite the broader rally. China's decision to cut Saudi term crude nominations for August introduces a demand-side counterweight, though Hormuz disruption risk dominates the near-term narrative.",
+   "summary": "Crude markets are digesting a sharp intraday reversal after a strong weekly run. WTI settled near $79.19 (-0.23%) and Brent at $84.10 (-0.78%), both pulling back modestly despite a weekly gain of roughly 7.7% fuelled by US-Iran hostilities and Strait of Hormuz tanker strikes. The day's sharper losses were concentrated in products: RBOB gasoline cratered 5.17% and heating oil fell 4.24%, suggesting some demand-side concern is creeping in. Bearish undercurrents include China's refinery runs crashing to pandemic-era lows as crude imports collapse, and Chinese teapot refiners pivoting away from Iranian barrels toward Qatari, Iraqi, and UAE grades. On the supply side, API reported a 564,000-barrel draw in US crude inventories. The US-backed Iraq-Syria Mediterranean pipeline proposal and expanded sanctions targeting the Shamkhani network add further complexity to the supply outlook.",
    "drivers": [
-    "Iran attacked two UAE tankers in the Strait of Hormuz, raising shipping risk to severe and driving Brent above $86 intraday",
-    "Ukraine's continued drone strikes on Russian oil refineries add a second front of supply disruption risk",
-    "China cutting Saudi crude nominations for August signals softening demand, though geopolitical premium currently overwhelms this bearish signal"
+    "Strait of Hormuz tanker strikes and US-Iran conflict drove a ~7.7% weekly crude rally, now partially unwinding in products",
+    "China's refinery runs at pandemic lows and teapot refiners shunning Iranian crude signal weakening Asian demand and trade-flow realignment",
+    "US expands Iran sanctions (Shamkhani network) and backs Iraq-Syria pipeline bypass, reshaping medium-term supply routes"
    ],
    "headlineCount": 12,
    "sources": [
-    "Arab News",
     "DD News",
     "Devdiscourse",
-    "Tech Times",
-    "The Business Standard",
-    "The National Interest"
+    "DhanamOnline",
+    "GMA Network",
+    "T\u00fcrkiye Today",
+    "dw.com"
    ]
   },
   "gas": {
-   "summary": "The natural gas picture is sharply bifurcated. TTF surged 4.14% on the day to \u20ac53.40/MWh \u2014 up 14.65% on the week \u2014 as the Hormuz re-escalation threatens LNG shipping flows into Europe and Asia. Pakistan is reportedly on track to procure its highest volume of spot LNG cargoes since the Iran conflict began, indicating acute near-term supply anxiety among import-dependent nations. Henry Hub, by contrast, drifted only marginally higher (+0.76% to $2.919/MMBtu) and remains deeply negative on the week (-10.60%) and month (-5.44%), reflecting ample U.S. domestic supply insulation from the Hormuz dynamic. The ceasefire collapse also contributed to the first U.S. gasoline price rise since May, though that is more an oil-market transmission effect than a gas-specific driver. Headline flow specific to gas fundamentals is thin beyond the Hormuz spillover.",
+   "summary": "Natural gas headlines today are thin on sector-specific catalysts. Henry Hub slipped to $2.924/MMBtu (+0.62% on the day), but the weekly picture is sharply negative at -9.03%, consistent with a market that ran ahead of itself. The available headlines are predominantly oil-focused; no direct LNG, storage, or weather drivers were provided for US gas today. TTF, covered under Power & Carbon, tells a very different story with a 13.70% weekly surge to \u20ac52.959/MWh, likely reflecting Middle East supply anxiety feeding into European energy security concerns. Traders should note the widening US-European gas price divergence as a potential arbitrage and LNG export theme to monitor.",
    "drivers": [
-    "TTF spiked 4.14% as Hormuz tensions threaten LNG transit routes supplying Europe and Asia",
-    "Pakistan racing for emergency spot LNG cargoes signals acute import-market stress from Strait of Hormuz disruption",
-    "Henry Hub largely insulated from geopolitical shock, remaining under $3/MMBtu amid ample domestic U.S. supply"
+    "Henry Hub down sharply on the week (-9.03%) with no specific bullish US gas catalyst evident in today's feed",
+    "TTF surging +13.70% on the week, diverging strongly from Henry Hub amid Middle East supply disruption fears in Europe",
+    "Gas-specific news flow is limited today; oil and pipeline headlines dominate without direct Henry Hub implications"
    ],
-   "headlineCount": 3,
+   "headlineCount": 4,
    "sources": []
   },
   "power": {
-   "summary": "Power and carbon market headline flow is thin today. EU Carbon (EUA) edged up 0.56% to $77.03/EUA, with modest weekly (+1.38%) and monthly (+1.93%) gains \u2014 a subdued move relative to the sharp jump in TTF, which typically exerts upward pressure on carbon as gas-fired generation costs rise and fuel-switching economics shift. The TTF surge of 4.14% on the day and 14.65% on the week is the dominant transmission channel into European power prices, though no direct power price data was provided in today's feed. The two headlines assigned to this sector \u2014 Iranian attacks near Hormuz and Venezuela's upstream bottleneck \u2014 are more relevant to crude and LNG supply than to power and carbon specifically. EUA's relative calm suggests the market is not yet pricing a major demand-side shock to European industrial activity.",
+   "summary": "EU carbon EUAs edged marginally lower to $76.70/EUA (-0.43%) on the day but remain modestly bid on the month (+1.51%) and week (+2.56%). The dominant power-sector story is TTF's sharp weekly surge of 13.70% to \u20ac52.959/MWh, driven by Middle East tension and Trump's resumption of Iran port blockades with threatened strikes on energy targets \u2014 developments that directly pressure European gas-fired generation costs. A geothermal energy piece flagged Germany's efforts to balance energy security and decarbonization amid this summer's heat wave. Bangladesh's nuclear ambitions and India's solar pivot add longer-term emerging-market power context. The bipartisan US Sanctioning Russia Act of 2026, targeting Russia's oil exports and shadow fleet, could further tighten European energy supply assumptions.",
    "drivers": [
-    "TTF's 4.14% daily surge is the primary upward transmission mechanism into European power pricing, though EUA response has been muted (+0.56%)",
-    "EU Carbon holding near \u20ac77/EUA with steady monthly trend; no acute demand destruction or policy catalyst visible in today's flow",
-    "Sector-specific headline flow is thin; Hormuz and Iran tensions are the indirect risk factor via LNG and gas cost pass-through"
+    "TTF +13.70% on the week as Iran conflict and port blockade threats tighten European gas supply expectations, lifting gas-fired generation costs",
+    "EU EUAs holding above \u20ac76, supported by elevated gas prices raising carbon intensity of the European power mix",
+    "New US Sanctioning Russia Act of 2026 and Trump threats on Iranian energy infrastructure add upside risk to European energy supply security"
    ],
-   "headlineCount": 2,
+   "headlineCount": 5,
    "sources": [
-    "The Tribune-Democrat"
+    "Reuters",
+    "streamlinefeed.co.ke"
    ]
   }
  }
