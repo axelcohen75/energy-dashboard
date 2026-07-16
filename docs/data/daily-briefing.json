@@ -1,43 +1,46 @@
 {
- "generated": "2026-07-15T20:33:59.304954+00:00",
+ "generated": "2026-07-16T14:59:08.431412+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude posted its fourth consecutive session of gains, with WTI settling at $80.24/bbl (+1.13%) and Brent at $85.72/bbl (+1.17%), extending a near 9-10% weekly rally driven by escalating US-Iran hostilities. Three tankers were damaged in the Gulf, Hormuz shipping risk was raised to severe, and the collapsed US-Iran ceasefire prompted Trump to threaten strikes on Iranian energy targets while expanding sanctions targeting the Shamkhani network. A 1.7-million-barrel draw in US crude inventories (week ending July 10) added fuel, and Brent futures flipped into backwardation for the first time in a month, signalling tight prompt supply. On the Russian side, ~135 million barrels remain stranded at sea following Ukraine's airstrike campaign on refineries, while a bipartisan Senate bill targets Russia's shadow fleet. RBOB and heating oil both shed roughly 3.7% on the day despite the crude bid, a divergence worth monitoring. The monthly reading for WTI remains down 5.47%, underscoring how sharp this week's geopolitical premium has been.",
+   "summary": "Crude held narrow gains on the day \u2014 WTI +0.24% to $79.84, Brent +0.14% to $85.07 \u2014 but the week-on-week surge of roughly 11% tells the real story. The Strait of Hormuz is under full-conflict conditions: Iranian missiles struck Emirati tankers, three vessels were damaged in the Gulf, and U.S. forces this morning disabled an Iran-linked tanker near Kharg Island. Despite that escalatory ladder, spot crude is exhibiting notable fatigue at current levels, with Brent described as slipping even as strikes continue. The divergence is sharp in products: RBOB collapsed 5.97% on the session while Heating Oil shed 1.30%, though HO's one-month gain of 19.3% reflects the Ukraine-driven dismantling of Russian refining capacity. Secondary pressure points include U.S. secondary tariffs on Indian and Chinese buyers of Russian crude \u2014 eased from 500% to 100% \u2014 and TotalEnergies flagging stronger Q2 refining margins.",
    "drivers": [
-    "US-Iran conflict intensifying: tanker strikes in the Gulf, Hormuz shipping risk raised to severe, and renewed US sanctions on Iran's oil network",
-    "~135 million barrels of Russian crude stranded at sea amid Ukraine's tanker/refinery strike campaign, compounding supply-side tightness",
-    "US crude inventories fell 1.7 million barrels for the week ending July 10; Brent curve flipped into backwardation signalling tight prompt supply"
+    "Hormuz risk premium: multiple tanker strikes and U.S. military action near Kharg Island keep geopolitical floor elevated, yet crude showing diminishing upside sensitivity to each new escalation",
+    "Ukrainian strikes on Russian refining infrastructure have pushed Moscow's crude processing to a 21-year low, tightening global middle-distillate supply and underpinning Heating Oil's 19% monthly gain",
+    "U.S. secondary tariff policy on Russian oil buyers in flux \u2014 rate cut from 500% to 100% for India and China \u2014 introducing trade-flow uncertainty at the margin"
    ],
    "headlineCount": 12,
    "sources": [
-    "DD News",
     "DW.com",
     "Devdiscourse",
     "EnergyNow.com",
+    "Republic World",
     "The Business Standard",
-    "T\u00fcrkiye Today"
+    "The Hans India"
    ]
   },
   "gas": {
-   "summary": "Natural gas price action today presented a stark divergence between US and European benchmarks. Henry Hub edged up a modest 0.65% to $2.923/MMBtu, though the contract remains deeply in the red over the past week (-9.00%) and month (-6.31%), suggesting domestic fundamentals remain bearish. TTF, by contrast, surged 3.28% to \u20ac52.959/MWh and is up 13.70% on the week, likely reflecting European anxiety over Middle East supply route disruptions stemming from the Hormuz crisis and broader geopolitical stress. News flow directly relevant to the gas sector today is thin; the sole headline concerns a floating wind technology debut in China aimed at powering oil rigs. Traders should treat the Henry Hub/TTF spread widening as the primary story here.",
+   "summary": "The Henry Hub/TTF divergence is stark today. Henry Hub fell 1.74% to $2.871/MMBtu and is down 8.71% on the month, reflecting ample domestic U.S. supply conditions. TTF moved in the opposite direction, gaining 2.63% to \u20ac54.353/MWh and posting a 10.87% weekly advance and 16.21% monthly surge \u2014 entirely consistent with the Hormuz supply shock bleeding into LNG markets. Asian spot LNG prices jumped 10% in the past week to their highest since March, and Pakistan's state buyer paid the highest spot LNG price in four years as Qatari supply falters amid the Middle East escalation. The feed-gas disruption risk from the Hormuz corridor is the dominant driver; Henry Hub's weakness shows the crisis has not yet redirected enough U.S. LNG export demand to tighten the domestic balance.",
    "drivers": [
-    "TTF rallied sharply (+3.28% on the day, +13.70% on the week), likely reflecting European supply-risk premium tied to the Hormuz crisis",
-    "Henry Hub remains under pressure on a weekly (-9.00%) and monthly (-6.31%) basis, indicating bearish US domestic fundamentals",
-    "Direct gas-specific news flow today is minimal; the TTF move appears to be importing risk premia from the oil/geopolitical complex"
+    "Hormuz crisis is disrupting Qatari LNG flows, driving Asian spot LNG up 10% on the week to the highest level since March",
+    "Pakistan paid the highest spot LNG price in four years, illustrating acute procurement stress for price-sensitive emerging market buyers",
+    "Henry Hub continues to weaken (-8.71% month-on-month), as U.S. domestic supply remains well-supplied and the global price spike has not yet materially tightened the Henry Hub balance"
    ],
-   "headlineCount": 1,
+   "headlineCount": 4,
    "sources": []
   },
   "power": {
-   "summary": "The power and carbon complex offered a mixed but eventful session. EU EUAs dipped marginally (-0.28%) to $76.815, though the contract holds modest weekly and monthly gains. The dominant structural story is PJM's capacity auction falling 6.8 GW short for a third consecutive year as data-centre load growth continues to overwhelm grid planning. China connected what is described as the world's largest hybrid solar plant to the grid, a signal of accelerating capacity build-out. Engie Brasil raised $1.66 billion in a share offering, underscoring continued private capital appetite for power infrastructure. On the nuclear front, a data breach exposed ~19,000 sensitive files from India's Kudankulam plant, and Kazakhstan's atomic energy chief is touring Chinese nuclear facilities amid expanding Sino-Central Asian energy partnerships. The Iran/Hormuz collapse is also reshaping power-sector planning, with a separate piece noting China actively hedging its energy exposure.",
+   "summary": "The power and carbon complex offers a mixed picture with thin sector-specific price flow. EU EUAs slipped 2.57% to $74.84, broadly flat on the week and month, suggesting the carbon market is not yet pricing a sustained gas-to-coal switching premium despite TTF's 16% monthly rise. On the structural demand side, U.S. electricity consumption hit a new record in 2025 and is tracking for further all-time highs this year and next, driven by AI data-center load growth \u2014 a trend also spurring a 69% surge in global nuclear fusion investment to a record $4.48 billion in 2025. China connected the world's largest hybrid solar plant to the grid. India hiked diesel and jet fuel export taxes for the July 16 fortnight, citing the Hormuz crisis tightening refined product availability. Tehran's warnings of strikes on regional energy infrastructure add tail risk across the sector.",
    "drivers": [
-    "PJM capacity auction came up 6.8 GW short for a third straight year as data-centre demand growth outpaces supply commitments, raising medium-term reliability concerns",
-    "China grid-connected the world's largest hybrid solar plant and is expanding nuclear partnerships in Central Asia, reinforcing the shift in energy-security strategy away from Middle East oil dependency",
-    "Iran port blockade and Hormuz crisis are pressuring European gas (TTF +13.70% on the week), which feeds through to carbon via fuel-switching economics, even as EUAs held nearly flat today"
+    "AI-driven U.S. power demand hit record highs in 2025 and is set for further gains, structurally tightening the grid and accelerating long-duration energy investment including a record $4.48B in fusion funding",
+    "EU EUAs down 2.57% on the day despite TTF surging 16% over the month, suggesting carbon markets are not yet fully pricing gas-to-coal switching or a sustained supply disruption premium",
+    "Geopolitical tail risk remains elevated: Tehran has threatened strikes on regional energy infrastructure, and India's export duty hike on diesel and jet fuel signals tightening of refined product flows tied to the Hormuz crisis"
    ],
-   "headlineCount": 10,
+   "headlineCount": 11,
    "sources": [
+    "Crypto Briefing",
+    "Dunya News",
+    "MSN",
     "Reuters"
    ]
   }
