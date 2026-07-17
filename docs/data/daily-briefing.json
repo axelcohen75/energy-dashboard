@@ -1,49 +1,45 @@
 {
- "generated": "2026-07-16T20:28:19.159269+00:00",
+ "generated": "2026-07-17T14:31:01.684599+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude gave back some of last week's sharp geopolitical premium today \u2014 WTI slipped 1.46% to $78.44 and Brent eased 0.69% to $84.31 \u2014 though both benchmarks remain roughly 9-11% higher on the week, reflecting the Hormuz risk-on surge that followed Iranian missile strikes on Emirati tankers and the US resumption of an Iranian port blockade. The more notable move was RBOB gasoline, off 6.23% in a single session, suggesting some demand-side anxiety or speculative unwind. Heating oil held firmer, still up 20% on the month. TotalEnergies flagged stronger Q2 refining margins and trading profits, consistent with the volatile spread environment. On policy, a US bill targeting India and China with 100% tariffs on Russian oil imports adds a secondary-sanctions overhang, while India's growing refining footprint could partially reroute flows.",
+   "summary": "Crude surged to its strongest weekly gain in months \u2014 WTI +13.4% on the week to $80.97/bbl, Brent +14.3% to $86.89 \u2014 as the US-Iran conflict escalated sharply. A US missile strike on an oil tanker to enforce the Iran naval blockade, expanded sanctions targeting the Shamkhani network, and Iran's vow to maintain the blockade until attacks cease all drove rapid rebuilding of a geopolitical risk premium. Front-month product cracks diverged: RBOB fell 3.3% on the day and Heating Oil dropped 1.75%, suggesting some demand-side anxiety even as crude held firm. China's decision to hike retail gasoline and diesel prices effective July 18 reflects the pass-through of the weekly surge, while India and South Africa moving to boost strategic petroleum reserves signals defensive positioning. IEA members had already agreed to a record 400 mb release earlier this year, providing a partial buffer against price spiraling further.",
    "drivers": [
-    "Iranian missile strikes on Emirati tankers and US port blockade of Iran drove an ~10% weekly spike in Brent; partial profit-taking today",
-    "RBOB gasoline -6.23% on the day was the sharpest single-session mover, diverging significantly from crude",
-    "Proposed US 100% tariffs on Indian and Chinese purchases of Russian crude introduce a new trade-flow disruption risk"
+    "US missile strike on oil tanker and tightening naval blockade of Iran driving sharp geopolitical risk premium into crude",
+    "Strait of Hormuz closure persisting since March; South Korea rerouting via Red Sea, Iraq planning Syria/Turkey pipeline alternatives",
+    "China retail fuel price hike effective July 18; India and South Africa accelerating strategic reserve builds amid supply uncertainty"
    ],
    "headlineCount": 12,
    "sources": [
-    "Council on Foreign Relations",
-    "DW.com",
-    "Devdiscourse",
+    "Crypto Briefing",
     "DhanamOnline",
-    "Dunya News",
-    "EnergyNow.com"
+    "EnergyNow.com",
+    "Outlook India",
+    "The Times of India",
+    "T\u00fcrkiye Today"
    ]
   },
   "gas": {
-   "summary": "The Henry Hub/TTF divergence is stark and widening. Henry Hub fell 1.16% to $2.89/MMBtu and is down over 8% on the month, reflecting ample domestic US supply. TTF, by contrast, surged 1.74% to \u20ac55.3/MWh and is up 30% over the past month, driven entirely by Hormuz-related LNG supply fears. Asian LNG spot prices jumped 10% on the week as Qatari supply falters amid the conflict, with Pakistan forced to pay a four-year high for a spot cargo. Dana Gas suspended all operations at Iraq's Khor Mor field citing credible security threats, removing additional supply from an already stressed market. Ukraine's strike on Russia's last gas refinery adds a further upstream disruption vector. The EU's new Electrification Action Plan targets 46% electricity share by 2040, a structural headwind for long-run gas demand in Europe.",
+   "summary": "TTF natural gas rocketed +15.7% on the week to \u20ac56.31/MWh and is up nearly 35% over the past month, overwhelmingly driven by Hormuz disruption cascading into European LNG supply chains. Pakistan is actively seeking spot LNG cargoes for July-August delivery after Hormuz traffic halted, while China's state importers are urgently negotiating long-term LNG supply contracts with non-Hormuz-dependent exporters \u2014 a structural shift that could tighten Atlantic and Pacific Basin cargoes simultaneously. Iran-linked LPG tankers executing U-turns under the US blockade add further noise to near-term supply. Henry Hub, by contrast, is largely insulated from these dynamics, slipping 1.3% on the week and down over 10% on the month. JERA's exploration of a US IPO is a longer-term corporate development with no immediate price implication.",
    "drivers": [
-    "Hormuz conflict disrupting Qatari LNG flows: Asian spot prices +10% on the week, Pakistan pays four-year high for spot cargo",
-    "Dana Gas suspends Khor Mor field operations amid security threats, tightening regional gas supply further",
-    "Henry Hub -8% on the month amid ample US supply, underscoring a deepening Atlantic Basin price divergence"
+    "Strait of Hormuz closure squeezing LNG flows from the Gulf, pushing TTF to a +35% one-month rally",
+    "Pakistan and China scrambling for spot and long-term LNG alternatives to Hormuz-dependent suppliers",
+    "Henry Hub decoupled from geopolitical LNG stress, continuing its month-long softening trend on domestic fundamentals"
    ],
    "headlineCount": 6,
-   "sources": [
-    "peakprosperity.com"
-   ]
+   "sources": []
   },
   "power": {
-   "summary": "EU carbon slipped 2.66% to $74.78/EUA today, essentially flat on the week and month, suggesting the carbon market is not yet pricing the Hormuz disruption as a significant structural fuel-switching catalyst despite TTF's 30% monthly surge. The divergence is notable: higher gas costs in Europe typically lift coal and carbon burn, which would support EUAs, but that transmission appears muted today. The EU's newly announced Electrification Action Plan \u2014 targeting electricity at 46% of total energy by 2040 \u2014 is a long-term carbon-supportive signal but carries no near-term price impulse. Broader geopolitical rewiring, including the Eni CEO's comments on capital shifting to Southeast Asia and Latin America away from the Gulf, and a reported power vacuum reshaping Eurasian trade routes, point to structural shifts in where future generation investment flows.",
+   "summary": "EU carbon EUAs edged up 1.25% on the day to $75.71/EUA but remain largely range-bound on the week (+0.87%) and month (+0.44%), suggesting the carbon market has not yet priced a sustained fossil fuel demand shock from the Hormuz crisis. The dominant input cost driver for European power generators remains TTF, which is up 35% in a month, compressing spark spreads and elevating gas-to-power costs across the continent. Iran's reported instruction to Houthis to prepare Red Sea disruption if the US strikes Iranian power infrastructure introduces a further tail risk: simultaneous closure of both Hormuz and Bab el-Mandeb would materially tighten LNG supply into Europe, with direct upward pressure on both gas-fired generation costs and, indirectly, EUA prices as fuel switching increases coal burn. Data for this sector is thin beyond these macro linkages.",
    "drivers": [
-    "EUA -2.66% on the day despite TTF's 30% monthly surge; fuel-switching pressure not yet transmitting into carbon prices",
-    "EU Electrification Action Plan targets 46% electricity share of final consumption by 2040, a structural long-run support for carbon demand",
-    "Eni and industry peers shifting capex to Southeast Asia and Latin America amid sustained Hormuz disruption, reshaping future supply geography"
+    "TTF at \u20ac56.31/MWh (+35% one month) is the primary upward cost pressure on gas-fired European power generation",
+    "EUA carbon market muted despite energy price volatility, implying limited fuel-switching or demand destruction signal priced in yet",
+    "Iran-Houthi threat to Bab el-Mandeb represents a key tail risk: dual chokepoint closure could sharply tighten European LNG supply and lift EUAs"
    ],
    "headlineCount": 9,
    "sources": [
-    "Dunya News",
-    "MSN",
-    "Reuters",
-    "peakprosperity.com"
+    "Crypto Briefing",
+    "Reuters"
    ]
   }
  }
