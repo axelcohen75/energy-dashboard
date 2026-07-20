@@ -1,51 +1,36 @@
 {
- "generated": "2026-07-20T15:09:29.830982+00:00",
+ "generated": "2026-07-20T20:20:37.480946+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Brent briefly broke $90/bbl in Asian trade before settling at $88.36, still up 11% on the month, as the US-Iran conflict entered a ninth day of air strikes and the Strait of Hormuz remained functionally paralysed for tanker transit. A Malta-flagged products tanker was reported anchored in the Strait near Oman as vessel operators grew increasingly reluctant to attempt passage. WTI lagged slightly at $81.90, off 0.72% on the day, while RBOB gasoline cratered 6% intraday despite the national pump average reportedly topping $4/gallon. Heating oil's 25.7% monthly surge reflects the tightest distillate picture. Reports of Iran secretly shipping 70 million barrels to China before the blockade was reimposed add a sanctions-evasion dimension to the supply story. India's crude import bill reportedly rose 60% year-on-year in Q2.",
+   "summary": "Crude markets remain geopolitically charged as the U.S.-Iran conflict enters its ninth consecutive day of strikes, with Brent briefly breaching $90/bbl in Asian trade before settling at $88.90 (+0.91% on the day) and WTI holding near flat at $82.42. The weekly and monthly gains\u2014Brent +6.72% and +11.75% respectively\u2014reflect a sustained risk premium driven by Hormuz transit fears, with at least one Malta-flagged tanker anchored and halted in the Strait. A Houthi naval blockade declaration on Saudi Arabia deepened the southern Red Sea threat, while a drone strike on the CPC Black Sea terminal added a second supply-disruption vector. RBOB gasoline dropped 5.71% on the session despite the national pump average topping $4/gal, and heating oil's 24.92% monthly surge underscores the European diesel crunch flagged by Morgan Stanley. India's crude import bill surging 60% year-on-year illustrates the demand-side pain spreading to major importers.",
    "drivers": [
-    "Strait of Hormuz effectively blocked: tanker operators halting transits amid active US-Iran military exchanges",
-    "Brent touched $90 intraday on fresh escalation; heating oil up 25.7% on the month as distillate inventories tighten",
-    "Demand-side pressure building: India import bill +60% YoY, US pump prices back above $4/gal"
+    "Strait of Hormuz transit disruptions and ongoing U.S.-Iran missile exchanges sustaining a large geopolitical risk premium in Brent",
+    "Houthi naval blockade on Saudi Arabia and drone strike on CPC Black Sea terminal compounding multi-front supply-route risks",
+    "European diesel inventories at multi-year lows amplifying the distillates premium, with heating oil +24.92% month-on-month"
    ],
    "headlineCount": 12,
-   "sources": [
-    "Crypto Briefing",
-    "Discovery Alert",
-    "WION",
-    "Whalesbook",
-    "facebook.com",
-    "finance.biggo.com"
-   ]
+   "sources": []
   },
   "gas": {
-   "summary": "A sharp divergence between US and European gas markets dominated the session. Henry Hub fell 2.3% to $2.844/MMBtu and is now down 9.6% on the month, reflecting insulation from Hormuz disruptions given US domestic supply buffers. TTF, by contrast, surged 2.1% to \u20ac58.59/MWh and is up nearly 40% over the past month, driven by two compounding shocks: LNG flows through the Strait of Hormuz have reportedly ground to a halt over the past three days according to tanker-tracking data, and Ukraine struck Russia's last operational gas refinery. China's second consecutive monthly rise in LNG imports is simultaneously tightening Atlantic Basin cargoes that European buyers need as alternatives. News flow for US domestic gas fundamentals is thin today.",
+   "summary": "A stark transatlantic divergence dominates the gas complex today. Henry Hub slipped 2.37% to $2.843/MMBtu and is now down 9.63% over the past month, reflecting ample U.S. domestic supply conditions. TTF, by contrast, surged 2.07% to \u20ac58.585/MWh, extending a striking 39.77% monthly rally as the combination of Hormuz/Middle East supply anxiety and China's second consecutive monthly LNG import increase tightens the global seaborne market. UK incoming PM Andy Burnham's signalled endorsement of new North Sea drilling offers a medium-term supply optionality story for European gas, but provides no near-term relief. The drone strike on the CPC Black Sea terminal adds peripheral pressure on European supply routes. Overall, headline flow for U.S. gas fundamentals today is thin beyond the macro geopolitical backdrop.",
    "drivers": [
-    "Hormuz LNG halt: tanker-tracking data shows zero Hormuz LNG exports for roughly three days, squeezing European spot supply",
-    "Ukraine struck Russia's last gas refinery, further constraining Russian energy infrastructure available to global markets",
-    "China's LNG import volumes rose for a second straight month, competing with Europe for available Atlantic Basin cargoes"
+    "China's consecutive LNG import increases tightening global spot availability and supporting TTF's sharp monthly rally",
+    "Hormuz and Red Sea disruption risks elevating European supply-security premium, pushing TTF +14.26% on the week",
+    "Henry Hub soft at $2.843/MMBtu with U.S. domestic fundamentals diverging sharply from European tightness"
    ],
-   "headlineCount": 4,
-   "sources": [
-    "peakprosperity.com"
-   ]
+   "headlineCount": 5,
+   "sources": []
   },
   "power": {
-   "summary": "EU carbon allowances (EUA) jumped 4.2% to $78.44, tracking TTF's 40% monthly rally closely as gas-fired generation costs spike. A European heatwave is simultaneously elevating power demand while warming rivers and reducing hydro and nuclear cooling capacity, compounding the supply crunch. European diesel inventories are reportedly heading toward multi-year lows per Morgan Stanley analysis cited today. Ukraine's drone campaign struck Russian fuel hubs in Stavropol Krai and the power grid in occupied Crimea, keeping Russian energy infrastructure under pressure. Early-summer warnings of European jet fuel shortages proved premature according to one report, though diesel stress remains acute. US-Iran missile exchanges continued through day nine, with air raid sirens reported in Bahrain, signalling no near-term de-escalation.",
+   "summary": "EU carbon EUAs jumped 4.64% today to $78.745/EUA, the strongest single-day move across the energy complex, as TTF's concurrent 2.07% gain to \u20ac58.585/MWh raises gas-fired generation costs and incentivises fuel-switching signals that typically lift carbon demand. The broader Middle East conflict, now in its ninth day of U.S.-Iran exchanges, sustains the energy security anxiety underpinning European power markets. On the supply side, a geopolitical shadow is cast over Central Asian nuclear development: Russia's financial difficulties are reportedly threatening Rosatom's ability to deliver on reactor agreements with Kazakhstan and Uzbekistan, potentially stranding planned baseload additions. EU sanctions deliberations remain deadlocked despite Hungary's changed political landscape, leaving Russian energy policy risk unresolved. Nigeria's 2030 production target and EU diesel data are peripheral to today's power/carbon narrative.",
    "drivers": [
-    "TTF's 40% monthly surge flows directly into carbon pricing: EUA +4.2% today as gas generation cost curves shift higher",
-    "European heatwave stressing power grids via elevated demand and reduced river-based generation capacity",
-    "Ukraine drone strikes on Russian fuel hubs and Crimea power grid sustain structural risk premium on European energy supply"
+    "EUA carbon prices surging 4.64% on the day, likely driven by TTF-linked fuel-switching economics and broader energy tightness",
+    "Rosatom financial difficulties threatening Central Asian nuclear buildout, clouding medium-term low-carbon baseload supply",
+    "Stalled EU Russia sanctions process keeping uncertainty elevated around pipeline gas and energy policy for European utilities"
    ],
-   "headlineCount": 11,
-   "sources": [
-    "Bankingnews",
-    "Kaltimtoday.co",
-    "Kyiv Post",
-    "New York Post",
-    "peakprosperity.com"
-   ]
+   "headlineCount": 6,
+   "sources": []
   }
  }
 }
