@@ -1,36 +1,47 @@
 {
- "generated": "2026-07-20T20:20:37.480946+00:00",
+ "generated": "2026-07-21T15:03:56.301840+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets remain geopolitically charged as the U.S.-Iran conflict enters its ninth consecutive day of strikes, with Brent briefly breaching $90/bbl in Asian trade before settling at $88.90 (+0.91% on the day) and WTI holding near flat at $82.42. The weekly and monthly gains\u2014Brent +6.72% and +11.75% respectively\u2014reflect a sustained risk premium driven by Hormuz transit fears, with at least one Malta-flagged tanker anchored and halted in the Strait. A Houthi naval blockade declaration on Saudi Arabia deepened the southern Red Sea threat, while a drone strike on the CPC Black Sea terminal added a second supply-disruption vector. RBOB gasoline dropped 5.71% on the session despite the national pump average topping $4/gal, and heating oil's 24.92% monthly surge underscores the European diesel crunch flagged by Morgan Stanley. India's crude import bill surging 60% year-on-year illustrates the demand-side pain spreading to major importers.",
+   "summary": "Brent closed above $91 and WTI at $84.51, extending a powerful multi-week rally driven by the escalating US-Iran conflict and the effective chokehold on the Strait of Hormuz. A Kuwait-flagged products tanker was struck in the strait today, and Houthis forced two Saudi tankers to U-turn in the Red Sea, keeping the supply-risk premium firmly in play. An early morning pullback on ceasefire-negotiation reports was short-lived as the US-Iran MOU collapsed before the 30-day mark. Goldman Sachs warned crude could reach $120 if the strait remains disrupted into year-end. The crude-product divergence is notable: RBOB fell 5.07% on the day and heating oil dropped 2.89%, suggesting some demand-side concern despite tight crude supply. India continues buying Russian crude at near-record volumes despite the expiry of its US waiver.",
    "drivers": [
-    "Strait of Hormuz transit disruptions and ongoing U.S.-Iran missile exchanges sustaining a large geopolitical risk premium in Brent",
-    "Houthi naval blockade on Saudi Arabia and drone strike on CPC Black Sea terminal compounding multi-front supply-route risks",
-    "European diesel inventories at multi-year lows amplifying the distillates premium, with heating oil +24.92% month-on-month"
+    "Strait of Hormuz tanker strike and Houthi Red Sea attacks sustain acute supply-disruption premium on crude",
+    "US-Iran MOU collapse and proposed inclusion of Iran in Russia sanctions bill eliminates near-term diplomatic relief",
+    "Goldman $120/bbl price target and ceasefire-hope-driven intraday volatility highlight elevated geopolitical uncertainty"
    ],
    "headlineCount": 12,
-   "sources": []
+   "sources": [
+    "Anadolu Ajans\u0131",
+    "Crypto Briefing",
+    "International Business Times",
+    "The Sunday Guardian",
+    "finance.biggo.com",
+    "livemint.com"
+   ]
   },
   "gas": {
-   "summary": "A stark transatlantic divergence dominates the gas complex today. Henry Hub slipped 2.37% to $2.843/MMBtu and is now down 9.63% over the past month, reflecting ample U.S. domestic supply conditions. TTF, by contrast, surged 2.07% to \u20ac58.585/MWh, extending a striking 39.77% monthly rally as the combination of Hormuz/Middle East supply anxiety and China's second consecutive monthly LNG import increase tightens the global seaborne market. UK incoming PM Andy Burnham's signalled endorsement of new North Sea drilling offers a medium-term supply optionality story for European gas, but provides no near-term relief. The drone strike on the CPC Black Sea terminal adds peripheral pressure on European supply routes. Overall, headline flow for U.S. gas fundamentals today is thin beyond the macro geopolitical backdrop.",
+   "summary": "The US-Europe gas divergence widened sharply today. Henry Hub drifted fractionally lower to $2.856/MMBtu, continuing its month-long slide of nearly 12%, with no supportive domestic catalysts in today's headlines. European TTF surged 2.35% on the day to \u20ac58.74/MWh \u2014 up 40% over the past month \u2014 as the Strait of Hormuz closure strands Qatari LNG cargoes and forces spot-hungry buyers like Pakistan to pay record prices. ADNOC's $6.2bn FID on the Umm Shaif Gas Cap project in Abu Dhabi signals longer-dated supply development but offers no near-term relief to the disrupted LNG trade flows.",
    "drivers": [
-    "China's consecutive LNG import increases tightening global spot availability and supporting TTF's sharp monthly rally",
-    "Hormuz and Red Sea disruption risks elevating European supply-security premium, pushing TTF +14.26% on the week",
-    "Henry Hub soft at $2.843/MMBtu with U.S. domestic fundamentals diverging sharply from European tightness"
+    "Hormuz closure stranding Qatari LNG cargoes drives TTF sharply higher and pushes Pakistan to record spot LNG prices",
+    "Henry Hub remains under pressure, down ~12% on the month, with no bullish domestic news flow today",
+    "ADNOC's $6.2bn Umm Shaif Gas Cap FID adds long-term supply but provides no short-term market relief"
    ],
-   "headlineCount": 5,
+   "headlineCount": 2,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs jumped 4.64% today to $78.745/EUA, the strongest single-day move across the energy complex, as TTF's concurrent 2.07% gain to \u20ac58.585/MWh raises gas-fired generation costs and incentivises fuel-switching signals that typically lift carbon demand. The broader Middle East conflict, now in its ninth day of U.S.-Iran exchanges, sustains the energy security anxiety underpinning European power markets. On the supply side, a geopolitical shadow is cast over Central Asian nuclear development: Russia's financial difficulties are reportedly threatening Rosatom's ability to deliver on reactor agreements with Kazakhstan and Uzbekistan, potentially stranding planned baseload additions. EU sanctions deliberations remain deadlocked despite Hungary's changed political landscape, leaving Russian energy policy risk unresolved. Nigeria's 2030 production target and EU diesel data are peripheral to today's power/carbon narrative.",
+   "summary": "The power and carbon complex presents a mixed picture dominated by geopolitical noise. EU carbon (EUA) was nearly unchanged at $78.59, with the one-month gain a modest 2%, lagging the surge in TTF gas which acts as a key input cost for European power generation. Iran warned of nuclear safety risks following a US strike on an unfinished Iranian nuclear plant, adding a new dimension to the conflict. Ukraine continued drone strikes on Russian energy and military targets. On the policy side, newly installed UK Prime Minister Andy Burnham announced the scrapping of the 5% VAT on electricity, a notable consumer-relief measure. Data for this sector is relatively thin today beyond these headline items.",
    "drivers": [
-    "EUA carbon prices surging 4.64% on the day, likely driven by TTF-linked fuel-switching economics and broader energy tightness",
-    "Rosatom financial difficulties threatening Central Asian nuclear buildout, clouding medium-term low-carbon baseload supply",
-    "Stalled EU Russia sanctions process keeping uncertainty elevated around pipeline gas and energy policy for European utilities"
+    "US strike on Iran's unfinished nuclear plant raises safety concerns and broadens the geopolitical risk landscape",
+    "UK scraps 5% VAT on electricity under new PM Andy Burnham, reducing consumer power costs",
+    "TTF gas up 40% month-on-month pressures European power generation costs, yet EUA prices remain subdued, up only ~2% on the month"
    ],
    "headlineCount": 6,
-   "sources": []
+   "sources": [
+    "Crypto Briefing",
+    "New York Post",
+    "The Tribune-Democrat"
+   ]
   }
  }
 }
