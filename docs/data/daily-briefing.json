@@ -1,43 +1,45 @@
 {
- "generated": "2026-07-22T15:04:08.190369+00:00",
+ "generated": "2026-07-22T20:39:14.792832+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude benchmarks extended their powerful month-long rally on Wednesday, with Brent settling above $93 (+3.23% on the day, +20.6% on the month) and WTI at $86.90 (+2.33%), as the US-Iran conflict showed no sign of abating and Strait of Hormuz shipping disruptions continued to tighten physical supply. Asian refiners who had banked on August Middle East cargoes are now facing potential delivery delays, while Pakistan is actively scouting US, Nigerian, and Central Asian crude alternatives. A bearish counter-signal arrived via EIA data showing a 2.0 million barrel US crude inventory build for the week ending July 17, echoed by an API estimate of 2.6 million barrels. Refined products diverged sharply: Heating Oil (+31.8% on the month) reflects distillate tightness, while RBOB gasoline fell 4.17% on the day. Russia has reclaimed the top slot in India's import basket, and China's demand trajectory remains a key swing variable for the remainder of the year.",
+   "summary": "Crude markets remain in full risk-premium mode. Brent settled above $93/bbl (+3.1% today, +20.4% on the month) after reports of Iran striking oil tankers in an escalating Hormuz campaign, with the strait's effective disruption forcing Asian refiners to scramble for alternative August cargoes. WTI followed at $86.44 (+1.8%), also supported by Trump's vow of retaliation following the killing of three US soldiers. India is pivoting toward Russian crude as Iranian barrels disappear; Pakistan is canvassing US, Nigerian, and Central Asian suppliers. The divergence in refined products is notable: RBOB gasoline fell 4.7% on the session despite crude strength, while heating oil shed 1.9% but remains up 30.9% on the month, consistent with distillate-supply anxiety. A 2-million-barrel US crude inventory build (EIA, week ending July 17) provided modest relief but was insufficient to cap the geopolitical bid.",
    "drivers": [
-    "US-Iran conflict escalating with Hormuz blockage disrupting Middle East crude flows and forcing Asian and South Asian buyers to seek alternative supply",
-    "US crude inventories built 2.0\u20132.6 million barrels in the week to July 17, providing a modest bearish offset to geopolitical risk premium",
-    "Russia displacing Iranian barrels in India's import mix; China's import pace and refined product exports flagged as the key price swing factor through year-end"
+    "Iran-Hormuz escalation: tanker attacks and strait disruption removing Middle East barrels from global supply, lifting Brent decisively above $90",
+    "Demand-side rerouting: India boosting Russian crude imports; Pakistan seeking US/West African alternatives, tightening Atlantic Basin differentials",
+    "Bearish offset: EIA reported a 2-million-barrel US crude inventory build for the week ending July 17, capping further upside in WTI"
    ],
    "headlineCount": 12,
    "sources": [
-    "AL.com",
+    "ABP Live English",
+    "AFR",
+    "Anadolu Ajans\u0131",
     "Crypto Briefing",
-    "International Business Times",
-    "Moneycontrol.com",
-    "The Sunday Guardian",
-    "finance.biggo.com"
+    "finance.biggo.com",
+    "financialexpress.com"
    ]
   },
   "gas": {
-   "summary": "European and US natural gas markets are diverging sharply. TTF surged 4.58% on the day to \u20ac62.40/MWh, extending a stunning 48.96% monthly gain, as Equinor CEO Anders Opedal warned on Wednesday that European storage is unlikely to reach even 80% capacity before the onset of winter \u2014 the weakest pre-winter cushion in 15 years. That supply anxiety is compounded by the broader Middle East crisis squeezing LNG and pipeline flows into Europe. US Henry Hub, by contrast, gained a modest 1.71% to $2.914/MMBtu but remains down 10.42% on the month, reflecting looser domestic fundamentals. Equinor reported a 93% jump in Q2 profit, crediting the oil and gas price spike driven by the Middle East crisis. Gas-sector data in today's feed is otherwise limited.",
+   "summary": "European gas prices surged to \u20ac62.40/MWh on TTF (+4.6% today, +49% in a month), driven by a combustible mix of geopolitical supply disruption and alarming storage data. Equinor CEO Anders Opedal warned that European storage is unlikely to reach even 80% fill before winter, the weakest pre-winter cushion in 15 years. The Hormuz and Bab el-Mandeb closures are simultaneously squeezing LNG availability, pushing buyers toward coal and oil as substitutes\u2014a stark reversal of decarbonization trends. Equinor itself reported a 93% Q2 profit surge on the back of surging oil and gas prices. Henry Hub was comparatively subdued at $2.945/MMBtu (+2.8% today), down 9.5% on the month, reflecting a still-ample North American supply backdrop that sharply contrasts with European tightness.",
    "drivers": [
-    "Equinor CEO warned European storage will likely remain below 80% ahead of winter, the lowest pre-season buffer in 15 years, pushing TTF to a +48.96% monthly gain",
-    "Middle East conflict and Hormuz disruptions adding risk premium to European LNG and pipeline supply expectations",
-    "Henry Hub diverging lower from TTF (-10.42% on the month), reflecting comparatively ample US domestic supply"
+    "European storage deficit: Equinor CEO flagged sub-80% fill probability before winter, the worst position in 15 years, underpinning the TTF rally",
+    "LNG supply squeeze: Hormuz and Bab el-Mandeb disruptions curtailing Middle East LNG flows, forcing buyers toward coal and oil substitution",
+    "Henry Hub divergence: US prices down 9.5% on the month, insulated by domestic supply adequacy, highlighting a widening transatlantic gas market split"
    ],
-   "headlineCount": 3,
+   "headlineCount": 6,
    "sources": []
   },
   "power": {
-   "summary": "Power and carbon markets are feeling the full heat of the energy price shock. EU Carbon EUAs rose 3.72% on the day to $81.53, up 6.47% on the month, likely tracking higher gas and oil costs that are reducing the economic appeal of fuel-switching and sustaining coal and gas burn in European grids. Japan's day-ahead electricity prices hit a three-and-a-half-year high on Wednesday, driven by soaring fuel costs, a heat wave, and a weakening currency, per today's headlines. The broader backdrop is one of structural fossil-fuel dependency: the Energy Institute's latest Statistical Review confirmed that fossil fuels still generate 57% of global electricity. Equinor's 93% Q2 profit surge, attributable to the Middle East-driven commodity spike, illustrates the windfall flowing to producers at the expense of power consumers. Specific EU power price data was not provided today.",
+   "summary": "Power and carbon markets moved in lockstep with the broader fossil-fuel complex. EU carbon allowances (EUA) rose 4.0% to $81.77, consistent with higher gas-fired generation costs and fuel-switching incentives pulling coal back into the merit order. Japan's day-ahead spot electricity prices reached a 3.5-year high, driven by soaring fuel costs, heat waves, and a weakening yen. GE Vernova raised its full-year revenue outlook on surging demand for gas turbines and grid equipment\u2014AI data-centre load growth providing durable structural support even as wind remained weak. The headline flow was thinner in power-specific news today, but the through-line is clear: the Hormuz-driven LNG and oil price shock is transmitting directly into power costs across Asia and Europe, with carbon pricing amplifying the signal for European utilities.",
    "drivers": [
-    "Japan's day-ahead spot electricity prices surged to a 3.5-year high, driven by soaring fuel costs, a heat wave, and yen weakness",
-    "EU EUAs gained 3.72% on the day as elevated gas prices limit fuel-switching and keep carbon-intensive generation economically active",
-    "Energy Institute data confirms fossil fuels account for 57% of global electricity generation, underlining systemic exposure to the current commodity price shock"
+    "EUA rally (+4% today): higher gas input costs and coal re-entry into the generation mix are lifting carbon prices in tandem with TTF",
+    "Japan power prices at 3.5-year high: surging fuel costs and heat-wave demand combining with yen weakness to pressure spot electricity markets",
+    "GE Vernova guidance lift: AI-driven data-centre load growth fuelling sustained demand for gas turbines and grid infrastructure, reinforcing the gas-power nexus"
    ],
-   "headlineCount": 3,
-   "sources": []
+   "headlineCount": 5,
+   "sources": [
+    "Crypto Briefing"
+   ]
   }
  }
 }
