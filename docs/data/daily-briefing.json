@@ -1,42 +1,42 @@
 {
- "generated": "2026-07-21T20:45:00.985035+00:00",
+ "generated": "2026-07-22T15:04:08.190369+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Brent punched through $91 today (+2.34% on the session, +14.35% on the month) as the US-Iran conflict continues to throttle Strait of Hormuz traffic. A Kuwait-owned tanker was struck by a projectile in the strait, Houthi threats forced two Saudi tankers to U-turn in the Red Sea, and Indian state refiners Indian Oil Corp. and Mangalore Refinery & Petrochemicals suspended Iraqi crude liftings on safety grounds. WTI followed higher to $84.46 (+1.48%). The notable divergence was in refined products: RBOB gasoline fell sharply (-4.97%) and heating oil eased (-2.00%), suggesting near-term demand concerns or refinery margin rebalancing even as crude supply risk premiums build. Trump's push to fold Iran into Lindsey Graham's Russia sanctions bill adds a further escalatory policy vector. CME OPEC Watch still prices a 77% probability of a cut at the next meeting, though supply disruption risk may render that debate secondary.",
+   "summary": "Crude benchmarks extended their powerful month-long rally on Wednesday, with Brent settling above $93 (+3.23% on the day, +20.6% on the month) and WTI at $86.90 (+2.33%), as the US-Iran conflict showed no sign of abating and Strait of Hormuz shipping disruptions continued to tighten physical supply. Asian refiners who had banked on August Middle East cargoes are now facing potential delivery delays, while Pakistan is actively scouting US, Nigerian, and Central Asian crude alternatives. A bearish counter-signal arrived via EIA data showing a 2.0 million barrel US crude inventory build for the week ending July 17, echoed by an API estimate of 2.6 million barrels. Refined products diverged sharply: Heating Oil (+31.8% on the month) reflects distillate tightness, while RBOB gasoline fell 4.17% on the day. Russia has reclaimed the top slot in India's import basket, and China's demand trajectory remains a key swing variable for the remainder of the year.",
    "drivers": [
-    "Strait of Hormuz conflict: Iranian tanker strikes and a Kuwaiti vessel hit drive acute supply-disruption premium into Brent above $91",
-    "Red Sea spillover: Houthi attacks forcing Saudi tanker U-turns, extending the chokepoint risk beyond Hormuz alone",
-    "Demand-side hedge: India's biggest state refiners suspend Iraqi crude orders, while India simultaneously keeps near-record Russian oil imports, reshaping global flow patterns"
+    "US-Iran conflict escalating with Hormuz blockage disrupting Middle East crude flows and forcing Asian and South Asian buyers to seek alternative supply",
+    "US crude inventories built 2.0\u20132.6 million barrels in the week to July 17, providing a modest bearish offset to geopolitical risk premium",
+    "Russia displacing Iranian barrels in India's import mix; China's import pace and refined product exports flagged as the key price swing factor through year-end"
    ],
    "headlineCount": 12,
    "sources": [
-    "AFR",
-    "Caliber.Az",
+    "AL.com",
     "Crypto Briefing",
-    "Discovery Alert",
-    "Washington Times",
+    "International Business Times",
+    "Moneycontrol.com",
+    "The Sunday Guardian",
     "finance.biggo.com"
    ]
   },
   "gas": {
-   "summary": "European gas markets are the standout mover today: TTF surged 2.35% on the session to \u20ac58.74/MWh and is up a striking 40.15% over the past month. News flow is thin on direct gas-specific catalysts today, but the broader Middle East conflict and a fresh drone strike on the Caspian Pipeline Consortium terminal that prompted Kazakhstan to halt crude transfers via the Black Sea underscore the widening geopolitical risk to energy infrastructure across the region. US Henry Hub was comparatively subdued at $2.888/MMBtu (+0.98% today, -10.67% on the month), reflecting ample domestic supply. On the structural side, India was confirmed as the world's top long-term LNG buyer in 2025 at 8.4 million tons per year contracted, signalling continued robust Asian demand for seaborne gas.",
+   "summary": "European and US natural gas markets are diverging sharply. TTF surged 4.58% on the day to \u20ac62.40/MWh, extending a stunning 48.96% monthly gain, as Equinor CEO Anders Opedal warned on Wednesday that European storage is unlikely to reach even 80% capacity before the onset of winter \u2014 the weakest pre-winter cushion in 15 years. That supply anxiety is compounded by the broader Middle East crisis squeezing LNG and pipeline flows into Europe. US Henry Hub, by contrast, gained a modest 1.71% to $2.914/MMBtu but remains down 10.42% on the month, reflecting looser domestic fundamentals. Equinor reported a 93% jump in Q2 profit, crediting the oil and gas price spike driven by the Middle East crisis. Gas-sector data in today's feed is otherwise limited.",
    "drivers": [
-    "TTF at \u20ac58.74/MWh, +40% over one month, reflecting compounding geopolitical supply risk to European gas infrastructure and LNG re-routing pressures from Hormuz disruptions",
-    "Kazakhstan suspends crude exports via CPC Black Sea terminal following a drone attack, adding to regional energy infrastructure vulnerability",
-    "India confirmed as world's top long-term LNG buyer in 2025 (8.4 mtpa contracted), underpinning sustained structural demand for global LNG supply"
+    "Equinor CEO warned European storage will likely remain below 80% ahead of winter, the lowest pre-season buffer in 15 years, pushing TTF to a +48.96% monthly gain",
+    "Middle East conflict and Hormuz disruptions adding risk premium to European LNG and pipeline supply expectations",
+    "Henry Hub diverging lower from TTF (-10.42% on the month), reflecting comparatively ample US domestic supply"
    ],
-   "headlineCount": 2,
+   "headlineCount": 3,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon allowances (EUA) were essentially flat today at $78.61/EUA (-0.18%), with a modest +2.04% on the week and +2.09% on the month \u2014 muted relative to the sharp moves in the underlying fuel inputs. The dominant carbon-adjacent story today is TTF's 40% monthly surge, which materially raises gas-fired power generation costs across Europe and may incentivise short-term coal switching, a dynamic that could offer mild EUA support in coming sessions. On the demand side, incoming UK Prime Minister Andy Burnham's announcement scrapping the 5% VAT on electricity is a notable retail energy policy shift, though its direct near-term impact on wholesale power or carbon prices is limited. News flow for this sector is otherwise thin today.",
+   "summary": "Power and carbon markets are feeling the full heat of the energy price shock. EU Carbon EUAs rose 3.72% on the day to $81.53, up 6.47% on the month, likely tracking higher gas and oil costs that are reducing the economic appeal of fuel-switching and sustaining coal and gas burn in European grids. Japan's day-ahead electricity prices hit a three-and-a-half-year high on Wednesday, driven by soaring fuel costs, a heat wave, and a weakening currency, per today's headlines. The broader backdrop is one of structural fossil-fuel dependency: the Energy Institute's latest Statistical Review confirmed that fossil fuels still generate 57% of global electricity. Equinor's 93% Q2 profit surge, attributable to the Middle East-driven commodity spike, illustrates the windfall flowing to producers at the expense of power consumers. Specific EU power price data was not provided today.",
    "drivers": [
-    "TTF's 40% monthly rally increases gas-fired generation costs, creating potential coal-switching pressure that could provide a floor for EUA demand",
-    "UK scraps 5% VAT on electricity under new PM Andy Burnham, a consumer-facing policy move with limited immediate wholesale market impact",
-    "EUA price action subdued (-0.18% today), suggesting carbon markets have yet to fully price in the fuel-cost escalation visible in TTF"
+    "Japan's day-ahead spot electricity prices surged to a 3.5-year high, driven by soaring fuel costs, a heat wave, and yen weakness",
+    "EU EUAs gained 3.72% on the day as elevated gas prices limit fuel-switching and keep carbon-intensive generation economically active",
+    "Energy Institute data confirms fossil fuels account for 57% of global electricity generation, underlining systemic exposure to the current commodity price shock"
    ],
-   "headlineCount": 2,
+   "headlineCount": 3,
    "sources": []
   }
  }
