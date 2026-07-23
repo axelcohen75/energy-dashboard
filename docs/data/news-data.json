@@ -1,24 +1,6 @@
 {
-  "updated": "2026-07-23T18:10:27Z",
+  "updated": "2026-07-23T19:55:55Z",
   "physical": [
-    {
-      "title": "Oil Prices Climb Toward $100 as Red Sea Risks Rise",
-      "summary": "Oil prices rose for the fifth consecutive day early on Thursday, topping $98 per barrel to the highest level in nearly two months, as Houthi attacks on tankers on the Red Sea route intensified conc...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Oil-Prices/Oil-Prices-Climb-Toward-100-as-Red-Sea-Risks-Rise.html",
-      "published": "2026-07-23T09:02:43Z",
-      "sentiment": "bullish",
-      "impact": "high"
-    },
-    {
-      "title": "Brent Tops $100 as Houthi Attacks Push Oil Rally Into Triple Digits",
-      "summary": "Brent crude has broken back above $100 a barrel for the first time in nearly two months as escalating attacks on commercial shipping in the Red Sea deepen concerns that the Middle East supply crisi...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Oil-Prices/Brent-Tops-100-as-Houthi-Attacks-Push-Oil-Rally-Into-Triple-Digits.html",
-      "published": "2026-07-23T15:17:00Z",
-      "sentiment": "bullish",
-      "impact": "med"
-    },
     {
       "title": "LNG Importers Seek Lower Qatar and UAE Prices as War Upends Deals",
       "summary": "The war in the Middle East has diminished the negotiating power that key regional LNG exporters Qatar and the United Arab Emirates (UAE) have enjoyed for years. Importers of LNG from Europe to Asia...",
@@ -38,13 +20,22 @@
       "impact": "high"
     },
     {
-      "title": "EU Concedes to Greek LNG Demand in Russian Sanctions Row",
-      "summary": "The European Union will exempt Greek Dynagas from the latest sanctions package for Russia after pressure from the Greek government, which said the package would harm the country\u2019s economy. The pack...",
+      "title": "Oil Prices Climb Toward $100 as Red Sea Risks Rise",
+      "summary": "Oil prices rose for the fifth consecutive day early on Thursday, topping $98 per barrel to the highest level in nearly two months, as Houthi attacks on tankers on the Red Sea route intensified conc...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/EU-Concedes-to-Greek-LNG-Demand-in-Russian-Sanctions-Row.html",
-      "published": "2026-07-23T08:30:00Z",
+      "url": "https://oilprice.com/Energy/Oil-Prices/Oil-Prices-Climb-Toward-100-as-Red-Sea-Risks-Rise.html",
+      "published": "2026-07-23T09:02:43Z",
       "sentiment": "bullish",
-      "impact": "low"
+      "impact": "high"
+    },
+    {
+      "title": "Brent Tops $100 as Houthi Attacks Push Oil Rally Into Triple Digits",
+      "summary": "Brent crude has broken back above $100 a barrel for the first time in nearly two months as escalating attacks on commercial shipping in the Red Sea deepen concerns that the Middle East supply crisi...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Oil-Prices/Brent-Tops-100-as-Houthi-Attacks-Push-Oil-Rally-Into-Triple-Digits.html",
+      "published": "2026-07-23T15:17:00Z",
+      "sentiment": "bullish",
+      "impact": "med"
     },
     {
       "title": "India\u2019s Fuel Exports Set to Soar in July as Refining Margins Jump",
@@ -56,11 +47,11 @@
       "impact": "high"
     },
     {
-      "title": "Ukraine\u2019s Drone War Is Choking Kazakhstan\u2019s Oil Exports",
-      "summary": "Kazakhstan should, in theory, be one of the major beneficiaries of Russia\u2019s growing isolation from global energy markets. Its crude is unsanctioned and European refiners need alternatives to Russia...",
+      "title": "EU Concedes to Greek LNG Demand in Russian Sanctions Row",
+      "summary": "The European Union will exempt Greek Dynagas from the latest sanctions package for Russia after pressure from the Greek government, which said the package would harm the country\u2019s economy. The pack...",
       "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/Ukraines-Drone-War-Is-Choking-Kazakhstans-Oil-Exports.html",
-      "published": "2026-07-23T18:00:00Z",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/EU-Concedes-to-Greek-LNG-Demand-in-Russian-Sanctions-Row.html",
+      "published": "2026-07-23T08:30:00Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -74,13 +65,13 @@
       "impact": "low"
     },
     {
-      "title": "Chinese Tankers Push Through Bab el-Mandeb Despite Houthi Blockade Threats",
-      "summary": "Two China-owned and operated tankers loaded with Saudi crude continued on Thursday to travel in the Red Sea toward the Bab el-Mandeb Strait despite the overnight Houthi attacks on Saudi vessels, sh...",
+      "title": "Ukraine\u2019s Drone War Is Choking Kazakhstan\u2019s Oil Exports",
+      "summary": "Kazakhstan should, in theory, be one of the major beneficiaries of Russia\u2019s growing isolation from global energy markets. Its crude is unsanctioned and European refiners need alternatives to Russia...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinese-Tankers-Push-Through-Bab-el-Mandeb-Despite-Houthi-Blockade-Threats.html",
-      "published": "2026-07-23T11:30:00Z",
+      "url": "https://oilprice.com/Energy/Energy-General/Ukraines-Drone-War-Is-Choking-Kazakhstans-Oil-Exports.html",
+      "published": "2026-07-23T18:00:00Z",
       "sentiment": "bullish",
-      "impact": "med"
+      "impact": "low"
     },
     {
       "title": "TotalEnergies Profit Soars 68% as Oil Price Surge Lifts Earnings",
@@ -92,22 +83,13 @@
       "impact": "high"
     },
     {
-      "title": "Two Saudi Oil Tankers Targeted as Houthi Blockade Disrupts Red Sea Shipping",
-      "summary": "At least two tankers have turned away from the Bab el-Mandeb Strait after Yemen\u2019s Houthis said they have struck two Saudi tankers in the chokepoint in the latest Middle East war escalation, saying ...",
+      "title": "Chinese Tankers Push Through Bab el-Mandeb Despite Houthi Blockade Threats",
+      "summary": "Two China-owned and operated tankers loaded with Saudi crude continued on Thursday to travel in the Red Sea toward the Bab el-Mandeb Strait despite the overnight Houthi attacks on Saudi vessels, sh...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Two-Saudi-Oil-Tankers-Targeted-as-Houthi-Blockade-Disrupts-Red-Sea-Shipping.html",
-      "published": "2026-07-23T06:30:00Z",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinese-Tankers-Push-Through-Bab-el-Mandeb-Despite-Houthi-Blockade-Threats.html",
+      "published": "2026-07-23T11:30:00Z",
       "sentiment": "bullish",
       "impact": "med"
-    },
-    {
-      "title": "India Targets Five Small Modular Reactors by 2033",
-      "summary": "India expects to build domestically five small modular reactors (SMRs) by 2033, India\u2019s Atomic Energy Minister, Jitendra Singh, has said. The five SMRs would be part of India\u2019s push to accelerate n...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Targets-Five-Small-Modular-Reactors-by-2033.html",
-      "published": "2026-07-23T15:30:00Z",
-      "sentiment": "bearish",
-      "impact": "low"
     },
     {
       "title": "India\u2019s Solar Manufacturing Push Backfires as Panel Factories Shut Down",
@@ -117,6 +99,15 @@
       "published": "2026-07-23T07:30:00Z",
       "sentiment": "bullish",
       "impact": "med"
+    },
+    {
+      "title": "Commodities Beat Tech This Decade, and Wall Street Still Won't Buy In",
+      "summary": "The best performing asset class of this decade is also the most under owned. Since October 2020, when we first called for a decades-long super-cycle in commodities, the broad commodity indices like...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/Commodities-Beat-Tech-This-Decade-and-Wall-Street-Still-Wont-Buy-In.html",
+      "published": "2026-07-23T19:00:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
     },
     {
       "title": "Greece Exposes the Limits of Europe's Russia Energy Sanctions",
@@ -135,18 +126,18 @@
       "published": "2026-07-23T17:00:00Z",
       "sentiment": "bearish",
       "impact": "med"
+    },
+    {
+      "title": "India Targets Five Small Modular Reactors by 2033",
+      "summary": "India expects to build domestically five small modular reactors (SMRs) by 2033, India\u2019s Atomic Energy Minister, Jitendra Singh, has said. The five SMRs would be part of India\u2019s push to accelerate n...",
+      "source": "",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Targets-Five-Small-Modular-Reactors-by-2033.html",
+      "published": "2026-07-23T15:30:00Z",
+      "sentiment": "bearish",
+      "impact": "low"
     }
   ],
   "geopolitics": [
-    {
-      "title": "Could US-Iran Conflict Over Strait Of Hormuz Hand Strategic Wins To Russia And China? - Analysis",
-      "summary": "Could US-Iran Conflict Over Strait Of Hormuz Hand Strategic Wins To Russia And China? - Analysis Eurasia Review",
-      "source": "Eurasia Review",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPOTRRZzNPb3U4LW9aa3hfNGhuRF9HeklfeWZaYnNzeVNkeVJiUTFObi10NlZhX0lmR2ZMMUZlMFlGVnVRUHZzZDJ4NTBGbFo4cnV3ekRTY0dyaDNjLVlaa29ydXNzeTFJRDRscjBCakd2ZjUtXzJ3REJlWU1YSVFYR1NhRnRRRnozdlNmM0c4TFVCbzRaZHpjd1ZXcDJMWXU5MHdaZ0RkYkJoVXNLbkYyYlZFZjVkZDVUSVdmbm9iQ2E4YVRYNnU4N1RiRk1zQQ?oc=5",
-      "published": "2026-07-21T16:09:35Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
     {
       "title": "The price of oil surged to $98 a barrel on Thursday morning, as Iran\u2019s Houthi allies in Yemen claimed strikes on two Saudi tankers in the Red Sea, and neither the U.S. nor Iran showed any letup in their fighting. Follow live updates.",
       "summary": "The price of oil surged to $98 a barrel on Thursday morning, as Iran\u2019s Houthi allies in Yemen claimed strikes on two Saudi tankers in the Red Sea, and neither the U.S. nor Iran showed any letup in ...",
@@ -155,6 +146,24 @@
       "published": "2026-07-23T16:35:08Z",
       "sentiment": "neutral",
       "impact": "med"
+    },
+    {
+      "title": "Houthi-Saudi Arabia Conflict: Houthis Warn They Will Attack Ships Calling at Saudi Red Sea Ports",
+      "summary": "Houthi-Saudi Arabia Conflict: Houthis Warn They Will Attack Ships Calling at Saudi Red Sea Ports The Sunday Guardian",
+      "source": "The Sunday Guardian",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVlFreWtCRU4tWlpQOEVCeE55UTRCWHQ4RDNGT3pkaTVDLTBvalNJc09FWGdEMzdnM3M2bEZJX1B2SE16ZlNZZ0pzM05peUs0Qm5RMWFUcXQzcnByNXNMLXprSkpIWENBN2RkeTYzSmRpbUhCb1cwTjZHUFNEbWFSYW8wTktSZlBSSmhVTnUyMUFZOXN0SHd0dldIcWJuaWExLUhOczJvQ1QxV1ExcHZ3VlQxY1RmQzQ3aWhUUU5xeEpIN0NCUlZuVDF4SFpKT1dvTWlQRkd2MDUydk9H0gHcAUFVX3lxTE1WUWt5a0JFTi1aWlA4RUJ4TnlRNEJYdDhEM0ZPemRpNUMtMG9qU0lzT0VYZ0QzN2czczZsRklfUHZITXpmU1lnSnMzTml5SzRCblExYVRxdDNycHI1c0wtemtKSkhYQ0E3ZGR5NjNKZGltSEJvVzBONkdQU0RtYVJhbzBOS1JmUFJKaFVOdTIxQVk5c3RId3R2V0hxYm5pYTEtSE5zMm9DVDFXUTFwdndWVDFjVGZDNDdpaFRRTnF4Skg3Q0JSVm5UMXhIWkpPV29NaVBGR3YwNTJ2T0c?oc=5",
+      "published": "2026-07-22T08:02:09Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "Could US-Iran Conflict Over Strait Of Hormuz Hand Strategic Wins To Russia And China? - Analysis",
+      "summary": "Could US-Iran Conflict Over Strait Of Hormuz Hand Strategic Wins To Russia And China? - Analysis Eurasia Review",
+      "source": "Eurasia Review",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPOTRRZzNPb3U4LW9aa3hfNGhuRF9HeklfeWZaYnNzeVNkeVJiUTFObi10NlZhX0lmR2ZMMUZlMFlGVnVRUHZzZDJ4NTBGbFo4cnV3ekRTY0dyaDNjLVlaa29ydXNzeTFJRDRscjBCakd2ZjUtXzJ3REJlWU1YSVFYR1NhRnRRRnozdlNmM0c4TFVCbzRaZHpjd1ZXcDJMWXU5MHdaZ0RkYkJoVXNLbkYyYlZFZjVkZDVUSVdmbm9iQ2E4YVRYNnU4N1RiRk1zQQ?oc=5",
+      "published": "2026-07-21T16:09:35Z",
+      "sentiment": "bullish",
+      "impact": "low"
     },
     {
       "title": "Yemen's Houthis attack Saudi tanker as US launches more Iran strikes",
@@ -167,39 +176,12 @@
     },
     {
       "title": "Houthis announce Saudi naval blockade, threatening new front in US-Iran war",
-      "summary": "Houthis announce Saudi naval blockade, threatening new front in US-Iran war Reuters",
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbmtOemhMR1UtaVNoMENBMHltNEpKTWJNekRXUEtSa3hidndTM0VZVnRoTEJlV2ZENWtkYVFCUkJtSk8zdFhPeEJQSXRNMS1vWC03N2NJek14WklXdzhNZWkzMnZRUFpGcHg2OXotaHpyVW9jblFTYUM4U2lGcXFWa1NFbnZSQnpreVF6OXVhMW1oeHdIdkFNMjBJa09UZGgycjRkMjZ6Z1dxNC10enJIVDZJdlVSQjRxQlBZc05Tdw?oc=5",
-      "published": "2026-07-21T21:55:31Z",
+      "summary": "Houthis announce Saudi naval blockade, threatening new front in US-Iran war Rappler",
+      "source": "Rappler",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNT2NCOEljTE5wTHVjdndlaTkyWVlNQ2p4cVRtRGVTRWV2WTFCQ2xHMmhhZWJxWXZmYUFiMWFvZzRLMEt2MFhfVkdnM2F3TkxXNjRGVy1GTWxnOWZMaXdLMWhfU1pzMTBBYklMb2R1NFBkV3UtUmNlWUdPUDhwSjNSdHJ2OThyZDJxSFM5NW1DRjlPaldlY2tN?oc=5",
+      "published": "2026-07-21T00:26:59Z",
       "sentiment": "bullish",
       "impact": "low"
-    },
-    {
-      "title": "China\u2019s Stance on the Iran-US Strait of Hormuz Crisis",
-      "summary": "China\u2019s Stance on the Iran-US Strait of Hormuz Crisis Modern Diplomacy",
-      "source": "Modern Diplomacy",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTmpTUnBFU05QY2MweVYxS3doejdmVC1kMTczT0NvRndqaVJZNWZ2WUsyd0xSYy04WUlLa0d1S3dBdWZBZVI1NHVsYjY5dTZtWXQ2UEYtaEZtWjcwZ0JQSmwzY3FJRVdFRXRaWjJ1WmwxMGN1REd0MFFlTzhKMTNFUDlsUl9ST25jOGJhSGk2YmtmcV9xWWc?oc=5",
-      "published": "2026-07-21T15:29:24Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Iran reasserts control over Strait of Hormuz amid 2026 conflict escalation",
-      "summary": "Iran reasserts control over Strait of Hormuz amid 2026 conflict escalation Crypto Briefing",
-      "source": "Crypto Briefing",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZ1owaGkwY3FQQU5DQndrOFNlaTFQdGlDSENZQmVhRktCVlctMkNRT2ZVS3dQMXFLTlVELWQtdVYxOTUtZkdXVE9yUXZ2cUpOVTdBN1NjYUhyODRCSlF6dHJ0QVJNYnJHUzJmMFRkZnptVlBGSjlhWUlVc0pJN3lHWkR6cDlfYW9WNy1XLWRibFJFTTdTc3N6VlJ1MDJQVFp6TFJWbQ?oc=5",
-      "published": "2026-07-20T20:06:29Z",
-      "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "Iran Says Oil Blockade Will Continue Until Attacks End, Trump Threatens to Escalate Strikes",
-      "summary": "Iran Says Oil Blockade Will Continue Until Attacks End, Trump Threatens to Escalate Strikes EnergyNow.com",
-      "source": "EnergyNow.com",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSUNESk9yNUxfZXlVOUYwXy1kRWR0R2owNjhMNFBWMWJyN0ZrYXJ2a1JCQjRyWkdSUV92M1RvR0VmLXRITXY2OTZwM1dCT2U2Y2hSSlduNEhYVF9wODZzWnBaN2JLOVhoc212LXhnTmlDZ3hwLUlIRERRdnFoaVF6aVhoMGNmNHF4ZEV3aXdjTnZyT3VERnIyOENQdS0tQ2JrU3NtYXQyc3NOVXppTFEzLXpYYXlZMS1pMkVVZXln?oc=5",
-      "published": "2026-07-20T22:40:21Z",
-      "sentiment": "bullish",
-      "impact": "med"
     },
     {
       "title": "Rubio: Iran\u2019s shipping attacks \u2018kill\u2019 ceasefire deal, but 'door to diplomacy stays open'",
@@ -220,11 +202,29 @@
       "impact": "med"
     },
     {
-      "title": "Iran, US-Israel War Live Updates | 'No one will sell oil if Tehran can't': Iran issues stark warning to US over Strait of Hormuz",
-      "summary": "Iran, US-Israel War Live Updates | 'No one will sell oil if Tehran can't': Iran issues stark warning to US over Strait of Hormuz Deccan Herald",
-      "source": "Deccan Herald",
-      "url": "https://news.google.com/rss/articles/CBMiigNBVV95cUxPUkM1dXF0OFV1c0NvVUZkNFN0UFBSakJuN2NBd24tVlBoY3ZtNFE5eGJLRFhZNzdMUTNaSWhmYmVWSmNVbTVRX2pzYmRvbDBVVDJjT0FzTVE2VDM1S1QyM3ItVlhNYVVHZTZfa01NY0tYM2lkeWtfQXA4djMxRGtTWjZLVllfY3VnN0NUU2RJOUU0ODF3Ml9Ua09BS1l6cXNLTXRKelYteGZlM3Jtay0zTmQwYmtnUS16YXFKdVRPOFE1d1I2VVlGSWZuRnNPR09hREVmMkQ3VHVtd2VnWnFndXlteDdwR21QVkhFQzV6TXVia1BUWWNEVmthNVlRaWNUVGFKcWk4aFhQVF9faFJQU2hWXzQtVmlISlhKbmZrMjNDWHVyWGVwUDJORDM3MUNMVVZBWURqenZ3Z2RoSEtBNG9wb1FhdjZiUHVwYnF4MWlXdU9lWEFVTU1Lczk3cVctRWJrVTJqNlo5QVlUM3BsQ2dqYWhCWFdWbFVyY3JOOUw3SDlBQmM0bFZ3?oc=5",
-      "published": "2026-07-23T03:08:00Z",
+      "title": "Iran reasserts control over Strait of Hormuz amid 2026 conflict escalation",
+      "summary": "Iran reasserts control over Strait of Hormuz amid 2026 conflict escalation Crypto Briefing",
+      "source": "Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZ1owaGkwY3FQQU5DQndrOFNlaTFQdGlDSENZQmVhRktCVlctMkNRT2ZVS3dQMXFLTlVELWQtdVYxOTUtZkdXVE9yUXZ2cUpOVTdBN1NjYUhyODRCSlF6dHJ0QVJNYnJHUzJmMFRkZnptVlBGSjlhWUlVc0pJN3lHWkR6cDlfYW9WNy1XLWRibFJFTTdTc3N6VlJ1MDJQVFp6TFJWbQ?oc=5",
+      "published": "2026-07-20T20:06:29Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "Iran Says Oil Blockade Will Continue Until Attacks End, Trump Threatens to Escalate Strikes",
+      "summary": "Iran Says Oil Blockade Will Continue Until Attacks End, Trump Threatens to Escalate Strikes EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSUNESk9yNUxfZXlVOUYwXy1kRWR0R2owNjhMNFBWMWJyN0ZrYXJ2a1JCQjRyWkdSUV92M1RvR0VmLXRITXY2OTZwM1dCT2U2Y2hSSlduNEhYVF9wODZzWnBaN2JLOVhoc212LXhnTmlDZ3hwLUlIRERRdnFoaVF6aVhoMGNmNHF4ZEV3aXdjTnZyT3VERnIyOENQdS0tQ2JrU3NtYXQyc3NOVXppTFEzLXpYYXlZMS1pMkVVZXln?oc=5",
+      "published": "2026-07-20T22:40:21Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "China\u2019s Stance on the Iran-US Strait of Hormuz Crisis",
+      "summary": "China\u2019s Stance on the Iran-US Strait of Hormuz Crisis Modern Diplomacy",
+      "source": "Modern Diplomacy",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTmpTUnBFU05QY2MweVYxS3doejdmVC1kMTczT0NvRndqaVJZNWZ2WUsyd0xSYy04WUlLa0d1S3dBdWZBZVI1NHVsYjY5dTZtWXQ2UEYtaEZtWjcwZ0JQSmwzY3FJRVdFRXRaWjJ1WmwxMGN1REd0MFFlTzhKMTNFUDlsUl9ST25jOGJhSGk2YmtmcV9xWWc?oc=5",
+      "published": "2026-07-21T15:29:24Z",
       "sentiment": "neutral",
       "impact": "low"
     },
@@ -238,15 +238,6 @@
       "impact": "low"
     },
     {
-      "title": "ASEAN Urges US and Iran to Show Restraint as Middle East Conflict Escalates",
-      "summary": "ASEAN Urges US and Iran to Show Restraint as Middle East Conflict Escalates Ednews.net",
-      "source": "Ednews.net",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTnBSMXpQdjlpRVNhRXFYX1RfMFVzSnY5OV9kVWVVb25KSFRBSGdCb3hqejV2QlpyeEREU3pBNkJzd3FOcjRhUkpEcWppcktYSGEyZVlIUWplUGUtLVBBVXU4dXFVejFNLWNCbUd6dUlJakFzblFXdW54WVdlQ01GMURZdk05LUJBQWljTF9ZNDZyaE9FVWk0VXBha2xyMWs?oc=5",
-      "published": "2026-07-21T08:08:11Z",
-      "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
       "title": "Iran War: The Strait of Hormuz Oil Shock Is Now Heading West",
       "summary": "Iran War: The Strait of Hormuz Oil Shock Is Now Heading West EnergyNow.com",
       "source": "EnergyNow.com",
@@ -256,11 +247,47 @@
       "impact": "low"
     },
     {
+      "title": "New EU sanctions against Russia to target Moscow\u2019s financial, military, energy systems, top EU official says",
+      "summary": "New EU sanctions against Russia to target Moscow\u2019s financial, military, energy systems, top EU official says Gwara Media",
+      "source": "Gwara Media",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxONU1uX05UM0xXc0s2cGVYSGdrSldBakRzNFdfSkxWV1VqUEF5RUpxSVMweGV3RXhJeUVzbFRYQk1nbENDaG9zQWdnQ1ptR3N2UHBnU2ttN1E2VWFUOFJjdkgxdzhSeml3Tm8yRnI2RGpLWGZyWkthZU5qR0lkd0lDM0psWVA4NnRCZl9YamJQcm92Q2N3Zy1WR29CTGtKXzhGUUZuYUVyOGxlZ2FfS1VudjdkUUliMkdkQjd5d1V5VTNYU3Q5TF9VY1dDbw?oc=5",
+      "published": "2026-07-23T13:26:45Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
       "title": "To end the wars in Ukraine and Iran, starve Russia\u2019s gas pumps",
       "summary": "To end the wars in Ukraine and Iran, starve Russia\u2019s gas pumps The Hill",
       "source": "The Hill",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTTR5cEViSUJGMTh6eFhrc2dtdndQQWd2VUtjX2hmWU9YUE0yTFZVZVY2d2ltTGN1V2hzdi1yNWdGVHVKMEFXVkxKUXR1QU9rV3NTMjV5Z2plSEZIMFlJdFdmMUJrRDl2NFpWQkFZakJIWGlFbVVqcGVzS3RuUEtVSy11cDUzQW42VnNTM1FR0gGOAUFVX3lxTE5NNHlwRWJJQkYxOHp4WGtzZ212d1BBZ3ZVS2NfaGZZT1hQTTJMVlVlVjZ3aW1MY3VXaHN2LXI1Z0ZUdUowQVdWTEpRdHVBT2tXc1MyNXlnamVIRkgwWUl0V2YxQmtEOXY0WlZCQVlqQkhYaUVtVWpwZXNLdG5QS1VLLXVwNTNBbjZWc1MzUVE?oc=5",
       "published": "2026-07-23T12:30:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "ASEAN Urges US and Iran to Show Restraint as Middle East Conflict Escalates",
+      "summary": "ASEAN Urges US and Iran to Show Restraint as Middle East Conflict Escalates Ednews.net",
+      "source": "Ednews.net",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTnBSMXpQdjlpRVNhRXFYX1RfMFVzSnY5OV9kVWVVb25KSFRBSGdCb3hqejV2QlpyeEREU3pBNkJzd3FOcjRhUkpEcWppcktYSGEyZVlIUWplUGUtLVBBVXU4dXFVejFNLWNCbUd6dUlJakFzblFXdW54WVdlQ01GMURZdk05LUJBQWljTF9ZNDZyaE9FVWk0VXBha2xyMWs?oc=5",
+      "published": "2026-07-21T08:08:11Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "New threat by Yemen's Houthis could widen the Iran war and put another trade chokepoint at risk",
+      "summary": "New threat by Yemen's Houthis could widen the Iran war and put another trade chokepoint at risk The Tribune-Democrat",
+      "source": "The Tribune-Democrat",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOWEdGOUYya2xLUHB3Z2lvRWtON2V6NFlUS1hTU2ZQenlqbXdRQmUtVldWQkdvNm1KRUNvWUkzSVEwN2oyd1N6TFJvQkxBYVhTWlBCb2w4d0JRMDlLUVZiOFQwMDRLTzgxSUU5emVxUVdncExSQS1aVEszN3YyN1NlMExCZlkwN0xscWpLWTZGSVlGbHRKR3VobzRUenhxdDE3T1NZRm83VE96Ny1jZFpxTHlhRE04U0pnNmpJSG92YVRnZS1KLUtuX21NZWR4OENVLWRFT1dXLW1FQTRJdm8tVE1GdjdmLVR6T01Iam5oMXoxUm1VVjAyOHRRejYtUW0zZjFwalphVng?oc=5",
+      "published": "2026-07-21T19:03:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "Iran, US-Israel War Live Updates | 'No one will sell oil if Tehran can't': Iran issues stark warning to US over Strait of Hormuz",
+      "summary": "Iran, US-Israel War Live Updates | 'No one will sell oil if Tehran can't': Iran issues stark warning to US over Strait of Hormuz Deccan Herald",
+      "source": "Deccan Herald",
+      "url": "https://news.google.com/rss/articles/CBMiigNBVV95cUxPUkM1dXF0OFV1c0NvVUZkNFN0UFBSakJuN2NBd24tVlBoY3ZtNFE5eGJLRFhZNzdMUTNaSWhmYmVWSmNVbTVRX2pzYmRvbDBVVDJjT0FzTVE2VDM1S1QyM3ItVlhNYVVHZTZfa01NY0tYM2lkeWtfQXA4djMxRGtTWjZLVllfY3VnN0NUU2RJOUU0ODF3Ml9Ua09BS1l6cXNLTXRKelYteGZlM3Jtay0zTmQwYmtnUS16YXFKdVRPOFE1d1I2VVlGSWZuRnNPR09hREVmMkQ3VHVtd2VnWnFndXlteDdwR21QVkhFQzV6TXVia1BUWWNEVmthNVlRaWNUVGFKcWk4aFhQVF9faFJQU2hWXzQtVmlISlhKbmZrMjNDWHVyWGVwUDJORDM3MUNMVVZBWURqenZ3Z2RoSEtBNG9wb1FhdjZiUHVwYnF4MWlXdU9lWEFVTU1Lczk3cVctRWJrVTJqNlo5QVlUM3BsQ2dqYWhCWFdWbFVyY3JOOUw3SDlBQmM0bFZ3?oc=5",
+      "published": "2026-07-23T03:08:00Z",
       "sentiment": "neutral",
       "impact": "low"
     },
@@ -274,39 +301,12 @@
       "impact": "low"
     },
     {
-      "title": "US says sanctions cut China's Iranian crude imports by 40%",
-      "summary": "US says sanctions cut China's Iranian crude imports by 40% Quantum Commodity Intelligence",
-      "source": "Quantum Commodity Intelligence",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWWVNMkRpX0FyYng2N1FINUhfcFk0WGNlVjkzTl9GWU9yMVFSRXhEazNjYmZSNHRoZWZVWk9rbTFXaWVOTlhYa1VOd00ySndWc0lpV3ZMRHB1LVl4NVFxNWFreUQzUEI5Y3UzSDVnVFpmRUF6eld5TlVaZ3RGejVqSWhFQm9VQjZiZXVWQkk2VFBVc2N4MzgyZGxONFphOGhpcmc?oc=5",
-      "published": "2026-07-22T06:38:06Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "US teetering on all-out war with Iran as ceasefire collapses: WaPo",
-      "summary": "US teetering on all-out war with Iran as ceasefire collapses: WaPo Crypto Briefing",
+      "title": "Houthis declare maritime embargo on Saudi Arabia, threatening key oil chokepoint",
+      "summary": "Houthis declare maritime embargo on Saudi Arabia, threatening key oil chokepoint Crypto Briefing",
       "source": "Crypto Briefing",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZDZwa3JhRWpfS2QwOXF4aWNjSHFrUEJodEhobW91di1SQlcyejVYTU1JUmlBUTYyWC1CMzZIU3JMNlhlSXdlTnUybmF4MTl0b2lxa2hTMnAzN19kWVFzV09PY25LdDY4RmhwdHdQUGNuek5lQ0xzQTBJV1RxRXlPNmUyRzhNSG9CSGhkdUYxdENmdUN3aUtyLQ?oc=5",
-      "published": "2026-07-20T21:23:07Z",
-      "sentiment": "bearish",
-      "impact": "med"
-    },
-    {
-      "title": "EU Targets Russian Banks and Crypto Firms in New Ukraine Sanctions Package",
-      "summary": "EU Targets Russian Banks and Crypto Firms in New Ukraine Sanctions Package Coinpaper",
-      "source": "Coinpaper",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQS3FOQkdTTDJSTFVIUWE4NElDMXRpWEdWN0V6a2hEY0FBT0hPRzR6TXpxUlE4SWRDUEVYUUJlWlU5T0FVUm1RNEhyQ3JfclpQMllleDBHdXdobXBYNElCaW0yQmhvMGU3U0p5RDFjVmpvbFVrMHN5LUpoeXpaWmtZVEQwa2xTSUh4Q09WY3pTdENVd0x6RHozMnVUaVNMSmktdEtkVw?oc=5",
-      "published": "2026-07-23T15:12:53Z",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBKSk9mR2oxbmpMOFJ6aE1QMEEwaVoyRFpLUzI0OUx1ZXdTWHBQYURMcFUyNEU2RFN5bGRIYXoyOFpFaFk1UlZneEtwS0pJZl9MdnpxbTA3cUdoVmRiRndnZGh6ME8xelE3M25iMG5IZnpDbzRadmpZUQ?oc=5",
+      "published": "2026-07-20T21:18:57Z",
       "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Russia, Latin American suppliers to rescue: India\u2019s Middle East oil imports dip in April-June on Hormuz d",
-      "summary": "Russia, Latin American suppliers to rescue: India\u2019s Middle East oil imports dip in April-June on Hormuz d The Times of India",
-      "source": "The Times of India",
-      "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxQQVhLXzRNejFhZDNHU2pERFZ6OEl5eGk5SW9EMDNGTGpGTHlrMThiVzNscWRaUU9DRldPbm9BN01QXzRHVl92RFJZVzl4Z1pwWURldTlQNjBDMmVNcW1NYUFCNFY5enlsN29uTjVUbms5Z29tVmRyZy1OblpmUnhsS0hHdzh0dkp0TzRZZFlreHVMcURPMHB1azQxRkpWb0tBYnEtU1h4U0VIYmhKcExzY29Kd01JdjdWUkZXNzIzb21zenBIN0c5Z01JS2VtTU9OV2o5SGhYZExsZmcxTzNhSzlvMWtBNkVBZ0tCQWExaVdLeGNQMEZDMWc4SklLTjZfeFI3R3lZSGh2R1hmaGpmaXBOYkMwNDQ3UlNOOG9tZFIzVklE0gGqAkFVX3lxTE5SSDk0WEM2TkVFb05oT05saDBZVHU1STUxVV9SS3VCc0pYSWd3VGFKOUVTanYybHdMVS02Zzk3YlI0djA1ZVNXZ0xMQXN2aEZEUjlEblVUT05HYlVNb2c3ZlBwMnpvVHlRUzNhUGNZV0t1Yko0b1RmdWlVejZpVEdFdjlwYmNOUHV6eFBzcjdpUERNblRKOWFMMjllbDZnZ0RpZlBuT0tnZmgwU0dWU0FPMkFTbEk3ZXl4Q21GeExOLUFPY29ndko4cE9ldWEyc0dlb2g2UUN0MXZMckNFdFRIck1JQVZ3WWVfblI0dFdxUDI2elgyQlpZTVdZUXVjRjR4bDRmZ1lqUGZTbC1scE9pSUtIaHQwSzZVaUpHNXdOX3pRdjFrN2hXRmc?oc=5",
-      "published": "2026-07-21T15:54:00Z",
-      "sentiment": "neutral",
       "impact": "low"
     },
     {
@@ -319,40 +319,40 @@
       "impact": "low"
     },
     {
-      "title": "How Russian Energy Sanctions Shape the Trajectory of Global Conflicts",
-      "summary": "How Russian Energy Sanctions Shape the Trajectory of Global Conflicts streamlinefeed.co.ke",
-      "source": "streamlinefeed.co.ke",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPano0bzUwTVZYdTQzUUR0eTdkSDlWZHpqNDQ1alNEcFJhWWktR0d6YnlfWHVQblgwSjczWlgtQ0dpdXBmQ0p5VXZGckZ4WXUtR2g0eDQ3VXhWWVJRZHdvZFlnbU8weEhLZFZQcTdjeTJYQWlETGhBUDZNaEp5RVdPellmNFZVdC1aQmFDZ3RrcXNLdEFZWGxkQjZ3VTJaRmltMmhKdlJR?oc=5",
-      "published": "2026-07-23T13:25:48Z",
+      "title": "TEMPORARY DEAL \u2013 US Eases Russia Oil Sanctions to Tame Price Surge, Riling European Allies",
+      "summary": "TEMPORARY DEAL \u2013 US Eases Russia Oil Sanctions to Tame Price Surge, Riling European Allies EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQejE2ckRVdEhMTlM1dExrQlhHTjIwdk11M24waFF4VV9oSTNxRVBFMGNwYW9fTVhLcXVsd21VaUR0QVFackNpWVluc1I0MWZSdmZpTWpTM0JWTFNSZVh0d3pZYTNRMWRGeEQ4amlsM29kb01KZC01WHJnYW0waTlPbHZ3TDdnV21od0k5QVB0Q1hWSGZvbXc1YUtlNl8xZXJQandFS2otQ3dzMDdsUzRvTGZ3MzJVYUxwRFE?oc=5",
+      "published": "2026-07-23T15:26:16Z",
       "sentiment": "bullish",
       "impact": "med"
     },
     {
-      "title": "Why Iran is risking so much over the Strait of Hormuz",
-      "summary": "Why Iran is risking so much over the Strait of Hormuz BBC",
-      "source": "BBC",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5UR3BPNmpCQVlZOXdsQ0c1cVhxZnl0UGRqM3dSc3NtUlRWQTUzbG1QbFg4RHRDMEUtWkxyaU9GRko5ckFyUTNlQnpoSTFjUVBFaWVUOTM1WWtQZw?oc=5",
-      "published": "2026-07-21T14:36:47Z",
+      "title": "Iran proposes tolls for oil transit through Strait of Hormuz, with Bitcoin as a payment option",
+      "summary": "Iran proposes tolls for oil transit through Strait of Hormuz, with Bitcoin as a payment option Crypto Briefing",
+      "source": "Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1BNnpuZTY3dWlFdXBpbUhTY2hlaFJUZGxzUHl4OGlERDVjbEdfSnFyVWg2SGxNVDBVeGhRSHdCeWw2NHV6SE5WNVpVVmFfR1E5eWFfT2dleGJmRlBoYTA3R1E4cnR6eFZPV3lza1B3?oc=5",
+      "published": "2026-07-21T10:59:02Z",
       "sentiment": "neutral",
       "impact": "low"
     },
     {
-      "title": "The Houthis just announced a blockade on Saudi Arabia. What does it mean for the global economy?",
-      "summary": "The Houthis just announced a blockade on Saudi Arabia. What does it mean for the global economy? Atlantic Council",
-      "source": "Atlantic Council",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOM3JYTXhrM0R5YlREY1dLdjFYbU8xZVUycHZEOExJSnJfa21ac2UzLVE0a21BME5MTnd4aFFpR1VjdnFkSDloODlySWZnSkR2Tm5hX0YwMXdGbVZ3OVpVZmQ2SmdJbUZKalhQX1o3S3JRRlZ6VnNPMkdGbGtiRE10TFdlZDN2RkNQelVwcGdpNlIza0swUHlieW9OaHJpdGRPMHl0RUt6QVRFbGtKU2RzR25yeTNDbnJBYzFOZEI1RFNkOHZ6b01yZlBQNVhhMU9YT20xNA?oc=5",
-      "published": "2026-07-21T00:20:11Z",
+      "title": "EU Targets Russian Banks and Crypto Firms in New Ukraine Sanctions Package",
+      "summary": "EU Targets Russian Banks and Crypto Firms in New Ukraine Sanctions Package Coinpaper",
+      "source": "Coinpaper",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQS3FOQkdTTDJSTFVIUWE4NElDMXRpWEdWN0V6a2hEY0FBT0hPRzR6TXpxUlE4SWRDUEVYUUJlWlU5T0FVUm1RNEhyQ3JfclpQMllleDBHdXdobXBYNElCaW0yQmhvMGU3U0p5RDFjVmpvbFVrMHN5LUpoeXpaWmtZVEQwa2xTSUh4Q09WY3pTdENVd0x6RHozMnVUaVNMSmktdEtkVw?oc=5",
+      "published": "2026-07-23T15:12:53Z",
       "sentiment": "bullish",
       "impact": "low"
     },
     {
-      "title": "EU freezes Russian oil price cap adjustment for a year, adds sanctions on tankers, refining",
-      "summary": "EU freezes Russian oil price cap adjustment for a year, adds sanctions on tankers, refining Interfax-Ukraine",
-      "source": "Interfax-Ukraine",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBTV25zcEE3TjB3QjVIV2s2Rks0bEJTcnNvSU4xM05mcG84dnhlQ19pUnN4dndTTUxaSmw3WTRjMDJzd1JEU1RWcEMyZXR1Z3BkSkRka0VjRnV2NE5zeTBSZDhBd9IBaEFVX3lxTE9UOWR0bVBYbVdzR1diMno0Ry01V1BpczQ0Umx2OUY2MldlWXpscl9WbDhpZnRyZkhoNldYR2IwY3BfVEVZdURqTlhmTHJBUVpYY1JVUWpoTmJidjhnVGJQVlp3emVXRVNS?oc=5",
-      "published": "2026-07-23T16:17:22Z",
-      "sentiment": "neutral",
-      "impact": "med"
+      "title": "Iran Conflict Reshapes India's Oil Strategy; Boosts Russian Crude Imports",
+      "summary": "Iran Conflict Reshapes India's Oil Strategy; Boosts Russian Crude Imports outlookbusiness.com",
+      "source": "outlookbusiness.com",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMy1LOVNfQVJsc1RjbzdIb2hMODEydXotT0xPNHBtdHU2bktJREVvU2VPZllEMlRnQWctVGpHeG55d1o3dG1TbERUUXdXMWdmVHhQR3lJMlJRY3dRX3JhSU8zdnphV2RTQ0k3X3JBbHZjMm5Yd29wWnpsU1VsVDZBTkZKdDVPa01GWEt5aktYWC0yZXBqbU9Nb3hZMkYydXRCR0tZZl9RTmI1NVNKRTBZRTBGeUNNelpKOGJjYnpzQdIBzAFBVV95cUxNdUJmWEw2NlMzRmxRcHhRVG9WbUpwSGxwdXJoUjFWSlBxM2FsZGZNZ3ROeExEMTlEQ2k3cmU0RW1HTHkwS1ppbmRNYTJ1emxQNFN3MlY0azI0aEw2RmtBbjBidFlyaWlHTFZDeUgta1hGNm1MaGUyZVRjeVZBM2NoN1lWZjFqTkkwMUF6SVNRTDVGaWo3WDdMVW1NYU5QeUdqc2xlYTlUREJ4cF9saWxEV2dBM01aaDFrT2tqVUFfcWs5MlJGcWVYZl9aaEk?oc=5",
+      "published": "2026-07-22T12:39:06Z",
+      "sentiment": "bullish",
+      "impact": "low"
     },
     {
       "title": "Oil price rises above $95 mark as Middle East conflict escalates",
