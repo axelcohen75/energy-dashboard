@@ -1,45 +1,45 @@
 {
- "generated": "2026-07-22T20:39:14.792832+00:00",
+ "generated": "2026-07-23T15:06:34.074585+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets remain in full risk-premium mode. Brent settled above $93/bbl (+3.1% today, +20.4% on the month) after reports of Iran striking oil tankers in an escalating Hormuz campaign, with the strait's effective disruption forcing Asian refiners to scramble for alternative August cargoes. WTI followed at $86.44 (+1.8%), also supported by Trump's vow of retaliation following the killing of three US soldiers. India is pivoting toward Russian crude as Iranian barrels disappear; Pakistan is canvassing US, Nigerian, and Central Asian suppliers. The divergence in refined products is notable: RBOB gasoline fell 4.7% on the session despite crude strength, while heating oil shed 1.9% but remains up 30.9% on the month, consistent with distillate-supply anxiety. A 2-million-barrel US crude inventory build (EIA, week ending July 17) provided modest relief but was insufficient to cap the geopolitical bid.",
+   "summary": "Crude markets remain gripped by Middle East supply-risk premium. WTI surged 5.93% on the day to $91.99/bbl \u2014 up 25.6% on the month \u2014 though the headline today noted prices topping $98 intraday, consistent with the sharp intraday range. Brent's 7.49% single-day decline to $87.02 likely reflects a roll or settlement anomaly against what the news flow describes as a relentless rally toward $100. The geopolitical stack is formidable: U.S. strikes on Iran entered a 12th consecutive night, Houthi forces targeted two Saudi tankers in Bab el-Mandeb forcing diversions, and Ukrainian drones struck a Russian refinery and pumping station. Iran's threatened oil blockade has already rerouted Gulf exports, pushing India to deepen Russian crude ties and prompting refiners to bypass traders and source Venezuelan barrels directly. Heating oil's 34.3% monthly surge underlines tight distillate balances.",
    "drivers": [
-    "Iran-Hormuz escalation: tanker attacks and strait disruption removing Middle East barrels from global supply, lifting Brent decisively above $90",
-    "Demand-side rerouting: India boosting Russian crude imports; Pakistan seeking US/West African alternatives, tightening Atlantic Basin differentials",
-    "Bearish offset: EIA reported a 2-million-barrel US crude inventory build for the week ending July 17, capping further upside in WTI"
+    "12 consecutive nights of U.S. strikes on Iran plus Houthi tanker attacks in Bab el-Mandeb driving acute supply-disruption premium",
+    "Gulf export rerouting forcing India to pivot to Russian and Latin American crude, while refiners cut out traders to source Venezuelan barrels directly",
+    "Ukrainian drone strikes on Russian refinery and pumping station adding further upstream/midstream supply risk"
    ],
    "headlineCount": 12,
    "sources": [
-    "ABP Live English",
-    "AFR",
-    "Anadolu Ajans\u0131",
-    "Crypto Briefing",
-    "finance.biggo.com",
-    "financialexpress.com"
+    "EnergyNow.com",
+    "Rappler",
+    "The Kyiv Independent",
+    "The Times of India",
+    "outlookbusiness.com"
    ]
   },
   "gas": {
-   "summary": "European gas prices surged to \u20ac62.40/MWh on TTF (+4.6% today, +49% in a month), driven by a combustible mix of geopolitical supply disruption and alarming storage data. Equinor CEO Anders Opedal warned that European storage is unlikely to reach even 80% fill before winter, the weakest pre-winter cushion in 15 years. The Hormuz and Bab el-Mandeb closures are simultaneously squeezing LNG availability, pushing buyers toward coal and oil as substitutes\u2014a stark reversal of decarbonization trends. Equinor itself reported a 93% Q2 profit surge on the back of surging oil and gas prices. Henry Hub was comparatively subdued at $2.945/MMBtu (+2.8% today), down 9.5% on the month, reflecting a still-ample North American supply backdrop that sharply contrasts with European tightness.",
+   "summary": "European gas dominated the tape: TTF has surged 47.2% over the past month to \u20ac61.86/MWh, though it eased 1.08% today. Equinor CEO Anders Opedal warned Wednesday that Europe may miss its winter storage target, adding a structural bearish undertone to near-term filling ambitions. EU sanctions negotiations produced a messy compromise \u2014 Greek Dynagas secured an exemption on Russian LNG cargoes, and Russian gas shipments remain broadly exempt from the new package, highlighting the bloc's continued dependence. Separately, Middle East war disruption is eroding Qatar's and UAE's LNG pricing leverage as importers push for lower contract prices. Henry Hub was essentially flat at $2.944/MMBtu (+0.68%), with new Permian pipeline capacity expected to alleviate persistent associated-gas oversupply in the basin.",
    "drivers": [
-    "European storage deficit: Equinor CEO flagged sub-80% fill probability before winter, the worst position in 15 years, underpinning the TTF rally",
-    "LNG supply squeeze: Hormuz and Bab el-Mandeb disruptions curtailing Middle East LNG flows, forcing buyers toward coal and oil substitution",
-    "Henry Hub divergence: US prices down 9.5% on the month, insulated by domestic supply adequacy, highlighting a widening transatlantic gas market split"
+    "Equinor CEO warning Europe risks missing winter storage targets, sustaining TTF's sharp monthly rally",
+    "EU sanctions deal exempts Russian gas cargoes and Greek Dynagas, underscoring European dependence on Russian supply despite geopolitical pressure",
+    "Middle East war reducing Qatar and UAE LNG pricing power as importers demand concessions, while new Permian pipelines signal eventual relief for U.S. gas glut"
    ],
    "headlineCount": 6,
-   "sources": []
+   "sources": [
+    "Financial Times",
+    "The Hill"
+   ]
   },
   "power": {
-   "summary": "Power and carbon markets moved in lockstep with the broader fossil-fuel complex. EU carbon allowances (EUA) rose 4.0% to $81.77, consistent with higher gas-fired generation costs and fuel-switching incentives pulling coal back into the merit order. Japan's day-ahead spot electricity prices reached a 3.5-year high, driven by soaring fuel costs, heat waves, and a weakening yen. GE Vernova raised its full-year revenue outlook on surging demand for gas turbines and grid equipment\u2014AI data-centre load growth providing durable structural support even as wind remained weak. The headline flow was thinner in power-specific news today, but the through-line is clear: the Hormuz-driven LNG and oil price shock is transmitting directly into power costs across Asia and Europe, with carbon pricing amplifying the signal for European utilities.",
+   "summary": "Power and carbon newsflow is thin today. EU Carbon (EUA) slipped 2.08% to $80.07/EUA on the day but remains up 7.1% on the week and 4.7% on the month \u2014 modest moves relative to the energy complex broadly. TTF's elevated level at \u20ac61.86/MWh continues to weigh on European power generation economics. The only sector-specific headline of note is India's solar manufacturing setback: local panel factories have begun shutting due to component shortages, a meaningful setback for the country's renewable buildout ambitions. U.S. refinery utilization hitting 96.2% is relevant context for tight fuel markets globally but is primarily an oil-sector data point. Overall, direct power and carbon catalysts in today's feed are limited.",
    "drivers": [
-    "EUA rally (+4% today): higher gas input costs and coal re-entry into the generation mix are lifting carbon prices in tandem with TTF",
-    "Japan power prices at 3.5-year high: surging fuel costs and heat-wave demand combining with yen weakness to pressure spot electricity markets",
-    "GE Vernova guidance lift: AI-driven data-centre load growth fuelling sustained demand for gas turbines and grid infrastructure, reinforcing the gas-power nexus"
+    "EU EUA edged down 2.08% on the day despite remaining elevated on the week, with high TTF prices keeping gas-fired generation economics under pressure",
+    "India's solar manufacturing disruption \u2014 factory shutdowns due to component shortages \u2014 threatens renewable capacity expansion targets",
+    "Thin direct power/carbon headlines today; sector largely trading in the shadow of broader energy complex tightness driven by Middle East conflict"
    ],
-   "headlineCount": 5,
-   "sources": [
-    "Crypto Briefing"
-   ]
+   "headlineCount": 3,
+   "sources": []
   }
  }
 }
