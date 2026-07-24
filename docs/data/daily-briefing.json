@@ -1,44 +1,46 @@
 {
- "generated": "2026-07-24T14:52:48.547955+00:00",
+ "generated": "2026-07-24T20:48:32.349670+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude gave back a chunk of Wednesday's geopolitical premium on Friday, with WTI settling near $89.77 (-2.63%) and Brent at $97.23 (-3.44%), yet both contracts remain up sharply on the week and month as the Middle East crisis keeps a floor under prices. The sell-off follows an intraday spike above $100 on Thursday, when Houthi strikes on two Saudi tankers in the Red Sea and IRGC interceptions of three vessels in the Strait of Hormuz drove panic buying. Hormuz transits fell to their lowest since early May, and at least one Saudi tanker went dark to slip through Bab el-Mandeb. Chinese refiners have already swept up all August Kozmino loadings from Russia, reflecting a scramble to diversify away from Middle East supply. ADNOC, notably, continues to push crude tenders despite the disruption. RBOB gasoline's sharp 7.28% daily drop is an outlier worth monitoring for demand-side signals.",
+   "summary": "Crude pulled back sharply on Friday after Thursday's geopolitical spike drove Brent briefly past $100/bbl \u2014 the session high cited across multiple wire reports. WTI settled around $90.37 (-1.91%) and Brent at $98.05 (-2.62%), with RBOB gasoline cratering 6.52% and heating oil off 4.88%, suggesting some profit-taking and demand-side anxiety after a violent run-up. The underlying supply disruption narrative remains acute: Houthi strikes on Saudi tankers in the Red Sea, IRGC interceptions of three tankers in the Strait of Hormuz, and Hormuz crossings falling to their lowest level since May 7 have collectively tightened the physical market. Saudi Red Sea crude exports have sunk 41% since their March peak, ADNOC continues tendering despite the risks, and China is pivoting to Russian and Iranian barrels as Gulf flows falter \u2014 though Russian supply is itself increasingly constrained.",
    "drivers": [
-    "Strait of Hormuz near-paralysis and IRGC tanker interceptions sparked $100+ intraday spike before Friday profit-taking",
-    "Houthi strikes on Saudi tankers in the Red Sea and Bab el-Mandeb dark transits compound supply-route anxiety",
-    "China front-running August Russian crude allocations signals market expectation of prolonged Middle East supply disruption"
+    "Strait of Hormuz near-blockade: only one tanker transit on Thursday; IRGC intercepted three vessels mid-week",
+    "Houthi strikes on Saudi tankers in the Red Sea cut Saudi Red Sea crude exports 41% from March peak",
+    "Post-spike profit-taking dragged WTI/Brent lower on the day despite monthly gains of ~29-33%"
    ],
    "headlineCount": 12,
    "sources": [
     "BBC",
-    "Eurasia Review",
+    "Deccan Herald",
+    "Tekedia",
     "facebook.com"
    ]
   },
   "gas": {
-   "summary": "European gas continues to outpace US benchmarks by a wide margin. TTF surged another 3.92% today to \u20ac64.325/MWh, extending a 12% weekly gain and a striking 57% monthly rally, almost certainly reflecting contagion from the Middle East shipping crisis, which threatens LNG re-routing economics and tightens Atlantic basin balances. Henry Hub, by contrast, was up a modest 1.27% to $2.953/MMBtu, remaining well below year-ago levels on a one-month basis (-8.32%), suggesting US domestic supply-demand fundamentals are not yet materially affected. On the policy front, the EU's latest sanctions package retains an exemption for Russian gas cargoes, and LNG majors are eyeing Cambodia as a new demand outlet. News flow for the US gas market today is thin; the TTF move is the dominant story.",
+   "summary": "The Henry Hub/TTF divergence widened further on Friday. Henry Hub edged down 0.48% to $2.902/MMBtu, continuing a roughly 10% monthly slide that reflects ample domestic U.S. supply; a new Baker Hughes rig count showed total U.S. oil and gas active rigs fell again this week despite near-$100 crude. European TTF surged 2.43% to \u20ac63.405/MWh, up an extraordinary 55% over the past month, driven by Middle East supply anxiety, rerouting pressure on LNG flows, and the continuing Ukraine conflict. The EU agreed a new sanctions deal that keeps Russian gas cargoes exempt for now, a political compromise that limits near-term TTF upside but has not stopped the rally. A separate report noted Russia's largest Black Sea oil terminal went quiet following drone attacks that also hit the Caspian Pipeline Consortium terminal nearby.",
    "drivers": [
-    "TTF +57% on the month as Middle East shipping disruption threatens LNG route economics and tightens European supply",
-    "EU sanctions package preserves Russian gas cargo exemptions, limiting near-term European supply squeeze from that angle",
-    "Henry Hub materially lagging TTF, reflecting ample US domestic supply; spread divergence bears watching for arb flows"
+    "TTF +55% on the month as Middle East conflict threatens LNG re-routing and European supply security",
+    "Henry Hub soft (-9.9% monthly) on domestic oversupply; U.S. rig count fell again per Baker Hughes",
+    "EU sanctions exemption for Russian gas cargoes limits immediate supply shock but war risk premium persists"
    ],
-   "headlineCount": 3,
+   "headlineCount": 6,
    "sources": [
     "Financial Times",
     "The Hill"
    ]
   },
   "power": {
-   "summary": "EU carbon edged up 0.59% to $80.08/EUA, with a solid 6.41% weekly gain likely tracking TTF's sharp rally \u2014 higher gas prices raise the cost of gas-fired generation and support carbon permit demand as coal-switching calculus shifts. The conflict dimension is present here too: a Russian attack cut power to roughly 150,000 consumers in northern Ukraine, a reminder that the war remains an active infrastructure risk. On the strategic side, Washington is pushing small modular reactor cooperation across Southeast Asia as a counter to rising regional electricity demand. A Trump nuclear diplomacy piece flags potential complications in the Middle East nuclear sphere but the headline data supporting a deeper assessment in that direction is limited today. The electrification and AI power-demand theme also surfaced but provided no hard data to assess.",
+   "summary": "News flow for the power and carbon sector is thin today. EU carbon EUAs dipped modestly, settling at $79.03/EUA (-0.73% on the day) but still up ~5% on the week and ~3.5% on the month, tracking the broader energy complex without a strong independent catalyst. TTF's 2.43% daily gain \u2014 the dominant input cost for European gas-fired generation \u2014 adds upward pressure to power prices. On the geopolitical side, a Russian attack cut power to roughly 150,000 households in northern Ukraine, and Kyiv struck Russian missile and oil facilities in retaliation. The UK announced nearly 300 new sanctions targeting Russian entities including Transneft. U.S. LNG dominance was highlighted in a separate report noting the U.S. supplied approximately 1.10 trillion cubic feet of the ~1.2 trillion cubic feet growth in global LNG exports during 2025.",
    "drivers": [
-    "EUA gains tracking TTF's surge as higher gas costs lift marginal generation expenses and support carbon permit bids",
-    "Russian strike cuts power to ~150,000 in northern Ukraine, highlighting ongoing grid vulnerability tied to the conflict",
-    "US SMR diplomacy push in Southeast Asia signals longer-term demand-side expansion but no near-term market impact"
+    "TTF at \u20ac63.40/MWh (+2.43%) lifts European gas-fired generation costs, indirectly pressuring power prices",
+    "Russian strike cuts power to ~150,000 in northern Ukraine; UK imposes new sanctions on Transneft",
+    "EUA carbon slipped 0.73% on the day; headline flow is limited and sector-specific catalysts are sparse"
    ],
-   "headlineCount": 5,
+   "headlineCount": 3,
    "sources": [
-    "CNBC"
+    "CNBC",
+    "DD News"
    ]
   }
  }
