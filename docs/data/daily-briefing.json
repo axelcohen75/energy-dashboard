@@ -1,47 +1,44 @@
 {
- "generated": "2026-07-23T20:59:04.882223+00:00",
+ "generated": "2026-07-24T14:52:48.547955+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets delivered a landmark session as Brent broke back through $100/bbl \u2014 the first time in nearly two months \u2014 closing at $100.51, up 6.85% on the day and +30.4% over the past month. WTI settled at $92.28, adding 6.31%. The catalyst is unambiguous: Houthi forces struck two Saudi tankers in the Red Sea, declared a maritime embargo on Saudi Arabia, and ongoing U.S.-Iran military exchanges show no sign of de-escalation, with Trump threatening further strikes after three U.S. soldiers were killed. Kazakhstan's export capacity is simultaneously being squeezed by Ukrainian drone strikes on pipeline infrastructure. On the sanctions front, the EU froze the Russian oil price cap adjustment for one year while adding measures targeting tankers and refining. RBOB gasoline diverged, falling 2.81%, suggesting some demand-side anxiety at the pump level offsetting the supply shock bid.",
+   "summary": "Crude gave back a chunk of Wednesday's geopolitical premium on Friday, with WTI settling near $89.77 (-2.63%) and Brent at $97.23 (-3.44%), yet both contracts remain up sharply on the week and month as the Middle East crisis keeps a floor under prices. The sell-off follows an intraday spike above $100 on Thursday, when Houthi strikes on two Saudi tankers in the Red Sea and IRGC interceptions of three vessels in the Strait of Hormuz drove panic buying. Hormuz transits fell to their lowest since early May, and at least one Saudi tanker went dark to slip through Bab el-Mandeb. Chinese refiners have already swept up all August Kozmino loadings from Russia, reflecting a scramble to diversify away from Middle East supply. ADNOC, notably, continues to push crude tenders despite the disruption. RBOB gasoline's sharp 7.28% daily drop is an outlier worth monitoring for demand-side signals.",
    "drivers": [
-    "Houthi strikes on two Saudi tankers and declaration of a maritime embargo on Saudi Arabia drove acute Red Sea supply-route risk",
-    "Active U.S.-Iran military conflict with no ceasefire signals; Iran pledging oil blockade continuation pushed geopolitical premium sharply higher",
-    "EU sanctions freeze on Russian price cap plus Kazakhstan export disruptions tightened the broader supply picture simultaneously"
+    "Strait of Hormuz near-paralysis and IRGC tanker interceptions sparked $100+ intraday spike before Friday profit-taking",
+    "Houthi strikes on Saudi tankers in the Red Sea and Bab el-Mandeb dark transits compound supply-route anxiety",
+    "China front-running August Russian crude allocations signals market expectation of prolonged Middle East supply disruption"
    ],
    "headlineCount": 12,
    "sources": [
     "BBC",
-    "Crypto Briefing",
-    "EnergyNow.com",
-    "Interfax-Ukraine",
-    "Rappler",
+    "Eurasia Review",
     "facebook.com"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets showed a clear transatlantic divergence today. Henry Hub eased 0.44% to $2.912/MMBtu, remaining under pressure with a one-month decline of 7.47%, suggesting ample North American supply buffers the Middle East shock for now. European TTF slipped 1.08% on the session to \u20ac61.86/MWh but remains elevated \u2014 up 47.24% over the past month \u2014 as the war premium and supply rerouting costs stay embedded in European pricing. Politically, the EU struck a compromise allowing Russian gas cargoes to stay exempt from the latest sanctions package, with Greek LNG operator Dynagas specifically carved out after Athens lobbied against measures it said would harm its fleet. Meanwhile, LNG importers are reportedly seeking to renegotiate lower prices from Qatar and UAE, as the war has eroded those exporters' traditional pricing leverage.",
+   "summary": "European gas continues to outpace US benchmarks by a wide margin. TTF surged another 3.92% today to \u20ac64.325/MWh, extending a 12% weekly gain and a striking 57% monthly rally, almost certainly reflecting contagion from the Middle East shipping crisis, which threatens LNG re-routing economics and tightens Atlantic basin balances. Henry Hub, by contrast, was up a modest 1.27% to $2.953/MMBtu, remaining well below year-ago levels on a one-month basis (-8.32%), suggesting US domestic supply-demand fundamentals are not yet materially affected. On the policy front, the EU's latest sanctions package retains an exemption for Russian gas cargoes, and LNG majors are eyeing Cambodia as a new demand outlet. News flow for the US gas market today is thin; the TTF move is the dominant story.",
    "drivers": [
-    "EU sanctions deal exempts Russian gas cargoes and grants a specific carve-out for Greek LNG operator Dynagas following political pressure from Athens",
-    "TTF remains 47% above month-ago levels as Middle East conflict sustains European supply risk premium, despite today's modest pullback",
-    "LNG importers pushing back on Qatar and UAE pricing, with war-driven market disruption weakening traditional Gulf exporter negotiating power"
+    "TTF +57% on the month as Middle East shipping disruption threatens LNG route economics and tightens European supply",
+    "EU sanctions package preserves Russian gas cargo exemptions, limiting near-term European supply squeeze from that angle",
+    "Henry Hub materially lagging TTF, reflecting ample US domestic supply; spread divergence bears watching for arb flows"
    ],
-   "headlineCount": 5,
+   "headlineCount": 3,
    "sources": [
     "Financial Times",
     "The Hill"
    ]
   },
   "power": {
-   "summary": "The power and carbon complex offered a mixed picture with limited sector-specific headline flow today. EU carbon EUAs fell 2.64% to $79.61/EUA, pulling back despite the broader energy price surge, though the one-week gain of 6.47% shows the conflict's footprint on the carbon market. TTF's near-50% monthly rally is the dominant cost input stressing European power generation economics. On the structural side, Ember Energy flagged significant untapped potential in hybrid renewable projects co-located on existing hydropower sites in Europe. India announced a target of five domestically built small modular reactors by 2033, a longer-dated but notable nuclear ambition signal. U.S. refinery utilization hitting 96.2% reflects the tightness cascading through global fuel markets, which indirectly pressures power generation feedstock costs.",
+   "summary": "EU carbon edged up 0.59% to $80.08/EUA, with a solid 6.41% weekly gain likely tracking TTF's sharp rally \u2014 higher gas prices raise the cost of gas-fired generation and support carbon permit demand as coal-switching calculus shifts. The conflict dimension is present here too: a Russian attack cut power to roughly 150,000 consumers in northern Ukraine, a reminder that the war remains an active infrastructure risk. On the strategic side, Washington is pushing small modular reactor cooperation across Southeast Asia as a counter to rising regional electricity demand. A Trump nuclear diplomacy piece flags potential complications in the Middle East nuclear sphere but the headline data supporting a deeper assessment in that direction is limited today. The electrification and AI power-demand theme also surfaced but provided no hard data to assess.",
    "drivers": [
-    "EU EUAs retreated 2.64% on the session despite elevated TTF, suggesting some carbon demand softness even as power generation costs remain stressed",
-    "India targets five domestically built SMRs by 2033, signaling growing state-level commitment to nuclear capacity outside the West",
-    "Ember Energy report highlights hybrid hydropower co-development as a near-term European renewable upside opportunity amid the energy security push"
+    "EUA gains tracking TTF's surge as higher gas costs lift marginal generation expenses and support carbon permit bids",
+    "Russian strike cuts power to ~150,000 in northern Ukraine, highlighting ongoing grid vulnerability tied to the conflict",
+    "US SMR diplomacy push in Southeast Asia signals longer-term demand-side expansion but no near-term market impact"
    ],
-   "headlineCount": 6,
+   "headlineCount": 5,
    "sources": [
-    "Crypto Briefing"
+    "CNBC"
    ]
   }
  }
