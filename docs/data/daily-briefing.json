@@ -1,46 +1,46 @@
 {
- "generated": "2026-07-24T20:48:32.349670+00:00",
+ "generated": "2026-07-27T15:43:09.397049+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude pulled back sharply on Friday after Thursday's geopolitical spike drove Brent briefly past $100/bbl \u2014 the session high cited across multiple wire reports. WTI settled around $90.37 (-1.91%) and Brent at $98.05 (-2.62%), with RBOB gasoline cratering 6.52% and heating oil off 4.88%, suggesting some profit-taking and demand-side anxiety after a violent run-up. The underlying supply disruption narrative remains acute: Houthi strikes on Saudi tankers in the Red Sea, IRGC interceptions of three tankers in the Strait of Hormuz, and Hormuz crossings falling to their lowest level since May 7 have collectively tightened the physical market. Saudi Red Sea crude exports have sunk 41% since their March peak, ADNOC continues tendering despite the risks, and China is pivoting to Russian and Iranian barrels as Gulf flows falter \u2014 though Russian supply is itself increasingly constrained.",
+   "summary": "Crude staged a sharp reversal today, with Brent shedding 7.53% to $89.49/bbl and WTI dropping 6.90% to $83.15/bbl, unwinding a significant portion of the geopolitical risk premium that had built over the prior month \u2014 Brent is still +18.91% on the month. The catalyst was a halt in U.S.-Iran hostilities over the weekend, which had previously driven Brent to multi-year highs after Iran enforced a Gulf export blockade and Red Sea tanker traffic fell to a multi-month low amid sustained Houthi threats. Supply-side noise persists: at least one Saudi crude tanker has been rerouted via Suez to avoid Bab el-Mandeb, Ukrainian drones continue to target Russian refineries, and Washington temporarily eased Russia sanctions to cap prices. China's July crude imports tracking at 7.8 mb/d via Kpler provide a modest demand-side cushion. RBOB gasoline led the decline at -6.26%, while heating oil outperformed at -2.79%.",
    "drivers": [
-    "Strait of Hormuz near-blockade: only one tanker transit on Thursday; IRGC intercepted three vessels mid-week",
-    "Houthi strikes on Saudi tankers in the Red Sea cut Saudi Red Sea crude exports 41% from March peak",
-    "Post-spike profit-taking dragged WTI/Brent lower on the day despite monthly gains of ~29-33%"
+    "U.S.-Iran ceasefire of hostilities triggers sharp unwind of geopolitical risk premium across the crude complex",
+    "Red Sea/Houthi disruptions and Saudi tanker rerouting via Suez keep residual supply-route risk premium intact",
+    "China July crude imports tracking at 7.8 mb/d (Kpler) and temporary U.S. easing of Russia sanctions partially offset bearish pressure"
    ],
    "headlineCount": 12,
    "sources": [
-    "BBC",
-    "Deccan Herald",
-    "Tekedia",
-    "facebook.com"
+    "Crypto Briefing",
+    "Energy News Beat",
+    "EnergyNow",
+    "EnergyNow.com",
+    "International Business Times UK",
+    "Radio Free Europe/Radio Liberty"
    ]
   },
   "gas": {
-   "summary": "The Henry Hub/TTF divergence widened further on Friday. Henry Hub edged down 0.48% to $2.902/MMBtu, continuing a roughly 10% monthly slide that reflects ample domestic U.S. supply; a new Baker Hughes rig count showed total U.S. oil and gas active rigs fell again this week despite near-$100 crude. European TTF surged 2.43% to \u20ac63.405/MWh, up an extraordinary 55% over the past month, driven by Middle East supply anxiety, rerouting pressure on LNG flows, and the continuing Ukraine conflict. The EU agreed a new sanctions deal that keeps Russian gas cargoes exempt for now, a political compromise that limits near-term TTF upside but has not stopped the rally. A separate report noted Russia's largest Black Sea oil terminal went quiet following drone attacks that also hit the Caspian Pipeline Consortium terminal nearby.",
+   "summary": "European gas prices mirrored the oil selloff, with TTF plunging 7.67% to \u20ac58.7/MWh at the Amsterdam open as the U.S.-Iran pause eased fears of a prolonged Strait of Hormuz disruption that had underpinned a 45% monthly rally. Henry Hub was softer by 2.93% to $2.787/MMBtu, extending a -16.63% monthly slide that stands in stark contrast to TTF's trajectory \u2014 reflecting divergent fundamentals rather than geopolitical contagion. On the structural side, Japan is exploring foreign bank financing for a pledged $33 billion U.S. LNG investment tied to a bilateral trade deal, a potential long-term demand catalyst for U.S. gas. Headline flow for Henry Hub is thin today beyond the Iran de-escalation read-across.",
    "drivers": [
-    "TTF +55% on the month as Middle East conflict threatens LNG re-routing and European supply security",
-    "Henry Hub soft (-9.9% monthly) on domestic oversupply; U.S. rig count fell again per Baker Hughes",
-    "EU sanctions exemption for Russian gas cargoes limits immediate supply shock but war risk premium persists"
-   ],
-   "headlineCount": 6,
-   "sources": [
-    "Financial Times",
-    "The Hill"
-   ]
-  },
-  "power": {
-   "summary": "News flow for the power and carbon sector is thin today. EU carbon EUAs dipped modestly, settling at $79.03/EUA (-0.73% on the day) but still up ~5% on the week and ~3.5% on the month, tracking the broader energy complex without a strong independent catalyst. TTF's 2.43% daily gain \u2014 the dominant input cost for European gas-fired generation \u2014 adds upward pressure to power prices. On the geopolitical side, a Russian attack cut power to roughly 150,000 households in northern Ukraine, and Kyiv struck Russian missile and oil facilities in retaliation. The UK announced nearly 300 new sanctions targeting Russian entities including Transneft. U.S. LNG dominance was highlighted in a separate report noting the U.S. supplied approximately 1.10 trillion cubic feet of the ~1.2 trillion cubic feet growth in global LNG exports during 2025.",
-   "drivers": [
-    "TTF at \u20ac63.40/MWh (+2.43%) lifts European gas-fired generation costs, indirectly pressuring power prices",
-    "Russian strike cuts power to ~150,000 in northern Ukraine; UK imposes new sanctions on Transneft",
-    "EUA carbon slipped 0.73% on the day; headline flow is limited and sector-specific catalysts are sparse"
+    "U.S.-Iran hostilities pause drives an 8%+ TTF selloff at the open, reversing a portion of the risk-premium spike built over the past month",
+    "Henry Hub continues its own bearish trajectory, down 16.63% on the month, driven by domestic fundamentals decoupled from Middle East tensions",
+    "Japan exploring foreign bank financing for $33 billion U.S. LNG investment signals potential structural long-term demand support for Henry Hub"
    ],
    "headlineCount": 3,
+   "sources": []
+  },
+  "power": {
+   "summary": "Power and carbon markets saw comparatively muted moves today. EU EUAs slipped just 0.57% to $78.58/EUA, holding near one-month highs with a +3.41% monthly gain, as the gas price slump that typically weighs on carbon through reduced gas-burn economics was offset by broader geopolitical uncertainty still present in the market. The key headline backdrop for the sector includes last week's drone strike on a UAE nuclear power plant \u2014 a stark reminder of infrastructure vulnerability \u2014 and Standard Chartered's note flagging that markets must now price risk across two Middle East chokepoints simultaneously. Reports of Pakistan brokering a return to U.S.-Iran nuclear talks, strongly backed by China, could further dampen geopolitical premia if talks materialize. Direct power-sector price data is limited to TTF and EUAs today; sector-specific generation data is not available in today's feed.",
+   "drivers": [
+    "EUAs resilient despite TTF selloff, with the monthly +3.41% gain holding as geopolitical uncertainty provides a floor",
+    "Drone strike on UAE nuclear power plant underscores regional infrastructure risk that keeps power-market participants on edge",
+    "Pakistan-brokered U.S.-Iran nuclear talks, backed by China, represent a potential further de-escalation catalyst that could pressure energy and carbon premia"
+   ],
+   "headlineCount": 4,
    "sources": [
-    "CNBC",
-    "DD News"
+    "Crypto Briefing",
+    "EnergyNow.com",
+    "The Business Times"
    ]
   }
  }
