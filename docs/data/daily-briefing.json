@@ -1,44 +1,45 @@
 {
- "generated": "2026-07-27T20:52:08.302984+00:00",
+ "generated": "2026-07-28T15:18:11.649319+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "A brutal session for crude saw WTI shed 8.16% to $82.03/bbl and Brent drop 9.35% to $87.73, reversing a significant portion of the month's 14-16% rally. The sell-off comes despite \u2014 or arguably because of \u2014 a saturated geopolitical risk premium that appears to be unwinding. Headlines remain alarming: Iran maintains its oil blockade pending cessation of US strikes, three tankers were damaged in the Gulf, Houthi threats are rerouting Saudi tankers via Suez, and Ukraine struck Russian oil facilities and Caspian vessels. Kazakhstan's CPC exports, disrupted by drone activity, restarted Monday. A US Senate bill seeking 100% tariffs on India and China over Russian oil purchases adds a demand-side overhang. RBOB gasoline fell 7.06% on the week, underscoring broader demand concerns. The options market now prices a 77% probability of an OPEC cut at the next meeting.",
+   "summary": "Crude prices sold off sharply on Tuesday as a US-Iran military pause extended into a fourth consecutive night, removing the geopolitical premium that had pushed Brent to $100 last week. WTI settled at $81.52 (-1.33%) and Brent at $86.59 (-2.00%), with RBOB gasoline bearing the steepest correction at -4.45%. Despite the diplomatic de-escalation, structural supply risks remain: Red Sea tanker traffic has hit a multi-month low on persistent Houthi threats, Saudi Arabia is reportedly weighing higher Asia-bound crude OSPs to offset elevated shipping costs, and Ukrainian strikes on Russian oil facilities and drone disruptions to Kazakh pipeline flows add tail risk to the supply picture. Iran claims it has met over 60% of its annual oil revenue target despite sanctions and war. The month-on-month gains \u2014 Brent +20%, Heating Oil +26% \u2014 underline how violently the conflict premium was priced in.",
    "drivers": [
-    "Geopolitical risk premium deflating despite ongoing US-Iran conflict, tanker damage in the Gulf, and Houthi Red Sea disruptions",
-    "Kazakhstan CPC export restart eases near-term supply disruption fears after week-long Black Sea shutdown",
-    "Proposed 100% US tariffs on India and China for Russian oil imports threatens key demand channels and secondary supply flows"
+    "US-Iran military pause extends to four nights, triggering broad unwind of conflict premium",
+    "Houthi threat keeps Red Sea tanker traffic at multi-month lows; Saudi Arabia may raise Asia crude OSPs",
+    "Ukrainian strikes on Russian oil facilities and drone disruption to Kazakh flows provide residual supply-side risk"
    ],
    "headlineCount": 12,
    "sources": [
     "Al Jazeera",
+    "Atlantic Council",
     "Business Upturn",
-    "Crypto Briefing",
-    "Discovery Alert",
-    "Energy News Beat",
-    "EnergyNow.com"
+    "EnergyNow.com",
+    "Odessa Journal",
+    "RBC-Ukraine"
    ]
   },
   "gas": {
-   "summary": "Henry Hub continued its slide, falling 3.52% on the day to $2.77/MMBtu, extending a sharp monthly decline of 17.14% that stands in stark contrast to TTF's 45.28% monthly surge, now at 58.7 \u20ac/MWh \u2014 though TTF itself gave back 7.67% today. The US-European price divergence is illustrated vividly by the news that Chinese buyers receiving the first US LNG cargo in over a year are opting to resell it into higher-priced markets rather than import it, reflecting the economic arbitrage at play. Direct gas-specific headlines are limited today; the broader supply narrative is shaped primarily by oil-market geopolitical disruptions spilling into LNG routing decisions.",
+   "summary": "Henry Hub continued to weaken, falling 2.49% to $2.697/MMBtu and now down 16.5% over the past month, suggesting ample domestic supply conditions in the US. TTF was more resilient, slipping just 0.78% to \u20ac57.8/MWh, though the contract remains up a sharp 41.7% on the month \u2014 a reflection of the broader Middle East supply anxiety that has gripped European gas markets. On the supply-development side, Eni and TotalEnergies took a final investment decision on the Cronos gas field offshore Cyprus, marking the eastern Mediterranean country's first deepwater gas project. Separately, escalating anti-government protests in Libya \u2014 triggered by power cuts and high electricity bills \u2014 have spread to the Mellitah oil and gas complex, threatening near-term Libyan supply. News flow for this sector is relatively thin today beyond these three items.",
    "drivers": [
-    "Henry Hub down 17% on the month, reflecting ample US domestic supply and weak demand relative to global benchmarks",
-    "Chinese buyers reselling first US LNG cargo in over a year, arbitraging into higher-priced markets rather than absorbing domestic demand",
-    "TTF's sharp 7.67% single-day pullback after a 45% monthly rally suggests near-term European gas price correction, though supply risk from Middle East and Russia remains elevated"
+    "Henry Hub slides further (-2.49% 1d, -16.5% 1m), reflecting loose US domestic supply fundamentals",
+    "Eni/TotalEnergies reach FID on Cyprus Cronos deepwater gas field, adding long-term eastern Med supply",
+    "Libyan protesters enter the Mellitah oil and gas complex, raising near-term North African supply disruption risk"
    ],
    "headlineCount": 3,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs eased modestly, down 1.33% to $77.98/EUA, broadly tracking TTF's sharp daily retreat of 7.67% \u2014 lower gas prices reduce the cost of gas-fired generation and compress carbon demand at the margin. The most notable power-sector development today is a leaked UK grid report warning that the country's net zero push is increasing both electricity bills and blackout risk, a significant political and operational signal for UK power markets. The Ukraine conflict continues to cast a shadow over European energy security, with SSU strikes on Russian oil and military infrastructure keeping supply-chain risk elevated. Overall, the power and carbon data flow today is relatively thin beyond these two items.",
+   "summary": "EU carbon allowances (EUA) edged down 0.45% to $77.63, broadly stable on the week (-1.24%) and modestly positive on the month (+3.71%), offering little directional signal amid competing forces. The most significant power-sector headline was a drone attack on a UAE nuclear power plant \u2014 reported to have briefly lifted oil prices to a two-week high \u2014 underscoring how conflict-related infrastructure risk is now extending beyond hydrocarbons to nuclear assets. On the demand-side of the nuclear story, Tata Power has announced plans to commission India's first privately owned nuclear plant by 2032, following India's opening of the civil nuclear sector to private capital. Libyan protests spilling into energy infrastructure are a reminder that power supply insecurity is driving unrest across the region. Trump's mixed signals on Iran \u2014 simultaneously flagging de-escalation and troop reinforcements \u2014 leave the carbon and power complex with no clear geopolitical read.",
    "drivers": [
-    "Leaked UK grid report warns net zero transition is elevating blackout risk and consumer electricity costs, a bearish signal for policy certainty",
-    "TTF's 7.67% daily drop reduces marginal cost of gas-fired power, softening near-term carbon demand and weighing on EUA prices",
-    "Ongoing Ukraine strikes on Russian energy infrastructure sustain European energy security risk, limiting downside in carbon and power despite today's price easing"
+    "Drone attack on UAE nuclear power plant highlights expanding conflict risk to non-hydrocarbon energy infrastructure",
+    "Tata Power targets 2032 for India's first private nuclear plant as India opens civil nuclear sector",
+    "EUAs holding near monthly highs (~+3.7% 1m) despite TTF softness; Libya protests add regional power supply anxiety"
    ],
-   "headlineCount": 3,
+   "headlineCount": 6,
    "sources": [
-    "Crypto Briefing",
+    "EnergyNow",
+    "Kaltimtoday.co",
     "Odessa Journal"
    ]
   }
