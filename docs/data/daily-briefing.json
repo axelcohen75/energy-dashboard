@@ -1,46 +1,46 @@
 {
- "generated": "2026-07-28T15:18:11.649319+00:00",
+ "generated": "2026-07-28T21:15:20.942339+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude prices sold off sharply on Tuesday as a US-Iran military pause extended into a fourth consecutive night, removing the geopolitical premium that had pushed Brent to $100 last week. WTI settled at $81.52 (-1.33%) and Brent at $86.59 (-2.00%), with RBOB gasoline bearing the steepest correction at -4.45%. Despite the diplomatic de-escalation, structural supply risks remain: Red Sea tanker traffic has hit a multi-month low on persistent Houthi threats, Saudi Arabia is reportedly weighing higher Asia-bound crude OSPs to offset elevated shipping costs, and Ukrainian strikes on Russian oil facilities and drone disruptions to Kazakh pipeline flows add tail risk to the supply picture. Iran claims it has met over 60% of its annual oil revenue target despite sanctions and war. The month-on-month gains \u2014 Brent +20%, Heating Oil +26% \u2014 underline how violently the conflict premium was priced in.",
+   "summary": "Crude sold off sharply Tuesday, with Brent shedding 5.21% to $83.76 and WTI falling 4.21% to $79.13, as signals of U.S.-Iran de-escalation unwound the geopolitical risk premium that had driven a 14-16% monthly rally. The API reported a 3.296-million-barrel crude inventory build for the week ending July 24, adding bearish weight. Partially cushioning the drop, Houthi attacks remained active \u2014 Saudi Aramco shut its 400,000-bpd Jazan refinery after a strike on July 27, and conflict spread from Hormuz to the Red Sea. OPEC+ is reportedly planning one final September quota increase before pausing hikes through year-end, while a temporary U.S. easing of Russia oil sanctions and Iranian flows continuing through Hormuz despite Gulf neighbor export disruptions added to supply-side complexity. RBOB gasoline led losses at -5.69%, though refined-product tightness remains a structural undercurrent.",
    "drivers": [
-    "US-Iran military pause extends to four nights, triggering broad unwind of conflict premium",
-    "Houthi threat keeps Red Sea tanker traffic at multi-month lows; Saudi Arabia may raise Asia crude OSPs",
-    "Ukrainian strikes on Russian oil facilities and drone disruption to Kazakh flows provide residual supply-side risk"
+    "U.S.-Iran de-escalation signals triggered a sharp unwind of geopolitical risk premium across the crude complex",
+    "API crude inventory build of 3.296 million barrels for the week ending July 24 reinforced bearish supply narrative",
+    "Saudi Aramco's 400,000-bpd Jazan refinery shut after Houthi strike, keeping downside limited amid ongoing regional disruptions"
    ],
    "headlineCount": 12,
    "sources": [
-    "Al Jazeera",
     "Atlantic Council",
-    "Business Upturn",
     "EnergyNow.com",
-    "Odessa Journal",
-    "RBC-Ukraine"
+    "Interfax-Ukraine",
+    "Reuters",
+    "t.co",
+    "\u0404\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u044c\u043a\u0430 \u043f\u0440\u0430\u0432\u0434\u0430"
    ]
   },
   "gas": {
-   "summary": "Henry Hub continued to weaken, falling 2.49% to $2.697/MMBtu and now down 16.5% over the past month, suggesting ample domestic supply conditions in the US. TTF was more resilient, slipping just 0.78% to \u20ac57.8/MWh, though the contract remains up a sharp 41.7% on the month \u2014 a reflection of the broader Middle East supply anxiety that has gripped European gas markets. On the supply-development side, Eni and TotalEnergies took a final investment decision on the Cronos gas field offshore Cyprus, marking the eastern Mediterranean country's first deepwater gas project. Separately, escalating anti-government protests in Libya \u2014 triggered by power cuts and high electricity bills \u2014 have spread to the Mellitah oil and gas complex, threatening near-term Libyan supply. News flow for this sector is relatively thin today beyond these three items.",
+   "summary": "Natural gas prices retreated on both sides of the Atlantic Tuesday. Henry Hub fell 3.18% to $2.679/MMBtu, extending a steep 17.08% one-month decline, pointing to ample domestic supply conditions. TTF slipped 3.01% to \u20ac56.5/MWh, though that still leaves European gas up an extraordinary 38.54% over the past month, reflecting lingering supply security concerns. On the demand side, a report indicated the EU could cut gas demand by a quarter by 2030 if it meets its heat pump, solar, and wind targets, a longer-term bearish structural signal for LNG imports. Separately, escalating anti-government protests in Libya raised near-term supply risk for Mediterranean gas flows. Headline flow on gas was limited today; the divergence between a weak Henry Hub and elevated TTF remains the defining cross-market theme.",
    "drivers": [
-    "Henry Hub slides further (-2.49% 1d, -16.5% 1m), reflecting loose US domestic supply fundamentals",
-    "Eni/TotalEnergies reach FID on Cyprus Cronos deepwater gas field, adding long-term eastern Med supply",
-    "Libyan protesters enter the Mellitah oil and gas complex, raising near-term North African supply disruption risk"
+    "Henry Hub continues its monthly slide (-17.08%) on ample U.S. supply, while TTF remains elevated (+38.54% on the month) reflecting European supply security concerns",
+    "EU renewables report signals potential 25% gas demand reduction by 2030 if installation targets are met, a long-term bearish structural signal",
+    "Escalating protests in Libya introduce near-term upside risk to Mediterranean gas supply disruptions"
    ],
-   "headlineCount": 3,
+   "headlineCount": 2,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon allowances (EUA) edged down 0.45% to $77.63, broadly stable on the week (-1.24%) and modestly positive on the month (+3.71%), offering little directional signal amid competing forces. The most significant power-sector headline was a drone attack on a UAE nuclear power plant \u2014 reported to have briefly lifted oil prices to a two-week high \u2014 underscoring how conflict-related infrastructure risk is now extending beyond hydrocarbons to nuclear assets. On the demand-side of the nuclear story, Tata Power has announced plans to commission India's first privately owned nuclear plant by 2032, following India's opening of the civil nuclear sector to private capital. Libyan protests spilling into energy infrastructure are a reminder that power supply insecurity is driving unrest across the region. Trump's mixed signals on Iran \u2014 simultaneously flagging de-escalation and troop reinforcements \u2014 leave the carbon and power complex with no clear geopolitical read.",
+   "summary": "EU carbon EUAs were essentially flat at $77.99/EUA (+0.01%), with the weekly and monthly moves subdued (+4.19% on the month) despite highly volatile underlying energy prices. The main structural narrative was bearish for long-run gas-to-power demand: a report projected that meeting EU renewables targets could slash gas demand by a quarter by 2030. On the geopolitical side, a drone attack on a UAE nuclear power plant was cited as briefly lifting oil to a two-week high earlier in the week, underscoring infrastructure vulnerability. Tata Power announced plans for India's first private nuclear plant by 2032 as India opens its civil nuclear sector. A new solar cell design was reported to address a longstanding efficiency degradation problem. Carbon price stability amid volatile gas suggests the market is balancing near-term fuel-switching signals against longer-term clean energy displacement expectations.",
    "drivers": [
-    "Drone attack on UAE nuclear power plant highlights expanding conflict risk to non-hydrocarbon energy infrastructure",
-    "Tata Power targets 2032 for India's first private nuclear plant as India opens civil nuclear sector",
-    "EUAs holding near monthly highs (~+3.7% 1m) despite TTF softness; Libya protests add regional power supply anxiety"
+    "EU EUAs near flat on the day; carbon market appears to be balancing near-term fuel-switching demand against longer-run renewables displacement",
+    "Drone attack on a UAE nuclear power plant highlighted critical power infrastructure vulnerability in the Gulf conflict zone",
+    "EU renewables report and new solar cell design advance reinforce a longer-term structural shift away from gas-fired generation"
    ],
-   "headlineCount": 6,
+   "headlineCount": 10,
    "sources": [
-    "EnergyNow",
-    "Kaltimtoday.co",
-    "Odessa Journal"
+    "CNBC",
+    "EnergyNow.com",
+    "Kaltimtoday.co"
    ]
   }
  }
