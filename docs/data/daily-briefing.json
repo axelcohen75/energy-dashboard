@@ -1,46 +1,45 @@
 {
- "generated": "2026-07-28T21:15:20.942339+00:00",
+ "generated": "2026-07-29T15:08:59.760980+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude sold off sharply Tuesday, with Brent shedding 5.21% to $83.76 and WTI falling 4.21% to $79.13, as signals of U.S.-Iran de-escalation unwound the geopolitical risk premium that had driven a 14-16% monthly rally. The API reported a 3.296-million-barrel crude inventory build for the week ending July 24, adding bearish weight. Partially cushioning the drop, Houthi attacks remained active \u2014 Saudi Aramco shut its 400,000-bpd Jazan refinery after a strike on July 27, and conflict spread from Hormuz to the Red Sea. OPEC+ is reportedly planning one final September quota increase before pausing hikes through year-end, while a temporary U.S. easing of Russia oil sanctions and Iranian flows continuing through Hormuz despite Gulf neighbor export disruptions added to supply-side complexity. RBOB gasoline led losses at -5.69%, though refined-product tightness remains a structural undercurrent.",
+   "summary": "Crude surged more than 7% today \u2014 WTI settling near $85.16 and Brent at $90.53 \u2014 driven by a sharp escalation in Middle East hostilities. Trump threatened Iran directly, the U.S. and Saudi Arabia struck Iran-backed militias in Iraq, and Houthis claimed an attack on a Saudi oil tanker in the Red Sea, compounding existing Hormuz disruption. Iran maintained its oil blockade stance, rejecting a diplomatic off-ramp. A bullish EIA print \u2014 U.S. crude inventories down 7.2 million barrels for the week ending July 24 \u2014 added fundamental support. RBOB gasoline was a notable outlier, falling 3.7% on the day, suggesting demand-side softness even as distillates held firm (Heating Oil +1.4%). Senate progress on a Russia-Iran sanctions bill introduced further tail-risk premium. The one-month gain now stands at over 20% for WTI.",
    "drivers": [
-    "U.S.-Iran de-escalation signals triggered a sharp unwind of geopolitical risk premium across the crude complex",
-    "API crude inventory build of 3.296 million barrels for the week ending July 24 reinforced bearish supply narrative",
-    "Saudi Aramco's 400,000-bpd Jazan refinery shut after Houthi strike, keeping downside limited amid ongoing regional disruptions"
+    "Geopolitical shock: U.S.-Saudi strikes on Iran-backed Iraqi militias and Houthi attack on Saudi tanker dramatically widened the conflict perimeter",
+    "EIA inventory draw of 7.2 million barrels tightened the fundamental backdrop amid ongoing Hormuz disruption",
+    "Senate agreement on sweeping Russia-Iran sanctions bill, including proposed 500% tariffs, added structural supply-risk premium"
    ],
    "headlineCount": 12,
    "sources": [
+    "Al-Monitor",
     "Atlantic Council",
+    "Crypto Briefing",
     "EnergyNow.com",
     "Interfax-Ukraine",
-    "Reuters",
-    "t.co",
-    "\u0404\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u044c\u043a\u0430 \u043f\u0440\u0430\u0432\u0434\u0430"
+    "Kyiv Post"
    ]
   },
   "gas": {
-   "summary": "Natural gas prices retreated on both sides of the Atlantic Tuesday. Henry Hub fell 3.18% to $2.679/MMBtu, extending a steep 17.08% one-month decline, pointing to ample domestic supply conditions. TTF slipped 3.01% to \u20ac56.5/MWh, though that still leaves European gas up an extraordinary 38.54% over the past month, reflecting lingering supply security concerns. On the demand side, a report indicated the EU could cut gas demand by a quarter by 2030 if it meets its heat pump, solar, and wind targets, a longer-term bearish structural signal for LNG imports. Separately, escalating anti-government protests in Libya raised near-term supply risk for Mediterranean gas flows. Headline flow on gas was limited today; the divergence between a weak Henry Hub and elevated TTF remains the defining cross-market theme.",
+   "summary": "Natural gas markets delivered a split session. TTF rose 4.79% to \u20ac60.5/MWh \u2014 up 42% on the month \u2014 as Hormuz tensions kept European buyers on edge over potential LNG supply disruptions. ADNOC confirmed UAE LNG exports are still flowing despite Strait of Hormuz risk, providing a partial offset, though Iran's rejection of Oman's proposal to share Hormuz lane control signals the diplomatic path remains closed. Henry Hub was comparatively subdued, gaining 2.18% to $2.72/MMBtu but remaining down 14.5% on the month, reflecting loose domestic balances. Taiwan's suspension of roughly $800 million in spot LNG purchases from Papua New Guinea added a demand-side wrinkle, with implications for Pacific Basin price discovery.",
    "drivers": [
-    "Henry Hub continues its monthly slide (-17.08%) on ample U.S. supply, while TTF remains elevated (+38.54% on the month) reflecting European supply security concerns",
-    "EU renewables report signals potential 25% gas demand reduction by 2030 if installation targets are met, a long-term bearish structural signal",
-    "Escalating protests in Libya introduce near-term upside risk to Mediterranean gas supply disruptions"
+    "TTF surged on sustained Hormuz supply-disruption risk; Iran's rejection of Oman's lane-sharing proposal removes a near-term diplomatic resolution",
+    "ADNOC confirmed UAE LNG flows continue, capping the upside and preventing a more severe European supply panic",
+    "Taiwan halted ~$800M in spot LNG purchases from Papua New Guinea, reshaping near-term Pacific Basin demand flows"
    ],
-   "headlineCount": 2,
+   "headlineCount": 5,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs were essentially flat at $77.99/EUA (+0.01%), with the weekly and monthly moves subdued (+4.19% on the month) despite highly volatile underlying energy prices. The main structural narrative was bearish for long-run gas-to-power demand: a report projected that meeting EU renewables targets could slash gas demand by a quarter by 2030. On the geopolitical side, a drone attack on a UAE nuclear power plant was cited as briefly lifting oil to a two-week high earlier in the week, underscoring infrastructure vulnerability. Tata Power announced plans for India's first private nuclear plant by 2032 as India opens its civil nuclear sector. A new solar cell design was reported to address a longstanding efficiency degradation problem. Carbon price stability amid volatile gas suggests the market is balancing near-term fuel-switching signals against longer-term clean energy displacement expectations.",
+   "summary": "The power and carbon complex was relatively quiet against the backdrop of oil's surge. EU EUAs were essentially flat on the day at $78.00/EUA (+0.01%), though the weekly trend remains soft (-4.6%), likely reflecting near-term demand uncertainty. The higher TTF print (\u20ac60.5/MWh, +4.8%) will feed through into gas-fired generation costs and could support carbon prices if fuel-switching dynamics tighten. A headline from July 28 noted a drone attack on a UAE nuclear power plant, underscoring infrastructure vulnerability in the Gulf. The World Nuclear Association flagged a $6 trillion investment gap to meet 2050 capacity goals, reinforcing long-term energy security concerns. Ofgem launched a consultation on commitment fees for data center grid connections, a regulatory move targeting speculative capacity reservations that have strained UK grid planning.",
    "drivers": [
-    "EU EUAs near flat on the day; carbon market appears to be balancing near-term fuel-switching demand against longer-run renewables displacement",
-    "Drone attack on a UAE nuclear power plant highlighted critical power infrastructure vulnerability in the Gulf conflict zone",
-    "EU renewables report and new solar cell design advance reinforce a longer-term structural shift away from gas-fired generation"
+    "EU EUAs barely moved (+0.01%) despite broader energy market turmoil; the week-on-week decline of 4.6% reflects lingering demand softness",
+    "Drone attack on a UAE nuclear power plant (reported July 28) highlights escalating infrastructure risk in the Gulf region",
+    "Ofgem's proposed data center grid commitment fees signal growing regulatory pressure on large power demand-side actors in the UK"
    ],
-   "headlineCount": 10,
+   "headlineCount": 5,
    "sources": [
     "CNBC",
-    "EnergyNow.com",
-    "Kaltimtoday.co"
+    "EnergyNow.com"
    ]
   }
  }
