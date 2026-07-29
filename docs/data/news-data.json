@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29T18:06:30Z",
+  "updated": "2026-07-29T19:53:31Z",
   "physical": [
     {
       "title": "US Oil Inventories Sag as Hormuz Turmoil Rages On",
@@ -20,13 +20,13 @@
       "impact": "low"
     },
     {
-      "title": "World Nuclear Association: $6 Trillion Needed to Hit 2050 Capacity Goals",
-      "summary": "As nuclear energy gains momentum amid energy security concerns and spiking power demand, global annual investment is seriously lagging the spending needed to reach the current capacity expansion go...",
+      "title": "Iran Rejects Oman\u2019s Proposal to Evenly Divide Hormuz Control",
+      "summary": "Iran has rejected a proposal from Oman to evenly share control of the lanes in the Strait of Hormuz, as Tehran demands it control most of the critical oil and LNG chokepoint, a senior Iranian offic...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/World-Nuclear-Association-6-Trillion-Needed-to-Hit-2050-Capacity-Goals.html",
-      "published": "2026-07-29T13:30:00Z",
-      "sentiment": "bullish",
-      "impact": "med"
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Rejects-Omans-Proposal-to-Evenly-Divide-Hormuz-Control.html",
+      "published": "2026-07-29T11:30:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
     },
     {
       "title": "Indian Oil Eyes Stakes In Gas Carriers To Cut U.S. LPG Freight Costs",
@@ -35,15 +35,6 @@
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Indian-Oil-Eyes-Stakes-In-Gas-Carriers-To-Cut-US-LPG-Freight-Costs.html",
       "published": "2026-07-29T15:30:00Z",
       "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Iran Rejects Oman\u2019s Proposal to Evenly Divide Hormuz Control",
-      "summary": "Iran has rejected a proposal from Oman to evenly share control of the lanes in the Strait of Hormuz, as Tehran demands it control most of the critical oil and LNG chokepoint, a senior Iranian offic...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Rejects-Omans-Proposal-to-Evenly-Divide-Hormuz-Control.html",
-      "published": "2026-07-29T11:30:00Z",
-      "sentiment": "neutral",
       "impact": "low"
     },
     {
@@ -56,22 +47,13 @@
       "impact": "med"
     },
     {
-      "title": "U.S.-Saudi Consortium Plans $5 Billion Gulf Refinery Outside Hormuz",
-      "summary": "A consortium of U.S. and Saudi companies is set to build a new refinery in the Persian Gulf despite the current situation in the region. The facility will have a price tag of $5 billion and a capac...",
+      "title": "World Nuclear Association: $6 Trillion Needed to Hit 2050 Capacity Goals",
+      "summary": "As nuclear energy gains momentum amid energy security concerns and spiking power demand, global annual investment is seriously lagging the spending needed to reach the current capacity expansion go...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Saudi-Consortium-Plans-5-Billion-Gulf-Refinery-Outside-Hormuz.html",
-      "published": "2026-07-29T08:30:00Z",
-      "sentiment": "bearish",
-      "impact": "low"
-    },
-    {
-      "title": "UK Regulator Targets Data Center Land Grab on the Power Grid",
-      "summary": "Britain\u2019s energy regulator, Ofgem, on Wednesday launched a consultation on a proposed commitment fee for data center projects as part of broad reforms to ensure network capacity is used for project...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/UK-Regulator-Targets-Data-Center-Land-Grab-on-the-Power-Grid.html",
-      "published": "2026-07-29T12:30:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/World-Nuclear-Association-6-Trillion-Needed-to-Hit-2050-Capacity-Goals.html",
+      "published": "2026-07-29T13:30:00Z",
+      "sentiment": "bullish",
+      "impact": "med"
     },
     {
       "title": "Guyana\u2019s Oil Boom Matters More Than Ever",
@@ -92,6 +74,24 @@
       "impact": "med"
     },
     {
+      "title": "UK Regulator Targets Data Center Land Grab on the Power Grid",
+      "summary": "Britain\u2019s energy regulator, Ofgem, on Wednesday launched a consultation on a proposed commitment fee for data center projects as part of broad reforms to ensure network capacity is used for project...",
+      "source": "",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/UK-Regulator-Targets-Data-Center-Land-Grab-on-the-Power-Grid.html",
+      "published": "2026-07-29T12:30:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "BMW Targets 8,000 More Job Cuts in Fresh Cost-Cutting Drive",
+      "summary": "BMW shares in Germany are down 36% so far this year, as the automaker's latest forecast downgrade was described by JPMorgan analyst Jose Asumendi as a \"wake-up call for the auto industry.\" The outl...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/BMW-Targets-8000-More-Job-Cuts-in-Fresh-Cost-Cutting-Drive.html",
+      "published": "2026-07-29T19:00:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
       "title": "Eni Increases 2026 Buybacks as Production Growth Accelerates",
       "summary": "Eni (E:NYSE) is raising its share buyback program for the year after reporting on Wednesday consensus-beating earnings for the second quarter on the back of higher oil and gas prices and a jump in ...",
       "source": "",
@@ -106,6 +106,15 @@
       "source": "",
       "url": "https://oilprice.com/Energy/Energy-General/Ukraines-Attack-on-Iranian-Cargo-Ship-Links-Two-Wars.html",
       "published": "2026-07-29T18:00:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "U.S. Senate Advances Sweeping Russia Sanctions Bill in 86-12 Vote",
+      "summary": "The US Senate delivered one of its strongest bipartisan endorsements of Ukraine since President Donald Trump returned to office, voting 86-12 on July 28 to advance sweeping legislation aimed at tig...",
+      "source": "",
+      "url": "https://oilprice.com/Geopolitics/Europe/US-Senate-Advances-Sweeping-Russia-Sanctions-Bill-in-86-12-Vote.html",
+      "published": "2026-07-29T14:00:00Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -126,27 +135,9 @@
       "published": "2026-07-29T16:00:00Z",
       "sentiment": "neutral",
       "impact": "med"
-    },
-    {
-      "title": "U.S. Senate Advances Sweeping Russia Sanctions Bill in 86-12 Vote",
-      "summary": "The US Senate delivered one of its strongest bipartisan endorsements of Ukraine since President Donald Trump returned to office, voting 86-12 on July 28 to advance sweeping legislation aimed at tig...",
-      "source": "",
-      "url": "https://oilprice.com/Geopolitics/Europe/US-Senate-Advances-Sweeping-Russia-Sanctions-Bill-in-86-12-Vote.html",
-      "published": "2026-07-29T14:00:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
     }
   ],
   "geopolitics": [
-    {
-      "title": "U.S. thwarts Iranian missile attack on U.S. troops, strikes Iranian proxies in Iraq with Saudi forces",
-      "summary": "U.S. thwarts Iranian missile attack on U.S. troops, strikes Iranian proxies in Iraq with Saudi forces cbsnews.com",
-      "source": "cbsnews.com",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTHZOSmtoZTBQNGNtZUlocFVfLTNmdFpvWFdoN2ZwVmpZMDNrcXNSdTVUUjJRVWRSTzJGeFQ2TG52cnVYZFllWFlfTTctTllRSExPRDhGNXhieEV0Z2VqRk5CcWtROVF2ZGR1WDhjd0tGQkVZQTExZEFYVGRTenkxdk9YVGZlYkwxY2Zz?oc=5",
-      "published": "2026-07-27T10:35:17Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
     {
       "title": "US-Israel-Iran War Latest Live News: US Imposes New Iran Sanctions on Oil Tankers as Drone Hits Gas Storage Tanker in Egypt\u2019s Damietta Port Amid Middle East Tensions Escalate",
       "summary": "US-Israel-Iran War Latest Live News: US Imposes New Iran Sanctions on Oil Tankers as Drone Hits Gas Storage Tanker in Egypt\u2019s Damietta Port Amid Middle East Tensions Escalate The Sunday Guardian",
@@ -157,11 +148,38 @@
       "impact": "high"
     },
     {
+      "title": "U.S. thwarts Iranian missile attack on U.S. troops, strikes Iranian proxies in Iraq with Saudi forces",
+      "summary": "U.S. thwarts Iranian missile attack on U.S. troops, strikes Iranian proxies in Iraq with Saudi forces cbsnews.com",
+      "source": "cbsnews.com",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTHZOSmtoZTBQNGNtZUlocFVfLTNmdFpvWFdoN2ZwVmpZMDNrcXNSdTVUUjJRVWRSTzJGeFQ2TG52cnVYZFllWFlfTTctTllRSExPRDhGNXhieEV0Z2VqRk5CcWtROVF2ZGR1WDhjd0tGQkVZQTExZEFYVGRTenkxdk9YVGZlYkwxY2Zz?oc=5",
+      "published": "2026-07-27T10:35:17Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
       "title": "2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
       "summary": "2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict Encyclopedia Britannica",
       "source": "Encyclopedia Britannica",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
       "published": "2026-07-29T05:00:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "War in the Middle East: latest news. The war is spreading: attacks in Jordan and Iraq. UK: drone strikes ship in the Egyptian port of Damietta",
+      "summary": "War in the Middle East: latest news. The war is spreading: attacks in Jordan and Iraq. UK: drone strikes ship in the Egyptian port of Damietta Il Sole 24 ORE",
+      "source": "Il Sole 24 ORE",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYU5CeE9UeE9JSXU1eHVYN0ZkMXYwRjd1WlhFM2tZdWxUMGJ4dEtCUHMwdG15ZVI1ZVZnbFFwWDhIVVNNdWY2eDJ3V01TM1FHYXE3a0xjRVlnNjkyb0VIeUJObjgxLUJqUkwtUHJSakdGTjVwbkJCYnlRVzU2WDBnZU9ZcExCME5NTy1DZGl2UW1zZjEwVmJ1Zmt0NlpONmxHci1zM1Q0TVhyQ2tQUmMtd2FCUkJLVVJGZl9jdVNacw?oc=5",
+      "published": "2026-07-29T17:55:48Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "US Senators Propose 500% Tariffs in Major Russia and Iran Sanctions Deal",
+      "summary": "US Senators Propose 500% Tariffs in Major Russia and Iran Sanctions Deal UNITED24 Media",
+      "source": "UNITED24 Media",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQXy1WVFB0dEdlWTJVS195S2NrYjRjcDh3MlBUN1RLNFBVMTlRMGdfdS1DUk5EdmRwNjFYS1BFMUJ1M0ExcEItU0FaQ01CMm9xX29tb0xFNE4xZFFMNFhOTGdxZ2x5Q09tNmpodTF5WG9aMmdBeUJ6aHJ5OUtzSUh0WkNPV2pjQUU4QmxqR1FTcmttV3l2OVZmOWFTZTMtYlJENTg2Yl9yT0k0b01nQkE?oc=5",
+      "published": "2026-07-28T17:12:59Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -175,20 +193,29 @@
       "impact": "med"
     },
     {
-      "title": "US Senators Propose 500% Tariffs in Major Russia and Iran Sanctions Deal",
-      "summary": "US Senators Propose 500% Tariffs in Major Russia and Iran Sanctions Deal UNITED24 Media",
-      "source": "UNITED24 Media",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQXy1WVFB0dEdlWTJVS195S2NrYjRjcDh3MlBUN1RLNFBVMTlRMGdfdS1DUk5EdmRwNjFYS1BFMUJ1M0ExcEItU0FaQ01CMm9xX29tb0xFNE4xZFFMNFhOTGdxZ2x5Q09tNmpodTF5WG9aMmdBeUJ6aHJ5OUtzSUh0WkNPV2pjQUU4QmxqR1FTcmttV3l2OVZmOWFTZTMtYlJENTg2Yl9yT0k0b01nQkE?oc=5",
-      "published": "2026-07-28T17:12:59Z",
-      "sentiment": "bullish",
+      "title": "Iran fires missiles at US forces after Iraq strikes kill militia fighters",
+      "summary": "Iran fires missiles at US forces after Iraq strikes kill militia fighters Business Standard",
+      "source": "Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxORTFFVkIyQk56WlEzQU50UlV2cUw3ZEMxRXdlZWlpUkkxSnRBTWR5eHJBN3Z1ODdKYi1ZRjZZbmhTV3VXd216RWRnOXhOVnZvQWVKLTJ0OWJkWjFVaVlVNFBtUllmZVlmQzNMYUlSUndZNXZ6NGtCTWh0MFN1MXFFR3ZIZURER016NkxrazAwSkJjWHhjNTJQOFQwSVRrM2hCNVI0QW5NdjBFMHAyaFNkd0VoM0lYQlgyTFNCQTNWclBRWGtaOURBeDBGNVl4bkpVazgtS9IB2gFBVV95cUxOZjM0V19EaE9OelR5eERDeVdFbjdDN2wyN0RqS2xJbmFpb0xueWN4Z2owdW9wMm9QTG9jb1JyVUlLVDNWZGNLMU5sakJyMHdLZGIxRzhUMkliTlNHUHBSLW96aFVqOE1yOUFIc2dxWUVZVEpMNTNrb0dxWmFUSWlNMUxQMWg0bUVFTjl1LTBTX05RZmFTUnRGcnk4REw2X3dFQzVkbUp6RmpGV0FZTG5iV0dJVWFxNlY4dVVMbWEyWExMZzRiQ2R1UjhBaHE3U3d4SXhkLURnSEdvdw?oc=5",
+      "published": "2026-07-29T18:14:59Z",
+      "sentiment": "neutral",
       "impact": "low"
     },
     {
-      "title": "India, China to face 100% tariff? US Senate to vote on Russia sanctions bill",
-      "summary": "India, China to face 100% tariff? US Senate to vote on Russia sanctions bill India Today",
-      "source": "India Today",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQ29mUjAxWXkwNFJ6Vi0wQ2FJVG1XNklKRTB1SkFfajV4M2owZTdmenkyVjdodmx3NFJCd3VWcWl3eldCNWdJUUFuS0xTZGVfYjUwYTJLWlVORll5OWZZSWxWVVZMeGMxWHJYcVlHc1Yta3hGbmp1UEpsR1hOZVJrb1NMQWRYR1JuX3o1eGVxWG0zb0FNbGpabkNISFhSMko3X01STGZ0SjJxaGtPQ2IyMmxIWlRseWRLWExMcFFSWVRMOFI40gHKAUFVX3lxTE5FclpzMl9ENmR1a2xzS2VZLXk0ZTJyb0txR0JaT1hpR0RUUEc4Z1VBT2ZaWm9WTGJsazRmYWtHZzZCOTY3UmtwdFRsbWk1TFlWQ0FmT0VCcGxVUEFKRTBWYmxvQ3VQbmNSX29XNFVSTDFwWHpnSDAtT092WUNJbjgwQm9vNFFwd19GVGJXaGw4NXNZNTVjVVFPRjk4WVduSlNkSFZkemRtRkttS09vbTlFQjBvMVh5cTFiNUtHWjM4NVR1QW91RDBGd0E?oc=5",
-      "published": "2026-07-29T02:26:34Z",
+      "title": "US senators reach agreement on new sanctions against Russia, Iran \u2013 media",
+      "summary": "US senators reach agreement on new sanctions against Russia, Iran \u2013 media Interfax-Ukraine",
+      "source": "Interfax-Ukraine",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5QRVpuLXBtcFlFd2hCYktnb2RXVTIzS2NEc1B0SC01YXRwQ1VpMDJFbi1JSTkxNmdfNmtxektQNXBvUDFaWnotTmszTHl2NEFlNnJmak9hRGtWOFFNZlZ1NlNPU2xJRWvSAWdBVV95cUxOUEVabi1wbXBZRXdoQmJLZ29kV1UyM0tjRHNQdEgtNWF0cENVaTAyRW4tSUk5MTZnXzZrcXpLUDVwb1AxWlp6LU5rM0x5djRBZTZyZmpPYURrVjhRTWZWdTZTT1NsSUVr?oc=5",
+      "published": "2026-07-28T14:05:41Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "US targets Iran with fresh sanctions over Strait of Hormuz 'extortion scheme'",
+      "summary": "US targets Iran with fresh sanctions over Strait of Hormuz 'extortion scheme' aninews.in",
+      "source": "aninews.in",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPS1Faa0NJTGlwVGxoQXpISnQyNlIwNTFRRGlVTUR5bWxveGVYUnRLcHBLNTRzYV92YVp4NEFyMVZzNlFXak55OTI5RFl3SEZyeW5lWlhrcWtGcVJDbEZBNzAxa2FmOU5mcjRsRXA3VDdoNmRMOVFreUd5cWJpUVp4RkpmX3JXb3BZZjFyVlJVdFNsUVJaQjQwbXZtQjNQVmtsdmJ0NUpiU0FpVXBaSFV5eE5MNzBKT04yekZNY21mQ2Vwbzds?oc=5",
+      "published": "2026-07-29T18:44:00Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -202,47 +229,38 @@
       "impact": "low"
     },
     {
-      "title": "Trump warns of return to \u2018strong military action\u2019 if Iran diplomacy fails",
-      "summary": "Trump warns of return to \u2018strong military action\u2019 if Iran diplomacy fails The Guardian",
-      "source": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPYmlyQkFMZnN6YUY2UzNCQ3ZPaGxiTjI4NWdkSUpYRmpsWmsyampCQjlLY1NZQ3lDbG1uX0YtMGhfMzNYNnNESEhyYlRIbUZGZDRsa2dYeWZDVlVEcWRYLWFHeDVpVFFtWl9wXzFDcUVqRE01MG9vSHRGejNHNjlJdVROLUFfbDZkY0U2NElnUXEzX0FFQ19sSHFaZXVUYjdOckRoYnk3cHVnNWtp?oc=5",
-      "published": "2026-07-27T17:02:00Z",
-      "sentiment": "neutral",
+      "title": "What the latest US sanctions bill means for Russia\u2014and for China, India, and Iran",
+      "summary": "What the latest US sanctions bill means for Russia\u2014and for China, India, and Iran Atlantic Council",
+      "source": "Atlantic Council",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcHdlU1JsMnY1UV8xYjZKYms2NTl6SHI3ZnVwLUNqSm9XenBOZFpvY1I0aVRULTlqOUhxY2syZThEal9IMklhSTh1X2t3cHdDNkI1anZpczVwUUpxeUQwQktkbmpIRS1RdUdON0dsMHlvdFV6dFJVM0w5UDRINkFrSlk5d3RUNmtVTm95QTVKVFRNckZ6U0trMTNKTjJ4Zk1tQk9JaHktZWxvMUFpSHl4N2V1OW05MG9HY3J2NHZpNnM?oc=5",
+      "published": "2026-07-27T16:57:22Z",
+      "sentiment": "bullish",
       "impact": "low"
     },
     {
       "title": "Why is Iran allowing Indian ships through the Strait of Hormuz amid selective blockade",
-      "summary": "Why is Iran allowing Indian ships through the Strait of Hormuz amid selective blockade Business Upturn",
-      "source": "Business Upturn",
+      "summary": "Why is Iran allowing Indian ships through the Strait of Hormuz amid selective blockade businessupturn.com",
+      "source": "businessupturn.com",
       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNV0VqdzlCMUN6MVhhZUpVc1h1eGU0NjUxVXpiX1Z3bGJuaGU2SXpTZXhMd2k4QTV2V0ZSR0NBOTgzalpDTzlsa2VsMXlvM3BROFEtcFNvdGNHaml4dHhna01mTUZfcVJ0X3Qwd2FIcHp2QjZNaDltMWFmc2VyMk1BRmNkMmoxby1odEMzdzJlV2FQenhUMEh6RkUyQ0RtYXc0NTZLdGVnUHNidGFHRmdNLXprLVFnMWdLcmRKbzJ2TFhjcUNpYXNFV245MEFMa1BXVlZqTk1jUXVYQjA?oc=5",
       "published": "2026-07-28T18:13:23Z",
       "sentiment": "bullish",
       "impact": "low"
     },
     {
-      "title": "US senators reach agreement on new sanctions against Russia, Iran \u2013 media",
-      "summary": "US senators reach agreement on new sanctions against Russia, Iran \u2013 media Interfax-Ukraine",
-      "source": "Interfax-Ukraine",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBJcFdzS3BYay0zQ3hOVjRac2QtRWJWeEx6WVpXSnNHYTZreFJjWThhakFGX2lrXzBIVW5aeXBUbXNzbi11SF9JRjV1YTZ6R2IzOGEyTFVCSDJPR0V2dklfS1ZB0gFnQVVfeXFMTlBFWm4tcG1wWUV3aEJiS2dvZFdVMjNLY0RzUHRILTVhdHBDVWkwMkVuLUlJOTE2Z182a3F6S1A1cG9QMVpaei1OazNMeXY0QWU2cmZqT2FEa1Y4UU1mVnU2U09TbElFaw?oc=5",
-      "published": "2026-07-28T14:05:41Z",
+      "title": "US Senate advances Russia Sanctions Bill proposing 100% tariffs on India, China",
+      "summary": "US Senate advances Russia Sanctions Bill proposing 100% tariffs on India, China The New Indian Express",
+      "source": "The New Indian Express",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNb05ubFdnb0JTY1NTdXdCUmJqMkNPaTYzTFNpOVdlZDVBbmpFMlJDT2pHb1pjNVJvbGRqXzFLYTZ1Q2xmenEtWUZaNXRNZmk5aDZYMW1iRDVBcm9vZmRYNExFZXVTMkJWQkgyeXNKODJ3SXF1MnpFYjNGSmhCZVpPZXk1cmY4ODZ6NHBySUYyc0ZnVTdfb1I2UDROc3gzOGo0TWh6UVYtRHZ2dEw2NmwtYlVZblhyRTRkcTRDdC05eHZJOXREUjd30gHUAUFVX3lxTFBZQ044S1lob3VlUHZlNFVueE43OUlDWnd1Mm51SmFkU1NqSk16RWtyd3l6Sk9VTm9jbFdNVlRhdEpfaHdpZEJiOTZ6d3BtSjUtZlpzSFdTeF9RVkx1QjFjd0dMMExaNVJ2elhTNjlGSm95aTJhblJzaWRGNk9nNThVa2xqV2NydWVEQ2M2THBGbEFDQkVveEoyLUVIQnd0TXNUOEVMQWU1NWJuaWxOUmNnQ1JYZFN5VzhyY1pxNjMxLUEzSlg4b1BCbkxLUkx2U254ZGY0?oc=5",
+      "published": "2026-07-29T17:58:43Z",
       "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "President Trump announced a cease-fire with Iran on June 14 that halted U.S. combat operations and reopened the Strait of Hormuz to commercial shipping. Within a month, the agreement was in shambles. Here is how the deal unraveled. https://nyti.ms/4fzbt",
-      "summary": "President Trump announced a cease-fire with Iran on June 14 that halted U.S. combat operations and reopened the Strait of Hormuz to commercial shipping. Within a month, the agreement was in shamble...",
-      "source": "facebook.com",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPb0JocFNza3NaSEtUN2xWVV9ScUJzdXBBeUFRSndEQU81T19EUFZNeGFEX2RGcDl2OHZwbmhRbVJkLXZkYmhWYnJ3VXk2Q1JBakVxN2ZycU82MFdpakNrMk9SaW1KeUpzc1dyTzN1d29fb3F4NDBoODlDQ190aEFrbk1ncjhyeTNOUlg1WkVhNmtvbTQ3UjQzcW9acm5UdzN4YnVoTmpUWXEwa3ZJb1g3YkMyeXIya1BwTWZEajZjMVM0WHNoNkpvc1RtaFBLWGdEcnc4?oc=5",
-      "published": "2026-07-26T18:25:04Z",
-      "sentiment": "bearish",
       "impact": "low"
     },
     {
-      "title": "What the latest US sanctions bill means for Russia\u2014and for China, India, and Iran",
-      "summary": "What the latest US sanctions bill means for Russia\u2014and for China, India, and Iran Atlantic Council",
-      "source": "Atlantic Council",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcHdlU1JsMnY1UV8xYjZKYms2NTl6SHI3ZnVwLUNqSm9XenBOZFpvY1I0aVRULTlqOUhxY2syZThEal9IMklhSTh1X2t3cHdDNkI1anZpczVwUUpxeUQwQktkbmpIRS1RdUdON0dsMHlvdFV6dFJVM0w5UDRINkFrSlk5d3RUNmtVTm95QTVKVFRNckZ6U0trMTNKTjJ4Zk1tQk9JaHktZWxvMUFpSHl4N2V1OW05MG9HY3J2NHZpNnM?oc=5",
-      "published": "2026-07-27T16:57:22Z",
+      "title": "India, China to face 100% tariff? US Senate to vote on Russia sanctions bill",
+      "summary": "India, China to face 100% tariff? US Senate to vote on Russia sanctions bill India Today",
+      "source": "India Today",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQ29mUjAxWXkwNFJ6Vi0wQ2FJVG1XNklKRTB1SkFfajV4M2owZTdmenkyVjdodmx3NFJCd3VWcWl3eldCNWdJUUFuS0xTZGVfYjUwYTJLWlVORll5OWZZSWxWVVZMeGMxWHJYcVlHc1Yta3hGbmp1UEpsR1hOZVJrb1NMQWRYR1JuX3o1eGVxWG0zb0FNbGpabkNISFhSMko3X01STGZ0SjJxaGtPQ2IyMmxIWlRseWRLWExMcFFSWVRMOFI40gHKAUFVX3lxTE5FclpzMl9ENmR1a2xzS2VZLXk0ZTJyb0txR0JaT1hpR0RUUEc4Z1VBT2ZaWm9WTGJsazRmYWtHZzZCOTY3UmtwdFRsbWk1TFlWQ0FmT0VCcGxVUEFKRTBWYmxvQ3VQbmNSX29XNFVSTDFwWHpnSDAtT092WUNJbjgwQm9vNFFwd19GVGJXaGw4NXNZNTVjVVFPRjk4WVduSlNkSFZkemRtRkttS09vbTlFQjBvMVh5cTFiNUtHWjM4NVR1QW91RDBGd0E?oc=5",
+      "published": "2026-07-29T02:26:34Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -256,15 +274,6 @@
       "impact": "low"
     },
     {
-      "title": "US Senators Reach Deal on Russia, Iran Sanctions Bill",
-      "summary": "US Senators Reach Deal on Russia, Iran Sanctions Bill Kyiv Post",
-      "source": "Kyiv Post",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9DYlBiYmRwUTloSGUtbU83MUdoNmRiQ0hBMF9ZanZmblI3SFhVSXRtVDFPcC1iVWNPUzFhRFRJLWFMQy1YV2tCUG4wcw?oc=5",
-      "published": "2026-07-28T15:20:34Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
       "title": "Senate sets up votes to sanction Russia for Ukraine war",
       "summary": "Senate sets up votes to sanction Russia for Ukraine war CNBC",
       "source": "CNBC",
@@ -274,20 +283,29 @@
       "impact": "low"
     },
     {
-      "title": "US Targets Iran's Hormuz Revenue with Fresh Sanctions",
-      "summary": "US Targets Iran's Hormuz Revenue with Fresh Sanctions Deccan Chronicle",
-      "source": "Deccan Chronicle",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZHVfNjlOTElIbVZvZUpuNDA3T2dBcnNfVGcxSzFBcl9oQjVjcnFObTNPV0cyc1NIWU5UQUFqaUZzc1Q4cUxQbGt4VU1fYVprOFJaMU9Lb3ZnT1N6T1NLTldFMFc1TV9SckZUZ1VxVzZhQS1oR0prSEJra1VSWktDODAzNEJwNzlPd3BXYWp5S016RTQ5clRBXzF5Y2IzNTTSAaQBQVVfeXFMTUlHNWNaSGZDaTFtR1ZyWUtDOGh4bU0xQmtCTDJTaVNKYXRnUTg3ZUM2eEFXTFJONTctWU96OVE4ZW41d2EzRHZCZG5VNnl2d2h6QmhuZWpnWGd2YzVBQlVQbGlqUlBobGF5ZE5lWk9XdkdHcU8xQWg0TkYyMGk4OFEzNFRPaXgzdjI4QzVWR1hPWGhlNHM2b2VqOFd6eEFtdVdQUTU?oc=5",
-      "published": "2026-07-29T16:51:58Z",
+      "title": "US Senate Advances Russia Sanctions Bill; India Faces Risk of Up to 100% Tariffs Over Russian Oil Imports",
+      "summary": "US Senate Advances Russia Sanctions Bill; India Faces Risk of Up to 100% Tariffs Over Russian Oil Imports pragativadi.com",
+      "source": "pragativadi.com",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNOGp1ajhPOE56VmpnUGhwZ0hNTllFSF9oU29mMzBjNUZSNU00cmk2QUd2V3UzOVdPaU1NLWRMWFJoN3NwWVRLQ2Q0RkhPcEU1M0JWR2lFb2QwbDMzNFJuOU5UWEpaSE9vVlJmempPWTM0YzRpMVBYSE82WG9xcmZ4NXhCVzAzZjNaeEVUTDU3X2p6TURrTWxsYnlsV2lZak9LdHh6amx2LVp0V2RBTHJ4WWhpOXExR05XRnpScUh1Z0lmT3BBRjMw?oc=5",
+      "published": "2026-07-29T05:14:44Z",
       "sentiment": "bullish",
       "impact": "low"
     },
     {
-      "title": "Trump to sign sanctions bill targeting Russia, Iran, impacting energy prices",
-      "summary": "Trump to sign sanctions bill targeting Russia, Iran, impacting energy prices Crypto Briefing",
-      "source": "Crypto Briefing",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ3V2U3ZhZ1dNMGxFTnZGT2Z2U25JX1RnS0t6TFU1QmRuYkJUX1NvVzRqZElpR1A2NzBHeEIwNzlNQVdRWVJIdjBnaWp5NmFTQTQzRXFVeE9UbnpEVWpNbzdSVW80aXVUenNjYjZRelI3MVlGeHl6aHRyTzRMOTU3MzRHMUN1bS1tQ1ltZzJjZFQ5NVpkMlNQMjNVU3o2THpfcEl5eQ?oc=5",
-      "published": "2026-07-29T01:01:23Z",
+      "title": "U.S. Senate Pushes Forward Bill for 100% Tariffs on Russian Energy Buyers",
+      "summary": "U.S. Senate Pushes Forward Bill for 100% Tariffs on Russian Energy Buyers cubaheadlines.com",
+      "source": "cubaheadlines.com",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5FaEdpODI4VW9zS20xazZuMGRaUG1OeTNVMGVxTTZiQjUxS3VwNHFfRXFaSDhFV2NKM3VOaEl3Zk95T0pEbl8za21qWmtBbmhiWm1qdWpwV2M?oc=5",
+      "published": "2026-07-29T13:05:01Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "US Senate Advances Bipartisan Russia And Iran Sanctions Bill",
+      "summary": "US Senate Advances Bipartisan Russia And Iran Sanctions Bill tippinsights",
+      "source": "tippinsights",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbG5Dc2NJWkVzWWg4MFAycTZnTEdlTkRnZXZ1WV9pdU5VWmJkeFRjaUN2ZDlVWXN2eWlvZDFEWG1VWUdFdE5DZmNVVUZ4YzFGX2JfdWtxQW9kc0dHVk9Lb2EzN0FJNjBRYjRtV25IOGNlMTFsRFRaMFZhakNIMnVwYWJJblpBS1hPQ3Qzdm5KYw?oc=5",
+      "published": "2026-07-28T20:19:50Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -301,29 +319,11 @@
       "impact": "low"
     },
     {
-      "title": "Iran says oil sales topped $11bn despite sanctions, war",
-      "summary": "Iran says oil sales topped $11bn despite sanctions, war \u0627\u06cc\u0631\u0627\u0646 \u0627\u06cc\u0646\u062a\u0631\u0646\u0634\u0646\u0627\u0644",
-      "source": "\u0627\u06cc\u0631\u0627\u0646 \u0627\u06cc\u0646\u062a\u0631\u0646\u0634\u0646\u0627\u0644",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5qQl92aFdRbjRGZ1pJbWV2aGxoek9QWHhIVFV5THFNLXd3Y3B3WG9fMVNTcnBYRWwyQk5rTFNFZ1dFeU1QRDdzQ2REN2VIYWlSb1E?oc=5",
-      "published": "2026-07-26T20:55:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Oil prices rebound, jump 8% as Trump warns Iran after attacks on US forces; Brent nears $90",
-      "summary": "Oil prices rebound, jump 8% as Trump warns Iran after attacks on US forces; Brent nears $90 livemint.com",
-      "source": "livemint.com",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQWWRZX3VadmtlT1lGUW1qRnkzek9ZRmtnNS02d2tjX2l0Z0xhUjVWcEhLMlRYcFdGelZQd2V4NWtBSTkzWXFYdXpIYTdIWjJDQks2SndtVV9mRGlxekR2SEhQMlhVb0xhSHBLVDg0NXZwZ2NwSG5JMzdqcUphTjBNUXNKUVVJVXV4Rkc3TUxtTUNhNl9ZZDhZVFFFbHdod3luNmFvMkEwUVNSaVF1MlphcXRhYjR3cFRTLTNnS1JnOXRiLTRGczVrMHZwOTBva3E0clBOTFJQZktISjBvd0U5VlAtdXlwUF9yWXhaNWpB0gHzAUFVX3lxTE5VTWpnUjA0M0ZRRVFGd2pXMWdBSDFxWTJpTUZwUkNoSnlXQ0pZNGhGZ2s4eEg1b2MxYUdELVVDOWN1YXhFU0FNZTFNSXJjbDh6dGwzRHZzcFhVQWQ4a0ZuYS1HWS1pTHMzX3hVSUVHWkV1ZEJLWHR4LWVDRUtmNFdqaGNXVTZ4eS1lV0RHbWJUN3cxa1RGNnNQMDROTG91OEpYY2F2YzJlbU84cGx5djZOR3l2cXJaaS05ajY1c0pjOHNRRHFEdG01UWxXYWh2N1lwQ0x3dE9oUWFfc1EwdTFwQmo5aXFaSzVJMTcxSXlzSHBuWQ?oc=5",
-      "published": "2026-07-29T16:24:05Z",
-      "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "Brent Oil Prices Rose as Conflict Spread from Hormuz to the Red Sea 27 July 2026",
-      "summary": "Brent Oil Prices Rose as Conflict Spread from Hormuz to the Red Sea 27 July 2026 t.co",
-      "source": "t.co",
-      "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTFBhczlvblB4TkhRZG1ySUI1eTYxSW5wMzl3cE44TFdicTRfMmdRQWhTRmlUNkF5YUU3SjBn?oc=5",
-      "published": "2026-07-28T13:54:38Z",
+      "title": "New US sanctions target Iran's Hormuz income",
+      "summary": "New US sanctions target Iran's Hormuz income The New Indian Express",
+      "source": "The New Indian Express",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWXNlRmNBZVZDZVY4WEpnMlRLdDJxY09CM1hqZmpZWkluQ2xRZjc0MjZxTTVRSFBiemNDX3Bmei1McVQ0Z25MZW9WaERGMHRsakRmOVl5SG5oT3NVQW1JSEx6Sk81akd3bWpjUVRjM05LcWR5X2NEU1hhamw3cU5MclNsaVhNM3JYbjZMbU13VjctaGtDTmdHMDNR0gGnAUFVX3lxTFB4ZXN5b0JETHVXTkZfWEgwNkJqX2xDdXRhc0R0VWZMemlkaHVuRnF3cWp4bHMyYjZyVjZ2UzRlcGFyY2xpa1FVZHRMRzJfZ1N4M3d6UlVZRkFzeXJjZ1JjNE1sX2ZqMEN6YTI4M2tSQko2QUZnSmZYejVlbzR4WmVQVmgwRWNoUjFPQ2hDemZRN2I0Z3JoSk00Q3ZKYUdmaFM2TTZCUkVz?oc=5",
+      "published": "2026-07-29T19:05:59Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -337,30 +337,30 @@
       "impact": "low"
     },
     {
-      "title": "U.S. Senate Pushes Forward Bill for 100% Tariffs on Russian Energy Buyers",
-      "summary": "U.S. Senate Pushes Forward Bill for 100% Tariffs on Russian Energy Buyers CubaHeadlines",
-      "source": "CubaHeadlines",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5FaEdpODI4VW9zS20xazZuMGRaUG1OeTNVMGVxTTZiQjUxS3VwNHFfRXFaSDhFV2NKM3VOaEl3Zk95T0pEbl8za21qWmtBbmhiWm1qdWpwV2M?oc=5",
-      "published": "2026-07-29T13:05:01Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Zelensky Welcomes US Russia Sanctions Bill as India Faces Risk of 100% Tariffs",
-      "summary": "Zelensky Welcomes US Russia Sanctions Bill as India Faces Risk of 100% Tariffs pragativadi.com",
-      "source": "pragativadi.com",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMktUUEd5OENRWlhQTnBUdUUwZ2RNZlZkTmp3bHF1YjdkQkFKN0Y3WkxPZXpDZjd6N3kwMjVTckZ5U3ZpVTN0R0ZtS2piWVNUT2pOcTlsdzZJRjlxcmdCN25vczR6S2xoNnd5OU10MjlMWHM2VDNKN2l0Nmc5V2o4SGNoYTdpSDZMNUlQOWdmOFRnRnNRVVB6TzQ3eU1YTlZtazNuWA?oc=5",
-      "published": "2026-07-29T08:32:04Z",
+      "title": "100% tariffs for India? US Senate advances key Russian sanctions bill",
+      "summary": "100% tariffs for India? US Senate advances key Russian sanctions bill The Times of India",
+      "source": "The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNeVk2dUNFN2pwUElHVDZlRkU0WG5mV3NiTVZGTlllQ1lmalVqZXAwbmlpWG1LNDhpbHNvQlI0cGtTaHVuQXNlWnpZbGE0Ni1lSUZ2U1ozZjRPdUk2SnNLSVlJelJzTWM2ZFFFdlNoWHFvdW9nYW93LUhuRVVWY3VMczh5a0hIb0FNVzRfd0VkalM5QU1ZWERDd1BvUFhfdzZWOWtiVGhOcXB2Zm1IRGQtamc2RnpCUHhJTWFiQzFxWUtNdm56MmEyMEswa0JULUtPTDN6UkpRN0Y1ckdYYW9xbWVOT2p5Uzk00gHuAUFVX3lxTE5GT0I0blFYYUl5MFNDX1FuUU4wcmdhLURKUEVia1F2R2kxNnZIM1VCc0hyZXVrQ2g0Q0NFMzZGR0dMendPOEVzRmp3UzBtallGV3RGUHo4a3ozeUlBQVNnRzM2TWtDOUtEeWNYRlVnSWV3VXVGQnBpV1dFMEVoNjBZQ19wQW9NNk12UXRxX1NGYTkzSndtSjVpeG0wcjBUZE1FYmllaXpTcUlfeXFmZ1Q0YVlmaUM4NWhlSEJ4YTlQb0luYk1VZ1NKb0ZieDhPcUczN2h1SENCTFR3Z1U0eW8td0wxenQzSHJ4OEI2N1E?oc=5",
+      "published": "2026-07-29T02:50:00Z",
       "sentiment": "bullish",
       "impact": "low"
     },
     {
-      "title": "US-Israel-Iran War Live News: Kataib Hezbollah Urges Iraqi Government to Defend National Sovereignty, Calls for Firm Action",
-      "summary": "US-Israel-Iran War Live News: Kataib Hezbollah Urges Iraqi Government to Defend National Sovereignty, Calls for Firm Action The Sunday Guardian",
-      "source": "The Sunday Guardian",
-      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNR1NQc2Q1Z2JCQ0hJckU2OHBqY0t5LXhYX2pOUVVQNmI3ckdYQ3MtQTRKTVU2aWtXeXRjYUpuMjRFVkhLTkdScWs2MXVKaFNlVnVadzdOeXFqcnc4bkZCcDFOQnAxQ1FDVTFSSUpxWUpLRHRzR182cjNvcmVqV0YyMElSeldMbDhRcm5BczkwRGtuT0t3NmdnZDVrWGl4TjFnVmdVRGJROVZZbVVOUlY0M3ljdkdUWFU4QzYxZi1nSTJDenYyYVp2NWFaanpKdkgwV18tb0ZiV25kdTcxUnI1Wm1CSXVnWmVURDZIR1owelMycE1zb1JqQmNB0gH_AUFVX3lxTE1rcjFHM2R5Q0pQNXJ0bWFEaVQ5eWFycW5hRV9hd2tocXhyZ05fNG96YW1iU3dhbi16SUdLdGJxVHNmV0VmZWR3ejNVR1lwbF93WE5qcU50WWNRSTl4MkR2ckZXMldfel9xQm1BeHUxdHpMcWVsUnVaRDdYdG84aWdJSUVrV3pxc3JmSG5oM2t4ZTNkYVo3M3hsYjdabXZ0c1psME1WYkRxSV96ekdkYllJN0ZqdVVnQ0diYktnRHZuTXlDNG9QdnlONVdOX0ZBQ3dLdnpndDZBc002dW4zaWw4QWNlRzdNQkR6aUhDOGFTdnV0NnZxdUt1bC1GYmxkYw?oc=5",
-      "published": "2026-07-29T17:55:42Z",
+      "title": "Trump's mixed messages on Iran: 'Winding down' the war and easing sanctions but adding more troops",
+      "summary": "Trump's mixed messages on Iran: 'Winding down' the war and easing sanctions but adding more troops Kaltimtoday.co",
+      "source": "Kaltimtoday.co",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNS2ZKcG0yVGF4c01RMVlQbHpOeHNxMlpUVEpkMG9FQU02WS1IZUZEclczS2lXVm9YRUIwcmw5M1dXLVhlWWwzQWRmUUZRSHBpaVZDdjB1X01JT1dOcTBweVRqVFY0SXNvZnE5Z2J0ZnBJTTRvdmpnTy0wejBiSGxlQldkX1d6a056c1lKMHhZNEV1czFhRXJxN040REoxcG9rM1VRTmZKUVMtSGdha2p1Sl9wdGVJZkli?oc=5",
+      "published": "2026-07-28T10:28:27Z",
       "sentiment": "neutral",
+      "impact": "med"
+    },
+    {
+      "title": "Iranian Oil Flows Through Strait of Hormuz Even as Gulf Neighbors\u2019 Exports Shut",
+      "summary": "Iranian Oil Flows Through Strait of Hormuz Even as Gulf Neighbors\u2019 Exports Shut EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVXRfbXZ1NlNBbHZhWXFvQmRjbDUxaHh2V21jN2JGSlZqQmo1NnBTSWRXUWEzSEVTWDN3S3lIRE5ObkRKbEZWdUxwLTQ1Umg5SnlMLWtXVUh0UldNZWJxRDU4bVRiUi1CZXBqRUhsaDVpMWhlN3Z5T2FEel83cmdMa3VvRXN0NHNsWGlXX2pCemZRQWVaZ3JrQ2xLZUQyb24wdUlQUUZIWWZackhieUE?oc=5",
+      "published": "2026-07-27T23:22:44Z",
+      "sentiment": "bearish",
       "impact": "low"
     }
   ]
