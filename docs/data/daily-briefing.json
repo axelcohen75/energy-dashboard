@@ -1,44 +1,44 @@
 {
- "generated": "2026-07-29T20:51:14.814778+00:00",
+ "generated": "2026-07-30T15:09:37.179238+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude exploded higher on Wednesday, with Brent surging 7.88% to $90.72/bbl and WTI gaining 6.86% to $84.70/bbl, driven by an acute escalation in Middle East hostilities. Trump's fresh threats against Iran, new U.S. sanctions targeting Iranian oil tankers, and a Houthi attack on a Saudi tanker in the Red Sea compounded supply-side anxiety. A bullish EIA print \u2014 U.S. crude inventories fell 7.2 million barrels in the week to July 24 \u2014 added fundamental support. Iran's rejection of Oman's Hormuz power-sharing proposal and Tehran's declared continuation of its oil blockade kept the geopolitical premium firmly bid. RBOB gasoline bucked the trend, falling 3.44%, suggesting demand-side concerns are not fully absent. Heating oil's 2.08% gain and 27.18% monthly surge reflect the broader distillate tightness narrative.",
+   "summary": "Crude softened modestly on the day \u2014 WTI -0.24% to $84.26, Brent -0.64% to $90.16 \u2014 but the real story is in products: RBOB collapsed 7.59% and Heating Oil shed 5.06%, suggesting demand-side anxiety is overriding geopolitical risk premiums. The bid for crude remains structurally supported by Iran's declared oil blockade and two tankers aborting a Hormuz transit after an incident on the southern lane near Oman, yet prices slipped as other tankers continued passing Bab el-Mandeb. Goldman Sachs flagged diesel as the most acute squeeze, citing the lowest global refining activity since 2020. US senators advanced a bipartisan Russia-Iran sanctions bill including proposed 500% tariffs, adding longer-term supply uncertainty. Japan's Eneos purchasing a rare Canadian crude cargo signals accelerating Middle East diversification by Asian refiners. The month-on-month surge \u2014 Brent +23.6%, HO +25.1% \u2014 reflects how much geopolitical risk has already been priced in.",
    "drivers": [
-    "U.S.-Iran escalation: Trump threatens Iran, fresh sanctions on oil tankers, and a Houthi attack on a Saudi tanker in the Red Sea spike risk premium",
-    "EIA crude draw of 7.2 million barrels for the week ending July 24 reinforces tight physical market amid Hormuz disruption",
-    "Iran rejects Hormuz power-sharing and vows blockade continuation; U.S. Senate advances bipartisan Russia-Iran sanctions bill with proposed 500% tariffs"
+    "Iran Hormuz blockade: two tankers turned back after incident on southern transit lane, sustaining supply disruption fears",
+    "Massive product selloff: RBOB -7.59% and Heating Oil -5.06% on the day, with Goldman flagging diesel crunch at historically low refining activity",
+    "US Senate advances bipartisan Russia-Iran sanctions bill with proposed 500% tariffs, raising long-term supply overhang for both producer nations"
    ],
    "headlineCount": 12,
    "sources": [
     "Atlantic Council",
-    "CBS News",
     "EnergyNow.com",
     "Interfax-Ukraine",
     "Kyiv Post",
+    "Radio Free Europe/Radio Liberty",
     "The Sunday Guardian"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets presented a split picture on Wednesday. Henry Hub edged up 2.48% to $2.729/MMBtu, though it remains down 6.74% on the week and 14.24% on the month, suggesting the daily bounce is more geopolitical sympathy than a fundamental turn. European TTF rallied a sharper 4.53% to \u20ac60.35/MWh, with its 41.78% monthly surge reflecting sustained Middle East supply anxiety around LNG transit. A drone strike on a gas storage tanker at Egypt's Damietta Port and Iran's rejection of Oman's Hormuz proposal are directly threatening LNG shipment lanes. Taiwan's suspension of approximately $800 million in spot LNG purchases from Papua New Guinea is a notable demand signal worth monitoring, while Indian Oil's pursuit of stakes in very large gas carriers signals growing freight-cost pressure on Asian buyers.",
+   "summary": "European TTF surged 4.65% on the day to \u20ac60.42/MWh \u2014 up an extraordinary 42% over the past month \u2014 as the Damietta port drone strike on an Egyptian gas storage tanker and low European storage levels intensified winter supply anxiety. QatarEnergy sent its first LNG cargo through Hormuz in three weeks, a partial relief signal, but Qatar has simultaneously been forced to buy as many as 33 US spot LNG cargoes this year to compensate for disruption at Ras Laffan caused by the Iran conflict. Shell posted $9.8 billion in adjusted Q2 earnings, more than double year-ago levels, directly attributing the result to surging energy prices. US Henry Hub was comparatively muted at +0.59% to $2.741/MMBtu, though down 16.3% on the month, underscoring the wide Atlantic gas price dislocation driven by Middle East conflict.",
    "drivers": [
-    "Drone strike on a gas storage tanker at Egypt's Damietta Port and Iran's Hormuz blockade stance elevate LNG transit risk, supporting TTF",
-    "Taiwan halts ~$800 million in spot LNG purchases from Papua New Guinea, removing a significant volume from the spot market",
-    "Henry Hub bounce is modest and month-on-month still deeply negative, indicating U.S. domestic fundamentals remain soft despite geopolitical uplift"
+    "Drone strike on gas storage tanker at Egypt's Damietta port and low European storage levels fuel winter supply alarm, lifting TTF +4.65%",
+    "Qatar diverting up to 33 US spot LNG cargoes to Asian customers after Iran conflict disrupts Ras Laffan operations, tightening Atlantic LNG availability",
+    "Wide Henry Hub/TTF dislocation persists: US gas down 16.3% on the month vs TTF +42%, reflecting geopolitical risk concentrated in European/Asian supply chains"
    ],
-   "headlineCount": 4,
+   "headlineCount": 6,
    "sources": [
     "The Sunday Guardian"
    ]
   },
   "power": {
-   "summary": "The power and carbon complex offered a quieter session relative to oil and gas. EU EUAs dipped 0.40% to $77.68/EUA, down 5.00% on the week, though still modestly positive on the month. The rising TTF gas price is a key input cost concern for gas-fired generation across Europe. On the structural side, the World Nuclear Association flagged that $6 trillion of investment is needed to meet 2050 nuclear capacity goals, underscoring a significant funding gap even as nuclear gains policy momentum. The Trump administration's selection of five states for nuclear fuel-cycle hubs adds a domestic policy dimension. Ofgem's consultation on a proposed grid commitment fee for data centers signals regulatory pushback against AI-driven power demand growth. Glencore's $3.3 billion first-half trading profit and near-record results at Rio Tinto illustrate how commodity market volatility is generating windfall trading revenues.",
+   "summary": "EU carbon EUAs were effectively flat on the day at $77.74 (+0.08%), with the market lacking a fresh directional catalyst despite TTF's sharp 4.65% single-day jump. The power complex faces a converging set of structural pressures: scorching heat waves are driving a coal demand and price surge in China, amplifying global thermal fuel competition ahead of a Northern Hemisphere winter. A separate report noted cooling-related emissions are on track to triple by 2050 as heat waves intensify, pointing to a secular increase in power demand. The Trump administration's selection of five Republican-led states for nuclear fuel-cycle hubs could signal incremental longer-term low-carbon generation capacity, though near-term impact is negligible. Overall, the power and carbon data provided today is thin; EUAs are trading in a narrow range while the dominant theme remains gas-price pass-through risk into European power costs.",
    "drivers": [
-    "EU EUA prices drift lower on the week despite elevated TTF gas costs; carbon market appears to be pricing demand destruction risk alongside supply tightness",
-    "World Nuclear Association warns of a $6 trillion investment shortfall to 2050 nuclear targets; U.S. DOE designates five states for nuclear fuel-cycle hubs",
-    "Ofgem launches consultation on grid commitment fees for data centers, signaling regulatory friction around AI-driven power demand growth in the UK"
+    "TTF +4.65% on the day raises European power generation cost directly, though EUAs showed minimal response at +0.08%",
+    "China coal prices and demand surging on heat-wave-driven electricity demand, adding to global thermal fuel tightness",
+    "Trump DOE designates five states for nuclear fuel-cycle hubs, a longer-dated signal for domestic low-carbon capacity with no near-term market impact"
    ],
-   "headlineCount": 8,
+   "headlineCount": 6,
    "sources": [
     "ANI News",
     "CNBC"
