@@ -1,47 +1,48 @@
 {
- "generated": "2026-07-30T15:09:37.179238+00:00",
+ "generated": "2026-07-30T21:20:43.724897+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude softened modestly on the day \u2014 WTI -0.24% to $84.26, Brent -0.64% to $90.16 \u2014 but the real story is in products: RBOB collapsed 7.59% and Heating Oil shed 5.06%, suggesting demand-side anxiety is overriding geopolitical risk premiums. The bid for crude remains structurally supported by Iran's declared oil blockade and two tankers aborting a Hormuz transit after an incident on the southern lane near Oman, yet prices slipped as other tankers continued passing Bab el-Mandeb. Goldman Sachs flagged diesel as the most acute squeeze, citing the lowest global refining activity since 2020. US senators advanced a bipartisan Russia-Iran sanctions bill including proposed 500% tariffs, adding longer-term supply uncertainty. Japan's Eneos purchasing a rare Canadian crude cargo signals accelerating Middle East diversification by Asian refiners. The month-on-month surge \u2014 Brent +23.6%, HO +25.1% \u2014 reflects how much geopolitical risk has already been priced in.",
+   "summary": "Crude sold off on the day \u2014 Brent -1.42% to $89.45, WTI -0.59% to $83.96 \u2014 but both benchmarks remain up more than 20% on the month, reflecting the geopolitical risk premium built in since Gulf export disruptions began. The sharpest intraday pain was in products: RBOB cratered 8.02% and Heating Oil fell 5.73%, paradoxically as Goldman Sachs flagged a diesel crunch tied to the lowest global refining activity since the 2020 pandemic. Russia's extension of diesel and gasoline export bans through January 2027 tightened the distillate picture further, while record U.S. refinery runs have so far failed to fill the gap. Iran's continued oil blockade, a drone strike on Egypt's Damietta port gas storage tanker, and a Senate-passed Russia-Iran sanctions bill featuring proposed 500% tariffs keep the geopolitical floor firmly under flat price.",
    "drivers": [
-    "Iran Hormuz blockade: two tankers turned back after incident on southern transit lane, sustaining supply disruption fears",
-    "Massive product selloff: RBOB -7.59% and Heating Oil -5.06% on the day, with Goldman flagging diesel crunch at historically low refining activity",
-    "US Senate advances bipartisan Russia-Iran sanctions bill with proposed 500% tariffs, raising long-term supply overhang for both producer nations"
+    "Russia extends diesel and gasoline export bans to January 31, 2027, deepening the global distillate crunch flagged by Goldman Sachs",
+    "Iran maintains Strait of Hormuz oil blockade; US imposes fresh sanctions on Iranian oil tankers; drone strikes Egyptian port infrastructure",
+    "Record U.S. refinery runs insufficient to offset global supply gaps; U.S. Senate passes sweeping Russia-Iran sanctions bill with 500% tariff proposals"
    ],
    "headlineCount": 12,
    "sources": [
-    "Atlantic Council",
     "EnergyNow.com",
     "Interfax-Ukraine",
     "Kyiv Post",
+    "Mathrubhumi English",
     "Radio Free Europe/Radio Liberty",
     "The Sunday Guardian"
    ]
   },
   "gas": {
-   "summary": "European TTF surged 4.65% on the day to \u20ac60.42/MWh \u2014 up an extraordinary 42% over the past month \u2014 as the Damietta port drone strike on an Egyptian gas storage tanker and low European storage levels intensified winter supply anxiety. QatarEnergy sent its first LNG cargo through Hormuz in three weeks, a partial relief signal, but Qatar has simultaneously been forced to buy as many as 33 US spot LNG cargoes this year to compensate for disruption at Ras Laffan caused by the Iran conflict. Shell posted $9.8 billion in adjusted Q2 earnings, more than double year-ago levels, directly attributing the result to surging energy prices. US Henry Hub was comparatively muted at +0.59% to $2.741/MMBtu, though down 16.3% on the month, underscoring the wide Atlantic gas price dislocation driven by Middle East conflict.",
+   "summary": "TTF surged 4.65% on the day to \u20ac60.42/MWh, extending a month-long rally of nearly 42% driven by Middle East supply disruptions. The standout headline is QatarEnergy purchasing as many as 33 U.S. LNG spot cargoes this year to fulfil Asian customer commitments after Iran-related conflict damaged Ras Laffan operations \u2014 a structural rerouting of Atlantic Basin LNG that tightens European and Asian spot markets simultaneously. A drone strike on a gas storage tanker at Egypt's Damietta port adds further near-term supply vulnerability. Henry Hub, by contrast, drifted only modestly higher (+0.81% to $2.747/MMBtu), remaining under pressure on the month (-16.12%), as U.S. production continues to absorb incremental LNG export demand without acute domestic tightness.",
    "drivers": [
-    "Drone strike on gas storage tanker at Egypt's Damietta port and low European storage levels fuel winter supply alarm, lifting TTF +4.65%",
-    "Qatar diverting up to 33 US spot LNG cargoes to Asian customers after Iran conflict disrupts Ras Laffan operations, tightening Atlantic LNG availability",
-    "Wide Henry Hub/TTF dislocation persists: US gas down 16.3% on the month vs TTF +42%, reflecting geopolitical risk concentrated in European/Asian supply chains"
+    "QatarEnergy buying up to 33 U.S. LNG spot cargoes after Iran war damage to Ras Laffan, tightening global LNG availability",
+    "Drone strike on gas storage tanker at Egypt's Damietta port raises additional regional supply disruption risk",
+    "TTF-Henry Hub spread widening sharply: TTF +42% on the month vs. Henry Hub -16%, reflecting divergent regional supply-demand balances"
    ],
-   "headlineCount": 6,
+   "headlineCount": 4,
    "sources": [
     "The Sunday Guardian"
    ]
   },
   "power": {
-   "summary": "EU carbon EUAs were effectively flat on the day at $77.74 (+0.08%), with the market lacking a fresh directional catalyst despite TTF's sharp 4.65% single-day jump. The power complex faces a converging set of structural pressures: scorching heat waves are driving a coal demand and price surge in China, amplifying global thermal fuel competition ahead of a Northern Hemisphere winter. A separate report noted cooling-related emissions are on track to triple by 2050 as heat waves intensify, pointing to a secular increase in power demand. The Trump administration's selection of five Republican-led states for nuclear fuel-cycle hubs could signal incremental longer-term low-carbon generation capacity, though near-term impact is negligible. Overall, the power and carbon data provided today is thin; EUAs are trading in a narrow range while the dominant theme remains gas-price pass-through risk into European power costs.",
+   "summary": "EU Carbon EUAs slipped 0.55% to $77.26, consolidating after a modest month-on-month gain of 2.52% \u2014 muted relative to the volatility seen in underlying fuel markets. TTF's 4.65% daily jump is the dominant input cost driver for gas-fired generation across Europe, with the broader Middle East conflict sustaining upside risk to fuel costs. Iran's ballistic missile strike on American bases in Jordan, reported today as the first such Tehran-initiated attack on U.S. targets, signals escalating conflict dynamics that could further disrupt energy infrastructure. On a structural note, China's coal share in electricity output fell below 50% for the first time on record in H1 2026, a landmark data point for long-run carbon demand trajectories, though it provides little near-term EUA price support.",
    "drivers": [
-    "TTF +4.65% on the day raises European power generation cost directly, though EUAs showed minimal response at +0.08%",
-    "China coal prices and demand surging on heat-wave-driven electricity demand, adding to global thermal fuel tightness",
-    "Trump DOE designates five states for nuclear fuel-cycle hubs, a longer-dated signal for domestic low-carbon capacity with no near-term market impact"
+    "TTF +4.65% on the day raises gas-fired generation costs across Europe, indirectly supporting carbon prices at the margin",
+    "Iran fires ballistic missiles at U.S. bases in Jordan in a reported first; escalating conflict sustains upside risk to European energy supply and EUA volatility",
+    "China's coal share in power generation falls below 50% for the first time in H1 2026, a structural milestone with long-term bearish implications for global carbon intensity"
    ],
    "headlineCount": 6,
    "sources": [
-    "ANI News",
-    "CNBC"
+    "CNBC",
+    "Kaltimtoday.co",
+    "aninews.in"
    ]
   }
  }
