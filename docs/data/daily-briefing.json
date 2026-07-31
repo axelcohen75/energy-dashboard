@@ -1,47 +1,47 @@
 {
- "generated": "2026-07-31T15:17:08.303908+00:00",
+ "generated": "2026-07-31T20:19:55.730302+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude is booking an extraordinary month \u2014 WTI +25% and Brent +26% \u2014 driven entirely by Middle East risk premium. Today's modest bounce (WTI +2.69%, Brent +1.13%) follows a mid-week sell-off, with WTI futures still roughly $6 lower on the week. The geopolitical backdrop remains acutely bullish on supply: Iran is maintaining its oil blockade, Trump is threatening further strikes, Iran claimed attacks on US military assets in Bahrain and Kuwait, and the Caspian Pipeline Consortium shut down again after Ukrainian drone strikes on tankers at Novorossiysk. ADNOC's $590 million purchase of five supertankers and Saudi vessels rerouting around Africa underline tightening freight capacity. RBOB gasoline's sharp -4.59% single-day drop is a notable outlier worth monitoring. US Senate passage of harsh Russia-Iran sanctions adds another potential supply-side constraint.",
+   "summary": "Crude caught a modest bid on the final session of July, with Brent settling near $90.12 (+1.22%) and WTI at $84.65 (+1.26%), though both benchmarks are still nursing steep weekly losses of roughly 7-8% amid volatile Hormuz-driven flows. The month-end tape masks a deeply uncertain backdrop: Iran's declared oil blockade continues, a drone struck a gas storage tanker at Egypt's Damietta Port, and Ukraine resumed strikes on Russian refining infrastructure, hitting Lukoil's Volgograd facility. On the policy front, the US Senate advanced a bipartisan sanctions bill that would give the executive power to impose up to 500% tariffs on Russian oil, with India flagged as a secondary-sanctions risk. RBOB gasoline fell sharply (-4.94%) and heating oil shed 2.27% on the day, suggesting refined-product demand signals are softening even as crude geopolitical risk premiums remain elevated.",
    "drivers": [
-    "Iran oil blockade continues; Trump escalation threats and Iranian strikes on US bases in Kuwait and Bahrain sustain Hormuz risk premium",
-    "Caspian Pipeline Consortium shut again after Black Sea drone attacks, compounding physical supply disruption",
-    "ADNOC supertanker purchases and Saudi rerouting around Africa signal severe shipping market tightness"
+    "Strait of Hormuz and Red Sea disruptions underpinning Brent near $90 despite heavy weekly selloff",
+    "Ukraine drone strike on Lukoil's Volgograd refinery adds Russian supply-side risk",
+    "US Senate sanctions bill targeting Russia and Iran, with secondary tariff threat to buyers such as India, tightening the compliance landscape"
    ],
    "headlineCount": 12,
    "sources": [
-    "CBS News",
+    "Crypto Briefing",
     "EnergyNow.com",
+    "Euromaidan Press",
     "Mathrubhumi English",
-    "The Hill",
     "The Sunday Guardian",
-    "UNITED24 Media"
+    "rediff.com"
    ]
   },
   "gas": {
-   "summary": "The Henry Hub and TTF are trading in opposite directions, reflecting a stark US-versus-Europe divergence. Henry Hub fell -1.16% today to $2.727/MMBtu and is down over 15% on the month, suggesting no domestic demand catalyst is cutting through. TTF, by contrast, rose +2.14% to \u20ac59.425/MWh, pulling back on the week (-6.53%) but still up nearly 39% on the month \u2014 a direct reflection of Middle East conflict risk to European supply chains. A drone struck a gas storage tanker at Egypt's Damietta port, marking the first confirmed hit on Egypt's Mediterranean gas infrastructure during the conflict, a material escalation for European LNG supply security. Shell's $720 million sale of its Cyprus gas stake to MOL is a notable corporate development. Japan's largest LNG buyer reports adequate supplies through October, relieving near-term Asian demand pressure.",
+   "summary": "The gas picture is bifurcated today. Henry Hub eked out a marginal gain (+0.36% to $2.768/MMBtu) but remains under significant pressure on a weekly (-3.59%) and monthly (-14.04%) basis, reflecting soft US domestic fundamentals. European TTF told a very different story, rising 1.32% to \u20ac58.95/MWh and posting an extraordinary +37.80% over the past month, a divergence plainly tied to Middle East conflict risk and LNG route disruptions highlighted by the drone strike on Egypt's Damietta gas storage tanker. On the corporate side, Shell agreed to divest its BG Cyprus subsidiary to Hungary's MOL Group for $720 million, signalling continued portfolio rationalisation by majors. Data flow on the US drilling side was thin; Baker Hughes reported a weekly rig count increase, but the headline provided no granular gas-specific detail.",
    "drivers": [
-    "Drone strike on gas storage tanker at Egypt's Damietta port marks first hit on Mediterranean gas infrastructure, lifting European supply risk",
-    "TTF surges 39% on the month as Middle East conflict disrupts LNG transit routes critical to European supply",
-    "Henry Hub slides 15% on the month with no offsetting domestic demand driver evident in today's data"
+    "TTF surging +37.80% month-on-month on Middle East LNG supply-route disruption risk",
+    "Drone strike on Damietta gas storage tanker in Egypt raises direct infrastructure vulnerability concerns for European supply chains",
+    "Henry Hub remains depressed (-14% month), pointing to persistent US domestic oversupply decoupled from geopolitical premium in European markets"
    ],
-   "headlineCount": 5,
+   "headlineCount": 3,
    "sources": [
     "The Sunday Guardian"
    ]
   },
   "power": {
-   "summary": "The power and carbon complex is relatively calm on the session, with EU EUAs edging up just +0.36% to $77.53 and holding a modest +3.18% monthly gain. TTF's +2.14% daily rise is the primary fuel-cost signal pressing on European power economics, as gas remains the marginal generation source across much of the continent. The broader geopolitical backdrop \u2014 Iran striking US bases in Bahrain and Kuwait, Hormuz uncertainty, and advancing Russia-Iran sanctions in the US Senate \u2014 keeps energy security concerns elevated but has not translated into a sharp carbon price move today. Separately, a report that global coal consumption hit a new record in 2025 even as coal-fired power declines underlines a structural tension: industrial coal use is absorbing volumes that power-sector phase-outs are releasing. Japan's LNG buffer through October limits near-term Asian demand pressure on the global gas-to-power market.",
+   "summary": "EU carbon EUAs dipped marginally (-0.32% to $77.01/EUA) and are modestly lower on the week (-2.56%), though the monthly trend remains slightly positive (+2.49%). The macro backdrop for power markets is dominated by two structural data points: global coal consumption hit a fresh record in 2025 even as coal-fired power generation declined, underlining the complexity of the energy transition. Separately, Chinese authorities confirmed that solar installed capacity is on track to surpass coal capacity this quarter\u2014a landmark shift. On the supply-side risk front, the reported attack on Saudi Aramco's Abqaiq processing complex and Iran's strikes on US military bases in Bahrain and Kuwait keep the tail-risk dial turned high, with potential knock-on effects for gas-to-power economics via TTF. The Shell-MOL Cyprus gas deal also carries downstream implications for European power fuel mix.",
    "drivers": [
-    "TTF +2.14% on the day tightens European power generation margins, with gas still the marginal fuel in key markets",
-    "Global coal consumption hit a record in 2025 despite declining coal power generation, complicating carbon-trajectory narratives",
-    "EUA carbon prices subdued (+0.36%) despite elevated geopolitical risk; Middle East conflict has not yet triggered a material demand-destruction or abatement signal"
+    "China's solar capacity set to overtake coal this quarter, a structural milestone for global power sector carbon intensity",
+    "Global coal consumption hit a 2025 record even as coal power declines, complicating carbon market trajectory",
+    "Attack on Abqaiq processing complex and Iran strikes on Gulf US bases sustain geopolitical premium in energy feedstock costs relevant to gas-fired power generation"
    ],
-   "headlineCount": 7,
+   "headlineCount": 8,
    "sources": [
     "ANI News",
-    "CNBC"
+    "Euromaidan Press"
    ]
   }
  }
