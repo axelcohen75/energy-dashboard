@@ -1,47 +1,47 @@
 {
- "generated": "2026-07-31T20:19:55.730302+00:00",
+ "generated": "2026-08-03T15:42:37.869446+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude caught a modest bid on the final session of July, with Brent settling near $90.12 (+1.22%) and WTI at $84.65 (+1.26%), though both benchmarks are still nursing steep weekly losses of roughly 7-8% amid volatile Hormuz-driven flows. The month-end tape masks a deeply uncertain backdrop: Iran's declared oil blockade continues, a drone struck a gas storage tanker at Egypt's Damietta Port, and Ukraine resumed strikes on Russian refining infrastructure, hitting Lukoil's Volgograd facility. On the policy front, the US Senate advanced a bipartisan sanctions bill that would give the executive power to impose up to 500% tariffs on Russian oil, with India flagged as a secondary-sanctions risk. RBOB gasoline fell sharply (-4.94%) and heating oil shed 2.27% on the day, suggesting refined-product demand signals are softening even as crude geopolitical risk premiums remain elevated.",
+   "summary": "Crude staged a sharp reversal Monday, with WTI shedding 5.63% to $80.00/bbl and Brent dropping 6.51% to $84.29, unwinding a portion of the prior month's near 17% rally. The catalyst was Trump's decision to call off a planned attack on Iranian energy sites, deflating the geopolitical risk premium that had built on Iran's Strait of Hormuz blockade of Gulf neighbors' exports. Compounding the bearish impulse, Kuwait's July output surged to 1.971 mb/d as OPEC+ completed its cut reversal \u2014 options markets now price a 77% probability of a further OPEC production decrease at the next meeting, suggesting the market doubts the group can defend price levels. Supply-route stress persists nonetheless: dark tanker transits at Bab el-Mandeb are rising as Houthi threats on Saudi Red Sea shipments continue, and Ukraine struck three Russian refineries over the weekend.",
    "drivers": [
-    "Strait of Hormuz and Red Sea disruptions underpinning Brent near $90 despite heavy weekly selloff",
-    "Ukraine drone strike on Lukoil's Volgograd refinery adds Russian supply-side risk",
-    "US Senate sanctions bill targeting Russia and Iran, with secondary tariff threat to buyers such as India, tightening the compliance landscape"
+    "Trump cancels planned strike on Iranian energy infrastructure, collapsing the Hormuz risk premium and triggering broad crude sell-off",
+    "Kuwait output hits 1.971 mb/d in July as OPEC+ fully unwinds prior production cuts, adding supply-side pressure",
+    "Red Sea / Bab el-Mandeb disruption and Ukraine strikes on Russian refineries limit the downside, but insufficient to offset Iran headline relief"
    ],
    "headlineCount": 12,
    "sources": [
-    "Crypto Briefing",
+    "Dailyhunt",
     "EnergyNow.com",
-    "Euromaidan Press",
-    "Mathrubhumi English",
-    "The Sunday Guardian",
-    "rediff.com"
+    "International Business Times UK",
+    "Reuters",
+    "The Guardian",
+    "The Times of India"
    ]
   },
   "gas": {
-   "summary": "The gas picture is bifurcated today. Henry Hub eked out a marginal gain (+0.36% to $2.768/MMBtu) but remains under significant pressure on a weekly (-3.59%) and monthly (-14.04%) basis, reflecting soft US domestic fundamentals. European TTF told a very different story, rising 1.32% to \u20ac58.95/MWh and posting an extraordinary +37.80% over the past month, a divergence plainly tied to Middle East conflict risk and LNG route disruptions highlighted by the drone strike on Egypt's Damietta gas storage tanker. On the corporate side, Shell agreed to divest its BG Cyprus subsidiary to Hungary's MOL Group for $720 million, signalling continued portfolio rationalisation by majors. Data flow on the US drilling side was thin; Baker Hughes reported a weekly rig count increase, but the headline provided no granular gas-specific detail.",
+   "summary": "European gas diverged sharply from the month-long trend today: TTF fell 2.06% to \u20ac57.855/MWh after Trump signalled he had called off an attack on Iranian energy sites, reducing the tail risk of a broader Middle East supply shock. That same Iran relief trade drove the move. A Greek-owned LNG carrier was involved in an incident in the Strait of Hormuz at end of last week but cleared safely, a reminder that Hormuz transit risk remains live even as headline tensions ease. Henry Hub was broadly flat, edging up just 0.66% to $2.765/MMBtu with no domestic catalysts in today's headlines; its one-month decline of 13.49% reflects a distinctly looser US supply-demand picture than Europe's. Australian regulators proposed tighter pollution rules for the Santos- and Inpex-led Darwin LNG plants, a longer-term cost consideration.",
    "drivers": [
-    "TTF surging +37.80% month-on-month on Middle East LNG supply-route disruption risk",
-    "Drone strike on Damietta gas storage tanker in Egypt raises direct infrastructure vulnerability concerns for European supply chains",
-    "Henry Hub remains depressed (-14% month), pointing to persistent US domestic oversupply decoupled from geopolitical premium in European markets"
+    "Trump's Iran de-escalation signal triggers sharp TTF sell-off, reversing part of the month-long geopolitical risk build-up",
+    "Greek LNG tanker incident in the Strait of Hormuz highlights residual Hormuz transit risk despite today's price relief",
+    "Henry Hub near-flat on no fresh domestic catalysts; US and European gas markets continue to diverge on fundamentals"
    ],
    "headlineCount": 3,
-   "sources": [
-    "The Sunday Guardian"
-   ]
+   "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs dipped marginally (-0.32% to $77.01/EUA) and are modestly lower on the week (-2.56%), though the monthly trend remains slightly positive (+2.49%). The macro backdrop for power markets is dominated by two structural data points: global coal consumption hit a fresh record in 2025 even as coal-fired power generation declined, underlining the complexity of the energy transition. Separately, Chinese authorities confirmed that solar installed capacity is on track to surpass coal capacity this quarter\u2014a landmark shift. On the supply-side risk front, the reported attack on Saudi Aramco's Abqaiq processing complex and Iran's strikes on US military bases in Bahrain and Kuwait keep the tail-risk dial turned high, with potential knock-on effects for gas-to-power economics via TTF. The Shell-MOL Cyprus gas deal also carries downstream implications for European power fuel mix.",
+   "summary": "EU Carbon EUAs edged down 0.82% to $76.38/EUA, a relatively muted move consistent with the broader risk-off tone but cushioned by the month's near-flat carbon price trajectory. TTF's 2% decline today matters for power pricing given gas-fired generation's role in marginal price setting across European grids. A drone attack on the UAE nuclear power plant was reported, adding a security dimension to non-fossil baseload, though the headline's supply impact on European carbon markets is indirect. Shell agreed to sell its European onshore renewables portfolio to TotalEnergies, a notable asset reshuffle among majors. India announced potential transmission charge waivers to rescue stalled solar and wind projects, a supportive policy signal for renewables build-out. Trump's mixed messaging on Iran \u2014 simultaneously winding down conflict and adding troops \u2014 keeps the geopolitical backdrop uncertain for energy infrastructure broadly.",
    "drivers": [
-    "China's solar capacity set to overtake coal this quarter, a structural milestone for global power sector carbon intensity",
-    "Global coal consumption hit a 2025 record even as coal power declines, complicating carbon market trajectory",
-    "Attack on Abqaiq processing complex and Iran strikes on Gulf US bases sustain geopolitical premium in energy feedstock costs relevant to gas-fired power generation"
+    "TTF decline weighs on European power marginal costs and reduces near-term EUA demand pressure from gas-to-power switching",
+    "Shell sells European onshore renewables portfolio to TotalEnergies, signalling continued portfolio reshaping among oil majors",
+    "Drone attack on UAE nuclear plant and ongoing Iran uncertainty maintain geopolitical risk for power infrastructure despite today's partial de-escalation"
    ],
-   "headlineCount": 8,
+   "headlineCount": 7,
    "sources": [
-    "ANI News",
-    "Euromaidan Press"
+    "EnergyNow.com",
+    "Kaltimtoday.co",
+    "NewsCord",
+    "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)"
    ]
   }
  }
