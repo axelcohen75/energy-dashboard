@@ -1,49 +1,45 @@
 {
- "generated": "2026-08-03T20:45:08.679723+00:00",
+ "generated": "2026-08-04T15:24:10.287531+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude prices were hammered on Monday, with Brent shedding 7.45% to $83.41/bbl and WTI off 5.67% to $79.87/bbl, as President Trump announced he was calling off a planned strike on Iranian energy sites, pulling a significant geopolitical risk premium out of the market. RBOB gasoline led the complex lower at -8.21%, with Trump publicly pressuring U.S. oil companies \u2014 naming Chevron's CEO specifically \u2014 to cut pump prices in the wake of the futures sell-off. The move reverses a sharp month-long rally of over 16% in both benchmarks. Geopolitical noise remains elevated: Iran has warned its oil blockade continues until attacks end, Ukraine struck three Russian refineries and sank a Rosatom vessel deep inside Russian territory, and dark-tanker transits at Bab el-Mandeb are surging as Houthi threats to Saudi crude shipments persist.",
+   "summary": "Crude suffered a sharp sell-off on 4 August, with WTI shedding 4.4% to $76.81 and Brent falling 3.8% to $80.56, even as the geopolitical backdrop remains highly charged. The apparent contradiction lies in supply-side relief signals: the US reportedly eased Russia oil sanctions on a temporary basis to tame the recent price surge, and Iran-Oman talks on the Strait of Hormuz are said to be nearing completion, raising hopes of restored Gulf export flows. Those developments appear to be outweighing bullish headlines \u2014 Ukrainian drone strikes hitting multiple Russian refineries and a strategic airbase, and Iran's stated intent to maintain its oil blockade until attacks cease. RBOB gasoline's extraordinary 12% single-day plunge amplifies demand-side concern. Options markets assign a 77% probability to an OPEC cut at the next meeting, signalling that the producer group may view current prices as uncomfortably low.",
    "drivers": [
-    "Trump's decision to suspend planned strikes on Iranian energy sites triggered a sharp unwind of the geopolitical risk premium across the crude complex",
-    "Ukraine's intensified drone campaign has driven Russian crude processing to a 24-year low in July, striking refineries, tankers, and pipelines",
-    "Iran's oil blockade remains in force and Houthi threats at Bab el-Mandeb continue, keeping supply-route risk elevated despite today's price collapse"
+    "US temporary easing of Russia oil sanctions and progress on Iran-Oman Hormuz talks inject near-term supply-relief sentiment, pressuring prices",
+    "RBOB gasoline collapsed 12% on the day and 22% on the week, pointing to significant demand-side weakness or a crack-spread unwind",
+    "Ukrainian strikes on Russian refineries and Iran's continued oil blockade threat provide an unresolved geopolitical risk floor, limiting the downside conviction"
    ],
    "headlineCount": 12,
    "sources": [
+    "EnergyNow",
     "EnergyNow.com",
     "International Business Times UK",
-    "Tech Times",
-    "The Kyiv Independent",
-    "africa.businessinsider.com",
-    "theguardian.com"
+    "Kalinga TV",
+    "Kaltimtoday.co",
+    "LatestLY"
    ]
   },
   "gas": {
-   "summary": "European and U.S. gas markets diverged sharply today. TTF fell 2.15% to \u20ac57.8/MWh as Trump's Iran de-escalation \u2014 specifically calling off strikes on Iranian energy infrastructure \u2014 removed a near-term supply shock premium that had built over the past month, during which TTF had surged 31.32%. Henry Hub edged up a modest 0.76% to $2.768/MMBtu, remaining broadly flat on the week and down 13.39% over the month, suggesting U.S. fundamentals are driven by domestic factors rather than geopolitics. On the supply side, Australia's Northern Territory regulator is pushing for stricter pollution reporting rules at Santos- and Inpex-operated LNG plants in Darwin, a development that could add compliance costs to two major LNG export facilities over the medium term.",
+   "summary": "Henry Hub eased 3.9% on the day to $2.671/MMBtu, though it remains marginally positive on the week, suggesting today's move may be profit-taking after recent stability rather than a fundamental shift. The month-on-month decline of nearly 18% underscores persistent domestic oversupply pressure. European TTF shed 2.4% to \u20ac56.14/MWh but remains up 27% on the month, reflecting a very different supply tightness dynamic in Europe \u2014 likely linked to the broader geopolitical disruptions visible in the oil sector. No sector-specific gas headlines were available in today's feed; the price moves are noted but cannot be attributed to specific catalysts beyond the macro context.",
    "drivers": [
-    "Trump's suspension of planned strikes on Iranian energy sites drove TTF sharply lower as the Middle East supply-disruption premium unwound",
-    "Henry Hub was little changed on the day and week, reflecting U.S. market insulation from geopolitical risk; the month-on-month decline of 13.39% points to softer domestic fundamentals",
-    "Australian regulators proposing tougher emissions rules for Darwin LNG plants (Santos, Inpex) adds a medium-term compliance risk to key Asia-Pacific LNG supply"
+    "Henry Hub down 3.9% on the day, extending a steep 18% monthly decline consistent with ongoing US supply surplus",
+    "TTF holds a 27% monthly gain despite today's softness, reflecting Europe's tighter supply environment tied to geopolitical disruption",
+    "No gas-specific news flow available today; price moves interpreted in macro context only"
    ],
-   "headlineCount": 6,
-   "sources": [
-    "africa.businessinsider.com"
-   ]
+   "headlineCount": 0,
+   "sources": []
   },
   "power": {
-   "summary": "The Power & Carbon complex was relatively contained today. EU Carbon (EUA) dipped a marginal 0.25% to $76.82/EUA, broadly stable on both a daily and monthly basis, with no carbon-specific headline catalysts. TTF's 2.15% decline dragged on gas-fired generation economics but the EUA market appeared largely unresponsive. The dominant headline for the sector was Shell's agreement to sell its European onshore renewables portfolio to TotalEnergies, a strategic retreat by Shell toward its core hydrocarbon business. Separately, a reported drone attack on a UAE nuclear power plant briefly pushed oil to a two-week high earlier in the session before Trump's Iran pivot reversed the move. Strait of Hormuz talks between Iran and Oman are reportedly nearing completion, which could ease regional power and gas supply risks if successful.",
+   "summary": "EU carbon allowances (EUA) bucked the broader energy sell-off, edging up 0.8% to $77.61, though the weekly and monthly moves remain modest at -0.5% and +1.7% respectively, suggesting rangebound price discovery. The power and carbon sector had limited dedicated headline flow today; the two relevant items concern Iran policy signals \u2014 Trump's mixed messages on winding down the Iran conflict and Iran-Oman Strait of Hormuz talks nearing completion. Both are primarily oil-market narratives with indirect implications for European energy costs and carbon pricing. TTF's continued elevation (up 27% on the month) sustains gas-to-coal switching incentives and supports carbon demand at the margin, which may explain EUA's mild outperformance relative to other energy assets today.",
    "drivers": [
-    "Shell's sale of its European onshore renewables portfolio to TotalEnergies signals a continued strategic pivot away from low-carbon power assets by the UK supermajor",
-    "A drone attack on a UAE nuclear power plant added a brief geopolitical spike to energy markets before Trump's Iran reversal dominated sentiment",
-    "Iran-Oman talks on the Strait of Hormuz reportedly nearing completion, with potential to reduce tail-risk for European gas and power supply if a deal is reached"
+    "EUA edged up 0.8%, modestly outperforming a broadly weaker energy complex, likely supported by elevated TTF keeping gas-fired generation competitive and carbon demand firm",
+    "TTF's 27% monthly surge sustains the structural case for carbon demand, even as today's 2.4% daily dip provides marginal relief to power generators",
+    "Dedicated power and carbon headline flow is thin today; Iran-Hormuz developments are the primary macro variable to monitor for European energy cost pass-through"
    ],
-   "headlineCount": 7,
+   "headlineCount": 2,
    "sources": [
-    "EnergyNow.com",
     "Kaltimtoday.co",
-    "NewsCord",
-    "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)"
+    "NewsCord"
    ]
   }
  }
