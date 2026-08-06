@@ -1,48 +1,48 @@
 {
- "generated": "2026-08-05T21:46:16.017598+00:00",
+ "generated": "2026-08-06T15:12:42.930512+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets are sending mixed signals heading into the close. WTI slipped 0.91% to $75.08 while Brent held near flat at $79.40, masking a brutal week that has shaved more than 11% off both benchmarks. The geopolitical tape remains intensely active: Houthis claimed a ballistic missile strike on a Saudi oil tanker in the Red Sea, Ukraine struck a Russian airbase and refinery, and Iran maintained its oil blockade as Trump threatened further escalation. Against that backdrop, Aramco posted record Q2 profits tied to the Iran war supply squeeze, though analysts flag a growing underlying cash flow concern. Offsetting bearish pressure, a potential interim Hormuz deal reportedly awaits Khamenei's signature, which may explain why any upside is being capped. Indian refiners are pivoting to Omani and West African grades as Mideast term supply tightens. US crude inventories rose 2.5 million barrels last week, but product stocks continued to draw.",
+   "summary": "Crude benchmarks posted a solid one-day recovery \u2014 WTI +1.75% to $76.56 and Brent +2.06% to $81.14 \u2014 but both remain sharply lower on the week (-8.4% and -8.9% respectively), underscoring the volatile backdrop. Gulf shipping ground to a near-halt after Houthis claimed to have struck a Saudi oil tanker, while three tankers were separately reported damaged amid the broader US-Iran conflict. Ukraine's long-range drone strike on one of Russia's largest refineries added a fresh supply-disruption bid. On the demand side, Sinopec is pivoting to Russian Far East crude for Q3, and Indian state refiners are aggressively buying West African barrels as Middle East supply uncertainty bites. A potential Iran-Oman deal on joint Hormuz management offered a partial offset to risk premium. RBOB gasoline was a glaring outlier, cratering 6.1% on the day and nearly 19% on the week \u2014 the data provides no direct headline explanation for that move.",
    "drivers": [
-    "Houthi ballistic missile strike on Saudi tanker in Red Sea escalates physical supply-route risk",
-    "Iran blockade/Hormuz deal uncertainty: draft agreement reportedly awaiting Khamenei approval, capping both downside and upside",
-    "US crude stocks built 2.5 mb but product inventories fell, with Indian refiners shifting to West African and Omani grades amid Mideast disruption"
+    "Gulf tanker disruptions and Houthi strike claim on Saudi oil tanker reinforce near-term supply-risk premium in crude",
+    "Ukraine drone attack on a major Russian refinery adds further upstream and refining supply concern",
+    "RBOB gasoline collapsed 6.1% intraday and 18.8% on the week \u2014 no supporting headline provided; warrants close monitoring"
    ],
    "headlineCount": 12,
    "sources": [
-    "Dainik Jagran MP CG",
+    "CNBC",
     "EnergyNow.com",
-    "International Business Times UK",
+    "Euromaidan Press",
+    "RBC-Ukraine",
     "The Kyiv Independent",
-    "discoveryalert.com.au",
-    "inkl"
+    "discoveryalert.com.au"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets showed a sharp divergence today. Henry Hub eased another 0.45% to $2.67/MMBtu, extending a painful 18% monthly slide that points to soft domestic fundamentals. TTF in Europe dropped a sharper 4.43% to \u20ac53.445/MWh on the day, though TTF remains up nearly 15% over the past month, reflecting lingering Hormuz-linked LNG supply anxiety that is now partially unwinding on Hormuz deal optimism. Headlines were sparse on gas-specific fundamentals; the dominant story remains geopolitical. The US is reportedly targeting a Wednesday announcement on an interim Hormuz deal, and Iraq is exploring a Syria pipeline bypass that could redirect Gulf flows within three years. India is also weighing a gas levy to fund a $42 billion fuel reserve plan, a longer-term demand signal.",
+   "summary": "The Henry Hub/TTF divergence widened sharply today: TTF surged 5.80% to 55.445 \u20ac/MWh while Henry Hub fell 2.46% to $2.621/MMBtu, now down 18.4% on the month. The TTF spike is directly tied to a headline that European gas storage has fallen to its lowest level since 2011, compounding a Middle East conflict that has disrupted LNG flows and thrown the LNG growth story into doubt. Belgium's July LNG imports were entirely sourced from Russia as alternative cargoes dried up \u2014 a sign of acute market stress. On a longer-horizon constructive note, Nigeria is targeting $30\u201350 billion across 22 offshore projects, Angola confirmed new reserves via the Katambi-2 appraisal well, and Argentina's Vaca Muerta shale output is setting production records, but none of these developments provide near-term relief for European winter supply.",
    "drivers": [
-    "Henry Hub continues its steep monthly decline (-18.22%), reflecting weak US domestic fundamentals",
-    "TTF sold off sharply (-4.43% on the day) as Hormuz deal optimism reduces European LNG supply-risk premium",
-    "India's proposed gas levy for a $42 billion strategic reserve signals medium-term demand growth; Iraq-Syria pipeline bypass emerges as a multi-year Hormuz alternative"
+    "European gas storage at lowest since 2011 drives TTF +5.8% as winter supply anxiety mounts",
+    "Middle East conflict severely curtails LNG availability into Europe, with Belgium forced to source 100% of July LNG from Russia",
+    "Henry Hub continues to slide (-2.5% today, -18.4% month) on ample North American supply, widening the transatlantic price dislocation"
    ],
-   "headlineCount": 3,
+   "headlineCount": 7,
    "sources": [
-    "Oil & Gas Middle East"
+    "Euromaidan Press"
    ]
   },
   "power": {
-   "summary": "Power and carbon markets were relatively quiet on price action today. EU EUAs edged down just 0.12% to $77.02, essentially flat on the week (-0.85%) and marginally positive on the month (+1.36%), offering little directional conviction. The dominant news touching the power sector is geopolitical: a drone attack on a UAE nuclear power plant (reported yesterday) briefly lifted oil to a two-week high, underlining vulnerability of regional power infrastructure. Separately, a Hormuz draft agreement reportedly awaits Khamenei approval, and if confirmed could ease the LNG and fuel-oil supply pressure that has been indirectly supporting carbon prices by incentivising coal burn in Europe. A Senate sanctions push targeting Russian energy financing and China exposure adds another layer of medium-term supply uncertainty. News flow specific to European power and carbon fundamentals was thin today.",
+   "summary": "EU carbon EUAs edged up 0.75% to $77.60, building modestly on a month-to-date gain of 3.76%, supported by the same TTF spike (+5.8%) that is lifting European power generation costs. Europe's heatwave is delivering a double hit: refineries are losing cooling efficiency and river levels are forcing cuts to nuclear generation output, tightening the power balance at precisely the moment storage is most depleted. A drone strike on a UAE nuclear power plant was also flagged this week, adding a geopolitical dimension to nuclear supply risk. On the demand side, big tech's accelerating pivot to fuel cells for AI data centers represents an emerging structural shift in power procurement. China, meanwhile, supplied all net global nuclear power growth in 2025, underlining diverging capacity trajectories between East and West.",
    "drivers": [
-    "Drone attack on UAE nuclear plant highlights regional power-infrastructure vulnerability and briefly supported risk premium across energy complexes",
-    "Hormuz draft deal awaiting Khamenei approval: ratification could ease LNG tightness and reduce indirect support for EUA prices via lower coal-switching incentives",
-    "Senate push for new sanctions on Russian energy financing and China exposure introduces additional medium-term uncertainty for European gas and carbon markets"
+    "European heatwave impairing both refinery operations and nuclear output, tightening regional power supply and supporting EUA prices",
+    "TTF at 55.45 \u20ac/MWh (+5.8% today) raises gas-fired generation costs, adding upward pressure on wholesale power and carbon prices",
+    "Drone attack on UAE nuclear facility and lowest-since-2011 EU gas storage levels compound winter energy security concerns across the power complex"
    ],
-   "headlineCount": 6,
+   "headlineCount": 8,
    "sources": [
     "EnergyNow.com",
-    "Oil & Gas Middle East",
-    "Traders Union"
+    "Jerusalem Center for Security and Foreign Affairs",
+    "streamlinefeed.co.ke"
    ]
   }
  }
