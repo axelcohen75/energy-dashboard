@@ -1,44 +1,42 @@
 {
- "generated": "2026-08-07T00:40:27.340365+00:00",
+ "generated": "2026-08-07T14:11:20.190696+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "WTI surged 4.01% to $78.26/bbl today, driven by a confluence of supply-side shocks, even as the week-on-week picture remains -6.40% amid lingering demand concerns. Ukraine's long-range drone strike on one of Russia's largest refineries tightened refined-product availability, supporting heating oil (+3.52% to $3.93/gal). Three tankers damaged in the Gulf amid escalating US-Iran conflict added fresh risk premium to crude. Offsetting factors capped the rally: Russia's July production climbed above 9 million bpd, the US temporarily eased Russia oil sanctions to suppress the price surge, and Aramco deepened Asian crude discounts ahead of a potential Hormuz transit deal. RBOB gasoline bucked the trend sharply, collapsing 4.47% to $2.7118/gal. CME options price a 77% probability of an OPEC cut at the next meeting, reflecting persistent demand anxiety beneath the geopolitical noise.",
+   "summary": "Crude ended the week nursing steep losses despite a marginal daily dip: WTI settled around $77.28 (-0.03% on the day, -8.74% on the week) and Brent at $82.32 (-0.22% d/d, -8.67% w/w). The dominant driver was the US-Iran agreement to reopen the Strait of Hormuz, which unwound the geopolitical risk premium that had built up after three tankers were damaged in the Gulf earlier this week. RBOB gasoline was the session's standout mover, collapsing 7.69% on the day and nearly 16% on the week, amplifying the bearish signal. Bullish offsets were limited but present: Ukraine struck one of Russia's largest oil refineries in a long-range drone campaign, China's July crude imports rebounded 22% month-on-month to 8.45 mb/d, and a Saudi-Pakistan-Turkey defense pact added background geopolitical noise. CME options markets price a 77% probability of an OPEC production increase at the next meeting.",
    "drivers": [
-    "Ukrainian drone strike on major Russian refinery tightened refined-product supply and supported crude and heating oil",
-    "Three tankers damaged in the Gulf as US-Iran conflict escalates, injecting fresh geopolitical risk premium",
-    "Partial offset from record-high Russian crude output above 9 million bpd and a temporary US easing of Russia oil sanctions"
+    "US-Iran Strait of Hormuz agreement triggered sharp sell-off, erasing the conflict risk premium built over the prior week",
+    "China crude imports rebounded 22% m/m in July to 8.45 mb/d, providing a partial demand-side cushion",
+    "Ukrainian long-range drone strikes on Russian refineries and shadow fleet vessels introduced supply-disruption risk but failed to arrest the broader bearish trend"
    ],
    "headlineCount": 12,
    "sources": [
     "CNBC",
-    "EnergyNow",
     "EnergyNow.com",
-    "Euromaidan Press",
+    "Gazeta Express",
     "RBC-Ukraine",
-    "Radio Free Europe/Radio Liberty"
+    "Sunday Tribune",
+    "The Sunday Guardian"
    ]
   },
   "gas": {
-   "summary": "The US-European gas divergence widened sharply today. Henry Hub fell 2.16% to $2.63/MMBtu, extending a brutal one-month slide of 18.12%, consistent with ample domestic supply signals and limited immediate cold-weather demand. TTF, by contrast, surged 6.19% to \u20ac55.65/MWh, reflecting European supply anxiety: Belgium's July LNG imports reportedly consisted entirely of Russian cargoes after the Iran war collapsed alternative flows, highlighting the continent's precarious position. Southeast Asia's gas shortages are diverting flexible LNG cargoes away from European spot markets, adding further upward pressure on TTF. Mexico's new fracking ban in a key shale basin removes a potential future supply source for North American and export markets. News flow for Henry Hub-specific catalysts is thin today beyond the broader supply-demand backdrop.",
+   "summary": "Henry Hub nudged higher by 1.63% on the day to $2.683/MMBtu, but remains down 2.33% on the week and over 10% on the month, reflecting soft fundamentals. TTF fell 1.45% to \u20ac54.96/MWh, extending a near-7% weekly decline even as the monthly trend remains up roughly 10%. Vessel traffic through the Strait of Hormuz dropped sharply during the week amid US-Iran uncertainty, a development that carries LNG transit implications, though the subsequent reopening agreement should ease those concerns. Structurally, Southeast Asia's gas-fired power buildout is reportedly stalling due to gas shortages and high prices, pointing to persistent regional demand-supply mismatches. The headline flow for this sector is thinner than oil today; no major storage or production data crossed the wire.",
    "drivers": [
-    "TTF jumped 6.19% as European LNG supply chains remain severely disrupted, with Belgian July receipts entirely from Russia following the Iran war",
-    "Southeast Asian gas shortages tightening global LNG availability and reducing cargo flexibility for European buyers",
-    "Henry Hub continued its month-long decline (-18.12%), reflecting domestic US supply resilience absent near-term demand catalysts"
+    "Strait of Hormuz shipping disruption during the week weighed on LNG transit sentiment, with the reopening agreement now providing partial relief",
+    "Southeast Asia gas shortages and high prices are undermining planned gas-fired power capacity additions, signaling structural regional tightness",
+    "Henry Hub remains under sustained monthly pressure (-10.92%), suggesting weak near-term US domestic demand or ample supply despite today's modest bounce"
    ],
-   "headlineCount": 5,
-   "sources": [
-    "Euromaidan Press"
-   ]
+   "headlineCount": 3,
+   "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs held near flat at $77.02/EUA (-0.12%), broadly stable on the week and month, masking significant stress in European power markets. Electricity prices in Europe spiked to \u20ac500/MWh as an intense summer drought curtailed hydropower and simultaneously drove air-conditioning demand sharply higher. The surging TTF (+6.19% today) raises gas-fired generation costs, compounding the squeeze. A drone attack on a UAE nuclear power plant earlier this week added a new dimension of infrastructure risk to the region. Longer-term structural signals remain constructive for clean energy: China added more nuclear capacity over the past decade than the rest of the world combined, and CNOOC launched the world's first 16MW floating wind turbine. Southeast Asia's gas-fired power buildout is stalling on supply and price pressures, underscoring the difficulty of transitioning away from coal.",
+   "summary": "EU Carbon (EUA) bucked the energy complex's broader weakness, gaining 1.02% on the day to $78.43/EUA and posting a solid +1.84% on the week and nearly +5% on the month. The constructive carbon tone aligns with a headline out of Europe reporting power prices spiking to \u20ac500/MWh as intense summer drought and heatwaves suppress hydropower output and drive air-conditioning load. A drone attack on a UAE nuclear power plant added to supply-security concerns earlier this week, though details remain limited in the feed. Southeast Asia's faltering gas-fired power buildout, driven by fuel shortages and elevated prices, underscores a wider global theme of electricity system stress. Ukraine's depleted air-defense capacity and ongoing Russian missile campaigns remain a background risk to European grid infrastructure.",
    "drivers": [
-    "European power prices spiked to \u20ac500/MWh on drought-driven hydro shortfalls and surging cooling demand, amplified by higher TTF gas costs",
-    "Drone attack on UAE nuclear power plant and ongoing Gulf conflict heighten regional energy infrastructure risk",
-    "China's record nuclear buildout and CNOOC's 16MW floating wind turbine debut highlight accelerating clean capacity growth outside Europe"
+    "European electricity prices spiked to \u20ac500/MWh as drought curtails hydro generation and summer heat drives record air-conditioning demand, supporting carbon prices",
+    "Drone attack on a UAE nuclear power plant earlier this week highlighted acute energy-infrastructure vulnerability in the Gulf",
+    "Southeast Asia's gas-fired power buildout stalling due to fuel shortages points to broader structural pressure on power system adequacy across emerging markets"
    ],
-   "headlineCount": 5,
+   "headlineCount": 4,
    "sources": [
     "EnergyNow.com"
    ]
