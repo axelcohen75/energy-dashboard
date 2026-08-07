@@ -1,48 +1,46 @@
 {
- "generated": "2026-08-06T15:12:42.930512+00:00",
+ "generated": "2026-08-07T00:40:27.340365+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude benchmarks posted a solid one-day recovery \u2014 WTI +1.75% to $76.56 and Brent +2.06% to $81.14 \u2014 but both remain sharply lower on the week (-8.4% and -8.9% respectively), underscoring the volatile backdrop. Gulf shipping ground to a near-halt after Houthis claimed to have struck a Saudi oil tanker, while three tankers were separately reported damaged amid the broader US-Iran conflict. Ukraine's long-range drone strike on one of Russia's largest refineries added a fresh supply-disruption bid. On the demand side, Sinopec is pivoting to Russian Far East crude for Q3, and Indian state refiners are aggressively buying West African barrels as Middle East supply uncertainty bites. A potential Iran-Oman deal on joint Hormuz management offered a partial offset to risk premium. RBOB gasoline was a glaring outlier, cratering 6.1% on the day and nearly 19% on the week \u2014 the data provides no direct headline explanation for that move.",
+   "summary": "WTI surged 4.01% to $78.26/bbl today, driven by a confluence of supply-side shocks, even as the week-on-week picture remains -6.40% amid lingering demand concerns. Ukraine's long-range drone strike on one of Russia's largest refineries tightened refined-product availability, supporting heating oil (+3.52% to $3.93/gal). Three tankers damaged in the Gulf amid escalating US-Iran conflict added fresh risk premium to crude. Offsetting factors capped the rally: Russia's July production climbed above 9 million bpd, the US temporarily eased Russia oil sanctions to suppress the price surge, and Aramco deepened Asian crude discounts ahead of a potential Hormuz transit deal. RBOB gasoline bucked the trend sharply, collapsing 4.47% to $2.7118/gal. CME options price a 77% probability of an OPEC cut at the next meeting, reflecting persistent demand anxiety beneath the geopolitical noise.",
    "drivers": [
-    "Gulf tanker disruptions and Houthi strike claim on Saudi oil tanker reinforce near-term supply-risk premium in crude",
-    "Ukraine drone attack on a major Russian refinery adds further upstream and refining supply concern",
-    "RBOB gasoline collapsed 6.1% intraday and 18.8% on the week \u2014 no supporting headline provided; warrants close monitoring"
+    "Ukrainian drone strike on major Russian refinery tightened refined-product supply and supported crude and heating oil",
+    "Three tankers damaged in the Gulf as US-Iran conflict escalates, injecting fresh geopolitical risk premium",
+    "Partial offset from record-high Russian crude output above 9 million bpd and a temporary US easing of Russia oil sanctions"
    ],
    "headlineCount": 12,
    "sources": [
     "CNBC",
+    "EnergyNow",
     "EnergyNow.com",
     "Euromaidan Press",
     "RBC-Ukraine",
-    "The Kyiv Independent",
-    "discoveryalert.com.au"
+    "Radio Free Europe/Radio Liberty"
    ]
   },
   "gas": {
-   "summary": "The Henry Hub/TTF divergence widened sharply today: TTF surged 5.80% to 55.445 \u20ac/MWh while Henry Hub fell 2.46% to $2.621/MMBtu, now down 18.4% on the month. The TTF spike is directly tied to a headline that European gas storage has fallen to its lowest level since 2011, compounding a Middle East conflict that has disrupted LNG flows and thrown the LNG growth story into doubt. Belgium's July LNG imports were entirely sourced from Russia as alternative cargoes dried up \u2014 a sign of acute market stress. On a longer-horizon constructive note, Nigeria is targeting $30\u201350 billion across 22 offshore projects, Angola confirmed new reserves via the Katambi-2 appraisal well, and Argentina's Vaca Muerta shale output is setting production records, but none of these developments provide near-term relief for European winter supply.",
+   "summary": "The US-European gas divergence widened sharply today. Henry Hub fell 2.16% to $2.63/MMBtu, extending a brutal one-month slide of 18.12%, consistent with ample domestic supply signals and limited immediate cold-weather demand. TTF, by contrast, surged 6.19% to \u20ac55.65/MWh, reflecting European supply anxiety: Belgium's July LNG imports reportedly consisted entirely of Russian cargoes after the Iran war collapsed alternative flows, highlighting the continent's precarious position. Southeast Asia's gas shortages are diverting flexible LNG cargoes away from European spot markets, adding further upward pressure on TTF. Mexico's new fracking ban in a key shale basin removes a potential future supply source for North American and export markets. News flow for Henry Hub-specific catalysts is thin today beyond the broader supply-demand backdrop.",
    "drivers": [
-    "European gas storage at lowest since 2011 drives TTF +5.8% as winter supply anxiety mounts",
-    "Middle East conflict severely curtails LNG availability into Europe, with Belgium forced to source 100% of July LNG from Russia",
-    "Henry Hub continues to slide (-2.5% today, -18.4% month) on ample North American supply, widening the transatlantic price dislocation"
+    "TTF jumped 6.19% as European LNG supply chains remain severely disrupted, with Belgian July receipts entirely from Russia following the Iran war",
+    "Southeast Asian gas shortages tightening global LNG availability and reducing cargo flexibility for European buyers",
+    "Henry Hub continued its month-long decline (-18.12%), reflecting domestic US supply resilience absent near-term demand catalysts"
    ],
-   "headlineCount": 7,
+   "headlineCount": 5,
    "sources": [
     "Euromaidan Press"
    ]
   },
   "power": {
-   "summary": "EU carbon EUAs edged up 0.75% to $77.60, building modestly on a month-to-date gain of 3.76%, supported by the same TTF spike (+5.8%) that is lifting European power generation costs. Europe's heatwave is delivering a double hit: refineries are losing cooling efficiency and river levels are forcing cuts to nuclear generation output, tightening the power balance at precisely the moment storage is most depleted. A drone strike on a UAE nuclear power plant was also flagged this week, adding a geopolitical dimension to nuclear supply risk. On the demand side, big tech's accelerating pivot to fuel cells for AI data centers represents an emerging structural shift in power procurement. China, meanwhile, supplied all net global nuclear power growth in 2025, underlining diverging capacity trajectories between East and West.",
+   "summary": "EU carbon EUAs held near flat at $77.02/EUA (-0.12%), broadly stable on the week and month, masking significant stress in European power markets. Electricity prices in Europe spiked to \u20ac500/MWh as an intense summer drought curtailed hydropower and simultaneously drove air-conditioning demand sharply higher. The surging TTF (+6.19% today) raises gas-fired generation costs, compounding the squeeze. A drone attack on a UAE nuclear power plant earlier this week added a new dimension of infrastructure risk to the region. Longer-term structural signals remain constructive for clean energy: China added more nuclear capacity over the past decade than the rest of the world combined, and CNOOC launched the world's first 16MW floating wind turbine. Southeast Asia's gas-fired power buildout is stalling on supply and price pressures, underscoring the difficulty of transitioning away from coal.",
    "drivers": [
-    "European heatwave impairing both refinery operations and nuclear output, tightening regional power supply and supporting EUA prices",
-    "TTF at 55.45 \u20ac/MWh (+5.8% today) raises gas-fired generation costs, adding upward pressure on wholesale power and carbon prices",
-    "Drone attack on UAE nuclear facility and lowest-since-2011 EU gas storage levels compound winter energy security concerns across the power complex"
+    "European power prices spiked to \u20ac500/MWh on drought-driven hydro shortfalls and surging cooling demand, amplified by higher TTF gas costs",
+    "Drone attack on UAE nuclear power plant and ongoing Gulf conflict heighten regional energy infrastructure risk",
+    "China's record nuclear buildout and CNOOC's 16MW floating wind turbine debut highlight accelerating clean capacity growth outside Europe"
    ],
-   "headlineCount": 8,
+   "headlineCount": 5,
    "sources": [
-    "EnergyNow.com",
-    "Jerusalem Center for Security and Foreign Affairs",
-    "streamlinefeed.co.ke"
+    "EnergyNow.com"
    ]
   }
  }
