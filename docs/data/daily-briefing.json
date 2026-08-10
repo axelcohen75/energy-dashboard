@@ -1,49 +1,46 @@
 {
- "generated": "2026-08-10T14:19:48.124716+00:00",
+ "generated": "2026-08-10T19:31:25.076288+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude surged Monday with WTI +3.20% to $80.77 and Brent +3.05% to $86.14, driven by a sharp escalation in Strait of Hormuz tensions. Iran hardened its demands for reopening the waterway, another tanker was reportedly struck and set ablaze off Oman, and Houthis claimed an attack on an Aramco facility in Saudi Arabia. A Ukrainian drone strike on a Tatarstan refining hub killed 12 and added a second supply-disruption vector, while Kazakhstan began rerouting Black Sea crude exports amid drone pressure. A newly passed Senate Russia-Iran sanctions bill, which could trigger 100% tariffs on China and India as secondary measures, added further geopolitical premium. Heating Oil outperformed sharply at +5.59%, reflecting refinery supply anxiety. RBOB was the outlier, falling -5.38%, possibly on demand-destruction fears. Notably, COT data show speculative long positioning has been trimmed for a second consecutive week despite the price rally.",
+   "summary": "Crude surged sharply on Monday, with WTI settling at $81.87/bbl (+4.68%) and Brent at $87.33/bbl (+4.52%), extending a month-long rally now exceeding 14% for both benchmarks. The primary catalyst remains the Strait of Hormuz disruption tied to the ongoing US-Israel-Iran conflict, with Bank of America warning that oil prices could keep climbing into winter absent a reopening deal. Supply-side stress compounded on multiple fronts: a Ukrainian drone strike hit a major Russian refinery in Tatarstan, Kazakhstan is rerouting Black Sea crude exports amid drone pressure, and Houthis claimed an attack on an Aramco facility in Saudi Arabia. The US Senate's passage of a Russia sanctions bill adds a further geopolitical premium. Notably, heating oil outperformed sharply (+6.27%), while RBOB gasoline sold off hard (-4.12%), suggesting demand-mix concerns. COT data show money managers trimming net longs for a second consecutive week, flagging some positioning fatigue despite the bullish tape.",
    "drivers": [
-    "Strait of Hormuz closure and fresh tanker strikes sustaining a severe Middle East supply-risk premium",
-    "Ukrainian drone attack on a major Russian refinery hub adding supply disruption pressure from a second front",
-    "U.S. Senate passage of Russia-Iran sanctions bill raising the prospect of secondary tariffs on key crude buyers China and India"
+    "Strait of Hormuz closure risk driving a sustained crude supply premium, with BofA warning of further upside if no US-Iran deal materialises before winter",
+    "Ukrainian drone strike on Russia's Tatarstan refining hub and Houthi attack on Saudi Aramco facility simultaneously tightening supply from two separate corridors",
+    "US Senate Russia sanctions bill and potential US crude export restrictions adding geopolitical uncertainty, while money managers cut bullish futures positioning for a second straight week"
    ],
    "headlineCount": 12,
    "sources": [
     "ABC News - Breaking News, Latest News and Videos",
     "Daily Finland",
-    "EnergyNow",
-    "International Business Times Australia",
-    "New York Post",
-    "energynow.com"
+    "Iran International",
+    "The Washington Post",
+    "energynow.ca"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets diverged sharply on Monday. TTF surged +7.48% to \u20ac59.70/MWh \u2014 up over 22% on the month \u2014 as the Strait of Hormuz disruption continues to choke LNG flows from the Middle East, forcing European buyers to compete aggressively for alternative supply. Henry Hub gained +5.07% to $2.797/MMBtu, with U.S. LNG export infrastructure cited as a partial cushion for the global supply shock. ADNOC Gas announced an $8.2 billion Rich Gas Development expansion, a longer-dated supply signal that did little to ease near-term tightness. A potential Jones Act waiver being weighed by the Trump administration is seen by analysts as unlikely to materially lower domestic gasoline prices. News flow for U.S. domestic gas fundamentals was otherwise thin today.",
+   "summary": "European gas prices surged dramatically, with TTF jumping 10.98% on the day to 61.64 \u20ac/MWh, up over 26% on the month \u2014 a move almost certainly driven by Hormuz-linked LNG supply anxiety and broader Middle East risk premium bleeding into European gas markets. Henry Hub was considerably more muted, rising 4.66% to $2.786/MMBtu but still down 5.24% on the month, reflecting looser US domestic fundamentals. A headline noting the cancellation of several US offshore wind projects framed as a bet on 'permanently cheap gas' underscores the market's expectation of sustained US gas supply. Direct gas-specific headlines today were limited; the TTF spike appears primarily geopolitical in origin rather than driven by storage or weather data available in today's feed.",
    "drivers": [
-    "Hormuz LNG supply disruption pushing TTF to multi-month highs as Europe scrambles for non-Middle East cargoes",
-    "U.S. LNG exports providing partial global supply cushion, lifting Henry Hub sentiment",
-    "ADNOC Gas $8.2 billion expansion announcement signals longer-term Gulf supply intent but offers no near-term relief"
+    "TTF spiking +10.98% on the day, reflecting Hormuz-related LNG supply disruption risk feeding into European gas market anxiety",
+    "Henry Hub rising modestly (+4.66%) but remaining weak on a monthly basis (-5.24%), consistent with ample US domestic supply",
+    "Cancellation of US offshore wind projects framed as a structural bet on continued cheap domestic gas, signalling reduced near-term demand destruction from renewables"
    ],
-   "headlineCount": 4,
+   "headlineCount": 5,
    "sources": []
   },
   "power": {
-   "summary": "EU Carbon EUAs slipped -1.19% to $78.07 despite the broader energy complex rallying, suggesting the carbon market is not yet fully pricing the fossil-fuel demand surge implied by the Hormuz shock. The dominant headline for the power sector remains the Hormuz situation, with Hormuz closure referenced across multiple reports as a driver of electricity supply stress in gas-dependent grids \u2014 consistent with TTF's +7.48% move. On the nuclear front, Hungary's Paks plant is expected to resume generation as early as Monday evening after rising Danube water levels resolved a cooling constraint, a modest supportive signal for Central European power balances. Separately, a piece on U.S. nuclear plant restarts highlighted regulatory and technical hurdles, and a $400 million U.S. government commitment to an Australian scandium miner was flagged as a critical-minerals play for clean energy supply chains.",
+   "summary": "EU carbon EUAs edged lower on the day, slipping 1.39% to $77.91/EUA despite a modest weekly and monthly gain, suggesting the market is not yet pricing the full pass-through of surging TTF gas costs into carbon demand. The dominant macro theme across the power complex remains the Hormuz crisis: Trump has signalled willingness to exit the Iran conflict without a nuclear deal if the Strait reopens, but Tehran continues to set tough conditions, keeping energy risk elevated. On the supply side, Hungary's Paks nuclear plant is expected to resume generation after rising Danube water levels lifted a turbine outage, providing a marginal relief to Central European power balances. Russia's ramp-up of its workforce at Iran's Bushehr nuclear plant is a longer-dated signal but adds complexity to the geopolitical backdrop.",
    "drivers": [
-    "Surging TTF gas prices (+7.48% on the day, +22.7% on the month) elevating gas-fired power generation costs across European grids",
-    "Hungary's Paks nuclear plant expected to resume output after Danube water levels recover, providing marginal relief to Central European supply",
-    "EU EUA carbon price eased -1.19% to $78.07, lagging the gas rally \u2014 a potential catch-up risk if gas demand for power generation remains elevated"
+    "TTF surging +10.98% raises European power generation costs sharply, though EU EUAs dipped on the day, creating a short-term divergence between gas and carbon markets",
+    "Hungary's Paks nuclear plant expected to resume output after Danube water levels recovered, offering modest Central European generation relief",
+    "Hormuz diplomatic stalemate \u2014 Iran setting tough reopening conditions while Trump signals flexibility \u2014 keeping energy supply risk and power price volatility elevated heading into winter"
    ],
-   "headlineCount": 12,
+   "headlineCount": 11,
    "sources": [
     "Firstpost",
-    "International Business Times Australia",
     "LatestLY",
-    "The Sunday Guardian",
-    "en.ittefaq.com.bd",
-    "justthenews.com"
+    "The Siasat Daily",
+    "The Sunday Guardian"
    ]
   }
  }
