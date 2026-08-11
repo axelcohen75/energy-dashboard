@@ -1,44 +1,44 @@
 {
- "generated": "2026-08-11T14:18:25.047016+00:00",
+ "generated": "2026-08-11T19:35:36.241881+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude pulled back modestly on the day \u2014 WTI off 0.32% to $81.87/bbl, Brent down 0.40% to $87.35 \u2014 but both benchmarks remain sharply higher on the week (+8% and +10% respectively), anchored by the ongoing Hormuz disruption. Iran's release of six tough conditions for reopening the strait dashed near-term peace hopes, while Bloomberg data confirmed transits remained largely disrupted as of Monday morning. OPEC output recovered 1.17 mb/d in July though still trails quota targets, and ADNOC issued its eighth spot tender since June as the UAE scrambles to redirect barrels westward. A sweeping US Russia-Iran sanctions bill advanced through the House after Senate passage, adding a further supply-risk premium. RBOB gasoline was the notable outlier, cratering 8.94% on the session \u2014 a move the provided data does not explain beyond broader crack-spread dynamics. Heating oil surged 10% on the week, consistent with the worsening global diesel crunch flagged in headlines.",
+   "summary": "Crude marched higher for a second consecutive session, with Brent settling at $89.11/bbl (+1.58%) and WTI at $83.40/bbl (+1.55%), extending a torrid weekly run of +12.3% and +10.1% respectively. The overarching driver remains the Hormuz crisis: Iran confirmed the strait stays closed until U.S. conditions are met, while a Ukrainian drone strike on a major Russian refinery and a Houthi claim of an Aramco facility attack added fresh supply-side anxiety. Russian seaborne exports hit their lowest since May, squeezed between domestic refinery demand and physical disruption. On the demand side, Chinese teapot refiners are set to ramp Iranian barrels through Shandong as stockpiles draw down. OPEC output climbed 1.17 mb/d in July but remains below quota. RBOB was the stark outlier, cratering 7.76% on the day \u2014 an anomaly warranting close monitoring. CME options continue to price a 77% probability of an OPEC cut at the next meeting.",
    "drivers": [
-    "Strait of Hormuz remains heavily disrupted; Iran's tough reopening conditions kill near-term ceasefire optimism, keeping a geopolitical premium in crude",
-    "US Congress advances sweeping Russia-Iran sanctions package, threatening additional supply constraints on both Russian and Iranian barrels",
-    "RBOB gasoline collapsed 8.94% intraday \u2014 a sharp outlier relative to flat crude \u2014 while heating oil +10% on the week reflects deepening diesel-supply tightness ahead of winter"
+    "Hormuz closure holds: Iran conditions for reopening remain unmet, keeping a geopolitical premium firmly embedded in Brent and WTI",
+    "Russian supply squeeze: seaborne exports at a May low on combined refinery-run pull and Ukrainian drone damage to domestic refinery infrastructure",
+    "Demand-side push: Chinese teapot refiners poised to accelerate Iranian crude purchases as Shandong inventories deplete"
    ],
    "headlineCount": 12,
    "sources": [
-    "ABC News - Breaking News, Latest News and Videos",
     "Daily Finland",
     "EU Today",
     "EnergyNow",
-    "Quiver Quantitative"
+    "abcnews.com",
+    "ddnews.gov.in"
    ]
   },
   "gas": {
-   "summary": "Henry Hub was nearly flat on the day at $2.785/MMBtu (-0.32%), nudging higher on the week (+3.84%) but still down on the month (-3.87%), reflecting a market that remains structurally long supply even as geopolitical risk elsewhere rises. TTF fell sharply, -3.36% to \u20ac58.755/MWh, though the European benchmark is still up over 14% on the month, signalling residual Hormuz-driven LNG supply anxiety easing slightly today. The dominant theme in headlines is gas-as-growth: JP Morgan data show global gas turbine orders hit a record high in Q2 as power demand surges, and the US offshore wind retreat \u2014 framed as a $4 billion retrenchment \u2014 is being read as a structural bet on cheap gas persisting. Colombia's reversal of its four-year renewable push back toward oil and gas exploration adds another demand-side signal.",
+   "summary": "Henry Hub eased 0.89% on the day to $2.769/MMBtu, though the one-week gain of +3.2% suggests some residual support from the broader energy complex. TTF slipped 1.26% to \u20ac60.03/MWh after a strong monthly run of +17.1%, likely consolidating after the recent geopolitically driven surge. Headline flow for the gas sector is thin today; the single substantive story \u2014 Rystad projecting China's coal-to-gas industry to triple by 2030 as a strategic buffer against import exposure \u2014 is a long-dated structural data point rather than an immediate price catalyst. Traders should note the divergence between a softening Henry Hub and still-elevated TTF, which continues to reflect tighter European supply dynamics tied to the Hormuz shock.",
    "drivers": [
-    "Record global gas turbine orders (per JP Morgan Q2 data) signal accelerating structural shift toward gas-fired power generation",
-    "US offshore-wind cancellations worth $4 billion reinforce the market narrative of durable, low-cost US gas underpinning generation economics",
-    "TTF -3.36% on the day suggests modest easing of European LNG supply anxiety, though the contract is still +14.6% on the month reflecting Hormuz-driven carry"
+    "TTF consolidates after a +17% monthly rally; short-term pressure from mild day-on-day profit-taking, not a fundamental reversal",
+    "Henry Hub remains subdued relative to European benchmarks, reflecting looser U.S. domestic supply conditions",
+    "Structural long-term signal: Rystad projects Chinese coal-to-gas capacity to triple by 2030, potentially reshaping LNG import demand patterns"
    ],
-   "headlineCount": 3,
+   "headlineCount": 1,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs ticked up 1.35% to $78.96/EUA, extending a quiet but steady grind higher (+3.1% on the month), even as TTF dropped 3.36% on the session. The carbon-gas spread move is noteworthy: softer gas prices reduce the marginal cost of power generation, which can dampen near-term EUA demand, yet prices still firmed \u2014 suggesting underlying confidence in the emissions cap trajectory. The key narrative crosscurrents for the power sector today are: record gas turbine orders pointing to higher future fossil-fuel burn intensity, the US offshore-wind retreat signalling slower clean-capacity build-out, and ongoing Iran-war uncertainty keeping LNG and pipeline supply risk elevated. Headline flow on the Hormuz situation dominates the macro backdrop for European power costs, though no specific power-price data beyond EUAs and TTF were provided.",
+   "summary": "EU carbon edged up modestly, with EUAs gaining 0.38% to $78.21/EUA, supported by a constructive monthly trend (+2.1%) even as TTF softened intraday. The headline mover in European power today was France, where a fresh heatwave is curbing nuclear output at the continent's largest nuclear generator, triggering a reported 22% jump in French day-ahead power prices. That dynamic \u2014 reduced low-carbon baseload colliding with heat-driven demand \u2014 is supportive of both power prices and carbon. On the geopolitical overlay, Hormuz headlines continue to bleed into power markets: Iran's vow to keep the strait closed, Trump's conditional exit signals, and the IEA's assessment of a 'two-speed' global fuel price recovery all point to a persistently elevated cost-of-generation backdrop for gas-fired power across Europe. The Hormuz-related headlines in the power feed are noted but are primarily an oil and LNG supply story rather than a direct power market driver.",
    "drivers": [
-    "EUAs +1.35% despite softer TTF, suggesting carbon market participants are pricing medium-term supply tightness rather than reacting to today's gas move",
-    "Record gas turbine orders and US wind-project cancellations point to higher fossil-fuel intensity in the global power mix, structurally supportive for carbon demand",
-    "Iran war exit conditions remain unresolved; Hormuz disruption continues to underpin LNG supply-risk premium embedded in European power costs via TTF"
+    "French nuclear curtailment: heatwave reducing output at Europe's dominant nuclear baseload supplier, driving a 22% surge in French day-ahead power prices",
+    "EUA carbon steady to firm: supportive monthly trend intact; heat-driven gas-for-power substitution and tighter supply conditions underpin the carbon price",
+    "IEA flags unsettled global fuel markets five months into the U.S.-Israel-Iran conflict, keeping gas-fired generation cost uncertainty elevated across Europe"
    ],
-   "headlineCount": 10,
+   "headlineCount": 9,
    "sources": [
     "Firstpost",
-    "Kaltimtoday.co",
+    "France 24",
     "LatestLY",
     "The Sunday Guardian"
    ]
