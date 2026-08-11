@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-11T15:29:46Z",
+  "updated": "2026-08-11T16:26:40Z",
   "physical": [
     {
       "title": "OPEC Output Climbs Again, But Still Trails Quota Targets",
@@ -20,6 +20,15 @@
       "impact": "high"
     },
     {
+      "title": "Ukraine Drone Attack Hits Major Oil Refinery Deep Inside Russia",
+      "summary": "Ukraine\u2019s military claimed another drone attack on an oil refinery in Russia in the early hours on Tuesday as Ukrainian forces continue to target Russia\u2019s energy producing and exporting infrastruct...",
+      "source": "",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Ukraine-Drone-Attack-Hits-Major-Oil-Refinery-Deep-Inside-Russia.html",
+      "published": "2026-08-11T14:30:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
       "title": "Libya Weighs Force Majeure After Drone Attacks on Zawiya Oil Hub",
       "summary": "Libya\u2019s National Oil Corporation may declare force majeure on exports from the Zawya oil terminal as a result of drone attacks on the facility. The Zawya terminal has a daily capacity of 120,000 ba...",
       "source": "",
@@ -38,15 +47,6 @@
       "impact": "low"
     },
     {
-      "title": "Ukraine Drone Attack Hits Major Oil Refinery Deep Inside Russia",
-      "summary": "Ukraine\u2019s military claimed another drone attack on an oil refinery in Russia in the early hours on Tuesday as Ukrainian forces continue to target Russia\u2019s energy producing and exporting infrastruct...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Ukraine-Drone-Attack-Hits-Major-Oil-Refinery-Deep-Inside-Russia.html",
-      "published": "2026-08-11T14:30:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
       "title": "China\u2019s Teapot Refiners Poised to Ramp Up Iranian Oil Buying",
       "summary": "China\u2019s independent refiners are likely to return to buying higher volumes of Iran\u2019s crude oil this month as stockpiles in Shandong, home to the independent Chinese refiners, have dropped to the lo...",
       "source": "",
@@ -56,21 +56,21 @@
       "impact": "high"
     },
     {
-      "title": "Oil Prices Climb as U.S.-Iran Peace Hopes Fade",
-      "summary": "Crude oil prices moved higher today as the chances of a lasting peace between the United States and Iran shriveled following Iran\u2019s release of six conditions earlier this week and President Trump\u2019s...",
+      "title": "France's Power Prices Jump 22% as Heatwave Trims Nuclear Output",
+      "summary": "The new heatwave in France is curbing nuclear power generation in Europe's biggest nuclear electricity supplier and leading to spiking day-ahead power prices. France's day-ahead power prices soared...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Climb-as-US-Iran-Peace-Hopes-Fade.html",
-      "published": "2026-08-11T04:39:37Z",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Frances-Power-Prices-Jump-22-as-Heatwave-Trims-Nuclear-Output.html",
+      "published": "2026-08-11T15:30:00Z",
       "sentiment": "bullish",
       "impact": "med"
     },
     {
-      "title": "Global Diesel Crunch Worsens Ahead of Peak Winter Demand",
-      "summary": "As peace in the Persian Gulf remains elusive and Ukrainian drones keep raining on Russian refineries, a global fuel crisis is looming larger by the day as demand is set to increase in the coming mo...",
+      "title": "The Hormuz Shock Is Far From Over",
+      "summary": "The latest Bloomberg data show that shipping transits through the Strait of Hormuz remained largely disrupted Monday morning, even as Iran and Oman reportedly moved closer to a deal. Brent crude fu...",
       "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/Global-Diesel-Crunch-Worsens-Ahead-of-Peak-Winter-Demand.html",
-      "published": "2026-08-10T22:00:00Z",
-      "sentiment": "bearish",
+      "url": "https://oilprice.com/Energy/Energy-General/The-Hormuz-Shock-Is-Far-From-Over.html",
+      "published": "2026-08-11T00:00:00Z",
+      "sentiment": "neutral",
       "impact": "low"
     },
     {
@@ -83,20 +83,38 @@
       "impact": "high"
     },
     {
-      "title": "Iraq\u2019s Oil Lifeline Reopens \u2014 But Can Baghdad Trust Turkey for Even One Year?",
-      "summary": "With over 90% of Iraq\u2019s annual budget still coming from oil exports and historically around 95% of that crude shipped through the Strait of Hormuz, securing an alternative export route while the St...",
+      "title": "Oil Prices Climb as U.S.-Iran Peace Hopes Fade",
+      "summary": "Crude oil prices moved higher today as the chances of a lasting peace between the United States and Iran shriveled following Iran\u2019s release of six conditions earlier this week and President Trump\u2019s...",
       "source": "",
-      "url": "https://oilprice.com/Energy/Crude-Oil/Iraqs-Oil-Lifeline-Reopens-But-Can-Baghdad-Trust-Turkey-for-Even-One-Year.html",
-      "published": "2026-08-10T21:00:00Z",
-      "sentiment": "neutral",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Climb-as-US-Iran-Peace-Hopes-Fade.html",
+      "published": "2026-08-11T04:39:37Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "Congress Targets Putin\u2019s Oil Lifeline With Tough New Sanctions",
+      "summary": "The US House of Representatives moved to advance a sweeping Russia and Iran sanctions package on August 10, just days after the Senate approved it by an overwhelming 86-11 vote, opening the next ph...",
+      "source": "",
+      "url": "https://oilprice.com/Geopolitics/Europe/Congress-Targets-Putins-Oil-Lifeline-With-Tough-New-Sanctions.html",
+      "published": "2026-08-11T14:00:00Z",
+      "sentiment": "bullish",
       "impact": "low"
     },
     {
-      "title": "The Hormuz Shock Is Far From Over",
-      "summary": "The latest Bloomberg data show that shipping transits through the Strait of Hormuz remained largely disrupted Monday morning, even as Iran and Oman reportedly moved closer to a deal. Brent crude fu...",
+      "title": "Hormuz Traffic Sinks to Six Vessels Monday as Iran Talks Stall Again",
+      "summary": "Vessel traffic at the Strait of Hormuz continues to decline as last week\u2019s hopes of negotiations of a U.S.-Iran deal began to fade, yet again. On Monday, only six commodity vessels transited the St...",
       "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/The-Hormuz-Shock-Is-Far-From-Over.html",
-      "published": "2026-08-11T00:00:00Z",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Traffic-Sinks-to-Six-Vessels-Monday-as-Iran-Talks-Stall-Again.html",
+      "published": "2026-08-11T11:30:00Z",
+      "sentiment": "neutral",
+      "impact": "med"
+    },
+    {
+      "title": "Colombia Revives Oil And Gas After Four-Year Renewable Energy Push",
+      "summary": "Over the past couple of years, Colombia\u2019s clean energy transition has shifted into overdrive under President Gustavo Petro\u2019s \"Just Energy Transition\" agenda, with the country pivoting away from fos...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/Colombia-Revives-Oil-And-Gas-After-Four-Year-Renewable-Energy-Push.html",
+      "published": "2026-08-10T23:00:00Z",
       "sentiment": "neutral",
       "impact": "low"
     },
@@ -110,51 +128,33 @@
       "impact": "low"
     },
     {
-      "title": "Congress Targets Putin\u2019s Oil Lifeline With Tough New Sanctions",
-      "summary": "The US House of Representatives moved to advance a sweeping Russia and Iran sanctions package on August 10, just days after the Senate approved it by an overwhelming 86-11 vote, opening the next ph...",
+      "title": "IEA Numbers Point to a Two-Speed Recovery in Global Fuel Prices",
+      "summary": "Five months after the U.S. and Israel opened a war with Iran, global fuel markets still haven't settled down, and the latest IEA data prove it. The IEA's monthly end-use price tracker, updated Aug....",
       "source": "",
-      "url": "https://oilprice.com/Geopolitics/Europe/Congress-Targets-Putins-Oil-Lifeline-With-Tough-New-Sanctions.html",
-      "published": "2026-08-11T14:00:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Colombia Revives Oil And Gas After Four-Year Renewable Energy Push",
-      "summary": "Over the past couple of years, Colombia\u2019s clean energy transition has shifted into overdrive under President Gustavo Petro\u2019s \"Just Energy Transition\" agenda, with the country pivoting away from fos...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/Colombia-Revives-Oil-And-Gas-After-Four-Year-Renewable-Energy-Push.html",
-      "published": "2026-08-10T23:00:00Z",
+      "url": "https://oilprice.com/Energy/Gas-Prices/IEA-Numbers-Point-to-a-Two-Speed-Recovery-in-Global-Fuel-Prices.html",
+      "published": "2026-08-11T16:00:00Z",
       "sentiment": "neutral",
       "impact": "low"
-    },
-    {
-      "title": "Hormuz Traffic Sinks to Six Vessels Monday as Iran Talks Stall Again",
-      "summary": "Vessel traffic at the Strait of Hormuz continues to decline as last week\u2019s hopes of negotiations of a U.S.-Iran deal began to fade, yet again. On Monday, only six commodity vessels transited the St...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Traffic-Sinks-to-Six-Vessels-Monday-as-Iran-Talks-Stall-Again.html",
-      "published": "2026-08-11T11:30:00Z",
-      "sentiment": "neutral",
-      "impact": "med"
     }
   ],
   "geopolitics": [
     {
+      "title": "2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
+      "summary": "2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict Encyclopedia Britannica",
+      "source": "Encyclopedia Britannica",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
+      "published": "2026-08-11T05:00:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
       "title": "US-Israel-Iran War Latest News: Trump Signals Willingness To End Iran War Without Nuclear Deal As Tehran Sets Tough Conditions For Strait Of Hormuz Reopening",
-      "summary": "US-Israel-Iran War Latest News: Trump Signals Willingness To End Iran War Without Nuclear Deal As Tehran Sets Tough Conditions For Strait Of Hormuz Reopening sundayguardianlive.com",
-      "source": "sundayguardianlive.com",
+      "summary": "US-Israel-Iran War Latest News: Trump Signals Willingness To End Iran War Without Nuclear Deal As Tehran Sets Tough Conditions For Strait Of Hormuz Reopening The Sunday Guardian",
+      "source": "The Sunday Guardian",
       "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxQTkM3TU1xV29Gd1A5akI4M3lpTVFLbVN2Y1h5RWdpM2pzcV9oV3VqODkzVHZIMkN5V0FnZ1JCWkx6ZzJxeXRGcWlJT21Wc3NRRUtOclFwZDh2VUNNQ0p3UmRGVng2c1pSNTFmMXl2X2pJWjF0eXh4UDlxTVhnV1BweHIxVUI1UDdxaFNrdUZIMlFqb25uQUlTY1RLM2tzZU5oZkNSaV9XQmxYbzVwYllvaUlPQzdPMmZmZ05uRDNNb183T19JY0tZR2tfTzRSWWNWV0NCVVktWWkxWnF3SkhyYi13Y2dQWmNvSkhobVFKZi1sWld3MERjelo5X3RqZWpGZlA5am1pa1B6ZGJCdGdFLUF1Z2J5c1c5WU9sOW11cnpBZlFvcGxPYWdnUy1qQdIBrgJBVV95cUxQTkM3TU1xV29Gd1A5akI4M3lpTVFLbVN2Y1h5RWdpM2pzcV9oV3VqODkzVHZIMkN5V0FnZ1JCWkx6ZzJxeXRGcWlJT21Wc3NRRUtOclFwZDh2VUNNQ0p3UmRGVng2c1pSNTFmMXl2X2pJWjF0eXh4UDlxTVhnV1BweHIxVUI1UDdxaFNrdUZIMlFqb25uQUlTY1RLM2tzZU5oZkNSaV9XQmxYbzVwYllvaUlPQzdPMmZmZ05uRDNNb183T19JY0tZR2tfTzRSWWNWV0NCVVktWWkxWnF3SkhyYi13Y2dQWmNvSkhobVFKZi1sWld3MERjelo5X3RqZWpGZlA5am1pa1B6ZGJCdGdFLUF1Z2J5c1c5WU9sOW11cnpBZlFvcGxPYWdnUy1qQQ?oc=5",
       "published": "2026-08-09T15:36:33Z",
       "sentiment": "neutral",
       "impact": "low"
-    },
-    {
-      "title": "US-Israel-Iran War Latest Live News: Will Iran Reopen the Strait of Hormuz? Iran Sets Key Conditions for Hormuz Reopening Amid Rising Middle East and Gulf Tensions",
-      "summary": "US-Israel-Iran War Latest Live News: Will Iran Reopen the Strait of Hormuz? Iran Sets Key Conditions for Hormuz Reopening Amid Rising Middle East and Gulf Tensions sundayguardianlive.com",
-      "source": "sundayguardianlive.com",
-      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPTVFlUEhMRkQyNElLNTNOSmhWNTF3ckRHbWR3ZndUaWxpZERKN1dHX3dSNks3a1U3SDhtMkRYTWlRNWM2SWhaSmo5eGdqZ2gzdlVING9acTk5OEptQWFJUWd6ZGljZXRVMVctVWdpLTZSOUpVbWxlQjdwejd4YlpMQ3JRTndKZnk0T0Jvamo5SzI5QUxOakR5M2drZTMwOEx4eVhZNWNtTWRzT00yMXNJTGZhNy1IclltS0p4TTB4Zmw1NE9QOHR5a3ZxQ29WTHhnSHR1NFRVdkhtX1NhaEZZcEhuWVhzYVE0N2syZXo2ZVZObVQ1V0xhLWVLaHZvdVZkQURXM2JQUW91X0tweHVhSTFDeTFlMU1lclBnWDYyZDk5T0tpendtdmhsNVUxazDSAbQCQVVfeXFMTjc2NEh6Tk9jT0hzYnRnekJRQW1qZUExVXhjZFllS3NIaDVGT0h3YlVjaXJGSnRZWHc5Y2hsRnVHVVZyZ21qQ29hRTE5LW0zSUp0ajQ5U2tfUjZ0bUtxNFVkWThFQ1laS3o5U1UtMVczZ3Y2N0trNS1aRjRXMTd4dXYxdzlxOFpBNHM1cHZ1SmRxemY4cEdqU3ZPYkxqMWxad1dtNW9TaFVETURVOEt3MEJJWG1IYm9qWXpNbDhBU2Z6MWhJNFV4Z204UHlsYXVBWTRvczRnMGlfQmVpN0swU3BGazhlTjNjVGpzUmtuMGxMRVBKQkpPS01tMzZZdG1pZkZnYmdGVkpnNlNiMkRUNzRjOEMwcTF2QkpGT1NkenYydTJlUi13NWdHNGpqZGN6RTZxX2s?oc=5",
-      "published": "2026-08-08T18:36:11Z",
-      "sentiment": "bullish",
-      "impact": "med"
     },
     {
       "title": "What Is Donald Trump\u2019s Iran War Exit Plan? Why Strait of Hormuz Could Replace Nuclear Deal",
@@ -166,13 +166,13 @@
       "impact": "low"
     },
     {
-      "title": "2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
-      "summary": "2026 Iran war | Deal, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict Encyclopedia Britannica",
-      "source": "Encyclopedia Britannica",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
-      "published": "2026-08-11T05:00:00Z",
+      "title": "US-Israel-Iran War Latest Live News: Will Iran Reopen the Strait of Hormuz? Iran Sets Key Conditions for Hormuz Reopening Amid Rising Middle East and Gulf Tensions",
+      "summary": "US-Israel-Iran War Latest Live News: Will Iran Reopen the Strait of Hormuz? Iran Sets Key Conditions for Hormuz Reopening Amid Rising Middle East and Gulf Tensions The Sunday Guardian",
+      "source": "The Sunday Guardian",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPTVFlUEhMRkQyNElLNTNOSmhWNTF3ckRHbWR3ZndUaWxpZERKN1dHX3dSNks3a1U3SDhtMkRYTWlRNWM2SWhaSmo5eGdqZ2gzdlVING9acTk5OEptQWFJUWd6ZGljZXRVMVctVWdpLTZSOUpVbWxlQjdwejd4YlpMQ3JRTndKZnk0T0Jvamo5SzI5QUxOakR5M2drZTMwOEx4eVhZNWNtTWRzT00yMXNJTGZhNy1IclltS0p4TTB4Zmw1NE9QOHR5a3ZxQ29WTHhnSHR1NFRVdkhtX1NhaEZZcEhuWVhzYVE0N2syZXo2ZVZObVQ1V0xhLWVLaHZvdVZkQURXM2JQUW91X0tweHVhSTFDeTFlMU1lclBnWDYyZDk5T0tpendtdmhsNVUxazDSAbQCQVVfeXFMTjc2NEh6Tk9jT0hzYnRnekJRQW1qZUExVXhjZFllS3NIaDVGT0h3YlVjaXJGSnRZWHc5Y2hsRnVHVVZyZ21qQ29hRTE5LW0zSUp0ajQ5U2tfUjZ0bUtxNFVkWThFQ1laS3o5U1UtMVczZ3Y2N0trNS1aRjRXMTd4dXYxdzlxOFpBNHM1cHZ1SmRxemY4cEdqU3ZPYkxqMWxad1dtNW9TaFVETURVOEt3MEJJWG1IYm9qWXpNbDhBU2Z6MWhJNFV4Z204UHlsYXVBWTRvczRnMGlfQmVpN0swU3BGazhlTjNjVGpzUmtuMGxMRVBKQkpPS01tMzZZdG1pZkZnYmdGVkpnNlNiMkRUNzRjOEMwcTF2QkpGT1NkenYydTJlUi13NWdHNGpqZGN6RTZxX2s?oc=5",
+      "published": "2026-08-08T18:36:11Z",
       "sentiment": "bullish",
-      "impact": "low"
+      "impact": "med"
     },
     {
       "title": "Trump willing to exit Iran war without nuclear deal if Hormuz reopens: Report",
@@ -193,15 +193,6 @@
       "impact": "low"
     },
     {
-      "title": "Iran War: The Strait of Hormuz Oil Shock Is Now Heading West",
-      "summary": "Iran War: The Strait of Hormuz Oil Shock Is Now Heading West EnergyNow",
-      "source": "EnergyNow",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNclFDVnNHWEdUcGRrbGpPT1JZWXN0TmV6SnBZVS1hN1loeDRSNGRuNTVEcFZjLUJYX0cweDUzZXFFQWMzREhsTVJJalNmNGhBWmZjaFllREIzWmcxYnlscGhzWjhPODVSLUdEUC1qYnRpTjFsUFlVX09DYVYyZWVRSENYdlFUREt3N3QzYTFkd09vTE0?oc=5",
-      "published": "2026-08-10T07:40:20Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
       "title": "Iran Demands US Blockade Removal to Reopen Strait of Hormuz",
       "summary": "Iran Demands US Blockade Removal to Reopen Strait of Hormuz Ratopati",
       "source": "Ratopati",
@@ -211,12 +202,21 @@
       "impact": "low"
     },
     {
-      "title": "Ukraine\u2019s Refinery Strikes Put Physical Pressure on Russia Where Sanctions Face Limits",
-      "summary": "Ukraine\u2019s Refinery Strikes Put Physical Pressure on Russia Where Sanctions Face Limits EU Today",
-      "source": "EU Today",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1Xcm9wMTF6SHBkb1I4Z1FNNDRFUXlPOUNReEthOV9CZXFnc1NIRm9GODBBREFic0haNkRST3o2cGI4NHc1TFJDSGRHT2d4Z2hUSmd0NlNyWU5xTWc2M1JQaEwtdGdRSnRQanJpT2NaWWYzVUJpd0xGX09VNmpwd2c?oc=5",
-      "published": "2026-08-08T19:59:22Z",
+      "title": "US Senate passes Russia sanctions bill, could trigger 100% tariff on China, India",
+      "summary": "US Senate passes Russia sanctions bill, could trigger 100% tariff on China, India Daily Finland",
+      "source": "Daily Finland",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMllEZ1Z1X3Q5RTNXOU1mdmpDQWZIQTFTc2dfQk5aekdBcHUydkJzZDdWMm9SQVFNWkEzaFBFaDdEQV8wb1BRYmJMTW5zeGRDUVdFSmExejdmWklDNzJfbERNdDNYWkxVZ05TNzVaaWEyRW9oX0NHcFB4QVZ0Zk9ZTzQ0U01wR01PY1AtNkxNVWJ5VU9HaG80NzhaZHdOQVJrQlhNNUlWanlWMjc3bUZoc0xEOFFfQk0tSU1LUGVlYw?oc=5",
+      "published": "2026-08-08T22:18:33Z",
       "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Iran War: The Strait of Hormuz Oil Shock Is Now Heading West",
+      "summary": "Iran War: The Strait of Hormuz Oil Shock Is Now Heading West EnergyNow",
+      "source": "EnergyNow",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNclFDVnNHWEdUcGRrbGpPT1JZWXN0TmV6SnBZVS1hN1loeDRSNGRuNTVEcFZjLUJYX0cweDUzZXFFQWMzREhsTVJJalNmNGhBWmZjaFllREIzWmcxYnlscGhzWjhPODVSLUdEUC1qYnRpTjFsUFlVX09DYVYyZWVRSENYdlFUREt3N3QzYTFkd09vTE0?oc=5",
+      "published": "2026-08-10T07:40:20Z",
+      "sentiment": "neutral",
       "impact": "low"
     },
     {
@@ -229,11 +229,11 @@
       "impact": "low"
     },
     {
-      "title": "US Senate passes Russia sanctions bill, could trigger 100% tariff on China, India",
-      "summary": "US Senate passes Russia sanctions bill, could trigger 100% tariff on China, India Daily Finland",
-      "source": "Daily Finland",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMllEZ1Z1X3Q5RTNXOU1mdmpDQWZIQTFTc2dfQk5aekdBcHUydkJzZDdWMm9SQVFNWkEzaFBFaDdEQV8wb1BRYmJMTW5zeGRDUVdFSmExejdmWklDNzJfbERNdDNYWkxVZ05TNzVaaWEyRW9oX0NHcFB4QVZ0Zk9ZTzQ0U01wR01PY1AtNkxNVWJ5VU9HaG80NzhaZHdOQVJrQlhNNUlWanlWMjc3bUZoc0xEOFFfQk0tSU1LUGVlYw?oc=5",
-      "published": "2026-08-08T22:18:33Z",
+      "title": "Ukraine\u2019s Refinery Strikes Put Physical Pressure on Russia Where Sanctions Face Limits",
+      "summary": "Ukraine\u2019s Refinery Strikes Put Physical Pressure on Russia Where Sanctions Face Limits EU Today",
+      "source": "EU Today",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1Xcm9wMTF6SHBkb1I4Z1FNNDRFUXlPOUNReEthOV9CZXFnc1NIRm9GODBBREFic0haNkRST3o2cGI4NHc1TFJDSGRHT2d4Z2hUSmd0NlNyWU5xTWc2M1JQaEwtdGdRSnRQanJpT2NaWWYzVUJpd0xGX09VNmpwd2c?oc=5",
+      "published": "2026-08-08T19:59:22Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -274,6 +274,15 @@
       "impact": "low"
     },
     {
+      "title": "US Senate passes Russia sanctions bill, could trigger 100% tariff on India",
+      "summary": "US Senate passes Russia sanctions bill, could trigger 100% tariff on India Big News Network.com",
+      "source": "Big News Network.com",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQVktQOFlqY2pQRXVoWmhhSHdfSGZob3ZTejY4R0FzNVNCU1dUTXVwWDNDX3FvX1RoLWZWdVVoN0lKbGM2eEswN25hWXdCeTBiYWF2Q3VCVWlUWTN0dEdveldQY3lxUWtkRWc4dDRfOHE1enVzc3h3Ni1LY21uRU5CQVd4MVJ0UXF3R29nb2xGUmVoNzFiYXpEZkRkS2J3U1BMUm5jTHZMTGZlWkw1TzhwcFNaejRwRG5WQ3c?oc=5",
+      "published": "2026-08-08T17:02:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
       "title": "Iran says Hormuz will remain closed until US lifts blockade",
       "summary": "Iran says Hormuz will remain closed until US lifts blockade The Siasat Daily",
       "source": "The Siasat Daily",
@@ -283,12 +292,21 @@
       "impact": "low"
     },
     {
-      "title": "US Senate Passes Russia Sanctions Bill, Tariffs Up to 100%",
-      "summary": "US Senate Passes Russia Sanctions Bill, Tariffs Up to 100% srpske.rs",
-      "source": "srpske.rs",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONDRRSWN2dzA0X0RGXzJaT0NodnNpV0p3QnhaclpIZ3dWRnBrZ05GeF90RnBlLWNRbzdfYjVvQTRvdmtIeFpsa2hCbjFQVXp1ZFZsQ2JwT0pnWWFCUU5ud0NSQXJTNnVXcEFnM2R0ZkFlNjRqSjVKZWRRcDFqRmZsb2RzbldoeHhFaXNMSXZQQnMwdw?oc=5",
-      "published": "2026-08-08T15:41:00Z",
-      "sentiment": "bullish",
+      "title": "Here are the latest updates in the Middle East as the US-Iran war impacts the region",
+      "summary": "Here are the latest updates in the Middle East as the US-Iran war impacts the region WMAZ",
+      "source": "WMAZ",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNcG1YZ3dNZmlJek5rY2JEa09WU3R0WG5pVGN1UjBpN3B6a0xNQ3VKLUppOVduT0hwclZDeHpoS2pnam5JREVjcURkSGY3Nk9CekpJT19SNFJDNTdSUnU4cmlWaDBnWlJZcmx2b3hWakJjT1hpUXJweWFseWhQbVpQUnI5VXpQeXlaXzUxM0dWZlpXdXFKcXN5RU9ieUNkZ0x2YjZramYyTXRpaHZlQzk1THQzekN3S2hpV1dEREhSVEJVQW8zRlRGRDRSSlRrS2h0elE?oc=5",
+      "published": "2026-08-11T13:28:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "Iran sets new conditions for Strait of Hormuz reopening",
+      "summary": "Iran sets new conditions for Strait of Hormuz reopening The Daily Ittefaq",
+      "source": "The Daily Ittefaq",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQN0NRZjNPMlFLVkFNOUV4cHFKUThFZkRSakFjaGpqV0xvbHFMWklIYTJ0ZjFBRy1mLXktQTNqcGVldnJWMEw4Q2ozZGh0OURvN3YxSTlwVTVlQ2FaZjB3TjdWZnNHMUVrUy1IWThGa2lIREJicy1LeHk2ZG5zVkNVTEZ2cUJ5TGJl0gGIAUFVX3lxTFA3Q1FmM08yUUtWQU05RXhwcUpROEVmRFJqQWNoampXTG9scUxaSUhhMnRmMUFHLWYteS1BM2pwZWV2clYwTDhDajNkaHQ5RG83djFJOXBVNWVDYVpmMHdON1Zmc0cxRWtTLUhZOEZraUhEQmJzLUt4eTZkbnNWQ1VMRnZxQnlMYmU?oc=5",
+      "published": "2026-08-09T03:37:24Z",
+      "sentiment": "neutral",
       "impact": "low"
     },
     {
@@ -301,67 +319,49 @@
       "impact": "med"
     },
     {
-      "title": "Iran says Strait of Hormuz won't open until the U.S. \"corrects\" behavior",
-      "summary": "Iran says Strait of Hormuz won't open until the U.S. \"corrects\" behavior cbsnews.com",
-      "source": "cbsnews.com",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMVhleVdzazZyT0ZHcXV5aWJxa3FZaGtTelNHdUJ5cm4tNXNlLU5PYUM3Tk40cVRLQjdWY2Job2NyM0hNTnhKN1diQkkzN0Y0a0lOWmtCaGxxdU5GTUFxZW9IODM0MjI4aU5sS2YzREFrODBHV0pocFpGMkpPWHhla1JaXzRzclYtb085WFhMOFcxaXVfWWh1SXQzSmpJNUU5TzR3?oc=5",
-      "published": "2026-08-10T00:48:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "India Faces Tariff Risk As US Senate Passes Sweeping Russia Sanctions Bill",
-      "summary": "India Faces Tariff Risk As US Senate Passes Sweeping Russia Sanctions Bill Menafn",
-      "source": "Menafn",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORWloRGkzX0l3RjB5ZFhKbkVqZ3Jka19sQ3ZkMGl3Nmp5ZzE3cWxQZV82ODdNTDM1WHlXMXhGVUVIRUcxZVlzR1UyUlpTMGJTbUFGSjNtdE1jblZRTHprcjFjTUw1WjM5X081U2RxUjdrN18xaS13OVFzQlZ5NXlGTExxSXNQX3ZQYURnc0dJWkZMekJMYWJubkxwMFhyN1NGOWpSanEtdw?oc=5",
-      "published": "2026-08-08T16:30:29Z",
+      "title": "Trump Pivots Back to Sanctions for Iran as Other Strategies to End His War Fizzle",
+      "summary": "Trump Pivots Back to Sanctions for Iran as Other Strategies to End His War Fizzle The Wyoming Truth",
+      "source": "The Wyoming Truth",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVFIzNDIxNlZXX3JwN2pOdHVhWlZCVmxZWERUZ0lRUTdEN0V6dG9jXzA2RkVpZkdadVRjdFpGSW45dHA1aVlJVk5zRER0MzdTNTljRFlDdjlyNHZBMTlEN3Btcl9vQzdnYmRFczIyRjVMT1U3YWpCYVlEWXYwLXFaZUhrZ0JTR3hyYXk2anRJdEJvUThnMFcxVnZ0WDNiSXpjU2lkWWxmQjItVlU?oc=5",
+      "published": "2026-08-11T15:13:44Z",
       "sentiment": "bullish",
       "impact": "low"
     },
     {
-      "title": "Trump demands Iran pay compensation after Tehran makes conditions for reopening Strait of Hormuz",
-      "summary": "Trump demands Iran pay compensation after Tehran makes conditions for reopening Strait of Hormuz cbsnews.com",
-      "source": "cbsnews.com",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeVR5TzZOblVGaldmaERTUlk2Sk5XSEhfYWNiTWMyRVhwNXdZamp5LVhBX2JKMTdxSlFlZHQ4WFc3Vk1OakI0VFlNMThrS3ZPdzB6LUxCSThSSmtvbW5ISkJYSWN3WUNDaTFUTXl1QnFoXzlCV3UtdW9CNjJodTc2VGhWTG0?oc=5",
-      "published": "2026-08-11T10:25:22Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "US House Launches Push For Sweeping Russia, Iran Sanctions Bill After Senate Win",
-      "summary": "US House Launches Push For Sweeping Russia, Iran Sanctions Bill After Senate Win Radio Free Europe/Radio Liberty",
-      "source": "Radio Free Europe/Radio Liberty",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1zTzJ6MnZMVWYxQnZPenhUZl9DdDR4SjZVXzg1aElwUXVSVVlrX0VWVFhtRWVnT0NjRG5Lb3BleHdjUFp6b3dETXFLUml5QdIBUEFVX3lxTE53RmRjcFl3TmV2OVNTZWtveG9qX0F1WkFybGF2cDdiVVFiVktqdmFMUjlyS0xTRUY0M2pSZkxUVURBaUxjLTA1UEd5QUdaTG1q?oc=5",
-      "published": "2026-08-10T22:23:41Z",
+      "title": "Russian forces kill several in Ukraine, launch \u2018brutal\u2019 attack in Odesa",
+      "summary": "Russian forces kill several in Ukraine, launch \u2018brutal\u2019 attack in Odesa Al Jazeera",
+      "source": "Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQN3NaTmJfUXJzYXFHOWtNWTFYM2h6dmZ3N2Zual9aMnBXVk9VTUJzQmp6eXpJam9lSm9RaEhHWXFpdTQ2dW1tVUtXQUxJbDJySV8tYk8ybGY1RTFqWTlfU3AzMFQ3UnVDV2U1RHZfby1tTlBWNHc4SjNOTW8xaGVYTkxVNWp2NTF0Q0VGWU43MTJIWGJBbjl6cGtiMGVYWkNCQ01jMGRWOVJ1am1K0gGyAUFVX3lxTFBfUmdsSGFFdW9rRUxUZ0txZXJYUkxlY2FtYzJvMDV0YkdwVTNyZGhkZ1dQLUNvS3Z2NnR4dGJkUU40UVNYeE52VzZsMzU0RmZJZkV5Mll3Q3VPSEFOLS1wTEQ4dUFmaWdWSmVvdV96SGxYellNLXVHc1A5NUR2NUxuaVFKR1hEQm00LUZoVUkyWWF2c01VN2F0eHVZUWg3VVdWX0hVajZiZ19NZ054WmVHN2c?oc=5",
+      "published": "2026-08-09T11:09:38Z",
       "sentiment": "bullish",
       "impact": "low"
     },
     {
-      "title": "Iran vows to keep Strait of Hormuz closed until US meets demands",
-      "summary": "Iran vows to keep Strait of Hormuz closed until US meets demands France 24",
-      "source": "France 24",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZy1KTHFVaVRHeVUzelhJbURMeVpyLWdBVUUxZDdjdEllQXdEZ0QyZVZQVy0wY293UXlhV055WkJSV0lVV0VIdVpIcF9ZeHJFUnBkcU1EdDg2VklMR3QzdXRubEdGR1ZtYVFsVXhpdFNoczlHeFJBS3Q4Q294TGo2cXpZYzNTOFE0MzFONlJRWUNkbHhQNnc3bkxaMFM3M3RGaEdqMjNvLTlkVi1pTG5IS3plVQ?oc=5",
-      "published": "2026-08-09T20:14:34Z",
+      "title": "Strait of Hormuz standoff: What conditions have US, Iran set to reopen waterway",
+      "summary": "Strait of Hormuz standoff: What conditions have US, Iran set to reopen waterway The Times of India",
+      "source": "The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNZEVNWE9DTUFvbDVMbnU5TzBtOFR2d0MtZXBmYk1FR0RtME1mbmtoSzY1Q3otTC1lYkVVT3pwMlRueUtib3Q3TERMOW5hM0xkU3ZUdVFCWE5qa05CZmQ2aDgyci1qa2xMSEpIMFg0TVFLckkzY3FkenVTbUVSQ3JmSDl5NGtYM2NGdjRBTDdvS2VPQ3J6cXIwX2J6VmgzQkhqRXowa3dGODVsY2JrZ05TTmJycHZBS2xaZXQwN0c0YTFwZF9tY3dyT052dXR5aW1wWU1pNFVXdzY5MTJpYnFmbmtfX2dyQnFRYm5jYjZxSFNUd9IB9wFBVV95cUxOUUsyWGVRSHZiVFNvS21TalZYd0RRYTE2X1VWSjRNcTdhdU1sVW04aVRTS3dpWDRqQTIxSUVqQ1l1NjFHSWRXekNvS1RjOTYzeXA0bmVtcHNpWnRMZF9JX04tOG1PN3hNaTZsajZVRlBQTkRGNm4zbmpOSVdKU3NNb2xtMlNIYkg2MExHYXlqR2Jlbll0akt3aDFrRVZxTFZmNGs4QW9meEF5eXZwanNTc3ZCS05XTVB2MlZCZmJISEtVeUVDaHZxbVF5X042YUw3VHduVEFUWVZoOEszVF8zRDVOaDdJbUd4VDEwZ0lrdllQMG9CejQ0?oc=5",
+      "published": "2026-08-09T02:29:00Z",
       "sentiment": "neutral",
       "impact": "low"
+    },
+    {
+      "title": "Iran says oil blockade will continue until attacks end, Trump threatens to hit harder",
+      "summary": "Iran says oil blockade will continue until attacks end, Trump threatens to hit harder ddnews.gov.in",
+      "source": "ddnews.gov.in",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVnZuZjFZZWlMU0lEYTQtWDhXblhYclIzT2xWXzRCMzdYYXFfOEUxS25MeUhuakp2X096MlZRR3lpVUV2UThRem1UN1JjQ2VvSkZCa2YyT1dMc285STFTM2N5dXFGaXRZY1NQNjBCWXFRVFM1ZklQSkJiTF9MN3J1TXdIbUpLaTFmWVpOZ0JWNC1qc2dHeDlVNmlGOWFGbmViOW0yZFMwdS13ZGx6UVFV?oc=5",
+      "published": "2026-08-09T03:52:41Z",
+      "sentiment": "bullish",
+      "impact": "med"
     },
     {
       "title": "Press Release: Ann Wagner, Michael McCaul Introduce Russia and Iran Sanctions Bill",
-      "summary": "Press Release: Ann Wagner, Michael McCaul Introduce Russia and Iran Sanctions Bill Quiver Quantitative",
-      "source": "Quiver Quantitative",
+      "summary": "Press Release: Ann Wagner, Michael McCaul Introduce Russia and Iran Sanctions Bill quiverquant.com",
+      "source": "quiverquant.com",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPUC1ZXzRZdFVKLXpXNW1YSzhxWDdMcU1vaXZuTWFtMDNmYnpuc0RLODdTZ1lIQ3VmdXZkbC1tZHNKY0cxTjdBZlhfaWZQbzJSV29IbG5MLWU1RzF6c0xQa1ppNzBIVllmVS1hNThDMFY1c0lKTlRVYlVxWWxfaThEWTUwUG1VNXZNaUx5elBxNHk0c25MMTZNd1Vka29mT05XTXZ2S0J4NnR5b2cyOXhfaDh6WGdUUmNFVnNZ?oc=5",
       "published": "2026-08-10T20:21:00Z",
       "sentiment": "neutral",
       "impact": "med"
-    },
-    {
-      "title": "Iran sets new conditions for Strait of Hormuz reopening",
-      "summary": "Iran sets new conditions for Strait of Hormuz reopening The Daily Ittefaq",
-      "source": "The Daily Ittefaq",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQN0NRZjNPMlFLVkFNOUV4cHFKUThFZkRSakFjaGpqV0xvbHFMWklIYTJ0ZjFBRy1mLXktQTNqcGVldnJWMEw4Q2ozZGh0OURvN3YxSTlwVTVlQ2FaZjB3TjdWZnNHMUVrUy1IWThGa2lIREJicy1LeHk2ZG5zVkNVTEZ2cUJ5TGJl0gGIAUFVX3lxTFA3Q1FmM08yUUtWQU05RXhwcUpROEVmRFJqQWNoampXTG9scUxaSUhhMnRmMUFHLWYteS1BM2pwZWV2clYwTDhDajNkaHQ5RG83djFJOXBVNWVDYVpmMHdON1Zmc0cxRWtTLUhZOEZraUhEQmJzLUt4eTZkbnNWQ1VMRnZxQnlMYmU?oc=5",
-      "published": "2026-08-09T03:37:24Z",
-      "sentiment": "neutral",
-      "impact": "low"
     }
   ]
 }
