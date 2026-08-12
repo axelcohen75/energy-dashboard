@@ -1,44 +1,46 @@
 {
- "generated": "2026-08-11T19:35:36.241881+00:00",
+ "generated": "2026-08-12T14:20:47.152105+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude marched higher for a second consecutive session, with Brent settling at $89.11/bbl (+1.58%) and WTI at $83.40/bbl (+1.55%), extending a torrid weekly run of +12.3% and +10.1% respectively. The overarching driver remains the Hormuz crisis: Iran confirmed the strait stays closed until U.S. conditions are met, while a Ukrainian drone strike on a major Russian refinery and a Houthi claim of an Aramco facility attack added fresh supply-side anxiety. Russian seaborne exports hit their lowest since May, squeezed between domestic refinery demand and physical disruption. On the demand side, Chinese teapot refiners are set to ramp Iranian barrels through Shandong as stockpiles draw down. OPEC output climbed 1.17 mb/d in July but remains below quota. RBOB was the stark outlier, cratering 7.76% on the day \u2014 an anomaly warranting close monitoring. CME options continue to price a 77% probability of an OPEC cut at the next meeting.",
+   "summary": "Crude benchmarks pulled back modestly on the day \u2014 WTI off 0.81% to $82.53, Brent -0.60% to $88.39 \u2014 after touching $89 intraday on Hormuz tension headlines, with a bearish API print (surprise 9.072 million barrel build for the week ending Aug 7) and a sharp RBOB sell-off (-8.93%) adding downward pressure on the refined-products complex. The weekly picture remains bullish: Brent +11.24%, WTI +9.72%, supported by the IEA's warning of a 1.8 million bpd global deficit this quarter following a projected 4.3 million bpd supply drop tied to the Strait of Hormuz closure. Indian state refiners are actively tendering for 6 million barrels of spot crude as term flows stay constrained. Tanker data continues to contradict U.S. government claims of normalized Middle East flows, keeping a geopolitical risk premium firmly embedded in the curve.",
    "drivers": [
-    "Hormuz closure holds: Iran conditions for reopening remain unmet, keeping a geopolitical premium firmly embedded in Brent and WTI",
-    "Russian supply squeeze: seaborne exports at a May low on combined refinery-run pull and Ukrainian drone damage to domestic refinery infrastructure",
-    "Demand-side push: Chinese teapot refiners poised to accelerate Iranian crude purchases as Shandong inventories deplete"
+    "IEA projects 1.8 million bpd global deficit this quarter; supply forecast cut by 4.3 million bpd on sustained Hormuz disruption",
+    "Bearish API inventory report \u2014 9.072 million barrel surprise crude build \u2014 capped the intraday rally and weighed on WTI",
+    "RBOB gasoline crashed 8.93% on the day, diverging sharply from crude; heating oil also fell 3.26% despite the broader weekly bullish trend"
    ],
    "headlineCount": 12,
    "sources": [
-    "Daily Finland",
-    "EU Today",
-    "EnergyNow",
-    "abcnews.com",
-    "ddnews.gov.in"
+    "Dainik Jagran MP CG",
+    "EnergyNow.com",
+    "LatestLY",
+    "Quiver Quantitative",
+    "The Hague Centre for Strategic Studies"
    ]
   },
   "gas": {
-   "summary": "Henry Hub eased 0.89% on the day to $2.769/MMBtu, though the one-week gain of +3.2% suggests some residual support from the broader energy complex. TTF slipped 1.26% to \u20ac60.03/MWh after a strong monthly run of +17.1%, likely consolidating after the recent geopolitically driven surge. Headline flow for the gas sector is thin today; the single substantive story \u2014 Rystad projecting China's coal-to-gas industry to triple by 2030 as a strategic buffer against import exposure \u2014 is a long-dated structural data point rather than an immediate price catalyst. Traders should note the divergence between a softening Henry Hub and still-elevated TTF, which continues to reflect tighter European supply dynamics tied to the Hormuz shock.",
+   "summary": "Henry Hub edged higher (+1.66% to $2.812/MMBtu) with a modest weekly gain of +4.65%, though the month-on-month picture remains soft at -3.13%, suggesting the domestic market has yet to fully price in geopolitical spillovers. TTF was the standout mover, surging 3.61% on the day to \u20ac60.855/MWh, extending a sharp 16.13% weekly rally and a 14.91% monthly gain as the Hormuz crisis tightens European LNG supply alternatives. The Alaska LNG mega-project ($55 billion) is reportedly in active talks with additional buyers ahead of FID, a sign that long-term buyers are scrambling for supply security. Headlines on Russia's refinery crisis and its import of Indian fuels add to the broader supply dislocation narrative. Gas-specific news flow today was relatively thin beyond these items.",
    "drivers": [
-    "TTF consolidates after a +17% monthly rally; short-term pressure from mild day-on-day profit-taking, not a fundamental reversal",
-    "Henry Hub remains subdued relative to European benchmarks, reflecting looser U.S. domestic supply conditions",
-    "Structural long-term signal: Rystad projects Chinese coal-to-gas capacity to triple by 2030, potentially reshaping LNG import demand patterns"
+    "TTF surged 3.61% on the day (+16.13% on the week) as Hormuz disruption tightens European LNG import alternatives",
+    "Alaska LNG project advancing buyer talks ahead of FID, reflecting long-term supply security demand from buyers in a disrupted market",
+    "Henry Hub gains remain muted relative to TTF; the US-Europe price spread continues to widen, incentivizing LNG export flows"
    ],
-   "headlineCount": 1,
+   "headlineCount": 3,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon edged up modestly, with EUAs gaining 0.38% to $78.21/EUA, supported by a constructive monthly trend (+2.1%) even as TTF softened intraday. The headline mover in European power today was France, where a fresh heatwave is curbing nuclear output at the continent's largest nuclear generator, triggering a reported 22% jump in French day-ahead power prices. That dynamic \u2014 reduced low-carbon baseload colliding with heat-driven demand \u2014 is supportive of both power prices and carbon. On the geopolitical overlay, Hormuz headlines continue to bleed into power markets: Iran's vow to keep the strait closed, Trump's conditional exit signals, and the IEA's assessment of a 'two-speed' global fuel price recovery all point to a persistently elevated cost-of-generation backdrop for gas-fired power across Europe. The Hormuz-related headlines in the power feed are noted but are primarily an oil and LNG supply story rather than a direct power market driver.",
+   "summary": "EU carbon (EUA) was broadly flat, slipping 0.28% to $77.69, with a mild weekly gain of +0.75% and monthly drift of +1.42% \u2014 the carbon market appears to be awaiting clearer direction from the gas complex before moving decisively. The dominant power story today was the UK grid warning of tighter supply margins during a solar eclipse coinciding with a heatwave, creating a rare dual demand-and-supply stress event. TTF's continued surge (+3.61% to \u20ac60.855/MWh) raises gas-fired generation costs materially across European power markets. A drone strike on the power station at Libya's Zawiya oil export terminal added to infrastructure risk sentiment. Iran-related geopolitical headlines remain in the background but have not yet catalyzed a directional EUA move.",
    "drivers": [
-    "French nuclear curtailment: heatwave reducing output at Europe's dominant nuclear baseload supplier, driving a 22% surge in French day-ahead power prices",
-    "EUA carbon steady to firm: supportive monthly trend intact; heat-driven gas-for-power substitution and tighter supply conditions underpin the carbon price",
-    "IEA flags unsettled global fuel markets five months into the U.S.-Israel-Iran conflict, keeping gas-fired generation cost uncertainty elevated across Europe"
+    "UK grid flagged a power margin shortfall risk as a solar eclipse combined with a heatwave stressed supply and demand simultaneously",
+    "TTF at \u20ac60.855/MWh (+16% on the week) is pushing up gas-fired generation costs across European power markets, with limited EUA response so far",
+    "Drone strike on the Zawiya power station in Libya highlights growing vulnerability of energy infrastructure to conflict-zone attacks"
    ],
-   "headlineCount": 9,
+   "headlineCount": 8,
    "sources": [
+    "CryptoRank",
     "Firstpost",
     "France 24",
+    "Kaltimtoday.co",
     "LatestLY",
     "The Sunday Guardian"
    ]
