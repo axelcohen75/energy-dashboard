@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-12T14:20:19Z",
+  "updated": "2026-08-12T15:31:09Z",
   "physical": [
+    {
+      "title": "EIA Sees Massive Uptick in US Crude Oil Inventories",
+      "summary": "Crude oil inventories in the United States saw a massive increase of 17.4 million barrels during the week ending August 7, according to new data from the U.S. Energy Information Administration (EIA...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Crude-Oil/EIA-Sees-Massive-Uptick-in-US-Crude-Oil-Inventories.html",
+      "published": "2026-08-12T14:38:18Z",
+      "sentiment": "bearish",
+      "impact": "low"
+    },
     {
       "title": "Brent Tops $89 Amid U.S.-Iran Stalemate Over Hormuz",
       "summary": "Brent Crude oil prices rose above $89 per barrel in early trade in Europe on Wednesday as Iran and the United States offered contrasting claims about who controls the Strait of Hormuz. Brent Crude ...",
@@ -20,21 +29,21 @@
       "impact": "low"
     },
     {
-      "title": "US Crude Oil Inventories See Surprise Build: API",
-      "summary": "The American Petroleum Institute (API) estimated that crude oil inventories in the United States rose by 9.072 million barrels in the week ending August 7, compared to analyst expectations for a 50...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Crude-Oil-Inventories-See-Surprise-Build-API.html",
-      "published": "2026-08-11T20:47:00Z",
-      "sentiment": "neutral",
-      "impact": "med"
-    },
-    {
       "title": "IEA: Global Oil Deficit To Hit 1.8 Million Bpd This Quarter",
       "summary": "The IEA has slashed its 2026 global oil supply forecast, with output now expected to plunge 4.3 million barrels per day this year as the failure to reopen the Strait of Hormuz pushes the market dee...",
       "source": "",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/IEA-Global-Oil-Deficit-To-Hit-18-Million-Bpd-This-Quarter.html",
       "published": "2026-08-12T12:30:00Z",
       "sentiment": "bearish",
+      "impact": "low"
+    },
+    {
+      "title": "LME Aluminum Stockpiles Sink to Lowest Level Since 1990",
+      "summary": "Norwegian aluminum producer Norsk Hydro's Alunorte plant in Brazil, one of the world's largest alumina refineries, reduced output by 50% following disruptions to natural gas availability. Bloomberg...",
+      "source": "",
+      "url": "https://oilprice.com/Metals/Commodities/LME-Aluminum-Stockpiles-Sink-to-Lowest-Level-Since-1990.html",
+      "published": "2026-08-12T14:00:00Z",
+      "sentiment": "bullish",
       "impact": "low"
     },
     {
@@ -56,15 +65,6 @@
       "impact": "low"
     },
     {
-      "title": "LME Aluminum Stockpiles Sink to Lowest Level Since 1990",
-      "summary": "Norwegian aluminum producer Norsk Hydro's Alunorte plant in Brazil, one of the world's largest alumina refineries, reduced output by 50% following disruptions to natural gas availability. Bloomberg...",
-      "source": "",
-      "url": "https://oilprice.com/Metals/Commodities/LME-Aluminum-Stockpiles-Sink-to-Lowest-Level-Since-1990.html",
-      "published": "2026-08-12T14:00:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
       "title": "Drone Attack Hits Power Plant at Key Libyan Oil Hub",
       "summary": "A drone has struck a power station at the Zawiya oil export terminal in Libya, suggesting continued attacks on one of the country\u2019s main oil hubs. The power plant is in close proximity to the large...",
       "source": "",
@@ -81,6 +81,15 @@
       "published": "2026-08-11T23:00:00Z",
       "sentiment": "neutral",
       "impact": "low"
+    },
+    {
+      "title": "Ukraine Halts Oil Tanker Attacks on JD Vance Request",
+      "summary": "The Ukrainian forces have reportedly suspended drone attacks on oil tankers at the port of Novorossiysk following a request by U.S. Vice-President JD Vance, the Financial Times wrote today, citing ...",
+      "source": "",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Ukraine-Halts-Oil-Tanker-Attacks-on-JD-Vance-Request.html",
+      "published": "2026-08-12T14:30:00Z",
+      "sentiment": "neutral",
+      "impact": "med"
     },
     {
       "title": "Tanker Data Contradicts U.S. Claim That Middle East Oil Flows Have Normalized",
@@ -101,24 +110,6 @@
       "impact": "med"
     },
     {
-      "title": "Sodium-Ion Batteries Gain Ground as Lithium Alternative",
-      "summary": "Batteries have been a hot topic for years amid the energy transition rush of many governments, but now, it has become even hotter as the search for alternatives to traditional energy becomes franti...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/Sodium-Ion-Batteries-Gain-Ground-as-Lithium-Alternative.html",
-      "published": "2026-08-11T22:00:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Middle East War Pushes China Toward the Arctic Trade Route",
-      "summary": "The Middle East conflict and the heightened threats to shipping in the Red Sea have prompted China to boost the use of the Arctic to move containers from the Chinese east coast to Europe. The fast-...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/Middle-East-War-Pushes-China-Toward-the-Arctic-Trade-Route.html",
-      "published": "2026-08-11T21:00:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
       "title": "Hormuz Ship Traffic Falls to Weekly Low as Standoff Drags On",
       "summary": "The number of ships that have transited the Strait of Hormuz dropped to a week-low on Tuesday, according to shipping data, as vessel owners continue to avoid the key chokepoint in the Middle East. ...",
       "source": "",
@@ -126,6 +117,15 @@
       "published": "2026-08-12T10:47:58Z",
       "sentiment": "bearish",
       "impact": "med"
+    },
+    {
+      "title": "Trump Puts 81 Million Gulf Acres Up for Oil and Gas Auction",
+      "summary": "The Trump administration will put oil and gas leases covering more than 81 million acres in the Gulf of Mexico up for auction on Wednesday, August 12, in the third of 30 Gulf lease sales mandated u...",
+      "source": "",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Trump-Puts-81-Million-Gulf-Acres-Up-for-Oil-and-Gas-Auction.html",
+      "published": "2026-08-12T15:30:00Z",
+      "sentiment": "bearish",
+      "impact": "low"
     },
     {
       "title": "Iran\u2019s Leadership Reshuffle Signals a New Era of Centralized Command",
@@ -139,11 +139,11 @@
   ],
   "geopolitics": [
     {
-      "title": "What Is Donald Trump\u2019s Iran War Exit Plan? Why Strait of Hormuz Could Replace Nuclear Deal",
-      "summary": "What Is Donald Trump\u2019s Iran War Exit Plan? Why Strait of Hormuz Could Replace Nuclear Deal LatestLY",
-      "source": "LatestLY",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbUhIWWNyZ0NnbGRoSFZncXJWR1B1X09TX2JVSE1VVHozN0J0TjZoNVR6Y2xvR3Y0VVE4VnBYUmNpR3lmdGRpNFJpbDVHVnQyUWI4V3l0Z3JsWU9IdFRoMlE1dDlueTJjSXNwd2FGR3g0VG5aVks2cVhvUEdSdUUyYTJ1ZHZwbjZoWnM4T0Q0YW9WY25kZWl4clVONFVOb1Z6aXJfTkFjWnhVREJaY1I1SFlpQ3d3Q2pqS3dxbkV0bWlqSnJ3Uk1yNtIBzgFBVV95cUxNLUx3QTYycUUwNkFTODZnSkZlLW5qdXM4MVg5SlZGYmpuTUFvbUVGT1NHdllsdHdBUFhidE9QNWxvNnJNWWRVZE5QSWlUSWhoeWpwUjdmS3lobm1FdUI3U2hJSDFxdDAzNG9kZFJDYTY3V3JrcVJkNUxSSExaZlpaLWVHMHJEU0tKcS1iRjJnRl85VlljVXBDWkU1bVBfemVrbHFmWGJzVThPdEVJV2V5Y3BHZUJyV21VVkxOcVdwdTZzLTN2RGY5RGhsVmtMUQ?oc=5",
-      "published": "2026-08-09T14:48:52Z",
+      "title": "US-Israel-Iran War Latest News: Trump Signals Willingness To End Iran War Without Nuclear Deal As Tehran Sets Tough Conditions For Strait Of Hormuz Reopening",
+      "summary": "US-Israel-Iran War Latest News: Trump Signals Willingness To End Iran War Without Nuclear Deal As Tehran Sets Tough Conditions For Strait Of Hormuz Reopening The Sunday Guardian",
+      "source": "The Sunday Guardian",
+      "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxOcE5NcjZ0TWRDVVpYcVpiSFZJend6TGhkbXYxdV9KMmt2STV5anY5ZmxwdHVqdUp6QmJjMGhNbUFVOWdBZEV5Y1NFTDhoakt0WlU1c09Wa2VDTWVCLVFTaVg0eTl6Tnh6Y3VSSjZZZl9hM0NtQjZrSlRnR1V6RVUyUjgzdTRja21kNXYtVkFpSnVWQVUwdEdOWHA0aEVSU1pGQVU0SmxrRmRXYnRtVzQ2MUxaejczUUhfTkJPMlMyOHZqeWt3UmR2S1B3dFROLUtIanFQVWQxSWxldlBWd3BtWXhKZUxvYmtkWVdEekU4QzlZUV96QVBINWpGbTdCSjdXQ3IyWHRVUHAtN1VFU01UcVYwVTJNX19oTnlXRGlmYUh1WmhqZnl4eNIBrgJBVV95cUxQTkM3TU1xV29Gd1A5akI4M3lpTVFLbVN2Y1h5RWdpM2pzcV9oV3VqODkzVHZIMkN5V0FnZ1JCWkx6ZzJxeXRGcWlJT21Wc3NRRUtOclFwZDh2VUNNQ0p3UmRGVng2c1pSNTFmMXl2X2pJWjF0eXh4UDlxTVhnV1BweHIxVUI1UDdxaFNrdUZIMlFqb25uQUlTY1RLM2tzZU5oZkNSaV9XQmxYbzVwYllvaUlPQzdPMmZmZ05uRDNNb183T19JY0tZR2tfTzRSWWNWV0NCVVktWWkxWnF3SkhyYi13Y2dQWmNvSkhobVFKZi1sWld3MERjelo5X3RqZWpGZlA5am1pa1B6ZGJCdGdFLUF1Z2J5c1c5WU9sOW11cnpBZlFvcGxPYWdnUy1qQQ?oc=5",
+      "published": "2026-08-09T15:36:29Z",
       "sentiment": "neutral",
       "impact": "low"
     },
@@ -157,15 +157,6 @@
       "impact": "low"
     },
     {
-      "title": "US-Israel-Iran War Latest News: Trump Signals Willingness To End Iran War Without Nuclear Deal As Tehran Sets Tough Conditions For Strait Of Hormuz Reopening",
-      "summary": "US-Israel-Iran War Latest News: Trump Signals Willingness To End Iran War Without Nuclear Deal As Tehran Sets Tough Conditions For Strait Of Hormuz Reopening The Sunday Guardian",
-      "source": "The Sunday Guardian",
-      "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxOcE5NcjZ0TWRDVVpYcVpiSFZJend6TGhkbXYxdV9KMmt2STV5anY5ZmxwdHVqdUp6QmJjMGhNbUFVOWdBZEV5Y1NFTDhoakt0WlU1c09Wa2VDTWVCLVFTaVg0eTl6Tnh6Y3VSSjZZZl9hM0NtQjZrSlRnR1V6RVUyUjgzdTRja21kNXYtVkFpSnVWQVUwdEdOWHA0aEVSU1pGQVU0SmxrRmRXYnRtVzQ2MUxaejczUUhfTkJPMlMyOHZqeWt3UmR2S1B3dFROLUtIanFQVWQxSWxldlBWd3BtWXhKZUxvYmtkWVdEekU4QzlZUV96QVBINWpGbTdCSjdXQ3IyWHRVUHAtN1VFU01UcVYwVTJNX19oTnlXRGlmYUh1WmhqZnl4eNIBrgJBVV95cUxQTkM3TU1xV29Gd1A5akI4M3lpTVFLbVN2Y1h5RWdpM2pzcV9oV3VqODkzVHZIMkN5V0FnZ1JCWkx6ZzJxeXRGcWlJT21Wc3NRRUtOclFwZDh2VUNNQ0p3UmRGVng2c1pSNTFmMXl2X2pJWjF0eXh4UDlxTVhnV1BweHIxVUI1UDdxaFNrdUZIMlFqb25uQUlTY1RLM2tzZU5oZkNSaV9XQmxYbzVwYllvaUlPQzdPMmZmZ05uRDNNb183T19JY0tZR2tfTzRSWWNWV0NCVVktWWkxWnF3SkhyYi13Y2dQWmNvSkhobVFKZi1sWld3MERjelo5X3RqZWpGZlA5am1pa1B6ZGJCdGdFLUF1Z2J5c1c5WU9sOW11cnpBZlFvcGxPYWdnUy1qQQ?oc=5",
-      "published": "2026-08-09T15:36:29Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
       "title": "Trump willing to exit Iran war without nuclear deal if Hormuz reopens: Report",
       "summary": "Trump willing to exit Iran war without nuclear deal if Hormuz reopens: Report Firstpost",
       "source": "Firstpost",
@@ -175,21 +166,21 @@
       "impact": "low"
     },
     {
-      "title": "Iran Nears Agreement with Oman on Strait of Hormuz Amid Tensions with U.S.",
-      "summary": "Iran Nears Agreement with Oman on Strait of Hormuz Amid Tensions with U.S. Devdiscourse",
-      "source": "Devdiscourse",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPOXVtWUhfRWVCemh0MGkzSFFrU0NsaHRZdVM3RzR4U04tODdSWWxHRU4tZVRCbldGSzlVQUs0TnVESHNXWWJiWGFhU3YzTkREM3lENW9heDg2SFpHNW1iUHBFRGhUUUlrb1dCS0Jnc3BGUGJ5UEhTdjItbVJ1TjVrYWw1S01FZmttd0EwdDEwXzNLR0RISWFKaUlfQi1SQUZrRkR5Rk1QVFhxN1lmSnM2Q2lyaHNtUWQ5VnBONjBrZ1RienNCb3g2aHdBONIBywFBVV95cUxPOXVtWUhfRWVCemh0MGkzSFFrU0NsaHRZdVM3RzR4U04tODdSWWxHRU4tZVRCbldGSzlVQUs0TnVESHNXWWJiWGFhU3YzTkREM3lENW9heDg2SFpHNW1iUHBFRGhUUUlrb1dCS0Jnc3BGUGJ5UEhTdjItbVJ1TjVrYWw1S01FZmttd0EwdDEwXzNLR0RISWFKaUlfQi1SQUZrRkR5Rk1QVFhxN1lmSnM2Q2lyaHNtUWQ5VnBONjBrZ1RienNCb3g2aHdBOA?oc=5",
-      "published": "2026-08-10T03:34:31Z",
+      "title": "Expert Analysis | From Sanctions to Drone Warfare: The Slow Erosion of Russia\u2019s Oil Sector",
+      "summary": "Expert Analysis | From Sanctions to Drone Warfare: The Slow Erosion of Russia\u2019s Oil Sector hcss.nl",
+      "source": "hcss.nl",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVU9wbUJncFlUQ2p1WFFKOUpWVXZ3aUJwR0RqRlNCUENBd0hvWDh3X0xNRHNIMFFlTF9iQWs5QlV5dHlORXNrMkt3ZWhzOHRneDlJZGV0U2lxdmxLUkFfNThKOUExWDNOYTBPdk5QaXJjWXZxN0pxenh1UW0zUjhfWk90TWZGZWwzUkI4N1lNaVFTLXRrVFRBeXhITlV6S2k2ajU1RnlEUnBDemVl?oc=5",
+      "published": "2026-08-11T11:57:09Z",
       "sentiment": "bullish",
       "impact": "low"
     },
     {
-      "title": "\u2018Long-range sanctions\u2019: Ukraine hopes strikes cause Russia fear and losses",
-      "summary": "\u2018Long-range sanctions\u2019: Ukraine hopes strikes cause Russia fear and losses Al Jazeera",
-      "source": "Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTWh0UHBzOVZRUVI4TGpRdnp6Y1FJTkl6Y2VwWVRuWEtydXEtb1lwWjhpVGFDT3FwaDJTTGppQkZ5Uld2Umh0RUFsejlnUVJKbXEyZDRXYVA3THlhQk1EWTRVZ0ljQWE1S3lQS3Z5b0gzNFYtZTJBR3JyMHRXZlZJcnNHNWZEUmFqSWxteHBkMnlCVWFMZUVhZnBEZjl3aVpjV2ZyNl9sQjhVNW9rUGtyeHN30gG3AUFVX3lxTE5TYXJMLTRCRnpZRjUtN29EazN2LXFtajR6YThTZVY1Rm5lLXd5TDV5V3pKRGpYTk5jRFNMM3h2bTlnWFplbnBtUGgyRk1sY29DYVdQZFRRbDNEMkdQUXhDUjdPUWotZnBPMU9oN2lISjFNd3hHZkQyU2k2bE4tZU83QVVhV2tBM3BwLTc1eUx1c0duQnhseEZ2SXBLZEg5aEJfMUJsWTNmYkpZUkVOQ1RKcS1aWjFBOA?oc=5",
-      "published": "2026-08-10T11:57:26Z",
-      "sentiment": "bullish",
+      "title": "Ukraine war briefing: Wildberries warehouse struck by Kyiv\u2019s drones more than 2,000km from Russian border",
+      "summary": "Ukraine war briefing: Wildberries warehouse struck by Kyiv\u2019s drones more than 2,000km from Russian border The Guardian",
+      "source": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPbFBxZTZtLTlGODA0OVFFYkY3dDhydTRITHpXSVlhUWxpZG11VF83ak4yNWU1dTFHaWlUcG9IS054X2djOEM2dzNwMlN1ZG1nc2V5Zk1qaGpPUUhMVTZ2NTJjb3EyQk5NMmV0ZnNnZFlDU1V2bjhHNWZ5Z2VTUnZQOThKWUdPSE1sckN0ZXlvWkc3MGFCd2dpNG85Ykd0U0xsUkRNbXNOMlZQUWc0X3BTTzFkNUtMUk9JRkt3TXloYUdQVlpmN0EtZWF3WUhCUUVMYjloTkU1Vlh3M19BdkZVU0Jn?oc=5",
+      "published": "2026-08-10T00:31:00Z",
+      "sentiment": "neutral",
       "impact": "low"
     },
     {
@@ -202,11 +193,11 @@
       "impact": "low"
     },
     {
-      "title": "Expert Analysis | From Sanctions to Drone Warfare: The Slow Erosion of Russia\u2019s Oil Sector",
-      "summary": "Expert Analysis | From Sanctions to Drone Warfare: The Slow Erosion of Russia\u2019s Oil Sector The Hague Centre for Strategic Studies",
-      "source": "The Hague Centre for Strategic Studies",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVU9wbUJncFlUQ2p1WFFKOUpWVXZ3aUJwR0RqRlNCUENBd0hvWDh3X0xNRHNIMFFlTF9iQWs5QlV5dHlORXNrMkt3ZWhzOHRneDlJZGV0U2lxdmxLUkFfNThKOUExWDNOYTBPdk5QaXJjWXZxN0pxenh1UW0zUjhfWk90TWZGZWwzUkI4N1lNaVFTLXRrVFRBeXhITlV6S2k2ajU1RnlEUnBDemVl?oc=5",
-      "published": "2026-08-11T11:57:09Z",
+      "title": "\u2018Long-range sanctions\u2019: Ukraine hopes strikes cause Russia fear and losses",
+      "summary": "\u2018Long-range sanctions\u2019: Ukraine hopes strikes cause Russia fear and losses Al Jazeera",
+      "source": "Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTWh0UHBzOVZRUVI4TGpRdnp6Y1FJTkl6Y2VwWVRuWEtydXEtb1lwWjhpVGFDT3FwaDJTTGppQkZ5Uld2Umh0RUFsejlnUVJKbXEyZDRXYVA3THlhQk1EWTRVZ0ljQWE1S3lQS3Z5b0gzNFYtZTJBR3JyMHRXZlZJcnNHNWZEUmFqSWxteHBkMnlCVWFMZUVhZnBEZjl3aVpjV2ZyNl9sQjhVNW9rUGtyeHN30gG3AUFVX3lxTE5TYXJMLTRCRnpZRjUtN29EazN2LXFtajR6YThTZVY1Rm5lLXd5TDV5V3pKRGpYTk5jRFNMM3h2bTlnWFplbnBtUGgyRk1sY29DYVdQZFRRbDNEMkdQUXhDUjdPUWotZnBPMU9oN2lISjFNd3hHZkQyU2k2bE4tZU83QVVhV2tBM3BwLTc1eUx1c0duQnhseEZ2SXBLZEg5aEJfMUJsWTNmYkpZUkVOQ1RKcS1aWjFBOA?oc=5",
+      "published": "2026-08-10T11:57:26Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -220,38 +211,83 @@
       "impact": "low"
     },
     {
+      "title": "Iran Nears Agreement with Oman on Strait of Hormuz Amid Tensions with U.S.",
+      "summary": "Iran Nears Agreement with Oman on Strait of Hormuz Amid Tensions with U.S. Devdiscourse",
+      "source": "Devdiscourse",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPOXVtWUhfRWVCemh0MGkzSFFrU0NsaHRZdVM3RzR4U04tODdSWWxHRU4tZVRCbldGSzlVQUs0TnVESHNXWWJiWGFhU3YzTkREM3lENW9heDg2SFpHNW1iUHBFRGhUUUlrb1dCS0Jnc3BGUGJ5UEhTdjItbVJ1TjVrYWw1S01FZmttd0EwdDEwXzNLR0RISWFKaUlfQi1SQUZrRkR5Rk1QVFhxN1lmSnM2Q2lyaHNtUWQ5VnBONjBrZ1RienNCb3g2aHdBONIBywFBVV95cUxPOXVtWUhfRWVCemh0MGkzSFFrU0NsaHRZdVM3RzR4U04tODdSWWxHRU4tZVRCbldGSzlVQUs0TnVESHNXWWJiWGFhU3YzTkREM3lENW9heDg2SFpHNW1iUHBFRGhUUUlrb1dCS0Jnc3BGUGJ5UEhTdjItbVJ1TjVrYWw1S01FZmttd0EwdDEwXzNLR0RISWFKaUlfQi1SQUZrRkR5Rk1QVFhxN1lmSnM2Q2lyaHNtUWQ5VnBONjBrZ1RienNCb3g2aHdBOA?oc=5",
+      "published": "2026-08-10T03:34:31Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
       "title": "Hopes for Hormuz deal fade as Trump demands Iranian reparations",
       "summary": "Hopes for Hormuz deal fade as Trump demands Iranian reparations Reuters",
       "source": "Reuters",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSmFvNGYwRDFRdHZrdWhBOWR0ZmVCdkZTSzRROXVNMG1UX1Azb04xa3ZCbEtYNkl4eFhSZG16b0xYeHNyd2tTdHhGWXFUTXJ6WFNVRjg3bmZYOEhEeHNaNHh4NU9qN0RQYXY3ZG13Qzh6Mk1LNG9jaGZraUZwRHVKY0hMZlFWUTdMOEpoaTRuemlPWEFJZUhsYk5TaUpNdWFqR1dId3NCM0xvYS1SNlNBMg?oc=5",
-      "published": "2026-08-09T23:03:00Z",
+      "published": "2026-08-10T20:44:47Z",
       "sentiment": "neutral",
       "impact": "low"
     },
     {
-      "title": "Trump's mixed messages on Iran: 'Winding down' the war and easing sanctions but adding more troops",
-      "summary": "Trump's mixed messages on Iran: 'Winding down' the war and easing sanctions but adding more troops Kaltimtoday.co",
-      "source": "Kaltimtoday.co",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNS2ZKcG0yVGF4c01RMVlQbHpOeHNxMlpUVEpkMG9FQU02WS1IZUZEclczS2lXVm9YRUIwcmw5M1dXLVhlWWwzQWRmUUZRSHBpaVZDdjB1X01JT1dOcTBweVRqVFY0SXNvZnE5Z2J0ZnBJTTRvdmpnTy0wejBiSGxlQldkX1d6a056c1lKMHhZNEV1czFhRXJxN040REoxcG9rM1VRTmZKUVMtSGdha2p1Sl9wdGVJZkli?oc=5",
-      "published": "2026-08-10T01:53:49Z",
-      "sentiment": "neutral",
+      "title": "Oil prices edge higher as Middle East supply risks intensify after maritime attacks",
+      "summary": "Oil prices edge higher as Middle East supply risks intensify after maritime attacks The New Voice of Ukraine",
+      "source": "The New Voice of Ukraine",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdmgwM0ZJa0Nza0pyT1RoVGdKaFdUZ0hJWXNibU1xOXFyVXl5X3FabUw1STB0bl9EZHZMZFBIRm5KQ2tMYl9ZRUd6RVJQaDJETmFmSzRoeVdWZG1UdTlaMmxqSHNHLVV3bkNkNENsSFNsSFNBNXo5YjExY3otU2c1dERfcmhxQlVOVkVqVnduVmJUclhLX0s0YnlIMFB2c0pHV0Z0OXdrbnc1TTVhYkRjMVJiSXVkaE95N1RLWGh6ZjJSeUxOQS1kdUVwZDHSAcYBQVVfeXFMT3d1Nkd0VVlrSXBlRmFlTTdyY2dXZFNvR3dnTnN1MzFuRVh4di1pV1B4WlhyT2IwZUZMNTU5VVlHV3g4aUNPeXhhemIxTXlKQUYtODdRc2FJeEpIdjlvT1QzWDJTRE5GYjNkTnlqaVpjT2MwNGRPa0s5TFVGS2pyVVV1UkxPSUdwU09PTmQzejY1bzRHSy0tbjhWZlNnX0tWY0ZjR1VwRHR5eUlHTHNtb21kTFNteVY2TzVsbDVRdkJKQktkZVpR?oc=5",
+      "published": "2026-08-12T09:33:00Z",
+      "sentiment": "bullish",
       "impact": "med"
     },
     {
-      "title": "Why the Middle East is looking beyond the Strait of Hormuz?",
-      "summary": "Why the Middle East is looking beyond the Strait of Hormuz? TRT World",
-      "source": "TRT World",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE80bWlIVHZVVVA2MDY0SkNJcDNWWjdFZGhTb0FWd2xaRUIyU195WTNINzVRd2pDTnlJdFBWcTk2dXQ2emxKOVJPTVhFTGJHZU4zSElkc2szeEU?oc=5",
-      "published": "2026-08-11T14:27:40Z",
+      "title": "Iran says Strait of Hormuz won't open until the U.S. \"corrects\" behavior",
+      "summary": "Iran says Strait of Hormuz won't open until the U.S. \"corrects\" behavior CBS News",
+      "source": "CBS News",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMVhleVdzazZyT0ZHcXV5aWJxa3FZaGtTelNHdUJ5cm4tNXNlLU5PYUM3Tk40cVRLQjdWY2Job2NyM0hNTnhKN1diQkkzN0Y0a0lOWmtCaGxxdU5GTUFxZW9IODM0MjI4aU5sS2YzREFrODBHV0pocFpGMkpPWHhla1JaXzRzclYtb085WFhMOFcxaXVfWWh1SXQzSmpJNUU5TzR3?oc=5",
+      "published": "2026-08-10T00:48:00Z",
       "sentiment": "neutral",
       "impact": "low"
     },
     {
-      "title": "Trump Says U.S. Strikes on Iran Aim to Block Nuclear Weapons Path",
-      "summary": "Trump Says U.S. Strikes on Iran Aim to Block Nuclear Weapons Path CryptoRank",
-      "source": "CryptoRank",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE50ZlR2LWhYc29PQjc3S2F6RVlCaDgwRk9aTS1yX3JUVHVxV1gydEVVc2RYVTYwcHlQLU9xeGV1VmFmb0I0TlVkY2tVcy1OX0lhYmp4U0RIbzRNczlPX0ctUklxaGlPUkxEUjJZaGpUNFlRd1BqTWhtd2xPdDA?oc=5",
-      "published": "2026-08-11T18:31:07Z",
+      "title": "Three Tankers Damaged in Gulf as US-Iran Conflict Escalates",
+      "summary": "Three Tankers Damaged in Gulf as US-Iran Conflict Escalates EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQVRBMEZTU1ZkSU45YVJobzBpREJWc1E1bEV3Q2hkY2piREhRQkhCWlN2Z3NNRW80TDZwWGZkZ1RBYnVocEVuaDF1cElrZjctVmVCWFdZbnc0XzZoS0xRSjhpcGs1Um0wX2xBWmVHNGpuQjdub2FXbjFDcC1ibDVocEV4UFc3MzYybHFsTnZMYlJ1cFd5?oc=5",
+      "published": "2026-08-11T13:20:24Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "Ukraine Pauses Tanker Strikes near Russian Port after US Request, Report Says",
+      "summary": "Ukraine Pauses Tanker Strikes near Russian Port after US Request, Report Says Dainik Jagran MP CG",
+      "source": "Dainik Jagran MP CG",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPREhYVG1rM015UkFoUGRPY3hnRGo0RHJrejF0cjVoclNwX1lkYi0xX2ZlWEpYRkhEVTEzaVJrNGlrNjQ2eDlMUHBuM19rVFB3Z1hFWFpWU05mNE0xa3lLNEtxYnJ6aDVSTkxxMTNEUjNuX3M5VG5ZTU9YQ3QxZzVnUmRxcV9paHV2dWxFV2JyeEhDTFh1bVpWVXlfalp1S0FXS2ZCTzRZamFveWhDbTIzUmg5SGpZOGN5TmdOUmMxdnVJclNWeWlpTQ?oc=5",
+      "published": "2026-08-12T09:00:04Z",
+      "sentiment": "bearish",
+      "impact": "low"
+    },
+    {
+      "title": "Iran says Hormuz will remain closed until US lifts blockade",
+      "summary": "Iran says Hormuz will remain closed until US lifts blockade The Siasat Daily",
+      "source": "The Siasat Daily",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMU40N1NXX1R6cVpWWlUtLUJrR1ZaZENuUnd2Nm5mWXAtT0YzcHdJZ3diVWNnSUx6eXIxM1p0Mm1hdVNaeWNWX3Q2MXgwUmdhTENwTlpUTVBJR2wtSjFMc21oRHRDTWZNcnFZNUV4ZDVzVFRXd1hpZUJLNmNqQm5zdkM4VDdfcjhONFpWRWExb2F1V1dPRWVuY0FWNNIBmwFBVV95cUxQMU40N1NXX1R6cVpWWlUtLUJrR1ZaZENuUnd2Nm5mWXAtT0YzcHdJZ3diVWNnSUx6eXIxM1p0Mm1hdVNaeWNWX3Q2MXgwUmdhTENwTlpUTVBJR2wtSjFMc21oRHRDTWZNcnFZNUV4ZDVzVFRXd1hpZUJLNmNqQm5zdkM4VDdfcjhONFpWRWExb2F1V1dPRWVuY0FWNA?oc=5",
+      "published": "2026-08-10T13:42:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Here are the latest updates in the Middle East as the US-Iran war impacts the region",
+      "summary": "Here are the latest updates in the Middle East as the US-Iran war impacts the region WNEP",
+      "source": "WNEP",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNU0NuNk9FQ19QMDlGTDVUZlhlUGhRRHNxU0R1RTk2RWtNdFRrN3ZkcEw0bHFWTkx3ZGVYRkxORzF6VloxSlpWTEFYV3g0bUhCU2ZieFZQWTI0Tng1Y1U3WVY4TU9sbXVfNV9nS2V5WGJTbW1KajJMX28wWWtyLV9PWXpEcXVnX00yT3VnQi1wNVEzWG1EM2VDVEp2Q05jZllJdE1GUG9yMzhlTldGeEdIUUEyenRxbTlkSFpoM3UzTEsyWTItNTJLX1hfNVBDenc?oc=5",
+      "published": "2026-08-11T13:28:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "Iran vows to keep Strait of Hormuz closed until US meets demands",
+      "summary": "Iran vows to keep Strait of Hormuz closed until US meets demands France 24",
+      "source": "France 24",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZy1KTHFVaVRHeVUzelhJbURMeVpyLWdBVUUxZDdjdEllQXdEZ0QyZVZQVy0wY293UXlhV055WkJSV0lVV0VIdVpIcF9ZeHJFUnBkcU1EdDg2VklMR3QzdXRubEdGR1ZtYVFsVXhpdFNoczlHeFJBS3Q4Q294TGo2cXpZYzNTOFE0MzFONlJRWUNkbHhQNnc3bkxaMFM3M3RGaEdqMjNvLTlkVi1pTG5IS3plVQ?oc=5",
+      "published": "2026-08-09T20:14:34Z",
       "sentiment": "neutral",
       "impact": "low"
     },
@@ -265,42 +301,6 @@
       "impact": "low"
     },
     {
-      "title": "Here are the latest updates in the Middle East as the US-Iran war impacts the region",
-      "summary": "Here are the latest updates in the Middle East as the US-Iran war impacts the region WNEP",
-      "source": "WNEP",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNU0NuNk9FQ19QMDlGTDVUZlhlUGhRRHNxU0R1RTk2RWtNdFRrN3ZkcEw0bHFWTkx3ZGVYRkxORzF6VloxSlpWTEFYV3g0bUhCU2ZieFZQWTI0Tng1Y1U3WVY4TU9sbXVfNV9nS2V5WGJTbW1KajJMX28wWWtyLV9PWXpEcXVnX00yT3VnQi1wNVEzWG1EM2VDVEp2Q05jZllJdE1GUG9yMzhlTldGeEdIUUEyenRxbTlkSFpoM3UzTEsyWTItNTJLX1hfNVBDenc?oc=5",
-      "published": "2026-08-11T13:28:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Trump Pivots Back to Sanctions for Iran as Other Strategies to End His War Fizzle",
-      "summary": "Trump Pivots Back to Sanctions for Iran as Other Strategies to End His War Fizzle wyomingtruth.org",
-      "source": "wyomingtruth.org",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVFIzNDIxNlZXX3JwN2pOdHVhWlZCVmxZWERUZ0lRUTdEN0V6dG9jXzA2RkVpZkdadVRjdFpGSW45dHA1aVlJVk5zRER0MzdTNTljRFlDdjlyNHZBMTlEN3Btcl9vQzdnYmRFczIyRjVMT1U3YWpCYVlEWXYwLXFaZUhrZ0JTR3hyYXk2anRJdEJvUThnMFcxVnZ0WDNiSXpjU2lkWWxmQjItVlU?oc=5",
-      "published": "2026-08-11T15:13:44Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Iran says Hormuz will remain closed until US lifts blockade",
-      "summary": "Iran says Hormuz will remain closed until US lifts blockade The Siasat Daily",
-      "source": "The Siasat Daily",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMU40N1NXX1R6cVpWWlUtLUJrR1ZaZENuUnd2Nm5mWXAtT0YzcHdJZ3diVWNnSUx6eXIxM1p0Mm1hdVNaeWNWX3Q2MXgwUmdhTENwTlpUTVBJR2wtSjFMc21oRHRDTWZNcnFZNUV4ZDVzVFRXd1hpZUJLNmNqQm5zdkM4VDdfcjhONFpWRWExb2F1V1dPRWVuY0FWNNIBmwFBVV95cUxQMU40N1NXX1R6cVpWWlUtLUJrR1ZaZENuUnd2Nm5mWXAtT0YzcHdJZ3diVWNnSUx6eXIxM1p0Mm1hdVNaeWNWX3Q2MXgwUmdhTENwTlpUTVBJR2wtSjFMc21oRHRDTWZNcnFZNUV4ZDVzVFRXd1hpZUJLNmNqQm5zdkM4VDdfcjhONFpWRWExb2F1V1dPRWVuY0FWNA?oc=5",
-      "published": "2026-08-10T13:42:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Iran vows to keep Strait of Hormuz closed until US meets demands",
-      "summary": "Iran vows to keep Strait of Hormuz closed until US meets demands France 24",
-      "source": "France 24",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZy1KTHFVaVRHeVUzelhJbURMeVpyLWdBVUUxZDdjdEllQXdEZ0QyZVZQVy0wY293UXlhV055WkJSV0lVV0VIdVpIcF9ZeHJFUnBkcU1EdDg2VklMR3QzdXRubEdGR1ZtYVFsVXhpdFNoczlHeFJBS3Q4Q294TGo2cXpZYzNTOFE0MzFONlJRWUNkbHhQNnc3bkxaMFM3M3RGaEdqMjNvLTlkVi1pTG5IS3plVQ?oc=5",
-      "published": "2026-08-09T20:14:34Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
       "title": "Press Release: Ann Wagner, Michael McCaul Introduce Russia and Iran Sanctions Bill",
       "summary": "Press Release: Ann Wagner, Michael McCaul Introduce Russia and Iran Sanctions Bill Quiver Quantitative",
       "source": "Quiver Quantitative",
@@ -308,15 +308,6 @@
       "published": "2026-08-10T20:21:00Z",
       "sentiment": "neutral",
       "impact": "med"
-    },
-    {
-      "title": "Iran issues US ultimatum over Strait of Hormuz \u1409 News from Fakti.bg - World",
-      "summary": "Iran issues US ultimatum over Strait of Hormuz \u1409 News from Fakti.bg - World fakti.bg",
-      "source": "fakti.bg",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRW9yTk90bFRJbzZrVVBndUFkSUVneW9uYVFDazh1Yi1LamNubDFqVXA3WmtZY3IyanUwWjgwQTV2T1gzR2VMOUk3SHVHemNFTUlpcjJfWk1POC02OTZDbjB0dVZHSy0ybXpwWmtqbXhLbmJRZWtZMXNzV3hrVjhPelRXdzhNLTQ?oc=5",
-      "published": "2026-08-10T03:21:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
     },
     {
       "title": "Ukraine and the World \u2013 Against russia\u2019s Aggression. Sanctions in Action",
@@ -328,30 +319,12 @@
       "impact": "med"
     },
     {
-      "title": "India faces tariff risk as US Senate passes sweeping Russia sanctions bill",
-      "summary": "India faces tariff risk as US Senate passes sweeping Russia sanctions bill MorungExpress",
-      "source": "MorungExpress",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVWo5bWxFWXpyWnpQRXprZmM4VFlUNTZmdjlNUUVQdnB2b3lYNzJsMzI3bUg2QVYxcnZrTnFRZFpmS1FRcE9OeGZOLVhFOGVnLTFsdUQ3NWJwcm90RE1VZlczVmhiZHN1RVZROHc5ZldJaThCd3luSk5XSEZGRHl6M3I3c1BnN3EtRUljUDlnZmw1SHFsLVFhYUZwNWVyVjFXalE?oc=5",
-      "published": "2026-08-12T02:34:43Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Iran says Strait of Hormuz won't open until the U.S. \"corrects\" behavior",
-      "summary": "Iran says Strait of Hormuz won't open until the U.S. \"corrects\" behavior CBS News",
-      "source": "CBS News",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMVhleVdzazZyT0ZHcXV5aWJxa3FZaGtTelNHdUJ5cm4tNXNlLU5PYUM3Tk40cVRLQjdWY2Job2NyM0hNTnhKN1diQkkzN0Y0a0lOWmtCaGxxdU5GTUFxZW9IODM0MjI4aU5sS2YzREFrODBHV0pocFpGMkpPWHhla1JaXzRzclYtb085WFhMOFcxaXVfWWh1SXQzSmpJNUU5TzR3?oc=5",
-      "published": "2026-08-10T00:48:00Z",
+      "title": "Trump Says U.S. Strikes on Iran Aim to Block Nuclear Weapons Path",
+      "summary": "Trump Says U.S. Strikes on Iran Aim to Block Nuclear Weapons Path CryptoRank",
+      "source": "CryptoRank",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE50ZlR2LWhYc29PQjc3S2F6RVlCaDgwRk9aTS1yX3JUVHVxV1gydEVVc2RYVTYwcHlQLU9xeGV1VmFmb0I0TlVkY2tVcy1OX0lhYmp4U0RIbzRNczlPX0ctUklxaGlPUkxEUjJZaGpUNFlRd1BqTWhtd2xPdDA?oc=5",
+      "published": "2026-08-11T18:31:07Z",
       "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Ukraine Pauses Tanker Strikes near Russian Port after US Request, Report Says",
-      "summary": "Ukraine Pauses Tanker Strikes near Russian Port after US Request, Report Says Dainik Jagran MP CG",
-      "source": "Dainik Jagran MP CG",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPREhYVG1rM015UkFoUGRPY3hnRGo0RHJrejF0cjVoclNwX1lkYi0xX2ZlWEpYRkhEVTEzaVJrNGlrNjQ2eDlMUHBuM19rVFB3Z1hFWFpWU05mNE0xa3lLNEtxYnJ6aDVSTkxxMTNEUjNuX3M5VG5ZTU9YQ3QxZzVnUmRxcV9paHV2dWxFV2JyeEhDTFh1bVpWVXlfalp1S0FXS2ZCTzRZamFveWhDbTIzUmg5SGpZOGN5TmdOUmMxdnVJclNWeWlpTQ?oc=5",
-      "published": "2026-08-12T09:00:04Z",
-      "sentiment": "bearish",
       "impact": "low"
     },
     {
@@ -361,6 +334,33 @@
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYzJkQm9DZkk2eWl5VGJ6MDJpR2hHWjFmY1NCTXZfSVhieklTVl9fMklaS2JPTTFrYzRlakpJbEE2UHQ3NVVqVVZNVENlMEtRb0hHakxrWEdxLUNJd0tXUDRKNngxQWVvaHY3a1pWNW91bEFVdjV1MW5wVDdmQUc0WDFiSm5pYkZlQnJmczFWVWVFQW1yZDZxMUFNb0RzSFJp?oc=5",
       "published": "2026-08-10T16:46:34Z",
       "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "India faces tariff risk as US Senate passes sweeping Russia sanctions bill",
+      "summary": "India faces tariff risk as US Senate passes sweeping Russia sanctions bill MorungExpress",
+      "source": "MorungExpress",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVWo5bWxFWXpyWnpQRXprZmM4VFlUNTZmdjlNUUVQdnB2b3lYNzJsMzI3bUg2QVYxcnZrTnFRZFpmS1FRcE9OeGZOLVhFOGVnLTFsdUQ3NWJwcm90RE1VZlczVmhiZHN1RVZROHc5ZldJaThCd3luSk5XSEZGRHl6M3I3c1BnN3EtRUljUDlnZmw1SHFsLVFhYUZwNWVyVjFXalE?oc=5",
+      "published": "2026-08-12T02:34:43Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Trump's mixed messages on Iran: 'Winding down' the war and easing sanctions but adding more troops",
+      "summary": "Trump's mixed messages on Iran: 'Winding down' the war and easing sanctions but adding more troops Kaltimtoday.co",
+      "source": "Kaltimtoday.co",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNS2ZKcG0yVGF4c01RMVlQbHpOeHNxMlpUVEpkMG9FQU02WS1IZUZEclczS2lXVm9YRUIwcmw5M1dXLVhlWWwzQWRmUUZRSHBpaVZDdjB1X01JT1dOcTBweVRqVFY0SXNvZnE5Z2J0ZnBJTTRvdmpnTy0wejBiSGxlQldkX1d6a056c1lKMHhZNEV1czFhRXJxN040REoxcG9rM1VRTmZKUVMtSGdha2p1Sl9wdGVJZkli?oc=5",
+      "published": "2026-08-10T01:53:49Z",
+      "sentiment": "neutral",
+      "impact": "med"
+    },
+    {
+      "title": "Iran issues US ultimatum over Strait of Hormuz \u1409 News from Fakti.bg - World",
+      "summary": "Iran issues US ultimatum over Strait of Hormuz \u1409 News from Fakti.bg - World fakti.bg",
+      "source": "fakti.bg",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRW9yTk90bFRJbzZrVVBndUFkSUVneW9uYVFDazh1Yi1LamNubDFqVXA3WmtZY3IyanUwWjgwQTV2T1gzR2VMOUk3SHVHemNFTUlpcjJfWk1POC02OTZDbjB0dVZHSy0ybXpwWmtqbXhLbmJRZWtZMXNzV3hrVjhPelRXdzhNLTQ?oc=5",
+      "published": "2026-08-10T03:21:00Z",
+      "sentiment": "neutral",
       "impact": "low"
     }
   ]
