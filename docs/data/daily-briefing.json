@@ -1,48 +1,45 @@
 {
- "generated": "2026-08-12T14:20:47.152105+00:00",
+ "generated": "2026-08-12T19:38:11.319560+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude benchmarks pulled back modestly on the day \u2014 WTI off 0.81% to $82.53, Brent -0.60% to $88.39 \u2014 after touching $89 intraday on Hormuz tension headlines, with a bearish API print (surprise 9.072 million barrel build for the week ending Aug 7) and a sharp RBOB sell-off (-8.93%) adding downward pressure on the refined-products complex. The weekly picture remains bullish: Brent +11.24%, WTI +9.72%, supported by the IEA's warning of a 1.8 million bpd global deficit this quarter following a projected 4.3 million bpd supply drop tied to the Strait of Hormuz closure. Indian state refiners are actively tendering for 6 million barrels of spot crude as term flows stay constrained. Tanker data continues to contradict U.S. government claims of normalized Middle East flows, keeping a geopolitical risk premium firmly embedded in the curve.",
+   "summary": "Crude benchmarks consolidated near recent highs after a blistering weekly run \u2014 WTI +10.44% and Brent +11.78% over the past seven sessions \u2014 as the Hormuz crisis dominated flow. Brent briefly topped $89 intraday before easing fractionally (-0.11%) on a bearish EIA print showing a massive 17.4 million-barrel build in U.S. crude inventories for the week ending August 7. The IEA flagged a 1.8 million bpd global deficit this quarter, projecting a 4.3 million bpd full-year supply loss tied to the Strait closure. Indian state refiners are actively tendering for 6 million barrels of spot crude as term flows remain constrained. RBOB gasoline was the session's outlier, cratering 8.09% on the day despite firm crude, suggesting demand-side weakness or a sharp crack-spread correction. On the geopolitical front, Ukraine paused tanker strikes near Novorossiysk following a JD Vance request, while Putin threatened to seize EU vessels in response to shadow-fleet enforcement.",
    "drivers": [
-    "IEA projects 1.8 million bpd global deficit this quarter; supply forecast cut by 4.3 million bpd on sustained Hormuz disruption",
-    "Bearish API inventory report \u2014 9.072 million barrel surprise crude build \u2014 capped the intraday rally and weighed on WTI",
-    "RBOB gasoline crashed 8.93% on the day, diverging sharply from crude; heating oil also fell 3.26% despite the broader weekly bullish trend"
+    "Strait of Hormuz remains closed per Iran's demands, underpinning a 1.8 million bpd IEA-estimated global supply deficit and multi-week crude rally",
+    "Bearish counter-pressure from a 17.4 million-barrel U.S. crude inventory build reported by the EIA, capping intraday upside",
+    "Russia-Ukraine tanker-strike pause and Putin's threat to seize EU ships add a second geopolitical risk layer to shipping and shadow-fleet crude flows"
    ],
    "headlineCount": 12,
    "sources": [
     "Dainik Jagran MP CG",
     "EnergyNow.com",
-    "LatestLY",
+    "France 24",
     "Quiver Quantitative",
     "The Hague Centre for Strategic Studies"
    ]
   },
   "gas": {
-   "summary": "Henry Hub edged higher (+1.66% to $2.812/MMBtu) with a modest weekly gain of +4.65%, though the month-on-month picture remains soft at -3.13%, suggesting the domestic market has yet to fully price in geopolitical spillovers. TTF was the standout mover, surging 3.61% on the day to \u20ac60.855/MWh, extending a sharp 16.13% weekly rally and a 14.91% monthly gain as the Hormuz crisis tightens European LNG supply alternatives. The Alaska LNG mega-project ($55 billion) is reportedly in active talks with additional buyers ahead of FID, a sign that long-term buyers are scrambling for supply security. Headlines on Russia's refinery crisis and its import of Indian fuels add to the broader supply dislocation narrative. Gas-specific news flow today was relatively thin beyond these items.",
+   "summary": "European gas led the complex sharply higher, with TTF surging 3.00% on the day and now up 15.44% on the week and 14.23% on the month \u2014 a clear Hormuz-spillover bid as LNG re-routing risk from the Middle East tightens Atlantic basin supply. Henry Hub was calmer, adding 0.90% to $2.792/MMBtu, lagging TTF materially and reflecting ample domestic supply. The Trump administration's auction of 81 million Gulf of Mexico acres for oil and gas leases signals a longer-term supply ambition but provides no near-term relief. A separate piece flagged five LNG megaprojects as the market's structural answer to the current crunch, noting Asia absorbs close to 90% of global LNG supply. News flow for Henry Hub-specific fundamentals was thin today beyond the macro geopolitical backdrop.",
    "drivers": [
-    "TTF surged 3.61% on the day (+16.13% on the week) as Hormuz disruption tightens European LNG import alternatives",
-    "Alaska LNG project advancing buyer talks ahead of FID, reflecting long-term supply security demand from buyers in a disrupted market",
-    "Henry Hub gains remain muted relative to TTF; the US-Europe price spread continues to widen, incentivizing LNG export flows"
+    "Hormuz closure and LNG re-routing risk driving TTF to multi-month highs, up 15% on the week",
+    "Henry Hub lagging materially, reflecting domestic supply adequacy despite the broader geopolitical rally",
+    "Trump administration's 81-million-acre Gulf of Mexico lease auction signals future supply growth but no immediate market impact"
    ],
    "headlineCount": 3,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon (EUA) was broadly flat, slipping 0.28% to $77.69, with a mild weekly gain of +0.75% and monthly drift of +1.42% \u2014 the carbon market appears to be awaiting clearer direction from the gas complex before moving decisively. The dominant power story today was the UK grid warning of tighter supply margins during a solar eclipse coinciding with a heatwave, creating a rare dual demand-and-supply stress event. TTF's continued surge (+3.61% to \u20ac60.855/MWh) raises gas-fired generation costs materially across European power markets. A drone strike on the power station at Libya's Zawiya oil export terminal added to infrastructure risk sentiment. Iran-related geopolitical headlines remain in the background but have not yet catalyzed a directional EUA move.",
+   "summary": "Power and carbon markets were comparatively quiet relative to the oil and gas complex. EU EUAs slipped a modest 0.35% to $77.64, posting only a 0.68% weekly gain despite TTF's aggressive 15.44% weekly surge \u2014 the divergence suggesting carbon markets are not yet pricing a sustained gas-to-coal switching wave. In the UK, grid operators warned of tighter power supply margins coinciding with Wednesday's solar eclipse, compounded by a heatwave driving elevated demand \u2014 a one-day operational risk rather than a structural signal. On the demand side, a feature on agrivoltaic solar development highlighted ongoing clean-power expansion efforts. The Iran conflict and Trump's mixed messaging on the war's trajectory were present in the headline feed but offered no power-specific fundamental catalyst today.",
    "drivers": [
-    "UK grid flagged a power margin shortfall risk as a solar eclipse combined with a heatwave stressed supply and demand simultaneously",
-    "TTF at \u20ac60.855/MWh (+16% on the week) is pushing up gas-fired generation costs across European power markets, with limited EUA response so far",
-    "Drone strike on the Zawiya power station in Libya highlights growing vulnerability of energy infrastructure to conflict-zone attacks"
+    "EU EUAs largely unmoved (-0.35%) despite surging TTF gas prices, suggesting limited coal-switching premium being priced in currently",
+    "UK grid warned of tighter margins during solar eclipse on August 12, amplified by an ongoing heatwave driving peak demand",
+    "Agrivoltaic solar expansion stories reflect longer-term clean capacity build-out; no immediate price impact"
    ],
-   "headlineCount": 8,
+   "headlineCount": 7,
    "sources": [
     "CryptoRank",
-    "Firstpost",
     "France 24",
-    "Kaltimtoday.co",
-    "LatestLY",
-    "The Sunday Guardian"
+    "Kaltimtoday.co"
    ]
   }
  }
