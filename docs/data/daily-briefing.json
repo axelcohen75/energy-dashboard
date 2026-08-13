@@ -1,13 +1,13 @@
 {
- "generated": "2026-08-13T14:22:36.663173+00:00",
+ "generated": "2026-08-13T19:37:38.715280+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude sold off sharply today \u2014 WTI -3.79% to $80.11 and Brent -3.50% to $85.91 \u2014 as both OPEC and the IEA slashed their 2026 demand outlooks, overwhelming the geopolitical risk premium that had lifted prices nearly 4-5% over the prior week. RBOB gasoline cratered 9.59% to $2.8532/gal, the standout mover, while heating oil held up best at -1.74% ($4.2291/gal) amid a deepening global diesel supply crunch tied to Ukrainian drone strikes on Russian refineries and a Houthi attack on a Saudi refining facility. A partial diplomatic easing emerged after Ukraine reportedly halted tanker strikes at a Russian port following a U.S. Vice Presidential request, though refinery attacks continued. Russia's energy sector is under enough strain that it is now importing gasoline from India for the first time. Three tankers damaged in the Gulf and stalled U.S.-Iran talks keep tail risks elevated.",
+   "summary": "Crude gave back ground Thursday, with WTI settling at $81.22 (-2.49%) and Brent at $87.07 (-2.17%), pulling back from a recent test near $90. The week-on-week gains of roughly 5% reflect the accumulated geopolitical risk premium: US-Iran conflict has damaged three tankers in the Gulf, Strait of Hormuz disruption fears are spreading westward, and Ukrainian drone strikes continue to degrade Russian refining capacity \u2014 Gazprom's Salavat complex was hit today. The distillate complex is telling its own story: Heating Oil dropped 4% on the day but remains up 6.4% on the week, while RBOB cratered 9.2% intraday \u2014 an unusually sharp divergence. Russia's diesel exports collapsed to just 80,000 bpd in early August, a multiyear low, while Moscow has been forced to import gasoline from India as domestic refinery strikes bite. India is simultaneously expanding its strategic petroleum reserves, signaling a broader supply-security push.",
    "drivers": [
-    "OPEC and IEA both cut 2026 demand forecasts, triggering today's broad crude selloff",
-    "Ongoing Ukrainian and Houthi refinery strikes sustain diesel supply crunch; Russia forced to import gasoline from India",
-    "U.S.-Iran conflict escalation (three tankers damaged in Gulf, Hormuz concerns) provides a floor, but ceasefire signals on tanker strikes capped upside"
+    "US-Iran conflict: three tankers damaged in the Gulf, Hormuz shock rippling into Atlantic markets",
+    "Russian refining capacity eroding rapidly \u2014 Ukrainian strikes hit Salavat today; diesel exports crash to multiyear lows of 80,000 bpd",
+    "Sharp intraday divergence: RBOB -9.2% vs. Heating Oil -4.0%, reflecting product-specific supply and demand dislocations"
    ],
    "headlineCount": 12,
    "sources": [
@@ -16,15 +16,15 @@
     "Quiver Quantitative",
     "Swarajya",
     "The Hague Centre for Strategic Studies",
-    "The Korea Times"
+    "The New Voice of Ukraine"
    ]
   },
   "gas": {
-   "summary": "European and U.S. gas markets diverged sharply today. TTF surged 3.89% to \u20ac61.021/MWh, extending a remarkable +16.44% weekly and +15.22% monthly rally driven by the U.S.-Iran war disrupting global LNG supply chains and elevating risk premiums on cargoes serving Europe and Asia. Henry Hub slipped 2.28% to $2.74/MMBtu, remaining pressured on a one-month basis (-6.29%), reflecting ample domestic U.S. supply. On infrastructure, an Alaska LNG pipeline bill failed to pass the state legislature, prompting a sharp gubernatorial rebuke, removing a potential future export avenue. South Korean private equity firm Hahn & Co is consolidating SK Shipping and H-Line Shipping to create Asia's largest LNG carrier operator, signalling continued long-term institutional confidence in LNG trade growth.",
+   "summary": "Henry Hub slipped 2.71% to $2.727/MMBtu, remaining under pressure on a one-month basis (-6.70%), while European TTF eased fractionally to \u20ac60.59/MWh but holds strong gains of 8.6% on the week and 11.5% on the month \u2014 a stark transatlantic divergence. The European premium is underpinned by continued erosion of Russian supply infrastructure: Ukraine struck Gazprom's Neftekhim Salavat refinery in the Urals today, the latest in an intensifying campaign that has already depressed Russian diesel and gasoil exports to multiyear lows. On the US side, the Alaska LNG pipeline bill failed to pass the state legislature, triggering a sharp rebuke from the governor and removing a potential future supply increment. The TAPI pipeline through Afghanistan meanwhile remains stalled, with tangible progress elusive despite political rhetoric.",
    "drivers": [
-    "U.S.-Iran conflict driving TTF sharply higher (+16.4% on the week) as LNG supply disruption fears grip European and Asian buyers",
-    "Henry Hub under pressure on a monthly basis despite a modest weekly bounce, reflecting U.S. domestic supply fundamentals decoupled from geopolitics",
-    "Alaska LNG pipeline bill failure removes a near-term U.S. export capacity catalyst; South Korean LNG fleet consolidation signals sustained Asian import demand"
+    "TTF-HH spread widening: TTF +8.6% w/w vs. HH -6.7% m/m, driven by European supply security concerns tied to Russian infrastructure strikes",
+    "Ukraine hit Gazprom's Salavat refinery today, deepening disruptions to Russian energy output",
+    "Alaska LNG pipeline bill defeated in legislature, removing a prospective US export supply pathway"
    ],
    "headlineCount": 5,
    "sources": [
@@ -32,13 +32,13 @@
    ]
   },
   "power": {
-   "summary": "The power and carbon complex is being shaped primarily by the knock-on effects of the broader energy crisis rather than standalone power-sector news today. EU carbon EUAs nudged up 0.38% to $78.21/EUA, continuing a modest but steady monthly grind higher (+2.10%), partly supported by elevated TTF gas prices (+3.89% today) which raise the cost of gas-fired generation and indirectly support carbon values. India is emerging as a major structural theme: the country is now the world's largest proposed new coal power capacity builder with 638 million metric tons of annual new capacity planned, while separately expanding strategic petroleum reserves. In China, elevated crude prices are delivering record profits to coal-to-chemicals producers. A MIT-linked framework targeting nuclear fusion financing drew attention on the longer-dated clean energy horizon, but headline news flow for the EU power market specifically is thin today.",
+   "summary": "EU carbon EUAs edged up 0.26% to $78.41/EUA, posting a modest but consistent grind higher (+1.8% on the week and month), broadly supported by elevated TTF gas prices which push up the cost of power generation and underpin carbon demand. Two structural stories dominate today's power and carbon headlines. Romania shut down its last operating nuclear reactor after the Danube hit a 90-year low, a stark reminder of climate-driven physical risk to baseband generation. On the investment side, the US Department of Energy is preparing to commit up to $2.15 billion to X-energy's advanced nuclear reactor programme, signaling long-term US policy commitment to nuclear. WoodMac flagged that sustained oil price shocks could materially accelerate EV adoption, with downstream implications for power demand growth. News flow on the geopolitical power bloc story is noted but offers limited near-term price signal.",
    "drivers": [
-    "Surging TTF gas prices support EU EUA values by raising gas-fired generation costs across the continent",
-    "India accelerating coal power expansion and strategic reserve build, signalling medium-term fossil demand pressure on global carbon markets",
-    "China's coal-to-chemicals sector reporting record profits as high crude prices boost coal-derived product competitiveness"
+    "Romania forced offline its last nuclear reactor due to record-low Danube water levels, tightening European power supply",
+    "US DOE backing X-energy with up to $2.15 billion, reinforcing advanced nuclear as a policy priority",
+    "WoodMac: high oil prices could accelerate EV uptake, with positive long-run implications for power demand"
    ],
-   "headlineCount": 8,
+   "headlineCount": 6,
    "sources": [
     "CryptoRank"
    ]
