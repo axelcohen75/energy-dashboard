@@ -1,45 +1,44 @@
 {
- "generated": "2026-08-14T14:15:03.682861+00:00",
+ "generated": "2026-08-14T19:33:03.179548+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude booked a strong week \u2014 Brent +4.48%, WTI +4.04% \u2014 anchored squarely in Hormuz risk premium as the US-Iran conflict grinds on with no diplomatic resolution in sight. Tanker crossings through the strait slumped to as few as five in a single day this week, and three vessels were reported damaged in the Gulf, keeping physical supply anxiety elevated. Houthi drone attacks on Saudi Aramco's Jazan refinery added a second front of disruption. Headline crude gains were, however, undercut at the product level: RBOB gasoline cratered 8.78% on the session and is down 13.13% on the month, consistent with VP Vance's declaration that cheap pump prices are Washington's \"goal number one.\" Heating oil shed 3.30% on the day despite a solid weekly gain. Asian refiners are pivoting to US crude as Hormuz access deteriorates, while Russia quietly captured a record 50%-plus share of India's import market.",
+   "summary": "Crude markets closed the week firmly bid, with Brent +1.60% on the day to $88.46 and WTI +1.24% to $82.25, both on track for weekly gains north of 5%. The dominant driver is the ongoing Iran war and its chokehold on the Strait of Hormuz: Iranian military has publicly rejected U.S. claims over Hormuz control, tankers are increasingly running dark with transponders off, and North Asian refiners are pivoting aggressively toward U.S. crude as Middle Eastern supply routes grow unreliable. Houthi drones struck Saudi Aramco's Jazan refinery for a second time Thursday, adding further supply anxiety. VP Vance declared cheap gasoline 'goal number one,' which may signal diplomatic pressure but has yet to materially cap prices. RBOB's sharp -7.24% one-day drop is a notable divergence and warrants monitoring.",
    "drivers": [
-    "Hormuz gridlock: tanker crossings at multi-week lows, three vessels damaged, Iranian military contests US control claims",
-    "Geopolitical escalation broadening \u2014 Houthi drone strike on Aramco's Jazan refinery adds Gulf infrastructure risk",
-    "White House political pressure on gasoline prices weighing on product cracks; RBOB -8.78% on the day"
+    "Strait of Hormuz disruption and Iranian military's rejection of U.S. control claims sustaining elevated geopolitical risk premium in crude",
+    "Second Houthi drone attack on Saudi Aramco's Jazan refinery and growing tanker transponder blackouts tightening perceived supply",
+    "North Asian refiners rotating to U.S. crude amid Middle East route uncertainty, supporting WTI demand; RBOB's sharp single-day decline (-7.24%) diverges sharply from crude strength"
    ],
    "headlineCount": 12,
    "sources": [
     "EnergyNow.com",
     "The Sunday Guardian",
     "U.S. News - Money",
+    "cryptobriefing.com",
     "finance.biggo.com"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets diverged sharply by geography this week. TTF surged 9.50% on the week and 11.02% on the month to 60.82 \u20ac/MWh, reflecting European anxiety over LNG supply routes through a contested Strait of Hormuz \u2014 Iranian forces have explicitly rejected US claims of control over the waterway, raising the spectre of prolonged transit disruption. Henry Hub is a far quieter story: the front month edged up 1.61% today to $2.771/MMBtu and is +4.09% on the week, but remains 3.04% below month-ago levels, suggesting domestic fundamentals are still soft. The Vance \"goal number one\" framing on energy prices adds a policy overlay, though headline news on US gas-specific fundamentals is thin today.",
+   "summary": "The gas picture is split. TTF surged +0.70% on the day to \u20ac60.82/MWh, extending a sharp +9.50% weekly and +11.02% monthly rally, driven primarily by LNG supply risk stemming from Hormuz disruption \u2014 Iranian military rejection of U.S. Hormuz claims directly threatens LNG transit and has European markets pricing in a sustained risk premium. Henry Hub, by contrast, slipped -0.22% to $2.721/MMBtu, holding a modest +2.22% weekly gain but remaining down nearly 5% over the past month. Baker Hughes data released Friday showed U.S. oil and gas rig counts rising again, suggesting domestic supply continues to build and capping the Henry Hub upside. The transatlantic divergence between TTF and Henry Hub reflects differing exposure to the Middle East conflict.",
    "drivers": [
-    "Hormuz LNG supply risk driving outsized TTF rally \u2014 +9.50% on the week vs Henry Hub's modest +4.09%",
-    "Iranian military's rejection of US Hormuz control claims sustains European supply-security premium",
-    "Henry Hub subdued relative to TTF; domestic US fundamentals remain soft with month-on-month price still negative"
+    "Hormuz conflict elevating LNG supply risk premiums sharply on TTF, with Iranian military rejecting U.S. control claims adding uncertainty",
+    "Henry Hub soft on a one-month basis (-4.79%) as rising U.S. rig counts point to continued domestic supply growth",
+    "VP Vance's stated priority of lowering U.S. gas prices may imply policy support for domestic production, further limiting Henry Hub upside"
    ],
-   "headlineCount": 3,
+   "headlineCount": 4,
    "sources": [
     "The Sunday Guardian"
    ]
   },
   "power": {
-   "summary": "The power and carbon complex faces a convergence of structural and geopolitical pressures. EU carbon (EUA) is little-changed near-term \u2014 down 0.72% on the day and only +0.80% on the week at $77.64 \u2014 but TTF's 11% monthly surge feeds directly into gas-fired generation costs across Europe. On the demand side, US power grids are straining under what is reported to be record electricity consumption driven by Big Tech data center buildout, with demand expected to set new all-time highs both this year and next. India's coal demand trajectory adds another long-term demand signal, with projections pointing to 1.6 billion tons by 2030 versus roughly 1.2 billion today. A Trump administration push into EV minerals \u2014 despite the president's historically sceptical stance on clean energy \u2014 rounds out the picture as an emerging policy signal worth monitoring.",
+   "summary": "Power and carbon data flow is thin today. EU EUAs edged down -0.72% to $77.64/EUA, little changed on a weekly (+0.80%) and monthly (+0.79%) basis, suggesting carbon markets are not yet meaningfully repricing around the Hormuz conflict or broader macro volatility. TTF's +9.50% weekly surge is a clear headwind for gas-fired generation economics in Europe, which would typically support EUA demand \u2014 the muted EUA response may reflect demand-side caution. The single notable fundamental headline is India's coal demand projection hitting 1.6 billion tons by 2030 from approximately 1.2 billion today, flagging long-term upward pressure on global thermal coal and associated emissions. Dedicated power-sector headlines are limited today.",
    "drivers": [
-    "US power demand hitting record highs driven by data center buildout, tightening grid margins",
-    "TTF +11% month-on-month inflating European gas-fired generation costs; EUA pricing not yet fully reflecting pass-through",
-    "India coal demand forecast to rise 33% to 1.6 bn tons by 2030; Trump EV-minerals spending signals a nuanced clean-energy policy shift"
+    "TTF's sharp weekly rally (+9.50%) raises gas-fired generation costs in Europe, but EUA response has been muted (-0.72% on the day)",
+    "India's coal demand forecast rising to 1.6 billion tons by 2030 signals sustained long-term upward pressure on thermal coal consumption and global emissions",
+    "Dedicated power-sector news flow is thin today; EUA appears range-bound on a monthly basis with no clear directional catalyst"
    ],
-   "headlineCount": 8,
+   "headlineCount": 3,
    "sources": [
-    "ABS-CBN",
-    "TradeWinds News",
     "U.S. News - Money"
    ]
   }
