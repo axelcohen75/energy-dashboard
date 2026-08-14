@@ -1,46 +1,46 @@
 {
- "generated": "2026-08-13T19:37:38.715280+00:00",
+ "generated": "2026-08-14T14:15:03.682861+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude gave back ground Thursday, with WTI settling at $81.22 (-2.49%) and Brent at $87.07 (-2.17%), pulling back from a recent test near $90. The week-on-week gains of roughly 5% reflect the accumulated geopolitical risk premium: US-Iran conflict has damaged three tankers in the Gulf, Strait of Hormuz disruption fears are spreading westward, and Ukrainian drone strikes continue to degrade Russian refining capacity \u2014 Gazprom's Salavat complex was hit today. The distillate complex is telling its own story: Heating Oil dropped 4% on the day but remains up 6.4% on the week, while RBOB cratered 9.2% intraday \u2014 an unusually sharp divergence. Russia's diesel exports collapsed to just 80,000 bpd in early August, a multiyear low, while Moscow has been forced to import gasoline from India as domestic refinery strikes bite. India is simultaneously expanding its strategic petroleum reserves, signaling a broader supply-security push.",
+   "summary": "Crude booked a strong week \u2014 Brent +4.48%, WTI +4.04% \u2014 anchored squarely in Hormuz risk premium as the US-Iran conflict grinds on with no diplomatic resolution in sight. Tanker crossings through the strait slumped to as few as five in a single day this week, and three vessels were reported damaged in the Gulf, keeping physical supply anxiety elevated. Houthi drone attacks on Saudi Aramco's Jazan refinery added a second front of disruption. Headline crude gains were, however, undercut at the product level: RBOB gasoline cratered 8.78% on the session and is down 13.13% on the month, consistent with VP Vance's declaration that cheap pump prices are Washington's \"goal number one.\" Heating oil shed 3.30% on the day despite a solid weekly gain. Asian refiners are pivoting to US crude as Hormuz access deteriorates, while Russia quietly captured a record 50%-plus share of India's import market.",
    "drivers": [
-    "US-Iran conflict: three tankers damaged in the Gulf, Hormuz shock rippling into Atlantic markets",
-    "Russian refining capacity eroding rapidly \u2014 Ukrainian strikes hit Salavat today; diesel exports crash to multiyear lows of 80,000 bpd",
-    "Sharp intraday divergence: RBOB -9.2% vs. Heating Oil -4.0%, reflecting product-specific supply and demand dislocations"
+    "Hormuz gridlock: tanker crossings at multi-week lows, three vessels damaged, Iranian military contests US control claims",
+    "Geopolitical escalation broadening \u2014 Houthi drone strike on Aramco's Jazan refinery adds Gulf infrastructure risk",
+    "White House political pressure on gasoline prices weighing on product cracks; RBOB -8.78% on the day"
    ],
    "headlineCount": 12,
    "sources": [
-    "Anadolu Ajans\u0131",
     "EnergyNow.com",
-    "Quiver Quantitative",
-    "Swarajya",
-    "The Hague Centre for Strategic Studies",
-    "The New Voice of Ukraine"
+    "The Sunday Guardian",
+    "U.S. News - Money",
+    "finance.biggo.com"
    ]
   },
   "gas": {
-   "summary": "Henry Hub slipped 2.71% to $2.727/MMBtu, remaining under pressure on a one-month basis (-6.70%), while European TTF eased fractionally to \u20ac60.59/MWh but holds strong gains of 8.6% on the week and 11.5% on the month \u2014 a stark transatlantic divergence. The European premium is underpinned by continued erosion of Russian supply infrastructure: Ukraine struck Gazprom's Neftekhim Salavat refinery in the Urals today, the latest in an intensifying campaign that has already depressed Russian diesel and gasoil exports to multiyear lows. On the US side, the Alaska LNG pipeline bill failed to pass the state legislature, triggering a sharp rebuke from the governor and removing a potential future supply increment. The TAPI pipeline through Afghanistan meanwhile remains stalled, with tangible progress elusive despite political rhetoric.",
+   "summary": "Natural gas markets diverged sharply by geography this week. TTF surged 9.50% on the week and 11.02% on the month to 60.82 \u20ac/MWh, reflecting European anxiety over LNG supply routes through a contested Strait of Hormuz \u2014 Iranian forces have explicitly rejected US claims of control over the waterway, raising the spectre of prolonged transit disruption. Henry Hub is a far quieter story: the front month edged up 1.61% today to $2.771/MMBtu and is +4.09% on the week, but remains 3.04% below month-ago levels, suggesting domestic fundamentals are still soft. The Vance \"goal number one\" framing on energy prices adds a policy overlay, though headline news on US gas-specific fundamentals is thin today.",
    "drivers": [
-    "TTF-HH spread widening: TTF +8.6% w/w vs. HH -6.7% m/m, driven by European supply security concerns tied to Russian infrastructure strikes",
-    "Ukraine hit Gazprom's Salavat refinery today, deepening disruptions to Russian energy output",
-    "Alaska LNG pipeline bill defeated in legislature, removing a prospective US export supply pathway"
+    "Hormuz LNG supply risk driving outsized TTF rally \u2014 +9.50% on the week vs Henry Hub's modest +4.09%",
+    "Iranian military's rejection of US Hormuz control claims sustains European supply-security premium",
+    "Henry Hub subdued relative to TTF; domestic US fundamentals remain soft with month-on-month price still negative"
    ],
-   "headlineCount": 5,
+   "headlineCount": 3,
    "sources": [
-    "The New Voice of Ukraine"
+    "The Sunday Guardian"
    ]
   },
   "power": {
-   "summary": "EU carbon EUAs edged up 0.26% to $78.41/EUA, posting a modest but consistent grind higher (+1.8% on the week and month), broadly supported by elevated TTF gas prices which push up the cost of power generation and underpin carbon demand. Two structural stories dominate today's power and carbon headlines. Romania shut down its last operating nuclear reactor after the Danube hit a 90-year low, a stark reminder of climate-driven physical risk to baseband generation. On the investment side, the US Department of Energy is preparing to commit up to $2.15 billion to X-energy's advanced nuclear reactor programme, signaling long-term US policy commitment to nuclear. WoodMac flagged that sustained oil price shocks could materially accelerate EV adoption, with downstream implications for power demand growth. News flow on the geopolitical power bloc story is noted but offers limited near-term price signal.",
+   "summary": "The power and carbon complex faces a convergence of structural and geopolitical pressures. EU carbon (EUA) is little-changed near-term \u2014 down 0.72% on the day and only +0.80% on the week at $77.64 \u2014 but TTF's 11% monthly surge feeds directly into gas-fired generation costs across Europe. On the demand side, US power grids are straining under what is reported to be record electricity consumption driven by Big Tech data center buildout, with demand expected to set new all-time highs both this year and next. India's coal demand trajectory adds another long-term demand signal, with projections pointing to 1.6 billion tons by 2030 versus roughly 1.2 billion today. A Trump administration push into EV minerals \u2014 despite the president's historically sceptical stance on clean energy \u2014 rounds out the picture as an emerging policy signal worth monitoring.",
    "drivers": [
-    "Romania forced offline its last nuclear reactor due to record-low Danube water levels, tightening European power supply",
-    "US DOE backing X-energy with up to $2.15 billion, reinforcing advanced nuclear as a policy priority",
-    "WoodMac: high oil prices could accelerate EV uptake, with positive long-run implications for power demand"
+    "US power demand hitting record highs driven by data center buildout, tightening grid margins",
+    "TTF +11% month-on-month inflating European gas-fired generation costs; EUA pricing not yet fully reflecting pass-through",
+    "India coal demand forecast to rise 33% to 1.6 bn tons by 2030; Trump EV-minerals spending signals a nuanced clean-energy policy shift"
    ],
-   "headlineCount": 6,
+   "headlineCount": 8,
    "sources": [
-    "CryptoRank"
+    "ABS-CBN",
+    "TradeWinds News",
+    "U.S. News - Money"
    ]
   }
  }
