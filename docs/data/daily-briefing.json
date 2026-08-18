@@ -1,45 +1,45 @@
 {
- "generated": "2026-08-18T13:41:59.499912+00:00",
+ "generated": "2026-08-18T19:12:09.012534+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets pushed higher on Tuesday as a cascade of geopolitical shocks kept the risk premium firmly bid. Brent crossed $91/bbl (+0.48%) and WTI held $84.64 (+0.19%) after an unidentified projectile struck a vessel transiting the Strait of Hormuz and Iran reiterated its blockade will remain in place until U.S. conditions are met. Houthis claimed a third strike on Saudi Aramco's Jazan refinery in two weeks, amplifying supply-disruption anxiety. Gulf-to-China VLCC rates surged to $510,000/day, reflecting the freight risk premium. The sharp divergence in refined products\u2014RBOB gasoline collapsing 8.27% on the session versus heating oil off only 3.0%\u2014is notable and warrants monitoring for structural demand signals. U.S. shale majors are reportedly trimming capex rather than chasing volumes, limiting any near-term supply response to elevated prices.",
+   "summary": "Crude markets are bifurcating sharply. Brent held above $91 (+0.17%) after a projectile struck a vessel transiting Hormuz and Houthis claimed their third attack on Aramco's Jazan refinery in two weeks, keeping geopolitical risk premium firmly embedded. WTI slipped fractionally to $84.09 (-0.49%), partly capped by strategic reserve releases. The real distress signal, however, is in products: RBOB gasoline cratered 7.94% on the day and is down over 11% on the month, while heating oil shed 2.56%. Separately, Gulf-to-China supertanker rates hit $510,000/day as Hormuz disruption inflates freight costs. Aramco's decision to resume VLCC loadings through Hormuz after a three-week pause is a tentative stabiliser. US easing of Russia oil sanctions and Iran's insistence the blockade continues until US terms are met keep the geopolitical backdrop deeply fluid.",
    "drivers": [
-    "Hormuz closure threat sustained after vessel strike and Iran's conditional blockade statement keep geopolitical risk premium elevated in Brent",
-    "Third Houthi attack on Jazan refinery in two weeks tightens Middle East refining capacity and supports distillate margins",
-    "RBOB gasoline -8.27% intraday divergence from crude signals potential demand softness or domestic supply normalisation worth tracking"
+    "Hormuz security crisis: vessel strike, erratic tanker traffic, and Iran's blockade threat sustain Brent premium while freight rates hit extreme highs",
+    "Product dislocation: RBOB -7.94% on the day and heating oil -2.56% signal demand destruction or blending/supply dynamics disconnected from crude strength",
+    "Diplomatic wild cards: US temporary easing of Russia sanctions and stalled US-Iran talks create offsetting supply signals that cap WTI below $85"
    ],
    "headlineCount": 12,
    "sources": [
+    "Devdiscourse",
     "EnergyNow.com",
-    "The Sunday Guardian",
-    "energynow.ca"
+    "The New Voice of Ukraine",
+    "The Sunday Guardian"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets traded with a split personality on Tuesday. Henry Hub edged up 1.34% to $2.727/MMBtu but remains under pressure on the month (-4.69%), reflecting ample domestic supply. European TTF, by contrast, gained 1.33% to \u20ac62.58/MWh and is up 6.55% on the week, consistent with the broader Hormuz-driven LNG supply anxiety. Pakistan's power generation costs jumped 38% year-on-year in July after the country paid the highest spot LNG prices in four years, an early indication of how Gulf supply disruptions translate into Asian and emerging-market energy costs. Headline flow for Henry Hub is thin today; the U.S.-domestic gas narrative is largely being driven by macro and storage dynamics not captured in today's feed.",
+   "summary": "Natural gas prices jumped sharply on both sides of the Atlantic. Henry Hub gained 3.23% to $2.777/MMBtu, while TTF surged 3.49% to \u20ac63.915/MWh, extending a strong weekly (+8.82%) and monthly (+8.81%) rally that points to sustained structural tightness rather than a one-day move. News flow today is thin for gas specifically, but the Hormuz disruption and broader Middle East tensions are the most plausible transmission mechanism into LNG spot markets, consistent with Pakistan reporting a 38% jump in power generation costs after paying four-year-high spot LNG prices in July. A separate opinion piece from the UK argues for expanded North Sea production on energy security grounds, reflecting the policy mood across importing nations. Headline data for the sector is limited today beyond these two items.",
    "drivers": [
-    "TTF +6.55% on the week as Hormuz tensions tighten European LNG re-supply expectations",
-    "Pakistan spot LNG costs hit four-year highs in July, illustrating emerging-market demand destruction risk from supply disruptions",
-    "Henry Hub -4.69% on the month reflects resilient domestic U.S. production offsetting geopolitical premium"
+    "TTF +3.49% on the day and +8.82% on the week, with Hormuz/LNG supply disruption risk the primary suspected driver",
+    "Pakistan paying four-year high spot LNG prices in July, underscoring how supply shocks are transmitting into emerging-market power costs",
+    "Henry Hub +3.23% despite monthly weakness, suggesting short-covering or sympathy with global gas tightness rather than US-specific fundamentals"
    ],
-   "headlineCount": 5,
+   "headlineCount": 2,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon allowances (EUA) edged up 0.43% to $78.15, extending a steady month-long grind higher (+3.85%), supported by TTF's upward move and the broader energy cost pass-through dynamic. Iran's repeated affirmation that the Strait of Hormuz will remain closed until U.S. interim deal conditions are met continues to anchor elevated gas prices, which in turn supports carbon costs as gas-fired generation competes with coal across European dispatch stacks. Ukraine's deep-strike operations against Russian energy infrastructure add a secondary upside tail risk to TTF and, by extension, EUAs. Pakistan's 38% power cost surge underlines how LNG-price spikes ripple through power markets in gas-dependent economies. Dedicated power-sector news flow is light today beyond these cross-commodity linkages.",
+   "summary": "EU carbon (EUA) edged up 0.24% to $78.00, a subdued move relative to the volatility elsewhere, though the one-month gain of 3.65% reflects a slow-burning upward drift. The more significant power-sector story today is Romania restarting a 300 MW coal plant after a Danube drought forced a nuclear shutdown, a direct illustration of how climate and infrastructure stress is forcing backward steps on the energy transition. TTF at \u20ac63.915/MWh feeds directly into gas-fired power generation costs across Europe. China's solar panel exports fell 21.4% in July \u2014 the third consecutive monthly decline following the removal of export tax rebates \u2014 which may tighten the global solar supply chain. Rosatom pressed ahead with Uzbekistan nuclear plans despite reported financing difficulties. Power-sector carbon coverage today is relatively light beyond these items.",
    "drivers": [
-    "EUA +3.85% on the month as elevated TTF raises gas-to-coal switching thresholds and supports carbon demand",
-    "Hormuz closure and Ukraine strikes on Russian energy infrastructure sustain upside risk to European gas and power prices",
-    "Pakistan power cost data (+38% YoY) highlights LNG-price transmission into power markets, a pattern relevant to any European gas demand resurgence"
+    "Romania's coal plant restart due to nuclear curtailment from Danube drought highlights acute generation vulnerability and near-term carbon demand upside",
+    "Chinese solar exports -21.4% in July for a third straight monthly drop, potentially squeezing renewable deployment timelines outside China",
+    "TTF +3.49% on the day raises gas-fired generation costs across Europe, creating upward cost pressure even as EUA prices move only marginally"
    ],
-   "headlineCount": 8,
+   "headlineCount": 10,
    "sources": [
     "AnewZ",
-    "LatestLY",
+    "EUalive",
     "Reuters",
-    "The News International",
-    "bignewsnetwork.com"
+    "Toronto Sun"
    ]
   }
  }
