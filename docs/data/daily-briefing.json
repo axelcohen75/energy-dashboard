@@ -1,45 +1,45 @@
 {
- "generated": "2026-08-17T19:14:09.167403+00:00",
+ "generated": "2026-08-18T13:41:59.499912+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets rallied sharply on Monday, with WTI adding 2.26% to $84.27/bbl and Brent gaining 2.32% to $90.57/bbl, driven squarely by escalating Hormuz risk. Three tankers were reported damaged in the Gulf as the US-Iran conflict deepened, while stalled nuclear talks prompted Washington to prepare fresh Iran sanctions. Trump's reported declaration of intent to claim Hormuz as US territory post-war added geopolitical noise. China provided a demand-side tailwind, with July imports jumping 22% year-on-year and an estimated 200,000 bpd added to strategic reserves. Russia's export revenue surged 27% in Q2, benefiting from elevated crude prices. The notable outlier was RBOB gasoline, which collapsed 6.76% on the day and is down 12.49% over the month \u2014 a stark divergence from crude, likely reflecting demand-side or refining margin pressures. Heating oil held firm, up 0.45% on the day and 5.85% on the month.",
+   "summary": "Crude markets pushed higher on Tuesday as a cascade of geopolitical shocks kept the risk premium firmly bid. Brent crossed $91/bbl (+0.48%) and WTI held $84.64 (+0.19%) after an unidentified projectile struck a vessel transiting the Strait of Hormuz and Iran reiterated its blockade will remain in place until U.S. conditions are met. Houthis claimed a third strike on Saudi Aramco's Jazan refinery in two weeks, amplifying supply-disruption anxiety. Gulf-to-China VLCC rates surged to $510,000/day, reflecting the freight risk premium. The sharp divergence in refined products\u2014RBOB gasoline collapsing 8.27% on the session versus heating oil off only 3.0%\u2014is notable and warrants monitoring for structural demand signals. U.S. shale majors are reportedly trimming capex rather than chasing volumes, limiting any near-term supply response to elevated prices.",
    "drivers": [
-    "Hormuz crisis intensifying: three tankers damaged, US-Iran conflict escalating, fresh sanctions threatened",
-    "China strategic reserve buying and 22% import surge provide demand support despite soft macro data",
-    "RBOB gasoline crashes 6.76% in sharp divergence from crude \u2014 notable refining or demand-side dislocation"
+    "Hormuz closure threat sustained after vessel strike and Iran's conditional blockade statement keep geopolitical risk premium elevated in Brent",
+    "Third Houthi attack on Jazan refinery in two weeks tightens Middle East refining capacity and supports distillate margins",
+    "RBOB gasoline -8.27% intraday divergence from crude signals potential demand softness or domestic supply normalisation worth tracking"
    ],
    "headlineCount": 12,
    "sources": [
-    "24/7 Wall St.",
     "EnergyNow.com",
-    "Kyiv Post",
-    "LatestLY",
-    "The New Voice of Ukraine",
-    "The Sunday Guardian"
+    "The Sunday Guardian",
+    "energynow.ca"
    ]
   },
   "gas": {
-   "summary": "The US-Europe gas price divergence widened further today. Henry Hub slid 1.57% to $2.689/MMBtu and is down 7.59% over the past month, reflecting ample domestic supply and no direct exposure to Hormuz disruptions. TTF moved in the opposite direction, gaining 1.51% to \u20ac62.35/MWh and building on an 8.63% monthly gain, as European markets remain sensitive to broader Middle East supply risk and ongoing Russia-Ukraine conflict targeting energy infrastructure. Direct gas-specific headline flow was thin today; the Chevron Angola discovery \u2014 hitting over 2,000 feet of hydrocarbons \u2014 is a longer-term supply data point rather than an immediate price mover. The carbon capture commentary published today does not represent a near-term market catalyst.",
+   "summary": "Natural gas markets traded with a split personality on Tuesday. Henry Hub edged up 1.34% to $2.727/MMBtu but remains under pressure on the month (-4.69%), reflecting ample domestic supply. European TTF, by contrast, gained 1.33% to \u20ac62.58/MWh and is up 6.55% on the week, consistent with the broader Hormuz-driven LNG supply anxiety. Pakistan's power generation costs jumped 38% year-on-year in July after the country paid the highest spot LNG prices in four years, an early indication of how Gulf supply disruptions translate into Asian and emerging-market energy costs. Headline flow for Henry Hub is thin today; the U.S.-domestic gas narrative is largely being driven by macro and storage dynamics not captured in today's feed.",
    "drivers": [
-    "TTF gains 1.51% as European markets price Hormuz and Russia-Ukraine energy infrastructure risk",
-    "Henry Hub continues monthly slide, down 7.59%, reflecting US domestic supply surplus and Hormuz insulation",
-    "Chevron's Angola discovery a modest longer-term supply signal; gas-specific headline flow otherwise limited today"
+    "TTF +6.55% on the week as Hormuz tensions tighten European LNG re-supply expectations",
+    "Pakistan spot LNG costs hit four-year highs in July, illustrating emerging-market demand destruction risk from supply disruptions",
+    "Henry Hub -4.69% on the month reflects resilient domestic U.S. production offsetting geopolitical premium"
    ],
-   "headlineCount": 4,
+   "headlineCount": 5,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs edged down 0.53% to $77.41/EUA, a modest pullback within a broader +2.86% monthly uptrend. The price action is modest given the cross-currents: rising TTF at \u20ac62.35/MWh (+1.51%) lifts gas-fired generation costs and theoretically supports carbon prices, but weak near-term sentiment may be capping upside. In China, record clean power curtailments due to grid constraints and rising coal generation in H1 2026 highlight structural inefficiencies in the energy transition. Libya's grid suffered another major collapse Monday, taking power plants offline across large portions of the country. Ukraine's continued deep-strike operations against Russian energy targets remain a background risk to European power supply chains. The carbon capture discussion in today's press is conceptual rather than market-moving.",
+   "summary": "EU carbon allowances (EUA) edged up 0.43% to $78.15, extending a steady month-long grind higher (+3.85%), supported by TTF's upward move and the broader energy cost pass-through dynamic. Iran's repeated affirmation that the Strait of Hormuz will remain closed until U.S. interim deal conditions are met continues to anchor elevated gas prices, which in turn supports carbon costs as gas-fired generation competes with coal across European dispatch stacks. Ukraine's deep-strike operations against Russian energy infrastructure add a secondary upside tail risk to TTF and, by extension, EUAs. Pakistan's 38% power cost surge underlines how LNG-price spikes ripple through power markets in gas-dependent economies. Dedicated power-sector news flow is light today beyond these cross-commodity linkages.",
    "drivers": [
-    "Rising TTF provides underlying support to EUAs via gas-to-power cost pass-through, though EUAs dipped modestly today",
-    "China's record renewable curtailment rates and rising coal burn underscore persistent grid and transition challenges",
-    "Libya grid collapse and Ukraine strikes on Russian energy infrastructure add supply-side risk to European power markets"
+    "EUA +3.85% on the month as elevated TTF raises gas-to-coal switching thresholds and supports carbon demand",
+    "Hormuz closure and Ukraine strikes on Russian energy infrastructure sustain upside risk to European gas and power prices",
+    "Pakistan power cost data (+38% YoY) highlights LNG-price transmission into power markets, a pattern relevant to any European gas demand resurgence"
    ],
-   "headlineCount": 6,
+   "headlineCount": 8,
    "sources": [
-    "Big News Network.com",
-    "LatestLY"
+    "AnewZ",
+    "LatestLY",
+    "Reuters",
+    "The News International",
+    "bignewsnetwork.com"
    ]
   }
  }
