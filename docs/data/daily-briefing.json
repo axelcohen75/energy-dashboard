@@ -1,42 +1,42 @@
 {
- "generated": "2026-08-19T13:44:33.052538+00:00",
+ "generated": "2026-08-19T19:09:02.610268+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "A split tape today: Brent edged up 0.37% to $91.36/bbl for a fourth consecutive session of gains, while WTI slipped 0.60% to $84.40/bbl. The divergence reflects a tightening physical premium in Atlantic and Gulf grades as Hormuz traffic slows materially\u2014two Chinese VLCCs made U-turns and are now idling in the strait, per Bloomberg ship-tracking data. Iran's stated condition that the strait remains closed until Washington meets interim deal terms, combined with blown-through diplomatic deadlines and new sanctions being weighed by the Trump administration, keeps the geopolitical bid alive. The standout move was RBOB gasoline, crashing 8.85% on the day and down over 11% on the month\u2014likely reflecting crack-spread normalization from elevated refiner margins flagged in today's earnings commentary. Murban crude hit a four-month high on ADNOC supply curbs to Asia, and Russia's Q2 export revenues jumped 27%\u2014a direct beneficiary of the war premium.",
+   "summary": "A wide WTI-Brent spread defined today's session: Brent edged up 0.53% to $91.50/bbl on sustained Hormuz risk premium after Iran reiterated the strait remains closed pending U.S. concessions, while WTI slipped 0.77% to $84.28 on a bearish EIA print showing a 4.4 million-barrel domestic crude build for the week ending August 14. RBOB gasoline cratered 10.06% on the day and is off nearly 13% on the month, signalling demand-side softness despite tight Middle East supply. Murban crude hit a four-month high on UAE supply concerns. Saudi Aramco delivering full September allocations to European refiners offers some downstream relief. Russian export revenue surged 27% in Q2 but a Ukrainian drone strike ignited a fire at a Rosneft Bashkortostan refinery, adding upside tail risk. Options markets price a 77% probability of an OPEC cut at the next meeting.",
    "drivers": [
-    "Hormuz disruption: Chinese VLCCs turning back, Iran vowing closure until US meets deal conditions",
-    "Diplomatic breakdown: US-Iran deadline missed, new sanctions and potential land blockade under consideration",
-    "RBOB gasoline collapsed 8.85% intraday\u2014refiner crack spreads normalizing after wartime highs; distillate stocks falling per API data"
+    "Strait of Hormuz closure and stalled U.S.-Iran talks sustaining Brent geopolitical premium; Chinese state tankers rerouting away from key chokepoints",
+    "Bearish U.S. inventory data: EIA reports a 4.4 million-barrel crude build, weighing on WTI and driving RBOB down sharply",
+    "Supply disruption risk from Ukrainian drone strike on Rosneft refinery and broader Russian fuel infrastructure pressure"
    ],
    "headlineCount": 12,
    "sources": [
     "Devdiscourse",
+    "Iran International",
     "The New Voice of Ukraine",
     "The New York Times",
-    "UNITED24 Media",
-    "WKBW",
-    "sundayguardianlive.com"
+    "The Sunday Guardian",
+    "WKBW"
    ]
   },
   "gas": {
-   "summary": "Henry Hub firmed 2.85% on the day to $2.856/MMBtu, recovering modestly on the month after a -0.35% drag, while TTF slipped 1.42% to \u20ac62.74/MWh despite remaining up over 5% on the month. News flow is thin but pointed: the Iran conflict is visibly transmitting into consumer energy costs globally. UK household energy bills are set to rise 4% in October to a three-year high as the war tightens global gas supplies, and India is pivoting toward piped gas infrastructure to offset surging LPG costs driven by the same conflict. These demand-side substitution stories suggest durable structural pressure on gas markets even if near-term spot prices show mixed moves.",
+   "summary": "The gas market is showing a sharp transatlantic divergence. TTF surged 3.06% today to \u20ac63.646/MWh and is up over 8% on both the week and the month, driven by the Iran conflict tightening global LNG and piped-gas supply. UK household energy bills are reported heading to a three-year high from October, rising 4% as the war constricts global gas availability. India is pivoting toward piped gas connections as LPG costs climb under the same pressure. Henry Hub, by contrast, moved barely 0.18% higher to $2.781/MMBtu and remains down nearly 3% on the month, reflecting ample domestic U.S. supply insulated from Middle East disruption. The headline picture for this sector is thin beyond the Iran war throughline.",
    "drivers": [
-    "Iran war tightening global LNG/LPG supply chains, driving UK October energy bills to three-year highs",
-    "India accelerating piped gas rollout as a domestic substitute for elevated-cost LPG",
-    "Henry Hub +2.85% on the session; TTF easing slightly after a strong weekly and monthly run-up"
+    "Iran conflict squeezing global gas supply, pushing TTF to multi-month highs and lifting UK consumer energy bills toward a three-year peak",
+    "India pivoting to piped gas distribution as LPG import costs escalate under war-driven commodity pressure",
+    "Henry Hub flat and range-bound, reflecting U.S. supply insulation from Middle East disruptions"
    ],
    "headlineCount": 2,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs edged up 0.65% to $77.91/EUA today but remain marginally negative on both a weekly and monthly basis, suggesting no fresh urgency in compliance buying despite the broader energy price shock. The dominant macro signal for the power sector remains the Hormuz closure: Iran has explicitly tied reopening to US deal concessions, leaving gas and oil supply risk elevated and undermining the case for lower European power-generation costs. TTF, the key marginal fuel-cost signal for EU power, is up over 5% on the month. Separately, Peter Thiel's $76 million stake in an Argentine Vaca Muerta operator and reports of the US quietly building an energy foothold in Iraq point to longer-term supply-diversification efforts, but neither has near-term power-market relevance. Data for this sector is relatively thin today.",
+   "summary": "EU carbon ticked marginally higher (+0.21%) to $77.57/EUA but remains soft over the week and month, constrained by demand uncertainty even as TTF's 3% daily spike raises gas-fired generation costs. The broader power backdrop is stressed: Iran's Hormuz closure is tightening fuel availability globally, El Ni\u00f1o is straining hydro-dependent grids \u2014 Romania is reportedly undertaking emergency Danube interventions to protect nuclear operations \u2014 and a Central Asian blackout has been traced to a key hydropower plant failure, with Kyrgyzstan contesting responsibility. On a constructive note, Heart Aerospace's X1 electric aircraft completed its inaugural flight on $5 of electricity, a modest but notable milestone for electric aviation. Overall, the power sector faces a convergence of weather, geopolitical, and fuel-cost headwinds.",
    "drivers": [
-    "Iran confirms Hormuz stays closed until US meets deal conditions\u2014sustaining gas supply risk and upward pressure on EU power generation costs",
-    "EUA carbon flat to slightly positive; monthly trend still negative, suggesting muted compliance-buying urgency despite fuel-cost inflation",
-    "TTF +5.16% on the month remains the key marginal cost driver for European power; near-term headlines sparse for direct power-sector catalysts"
+    "Hormuz closure and rising TTF increasing gas-fired generation costs, pressuring European power markets even as EUA remains subdued",
+    "Record El Ni\u00f1o stressing hydro generation across multiple regions; Romania undertaking emergency measures to sustain Cernavoda nuclear output amid low Danube water levels",
+    "Central Asian grid blackout linked to hydropower plant failure highlights cascading vulnerability of hydro-dependent power systems"
    ],
-   "headlineCount": 4,
+   "headlineCount": 5,
    "sources": [
     "AnewZ",
     "Reuters"
