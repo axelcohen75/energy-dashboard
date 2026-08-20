@@ -1,44 +1,44 @@
 {
- "generated": "2026-08-20T13:46:27.829986+00:00",
+ "generated": "2026-08-20T19:14:20.843466+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude posted another strong session, with Brent clearing $94/bbl (+2.59%) and WTI at $86.84 (+1.15%), extending a near-8% weekly rally in Brent as Middle East risk premiums remain firmly bid. The US-Iran impasse is the dominant driver: Tehran is holding the Strait of Hormuz closed pending deal terms, Chinese state tankers are rerouting away from both Hormuz and Bab al-Mandab, and Iranian crude is described as effectively locked out of global markets. Supply routes are fracturing further, pushing supertanker rates to record highs. Meanwhile, Ukrainian drone strikes continue to hammer Russian refining capacity \u2014 including a fresh hit on an oil terminal in Krasnodar Krai today \u2014 fuelling a domestic fuel rationing crisis in Russia. Chinese refiners are scrambling for alternative barrels, snapping up 8 million barrels of Iraqi Basrah grades for prompt delivery. RBOB gasoline's sharp -7.79% drop and heating oil's -2.35% dip suggest product-specific demand or crack dynamics, with diesel cracks separately reported near $100 \u2014 pointing to a tighter underlying market than headline crude levels imply. SLB's preparation to restart 15 rigs in Venezuela is a modest supply-side offset to watch.",
+   "summary": "Crude staged a strong session with Brent clearing $93 \u2014 a three-week high \u2014 and WTI adding 1.15%, both supported by an increasingly fractured Middle East supply picture. Iranian oil exports have effectively hit zero, confirmed by the Iranian Central Bank, as sanctions and war conditions shut off flows entirely. Chinese state tankers are avoiding both the Strait of Hormuz and Bab al-Mandab, amplifying logistical stress and pushing supertanker rates to record highs per the FT. Beijing is simultaneously redirecting Russian barrels away from India to replace lost Iranian volumes, reshuffling Asia-Pacific trade flows. ADNOC issued its ninth spot crude tender since June, signaling UAE is stepping up to fill the void. A temporary US easing of Russia oil sanctions, which has riled European allies, adds a wildcard to the supply narrative. The glaring outlier is RBOB gasoline, which collapsed 7.28% on the day \u2014 no headline explanation is available in today's feed. Heating Oil slipped 1.65% intraday but holds a solid monthly gain of 5.54%.",
    "drivers": [
-    "US-Iran standoff: Strait of Hormuz remains closed, Iranian barrels effectively off the market, pushing Brent to three-week highs",
-    "Ukrainian drone campaign intensifies against Russian refining infrastructure, spreading domestic fuel rationing inside Russia",
-    "Chinese refiners pivot to Iraqi crude amid Gulf route disruptions; supertanker rates hit all-time highs on Middle East demand surge"
+    "Iranian crude exports confirmed at zero by Iranian Central Bank, removing a meaningful supply source from global markets",
+    "Strait of Hormuz and Bab al-Mandab disruptions forcing Chinese state tankers to reroute, driving supertanker rates to all-time highs",
+    "RBOB gasoline crashed 7.28% intraday \u2014 a stark divergence from crude strength with no supporting headline available in today's feed"
    ],
    "headlineCount": 12,
    "sources": [
+    "Anadolu Ajans\u0131",
     "Devdiscourse",
+    "EnergyNow",
     "Iran International",
-    "The New Voice of Ukraine",
-    "streamlinefeed.co.ke",
-    "\u041c\u0456\u043b\u0456\u0442\u0430\u0440\u043d\u0438\u0439"
+    "Yeni Safak English"
    ]
   },
   "gas": {
-   "summary": "The gas picture today is a stark transatlantic divergence. Henry Hub slipped -1.81% to $2.763/MMBtu, remaining under pressure on a one-month basis (-5.54%), suggesting ample domestic US supply conditions. TTF, by contrast, surged +2.71% to \u20ac65.1/MWh, building on a near +8% weekly gain, as the Hormuz closure and an extended LNG squeeze erode European supply confidence. The sole headline in our feed signals that market optimism around a diplomatic resolution has faded materially, with traders now positioning for a prolonged oil and LNG supply crunch. News flow for this sector is thin beyond that single forward-looking note; traders should weight TTF's move primarily against the broader Middle East supply disruption narrative visible in oil headlines.",
+   "summary": "News flow for the US natural gas market is thin today \u2014 only one headline was available, covering China's dual-track energy strategy of expanding both renewables and fossil fuels simultaneously. Henry Hub slipped 1.81% on the day and is down 5.54% on the month, suggesting domestic fundamentals remain soft despite the broader energy market tension. European TTF, by contrast, surged 3.82% on the day and is up nearly 9% on the week, likely reflecting spillover from Middle East supply anxiety and Hormuz closure risks affecting LNG routing \u2014 though no Europe-specific gas headline was provided today. Traders should treat the HH/TTF divergence as a key spread to watch given the geopolitical backdrop.",
    "drivers": [
-    "TTF +2.71% on the week, driven by fading hopes for a US-Iran deal and an anticipated extended LNG supply squeeze into Europe",
-    "Henry Hub continues to lag, down -5.54% on the month, reflecting divergent US domestic supply conditions",
-    "News flow is limited today; TTF price action is best read as a spillover from the Hormuz closure and broader Middle East risk premium"
+    "Henry Hub down 1.81% on the day and 5.54% on the month, pointing to continued softness in US domestic gas fundamentals",
+    "TTF surging 3.82% intraday and +8.95% on the week, likely reflecting European anxiety over Middle East supply disruption and LNG rerouting risks",
+    "Headline flow for this sector is limited today; China's fossil-fuel-plus-renewables strategy is the only news item available"
    ],
    "headlineCount": 1,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs edged up modestly to $78.00/EUA (+0.77%), though the market remains marginally soft on a one-month basis (-0.95%). TTF's continued climb (+2.71% today) raises gas-to-power switching costs, creating mild upward pressure on carbon as coal-backed generation becomes relatively more competitive \u2014 consistent with the headline reaffirming coal's dominant global power generation share despite accelerating renewables buildout. Geopolitical noise adds complexity: Ukraine is pushing the EU to sanction Rosatom following reported safety failures, which could disrupt nuclear supply chains in Central Europe. A separate blackout traced to a Kyrgyz hydropower plant underscores fragility in Central Asian grids. Iran's Hormuz closure, flagged in this sector's feed as well, carries indirect implications for LNG-dependent power generation across Asia and Southern Europe. Overall, headline data for this sector is moderate; the carbon price itself remains range-bound.",
+   "summary": "EU carbon EUAs ticked up modestly, gaining 0.77% to $78.00 on the day but remain slightly soft over the past month at -0.95%, suggesting the carbon market has not yet fully priced in the geopolitical risk premium visible elsewhere in energy. The dominant input cost signal for European power is the TTF gas price, which jumped 3.82% today and is up nearly 9% on the week, putting upward pressure on gas-fired generation marginal costs and therefore power prices. Iran's continued insistence that the Strait of Hormuz will remain closed until the US meets its demands \u2014 headlines dated August 18 \u2014 sustains the risk-on tone for European energy broadly. Headline coverage specific to power and carbon is sparse today; the China renewables-versus-fossil-fuels story is the only sector-adjacent news available.",
    "drivers": [
-    "Rising TTF (+2.71%) increases gas-to-power costs, supporting coal's competitive position and applying mild upward pressure to EUAs",
-    "Ukraine's push to sanction Rosatom introduces nuclear supply chain risk for EU member states dependent on Russian fuel assemblies",
-    "Central Asia blackout traced to hydropower failure highlights grid fragility; Hormuz closure poses indirect risk to LNG-fed power markets"
+    "TTF gas up 3.82% on the day raises marginal cost of gas-fired power generation across Europe, indirectly supporting power prices",
+    "Strait of Hormuz closure, with Iran refusing to reopen until US meets demands, sustains elevated geopolitical risk premium across European energy markets",
+    "EUA carbon at $78.00 with only a 0.77% daily gain \u2014 carbon market appears to be lagging the broader energy risk move; sector-specific headline flow is thin today"
    ],
-   "headlineCount": 5,
+   "headlineCount": 3,
    "sources": [
     "AnewZ",
-    "The Kyiv Independent"
+    "Toronto Sun"
    ]
   }
  }
