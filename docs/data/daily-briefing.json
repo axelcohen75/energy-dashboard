@@ -1,45 +1,45 @@
 {
- "generated": "2026-08-20T19:14:20.843466+00:00",
+ "generated": "2026-08-21T13:42:55.697088+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude staged a strong session with Brent clearing $93 \u2014 a three-week high \u2014 and WTI adding 1.15%, both supported by an increasingly fractured Middle East supply picture. Iranian oil exports have effectively hit zero, confirmed by the Iranian Central Bank, as sanctions and war conditions shut off flows entirely. Chinese state tankers are avoiding both the Strait of Hormuz and Bab al-Mandab, amplifying logistical stress and pushing supertanker rates to record highs per the FT. Beijing is simultaneously redirecting Russian barrels away from India to replace lost Iranian volumes, reshuffling Asia-Pacific trade flows. ADNOC issued its ninth spot crude tender since June, signaling UAE is stepping up to fill the void. A temporary US easing of Russia oil sanctions, which has riled European allies, adds a wildcard to the supply narrative. The glaring outlier is RBOB gasoline, which collapsed 7.28% on the day \u2014 no headline explanation is available in today's feed. Heating Oil slipped 1.65% intraday but holds a solid monthly gain of 5.54%.",
+   "summary": "Crude markets are navigating a sharp intraday split: Brent holds near $94 with a marginal gain while WTI slips 1.18% to $86.78, yet both contracts are on track for a second consecutive weekly gain \u2014 WTI +5.33% and Brent +6.19% on the week. The divergence between daily and weekly moves reflects profit-taking against a still-bullish macro backdrop. Iran's Central Bank has confirmed oil exports have fallen to zero following reinstated U.S. sanctions and a Hormuz restriction, forcing Chinese refiners to hunt for alternative supply \u2014 with imports projected to rise ~1.2 mb/d in Q4. Chinese majors have simultaneously halted tanker routing via Hormuz and Bab al-Mandab. On the supply-disruption side, Ukrainian drone strikes confirmed by Zelensky hit Russia's Taneco refinery, the Perm facility, the Tamanneftegaz terminal, and infrastructure in Krasnodar Krai, with Russia now reportedly relying on imported gasoline. RBOB gasoline cratered 6.32% on the day, likely reflecting domestic demand or blending-rule relief from Washington's EPA waiver.",
    "drivers": [
-    "Iranian crude exports confirmed at zero by Iranian Central Bank, removing a meaningful supply source from global markets",
-    "Strait of Hormuz and Bab al-Mandab disruptions forcing Chinese state tankers to reroute, driving supertanker rates to all-time highs",
-    "RBOB gasoline crashed 7.28% intraday \u2014 a stark divergence from crude strength with no supporting headline available in today's feed"
+    "Iran oil exports at zero; Hormuz restrictions tighten supply and force China to seek alternative crude sources for Q4",
+    "Ukrainian drone strikes on multiple Russian refineries and terminals degrade Russian domestic refining capacity",
+    "RBOB gasoline -6.32% on the day after Washington eases gasoline blending rules amid consumer fuel-cost pressure"
    ],
    "headlineCount": 12,
    "sources": [
+    "AOL.ca",
     "Anadolu Ajans\u0131",
-    "Devdiscourse",
-    "EnergyNow",
-    "Iran International",
-    "Yeni Safak English"
+    "Marine Insight",
+    "The Kyiv Independent",
+    "Zee Business",
+    "streamlinefeed.co.ke"
    ]
   },
   "gas": {
-   "summary": "News flow for the US natural gas market is thin today \u2014 only one headline was available, covering China's dual-track energy strategy of expanding both renewables and fossil fuels simultaneously. Henry Hub slipped 1.81% on the day and is down 5.54% on the month, suggesting domestic fundamentals remain soft despite the broader energy market tension. European TTF, by contrast, surged 3.82% on the day and is up nearly 9% on the week, likely reflecting spillover from Middle East supply anxiety and Hormuz closure risks affecting LNG routing \u2014 though no Europe-specific gas headline was provided today. Traders should treat the HH/TTF divergence as a key spread to watch given the geopolitical backdrop.",
+   "summary": "Henry Hub edged up 2.60% to $2.805/MMBtu today, recovering modestly on the week but still nursing a 3.84% monthly loss, suggesting domestic U.S. fundamentals remain soft in absolute terms. TTF outperforms significantly at \u20ac65.8/MWh, up 0.77% on the day, +7.12% on the week, and +6.30% over the month \u2014 a trajectory consistent with the broader Middle East supply anxiety spilling into European energy security concerns. News flow for this sector is relatively thin today beyond two supply-side datapoints: Australia's Beetaloo shale basin is due to begin production next month with initial output of 37 million cubic metres, and Nigeria is marketing new offshore incentives targeting $50 billion in investment. Neither is a near-term price catalyst. The EPA gasoline-rule waiver reported yesterday is tangential to gas markets.",
    "drivers": [
-    "Henry Hub down 1.81% on the day and 5.54% on the month, pointing to continued softness in US domestic gas fundamentals",
-    "TTF surging 3.82% intraday and +8.95% on the week, likely reflecting European anxiety over Middle East supply disruption and LNG rerouting risks",
-    "Headline flow for this sector is limited today; China's fossil-fuel-plus-renewables strategy is the only news item available"
+    "TTF continues to outperform Henry Hub, +7.12% on the week, driven by European energy security concerns linked to Middle East tensions",
+    "Australia's Beetaloo shale basin set to deliver first gas next month, adding modest new LNG-linked supply to the Pacific basin",
+    "Nigeria unveils offshore investment incentives targeting $50 billion, a longer-dated supply signal with no immediate price impact"
+   ],
+   "headlineCount": 4,
+   "sources": [
+    "AOL.ca"
+   ]
+  },
+  "power": {
+   "summary": "News flow for the power and carbon sector is thin today. EU carbon EUAs firmed 1.50% to $78.73, a constructive daily move, though the weekly gain is a modest +0.41% and the contract remains 3.72% softer on the month. The EUA uptick is broadly consistent with rising TTF gas prices \u2014 higher gas burn costs typically support carbon as generators face elevated input costs and compliance demand. The sole dedicated headline covers the structural story of solar panel prices falling 90% over fifteen years, with solar identified as the world's fastest-growing energy source in 2025. No near-term carbon policy or power market news was available in today's feed.",
+   "drivers": [
+    "EUAs +1.50% on the day, likely supported by TTF's sustained weekly rally lifting gas-fired generation costs and compliance demand",
+    "Monthly EUA trend remains soft at -3.72%, capping the bullish daily read",
+    "Solar's 90% cost decline over 15 years underpins long-run structural pressure on carbon-intensive generation, though no immediate price catalyst today"
    ],
    "headlineCount": 1,
    "sources": []
-  },
-  "power": {
-   "summary": "EU carbon EUAs ticked up modestly, gaining 0.77% to $78.00 on the day but remain slightly soft over the past month at -0.95%, suggesting the carbon market has not yet fully priced in the geopolitical risk premium visible elsewhere in energy. The dominant input cost signal for European power is the TTF gas price, which jumped 3.82% today and is up nearly 9% on the week, putting upward pressure on gas-fired generation marginal costs and therefore power prices. Iran's continued insistence that the Strait of Hormuz will remain closed until the US meets its demands \u2014 headlines dated August 18 \u2014 sustains the risk-on tone for European energy broadly. Headline coverage specific to power and carbon is sparse today; the China renewables-versus-fossil-fuels story is the only sector-adjacent news available.",
-   "drivers": [
-    "TTF gas up 3.82% on the day raises marginal cost of gas-fired power generation across Europe, indirectly supporting power prices",
-    "Strait of Hormuz closure, with Iran refusing to reopen until US meets demands, sustains elevated geopolitical risk premium across European energy markets",
-    "EUA carbon at $78.00 with only a 0.77% daily gain \u2014 carbon market appears to be lagging the broader energy risk move; sector-specific headline flow is thin today"
-   ],
-   "headlineCount": 3,
-   "sources": [
-    "AnewZ",
-    "Toronto Sun"
-   ]
   }
  }
 }
