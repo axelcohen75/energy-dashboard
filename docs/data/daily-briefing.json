@@ -1,45 +1,47 @@
 {
- "generated": "2026-08-21T19:09:33.536075+00:00",
+ "generated": "2026-08-24T13:48:09.472140+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets posted a split session Friday: Brent edged up 0.50% to $94.25/bbl while WTI slipped 0.88% to $87.05, capping a strong weekly gain of roughly 6% for both benchmarks. The bullish weekly narrative is anchored by three supply-shock themes: the collapse of an Iran nuclear deal that has pushed Iranian exports to zero per reports, continued Strait of Hormuz restrictions, and Ukrainian drone strikes on Lukoil's Perm-region refinery and the Taneco/Tamanneftegaz complex. On the softer side, the White House temporarily eased Russia sanctions to contain the price surge, a move that has irritated European allies. RBOB gasoline cratered 6.70% on the day and is down nearly 13% on the month, suggesting demand-side pressure at the pump. Saudi Arabia has rerouted Mediterranean exports via Sidi Kerir, up ~33%, to bypass Houthi threats, while Venezuela's export ceiling\u2014due to port infrastructure failures\u2014is keeping tankers waiting up to a month.",
+   "summary": "Crude markets sold off sharply in early Asian trade Monday, with WTI settling at $85.76/bbl (-1.45%) and Brent at $93.48/bbl (-0.96%), as traders took profits and braced for details of what markets are calling Bessent's 'Economic D-Day' sanctions package against Iran. Iran's threat to halt crude flows through the Strait of Hormuz \u2014 where tanker traffic reportedly fell below 20 vessels over the weekend \u2014 has injected acute geopolitical risk premium, yet the market is simultaneously weighing demand destruction fears. The diesel market faces a structural squeeze, with one report warning the crisis could outlast the conflict itself. On the supply side, Rystad Energy cut its Russia crude output forecast to 8.95 million bpd for 2026 following Ukrainian drone strikes on a Lukoil refinery. RBOB gasoline's severe -10.02% single-day plunge stands out and warrants monitoring for technical or fundamental follow-through.",
    "drivers": [
-    "Iran deal collapse and Hormuz restrictions driving supply-risk premium; Iranian exports reported at zero",
-    "Ukrainian drone strikes on Russian refining infrastructure (Lukoil Perm, Taneco) disrupting Russian downstream capacity",
-    "RBOB gasoline down 6.70% on the day, signaling demand weakness even as crude holds; US temporarily eases Russia sanctions to cap price surge"
+    "Iran's Hormuz closure threat and slumping tanker traffic keep geopolitical risk premium elevated despite today's crude sell-off",
+    "Rystad cuts Russia 2026 output forecast to 8.95 mb/d as Ukrainian drone strikes on Lukoil refinery deepen supply constraints",
+    "RBOB gasoline collapsed 10% on the day; diesel tightness flagged as potentially outlasting the Middle East conflict"
    ],
    "headlineCount": 12,
    "sources": [
-    "AOL.ca",
     "Crude Oil Prices Today | OilPrice.com",
-    "EnergyNow",
-    "The Kyiv Independent",
-    "Yeni Safak English",
-    "Zee Business"
+    "Energies Media",
+    "India Infoline",
+    "LatestLY",
+    "The Sunday Guardian",
+    "\ud5e4\ub7f4\ub4dc\uacbd\uc81c"
    ]
   },
   "gas": {
-   "summary": "Henry Hub gained 2.49% on the day to $2.801/MMBtu, recovering modestly but still down nearly 4% on the month, keeping US gas in a soft medium-term trend. European TTF surged 1.67% to \u20ac66.385/MWh and is up over 8% on the week and more than 7% on the month, reflecting tighter continental balances likely linked to the broader Russia-Ukraine conflict dynamics and re-routing of energy flows discussed in oil markets. Headline flow specific to gas was thin today; Baker Hughes data showed the US oil-and-gas rig count fell this week despite rising crude prices, which could restrain associated gas output at the margin. No LNG-specific or storage data was available in today's feed.",
+   "summary": "Natural gas prices surged on both sides of the Atlantic on Monday. Henry Hub gained 3.21% to $2.862/MMBtu, extending a 6.39% weekly rally, while TTF jumped 4.24% to \u20ac68.655/MWh \u2014 up over 11% on the week and nearly 8% on the month. The TTF move is consistent with broader supply anxiety linked to Middle East conflict disrupting LNG trade routes. Japan's day-ahead power price soaring 20% in one week to its highest since January 2023, attributed to gas supply disruptions, underscores tightening LNG balances in Asia. On the supply side, Norway reaffirmed Arctic drilling plans regardless of EU policy, and Equinor with Aker BP announced a new gas and condensate discovery near the Balder field in the North Sea, though these are medium-term rather than immediate supply offsets.",
    "drivers": [
-    "TTF up 8% on the week, diverging sharply from Henry Hub, reflecting tighter European supply amid Russia-Ukraine conflict disruptions",
-    "US rig count declined week-on-week despite higher oil prices, potentially capping associated gas supply growth",
-    "Henry Hub monthly trend remains negative (-3.94%), limiting upside conviction on the US domestic gas trade"
+    "TTF surges 4.24% on the day and +11% on the week amid Middle East conflict-linked LNG supply disruption concerns",
+    "Japan day-ahead power prices hit highest since January 2023 (+20% weekly) on gas supply disruptions, tightening Asian LNG demand",
+    "Equinor and Aker BP announce new North Sea gas discovery near Balder field; Norway reaffirms Arctic drilling commitment"
    ],
-   "headlineCount": 3,
-   "sources": [
-    "AOL.ca"
-   ]
+   "headlineCount": 4,
+   "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs ticked up 1.21% to $78.50/EUA but are essentially flat on the week (+0.12%) and down 4% on the month, suggesting the market is not yet pricing the TTF gas surge fully into carbon abatement economics. TTF at \u20ac66.39/MWh\u2014up over 8% on the week\u2014raises the cost of gas-fired generation and could incrementally support carbon prices if coal-to-gas switching assumptions shift. On the renewables side, today's headlines focus on India: solar developers are adding battery storage to reduce large-scale curtailment, and a separate report highlights that India is building clean power faster than it can absorb. Headline flow for European power fundamentals was limited today beyond TTF price action.",
+   "summary": "The power and carbon complex firmed Monday, with EU EUAs gaining 1.32% to $79.54/EUA \u2014 a modest but steady grind higher that tracks the sharp rise in TTF (+4.24% on the day, +11% on the week), which raises gas-fired generation costs and supports carbon prices via fuel-switching dynamics. The most acute power market story today is in Asia: Japan's day-ahead electricity price surged 20% in a week to its highest since January 2023, driven by gas supply disruptions. In Europe, the broader energy geopolitical backdrop \u2014 Hormuz tensions, Russian supply constraints \u2014 continues to underpin power price risk. Separately, a report flagged private equity circling utilities as AI reshapes grid demand, a structural theme with longer-dated implications for capacity investment. Headlines on the power sector are relatively thin beyond these items.",
    "drivers": [
-    "TTF up 8% on the week raises gas-fired generation costs, creating potential upside pressure on EUAs if fuel-switching dynamics tighten",
-    "EU EUA flat on the week despite gas surge, suggesting the carbon market is not yet fully repricing generation economics",
-    "India scaling battery-storage additions to address solar curtailment\u2014no direct EU power market impact but signals accelerating clean-energy integration globally"
+    "EU EUAs up 1.32% as surging TTF tightens the fuel-switching calculus and supports carbon pricing",
+    "Japan day-ahead power hits highest since January 2023 on gas supply disruptions, signaling global LNG tightness spilling into electricity markets",
+    "Private equity interest in utilities linked to AI-driven grid demand growth flagged as an emerging structural driver"
    ],
-   "headlineCount": 2,
-   "sources": []
+   "headlineCount": 6,
+   "sources": [
+    "India Infoline",
+    "The Business Standard",
+    "The Sunday Guardian"
+   ]
   }
  }
 }
