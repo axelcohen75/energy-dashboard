@@ -1,45 +1,46 @@
 {
- "generated": "2026-08-24T13:48:09.472140+00:00",
+ "generated": "2026-08-24T19:27:20.755488+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets sold off sharply in early Asian trade Monday, with WTI settling at $85.76/bbl (-1.45%) and Brent at $93.48/bbl (-0.96%), as traders took profits and braced for details of what markets are calling Bessent's 'Economic D-Day' sanctions package against Iran. Iran's threat to halt crude flows through the Strait of Hormuz \u2014 where tanker traffic reportedly fell below 20 vessels over the weekend \u2014 has injected acute geopolitical risk premium, yet the market is simultaneously weighing demand destruction fears. The diesel market faces a structural squeeze, with one report warning the crisis could outlast the conflict itself. On the supply side, Rystad Energy cut its Russia crude output forecast to 8.95 million bpd for 2026 following Ukrainian drone strikes on a Lukoil refinery. RBOB gasoline's severe -10.02% single-day plunge stands out and warrants monitoring for technical or fundamental follow-through.",
+   "summary": "Crude sold off sharply on Monday \u2014 WTI -2.10% to $85.23 and Brent -2.18% to $92.33 \u2014 as Iran's threat to halt Strait of Hormuz flows paradoxically triggered demand-destruction fears rather than a sustained risk premium. Iran blacklisted 45 tankers carrying oil, LNG, LPG and products, threatening fines and cargo confiscation, while one headline referenced Brent briefly surging past $100 on a Hormuz blockade scenario before retreating. The US temporarily eased Russia oil sanctions to dampen the price spike, riling European allies, even as Rystad Energy cut its Russian crude output forecast to 8.95 million bpd for 2026 amid sanctions and ongoing Ukrainian drone strikes on refineries. RBOB gasoline cratered -11.18% on the day and -12.44% on the month, the sharpest move across the complex, suggesting demand-side pressure is overwhelming the geopolitical bid. TotalEnergies announced investment in two Hormuz-bypass pipelines via Abu Dhabi's Fujairah route.",
    "drivers": [
-    "Iran's Hormuz closure threat and slumping tanker traffic keep geopolitical risk premium elevated despite today's crude sell-off",
-    "Rystad cuts Russia 2026 output forecast to 8.95 mb/d as Ukrainian drone strikes on Lukoil refinery deepen supply constraints",
-    "RBOB gasoline collapsed 10% on the day; diesel tightness flagged as potentially outlasting the Middle East conflict"
+    "Iran blacklists 45 tankers and threatens Hormuz closure, injecting acute transit risk but also demand-destruction fears that weighed on outright prices",
+    "US grants temporary Russia sanctions relief to cap prices, offsetting Rystad's cut to Russian output forecast of 8.95 mb/d amid drone strikes on refineries",
+    "RBOB gasoline -11.18% on the day leads the complex lower; TotalEnergies commits to Hormuz-bypass pipeline investment as infrastructure hedge"
    ],
    "headlineCount": 12,
    "sources": [
-    "Crude Oil Prices Today | OilPrice.com",
+    "Devdiscourse",
     "Energies Media",
+    "EnergyNow",
     "India Infoline",
-    "LatestLY",
-    "The Sunday Guardian",
-    "\ud5e4\ub7f4\ub4dc\uacbd\uc81c"
+    "Reuters",
+    "The Eastern Herald"
    ]
   },
   "gas": {
-   "summary": "Natural gas prices surged on both sides of the Atlantic on Monday. Henry Hub gained 3.21% to $2.862/MMBtu, extending a 6.39% weekly rally, while TTF jumped 4.24% to \u20ac68.655/MWh \u2014 up over 11% on the week and nearly 8% on the month. The TTF move is consistent with broader supply anxiety linked to Middle East conflict disrupting LNG trade routes. Japan's day-ahead power price soaring 20% in one week to its highest since January 2023, attributed to gas supply disruptions, underscores tightening LNG balances in Asia. On the supply side, Norway reaffirmed Arctic drilling plans regardless of EU policy, and Equinor with Aker BP announced a new gas and condensate discovery near the Balder field in the North Sea, though these are medium-term rather than immediate supply offsets.",
+   "summary": "European gas surged, with TTF settling at 68.41 \u20ac/MWh, up +3.86% on the day and +10.77% on the week, as the Hormuz standoff amplified LNG supply anxiety. Goldman Sachs warned that European gas prices need to rise further by December for storage to reach adequate winter levels if the Hormuz crisis persists \u2014 a signal that current levels may still be insufficient. Iran's blacklisting of LNG and LPG tankers compounds the supply overhang. Japan's day-ahead power prices hit their highest since January 2023, up 20% in a week, citing gas supply disruptions, pointing to Asia competing aggressively for the same LNG cargoes. On the supply side, Equinor and Aker BP reported a new gas and condensate discovery near the Balder field in the North Sea, while Norway simultaneously warned that domestic output could decline steeply post-2030 if new resource replacement lags current production rates. Henry Hub added +2.13% to $2.832/MMBtu.",
    "drivers": [
-    "TTF surges 4.24% on the day and +11% on the week amid Middle East conflict-linked LNG supply disruption concerns",
-    "Japan day-ahead power prices hit highest since January 2023 (+20% weekly) on gas supply disruptions, tightening Asian LNG demand",
-    "Equinor and Aker BP announce new North Sea gas discovery near Balder field; Norway reaffirms Arctic drilling commitment"
+    "Goldman Sachs flags European storage shortfall risk if Hormuz crisis persists, supporting TTF's +10.77% weekly rally",
+    "Iran blacklists LNG and LPG tankers alongside crude, directly threatening seaborne gas trade through the strait",
+    "Asia-Europe LNG competition intensifies as Japan power prices hit a 3-year high on gas supply disruptions; North Sea discovery by Equinor/Aker BP offers limited near-term relief"
    ],
-   "headlineCount": 4,
+   "headlineCount": 9,
    "sources": []
   },
   "power": {
-   "summary": "The power and carbon complex firmed Monday, with EU EUAs gaining 1.32% to $79.54/EUA \u2014 a modest but steady grind higher that tracks the sharp rise in TTF (+4.24% on the day, +11% on the week), which raises gas-fired generation costs and supports carbon prices via fuel-switching dynamics. The most acute power market story today is in Asia: Japan's day-ahead electricity price surged 20% in a week to its highest since January 2023, driven by gas supply disruptions. In Europe, the broader energy geopolitical backdrop \u2014 Hormuz tensions, Russian supply constraints \u2014 continues to underpin power price risk. Separately, a report flagged private equity circling utilities as AI reshapes grid demand, a structural theme with longer-dated implications for capacity investment. Headlines on the power sector are relatively thin beyond these items.",
+   "summary": "The power and carbon complex tightened alongside gas, with EU EUAs gaining +1.35% to $79.56/EUA, extending a +2.78% weekly advance. The move is consistent with higher TTF gas prices forcing more carbon-intensive generation onto the grid across Europe, lifting carbon demand. Japan's power market provided the starkest signal globally \u2014 day-ahead prices jumped 20% in a week to their highest level since January 2023, explicitly attributed to gas supply disruptions tied to the Hormuz standoff. On the geopolitical backdrop, the 60-day US-Iran peace window closed on August 17, with reports that Trump's Iran strategy may shift materially, keeping tail risks elevated for energy infrastructure. European leaders gathering in Kyiv to discuss air defense support add another layer of geopolitical uncertainty that continues to underpin European power and carbon valuations. Data for this sector is otherwise limited to macro geopolitical flow-through rather than dedicated power-market headlines.",
    "drivers": [
-    "EU EUAs up 1.32% as surging TTF tightens the fuel-switching calculus and supports carbon pricing",
-    "Japan day-ahead power hits highest since January 2023 on gas supply disruptions, signaling global LNG tightness spilling into electricity markets",
-    "Private equity interest in utilities linked to AI-driven grid demand growth flagged as an emerging structural driver"
+    "EU EUAs +1.35% on the day as elevated TTF gas prices incentivise carbon-intensive power generation and lift allowance demand",
+    "Japan day-ahead power +20% in one week to highest since January 2023, driven by gas supply disruptions linked to the Hormuz crisis",
+    "Closure of the 60-day US-Iran peace window raises risk of further escalation, sustaining the geopolitical premium across European power and carbon markets"
    ],
-   "headlineCount": 6,
+   "headlineCount": 7,
    "sources": [
     "India Infoline",
     "The Business Standard",
+    "The Eastern Herald",
     "The Sunday Guardian"
    ]
   }
