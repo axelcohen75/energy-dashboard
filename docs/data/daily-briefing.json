@@ -1,45 +1,45 @@
 {
- "generated": "2026-08-25T13:46:03.127310+00:00",
+ "generated": "2026-08-25T19:29:09.299414+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude sold off sharply on Tuesday despite an extraordinarily tense geopolitical backdrop. WTI fell 2.87% to $82.56/bbl and Brent dropped 4.38% to $88.13/bbl, a notable retreat from the $93.77 level cited in Sunday's live updates. The move suggests markets are pricing in diplomatic relief after the US announced a temporary easing of Russia oil sanctions to cap the price surge, riling European allies. Iran's threats to halt Hormuz flows and its move to threaten 45 tankers with fines and confiscation remain live tail risks, but TotalEnergies' commitment to two Hormuz-bypass pipelines signals longer-term supply rerouting. Rystad Energy cut Russia's 2026 output forecast to 8.95 mb/d on sanctions and drone damage, while Ukraine's confirmed strike on the Afipsky refinery in Krasnodar tightens global refined product availability further. RBOB gasoline cratered 9.77% on the day and is down 11.30% on the month, suggesting demand-side or supply-relief pressure at the refined product level.",
+   "summary": "Crude sold off sharply on Tuesday, with Brent shedding 5.37% to $87.22 and WTI dropping 3.20% to $82.29, as Pakistani-mediated diplomacy rekindled hopes of a US-Iran negotiation breakthrough and pushed Brent back from an earlier spike near $93.77. RBOB gasoline was the standout mover, cratering 10.65% on the day and over 12% on the month, signalling demand-side concern. Despite persistent Hormuz tension \u2014 Iran threatening 45 tankers with fines and confiscation, and a tanker strike reported off Oman \u2014 markets chose to price in de-escalation risk rather than supply disruption. On the supply side, Ukraine confirmed a fresh drone strike on Russia's Afipsky refinery in Krasnodar, and Rystad Energy cut its 2026 Russian crude output forecast to 8.95 million bpd. India's import bill continues to surge on quadrupled freight rates, while Sinopec flagged crumbling domestic fuel demand driven by China's EV boom. CME options markets price a 77% chance of an OPEC cut at the next meeting.",
    "drivers": [
-    "US temporary easing of Russia oil sanctions credited with capping the price surge and driving today's sharp crude selloff",
-    "Iran's Hormuz closure threats and the threatening of 45 tankers maintain elevated risk premium, partially offsetting bearish pressure",
-    "RBOB gasoline collapsed ~10% on the day and ~11% on the month, signaling significant weakness in refined product demand or crack spreads"
+    "Iran negotiation hopes (Pakistani mediation) triggered a sharp risk-off reversal in crude despite ongoing Hormuz tanker threats",
+    "Ukraine drone strikes on Russian refineries tighten global refined-product supply; Rystad cuts Russia 2026 output forecast to 8.95 mb/d",
+    "Demand headwinds building: Sinopec flags collapsing Chinese fuel sales amid EV growth; RBOB gasoline -10.65% on the day"
    ],
    "headlineCount": 12,
    "sources": [
     "Crypto Briefing",
     "Energies Media",
-    "EnergyNow",
+    "Gulf News",
     "India Infoline",
     "Reuters",
     "The Sunday Guardian"
    ]
   },
   "gas": {
-   "summary": "Henry Hub continued its quiet drift lower, slipping 0.79% to $2.76/MMBtu with no gas-specific US headlines driving the move. European TTF eased 2.32% on the day to \u20ac66.74/MWh, though the contract remains up 4.85% on the week and a substantial 14.56% on the month, reflecting persistent geopolitical supply anxiety tied to the broader Middle East conflict. Norway's warning that oil and gas output could collapse after 2030 due to insufficient new discoveries adds a medium-term bearish supply signal for European markets. On the supply-build side, JPMorgan and Santander are reportedly leading a $15 billion financing push for Argentina LNG, a development that could meaningfully expand Atlantic basin LNG supply if it advances. Gas-specific headline flow is otherwise limited today.",
+   "summary": "Henry Hub edged up 2.37% to $2.849/MMBtu, extending a modest but consistent monthly grind higher of nearly 3%. TTF pulled back 3.21% to \u20ac66.125/MWh on the day, though it remains up 13.51% over the past month, reflecting lingering European supply anxiety. The Hormuz crisis is reshaping long-term LNG investment calculus: Equinor cited the Middle East conflict as a factor making its $42 billion Tanzania LNG project more commercially attractive. On the supply side, Norway started production from the second stage of Troll Phase 3, accelerating 55 billion cubic metres from the Troll West reservoir \u2014 described as buying Europe time rather than adding new supply. The BLM scheduled an October lease sale covering 3,388 acres in Montana and the Dakotas. News flow for this sector is relatively thin today.",
    "drivers": [
-    "TTF +14.56% on the month reflects sustained European supply anxiety from Middle East conflict, even as today's session saw a modest pullback",
-    "Norway flagged risk of post-2030 production collapse due to underinvestment in new discoveries, a longer-dated bearish supply signal for Europe",
-    "JPMorgan and Santander leading a reported $15 billion Argentina LNG financing round could expand future Atlantic basin supply"
+    "TTF daily pullback of 3.21% despite a strong monthly uptrend (+13.51%), reflecting short-term profit-taking amid Hormuz de-escalation signals",
+    "Hormuz disruption elevating long-term LNG project appeal: Equinor flags Tanzania's $42 bn project as increasingly attractive",
+    "Norway's Troll Phase 3 Stage 2 online, accelerating 55 bcm \u2014 supportive for European supply but not incremental new volume"
    ],
-   "headlineCount": 5,
+   "headlineCount": 4,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs edged higher, gaining 1.40% to $79.60/EUA and extending a week-to-date gain of 2.84%, while TTF's monthly surge of 14.56% continues to feed through to higher implied power generation costs across Europe. The carbon bid is broadly consistent with elevated gas prices raising the cost of gas-fired generation and tightening the emissions compliance calculus for utilities. Headline flow directly relevant to power and carbon is thin today; available news is dominated by Hormuz and Ukraine-Russia themes that feed indirectly into European energy cost pressures. Ukraine's ongoing drone campaign against Russian refineries, noted in today's headlines, deepens the regional fuel crunch and underpins the broader energy complex supporting EUA prices.",
+   "summary": "EU carbon EUAs gained 1.96% to $80.04, building on a 3.40% weekly advance, as TTF's monthly surge of 13.51% keeps gas-to-power switching economics in focus and supports marginal carbon pricing. The day's most structurally significant headline was the reported acceleration of next-generation nuclear development in the US, with Big Tech and private equity channelling capital into advanced nuclear to meet AI data-centre power demand. On the periphery, Ukraine's ongoing drone campaign against Russian refineries and the Hormuz standoff continue to apply upward pressure on fossil-fuel input costs for power generators. The BLM's October lease sale in Montana and the Dakotas is a modest incremental signal for domestic gas-fired generation supply. Overall, the power and carbon data flow today is limited beyond the nuclear-AI theme and the carbon price move.",
    "drivers": [
-    "EUA carbon prices edged up 1.40% on the day and are +2.84% on the week, supported by elevated European gas costs lifting generation-side compliance pressure",
-    "TTF's 14.56% monthly gain continues to transmit geopolitical risk premia into European power markets",
-    "Direct power-sector headline flow is limited today; sector is trading primarily as a derivative of the gas and geopolitical narratives"
+    "EUA carbon up 1.96% on the day and +3.40% on the week, supported by elevated TTF gas costs lifting marginal power-sector abatement costs",
+    "AI-driven nuclear revival: Big Tech and private equity accelerating US next-gen nuclear investment to meet surging data-centre electricity demand",
+    "Hormuz and Ukraine refinery disruptions sustain elevated fossil-fuel input cost risk for power generators globally"
    ],
-   "headlineCount": 4,
+   "headlineCount": 5,
    "sources": [
-    "India Infoline",
-    "The Business Standard"
+    "Gulf News",
+    "India Infoline"
    ]
   }
  }
