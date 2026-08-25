@@ -1,13 +1,22 @@
 {
-  "updated": "2026-08-25T21:23:49Z",
+  "updated": "2026-08-25T21:53:54Z",
   "physical": [
     {
-      "title": "SPR Sinks Toward Operational Minimum as U.S. Crude Inventories Build",
-      "summary": "The American Petroleum Institute (API) estimated that crude oil inventories in the United States rose by 4.2 million barrels in the week ending August 21. Analysts had expected a 1.9 million-barrel...",
+      "title": "Hormuz Crisis Boosts Appeal of $42-Billion Tanzania LNG",
+      "summary": "Equinor sees a multi-billion LNG export project in Tanzania becoming more attractive for development amid the Middle East conflict that has crippled liquefied natural gas supply through the Strait ...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/SPR-Sinks-Toward-Operational-Minimum-as-US-Crude-Inventories-Build.html",
-      "published": "2026-08-25T21:06:25Z",
-      "sentiment": "bearish",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Crisis-Boosts-Appeal-of-42-Billion-Tanzania-LNG.html",
+      "published": "2026-08-25T15:06:56Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "U.S. Refiners Face New Crude Squeeze as Canada Cuts Oil Sands Output",
+      "summary": "U.S. refineries have been running at full speed for months to make up for lost fuel supply from the Middle East. Fuel exports from the United States have been breaking records. This may be about to...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Crude-Oil/US-Refiners-Face-New-Crude-Squeeze-as-Canada-Cuts-Oil-Sands-Output.html",
+      "published": "2026-08-25T21:00:00Z",
+      "sentiment": "bullish",
       "impact": "low"
     },
     {
@@ -20,21 +29,12 @@
       "impact": "med"
     },
     {
-      "title": "U.S. Refiners Face New Crude Squeeze as Canada Cuts Oil Sands Output",
-      "summary": "U.S. refineries have been running at full speed for months to make up for lost fuel supply from the Middle East. Fuel exports from the United States have been breaking records. This may be about to...",
+      "title": "SPR Sinks Toward Operational Minimum as U.S. Crude Inventories Build",
+      "summary": "The American Petroleum Institute (API) estimated that crude oil inventories in the United States rose by 4.2 million barrels in the week ending August 21. Analysts had expected a 1.9 million-barrel...",
       "source": "",
-      "url": "https://oilprice.com/Energy/Crude-Oil/US-Refiners-Face-New-Crude-Squeeze-as-Canada-Cuts-Oil-Sands-Output.html",
-      "published": "2026-08-25T21:00:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Hormuz Crisis Boosts Appeal of $42-Billion Tanzania LNG",
-      "summary": "Equinor sees a multi-billion LNG export project in Tanzania becoming more attractive for development amid the Middle East conflict that has crippled liquefied natural gas supply through the Strait ...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Hormuz-Crisis-Boosts-Appeal-of-42-Billion-Tanzania-LNG.html",
-      "published": "2026-08-25T15:06:56Z",
-      "sentiment": "bullish",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/SPR-Sinks-Toward-Operational-Minimum-as-US-Crude-Inventories-Build.html",
+      "published": "2026-08-25T21:06:25Z",
+      "sentiment": "bearish",
       "impact": "low"
     },
     {
@@ -56,6 +56,24 @@
       "impact": "med"
     },
     {
+      "title": "Uranium Prices Surge as Nuclear Demand Accelerates",
+      "summary": "Bloomberg's continuous front-month uranium futures contract (UXA1 Comdty) briefly surged above $100 a pound in late January, driven by tightening supplies, renewed government support for nuclear po...",
+      "source": "",
+      "url": "https://oilprice.com/Metals/Commodities/Uranium-Prices-Surge-as-Nuclear-Demand-Accelerates.html",
+      "published": "2026-08-25T20:00:00Z",
+      "sentiment": "bullish",
+      "impact": "high"
+    },
+    {
+      "title": "China\u2019s Top Refiner Seeks Transformation amid Falling Fuel Sales",
+      "summary": "The world\u2019s biggest oil refiner, China\u2019s state-held Sinopec, is looking to transform its business as domestic fuel sales crumble amid the electric vehicle boom. China Petroleum & Chemical Corporati...",
+      "source": "",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Top-Refiner-Seeks-Transformation-amid-Falling-Fuel-Sales.html",
+      "published": "2026-08-25T14:30:00Z",
+      "sentiment": "bearish",
+      "impact": "med"
+    },
+    {
       "title": "Oil Prices Fall as Iran Negotiation Hopes Return",
       "summary": "U.S. sanctions pressure on Iran intensifies, but Pakistani mediation hopes push Brent back to $89. US Blockade Leaves Iran\u2019s Oil Trade on Borrowed Time - The announcement of the Trump administratio...",
       "source": "",
@@ -74,24 +92,6 @@
       "impact": "low"
     },
     {
-      "title": "China\u2019s Top Refiner Seeks Transformation amid Falling Fuel Sales",
-      "summary": "The world\u2019s biggest oil refiner, China\u2019s state-held Sinopec, is looking to transform its business as domestic fuel sales crumble amid the electric vehicle boom. China Petroleum & Chemical Corporati...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Top-Refiner-Seeks-Transformation-amid-Falling-Fuel-Sales.html",
-      "published": "2026-08-25T14:30:00Z",
-      "sentiment": "bearish",
-      "impact": "med"
-    },
-    {
-      "title": "Uranium Prices Surge as Nuclear Demand Accelerates",
-      "summary": "Bloomberg's continuous front-month uranium futures contract (UXA1 Comdty) briefly surged above $100 a pound in late January, driven by tightening supplies, renewed government support for nuclear po...",
-      "source": "",
-      "url": "https://oilprice.com/Metals/Commodities/Uranium-Prices-Surge-as-Nuclear-Demand-Accelerates.html",
-      "published": "2026-08-25T20:00:00Z",
-      "sentiment": "bullish",
-      "impact": "high"
-    },
-    {
       "title": "UK Tax Rises Back on the Table as Burnham Faces Fiscal Crunch",
       "summary": "Andy Burnham has suggested tax rises could be on the cards in the looming Autumn Budget, warning he \u201cwon\u2019t be unrealistic\u201d over the state of the public purse. The Prime Minister quickly pledged to ...",
       "source": "",
@@ -99,6 +99,24 @@
       "published": "2026-08-25T19:00:00Z",
       "sentiment": "bullish",
       "impact": "med"
+    },
+    {
+      "title": "BLM Sets October Oil and Gas Lease Sale for Montana and Dakotas",
+      "summary": "The federal government is putting another 3,388 acres of public mineral estate on the auction block for oil and gas development in Montana and the Dakotas. The Bureau of Land Management said it wil...",
+      "source": "",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/BLM-Sets-October-Oil-and-Gas-Lease-Sale-for-Montana-and-Dakotas.html",
+      "published": "2026-08-25T17:45:00Z",
+      "sentiment": "bearish",
+      "impact": "low"
+    },
+    {
+      "title": "Russia Eyes Central Asia as a Safe Haven for Its Defense Industry",
+      "summary": "With Russian infrastructure being pummeled by Ukrainian drones, the Kremlin is hoping to sustain its war effort in Ukraine going by deepening defense cooperation with Kazakhstan and Uzbekistan. It ...",
+      "source": "",
+      "url": "https://oilprice.com/Geopolitics/Europe/Russia-Eyes-Central-Asia-as-a-Safe-Haven-for-Its-Defense-Industry.html",
+      "published": "2026-08-25T18:00:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
     },
     {
       "title": "China Defies U.S. Economic D-Day against Iran",
@@ -117,69 +135,15 @@
       "published": "2026-08-25T14:00:00Z",
       "sentiment": "bullish",
       "impact": "med"
-    },
-    {
-      "title": "Russia Eyes Central Asia as a Safe Haven for Its Defense Industry",
-      "summary": "With Russian infrastructure being pummeled by Ukrainian drones, the Kremlin is hoping to sustain its war effort in Ukraine going by deepening defense cooperation with Kazakhstan and Uzbekistan. It ...",
-      "source": "",
-      "url": "https://oilprice.com/Geopolitics/Europe/Russia-Eyes-Central-Asia-as-a-Safe-Haven-for-Its-Defense-Industry.html",
-      "published": "2026-08-25T18:00:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "BLM Sets October Oil and Gas Lease Sale for Montana and Dakotas",
-      "summary": "The federal government is putting another 3,388 acres of public mineral estate on the auction block for oil and gas development in Montana and the Dakotas. The Bureau of Land Management said it wil...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/BLM-Sets-October-Oil-and-Gas-Lease-Sale-for-Montana-and-Dakotas.html",
-      "published": "2026-08-25T17:45:00Z",
-      "sentiment": "bearish",
-      "impact": "low"
     }
   ],
   "geopolitics": [
     {
-      "title": "Ukraine's New War Goal for Russia: Destroy Putin's Oil Industry with Countless Drones that Flood the Skies",
-      "summary": "Ukraine's New War Goal for Russia: Destroy Putin's Oil Industry with Countless Drones that Flood the Skies National Security Journal",
-      "source": "National Security Journal",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQVGJ4MVFDTkdkYXdKaGZNQm5Nd3hXbFlkUm0xUDlXLXRxODdZOXQzWmR1QkIzZ2VhcC10b3hxcmpUbG9JMTdxcmN1WjBBa0F4ZlRmTUVjNEQ4RkZXd05jcDFPazB2VUtxTFFGY0lfT01DSUFwVE8xVTc5MlZndGtaLXNzN0RaUjhTTjFZT24xeC10UWJLQUFRYjNudXdmS2Fla1NTWnhCS1RVdE5LTGpibmt5WUhQZTZERGlXa0JDS2J4V1lPVVpPZWoxT2xaRFNnRzBYR2ZNcw?oc=5",
-      "published": "2026-08-25T14:59:05Z",
-      "sentiment": "bearish",
-      "impact": "low"
-    },
-    {
-      "title": "China pushes for diplomacy as US slaps Iran with sweeping new sanctions",
-      "summary": "China pushes for diplomacy as US slaps Iran with sweeping new sanctions Crypto Briefing",
-      "source": "Crypto Briefing",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE96U2o0MTRKN1puUTZRRUtwMmQtemxGZHdzcEFmVU9iTGJXbnQxaWJZLUxPUl9UWUxVZzRrbHVOUWpYNE5tNmhYXzFxNXJMeGE0TGY3WHFBcWdzNTZyZ2R3VXdnOVFiQ3ZYQXZvek9Jc0lsVUYyY1dEbXB3?oc=5",
-      "published": "2026-08-23T14:09:28Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Rystad Energy cuts Russia crude output forecast to 8.95 million bpd for 2026 as sanctions and drone attacks deepen supply constraints",
-      "summary": "Rystad Energy cuts Russia crude output forecast to 8.95 million bpd for 2026 as sanctions and drone attacks deepen supply constraints Energies Media",
-      "source": "Energies Media",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9LWXZkTEd1V21kQU5ZMHkwTXVqU3Zlcmk2UmRWSlNyNGpoOFlTMm9JLTZCOThoXzgwOExBcXpTVXFNT3BRSUJmME9wTHVteGZMN0NNdkh4a19qZDJfb01hZ3RUTjZPWV80YkVuYVpJTQ?oc=5",
-      "published": "2026-08-24T04:10:43Z",
-      "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "Iran official says support for new sanctions would be an 'act of war,' and other Middle East news",
-      "summary": "Iran official says support for new sanctions would be an 'act of war,' and other Middle East news ABC News - Breaking News, Latest News and Videos",
-      "source": "ABC News - Breaking News, Latest News and Videos",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOeGs1eVJuZ1pjeHlEemt6UkZNYUZVYktOS3dUamlnaGpqV1BLMXVsLUZva251Um02RXpsd1lGOFJwNmVMeVo4a0I5a0ZVVmkyZ3hLTXZmUS12YW5EMkp0N2Q4dmswN2JYdWVFd0JuMzBWdDIzeVk2MWU1OGpLSTVMSVN2eUhtZEdMNUNNbGFkOHBnX1ZSY2x3Snc1aHZHWXV3TmJXUmRlVmPSAa4BQVVfeXFMTWVidE1QMzVKelBaUVRROW1LY3JGM0g4YTJ1YVNjWkg0YXJGNXlVZTA1VldpUXlZYlVxZ0R1dFpuby1fN3FCTHZvYU90cmNHRF9DMlJOelVHcWZKME9wT1NUd2pqQWFUSll1ZURHVUh6amVMS1hleG1iX1FydzRtUDlmY1NtLTk0NFg3aXZmSkphWXAtWVhmS2Q0NHJFMkhWSWlrbXJxZnlSOHphUC13?oc=5",
-      "published": "2026-08-23T21:33:43Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "US offers Iran sanctions relief in exchange for opening Hormuz, halting attacks",
-      "summary": "US offers Iran sanctions relief in exchange for opening Hormuz, halting attacks The Jerusalem Post",
-      "source": "The Jerusalem Post",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBDQ1RYY3NsSy1qdHJzUXBNbGFPOUo5Xy1KVUFuTnFBaGlqT243Rlk3NEZkM0tTOHk4eUxxVDN0MFJBSnFxYlVXQUVuTlRvT3dmWWE1cWtndm5lZzdHR3E2dW9HN2k0NW5ZTXc?oc=5",
-      "published": "2026-08-25T13:37:35Z",
+      "title": "Middle East Tensions, Ukraine War and Rising Pressure on Global Trade",
+      "summary": "Middle East Tensions, Ukraine War and Rising Pressure on Global Trade ENA English",
+      "source": "ENA English",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9JVXNQTmhlZTQ4ZkNHaGVYOFFqOUF3VU1jWWtZWFdXTURqNTVZWFRhdzhTV216VWxpel92OG1vR0Q4N2pKci1wRGZ3R0tocVpMbXc?oc=5",
+      "published": "2026-08-23T19:36:16Z",
       "sentiment": "bullish",
       "impact": "med"
     },
@@ -193,6 +157,15 @@
       "impact": "low"
     },
     {
+      "title": "Rystad Energy cuts Russia crude output forecast to 8.95 million bpd for 2026 as sanctions and drone attacks deepen supply constraints",
+      "summary": "Rystad Energy cuts Russia crude output forecast to 8.95 million bpd for 2026 as sanctions and drone attacks deepen supply constraints Energies Media",
+      "source": "Energies Media",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9LWXZkTEd1V21kQU5ZMHkwTXVqU3Zlcmk2UmRWSlNyNGpoOFlTMm9JLTZCOThoXzgwOExBcXpTVXFNT3BRSUJmME9wTHVteGZMN0NNdkh4a19qZDJfb01hZ3RUTjZPWV80YkVuYVpJTQ?oc=5",
+      "published": "2026-08-24T04:10:43Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
       "title": "US-Iran War Update: How the Strait of Hormuz Could Move Oil Prices and Global Stock Markets",
       "summary": "US-Iran War Update: How the Strait of Hormuz Could Move Oil Prices and Global Stock Markets India Infoline",
       "source": "India Infoline",
@@ -202,39 +175,12 @@
       "impact": "low"
     },
     {
-      "title": "US-Israel-Iran War Latest Live Updates: Oil Prices Dip As Iran Threatens To Halt Crude Flow Through Strait Of Hormuz, Brent Falls To $93.77",
-      "summary": "US-Israel-Iran War Latest Live Updates: Oil Prices Dip As Iran Threatens To Halt Crude Flow Through Strait Of Hormuz, Brent Falls To $93.77 The Sunday Guardian",
-      "source": "The Sunday Guardian",
-      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQUmtoV0ppdndxQXBQN2NkUGFCQl8yV21pbFBxdGZOS2ZybDNoQ3piRGc1YnY3MHFPYW1zZnRfQ3VMUm9XWWdSZFJ6OGx5SVYyYi1RZVc3YXZxa3dvcEI2Y0ZQNmVRWWRhaExaU3NRcldoLUhVYTlUMjVNSW9JVUh1VnI4Y01aY1FzUHpibnJSaUN2Qld2T2YwS1NnWmtKY0sxYTdFaTB0aldtYUY0dGU3dE45WktEODdZZjdIdXExMVFvZUpLUzZNTko3RVFYclcyd0VIQmdzQ19WZVNWOTVmNFFnVHZtZVlfVy1jUXBURU04ZjRKdEFGWENkODE0R2xHb3dRdVQ5ZmEwLWN10gGSAkFVX3lxTE81MXA2V0s1VERiVkZOSU1QYk9MRjdyT2tlQTJXekFGQml1eUhtNTN4WElVeU5jZFZvcHc3U09sNURFb0VUWC0wMWw5dklTczdBWTRHZ3UyNEViS3FPcU9aVExzNFVMSlctcEhFOE0tdEIxNk15d29KdVV6U0ItbHZZVHRSMEgwdzNFdEp2NVpkdnpmaXRHN3BaTUJGajZ6Mkw2dFZKM2YyTXdIOGgwbklhS1U5eFgtVjlTdnBEdmRYNHZPOGRuWkh0LXJMNEVrOTdBLWpxeEk3TlJmdk0zalJJajMzQ2tqN0txUXNDOW5vZ0JqWkpJWldfNW9uQWl5WDZMd2FsX1B1dThiVVNmN2FPa1E?oc=5",
-      "published": "2026-08-24T02:29:53Z",
+      "title": "Ukraine's New War Goal for Russia: Destroy Putin's Oil Industry with Countless Drones that Flood the Skies",
+      "summary": "Ukraine's New War Goal for Russia: Destroy Putin's Oil Industry with Countless Drones that Flood the Skies National Security Journal",
+      "source": "National Security Journal",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQVGJ4MVFDTkdkYXdKaGZNQm5Nd3hXbFlkUm0xUDlXLXRxODdZOXQzWmR1QkIzZ2VhcC10b3hxcmpUbG9JMTdxcmN1WjBBa0F4ZlRmTUVjNEQ4RkZXd05jcDFPazB2VUtxTFFGY0lfT01DSUFwVE8xVTc5MlZndGtaLXNzN0RaUjhTTjFZT24xeC10UWJLQUFRYjNudXdmS2Fla1NTWnhCS1RVdE5LTGpibmt5WUhQZTZERGlXa0JDS2J4V1lPVVpPZWoxT2xaRFNnRzBYR2ZNcw?oc=5",
+      "published": "2026-08-25T14:59:05Z",
       "sentiment": "bearish",
-      "impact": "med"
-    },
-    {
-      "title": "China's Iranian Oil Imports Plummet 48% as US Sanctions and Blockades Bite - News and Statistics",
-      "summary": "China's Iranian Oil Imports Plummet 48% as US Sanctions and Blockades Bite - News and Statistics IndexBox",
-      "source": "IndexBox",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPd0dod2ZjUzNtb245UHhVcE93dldpUlk4X0lETzhlLVA3ZzcxWENaV0EwT0ItcFM2OHAyQ2o5SDZ3WTFnQWtRMUNldzBHclI1NEhqRGVRUktUNThvZy1fT3RHRU5HaWdJMEItcDhKQ1JSN21mdWRsck1XLXFwMXJFLVZTeWZEYkVMSktGaUJWTDlIdS1fNkN3Zm1seFZGOXM?oc=5",
-      "published": "2026-08-25T20:31:00Z",
-      "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "Middle East Tensions, Ukraine War and Rising Pressure on Global Trade",
-      "summary": "Middle East Tensions, Ukraine War and Rising Pressure on Global Trade ENA English",
-      "source": "ENA English",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9JVXNQTmhlZTQ4ZkNHaGVYOFFqOUF3VU1jWWtZWFdXTURqNTVZWFRhdzhTV216VWxpel92OG1vR0Q4N2pKci1wRGZ3R0tocVpMbXc?oc=5",
-      "published": "2026-08-23T19:36:16Z",
-      "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "Zelenskyy seeks more Patriot missiles amid Russia-Ukraine conflict: Pence",
-      "summary": "Zelenskyy seeks more Patriot missiles amid Russia-Ukraine conflict: Pence Crypto Briefing",
-      "source": "Crypto Briefing",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQT2h5TkRYT0licHdIMzVhc1ZzVU50TmJMeFNER1hQWlZyZEZ5bklUWV9aM1pIT241cEpuZlF2NFlDRGRTT3dEV2VYN3FZS2d0eGVBenFFLVJJcnBtMll6Q0xUdUlndTFuMzlHVzNzUGlVTVBTbURvOWVnRWdza01lT01HWEtPbW12Q1VuLTc2RU1vRzBiaV9kdFEwV0pNb2V4TEE?oc=5",
-      "published": "2026-08-23T15:07:59Z",
-      "sentiment": "bullish",
       "impact": "low"
     },
     {
@@ -247,12 +193,39 @@
       "impact": "low"
     },
     {
-      "title": "How the US naval blockade, rather than sanctions, is choking Iran",
-      "summary": "How the US naval blockade, rather than sanctions, is choking Iran Reuters",
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOcWEyc3Y1cXdpci1DeUQ2QUtLNUZ6ZE9yc3B6ZHRXU2M4aV9Ra0N3Qmo0TTgweEhLN1N3THZQOUdHbmEzazQ2cDN2UjRtb011RlRqZERqalNVbGpVT1JERldZTHdtb0NwOUx1R0NVcmt2S3pZb0lZNnBHYjRjOThkWmVR?oc=5",
-      "published": "2026-08-25T14:59:14Z",
+      "title": "Iran official says support for new sanctions would be an 'act of war,' and other Middle East news",
+      "summary": "Iran official says support for new sanctions would be an 'act of war,' and other Middle East news ABC News - Breaking News, Latest News and Videos",
+      "source": "ABC News - Breaking News, Latest News and Videos",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOeGs1eVJuZ1pjeHlEemt6UkZNYUZVYktOS3dUamlnaGpqV1BLMXVsLUZva251Um02RXpsd1lGOFJwNmVMeVo4a0I5a0ZVVmkyZ3hLTXZmUS12YW5EMkp0N2Q4dmswN2JYdWVFd0JuMzBWdDIzeVk2MWU1OGpLSTVMSVN2eUhtZEdMNUNNbGFkOHBnX1ZSY2x3Snc1aHZHWXV3TmJXUmRlVmPSAa4BQVVfeXFMTWVidE1QMzVKelBaUVRROW1LY3JGM0g4YTJ1YVNjWkg0YXJGNXlVZTA1VldpUXlZYlVxZ0R1dFpuby1fN3FCTHZvYU90cmNHRF9DMlJOelVHcWZKME9wT1NUd2pqQWFUSll1ZURHVUh6amVMS1hleG1iX1FydzRtUDlmY1NtLTk0NFg3aXZmSkphWXAtWVhmS2Q0NHJFMkhWSWlrbXJxZnlSOHphUC13?oc=5",
+      "published": "2026-08-23T21:33:43Z",
       "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "China pushes for diplomacy as US slaps Iran with sweeping new sanctions",
+      "summary": "China pushes for diplomacy as US slaps Iran with sweeping new sanctions Crypto Briefing",
+      "source": "Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE96U2o0MTRKN1puUTZRRUtwMmQtemxGZHdzcEFmVU9iTGJXbnQxaWJZLUxPUl9UWUxVZzRrbHVOUWpYNE5tNmhYXzFxNXJMeGE0TGY3WHFBcWdzNTZyZ2R3VXdnOVFiQ3ZYQXZvek9Jc0lsVUYyY1dEbXB3?oc=5",
+      "published": "2026-08-23T14:09:28Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Zelenskyy seeks more Patriot missiles amid Russia-Ukraine conflict: Pence",
+      "summary": "Zelenskyy seeks more Patriot missiles amid Russia-Ukraine conflict: Pence Crypto Briefing",
+      "source": "Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQT2h5TkRYT0licHdIMzVhc1ZzVU50TmJMeFNER1hQWlZyZEZ5bklUWV9aM1pIT241cEpuZlF2NFlDRGRTT3dEV2VYN3FZS2d0eGVBenFFLVJJcnBtMll6Q0xUdUlndTFuMzlHVzNzUGlVTVBTbURvOWVnRWdza01lT01HWEtPbW12Q1VuLTc2RU1vRzBiaV9kdFEwV0pNb2V4TEE?oc=5",
+      "published": "2026-08-23T15:07:59Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "US-Israel-Iran War Latest Live Updates: Oil Prices Dip As Iran Threatens To Halt Crude Flow Through Strait Of Hormuz, Brent Falls To $93.77",
+      "summary": "US-Israel-Iran War Latest Live Updates: Oil Prices Dip As Iran Threatens To Halt Crude Flow Through Strait Of Hormuz, Brent Falls To $93.77 The Sunday Guardian",
+      "source": "The Sunday Guardian",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQUmtoV0ppdndxQXBQN2NkUGFCQl8yV21pbFBxdGZOS2ZybDNoQ3piRGc1YnY3MHFPYW1zZnRfQ3VMUm9XWWdSZFJ6OGx5SVYyYi1RZVc3YXZxa3dvcEI2Y0ZQNmVRWWRhaExaU3NRcldoLUhVYTlUMjVNSW9JVUh1VnI4Y01aY1FzUHpibnJSaUN2Qld2T2YwS1NnWmtKY0sxYTdFaTB0aldtYUY0dGU3dE45WktEODdZZjdIdXExMVFvZUpLUzZNTko3RVFYclcyd0VIQmdzQ19WZVNWOTVmNFFnVHZtZVlfVy1jUXBURU04ZjRKdEFGWENkODE0R2xHb3dRdVQ5ZmEwLWN10gGSAkFVX3lxTE81MXA2V0s1VERiVkZOSU1QYk9MRjdyT2tlQTJXekFGQml1eUhtNTN4WElVeU5jZFZvcHc3U09sNURFb0VUWC0wMWw5dklTczdBWTRHZ3UyNEViS3FPcU9aVExzNFVMSlctcEhFOE0tdEIxNk15d29KdVV6U0ItbHZZVHRSMEgwdzNFdEp2NVpkdnpmaXRHN3BaTUJGajZ6Mkw2dFZKM2YyTXdIOGgwbklhS1U5eFgtVjlTdnBEdmRYNHZPOGRuWkh0LXJMNEVrOTdBLWpxeEk3TlJmdk0zalJJajMzQ2tqN0txUXNDOW5vZ0JqWkpJWldfNW9uQWl5WDZMd2FsX1B1dThiVVNmN2FPa1E?oc=5",
+      "published": "2026-08-24T02:29:53Z",
+      "sentiment": "bearish",
       "impact": "med"
     },
     {
@@ -265,40 +238,22 @@
       "impact": "med"
     },
     {
-      "title": "Sberbank analysts put Russia\u2019s chances of winning war against Ukraine at 7%, internal documents hacked by Black Mirror reveal",
-      "summary": "Sberbank analysts put Russia\u2019s chances of winning war against Ukraine at 7%, internal documents hacked by Black Mirror reveal theins.press",
-      "source": "theins.press",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBnWG9KcWxWemJGRmZUdnFhMjBySDBsdlE0ektPcjFVWEVoYVVkMmJUbjdPOWZlaWhwTzd0ZkxFOHhONDFLRW5hT1c5Zw?oc=5",
-      "published": "2026-08-25T18:52:54Z",
+      "title": "How the US naval blockade, rather than sanctions, is choking Iran",
+      "summary": "How the US naval blockade, rather than sanctions, is choking Iran Reuters",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOcWEyc3Y1cXdpci1DeUQ2QUtLNUZ6ZE9yc3B6ZHRXU2M4aV9Ra0N3Qmo0TTgweEhLN1N3THZQOUdHbmEzazQ2cDN2UjRtb011RlRqZERqalNVbGpVT1JERldZTHdtb0NwOUx1R0NVcmt2S3pZb0lZNnBHYjRjOThkWmVR?oc=5",
+      "published": "2026-08-25T14:59:14Z",
       "sentiment": "bullish",
       "impact": "med"
     },
     {
-      "title": "Russia will 'try to escalate' against Europe to deter Ukraine support: Macron",
-      "summary": "Russia will 'try to escalate' against Europe to deter Ukraine support: Macron Anadolu Ajans\u0131",
-      "source": "Anadolu Ajans\u0131",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRmNoS2J2M0lLYnlzeDJTcV9CbWhWNGNWYzdCUWcxNDkwalEzeEVPdW1Lbzh5MVJkVVpaUHM5cnVqSDV0ZTJMMnpkQlBTcHRkSGtrN3ota3VSWTljUy1oLWYySENPTjVvOUoxemI0VFFqOHlYUlhqQWJTeG42YkZ0RmFnMEp0MEFhRE5oOVJrNFk5ZDZIbXItVTFUR0hWQnZHX2xuWlV0NGNJRzE1c21sY1d0YWd2QQ?oc=5",
-      "published": "2026-08-24T17:24:53Z",
+      "title": "Russia could escalate against Europe to deter Ukraine aid, Macron says",
+      "summary": "Russia could escalate against Europe to deter Ukraine aid, Macron says Latest news from Azerbaijan",
+      "source": "Latest news from Azerbaijan",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxON0FreWFqRTBaTTBvZ3NOVXdWX093TFVaNmhPS3BmNmtrUVMwNGpWRkNIQ1RDdk1JdnpkYUlrWTZDMFhoX0J3RkZBdXRZZ0xHeEZ6RW5MNUtQUHBnUnQ2dlpBb3pzaXVaTjI5bDR2bE5HUDdPZ2NORGhzb1pVSC04SmFMNGoxRkFfTWpLOXVuSi1kYUc3?oc=5",
+      "published": "2026-08-24T18:59:17Z",
       "sentiment": "bullish",
       "impact": "med"
-    },
-    {
-      "title": "Oil prices fall as Iran tensions ease and sanctions risks change",
-      "summary": "Oil prices fall as Iran tensions ease and sanctions risks change grafa.com",
-      "source": "grafa.com",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcEhZekNmMGppZ1Q4MlducHFjVDJaZXlHM2E1S3pKdFBOODllOW5hS0JDVTlvTkhaeEF5ejJ3V0FBS25qM21FbDBwSnJCUTZoOTNuNUg1VTc1dm5kcFBCNmJPQU0tZnJRSFJNaHpMckZIUHB5NG4ycksyb1N4VlRfZGl4OWhrTGYwRl9PNzl1SHV0QmFwMVFROVBTRF9IRmRESUdSQVh1ZmJHQQ?oc=5",
-      "published": "2026-08-25T12:56:00Z",
-      "sentiment": "neutral",
-      "impact": "high"
-    },
-    {
-      "title": "Middle East: Iran vows response to fresh US sanctions",
-      "summary": "Middle East: Iran vows response to fresh US sanctions Yahoo News UK",
-      "source": "Yahoo News UK",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPM1lNemFpM2p6VC1KZTNyaDJTWHV3U0syU2lxQTBYWlpfeVZFRGVLSE0xc3JyeEZuMnk2ZzU3ZHZpWXRMa3YwRHlPQjhsM1pjYjZKUmxxWVFZZW5HbURwVDBpZExMR1NwOUFPdmlTRVh1TkV5blg3clptd2VwLVFXMg?oc=5",
-      "published": "2026-08-25T10:20:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
     },
     {
       "title": "Can Trump's economic war against Iran do what airstrikes and negotiations couldn't?",
@@ -319,12 +274,48 @@
       "impact": "low"
     },
     {
-      "title": "Ukraine confirms strike on Russia\u2019s Afipsky oil refinery in Krasnodar region",
-      "summary": "Ukraine confirms strike on Russia\u2019s Afipsky oil refinery in Krasnodar region Crypto Briefing",
+      "title": "Ukraine's UN rep says Russia is losing war against Ukraine",
+      "summary": "Ukraine's UN rep says Russia is losing war against Ukraine \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 \u043f\u0440\u0430\u0432\u0434\u0430",
+      "source": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 \u043f\u0440\u0430\u0432\u0434\u0430",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5PeVRVRTRwc3dMaE9zMFhjR0xPLWdaMzhNNU1IcXRMTzBsVGk5X05WZEZwOG5YN3l2akJBNldBOERGMHBIclU5ekdzQzlLZHVwbTN2TUYxbVZLOTZEajVYbkU3UDDSAXBBVV95cUxNWnp3eEoyRHhUMlk3RDFiWlVBUjFWLUJGdG1qWEVaOUoxS2RTVC1CYmFxTWdrOWFMU1ZoMk8tSWpnTWdXLXkwSTZWdzIzYXEyVFprRmh0MWluM19mY2NZcW1NTUE5VzZjUzNmQkhVN2sz?oc=5",
+      "published": "2026-08-24T23:36:00Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "US to Hold Off on More Iran Strikes, Turn to Sanctions and Maritime Pressure",
+      "summary": "US to Hold Off on More Iran Strikes, Turn to Sanctions and Maritime Pressure bloomingbit",
+      "source": "bloomingbit",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8zQmt6SmJZdS1sNExKTDJtbHdhNTh3dlhFdEYyTzBidEMweFpySnRpOGJyOXlTVnRfVjNiTlNhY252LUV3eWlTMVpFSGEzdjJ0TkVkOA?oc=5",
+      "published": "2026-08-25T21:45:25Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Two killed, refinery on fire in Russia\u2019s Krasnodar after drone attack",
+      "summary": "Two killed, refinery on fire in Russia\u2019s Krasnodar after drone attack Al Jazeera",
+      "source": "Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZ3dFTHk3YkF2RGlnUnRqLUdSQUVSc05MbWdiWFpEZ3VTRjVBTkRPbENnenhra3lSakhFV0N4dGZDcTNhU0ZLN3pWZDdNU0FURkNqNFpyV240ZnJOUlcxamhmNVlpQ0RtNjZILTBjVzU3ckY1SkpnR2k2NFZyUHZaVkpuVnp6UWh3dklNRFRRNVV2WGVKQnZ4d0x2bmFjYVlkQ3g5bGdaQlVIQlB50gGyAUFVX3lxTE1WbEdJQzRTR2hscDdIMmRNdDlrZkYtR2FYMGNVMGIweDVLM1pxNEttNzZTZ21SbldTNHkwSlFINENqWnhRT0NESVV4c1RIaXJMa2JkanRnQTNYRG1EOHc1RlJ1cWQ2OWxZcVIyQUFNNjgzU0VtR3dzQnI2ZUJoUDVBbUhmeUZld3dMVDBQM2JCMmpDWG1EYXhoNTRCM2hIcjY2RUpfb2Rxa2hjQUk0VGRfcWc?oc=5",
+      "published": "2026-08-25T14:25:16Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Treasury Department warns mariners of sanctions risks from Iranian organizations",
+      "summary": "Treasury Department warns mariners of sanctions risks from Iranian organizations Crypto Briefing",
       "source": "Crypto Briefing",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTGtYVF9aZThkTGJLbkxnamE4NjAtVlpkdVlYTndIZ201M3YxbTkwRkFMSUMtcE5NZG5NOUlCd0JudW14NTU0Yk5UTUhNNjZFZUFYaUI4MzVPVi1tenliSmNzaHVzR2JUQkM1RWhFNllSbGtLUTl1U3pXZVl3a1NCV0o3aVVsMVA2ZnNwWVd6MW9UYWgzeG5mVEdDSGZTOU0tckVXZmlB?oc=5",
-      "published": "2026-08-25T09:13:33Z",
-      "sentiment": "neutral",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5CQzBTREZDbHFqYjBfUlBncUZZNFBLSWgzWC16a29fbERzci1qSkhIbXNHQ1NIel9BbVAyOWYyTzBXeGg1VmhBNnBZZk5NNVhVQjVfTkNoOUJ5Wm96bl9Ea1Q3MWJmV3kwdS04bUVzUEFjdzZWQ2VlaGRfT1g?oc=5",
+      "published": "2026-08-25T06:08:42Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Coalition in Kyiv commits to bolstering Ukraine\u2019s defenses, sanctions on Russia",
+      "summary": "Coalition in Kyiv commits to bolstering Ukraine\u2019s defenses, sanctions on Russia Crypto Briefing",
+      "source": "Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRUdFTjkwUXFBM1RNeFZiYXJvN0Y1azVsZkcyeVpUMjJBcUs4aTZGQ0c5Q2tOdWZ6RjlwbTZPNVhYUm01dHUtX2R3R0hDM2pYN2ZxRGIyRW1EUEZoZ1Z4Sml6dHFCZHZDMS0zSnRheE9mcV9jQTZGSGw0NEZGYm1fa2dxaXhNekpQMUIxRC1EWHl1MkFoeHYxaUV5U2YwYW9DdVRBLTRqa2g?oc=5",
+      "published": "2026-08-25T03:56:39Z",
+      "sentiment": "bullish",
       "impact": "low"
     },
     {
@@ -337,15 +328,6 @@
       "impact": "low"
     },
     {
-      "title": "Russia could escalate against Europe to deter Ukraine aid, Macron says",
-      "summary": "Russia could escalate against Europe to deter Ukraine aid, Macron says Latest news from Azerbaijan",
-      "source": "Latest news from Azerbaijan",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxON0FreWFqRTBaTTBvZ3NOVXdWX093TFVaNmhPS3BmNmtrUVMwNGpWRkNIQ1RDdk1JdnpkYUlrWTZDMFhoX0J3RkZBdXRZZ0xHeEZ6RW5MNUtQUHBnUnQ2dlpBb3pzaXVaTjI5bDR2bE5HUDdPZ2NORGhzb1pVSC04SmFMNGoxRkFfTWpLOXVuSi1kYUc3?oc=5",
-      "published": "2026-08-24T18:59:17Z",
-      "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
       "title": "Iran\u2019s War With Israel and the United States | Global Conflict Tracker",
       "summary": "Iran\u2019s War With Israel and the United States | Global Conflict Tracker Council on Foreign Relations",
       "source": "Council on Foreign Relations",
@@ -355,13 +337,31 @@
       "impact": "low"
     },
     {
-      "title": "Brent Crude Tumbles Over 3%, Breaks Below $90 as Pakistan Mediates US-Iran Sanctions-for-Strait Deal",
-      "summary": "Brent Crude Tumbles Over 3%, Breaks Below $90 as Pakistan Mediates US-Iran Sanctions-for-Strait Deal finance.biggo.com",
-      "source": "finance.biggo.com",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBkbHVmVFpBY0lJZUNIcHZMRkFWSjdZVDJQOWZaN0VlMjdpUG5CV012VGRSbEI0aW9iREFzcEx6STgxUFNBTXdxQk9CbjdsSkg5dEstejVEZ0d2MnBZWFFodlhWSVQzYXk5aTZGM2M4SGJ2VnAyOWc?oc=5",
-      "published": "2026-08-25T16:30:59Z",
-      "sentiment": "bearish",
-      "impact": "med"
+      "title": "Ukraine confirms strike on Russia\u2019s Afipsky oil refinery in Krasnodar region",
+      "summary": "Ukraine confirms strike on Russia\u2019s Afipsky oil refinery in Krasnodar region Crypto Briefing",
+      "source": "Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTGtYVF9aZThkTGJLbkxnamE4NjAtVlpkdVlYTndIZ201M3YxbTkwRkFMSUMtcE5NZG5NOUlCd0JudW14NTU0Yk5UTUhNNjZFZUFYaUI4MzVPVi1tenliSmNzaHVzR2JUQkM1RWhFNllSbGtLUTl1U3pXZVl3a1NCV0o3aVVsMVA2ZnNwWVd6MW9UYWgzeG5mVEdDSGZTOU0tckVXZmlB?oc=5",
+      "published": "2026-08-25T09:13:33Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "Oil prices fall as Iran tensions ease and sanctions risks change",
+      "summary": "Oil prices fall as Iran tensions ease and sanctions risks change grafa.com",
+      "source": "grafa.com",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcEhZekNmMGppZ1Q4MlducHFjVDJaZXlHM2E1S3pKdFBOODllOW5hS0JDVTlvTkhaeEF5ejJ3V0FBS25qM21FbDBwSnJCUTZoOTNuNUg1VTc1dm5kcFBCNmJPQU0tZnJRSFJNaHpMckZIUHB5NG4ycksyb1N4VlRfZGl4OWhrTGYwRl9PNzl1SHV0QmFwMVFROVBTRF9IRmRESUdSQVh1ZmJHQQ?oc=5",
+      "published": "2026-08-25T12:56:00Z",
+      "sentiment": "neutral",
+      "impact": "high"
+    },
+    {
+      "title": "Middle East: Iran vows response to fresh US sanctions",
+      "summary": "Middle East: Iran vows response to fresh US sanctions Yahoo News UK",
+      "source": "Yahoo News UK",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPM1lNemFpM2p6VC1KZTNyaDJTWHV3U0syU2lxQTBYWlpfeVZFRGVLSE0xc3JyeEZuMnk2ZzU3ZHZpWXRMa3YwRHlPQjhsM1pjYjZKUmxxWVFZZW5HbURwVDBpZExMR1NwOUFPdmlTRVh1TkV5blg3clptd2VwLVFXMg?oc=5",
+      "published": "2026-08-25T10:20:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
     }
   ]
 }
