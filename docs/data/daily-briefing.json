@@ -1,40 +1,40 @@
 {
- "generated": "2026-08-26T13:52:25.674852+00:00",
+ "generated": "2026-08-26T20:32:20.260323+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude sold off sharply Wednesday, with Brent down 2.80% to $86.07 and WTI off 1.40% to $81.17, extending a steep weekly slide of roughly 6% from levels that had been elevated by Hormuz closure fears. The catalyst for today's move was diplomatic: Iran-Oman talks on joint Strait of Hormuz management revived hopes that the chokepoint could reopen, pulling risk premium out of flat price. RBOB gasoline cratered 9.88% on the day \u2014 a standout move suggesting physical tightness is easing. Bearish inventory data reinforced the selloff; API reported a 4.2 million barrel crude build for the week ending August 21, even as the SPR approaches operational minimums. Countervailing supply risks remain \u2014 Ukraine struck Russia's Afipsky refinery and Rystad cut Russia's 2026 output forecast to 8.95 mb/d \u2014 but diplomacy dominated sentiment today.",
+   "summary": "Crude sold off sharply on Wednesday as diplomatic progress on Hormuz corridor talks undercut the geopolitical risk premium that had been supporting prices. Brent shed 2.38% to $86.47 and WTI fell 0.66% to $81.82, extending a brutal weekly decline of 5.6% and 4.7% respectively. The steepest move was in RBOB gasoline, down 10% on the day and 12% on the month, signalling demand-side softness alongside supply relief. Partially offsetting the bearish tone: Ukrainian drone campaigns knocked Russian petroleum product output 19.3%, Rystad cut its Russia crude forecast to 8.95 mb/d, and India's Russian imports eased from record highs as export infrastructure remains disrupted. Aramco is building ship-to-ship transfer workarounds to keep Saudi barrels flowing to Asia, a sign logistics stress is not fully resolved. EIA data showed U.S. crude stocks barely moved (+100k bbl) while gasoline inventories fell.",
    "drivers": [
-    "Iran-Oman Hormuz diplomacy eased closure premium, pressuring Brent and WTI lower on the session",
-    "API crude inventory build of 4.2 mb and surging Iraqi export loadings added bearish supply-side pressure",
-    "Ukraine drone strikes on Russian refinery infrastructure and Canada oil sands output cuts introduce offsetting supply-risk tail"
+    "Iran-Oman maritime corridor talks signal partial Hormuz reopening, deflating the geopolitical risk premium in Brent and WTI",
+    "Ukrainian drone strikes cut Russian petroleum product output 19.3% and prompted Rystad to lower Russia 2026 crude forecast to 8.95 mb/d",
+    "RBOB gasoline collapsed 10% on the day, pointing to demand weakness compounding supply-side re-rating"
    ],
    "headlineCount": 12,
    "sources": [
-    "Crypto Briefing",
+    "AOL.ca",
+    "Business Upturn",
     "Energies Media",
     "Energy Connects",
-    "Reuters",
-    "The Sunday Guardian",
-    "grafa.com"
+    "National Security Journal",
+    "Reuters"
    ]
   },
   "gas": {
-   "summary": "Henry Hub firmed 3.79% to $2.875/MMBtu, extending a monthly gain of 8%, while European TTF eased 2.57% to \u20ac64.88/MWh \u2014 likely tracking the modest Hormuz diplomatic optimism seen in crude \u2014 though TTF remains up over 12% on the month. The fundamental backdrop stays tight: Qatar has lost an estimated $24 billion as LNG exports via the Strait of Hormuz have collapsed 96% since the Iran war began, removing a major swing supplier from Atlantic Basin markets. Norway's Troll Phase 3 Stage 2 start-up accelerates 55 bcm of reserves but is described as buying Europe time rather than adding new net supply. UK energy bills are set to hit a three-year high this winter, reflecting the structural tightness in European gas driven by the Iran conflict.",
+   "summary": "Henry Hub jumped 4.69% to $2.90/MMBtu, extending a month-long rally of nearly 9%, while TTF slipped 0.62% to \u20ac66.18/MWh but remains 14.6% higher on the month. The divergence reflects distinct regional dynamics: U.S. gas is catching a bid on export demand expectations and domestic tightness, while European spot prices are already pricing in serious supply stress. Six months of Iran-war disruption have cost Qatar an estimated $24 billion as LNG exports collapsed 96%, removing a critical supply source for European importers. The Netherlands has formally warned it will miss winter storage targets, and UK energy regulators are expected to raise household bills to a three-year high. European policymakers are increasingly focused on natural gas as the primary inflation risk, with bond markets beginning to price the scenario accordingly. Supply diversification remains limited near-term.",
    "drivers": [
-    "Qatar LNG exports down 96% since Hormuz disruption began, removing critical global LNG swing supply",
-    "Norway Troll Phase 3 Stage 2 online but categorized as acceleration of existing reserves, not incremental new supply",
-    "UK regulator raising energy price caps ahead of winter on sustained elevated gas prices, signaling demand-side stress"
+    "Qatar's LNG exports down 96% since the Iran war began, costing $24 billion and stranding Europe's key swing supply source",
+    "Netherlands confirms it will miss winter gas storage fill targets, raising draw-down and price spike risk heading into Q4",
+    "Henry Hub +4.69% on the day as U.S. gas catches a bid; European inflation fears increasingly centred on gas rather than oil"
    ],
-   "headlineCount": 4,
+   "headlineCount": 7,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs edged up 0.39% to $79.87, posting a solid 2.40% weekly and 2.42% monthly gain, consistent with elevated TTF gas prices feeding through to higher power generation costs and supporting carbon demand. Headline flow in the power and carbon space was light on price-specific catalysts today, but two thematic stories stand out: uranium futures briefly surpassed $100/lb recently on tightening supplies and accelerating nuclear demand, and a separate report notes major oil companies are directing billions toward nuclear fusion development. Secretary Rubio's statement that there will be no further immediate strikes on Iran may reduce near-term geopolitical risk premia marginally, though sanctions targeting Iranian oil exports continue to shape the broader energy complex.",
+   "summary": "The power and carbon complex faces a compounding stress backdrop with limited bullish price relief visible today. EU EUAs dipped 1.20% to $78.61, a modest pullback within an otherwise range-bound monthly move of +0.80%, suggesting the carbon market is not yet fully pricing the broader energy shock. TTF, the key marginal cost signal for gas-fired generation, remains 14.6% higher on the month despite today's small retreat. European heatwaves are simultaneously pressuring nuclear output \u2014 cooling water constraints cited \u2014 at precisely the moment gas supply is most strained from Hormuz disruption. Marco Rubio's statement that there will be 'no further strikes on Iran for now' may reduce tail-risk slightly, but tightened U.S. sanctions on Iranian oil exports maintain the structural supply squeeze. News flow for this sector today is relatively thin beyond these macro overlays.",
    "drivers": [
-    "EUA prices grinding higher, supported by elevated TTF gas costs raising thermal power generation expense",
-    "Uranium spot briefly above $100/lb and major oil-company fusion investment signal accelerating structural shift toward nuclear",
-    "Rubio 'no further Iran strikes for now' comment offers modest geopolitical de-escalation signal, though Iran oil sanctions remain in force"
+    "European heatwaves stressing nuclear capacity at the same time gas supply remains severely curtailed by the Iran-war disruption",
+    "TTF +14.6% month-on-month keeps marginal generation costs elevated, pressuring power prices even as EUAs trade sideways",
+    "Rubio's pause on Iran strikes offers modest geopolitical relief, but new U.S. sanctions on Iranian oil exports sustain the underlying supply shock"
    ],
    "headlineCount": 4,
    "sources": [
