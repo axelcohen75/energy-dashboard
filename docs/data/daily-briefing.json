@@ -1,45 +1,44 @@
 {
- "generated": "2026-08-25T19:29:09.299414+00:00",
+ "generated": "2026-08-26T13:52:25.674852+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude sold off sharply on Tuesday, with Brent shedding 5.37% to $87.22 and WTI dropping 3.20% to $82.29, as Pakistani-mediated diplomacy rekindled hopes of a US-Iran negotiation breakthrough and pushed Brent back from an earlier spike near $93.77. RBOB gasoline was the standout mover, cratering 10.65% on the day and over 12% on the month, signalling demand-side concern. Despite persistent Hormuz tension \u2014 Iran threatening 45 tankers with fines and confiscation, and a tanker strike reported off Oman \u2014 markets chose to price in de-escalation risk rather than supply disruption. On the supply side, Ukraine confirmed a fresh drone strike on Russia's Afipsky refinery in Krasnodar, and Rystad Energy cut its 2026 Russian crude output forecast to 8.95 million bpd. India's import bill continues to surge on quadrupled freight rates, while Sinopec flagged crumbling domestic fuel demand driven by China's EV boom. CME options markets price a 77% chance of an OPEC cut at the next meeting.",
+   "summary": "Crude sold off sharply Wednesday, with Brent down 2.80% to $86.07 and WTI off 1.40% to $81.17, extending a steep weekly slide of roughly 6% from levels that had been elevated by Hormuz closure fears. The catalyst for today's move was diplomatic: Iran-Oman talks on joint Strait of Hormuz management revived hopes that the chokepoint could reopen, pulling risk premium out of flat price. RBOB gasoline cratered 9.88% on the day \u2014 a standout move suggesting physical tightness is easing. Bearish inventory data reinforced the selloff; API reported a 4.2 million barrel crude build for the week ending August 21, even as the SPR approaches operational minimums. Countervailing supply risks remain \u2014 Ukraine struck Russia's Afipsky refinery and Rystad cut Russia's 2026 output forecast to 8.95 mb/d \u2014 but diplomacy dominated sentiment today.",
    "drivers": [
-    "Iran negotiation hopes (Pakistani mediation) triggered a sharp risk-off reversal in crude despite ongoing Hormuz tanker threats",
-    "Ukraine drone strikes on Russian refineries tighten global refined-product supply; Rystad cuts Russia 2026 output forecast to 8.95 mb/d",
-    "Demand headwinds building: Sinopec flags collapsing Chinese fuel sales amid EV growth; RBOB gasoline -10.65% on the day"
+    "Iran-Oman Hormuz diplomacy eased closure premium, pressuring Brent and WTI lower on the session",
+    "API crude inventory build of 4.2 mb and surging Iraqi export loadings added bearish supply-side pressure",
+    "Ukraine drone strikes on Russian refinery infrastructure and Canada oil sands output cuts introduce offsetting supply-risk tail"
    ],
    "headlineCount": 12,
    "sources": [
     "Crypto Briefing",
     "Energies Media",
-    "Gulf News",
-    "India Infoline",
+    "Energy Connects",
     "Reuters",
-    "The Sunday Guardian"
+    "The Sunday Guardian",
+    "grafa.com"
    ]
   },
   "gas": {
-   "summary": "Henry Hub edged up 2.37% to $2.849/MMBtu, extending a modest but consistent monthly grind higher of nearly 3%. TTF pulled back 3.21% to \u20ac66.125/MWh on the day, though it remains up 13.51% over the past month, reflecting lingering European supply anxiety. The Hormuz crisis is reshaping long-term LNG investment calculus: Equinor cited the Middle East conflict as a factor making its $42 billion Tanzania LNG project more commercially attractive. On the supply side, Norway started production from the second stage of Troll Phase 3, accelerating 55 billion cubic metres from the Troll West reservoir \u2014 described as buying Europe time rather than adding new supply. The BLM scheduled an October lease sale covering 3,388 acres in Montana and the Dakotas. News flow for this sector is relatively thin today.",
+   "summary": "Henry Hub firmed 3.79% to $2.875/MMBtu, extending a monthly gain of 8%, while European TTF eased 2.57% to \u20ac64.88/MWh \u2014 likely tracking the modest Hormuz diplomatic optimism seen in crude \u2014 though TTF remains up over 12% on the month. The fundamental backdrop stays tight: Qatar has lost an estimated $24 billion as LNG exports via the Strait of Hormuz have collapsed 96% since the Iran war began, removing a major swing supplier from Atlantic Basin markets. Norway's Troll Phase 3 Stage 2 start-up accelerates 55 bcm of reserves but is described as buying Europe time rather than adding new net supply. UK energy bills are set to hit a three-year high this winter, reflecting the structural tightness in European gas driven by the Iran conflict.",
    "drivers": [
-    "TTF daily pullback of 3.21% despite a strong monthly uptrend (+13.51%), reflecting short-term profit-taking amid Hormuz de-escalation signals",
-    "Hormuz disruption elevating long-term LNG project appeal: Equinor flags Tanzania's $42 bn project as increasingly attractive",
-    "Norway's Troll Phase 3 Stage 2 online, accelerating 55 bcm \u2014 supportive for European supply but not incremental new volume"
+    "Qatar LNG exports down 96% since Hormuz disruption began, removing critical global LNG swing supply",
+    "Norway Troll Phase 3 Stage 2 online but categorized as acceleration of existing reserves, not incremental new supply",
+    "UK regulator raising energy price caps ahead of winter on sustained elevated gas prices, signaling demand-side stress"
    ],
    "headlineCount": 4,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs gained 1.96% to $80.04, building on a 3.40% weekly advance, as TTF's monthly surge of 13.51% keeps gas-to-power switching economics in focus and supports marginal carbon pricing. The day's most structurally significant headline was the reported acceleration of next-generation nuclear development in the US, with Big Tech and private equity channelling capital into advanced nuclear to meet AI data-centre power demand. On the periphery, Ukraine's ongoing drone campaign against Russian refineries and the Hormuz standoff continue to apply upward pressure on fossil-fuel input costs for power generators. The BLM's October lease sale in Montana and the Dakotas is a modest incremental signal for domestic gas-fired generation supply. Overall, the power and carbon data flow today is limited beyond the nuclear-AI theme and the carbon price move.",
+   "summary": "EU carbon EUAs edged up 0.39% to $79.87, posting a solid 2.40% weekly and 2.42% monthly gain, consistent with elevated TTF gas prices feeding through to higher power generation costs and supporting carbon demand. Headline flow in the power and carbon space was light on price-specific catalysts today, but two thematic stories stand out: uranium futures briefly surpassed $100/lb recently on tightening supplies and accelerating nuclear demand, and a separate report notes major oil companies are directing billions toward nuclear fusion development. Secretary Rubio's statement that there will be no further immediate strikes on Iran may reduce near-term geopolitical risk premia marginally, though sanctions targeting Iranian oil exports continue to shape the broader energy complex.",
    "drivers": [
-    "EUA carbon up 1.96% on the day and +3.40% on the week, supported by elevated TTF gas costs lifting marginal power-sector abatement costs",
-    "AI-driven nuclear revival: Big Tech and private equity accelerating US next-gen nuclear investment to meet surging data-centre electricity demand",
-    "Hormuz and Ukraine refinery disruptions sustain elevated fossil-fuel input cost risk for power generators globally"
+    "EUA prices grinding higher, supported by elevated TTF gas costs raising thermal power generation expense",
+    "Uranium spot briefly above $100/lb and major oil-company fusion investment signal accelerating structural shift toward nuclear",
+    "Rubio 'no further Iran strikes for now' comment offers modest geopolitical de-escalation signal, though Iran oil sanctions remain in force"
    ],
-   "headlineCount": 5,
+   "headlineCount": 4,
    "sources": [
-    "Gulf News",
-    "India Infoline"
+    "The Sunday Guardian"
    ]
   }
  }
