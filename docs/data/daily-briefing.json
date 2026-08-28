@@ -1,47 +1,50 @@
 {
- "generated": "2026-08-27T22:50:07.757758+00:00",
+ "generated": "2026-08-28T22:53:41.626411+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "WTI and Brent posted modest daily gains \u2014 +1.71% to $83.64 and +0.89% to $88.62 respectively \u2014 even as the broader weekly tape remains deeply in the red (-4.77% and -5.50%). The divergence reflects competing forces: Hormuz risk premium has not fully collapsed, with China today publicly demanding the strait reopen and slamming new US Iran sanctions, while Secretary Rubio signalled no further strikes on Iran for now. On the supply side, Ukraine's confirmed drone strike on Russia's Afipsky refinery in Krasnodar adds a downstream disruption narrative, forcing Moscow to turn to India for refined product. A temporary US easing of Russia oil sanctions \u2014 reported Wednesday and already riling European allies \u2014 partially capped the upside. The dramatic RBOB plunge of -9.94% in a single session stands out and likely reflects refinery-supply re-pricing post-strike rather than demand destruction. EUA OPEC options still price a 77% probability of a cut at the next meeting.",
+   "summary": "Crude finished a volatile week on a soft note, with WTI settling around $83.44 (-0.11% on the day, -4.16% on the week) and Brent at $88.29 (-1.57% on the day, -6.46% on the week). The week's selloff looks overdone relative to fundamentals: Hormuz disruption risk persists, VLCC spot rates on the Saudi Arabia-to-China route surged to a record $647,000/day as Gulf barrels finally move but at enormous freight cost. Counter-intuitively, a reported US-brokered partial Hormuz arrangement and a temporary easing of Russia oil sanctions to cap prices weighed on the front end, even as Ukraine drone strikes ignited a fresh fire at Russia's Slavneft-YANOS refinery in Yaroslavl. The Graham bill advancing in the Senate adds a longer-term hawkish sanctions overhang on both Moscow and Tehran. RBOB gasoline cratered 9.93% on the day \u2014 the session's standout dislocation.",
    "drivers": [
-    "Hormuz/Iran sanctions uncertainty: US tightening Iran oil sanctions while signalling a pause in strikes kept a geopolitical floor under crude, though markets slipped on easing fears earlier in the week",
-    "Ukraine drone strike on Afipsky refinery in Krasnodar disrupted Russian refining capacity, sending Russia to India for petrol supply and contributing to RBOB's sharp -9.94% single-day drop",
-    "US temporary easing of Russia oil sanctions to tame price surge \u2014 opposed by European allies \u2014 and TotalEnergies' full exit from Arctic LNG 2 reshaped the Russian supply outlook"
+    "Partial Hormuz de-escalation signal and US temporary easing of Russia oil sanctions pressured WTI and Brent lower on the week despite ongoing supply-chain stress",
+    "VLCC freight rates hit a record ~$647,000/day on the Saudi-China route, reflecting acute tanker scarcity even as some Gulf oil flows resume",
+    "Ukraine drone strike on Slavneft-YANOS refinery in Yaroslavl adds to cumulative damage to Russian refining capacity; Russia reportedly turning to India for refined products"
    ],
    "headlineCount": 12,
    "sources": [
-    "Al Jazeera",
-    "Crypto Briefing",
+    "AOL.ca",
+    "Bankingnews",
+    "Crude Oil Prices Today | OilPrice.com",
     "EnergyNow",
-    "Gulf News",
-    "The Indian Express",
-    "The Sunday Guardian"
+    "Global Banking & Finance Review",
+    "The Indian Express"
    ]
   },
   "gas": {
-   "summary": "Natural gas prices rallied sharply on both sides of the Atlantic. Henry Hub climbed +2.15% to $2.903/MMBtu, extending a solid +6.22% weekly gain, while TTF surged +4.84% to \u20ac68.80/MWh \u2014 up nearly 14% on the month. The dominant driver is a structural European storage deficit: the continent is entering winter with gas inventories at a two-decade low, a situation exacerbated by Middle East conflict disrupting LNG supply chains. TotalEnergies' completed exit from Russia's Arctic LNG 2 project removes another marginal supply source from the market. On the M&A side, Energean entering exclusive talks for a ~$1 billion acquisition of BP's Egyptian gas assets signals that buyers are urgently seeking to secure non-Russian, non-Hormuz-exposed supply. The setup into winter looks acutely tight for European buyers.",
+   "summary": "Natural gas markets were led higher by a force majeure extension from QatarEnergy, which has pushed back LNG delivery commitments into November as Hormuz LNG traffic remains constrained. TTF slipped 2.26% on the day to \u20ac66.555/MWh but retains a striking +14.39% gain on the month, reflecting the structural premium built in by the Hormuz crisis. Henry Hub was modestly lower at $2.881/MMBtu (-0.89% on the day) but is up nearly 4% on the week, with gas rigs rising per the latest Baker Hughes count even as oil rigs fell by 5. US officials have argued that pipeline alternatives could render the Strait of Hormuz less critical for energy flows, a thesis energy experts publicly dispute.",
    "drivers": [
-    "European gas storage at a two-decade seasonal low heading into winter, with Middle East conflict having curtailed LNG supply \u2014 primary bullish catalyst for TTF's +13.87% monthly gain",
-    "TotalEnergies completes exit from Russia's Arctic LNG 2, transferring its 10% stake to Novatek and further constraining sanctioned Russian LNG supply to Europe",
-    "Energean in exclusive talks for ~$1 billion BP Egypt gas asset acquisition, reflecting urgent buy-side appetite for non-Russian, non-Hormuz gas supply"
+    "QatarEnergy extended its LNG force majeure by several weeks as Hormuz LNG flows remain disrupted, lifting Asian and European benchmark prices on the session",
+    "TTF up +14.39% on the month \u2014 the Hormuz crisis has structurally repriced European gas risk despite today's modest pullback",
+    "Baker Hughes weekly data showed US gas rigs rising even as oil rigs fell, consistent with producers tilting activity toward gas in a higher-price environment"
    ],
-   "headlineCount": 3,
-   "sources": []
+   "headlineCount": 6,
+   "sources": [
+    "Data Portuaria",
+    "NPR",
+    "\u06a9\u0631\u062f\u067e\u0631\u0633"
+   ]
   },
   "power": {
-   "summary": "The power and carbon complex presents a mixed picture. EU EUAs dipped marginally (-0.57% to $78.155/EUA) and are essentially flat on the week, though TTF's sharp rally will mechanically lift gas-fired generation costs and could provide EUA support if coal-to-gas switching increases. On the structural demand side, a report today highlighted the AI boom as a primary driver of accelerating US data-centre electricity demand. In India, 45 coal-fired plants are operating at critically low coal stock levels amid rising demand \u2014 an El Ni\u00f1o-related stress signal. Fortum filed a state aid application in Sweden for a major new nuclear project, while the Trump administration continued its dual-track energy policy: attacking offshore wind (leaving workers in limbo) while the DoE begins tests for fracked geothermal as an alternative. The Saudi nuclear deal was formally sent to Congress.",
+   "summary": "EU carbon allowances (EUA) were effectively flat at $78.63 (+0.03% on the day), consolidating a modest +1.22% monthly gain against a backdrop of geopolitical noise. TTF's -2.26% daily pullback to \u20ac66.555/MWh, if sustained, would modestly ease gas-fired generation costs in Europe, providing a small downward nudge to power prices at the margin. On the structural side, Amazon announced four new Swedish wind PPA deals, pushing its Scandinavian wind portfolio toward 1 GW \u2014 extending a trend of large tech buyers locking in long-dated renewable offtake. Middle East war headlines continue to dominate macro sentiment but provided little direct price impetus to carbon today. Headline flow for this sector was relatively thin beyond the Amazon wind news.",
    "drivers": [
-    "TTF's +4.84% daily surge raises gas-fired generation costs across Europe, providing a potential floor for EUA prices if demand for carbon allowances from gas generators holds",
-    "AI-driven data-centre load growth identified as the dominant new US power demand vector, while India faces acute coal supply stress with 45 plants at critically low stock levels",
-    "Trump administration's energy policy divergence sharpens: offshore wind faces continued executive headwinds, while DoE advances fracked geothermal testing and Fortum pursues new nuclear capacity in Sweden"
+    "EU EUA prices nearly unchanged on the day; modest monthly grind higher of +1.22% suggests carbon is not yet pricing in a significant demand shock from the Middle East conflict",
+    "TTF daily decline of 2.26% provides marginal relief on gas-fired power generation costs in Europe, though the month-on-month TTF surge of 14.39% keeps structural power cost pressure elevated",
+    "Amazon nears 1 GW of Swedish wind capacity via four new PPAs, underscoring continued corporate appetite for long-term renewable offtake in the Nordics"
    ],
-   "headlineCount": 11,
+   "headlineCount": 6,
    "sources": [
-    "Gulf News",
+    "ABC News - Breaking News, Latest News and Videos",
     "The Sunday Guardian",
-    "Times Now",
-    "WJBF"
+    "\u06a9\u0631\u062f\u067e\u0631\u0633"
    ]
   }
  }
