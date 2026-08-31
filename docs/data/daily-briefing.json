@@ -1,50 +1,45 @@
 {
- "generated": "2026-08-28T22:53:41.626411+00:00",
+ "generated": "2026-08-31T19:24:47.258350+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude finished a volatile week on a soft note, with WTI settling around $83.44 (-0.11% on the day, -4.16% on the week) and Brent at $88.29 (-1.57% on the day, -6.46% on the week). The week's selloff looks overdone relative to fundamentals: Hormuz disruption risk persists, VLCC spot rates on the Saudi Arabia-to-China route surged to a record $647,000/day as Gulf barrels finally move but at enormous freight cost. Counter-intuitively, a reported US-brokered partial Hormuz arrangement and a temporary easing of Russia oil sanctions to cap prices weighed on the front end, even as Ukraine drone strikes ignited a fresh fire at Russia's Slavneft-YANOS refinery in Yaroslavl. The Graham bill advancing in the Senate adds a longer-term hawkish sanctions overhang on both Moscow and Tehran. RBOB gasoline cratered 9.93% on the day \u2014 the session's standout dislocation.",
+   "summary": "A deeply bifurcated session defined oil markets on 31 August. WTI surged +2.84% to $85.77/bbl, supported by acute Strait of Hormuz risk after Iranian state media confirmed a supertanker was struck by naval mines and Tehran vowed its oil blockade would continue until US-Israeli strikes cease. Brent, however, fell -1.27% to $88.21/bbl, likely weighed by a reported temporary US easing of Russian oil sanctions aimed at taming the price spike \u2014 a move that riled European allies. RBOB gasoline cratered -11.38%, a notable outlier that may reflect end-of-summer demand seasonality and switching in refined product flows. Heating oil continued its strong run, +1.43% on the day and +7.22% on the month. Middle East diesel exports to Africa have collapsed to nine-year lows with Asian suppliers stepping in. Russia's domestic refining capacity is now sufficiently degraded by Ukrainian strikes that Moscow is reportedly importing jet fuel for military operations.",
    "drivers": [
-    "Partial Hormuz de-escalation signal and US temporary easing of Russia oil sanctions pressured WTI and Brent lower on the week despite ongoing supply-chain stress",
-    "VLCC freight rates hit a record ~$647,000/day on the Saudi-China route, reflecting acute tanker scarcity even as some Gulf oil flows resume",
-    "Ukraine drone strike on Slavneft-YANOS refinery in Yaroslavl adds to cumulative damage to Russian refining capacity; Russia reportedly turning to India for refined products"
+    "Strait of Hormuz crisis escalates: supertanker mined, Iran maintains blockade threat, tanker traffic severely disrupted",
+    "US temporarily eases Russia oil sanctions to cap price surge, partially offsetting geopolitical premium in Brent",
+    "RBOB gasoline collapses -11.38% on the day, diverging sharply from crude; Middle East refined product flows to Africa at nine-year lows"
    ],
    "headlineCount": 12,
    "sources": [
-    "AOL.ca",
-    "Bankingnews",
-    "Crude Oil Prices Today | OilPrice.com",
+    "Business Insider",
     "EnergyNow",
-    "Global Banking & Finance Review",
-    "The Indian Express"
+    "EnergyNow.com",
+    "The Sunday Guardian",
+    "TradingKey",
+    "UNITED24 Media"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets were led higher by a force majeure extension from QatarEnergy, which has pushed back LNG delivery commitments into November as Hormuz LNG traffic remains constrained. TTF slipped 2.26% on the day to \u20ac66.555/MWh but retains a striking +14.39% gain on the month, reflecting the structural premium built in by the Hormuz crisis. Henry Hub was modestly lower at $2.881/MMBtu (-0.89% on the day) but is up nearly 4% on the week, with gas rigs rising per the latest Baker Hughes count even as oil rigs fell by 5. US officials have argued that pipeline alternatives could render the Strait of Hormuz less critical for energy flows, a thesis energy experts publicly dispute.",
+   "summary": "European gas prices were the standout mover today, with TTF jumping +4.91% to 70.27 \u20ac/MWh \u2014 its highest level since 2023 according to published headlines \u2014 driven directly by re-escalating US-Iran hostilities intensifying Strait of Hormuz shipping fears and threatening LNG transit routes. Henry Hub was comparatively subdued, rising +1.28% to $2.925/MMBtu, continuing its one-month uptrend of +6.48%. On the demand side, China's LNG imports are tracking for an 18% year-on-year decline in August, breaking a three-month growth streak as high prices suppress purchasing. On the supply side, BP brought the Fayoum-4 well in Egypt's West Nile Delta onstream two years ahead of schedule, adding approximately 80 MMcf/d to regional supply.",
    "drivers": [
-    "QatarEnergy extended its LNG force majeure by several weeks as Hormuz LNG flows remain disrupted, lifting Asian and European benchmark prices on the session",
-    "TTF up +14.39% on the month \u2014 the Hormuz crisis has structurally repriced European gas risk despite today's modest pullback",
-    "Baker Hughes weekly data showed US gas rigs rising even as oil rigs fell, consistent with producers tilting activity toward gas in a higher-price environment"
+    "TTF surges +4.91% to highest since 2023 as Iran-US conflict intensifies concerns over Strait of Hormuz LNG shipping",
+    "China's LNG imports set to fall ~18% year-on-year in August, reversing three months of growth as prices erode demand",
+    "BP starts Fayoum-4 well in Egypt two years early, adding ~80 MMcf/d to West Nile Delta supply"
    ],
-   "headlineCount": 6,
-   "sources": [
-    "Data Portuaria",
-    "NPR",
-    "\u06a9\u0631\u062f\u067e\u0631\u0633"
-   ]
+   "headlineCount": 4,
+   "sources": []
   },
   "power": {
-   "summary": "EU carbon allowances (EUA) were effectively flat at $78.63 (+0.03% on the day), consolidating a modest +1.22% monthly gain against a backdrop of geopolitical noise. TTF's -2.26% daily pullback to \u20ac66.555/MWh, if sustained, would modestly ease gas-fired generation costs in Europe, providing a small downward nudge to power prices at the margin. On the structural side, Amazon announced four new Swedish wind PPA deals, pushing its Scandinavian wind portfolio toward 1 GW \u2014 extending a trend of large tech buyers locking in long-dated renewable offtake. Middle East war headlines continue to dominate macro sentiment but provided little direct price impetus to carbon today. Headline flow for this sector was relatively thin beyond the Amazon wind news.",
+   "summary": "EU Carbon EUAs edged down -0.57% to $78.155/EUA, effectively flat on a weekly and monthly basis, providing little directional signal on its own. The dominant macro backdrop for the power and carbon complex remains the Middle East conflict now six months old, with no clear resolution in sight according to today's reporting \u2014 sustaining elevated gas input costs that pressure power generators across Europe. TTF's +4.91% single-day move is the most consequential price input for European power dispatch economics today. Separately, SLB announced a $3.4 billion acquisition to expand into AI data center infrastructure, a signal of where oilfield services capital sees structural power demand growth. The UK Chancellor is reported to be weighing an expanded windfall tax on oil firms and banks amid sector profit surges. News flow on this sector is otherwise thin.",
    "drivers": [
-    "EU EUA prices nearly unchanged on the day; modest monthly grind higher of +1.22% suggests carbon is not yet pricing in a significant demand shock from the Middle East conflict",
-    "TTF daily decline of 2.26% provides marginal relief on gas-fired power generation costs in Europe, though the month-on-month TTF surge of 14.39% keeps structural power cost pressure elevated",
-    "Amazon nears 1 GW of Swedish wind capacity via four new PPAs, underscoring continued corporate appetite for long-term renewable offtake in the Nordics"
+    "EU EUAs near flat at $78.16 while TTF's +4.91% spike squeezes European power generation margins via higher gas input costs",
+    "Six months of US-Iran conflict with no resolution raises persistent risk premium across energy inputs affecting power pricing",
+    "SLB commits $3.4 billion to AI data center infrastructure, underscoring structural growth in power demand from the technology sector"
    ],
    "headlineCount": 6,
    "sources": [
-    "ABC News - Breaking News, Latest News and Videos",
-    "The Sunday Guardian",
-    "\u06a9\u0631\u062f\u067e\u0631\u0633"
+    "CBS News",
+    "Radio Free Europe/Radio Liberty"
    ]
   }
  }
