@@ -1,45 +1,44 @@
 {
- "generated": "2026-09-01T17:10:15.822230+00:00",
+ "generated": "2026-09-01T22:45:57.216114+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude surged sharply Tuesday as simultaneous supply shocks drove WTI to $89.59 (+4.44%) and Brent to $94.01 (+3.86%), with both benchmarks posting gains exceeding 11-12% on the month. The dominant catalyst is the active US-Iran military exchange: Iran has declared an oil blockade until attacks cease, a tanker was struck near Oman amid the Strait of Hormuz crisis, and Trump threatened further escalation. On the Russian front, Ukraine's drone barrage ignited the Ust-Luga Baltic export terminal, and prior strikes on refineries have forced Moscow to import jet fuel. The Washington administration partially eased Russia sanctions on a temporary basis to cool the price surge, drawing European pushback. RBOB gasoline was a stark outlier, collapsing 9.15% on the session \u2014 the data point stands alone with no headline explanation available today. Heating oil surged 3.59% and is up over 20% on the month, consistent with the distillate-tightening narrative.",
+   "summary": "Crude surged sharply on Tuesday, with WTI settling at $90.82/bbl (+5.89%) and Brent at $95.43/bbl (+5.46%), as Strait of Hormuz disruptions dominated flow. Two Saudi tankers were attacked in the Strait, Iran signaled its oil blockade would persist until strikes cease, and a tanker was separately struck near Oman \u2014 collectively threatening a critical artery for global supply. Russian production meanwhile hit its lowest since 2009 under combined pressure from Western sanctions and Ukrainian drone strikes on refinery infrastructure, forcing Moscow to import jet fuel. A weekly API draw of 2.6 million barrels added tightness on the demand side. RBOB gasoline was a notable outlier, falling 8.07% on the day despite crude strength \u2014 the divergence warrants monitoring. The $100/bbl threshold is firmly back in market conversation.",
    "drivers": [
-    "US-Iran military conflict intensifying: Iran Hormuz blockade, tanker struck near Oman, Trump threatening further strikes",
-    "Ukrainian drone strike sets Russia's Ust-Luga oil export terminal ablaze, compounding earlier refinery damage that has cut Russian jet fuel supply",
-    "US temporarily eases Russia oil sanctions to cap the price surge; EU boards sixth suspected shadow-fleet tanker in parallel crackdown"
+    "Strait of Hormuz blockade and tanker attacks on Saudi vessels driving acute supply-risk premium",
+    "Russian oil production at lowest since 2009; Ukraine strikes disrupting refinery output and forcing fuel imports",
+    "API crude inventory draw of 2.6 million barrels reinforcing tight physical market; $100/bbl level back in focus"
    ],
    "headlineCount": 12,
    "sources": [
-    "Business Insider",
-    "EnergyNow",
+    "EnergyNow.com",
     "SSBCrack",
-    "The Sunday Guardian",
-    "energynow.com",
-    "financialexpress.com"
+    "The Business Standard",
+    "UNITED24 Media",
+    "Yahoo",
+    "sundayguardianlive.com"
    ]
   },
   "gas": {
-   "summary": "European and Asian gas markets diverged sharply from a soft Henry Hub. TTF jumped 3.39% to \u20ac72.18/MWh, now up 25.5% on the month, driven by the ongoing Strait of Hormuz disruption: Asia spot LNG prices hit a five-month high as buyers scramble for spot cargoes with LNG traffic through the strait still constrained. Russia has responded to Western sanctions by doubling its dark-fleet LNG tanker count in nine months to sustain Arctic LNG 2 exports to Asia, further tightening spot availability for other buyers. Henry Hub slipped modestly to $2.898/MMBtu (-1.26%), suggesting domestic US fundamentals remain relatively comfortable, though the weekly gain of 4.62% hints at growing export-driven support. News flow on this sector is relatively limited beyond these three items.",
+   "summary": "Natural gas markets tightened on both sides of the Atlantic. Henry Hub edged up 0.61% to $2.953/MMBtu, while TTF jumped 3.39% to \u20ac72.175/MWh \u2014 a 25.51% gain over the past month \u2014 as Hormuz-related LNG disruptions continue to squeeze spot availability. Asia spot LNG prices reached their highest since the 2026 winter as buyers scrambled for cargoes amid stalled Hormuz transits. Russia has meanwhile doubled its dark-fleet LNG shipping capacity in nine months to sustain Arctic LNG 2 exports to Asia under sanctions. Treasury Secretary Bessent offered a longer-term counterpoint, claiming Gulf producers could route around the Strait within two years, though the market gave that timeline little near-term credit.",
    "drivers": [
-    "Strait of Hormuz LNG disruption pushes Asia spot prices to a five-month high, lifting TTF by spillover demand competition",
-    "Russia doubles dark-fleet LNG vessel count to sustain sanctioned Arctic LNG 2 exports to Asia, tightening global spot supply",
-    "Henry Hub underperforms global benchmarks, slipping 1.26% on the day despite a 4.62% weekly gain, reflecting still-adequate domestic US supply"
+    "Hormuz blockage forcing Asian LNG buyers into spot market competition, pushing prices to five-month highs",
+    "TTF up 25.5% over the past month as European gas market absorbs supply rerouting and geopolitical risk premium",
+    "Russia doubling dark-fleet LNG tanker capacity to sustain sanctioned Arctic LNG 2 exports to Asian buyers"
    ],
-   "headlineCount": 3,
+   "headlineCount": 5,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs were broadly stable at $79.00 (+0.47%), lagging the sharp rally in TTF gas which underpins power-sector generation costs. Structural news was bullish for renewables: European wind capacity additions rose 30% year-on-year to 8.8 GW in H1 2026 per WindEurope data, while solar overtook coal as China's single largest installed electricity capacity source \u2014 a landmark in the global energy transition. US battery storage installations hit a record high in Q2, supporting grid reliability as intermittent capacity grows. On the risk side, Zaporizhzhia Nuclear Plant in Ukraine was reported to be relying on diesel generators after external power was cut, underscoring ongoing war-related infrastructure fragility. The muted EUA reaction to surging gas prices may reflect the offsetting effect of strong renewable additions on expected coal burn.",
+   "summary": "The power and carbon complex was relatively quiet compared to oil and gas. EU carbon EUAs edged up just 0.47% to $79.00/EUA, with the weekly move slightly negative at -0.70%, suggesting the carbon market has not yet fully repriced the energy-cost surge seen in TTF. The Zaporizhzhia nuclear plant's continued reliance on diesel generators amid ongoing conflict adds a diffuse risk to European grid stability. On the infrastructure side, U.S. energy storage installations hit a record high in Q2 as grid operators sought reliability buffers \u2014 consistent with the broader lithium price rally. A two-week blackout in Gary, Indiana served as a pointed reminder of domestic grid vulnerability. Solar buildout in emerging markets continues at record pace but provided no immediate price catalyst today.",
    "drivers": [
-    "Solar surpasses coal as China's largest power capacity source; Europe wind additions up 30% in H1 \u2014 structural bearish pressure on carbon demand",
-    "US Q2 energy storage installations hit a record high, reinforcing grid decarbonisation momentum",
-    "Zaporizhzhia nuclear plant on diesel backup amid war tensions, highlighting acute European power infrastructure risk"
+    "EU EUAs largely range-bound despite surging TTF, suggesting carbon-energy spread compression worth monitoring",
+    "Zaporizhzhia nuclear plant on diesel backup amid conflict, adding tail risk to European power grid stability",
+    "U.S. Q2 energy storage installations hit record high; Gary, Indiana blackout highlights persistent grid infrastructure gaps"
    ],
-   "headlineCount": 6,
+   "headlineCount": 5,
    "sources": [
-    "CBS News",
-    "The Sunday Guardian"
+    "sundayguardianlive.com"
    ]
   }
  }
