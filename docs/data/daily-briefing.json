@@ -1,45 +1,45 @@
 {
- "generated": "2026-08-31T19:24:47.258350+00:00",
+ "generated": "2026-09-01T17:10:15.822230+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "A deeply bifurcated session defined oil markets on 31 August. WTI surged +2.84% to $85.77/bbl, supported by acute Strait of Hormuz risk after Iranian state media confirmed a supertanker was struck by naval mines and Tehran vowed its oil blockade would continue until US-Israeli strikes cease. Brent, however, fell -1.27% to $88.21/bbl, likely weighed by a reported temporary US easing of Russian oil sanctions aimed at taming the price spike \u2014 a move that riled European allies. RBOB gasoline cratered -11.38%, a notable outlier that may reflect end-of-summer demand seasonality and switching in refined product flows. Heating oil continued its strong run, +1.43% on the day and +7.22% on the month. Middle East diesel exports to Africa have collapsed to nine-year lows with Asian suppliers stepping in. Russia's domestic refining capacity is now sufficiently degraded by Ukrainian strikes that Moscow is reportedly importing jet fuel for military operations.",
+   "summary": "Crude surged sharply Tuesday as simultaneous supply shocks drove WTI to $89.59 (+4.44%) and Brent to $94.01 (+3.86%), with both benchmarks posting gains exceeding 11-12% on the month. The dominant catalyst is the active US-Iran military exchange: Iran has declared an oil blockade until attacks cease, a tanker was struck near Oman amid the Strait of Hormuz crisis, and Trump threatened further escalation. On the Russian front, Ukraine's drone barrage ignited the Ust-Luga Baltic export terminal, and prior strikes on refineries have forced Moscow to import jet fuel. The Washington administration partially eased Russia sanctions on a temporary basis to cool the price surge, drawing European pushback. RBOB gasoline was a stark outlier, collapsing 9.15% on the session \u2014 the data point stands alone with no headline explanation available today. Heating oil surged 3.59% and is up over 20% on the month, consistent with the distillate-tightening narrative.",
    "drivers": [
-    "Strait of Hormuz crisis escalates: supertanker mined, Iran maintains blockade threat, tanker traffic severely disrupted",
-    "US temporarily eases Russia oil sanctions to cap price surge, partially offsetting geopolitical premium in Brent",
-    "RBOB gasoline collapses -11.38% on the day, diverging sharply from crude; Middle East refined product flows to Africa at nine-year lows"
+    "US-Iran military conflict intensifying: Iran Hormuz blockade, tanker struck near Oman, Trump threatening further strikes",
+    "Ukrainian drone strike sets Russia's Ust-Luga oil export terminal ablaze, compounding earlier refinery damage that has cut Russian jet fuel supply",
+    "US temporarily eases Russia oil sanctions to cap the price surge; EU boards sixth suspected shadow-fleet tanker in parallel crackdown"
    ],
    "headlineCount": 12,
    "sources": [
     "Business Insider",
     "EnergyNow",
-    "EnergyNow.com",
+    "SSBCrack",
     "The Sunday Guardian",
-    "TradingKey",
-    "UNITED24 Media"
+    "energynow.com",
+    "financialexpress.com"
    ]
   },
   "gas": {
-   "summary": "European gas prices were the standout mover today, with TTF jumping +4.91% to 70.27 \u20ac/MWh \u2014 its highest level since 2023 according to published headlines \u2014 driven directly by re-escalating US-Iran hostilities intensifying Strait of Hormuz shipping fears and threatening LNG transit routes. Henry Hub was comparatively subdued, rising +1.28% to $2.925/MMBtu, continuing its one-month uptrend of +6.48%. On the demand side, China's LNG imports are tracking for an 18% year-on-year decline in August, breaking a three-month growth streak as high prices suppress purchasing. On the supply side, BP brought the Fayoum-4 well in Egypt's West Nile Delta onstream two years ahead of schedule, adding approximately 80 MMcf/d to regional supply.",
+   "summary": "European and Asian gas markets diverged sharply from a soft Henry Hub. TTF jumped 3.39% to \u20ac72.18/MWh, now up 25.5% on the month, driven by the ongoing Strait of Hormuz disruption: Asia spot LNG prices hit a five-month high as buyers scramble for spot cargoes with LNG traffic through the strait still constrained. Russia has responded to Western sanctions by doubling its dark-fleet LNG tanker count in nine months to sustain Arctic LNG 2 exports to Asia, further tightening spot availability for other buyers. Henry Hub slipped modestly to $2.898/MMBtu (-1.26%), suggesting domestic US fundamentals remain relatively comfortable, though the weekly gain of 4.62% hints at growing export-driven support. News flow on this sector is relatively limited beyond these three items.",
    "drivers": [
-    "TTF surges +4.91% to highest since 2023 as Iran-US conflict intensifies concerns over Strait of Hormuz LNG shipping",
-    "China's LNG imports set to fall ~18% year-on-year in August, reversing three months of growth as prices erode demand",
-    "BP starts Fayoum-4 well in Egypt two years early, adding ~80 MMcf/d to West Nile Delta supply"
+    "Strait of Hormuz LNG disruption pushes Asia spot prices to a five-month high, lifting TTF by spillover demand competition",
+    "Russia doubles dark-fleet LNG vessel count to sustain sanctioned Arctic LNG 2 exports to Asia, tightening global spot supply",
+    "Henry Hub underperforms global benchmarks, slipping 1.26% on the day despite a 4.62% weekly gain, reflecting still-adequate domestic US supply"
    ],
-   "headlineCount": 4,
+   "headlineCount": 3,
    "sources": []
   },
   "power": {
-   "summary": "EU Carbon EUAs edged down -0.57% to $78.155/EUA, effectively flat on a weekly and monthly basis, providing little directional signal on its own. The dominant macro backdrop for the power and carbon complex remains the Middle East conflict now six months old, with no clear resolution in sight according to today's reporting \u2014 sustaining elevated gas input costs that pressure power generators across Europe. TTF's +4.91% single-day move is the most consequential price input for European power dispatch economics today. Separately, SLB announced a $3.4 billion acquisition to expand into AI data center infrastructure, a signal of where oilfield services capital sees structural power demand growth. The UK Chancellor is reported to be weighing an expanded windfall tax on oil firms and banks amid sector profit surges. News flow on this sector is otherwise thin.",
+   "summary": "EU carbon EUAs were broadly stable at $79.00 (+0.47%), lagging the sharp rally in TTF gas which underpins power-sector generation costs. Structural news was bullish for renewables: European wind capacity additions rose 30% year-on-year to 8.8 GW in H1 2026 per WindEurope data, while solar overtook coal as China's single largest installed electricity capacity source \u2014 a landmark in the global energy transition. US battery storage installations hit a record high in Q2, supporting grid reliability as intermittent capacity grows. On the risk side, Zaporizhzhia Nuclear Plant in Ukraine was reported to be relying on diesel generators after external power was cut, underscoring ongoing war-related infrastructure fragility. The muted EUA reaction to surging gas prices may reflect the offsetting effect of strong renewable additions on expected coal burn.",
    "drivers": [
-    "EU EUAs near flat at $78.16 while TTF's +4.91% spike squeezes European power generation margins via higher gas input costs",
-    "Six months of US-Iran conflict with no resolution raises persistent risk premium across energy inputs affecting power pricing",
-    "SLB commits $3.4 billion to AI data center infrastructure, underscoring structural growth in power demand from the technology sector"
+    "Solar surpasses coal as China's largest power capacity source; Europe wind additions up 30% in H1 \u2014 structural bearish pressure on carbon demand",
+    "US Q2 energy storage installations hit a record high, reinforcing grid decarbonisation momentum",
+    "Zaporizhzhia nuclear plant on diesel backup amid war tensions, highlighting acute European power infrastructure risk"
    ],
    "headlineCount": 6,
    "sources": [
     "CBS News",
-    "Radio Free Europe/Radio Liberty"
+    "The Sunday Guardian"
    ]
   }
  }
