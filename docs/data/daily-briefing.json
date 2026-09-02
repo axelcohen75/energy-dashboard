@@ -1,40 +1,37 @@
 {
- "generated": "2026-09-01T22:45:57.216114+00:00",
+ "generated": "2026-09-02T17:00:10.698219+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude surged sharply on Tuesday, with WTI settling at $90.82/bbl (+5.89%) and Brent at $95.43/bbl (+5.46%), as Strait of Hormuz disruptions dominated flow. Two Saudi tankers were attacked in the Strait, Iran signaled its oil blockade would persist until strikes cease, and a tanker was separately struck near Oman \u2014 collectively threatening a critical artery for global supply. Russian production meanwhile hit its lowest since 2009 under combined pressure from Western sanctions and Ukrainian drone strikes on refinery infrastructure, forcing Moscow to import jet fuel. A weekly API draw of 2.6 million barrels added tightness on the demand side. RBOB gasoline was a notable outlier, falling 8.07% on the day despite crude strength \u2014 the divergence warrants monitoring. The $100/bbl threshold is firmly back in market conversation.",
+   "summary": "Crude extended its blistering month-long rally \u2014 WTI +20% and Brent +21% over thirty days \u2014 with both benchmarks adding roughly 1% today as U.S.-Iran tensions entered a dangerous new phase. Hormuz tanker traffic collapsed to just four crossings per the ten-day average, following confirmed strikes on a Saudi Bahri-owned vessel and the deaths of two sailors. Heating oil outperformed sharply, with the one-month gain now at 24%, driven by record diesel crack spreads as Russia's export ban on diesel \u2014 itself a consequence of relentless Ukrainian drone strikes on domestic refineries \u2014 compounds Middle East supply anxiety. RBOB was the lone laggard, slipping fractionally on the day despite the broader complex strength. On the supply side, U.S. crude stocks drew 4.5 million barrels last week, India is stepping up ESPO purchases as China retreats from the spot market, and the U.S. Energy Secretary flagged potential for Venezuela to more than double output.",
    "drivers": [
-    "Strait of Hormuz blockade and tanker attacks on Saudi vessels driving acute supply-risk premium",
-    "Russian oil production at lowest since 2009; Ukraine strikes disrupting refinery output and forcing fuel imports",
-    "API crude inventory draw of 2.6 million barrels reinforcing tight physical market; $100/bbl level back in focus"
+    "Hormuz choke-point risk: Strait traffic near standstill at four tankers/day amid live U.S.-Iran exchange of strikes and Saudi tanker attack.",
+    "Diesel/distillate squeeze: Russian export ban on diesel, compounded by Ukrainian refinery strikes forcing Moscow to process crude abroad, has pushed middle-distillate cracks to record highs.",
+    "Tight U.S. inventories: EIA reported a 4.5 million-barrel crude stock draw for the week ending August 28, underpinning prompt prices."
    ],
    "headlineCount": 12,
    "sources": [
-    "EnergyNow.com",
-    "SSBCrack",
-    "The Business Standard",
-    "UNITED24 Media",
-    "Yahoo",
+    "Business Insider Africa",
+    "Crude Oil Prices Today | OilPrice.com",
     "sundayguardianlive.com"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets tightened on both sides of the Atlantic. Henry Hub edged up 0.61% to $2.953/MMBtu, while TTF jumped 3.39% to \u20ac72.175/MWh \u2014 a 25.51% gain over the past month \u2014 as Hormuz-related LNG disruptions continue to squeeze spot availability. Asia spot LNG prices reached their highest since the 2026 winter as buyers scrambled for cargoes amid stalled Hormuz transits. Russia has meanwhile doubled its dark-fleet LNG shipping capacity in nine months to sustain Arctic LNG 2 exports to Asia under sanctions. Treasury Secretary Bessent offered a longer-term counterpoint, claiming Gulf producers could route around the Strait within two years, though the market gave that timeline little near-term credit.",
+   "summary": "Natural gas markets tightened materially today with TTF surging 1.6% to \u20ac73.37/MWh \u2014 up 31% over the past month \u2014 and Henry Hub adding 2.4% to $2.97/MMBtu. The dominant theme is Hormuz disruption spilling directly into LNG supply chains: three LNG carriers loaded from Qatar and the UAE have been forced to conduct ship-to-ship transfers outside the Strait rather than transit it, adding freight cost and delivery uncertainty. Pakistan offered a live illustration of demand-side stress, rejecting an emergency LNG cargo priced at three times pre-war levels and facing extended rolling blackouts as a result. The Saudi nuclear power investment story is a modest longer-run offset, with Riyadh targeting displacement of over 1 Mb/d of liquid fuel that currently feeds power and desalination plants, but it provides no near-term relief.",
    "drivers": [
-    "Hormuz blockage forcing Asian LNG buyers into spot market competition, pushing prices to five-month highs",
-    "TTF up 25.5% over the past month as European gas market absorbs supply rerouting and geopolitical risk premium",
-    "Russia doubling dark-fleet LNG tanker capacity to sustain sanctioned Arctic LNG 2 exports to Asian buyers"
+    "Hormuz LNG diversion: Qatari and UAE cargoes conducting ship-to-ship transfers outside the Strait, disrupting supply logistics and lifting spot premiums.",
+    "Demand destruction at the margin: Pakistan's refusal of a triple-priced LNG cargo signals price resistance in price-sensitive emerging markets, even at the cost of blackouts.",
+    "TTF structural pressure: Month-on-month gain of 31% reflects compounding risk of Middle East supply disruption on European gas import economics."
    ],
-   "headlineCount": 5,
+   "headlineCount": 3,
    "sources": []
   },
   "power": {
-   "summary": "The power and carbon complex was relatively quiet compared to oil and gas. EU carbon EUAs edged up just 0.47% to $79.00/EUA, with the weekly move slightly negative at -0.70%, suggesting the carbon market has not yet fully repriced the energy-cost surge seen in TTF. The Zaporizhzhia nuclear plant's continued reliance on diesel generators amid ongoing conflict adds a diffuse risk to European grid stability. On the infrastructure side, U.S. energy storage installations hit a record high in Q2 as grid operators sought reliability buffers \u2014 consistent with the broader lithium price rally. A two-week blackout in Gary, Indiana served as a pointed reminder of domestic grid vulnerability. Solar buildout in emerging markets continues at record pace but provided no immediate price catalyst today.",
+   "summary": "EU carbon (EUA) added 1.5% today to $79.80/EUA, a modest move relative to the energy complex but consistent with the broader tightening backdrop. The primary transmission channel into power markets remains elevated TTF gas, which has risen 31% over the past month and directly lifts the marginal cost of gas-fired generation across Europe. On the geopolitical risk side, the Zaporizhzhia nuclear plant's continued reliance on diesel generators \u2014 highlighted in a Russia-Ukraine war update \u2014 represents a persistent tail risk to European baseload capacity. Saudi Arabia's announced plan to invest in nuclear power to free up over 1 Mb/d of liquid fuel is a long-dated structural story with no near-term power-market implications. Data for this sector is relatively thin today beyond the gas cost and Zaporizhzhia headlines.",
    "drivers": [
-    "EU EUAs largely range-bound despite surging TTF, suggesting carbon-energy spread compression worth monitoring",
-    "Zaporizhzhia nuclear plant on diesel backup amid conflict, adding tail risk to European power grid stability",
-    "U.S. Q2 energy storage installations hit record high; Gary, Indiana blackout highlights persistent grid infrastructure gaps"
+    "Gas-to-power cost pass-through: TTF at \u20ac73.37/MWh (+31% m/m) continues to set a high floor for European power generation marginal costs, supporting EUA demand.",
+    "Zaporizhzhia nuclear risk: Plant's dependence on diesel generators amid ongoing conflict represents a live threat to European nuclear baseload availability.",
+    "Carbon market steady: EUA +1.5% on the day and +3.6% over the month, tracking energy complex sentiment without a sector-specific catalyst today."
    ],
    "headlineCount": 5,
    "sources": [
