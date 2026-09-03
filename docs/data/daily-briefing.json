@@ -1,43 +1,43 @@
 {
- "generated": "2026-09-03T16:54:30.842060+00:00",
+ "generated": "2026-09-03T22:12:01.126690+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude extended its blistering monthly rally \u2014 WTI up over 21% in a month and now at $91.55 \u2014 on a confluence of supply disruptions and geopolitical risk. Russian output has fallen to its lowest since 2009 as Ukrainian drone strikes force Moscow to process crude abroad, while the Deputy Prime Minister insisted the dip is temporary pending refinery restarts. In the Middle East, an Iranian attack on a vessel in the Strait of Hormuz killed two Saudi sailors, inflaming US-Iran tensions and adding a serious shipping-lane risk premium. Asian demand is absorbing available barrels aggressively: Chinese and Indian refiners are pushing Dubai crude toward $100 and paying record premiums for ESPO grades as Iranian supply tightens. Heating oil at $4.625/gal and US diesel near all-time highs reflect a global refining crunch analysts warn could persist into 2027. RBOB softened slightly on the week despite the crude surge.",
+   "summary": "Crude markets consolidated near multi-month highs after a blistering monthly rally \u2014 WTI at $91.67 (+21.87% in a month) and Brent at $95.82 (+20.60%) \u2014 as a confluence of supply-side shocks kept the bid firm. The dominant story today is the Strait of Hormuz, where two Saudi tankers were attacked, amplifying risk premium even as Iraq simultaneously ramped Hormuz exports with deep discounts to attract Asian refiners. On the Russian front, Ukrainian drone strikes have pushed output to its lowest since 2009; Moscow insists the dip is temporary as refineries restart, but net oil revenues collapsed 22% year-on-year to $3.76 billion in August with Urals languishing near $59. US diesel prices are within three cents of their all-time record at $5.78/gal. India is pushing back on a potential US sanctions bill targeting Russian oil buyers, with Foreign Minister Jaishankar framing it as a diplomatic rather than supply issue.",
    "drivers": [
-    "Russian supply shock: Ukrainian strikes push output to lowest since 2009, forcing offshore processing and cutting oil revenues 22% YoY with Urals at $59",
-    "Middle East escalation: Iranian attack in Hormuz kills two sailors, lifting geopolitical risk premium across all crude benchmarks",
-    "Asian buying spree: Chinese and Indian refiners paying record premiums for ESPO and Middle Eastern grades, pushing Dubai crude toward $100"
+    "Hormuz risk premium: tanker attacks on Saudi vessels and an Iraqi export surge via the same chokepoint are pulling prices in opposing directions but keeping volatility elevated",
+    "Russian supply disruption: Ukrainian strikes have taken production to a 17-year low; sanctions revenue down 22% YoY, though Moscow claims output recovery is imminent",
+    "US diesel near record highs and potential secondary sanctions on Russian oil buyers are adding further upside pressure to refined products and keeping geopolitical risk on the front burner"
    ],
    "headlineCount": 12,
    "sources": [
-    "Crude Oil Prices Today | OilPrice.com",
-    "Pluang",
+    "ANI News",
+    "Newstrack English",
+    "SSBCrack",
     "The Business Standard",
     "The Sunday Guardian",
-    "UNITED24 Media"
+    "The Times of India"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets are bifurcating sharply. Henry Hub slipped 1.79% on the day to $2.903/MMBtu and is essentially flat on the week, suggesting the US domestic market remains insulated for now despite the broader commodity shock. European TTF, by contrast, shed 3.37% today to \u20ac71.15/MWh but remains up 35.77% on the month \u2014 the one-day pullback looks corrective after an extreme run. The structural backdrop is bearish for European winter supply: storage sits at its lowest level in nearly two decades, setting up an intense LNG procurement battle between Europe and Asia. Asian spot LNG has already surged to nearly $26/MMBtu, its highest since 2022, on resumed Middle East conflict. Norway's seizure of a Russian cruise ship on behalf of Naftogaz adds further friction to Russia-Europe energy relations.",
+   "summary": "Natural gas price action diverged sharply across regions today. TTF fell 3.37% on the day to \u20ac71.15/MWh, though it remains up 35.77% over the past month \u2014 the strongest monthly move across the energy complex \u2014 pointing to persistent European supply anxiety that is now partially correcting. Henry Hub eased modestly to $2.925/MMBtu (-1.05%), still up 8.82% over the month. The sole headline of note is Norway's seizure of a Russian cruise ship off Svalbard at Naftogaz's request to enforce a $4.22 billion arbitration claim \u2014 an escalation in the legal and diplomatic campaign against Russian assets that could have downstream implications for European energy relations. Headline flow is thin for this sector today beyond that development.",
    "drivers": [
-    "European storage at near two-decade lows, intensifying competition with Asia for winter LNG cargoes",
-    "Asian spot LNG near $26/MMBtu \u2014 highest since 2022 \u2014 driven by resumed Iran-related conflict disruptions",
-    "Henry Hub relatively contained on the week; US-European gas price divergence remains extreme"
+    "TTF's 35.77% monthly surge reflects sustained European supply anxiety, though today's 3.37% pullback suggests some near-term profit-taking or demand-side softening",
+    "Norway's seizure of a Russian vessel at Naftogaz's behest signals continued legal escalation between Ukraine/Europe and Russia over energy-related claims",
+    "Henry Hub remains subdued on a daily basis; US domestic fundamentals are providing limited directional catalyst today"
    ],
-   "headlineCount": 3,
+   "headlineCount": 1,
    "sources": []
   },
   "power": {
-   "summary": "The power and carbon space offers limited fresh price catalysts today, with EU EUA carbon ticking up just 0.25% to $79.195/EUA and broadly range-bound on the month (+3.09%). TTF, the key marginal cost input for European gas-fired generation, pulled back sharply (-3.37%) intraday though remains massively elevated month-on-month. The macro risk backdrop is deteriorating: the IMF flagged concern over surging global borrowing costs as an oil shock rattles bond markets, with UK gilt yields hitting levels last seen during the financial crisis. On the physical infrastructure side, Russia's Zaporizhzhia nuclear plant remains on diesel generators amid ongoing tensions, and Putin ordered fresh missile strikes on Ukraine's power grid \u2014 both developments underscoring acute vulnerability in European power supply heading into winter. Headline flow for this sector was thin today beyond war-related disruption themes.",
+   "summary": "The power and carbon complex offered limited fresh catalysts today, with EU ETS carbon (EUA) slipping 0.75% to $79.20 \u2014 a modest pullback within a broadly sideways monthly range (+2.70%). TTF's sharp daily drop (-3.37%) could ease near-term gas-to-power generation costs marginally for European utilities. The key structural story flagged in today's headlines is the AI data center buildout straining US power infrastructure, with Big Tech committing trillions to capacity that is already pushing grid equipment to its limits \u2014 a long-dated bullish demand signal for power. On the geopolitical fringe, the Zaporizhzhia nuclear plant reportedly remains on diesel generators amid ongoing Ukraine-Russia tensions, and the IMF flagged rising global borrowing costs tied to the oil shock as a macro concern. The Brazil mining bill is tangential at best to near-term power and carbon pricing.",
    "drivers": [
-    "Zaporizhzhia nuclear plant running on diesel generators; Russian missile strikes targeting Ukraine's power grid raise European supply security concerns",
-    "EU EUA carbon subdued despite macro stress \u2014 market awaiting clearer demand signal from winter energy trajectory",
-    "IMF warns on surging global borrowing costs as oil shock transmits into broader financial market volatility"
+    "AI data center demand surge is pushing US power grid infrastructure to capacity limits, representing a structural long-term bullish demand driver",
+    "Zaporizhzhia nuclear plant on diesel backup amid ongoing hostilities adds tail-risk to European power supply security",
+    "EUA carbon prices are range-bound (+2.70% monthly) with TTF's daily pullback offering marginal relief to gas-fired generation costs, but no decisive directional catalyst today"
    ],
-   "headlineCount": 3,
+   "headlineCount": 4,
    "sources": [
-    "IntelliNews",
     "The Sunday Guardian"
    ]
   }
