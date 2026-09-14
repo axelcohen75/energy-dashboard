@@ -1,46 +1,48 @@
 {
- "generated": "2026-09-11T16:53:41.901344+00:00",
+ "generated": "2026-09-14T18:21:13.843228+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude pulled back sharply on Friday after a blistering weekly run, with WTI settling just below $100 (-2.55%) and Brent at $105.06 (-2.42%), yet both benchmarks remain up roughly 9-10% on the week and nearly 20% on the month. The selloff looks technical after WTI tagged an intraday high above $101 earlier in the session. The macro bid stays firmly intact: Houthi strikes are threatening Saudi Arabia's oil export bypass infrastructure, the U.S. military destroyed five Iranian tankers following attacks on a Navy warship, and Ukraine drone strikes are materially degrading Russian refining capacity per the IEA. RBC Capital's Helima Croft flagged a path to $120 Brent if the Middle East conflict persists. RBOB gasoline's outsized -7.31% drop stands out and may reflect end-of-driving-season demand seasonality.",
+   "summary": "Crude benchmarks remain elevated \u2014 WTI at $101.17 (+1.16% d/d, +24.57% m/m), Brent at $105.62 \u2014 driven by a compounding set of Middle East supply disruptions. The Saudi East-West Pipeline shutdown has rattled Asian refiners uncertain about Yanbu loadings, while Hormuz-bypass options are proving limited. Gulf states called off planned talks with Iran on reopening the Strait the same day Houthis struck a Saudi airbase with missiles and drones; separately, an Iranian vessel was struck on the Strait itself. Russia's Black Sea crude exports face record freight costs as Ukrainian strikes continue, and the US House is readying stiffer sanctions on Russian oil. The Fed is now expected to hike rates this week in response to the oil price surge. RBOB gasoline and heating oil both sold off sharply on the day (-5.37% and -4.01%), suggesting some demand-destruction concern at current crude levels.",
    "drivers": [
-    "Houthi strikes targeting Saudi oil export infrastructure and U.S.-Iran naval exchanges raising Hormuz/supply disruption risk",
-    "IEA confirms Ukraine drone strikes are degrading Russian refining capacity, tightening global refined product supply",
-    "Sharp RBOB gasoline selloff (-7.31%) diverges from crude, suggesting seasonal demand weakness at the pump even as flat-price crude risk premium holds"
+    "Saudi East-West Pipeline shutdown disrupts Red Sea oil flows; Hormuz talks collapse after Houthi missile strike on Saudi airbase",
+    "Russia's Black Sea crude exports squeezed by record freight costs and looming US Congressional sanctions bill",
+    "Oil price spike puts Fed on track for a September rate hike; product cracks compressed as RBOB and heating oil sold off sharply"
    ],
    "headlineCount": 12,
    "sources": [
-    "Ajker Patrika",
-    "Bloomberg.com",
-    "IraqiNews",
-    "NPR",
-    "Radio Free Europe/Radio Liberty",
-    "Yahoo News UK"
+    "Britannica",
+    "CBS News",
+    "EnergyNow.com",
+    "Livemint",
+    "The Hindu",
+    "inkorr.com"
    ]
   },
   "gas": {
-   "summary": "Natural gas price action today was divergent across regions. Henry Hub (NG) eased -0.88% to $2.809/MMBtu and is down 3.57% on the week, suggesting U.S. domestic fundamentals remain loose. European TTF, by contrast, dipped only -0.67% on the day but has surged 13.49% on the week and 33.56% over the past month to \u20ac81.5/MWh, reflecting tightened LNG availability amid the broader Middle East conflict backdrop. The sole U.S.-focused headline notes Jeff Currie calling for $5 gasoline before midterms and flagging diesel above $6/gallon nationally for the first time on record \u2014 a distillate squeeze with knock-on implications for gas-to-oil substitution. Headline flow for this sector is thin beyond that single data point.",
+   "summary": "TTF surged 3.21% on the day to \u20ac82.07/MWh, extending a punishing +35.88% move over the past month, as Middle East disruptions feed directly into European LNG anxiety. Amsterdam gas prices reportedly jumped 6% at Monday's open as the Saudi pipeline shutdown and Hormuz blockade raised supply-route concerns for LNG cargoes transiting the region. Chevron Australia confirmed it expects LNG prices to stay elevated in the near term given the scale of Middle East supply disruption, while the company separately announced a multi-continent LNG expansion targeting Argentina, the Mediterranean, Africa, and Australia. On the European supply side, Uniper agreed to sell its 20% stake in the OPAL gas pipeline to comply with EU state-aid conditions. Henry Hub was more subdued, gaining 2.26% to $2.895/MMBtu, reflecting a domestic market insulated from the acute geopolitical premium hitting European benchmarks.",
    "drivers": [
-    "Henry Hub remains pressured by domestic oversupply, falling 3.57% on the week despite geopolitical noise",
-    "European TTF has rallied 33.56% in a month, driven by Middle East supply risk squeezing global LNG flows",
-    "Jeff Currie's $5 gasoline / $6 diesel call signals broader energy cost pressure that could feed into industrial gas demand dynamics"
+    "Saudi pipeline shutdown and Hormuz disruptions drive a 6% opening surge in TTF, extending a month-long +36% rally",
+    "Chevron flags persistently high LNG prices near-term; launches four-continent LNG expansion strategy",
+    "Uniper divests 20% OPAL pipeline stake under EU state-aid compliance conditions"
    ],
-   "headlineCount": 1,
-   "sources": []
+   "headlineCount": 8,
+   "sources": [
+    "Devdiscourse"
+   ]
   },
   "power": {
-   "summary": "EU carbon (EUA) was effectively unchanged on the day (+0.11%) at \u20ac81.46/EUA, with a modest weekly gain of +2.85% and +4.16% on the month \u2014 a relatively subdued move given the turbulence in the underlying fuel complex. TTF's continued elevation at \u20ac81.5/MWh keeps gas-fired generation costs high, which should in principle support carbon prices as coal switches in at the margin. Two notable non-price developments: UK business groups formally called for removal of electricity bill taxes to restore competitiveness, and the UAE is reconsidering its planned 5-GW AI data center campus in Abu Dhabi after Iran targeted U.S. assets in the Gulf \u2014 a signal that Gulf power infrastructure investment is now directly exposed to escalation risk. Direct power-sector headline flow is otherwise thin today.",
+   "summary": "EU carbon allowances (EUA) added 2.87% on the day to $83.795, tracking higher gas and broader energy market stress rather than any carbon-specific fundamental shift. The dominant driver remains TTF natural gas at \u20ac82.07/MWh (+3.21% d/d, +35.88% m/m), which keeps gas-fired generation costs elevated and sustains the incentive to hold carbon permits. The macro backdrop is complicated by geopolitical cross-currents: BRICS issued a declaration addressing war, sanctions, and nuclear risks amid Iran-UAE tensions, while the US signalled a focus on Iran's nuclear programme in ongoing talks. A US House vote on sweeping Russia sanctions could further tighten European energy supply. Dedicated power-sector headlines were thin today; the EUA move appears largely a function of gas-price contagion and broader risk repricing rather than any discrete carbon market catalyst.",
    "drivers": [
-    "EUA carbon flat on the day; TTF at \u20ac81.5/MWh sustains high gas-fired generation costs and underpins carbon switch-in economics",
-    "UK business lobby pushes to eliminate electricity taxes, flagging industrial competitiveness concerns under elevated power prices",
-    "UAE pausing 5-GW AI campus plans signals Gulf escalation risk is beginning to disrupt large-scale power infrastructure investment decisions"
+    "EUA gains driven by contagion from surging TTF gas prices, which keep gas-fired power generation costs and carbon demand elevated",
+    "Geopolitical noise \u2014 BRICS sanctions declaration, US-Iran nuclear talks, prospective Russia sanctions bill \u2014 sustains energy risk premium",
+    "No discrete power-sector catalyst today; EUA upside capped relative to TTF's outsized monthly move"
    ],
-   "headlineCount": 6,
+   "headlineCount": 5,
    "sources": [
-    "Radio Free Europe/Radio Liberty",
-    "South China Morning Post",
-    "bloomingbit"
+    "Iran International",
+    "Tempo.co English",
+    "UNITED24 Media"
    ]
   }
  }
