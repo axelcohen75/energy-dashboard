@@ -1,48 +1,45 @@
 {
- "generated": "2026-09-14T18:21:13.843228+00:00",
+ "generated": "2026-09-15T17:28:44.566460+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude benchmarks remain elevated \u2014 WTI at $101.17 (+1.16% d/d, +24.57% m/m), Brent at $105.62 \u2014 driven by a compounding set of Middle East supply disruptions. The Saudi East-West Pipeline shutdown has rattled Asian refiners uncertain about Yanbu loadings, while Hormuz-bypass options are proving limited. Gulf states called off planned talks with Iran on reopening the Strait the same day Houthis struck a Saudi airbase with missiles and drones; separately, an Iranian vessel was struck on the Strait itself. Russia's Black Sea crude exports face record freight costs as Ukrainian strikes continue, and the US House is readying stiffer sanctions on Russian oil. The Fed is now expected to hike rates this week in response to the oil price surge. RBOB gasoline and heating oil both sold off sharply on the day (-5.37% and -4.01%), suggesting some demand-destruction concern at current crude levels.",
+   "summary": "Crude surged to multi-month highs Tuesday, with WTI settling near $106.47 (+5.03% on the day, +29.24% on the month) and Brent at $109.18, driven by a simultaneous supply shock on two fronts. Saudi Aramco suspended Yanbu Red Sea loadings after drone strikes on the East-West pipeline \u2014 damage assessed at weeks of repair time \u2014 canceling or delaying European crude cargoes and tightening Atlantic Basin supply. Concurrently, Ukrainian drone strikes crippled three of Russia's six largest diesel refineries, cutting capacity to roughly one-quarter at the affected sites. Iran's declared oil blockade and Houthi expansion across key Red Sea shipping lanes compound the geopolitical premium. RBOB gasoline bucked the trend, slipping 1.76%, likely on demand-destruction concerns at elevated crude prices, while Heating Oil rose 1.19% on diesel tightness.",
    "drivers": [
-    "Saudi East-West Pipeline shutdown disrupts Red Sea oil flows; Hormuz talks collapse after Houthi missile strike on Saudi airbase",
-    "Russia's Black Sea crude exports squeezed by record freight costs and looming US Congressional sanctions bill",
-    "Oil price spike puts Fed on track for a September rate hike; product cracks compressed as RBOB and heating oil sold off sharply"
+    "Saudi Arabia's East-West pipeline offline for weeks; Aramco cancels European crude cargoes and suspends Yanbu loadings",
+    "Ukrainian drone strikes cut three of Russia's six largest diesel refineries to minimal or zero capacity",
+    "Iran oil blockade continues; Houthis expanding Red Sea control and striking Saudi infrastructure as Gulf-Iran talks collapse"
    ],
    "headlineCount": 12,
    "sources": [
     "Britannica",
+    "Business Standard",
     "CBS News",
     "EnergyNow.com",
-    "Livemint",
-    "The Hindu",
-    "inkorr.com"
+    "Time Magazine",
+    "reuters.com"
    ]
   },
   "gas": {
-   "summary": "TTF surged 3.21% on the day to \u20ac82.07/MWh, extending a punishing +35.88% move over the past month, as Middle East disruptions feed directly into European LNG anxiety. Amsterdam gas prices reportedly jumped 6% at Monday's open as the Saudi pipeline shutdown and Hormuz blockade raised supply-route concerns for LNG cargoes transiting the region. Chevron Australia confirmed it expects LNG prices to stay elevated in the near term given the scale of Middle East supply disruption, while the company separately announced a multi-continent LNG expansion targeting Argentina, the Mediterranean, Africa, and Australia. On the European supply side, Uniper agreed to sell its 20% stake in the OPAL gas pipeline to comply with EU state-aid conditions. Henry Hub was more subdued, gaining 2.26% to $2.895/MMBtu, reflecting a domestic market insulated from the acute geopolitical premium hitting European benchmarks.",
+   "summary": "Natural gas markets showed a stark divergence today. Henry Hub was essentially flat at $2.902/MMBtu (+0.21%), reflecting domestically insulated U.S. supply-demand fundamentals and some demand destruction at current price levels. TTF in Europe, however, fell 3.77% on the day to \u20ac79.455/MWh \u2014 a sharp intraday pullback despite a still-elevated monthly gain of 29.35% \u2014 likely reflecting short-term profit-taking after recent crisis-driven gains. The broader backdrop remains bullish: Saudi pipeline disruption is cutting feedgas flows, and Ukrainian strikes on Russian refinery infrastructure continue to strain European energy supply chains. Asian LNG demand from China and India remains suppressed by high spot prices, though a normalization could trigger a significant demand surge. News flow is thin on direct gas-specific fundamentals beyond the macro geopolitical overlay.",
    "drivers": [
-    "Saudi pipeline shutdown and Hormuz disruptions drive a 6% opening surge in TTF, extending a month-long +36% rally",
-    "Chevron flags persistently high LNG prices near-term; launches four-continent LNG expansion strategy",
-    "Uniper divests 20% OPAL pipeline stake under EU state-aid compliance conditions"
+    "TTF pulls back 3.77% intraday despite 29% monthly surge, suggesting short-term profit-taking after crisis-driven rally",
+    "Asian LNG demand from China and India structurally depressed by spike in spot prices; rebound risk on any price normalization",
+    "Saudi pipeline outage and Russia refinery strikes continue to pressure European energy supply broadly, underpinning longer-term TTF support"
    ],
-   "headlineCount": 8,
-   "sources": [
-    "Devdiscourse"
-   ]
+   "headlineCount": 12,
+   "sources": []
   },
   "power": {
-   "summary": "EU carbon allowances (EUA) added 2.87% on the day to $83.795, tracking higher gas and broader energy market stress rather than any carbon-specific fundamental shift. The dominant driver remains TTF natural gas at \u20ac82.07/MWh (+3.21% d/d, +35.88% m/m), which keeps gas-fired generation costs elevated and sustains the incentive to hold carbon permits. The macro backdrop is complicated by geopolitical cross-currents: BRICS issued a declaration addressing war, sanctions, and nuclear risks amid Iran-UAE tensions, while the US signalled a focus on Iran's nuclear programme in ongoing talks. A US House vote on sweeping Russia sanctions could further tighten European energy supply. Dedicated power-sector headlines were thin today; the EUA move appears largely a function of gas-price contagion and broader risk repricing rather than any discrete carbon market catalyst.",
+   "summary": "The Power and Carbon sector offered limited dedicated headline flow today. EU Carbon EUAs edged down fractionally to $81.14 (-0.39%), essentially treading water despite the broader energy crisis, with the modest monthly gain of 3.49% suggesting EUAs are not yet pricing a sustained demand-destruction-driven compliance rally. TTF's sharp intraday retreat of 3.77% is a mild near-term positive for gas-fired power generation margins in Europe. On the U.S. side, FERC issued a deadline to utilities this summer related to grid resilience under simultaneous stress from AI-driven load growth and wildfire risk, though specific details in available feed summaries are limited. The geopolitical backdrop \u2014 Iran conflict, Hormuz tensions, and VTB sanctions escalation \u2014 remains a latent upside risk to power input costs.",
    "drivers": [
-    "EUA gains driven by contagion from surging TTF gas prices, which keep gas-fired power generation costs and carbon demand elevated",
-    "Geopolitical noise \u2014 BRICS sanctions declaration, US-Iran nuclear talks, prospective Russia sanctions bill \u2014 sustains energy risk premium",
-    "No discrete power-sector catalyst today; EUA upside capped relative to TTF's outsized monthly move"
+    "EU EUAs broadly flat (-0.39%) as carbon market awaits clearer signal from demand-destruction vs. supply-shock dynamics",
+    "TTF retreat of 3.77% intraday provides short-term relief on European gas-fired power generation costs",
+    "FERC grid resilience deadline flags structural U.S. power sector stress from concurrent AI load growth and wildfire exposure; details in available data are limited"
    ],
    "headlineCount": 5,
    "sources": [
-    "Iran International",
-    "Tempo.co English",
-    "UNITED24 Media"
+    "ET Now",
+    "NDTV Profit"
    ]
   }
  }
