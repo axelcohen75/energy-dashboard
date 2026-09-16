@@ -1,40 +1,40 @@
 {
- "generated": "2026-09-15T23:04:07.727783+00:00",
+ "generated": "2026-09-16T17:28:33.773644+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets surged on compounding Middle East supply shocks. WTI jumped 3.88% to $105.32 and Brent added 2.54% to $108.36 after Saudi Aramco suspended Yanbu Red Sea loadings following the shutdown of the East-West pipeline, cutting off a critical export artery to European refiners. The Hormuz corridor remains under stress: an Iranian vessel was struck in the strait, Houthis are expanding control of the shipping lane, and Iran is maintaining its oil blockade pending cessation of attacks \u2014 a posture that has opened a $40-plus spread between regional crude grades. The Russia-Ukraine conflict adds a further layer, with overnight strikes hitting a Ukrainian oil refinery. A large 7.14-million-barrel API crude inventory build offered a partial counterweight, as did U.S. Energy Secretary Wright's comment that the Saudi pipeline could return within days. RBOB gasoline bucked the trend, falling 2.26%.",
+   "summary": "Crude gave back a chunk of its recent rally on Wednesday, with WTI off 2.89% to $102.75/bbl and Brent down 2.52% to $105.97, though both retain outsized monthly gains of +21.6% and +16.7% respectively. The session's sharpest move was in RBOB, which cratered 7.04% to $3.22/gal, suggesting demand softness is cutting into refined product premiums even as the supply backdrop stays tense. The headline driver remains the Strait of Hormuz complex: Saudi Arabia's key bypass pipeline is offline, forcing Riyadh to pivot to spot sales near the Strait; Japanese refiners scrambled for Oman crude as an alternative; and Iran-backed Houthi attacks continue to crimp shipping lanes. Iran's stated blockade posture and Trump's escalatory rhetoric add tail-risk. Russia's extension of its diesel export ban through October tightens distillate supply further, while U.S. crude inventories drew a modest 600,000 barrels last week. CME options markets price a 77% probability of an OPEC cut at the next meeting.",
    "drivers": [
-    "Saudi Aramco suspends Yanbu loadings and cancels European cargoes after East-West pipeline shutdown, tightening Atlantic Basin supply",
-    "Iran maintains Hormuz blockade; Houthi expansion in shipping lane and tanker strike sustain $40-plus crude grade risk premium",
-    "API reports a 7.14-million-barrel U.S. crude inventory build, capping upside; U.S. Energy Secretary signals potential near-term Saudi pipeline restart"
+    "Saudi Arabia's Hormuz bypass pipeline offline, forcing spot crude sales and triggering Asian refiner scramble for alternative grades",
+    "Iran blockade threat and Houthi attacks sustain geopolitical risk premium despite today's profit-taking selloff",
+    "Russia extends diesel export ban to end-October, tightening distillate markets even as RBOB demand signals weaken"
    ],
    "headlineCount": 12,
    "sources": [
-    "Business Standard",
+    "930 WFMD Free Talk",
     "CBS News",
-    "Free Malaysia Today",
-    "Reuters",
-    "Time Magazine",
-    "energynow.com"
+    "ET Now",
+    "EnergyNow.com",
+    "NDTV Profit",
+    "Radio Free Europe/Radio Liberty"
    ]
   },
   "gas": {
-   "summary": "Natural gas price action was divergent on either side of the Atlantic. Henry Hub edged up 1.66% to $2.944/MMBtu, a modest move supported by the broader energy complex tightness rather than any gas-specific domestic catalyst \u2014 news flow was thin on U.S. gas fundamentals beyond a reminder that Texas accounted for over a quarter of U.S. gross withdrawals of 47.7 trillion cubic feet in 2025. TTF fell 3.77% to \u20ac79.455/MWh in a likely technical pullback after a sharp 29.35% monthly rally; Saudi Aramco's cancellation of European crude cargoes and continued Russia-Ukraine strikes \u2014 including a hit on a gas station \u2014 sustain underlying European supply anxiety even as spot prices corrected today. Headlines data for gas-specific drivers were limited.",
+   "summary": "Henry Hub eased 0.96% to $2.89/MMBtu, a modest pullback within a constructive monthly trend of +7.5%. European TTF fell 3.10% on the day to \u20ac77.58/MWh but remains elevated, up 25.6% on the month and still close to 2022 highs per today's headlines. A headline citing TTF at $92.95 intraday underscores intra-session volatility. The key European driver is critically low storage: Germany is actively considering market incentives to encourage restocking ahead of winter. Qatar export disruptions are keeping Atlantic Basin LNG supply tight, prompting Equinor to announce an expansion of its LNG portfolio to 10\u201315 million tons per year targeting European and Asian buyers. JERA's plan to sell excess LNG in global markets adds a marginal supply offset. Gulf tensions remain a backdrop risk to any LNG re-routing.",
    "drivers": [
-    "TTF retreats 3.77% on the day after a 29.35% monthly surge, suggesting near-term profit-taking despite unresolved European supply risks",
-    "Ongoing Russia-Ukraine strikes, including infrastructure hits, maintain geopolitical risk premium for European gas markets",
-    "Henry Hub gains are modest and gas-specific U.S. catalysts thin; Texas dominance of domestic production (>25% of 2025 output) underpins supply adequacy narrative"
+    "European gas storage at record lows; Germany weighing market incentives to accelerate refill ahead of winter",
+    "Qatar LNG exports remain blocked, tightening global LNG supply and prompting Equinor to target 10\u201315 Mt/year portfolio expansion",
+    "JERA plans to sell excess LNG into global markets, providing a partial supply offset to tight Atlantic Basin conditions"
    ],
    "headlineCount": 7,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon allowances extended their grind higher, adding 2.87% to $83.795/EUA, supported by the broader energy price rally and persistent geopolitical tension that complicates the European power fuel mix. The monthly gain of 6.87% in EUAs tracks the sharp rise in TTF, though today's TTF pullback provided some relief to carbon-linked generation costs. On structural themes, Chinese solar panel prices have collapsed to $0.12/watt, accelerating rooftop installations globally and carrying long-run implications for peak power demand and carbon intensity. U.S. grid resilience is under fresh scrutiny: FERC issued a summer deadline to utilities around AI-driven load growth, and separately, AI-enabled cyberattacks are flagged as a growing threat to critical energy infrastructure. BRICS nations are also pushing back on Western influence over energy and economic frameworks.",
+   "summary": "EU carbon allowances (EUA) dropped 3.90% to $80.53/EUA today, broadly in line with the pullback across energy complex prices. The monthly trend remains modestly positive at +3.5%. The carbon market lacks sector-specific catalysts in today's flow, but the macro backdrop matters: TTF remains near multi-year highs (+25.6% on the month), which elevates gas-fired generation costs and keeps fuel-switching dynamics in focus. A leaked EU Commission draft for RED IV signals a potential shift away from granular hydrogen mandates toward an EU-wide target, which could alter long-run clean-power investment signals. Equinor's LNG expansion and JERA's plans to redistribute supply may gradually ease European gas prices, which would in turn weigh on carbon. Today's data set for power is otherwise thin; no direct power price or grid-level data were provided.",
    "drivers": [
-    "EU carbon EUAs up 2.87% on the day, tracking elevated energy complex prices; monthly gain of 6.87% aligns with TTF's 29.35% monthly surge",
-    "Chinese solar panel prices at $0.12/watt driving global rooftop installation surge, with long-term implications for power demand profiles and carbon intensity",
-    "U.S. grid resilience in focus as FERC sets AI load-growth deadlines for utilities and AI-enabled cyberattacks are identified as a rising threat to power infrastructure"
+    "EUA sold off 3.9% in sympathy with broader energy complex weakness, erasing some of the month's modest gains",
+    "Leaked RED IV draft signals potential scrapping of hydrogen mandates in favour of an EU-wide target, shifting clean-energy policy outlook",
+    "Persistently elevated TTF prices sustain fuel-switching pressure, but today's 3.1% TTF pullback slightly reduces near-term carbon demand from the power sector"
    ],
    "headlineCount": 6,
    "sources": [
