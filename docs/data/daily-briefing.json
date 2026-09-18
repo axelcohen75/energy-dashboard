@@ -1,45 +1,43 @@
 {
- "generated": "2026-09-17T23:01:31.278580+00:00",
+ "generated": "2026-09-18T16:56:32.828400+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude pulled back Thursday \u2014 WTI off 1.19% to $101.21/bbl, Brent off 1.64% to $104.09 \u2014 on de-escalation signals after Reuters reported China is pressing Iran to rein in Houthi activity, and separately, US-Houthi talks were confirmed to be opening. The selloff in crude products was far sharper: RBOB crashed 8.16% and Heating Oil shed 8.04%, likely a demand-side relief trade on the inventory beat reported in US gasoline stocks. Despite today's dip, both benchmarks are up roughly 14-19% on the month, reflecting six-plus months of Middle East supply disruption. The legislative backdrop remains hawkish: the US House passed the Graham bill authorizing 100% tariffs on countries \u2014 notably India and China \u2014 purchasing Russian crude. Ukraine's strike on a Rosneft/Gazprom Neft co-owned refinery near Moscow adds further upside risk to product markets, while Kpler's Matt Smith maintained a constructive medium-term view on crude as the diesel crunch deepens.",
+   "summary": "Crude sold off hard on Friday, with WTI dropping 5.77% to $96.01/bbl and Brent losing 5.48% to $99.08/bbl, as Saudi Arabia's successful rerouting of exports through Ras Tanura defused the acute supply-shock narrative that had driven prices above $101 earlier in the week. With Saudi Aramco having sold up to 60 million barrels for September-October loadings via Persian Gulf ports rather than through the Strait of Hormuz\u2014where tanker traffic slumped to just four vessels on Thursday\u2014traders unwound Hormuz-risk premium aggressively. RBOB gasoline led the decline at -8.47%. On the geopolitical flank, the US Congress passed a sweeping sanctions bill targeting Russian and Iranian energy, threatening 100% tariffs on buyers of Russian crude including India, which pushed back publicly. Japanese refiners stated they hold sufficient crude stocks through November, limiting demand-side urgency.",
    "drivers": [
-    "De-escalation signals \u2014 China pressing Iran on Houthis and US-Houthi talks opening \u2014 triggered a crude pullback despite an otherwise tight physical market",
-    "RBOB and Heating Oil plunged ~8% each, potentially linked to a reported US gasoline inventory build and demand-side relief pricing",
-    "US House passage of Graham Russia sanctions bill, threatening 100% tariffs on Indian and Chinese buyers of Russian crude, raises long-term supply-route risk"
+    "Saudi Arabia's Ras Tanura workaround\u2014up to 60 mn bbls sold for Sep/Oct loadings\u2014eases Hormuz supply-disruption premium, sending WTI and Brent sharply lower",
+    "Hormuz tanker traffic collapsed to just four vessels Thursday, but market focus shifted to rerouting success rather than strait closure risk",
+    "US Congress passes Russia/Iran energy sanctions bill with threatened 100% tariffs on Russian oil buyers; India warns of diplomatic fallout, adding medium-term flow-rerouting uncertainty"
    ],
    "headlineCount": 12,
    "sources": [
-    "ET Now",
-    "Jagran Josh",
-    "NDTV Profit",
-    "Radio Free Europe/Radio Liberty",
-    "The Economic Times",
-    "The Times of India"
+    "India.com",
+    "Moldova 1",
+    "Newstrack English",
+    "The Times of India",
+    "aljazeera.com"
    ]
   },
   "gas": {
-   "summary": "Henry Hub eased 0.93% to $2.864/MMBtu while TTF slipped 1.30% to \u20ac77.015/MWh on the day, though the monthly picture tells a very different story \u2014 TTF is up 21% over the past 30 days as the Middle East crisis sustains LNG premium pricing globally. The macro narrative remains bullish: UK energy bills are forecast to jump 25-30% in Q1 2027 as the crisis drags on. Russia's swift cutoff of gas to Armenia \u2014 days after Yerevan announced plans to diversify away from Moscow \u2014 underscores the continued weaponization of gas flows. Separately, Taiwan is actively reconsidering nuclear power to reduce LNG exposure, a signal of how structurally stressed the global gas market has become. A reported temporary closure of a key Saudi Hormuz-bypass pipeline adds further upside tail risk to LNG spot pricing.",
+   "summary": "Natural gas markets were split on Friday. Henry Hub edged up just 0.28% to $2.909/MMBtu, extending a modest weekly gain of 2.76% with little sector-specific news driving the move. European TTF surged 3.96% to \u20ac79.375/MWh\u2014up 25% on the month\u2014with LNG supply disruptions around the Strait of Hormuz remaining the central concern; at least two LNG carriers have transited Hormuz this week, with others resorting to ship-to-ship transfers outside the strait, underscoring ongoing logistical strain for Qatar and UAE export flows. TotalEnergies and BlackRock's GIP separately announced a $1.8 billion partnership for African oil and gas assets, signalling continued upstream capital commitment. European gas price data warrants close monitoring given the scale of the monthly move.",
    "drivers": [
-    "TTF up 21% on the month as prolonged Middle East crisis squeezes LNG supply routes; today's dip appears technical after a sharp run-up",
-    "Russia cut gas to Armenia immediately after diversification announcement, highlighting the continued use of gas as geopolitical leverage",
-    "Taiwan moving toward nuclear revival and UK facing 25-30% energy bill increases in early 2027 \u2014 both signal that high gas prices are forcing structural demand responses"
+    "Hormuz LNG disruption\u2014only limited carrier transits and STS transfers this week\u2014keeps European TTF elevated, up ~25% month-on-month",
+    "Henry Hub quiet at $2.909/MMBtu; no major domestic demand or supply catalysts identified in today's headlines",
+    "TotalEnergies/BlackRock $1.8bn African gas asset deal signals continued upstream investment appetite despite geopolitical volatility"
    ],
-   "headlineCount": 8,
+   "headlineCount": 4,
    "sources": []
   },
   "power": {
-   "summary": "EU Carbon EUAs nudged up 1.35% to $81.62/EUA, continuing a modest uptrend that has the contract up 4.64% over the past month. The carbon move is modest relative to the broader energy complex but directionally consistent with elevated gas prices keeping coal-to-gas switching economics in flux. The key structural headlines today: Taiwan is reassessing nuclear as soaring LNG costs make its current power mix untenable, and Turkey announced a $108 billion, ten-year renewable buildout targeting 120 GW of wind and solar \u2014 though Ankara is simultaneously expanding oil and gas. Carbon-market specific news flow is thin today; the EUA move looks technically driven and anchored to the broader energy-price environment rather than any single catalyst.",
+   "summary": "EU carbon EUAs gained 2.49% to $82.535/EUA on Friday, supported by TTF's sharp 3.96% daily rally to \u20ac79.375/MWh, which raises gas-fired generation costs and tightens carbon compliance economics. A notable structural signal came from India, where coal power generation flatlined in H1 2024 through H1 2026\u2014the first two-year period of zero coal growth in over fifty years\u2014reflecting the accelerating clean energy buildout. INEOS launched the EU's first full-scale carbon storage facility in Denmark, a milestone for European carbon abatement infrastructure. The US sanctions bill's uranium carve-out was flagged as notable, keeping nuclear supply chains insulated. News flow is moderate for the power sector today, but TTF strength and the EUA move are the dominant near-term pricing forces.",
    "drivers": [
-    "EUAs +1.35% on the day, supported by elevated TTF gas prices keeping carbon abatement incentives firm despite today's slight TTF pullback",
-    "Taiwan's nuclear revival signals structurally high LNG costs are forcing power-sector pivots, with broader implications for global gas and carbon demand",
-    "Turkey's $108 billion renewables commitment (120 GW wind/solar target) is a notable long-term carbon-demand headwind, though near-term power-market impact is limited"
+    "TTF +3.96% on the day lifts gas-fired generation costs, supporting EUA demand and pushing EU carbon up 2.49% to $82.54/EUA",
+    "INEOS opens EU's first full-scale CCS site in Denmark\u2014structural step forward for European carbon abatement capacity",
+    "India's coal power generation records zero growth over two years for the first time in 50+ years, marking a clean-energy inflection with long-run carbon market implications"
    ],
    "headlineCount": 6,
    "sources": [
-    "ET Now",
-    "NDTV Profit",
+    "Livemint",
     "upi.com"
    ]
   }
