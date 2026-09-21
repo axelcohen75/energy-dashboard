@@ -1,44 +1,50 @@
 {
- "generated": "2026-09-18T16:56:32.828400+00:00",
+ "generated": "2026-09-21T18:28:08.919562+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude sold off hard on Friday, with WTI dropping 5.77% to $96.01/bbl and Brent losing 5.48% to $99.08/bbl, as Saudi Arabia's successful rerouting of exports through Ras Tanura defused the acute supply-shock narrative that had driven prices above $101 earlier in the week. With Saudi Aramco having sold up to 60 million barrels for September-October loadings via Persian Gulf ports rather than through the Strait of Hormuz\u2014where tanker traffic slumped to just four vessels on Thursday\u2014traders unwound Hormuz-risk premium aggressively. RBOB gasoline led the decline at -8.47%. On the geopolitical flank, the US Congress passed a sweeping sanctions bill targeting Russian and Iranian energy, threatening 100% tariffs on buyers of Russian crude including India, which pushed back publicly. Japanese refiners stated they hold sufficient crude stocks through November, limiting demand-side urgency.",
+   "summary": "Crude suffered one of its sharpest single-day selloffs of the year, with WTI down 8.0% to $92.22/bbl and Brent off 7.5% to $96.05, unwinding a chunk of last month's gains. RBOB led the complex lower at -9.4%. The catalyst appears to be the emergence of a Houthi-U.S. deal referenced by OilPrice.com, which the market is reading as a de-escalation signal despite ongoing physical disruption: satellite data cited by Bloomberg shows supertankers carrying capacity for 14 million barrels diverted to Saudi Gulf terminals after Houthi strikes targeted Yanbu. Iran's claim of striking a Hormuz tanker and Trump's signing of the Russia-Iran Sanctions Act\u2014authorising up to 100% secondary tariffs on Russian oil buyers including India and China\u2014add headline risk, but today the market voted for de-escalation. Heating oil at $4.69/gal and a separate report flagging fears of local diesel shortages underscore lingering tightness in distillates.",
    "drivers": [
-    "Saudi Arabia's Ras Tanura workaround\u2014up to 60 mn bbls sold for Sep/Oct loadings\u2014eases Hormuz supply-disruption premium, sending WTI and Brent sharply lower",
-    "Hormuz tanker traffic collapsed to just four vessels Thursday, but market focus shifted to rerouting success rather than strait closure risk",
-    "US Congress passes Russia/Iran energy sanctions bill with threatened 100% tariffs on Russian oil buyers; India warns of diplomatic fallout, adding medium-term flow-rerouting uncertainty"
+    "Houthi-U.S. deal signals perceived de-escalation, triggering sharp risk-off unwind in crude longs",
+    "Saudi rerouting of exports to Gulf terminals (14 mn bbl capacity visible via satellite) underscores Yanbu disruption but also supply resilience",
+    "Trump signs Russia-Iran Sanctions Act enabling 100% tariffs on Russian oil buyers; China/Russia veto UN Iran sanctions panel extension\u2014competing geopolitical pressures"
    ],
    "headlineCount": 12,
    "sources": [
-    "India.com",
-    "Moldova 1",
-    "Newstrack English",
-    "The Times of India",
-    "aljazeera.com"
+    "China Daily",
+    "Free Press Journal",
+    "LatestLY",
+    "Republic World",
+    "asiaone.com",
+    "bloomingbit"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets were split on Friday. Henry Hub edged up just 0.28% to $2.909/MMBtu, extending a modest weekly gain of 2.76% with little sector-specific news driving the move. European TTF surged 3.96% to \u20ac79.375/MWh\u2014up 25% on the month\u2014with LNG supply disruptions around the Strait of Hormuz remaining the central concern; at least two LNG carriers have transited Hormuz this week, with others resorting to ship-to-ship transfers outside the strait, underscoring ongoing logistical strain for Qatar and UAE export flows. TotalEnergies and BlackRock's GIP separately announced a $1.8 billion partnership for African oil and gas assets, signalling continued upstream capital commitment. European gas price data warrants close monitoring given the scale of the monthly move.",
+   "summary": "European and U.S. gas prices both fell sharply on the session\u2014TTF dropped 7.1% to \u20ac73.9/MWh despite being up 13% on the month, while Henry Hub slipped 2.4% to $2.84/MMBtu. The Hormuz story remains the dominant structural risk: QatarEnergy CEO Saad al-Kaabi warned that the Strait of Hormuz crisis could delay Qatar's $83 billion LNG expansion programme because critical equipment cannot be delivered. Pakistan's successful negotiation of safe passage through Hormuz for a second Qatari LNG cargo offers a narrow proof-of-concept that transit deals are possible, but it is a fragile arrangement. The ECB flagged today that wholesale gas price surges are passing through to Eurozone retail and electricity inflation faster than historically, adding policy pressure on European governments. The European Commission meanwhile is expected to maintain its Arctic drilling ban despite Norwegian lobbying, limiting medium-term supply optionality.",
    "drivers": [
-    "Hormuz LNG disruption\u2014only limited carrier transits and STS transfers this week\u2014keeps European TTF elevated, up ~25% month-on-month",
-    "Henry Hub quiet at $2.909/MMBtu; no major domestic demand or supply catalysts identified in today's headlines",
-    "TotalEnergies/BlackRock $1.8bn African gas asset deal signals continued upstream investment appetite despite geopolitical volatility"
+    "QatarEnergy warns Hormuz crisis threatens $83 bn LNG expansion; Strait transit risk structurally supportive even as prices correct today",
+    "ECB cautions on accelerating wholesale-to-retail gas price pass-through in the Eurozone, raising demand-destruction and policy-response risk",
+    "Pakistan secures Qatari LNG cargo via negotiated Hormuz safe passage\u2014a fragile workaround that underscores continued supply-route vulnerability"
    ],
-   "headlineCount": 4,
-   "sources": []
+   "headlineCount": 7,
+   "sources": [
+    "theweek.in"
+   ]
   },
   "power": {
-   "summary": "EU carbon EUAs gained 2.49% to $82.535/EUA on Friday, supported by TTF's sharp 3.96% daily rally to \u20ac79.375/MWh, which raises gas-fired generation costs and tightens carbon compliance economics. A notable structural signal came from India, where coal power generation flatlined in H1 2024 through H1 2026\u2014the first two-year period of zero coal growth in over fifty years\u2014reflecting the accelerating clean energy buildout. INEOS launched the EU's first full-scale carbon storage facility in Denmark, a milestone for European carbon abatement infrastructure. The US sanctions bill's uranium carve-out was flagged as notable, keeping nuclear supply chains insulated. News flow is moderate for the power sector today, but TTF strength and the EUA move are the dominant near-term pricing forces.",
+   "summary": "EU Carbon (EUA) was broadly flat on the day at $82.44/EUA (-0.1%), consolidating a 5.6% monthly gain, while TTF's 7% decline provides modest near-term relief on gas-fired generation costs. The key power-sector concern today comes from India: nearly 40% of operational coal-fired plants are running on critically low inventory, with coal demand forecast to jump 4.2%\u2014a signal of acute stress in Asian power markets that could redirect global coal and LNG flows. In Europe, the ECB's warning that gas price surges are feeding through to electricity inflation faster than in past cycles puts pressure on regulators; the Czech government's move to reinstate fuel price caps from October 1 and tax Orlen's refining margins is an early example of government intervention spreading. Trump's Russia-Iran sanctions law adds background risk to Russian energy supply chains underpinning European baseload.",
    "drivers": [
-    "TTF +3.96% on the day lifts gas-fired generation costs, supporting EUA demand and pushing EU carbon up 2.49% to $82.54/EUA",
-    "INEOS opens EU's first full-scale CCS site in Denmark\u2014structural step forward for European carbon abatement capacity",
-    "India's coal power generation records zero growth over two years for the first time in 50+ years, marking a clean-energy inflection with long-run carbon market implications"
+    "India coal-fired power sector under acute stress: ~40% of plants at critically low inventory, demand set to rise 4.2%\u2014potential LNG and coal diversion away from Europe",
+    "ECB warns of faster-than-historical wholesale gas pass-through to Eurozone electricity inflation, elevating demand-side and regulatory risk",
+    "EUA flat on day despite TTF decline; Czech fuel price caps and windfall margin tax signal widening European government intervention trend"
    ],
-   "headlineCount": 6,
+   "headlineCount": 8,
    "sources": [
-    "Livemint",
-    "upi.com"
+    "Bloomberg Law News",
+    "Republic World",
+    "Reuters",
+    "The Times of India",
+    "finance.biggo.com"
    ]
   }
  }
