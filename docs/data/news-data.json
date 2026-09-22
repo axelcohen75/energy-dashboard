@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-22T20:28:03Z",
+  "updated": "2026-09-22T23:11:08Z",
   "physical": [
+    {
+      "title": "US Gasoline, Distillate Inventories Continue to Fall as Crude Stocks Hold",
+      "summary": "The American Petroleum Institute (API) estimated that crude oil inventories in the United States rose by 1.786 million barrels in the week ending September 18. In the week prior, US crude oil inven...",
+      "source": "",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Gasoline-Distillate-Inventories-Continue-to-Fall-as-Crude-Stocks-Hold.html",
+      "published": "2026-09-22T21:08:45Z",
+      "sentiment": "bearish",
+      "impact": "low"
+    },
     {
       "title": "Norway\u2019s Liquids Output Rebounds by Nearly 100,000 Bpd\u2014but Still Trails 2025",
       "summary": "Norway\u2019s crude oil production rose to 1.882 million barrels per day in August, exceeding the Norwegian Offshore Directorate\u2019s forecast but remaining below the level recorded during the same month l...",
@@ -20,21 +29,12 @@
       "impact": "med"
     },
     {
-      "title": "ING: Supply-Side Risks Stay Elevated Even as Oil Prices Pull Back",
-      "summary": "Despite the recent decline in crude oil prices due to lower-than-feared disruption of Saudi exports, supply-side risks remain elevated, and not only in the Middle East, analysts at ING Bank also sa...",
+      "title": "Global Energy Demand Set to Jump 60% by 2060 as Developing Nations Power Up",
+      "summary": "Emerging economies are going to see an explosion of energy demand over the coming decades. Countries like Brazil, India, Nigeria, and Indonesia are racing to expand their energy production and impo...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/ING-Supply-Side-Risks-Stay-Elevated-Even-as-Oil-Prices-Pull-Back.html",
-      "published": "2026-09-22T11:30:00Z",
-      "sentiment": "bearish",
-      "impact": "med"
-    },
-    {
-      "title": "Saudi Arabia Restarts East-West Oil Pipeline",
-      "summary": "Saudi Arabia has restarted its East-West oil pipeline, restoring at least some flow through the 4-million-barrel-per-day route that had become the kingdom\u2019s main escape hatch around the Strait of H...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Restarts-East-West-Oil-Pipeline.html",
-      "published": "2026-09-22T16:02:24Z",
-      "sentiment": "neutral",
+      "url": "https://oilprice.com/Energy/Energy-General/Global-Energy-Demand-Set-to-Jump-60-by-2060-as-Developing-Nations-Power-Up.html",
+      "published": "2026-09-22T21:00:00Z",
+      "sentiment": "bullish",
       "impact": "low"
     },
     {
@@ -47,21 +47,30 @@
       "impact": "high"
     },
     {
+      "title": "Saudi Arabia Restarts East-West Oil Pipeline",
+      "summary": "Saudi Arabia has restarted its East-West oil pipeline, restoring at least some flow through the 4-million-barrel-per-day route that had become the kingdom\u2019s main escape hatch around the Strait of H...",
+      "source": "",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Restarts-East-West-Oil-Pipeline.html",
+      "published": "2026-09-22T16:02:24Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "Europe\u2019s Offshore Wind Slowdown Is Squeezing Manufacturers",
+      "summary": "Europe\u2019s offshore wind monopile market is moving from concerns over insufficient manufacturing capacity to a period of weak factory utilization coming from offshore wind projects skewing to the rig...",
+      "source": "",
+      "url": "https://oilprice.com/Alternative-Energy/Wind-Power/Europes-Offshore-Wind-Slowdown-Is-Squeezing-Manufacturers.html",
+      "published": "2026-09-22T16:00:00Z",
+      "sentiment": "bearish",
+      "impact": "low"
+    },
+    {
       "title": "UK Gas Prices Force Ineos to Idle Three Chemical Plants",
       "summary": "INEOS is idling three of its plants in the UK as soaring natural gas prices in Europe make operations uncompetitive, the chemicals giant said on Tuesday, warning that with the idling of these plant...",
       "source": "",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/UK-Gas-Prices-Force-Ineos-to-Idle-Three-Chemical-Plants.html",
       "published": "2026-09-22T15:30:00Z",
       "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "\u201cWe're Living On An Oil Market Credit Card\u201d: Analyst Sounds Alarm",
-      "summary": "The oil market is living on borrowed time as flows through the Strait of Hormuz remain disrupted and the cushions such as stock draws and low Asian demand are running thin, according to Saul Kavoni...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Were-Living-On-An-Oil-Market-Credit-Card-Analyst-Sounds-Alarm.html",
-      "published": "2026-09-22T13:37:00Z",
-      "sentiment": "neutral",
       "impact": "med"
     },
     {
@@ -74,11 +83,29 @@
       "impact": "high"
     },
     {
-      "title": "Europe\u2019s Offshore Wind Slowdown Is Squeezing Manufacturers",
-      "summary": "Europe\u2019s offshore wind monopile market is moving from concerns over insufficient manufacturing capacity to a period of weak factory utilization coming from offshore wind projects skewing to the rig...",
+      "title": "Nuclear Safety Brings America Into Russia's Uzbek Energy Project",
+      "summary": "Uzbekistan still wants Russia to build its first nuclear plant, but when it comes to safety, Tashkent is turning to the United States. Meeting on the sidelines of the recent general conference sess...",
       "source": "",
-      "url": "https://oilprice.com/Alternative-Energy/Wind-Power/Europes-Offshore-Wind-Slowdown-Is-Squeezing-Manufacturers.html",
-      "published": "2026-09-22T16:00:00Z",
+      "url": "https://oilprice.com/Energy/Energy-General/Nuclear-Safety-Brings-America-Into-Russias-Uzbek-Energy-Project.html",
+      "published": "2026-09-22T18:00:00Z",
+      "sentiment": "bearish",
+      "impact": "low"
+    },
+    {
+      "title": "Trump Proposes $5 Billion Fund to Rebuild Gulf Energy Infrastructure",
+      "summary": "U.S. President Donald Trump has proposed a fund to finance infrastructure rebuilding damaged in the war with Iran, offering $5 billion in U.S. money for starters. The information comes from the Wal...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/Trump-Proposes-5-Billion-Fund-to-Rebuild-Gulf-Energy-Infrastructure.html",
+      "published": "2026-09-22T23:00:00Z",
+      "sentiment": "bearish",
+      "impact": "low"
+    },
+    {
+      "title": "Is China\u2019s Secret Power Advantage About To Trigger An 89% Crash In U.S. AI Stock",
+      "summary": "The current focus of the world\u2019s governments, business and media when it comes to artificial intelligence (AI) is on the dangers it poses to jobs, democracy and even the future of humanity itself. ...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/Is-Chinas-Secret-Power-Advantage-About-To-Trigger-An-89-Crash-In-US-AI-Stock.html",
+      "published": "2026-09-22T22:00:00Z",
       "sentiment": "bearish",
       "impact": "low"
     },
@@ -92,39 +119,12 @@
       "impact": "med"
     },
     {
-      "title": "Oil Tumbles 3% as Iran Floats Hormuz Reopening Within a Week",
-      "summary": "Iran has offered to open the Strait of Hormuz within seven days if the United States eases its pressure including taking steps toward ending the U.S. military blockade of Iranian ports and halting ...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Tumbles-3-as-Iran-Floats-Hormuz-Reopening-Within-a-Week.html",
-      "published": "2026-09-22T11:57:00Z",
-      "sentiment": "bearish",
-      "impact": "high"
-    },
-    {
       "title": "Why Utility Profits Could Be the Next Target",
       "summary": "Electricity prices are heading up. Utility operating costs, raw materials, and fuel (obviously), are all heading up and no sign of stopping. Now higher capital costs courtesy of the Fed can also be...",
       "source": "",
       "url": "https://oilprice.com/Energy/Energy-General/Why-Utility-Profits-Could-Be-the-Next-Target.html",
       "published": "2026-09-22T15:00:00Z",
       "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Yemen Escalation Raises New Risks for Global Oil Markets",
-      "summary": "A conflict that has simmered in Yemen for years has flared in recent weeks, with consequences that could reach far beyond the Middle East. The Houthi rebels have seized nearly all of Yemen\u2019s Red Se...",
-      "source": "",
-      "url": "https://oilprice.com/Geopolitics/Middle-East/Yemen-Escalation-Raises-New-Risks-for-Global-Oil-Markets.html",
-      "published": "2026-09-22T14:00:00Z",
-      "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "Nuclear Safety Brings America Into Russia's Uzbek Energy Project",
-      "summary": "Uzbekistan still wants Russia to build its first nuclear plant, but when it comes to safety, Tashkent is turning to the United States. Meeting on the sidelines of the recent general conference sess...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/Nuclear-Safety-Brings-America-Into-Russias-Uzbek-Energy-Project.html",
-      "published": "2026-09-22T18:00:00Z",
-      "sentiment": "bearish",
       "impact": "low"
     },
     {
@@ -139,24 +139,6 @@
   ],
   "geopolitics": [
     {
-      "title": "Trump Signs Russia-Iran Sanctions Law: India and China Face 100% Tariff Risk Over Russian Oil",
-      "summary": "Trump Signs Russia-Iran Sanctions Law: India and China Face 100% Tariff Risk Over Russian Oil The Eastern Herald",
-      "source": "The Eastern Herald",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSGcwQUdkZTI3WHlaNUY3OGxnOWs3WnhXamNnaGhWbUI4NjZjVWx1akZJNGc1QTNscWRYeHN2RUdLTkJldXViLVVSck9uZVA0enpyZTZFUWdnd1BUazhGRVdtUlZIN0xhQ0I2UDZabFVGYV9xUjZQUkdoX05YcDBWdEdVaG9wTGtvRGRMRVY2UlJpNERQdng4Y2FpZHlrQzVJ?oc=5",
-      "published": "2026-09-19T22:46:23Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "2026 Iran war | Oil, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
-      "summary": "2026 Iran war | Oil, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict britannica.com",
-      "source": "britannica.com",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
-      "published": "2026-09-20T05:00:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
       "title": "Iran Says Oil Blockade Will Continue Until Attacks End, Trump Threatens to Escalate Strikes",
       "summary": "Iran Says Oil Blockade Will Continue Until Attacks End, Trump Threatens to Escalate Strikes EnergyNow.com",
       "source": "EnergyNow.com",
@@ -166,20 +148,20 @@
       "impact": "med"
     },
     {
+      "title": "2026 Iran war | Oil, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
+      "summary": "2026 Iran war | Oil, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict Britannica",
+      "source": "Britannica",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
+      "published": "2026-09-20T05:00:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
       "title": "Trump signs Russia sanctions bill with 100% tariff threat for India, China",
       "summary": "Trump signs Russia sanctions bill with 100% tariff threat for India, China The American Bazaar",
       "source": "The American Bazaar",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWUZBMk5NVU1IQWVESXl4LVZPRlB1VDUxWXlDZ0lKc3JETmplQ25EdDBmTHRfWDBrbC1WNmgxUVFydlF3bnZnUFVCR0tEWmdKY1ZndnphbENjaXA4VjJ5eVdMWFNmeVYwSXUtbGdua29zWGd6VDZqNFZLcjZTeDBJdUZkTlZXdV9ZMmJzTUhma19Pb01LQlBiRUlLVGxHcVR5UDVyUFJEM1JsRFQ1?oc=5",
       "published": "2026-09-21T14:05:45Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Trump signs sweeping Russia sanctions over Ukraine war",
-      "summary": "Trump signs sweeping Russia sanctions over Ukraine war Times of Suriname",
-      "source": "Times of Suriname",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNS1lKYWFGcVNkOUVYOGxCZ0UtZWxPdHlaYkRhVGd6YkVkQXJ0ZFpvNkhkdDFTTnZxcXlQTDFqeXhqMFkyTHYtUzBsc3NZbEJGNUN6azdZUlRCWnNMek5Wa2xOMmY0b0RCck1MRjdVWUxoaFgtZXpDWmE1V1Y3MDhHZTUzdV9RNzZhT2VVSTRhSzdHU3Z1VUdr?oc=5",
-      "published": "2026-09-20T14:03:20Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -193,6 +175,15 @@
       "impact": "low"
     },
     {
+      "title": "Vessels trickle through Strait of Hormuz as Middle East conflict persists",
+      "summary": "Vessels trickle through Strait of Hormuz as Middle East conflict persists Aaj English TV",
+      "source": "Aaj English TV",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOamxrZ1NOajdRdVBod05DNHJMYlByc1JZS3M3VEZZWVl3X0NLclBWVEo0RVk2TEtWZHBTbmw1QkJ5NmdraWUxaTN5b2hBUWZNY3I2cVlzYlh5MmxTdXUwb2VQOWtrTGZNZms0MHpJZkstckhHdUVLVFdrQmdoYWVsV21rQmpjemMwNkZVbjBBcm1kaGVEWExXRXl2eDZ4WEZBM24zcDVJRHd6RUJUQ2toYQ?oc=5",
+      "published": "2026-09-21T03:52:22Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
       "title": "Trump Signs Russia Sanctions Bill, Clears Way For 100% Tariffs On India, China",
       "summary": "Trump Signs Russia Sanctions Bill, Clears Way For 100% Tariffs On India, China BW Businessworld",
       "source": "BW Businessworld",
@@ -202,11 +193,11 @@
       "impact": "low"
     },
     {
-      "title": "Live: US extends sanctions on Iran to 2031 as Trump says war to 'end soon'",
-      "summary": "Live: US extends sanctions on Iran to 2031 as Trump says war to 'end soon' Middle East Eye",
-      "source": "Middle East Eye",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcUhtaXdQRHFpNWFrMDJ6dHhhQWRCRk5Ya0htbk5VeGpsS1RhcERGN09hX1c3RWtDYnpqeE02OW5uSlg2ZkFoQ202T0xqVVBwR0k5NFpFZ3R6U0FjTnZ5QkoxcFRMWF96UzVqeE9zZFR3ZnE3b3BGSmJLS3IxQS1GbkVYeFVkcHVVYW5MT1lvTzZFUTlOclhMeGdaYUhuRVo2dGVUTDIta3hLaFhIOVNmanVnUlVLempSY0p1LXI2eXlRWGtWVW1Sb0VFUQ?oc=5",
-      "published": "2026-09-19T21:15:06Z",
+      "title": "Trump signs sweeping Russia sanctions over Ukraine war",
+      "summary": "Trump signs sweeping Russia sanctions over Ukraine war Times of Suriname",
+      "source": "Times of Suriname",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNS1lKYWFGcVNkOUVYOGxCZ0UtZWxPdHlaYkRhVGd6YkVkQXJ0ZFpvNkhkdDFTTnZxcXlQTDFqeXhqMFkyTHYtUzBsc3NZbEJGNUN6azdZUlRCWnNMek5Wa2xOMmY0b0RCck1MRjdVWUxoaFgtZXpDWmE1V1Y3MDhHZTUzdV9RNzZhT2VVSTRhSzdHU3Z1VUdr?oc=5",
+      "published": "2026-09-20T14:03:20Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -238,15 +229,6 @@
       "impact": "low"
     },
     {
-      "title": "Vessels trickle through Strait of Hormuz as Middle East conflict persists",
-      "summary": "Vessels trickle through Strait of Hormuz as Middle East conflict persists Aaj English TV",
-      "source": "Aaj English TV",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOamxrZ1NOajdRdVBod05DNHJMYlByc1JZS3M3VEZZWVl3X0NLclBWVEo0RVk2TEtWZHBTbmw1QkJ5NmdraWUxaTN5b2hBUWZNY3I2cVlzYlh5MmxTdXUwb2VQOWtrTGZNZms0MHpJZkstckhHdUVLVFdrQmdoYWVsV21rQmpjemMwNkZVbjBBcm1kaGVEWExXRXl2eDZ4WEZBM24zcDVJRHd6RUJUQ2toYQ?oc=5",
-      "published": "2026-09-21T03:52:22Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
       "title": "U.S. urges Americans to reconsider Middle East travel as Iran tensions rise",
       "summary": "U.S. urges Americans to reconsider Middle East travel as Iran tensions rise CNBC",
       "source": "CNBC",
@@ -256,31 +238,49 @@
       "impact": "med"
     },
     {
-      "title": "Three Tankers Damaged in Gulf as US-Iran Conflict Escalates",
-      "summary": "Three Tankers Damaged in Gulf as US-Iran Conflict Escalates EnergyNow.com",
-      "source": "EnergyNow.com",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQVRBMEZTU1ZkSU45YVJobzBpREJWc1E1bEV3Q2hkY2piREhRQkhCWlN2Z3NNRW80TDZwWGZkZ1RBYnVocEVuaDF1cElrZjctVmVCWFdZbnc0XzZoS0xRSjhpcGs1Um0wX2xBWmVHNGpuQjdub2FXbjFDcC1ibDVocEV4UFc3MzYybHFsTnZMYlJ1cFd5?oc=5",
-      "published": "2026-09-21T15:18:21Z",
+      "title": "Day 206 | Iran warns of \u2018painful\u2019 response if US launches new attack",
+      "summary": "Day 206 | Iran warns of \u2018painful\u2019 response if US launches new attack Roya News",
+      "source": "Roya News",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONEpXd2o4VVZSdk5MX1ZONFBYSnA0VWZlcHM0b1ktbDRhMnZNUzlhNG4zUE1CeVc4REFQVk5aU3M5SlZhd1IyQUxkRmwyelZXR0xUb3RybS1jTFRWYTRMcE1HRS1LeHFyR21vcUFRMFMwLTYzTHZCRkxsOTdVVzY0MU51RkN6Y3dqTHFVeWVwVmVjallSZzdSNTNuaWZWak5rMF9zRHo4c0tadDNlVWVTenBvbTAzVjVWUmZzYg?oc=5",
+      "published": "2026-09-22T00:58:35Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Iran\u2019s sanctions violations, illicit networks prolong conflict, place commercial operators, economies at risk",
+      "summary": "Iran\u2019s sanctions violations, illicit networks prolong conflict, place commercial operators, economies at risk ipdefenseforum.com",
+      "source": "ipdefenseforum.com",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPNW1zU2R5TDNKUmVhcEFjMHJ5NTV1V19aTmRKMFZLenpTdlF6bkcwTXhOSWZMUEpGX2JIcnp1VXZMVV9SNVZaYWRPUFd2ZDM1M2NXWWJ1Q2tjVFpvV2hkekxpRzAyWENab0FHQzY5UjJqQkFVMUpwMTZWa1hUSTFQeDFIRExsNzAza25ycjF6NVpJaE02cjUyRnRPb1hCbUl0UEU2ZU1GWWhDaWV4T1FxMHR6NDJNNjBLRUJyLUczRFAtWnM5ZHdwaU50dUdPaXhDdGxFLWVROTY?oc=5",
+      "published": "2026-09-21T18:16:36Z",
       "sentiment": "bullish",
       "impact": "med"
     },
     {
-      "title": "Opinion | 'Blackmail' Diplomacy: Why India Can't Be A Pawn In US' War On Russia",
-      "summary": "Opinion | 'Blackmail' Diplomacy: Why India Can't Be A Pawn In US' War On Russia NDTV",
-      "source": "NDTV",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPWXFkR1dGNXF5VjNGOVRJREJYdWJILWJicjhsaFV2dkc1NHBXTWlBWG5FZTdIUGt5T2ZVQmtNOUc4V3dfSEhDRi10Ml9nVmZVb2Vaa28xNUtZRnZNV0lnQkVjWmh5RkgydzU1LTlua2tvcVhoZnVsWFM5amxta3FJWGFDeWRuTHByQ1FmR1MwYw?oc=5",
-      "published": "2026-09-21T10:05:25Z",
+      "title": "TEMPORARY DEAL \u2013 US Eases Russia Oil Sanctions to Tame Price Surge, Riling European Allies",
+      "summary": "TEMPORARY DEAL \u2013 US Eases Russia Oil Sanctions to Tame Price Surge, Riling European Allies EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQejE2ckRVdEhMTlM1dExrQlhHTjIwdk11M24waFF4VV9oSTNxRVBFMGNwYW9fTVhLcXVsd21VaUR0QVFackNpWVluc1I0MWZSdmZpTWpTM0JWTFNSZVh0d3pZYTNRMWRGeEQ4amlsM29kb01KZC01WHJnYW0waTlPbHZ3TDdnV21od0k5QVB0Q1hWSGZvbXc1YUtlNl8xZXJQandFS2otQ3dzMDdsUzRvTGZ3MzJVYUxwRFE?oc=5",
+      "published": "2026-09-20T20:49:06Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "Trump At UNGA: Will Use New Tariff Powers If Needed To End Ukraine War",
+      "summary": "Trump At UNGA: Will Use New Tariff Powers If Needed To End Ukraine War ABP Live English",
+      "source": "ABP Live English",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYmtwTElwcV8tRGFISVExSmFBVUFBbzRLR0Nfai0xaUpvV2lIQmdhbXhpaFAwZ1JlTUEySl9Da3F4QzlTRmZKQ0MycWZWZ1ZXTkcxV09uYVJ3bnhJbmZ1RG1ROGNkcGhBclFBd1BJLUFlSXFIZnRIYkM1NkgtdVE2Qms1SDVfZE1DWlpNdU5UYjhJMFVaQXVUYW9Ub0dNYWxhZWdwYWNSVUhXRjlBT1dKWnRESQ?oc=5",
+      "published": "2026-09-22T16:38:02Z",
       "sentiment": "neutral",
       "impact": "low"
     },
     {
-      "title": "US-Iran war: Tanker hit in Hormuz as oil falls towards $100 \u2014 what UAE residents need to know tonight",
-      "summary": "US-Iran war: Tanker hit in Hormuz as oil falls towards $100 \u2014 what UAE residents need to know tonight Gulf News",
-      "source": "Gulf News",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNczlBd19qbnZtUDJ2LU9ndEp2T3VsTFJ3bWF5WDB3bV9UNkpYOXhaQ2FfTGZGajcwT2JfVzdwUjZkUjNjSm96Yl9mZWhlSnF2cGJHMzBKRDcwZWlGbEtuVEtFa3ppZjBhalVjZm96c21hSmE2Sk82SWc0aW5GSkp6M0o1bkxyeHdEaFpMV1ZOVFB1VVY1a3FMeVk1S2luRUlaVVZBNWFHTVBta2FCTm9DWGRBQTBuMFhUU05EbFI0T0QxZVFlNkoxdHB2bkdQdkE?oc=5",
-      "published": "2026-09-21T14:09:29Z",
-      "sentiment": "bearish",
-      "impact": "med"
+      "title": "US Senate Approves Tough Sanctions Targeting Russia and Iran with Backing from Zelensky",
+      "summary": "US Senate Approves Tough Sanctions Targeting Russia and Iran with Backing from Zelensky 112.ua",
+      "source": "112.ua",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTndqdGM2VHVfcFpwZVJTZHVsVEhmQlBSZEpTN25jR3h4RzY3SlBJczRMYUg1R3p1dmFHT1phUTJsMkJHSjV3LXNad0Q2c2xHZHQ0VnNNYzE0aHFWSzBMejlTOXR4ZFlWeXY4aTFiSHMwM1c5OWdBdjFUeUpaSnE0Tm9BZmpDX0tMaVdjOF9ZdmhnWVhELUhaRHpNYTk3dTQ0MUZvanAyZS1YUlY2SnFydEw2dFo4dXdw?oc=5",
+      "published": "2026-09-22T00:12:34Z",
+      "sentiment": "bullish",
+      "impact": "low"
     },
     {
       "title": "Iranian Oil Flows Through Strait of Hormuz Even as Gulf Neighbors\u2019 Exports Shut",
@@ -289,15 +289,6 @@
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVXRfbXZ1NlNBbHZhWXFvQmRjbDUxaHh2V21jN2JGSlZqQmo1NnBTSWRXUWEzSEVTWDN3S3lIRE5ObkRKbEZWdUxwLTQ1Umg5SnlMLWtXVUh0UldNZWJxRDU4bVRiUi1CZXBqRUhsaDVpMWhlN3Z5T2FEel83cmdMa3VvRXN0NHNsWGlXX2pCemZRQWVaZ3JrQ2xLZUQyb24wdUlQUUZIWWZackhieUE?oc=5",
       "published": "2026-09-22T02:39:21Z",
       "sentiment": "bearish",
-      "impact": "low"
-    },
-    {
-      "title": "As Trump and Zelenskyy talk about potential energy truce, Russia and Ukraine unleash new wave of strikes",
-      "summary": "As Trump and Zelenskyy talk about potential energy truce, Russia and Ukraine unleash new wave of strikes CBC",
-      "source": "CBC",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQQ0Z3U3k1eVR2VlN6clVzOG9LT2hwd3ZHS21aYjRENWpnX3lqNWVaUmZaclhKaDJvaEo4aE51N3pCV2EzTXZXYkhVOWZTQjB1aThJbUpmaGQyRFhseEhvUDQ3aGl1bnlNM210c1hmTDBmeXVKZ3lvZjdOb3UwSjNLSEgtWTJSWHhPdklCWmFXWGpqNFIxdy1fVFplenNNRE1namV6czNjRGk2VlZYVnhVSktXM3F6Um81bUZpQ05jc1JMbGhPSWtMV1gyRkZEUU1YeS1lQmMxTnJlVGc?oc=5",
-      "published": "2026-09-22T19:05:59Z",
-      "sentiment": "neutral",
       "impact": "low"
     },
     {
@@ -310,30 +301,21 @@
       "impact": "low"
     },
     {
-      "title": "Sanctions That Hit Buyers of Russian Oil: What Graham\u2019s Bill Changes for Russia, Ukraine, and Global Trade",
-      "summary": "Sanctions That Hit Buyers of Russian Oil: What Graham\u2019s Bill Changes for Russia, Ukraine, and Global Trade \u041c\u0435\u0436\u0430. \u041d\u043e\u0432\u0438\u043d\u0438 \u0423\u043a\u0440\u0430\u0457\u043d\u0438.",
-      "source": "\u041c\u0435\u0436\u0430. \u041d\u043e\u0432\u0438\u043d\u0438 \u0423\u043a\u0440\u0430\u0457\u043d\u0438.",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPWWJyU1FUUktXYlA3aFJVTmt4QkM0THhHeV9ZN1lfNjVQWkRYU2cwRk5rX1lYZUNOSTM1Wmk3b0R5bkpCMExXT0JLeFVMX0pQeENWSHdyaWE0ZWZzME11RHBTM0NMX3FOemw0VU45bVdSZFYwWVJXb21SVXBzX25kempfWjduOGZBZjF1QnJKbXJ5ajBjVzYtajEwUlg5dlRIYXB1VGUwbDkwWXRzWUJVdHJZRExCWS1ER1FHNlJzM1h3MkVDRjF2aGlRbHlrY0RHZmc5MlRpT0M0dHFlQWpN?oc=5",
-      "published": "2026-09-21T05:09:55Z",
+      "title": "Trump\u2019s New Russia Sanctions: What It Means And Can India Face 100% Tariffs",
+      "summary": "Trump\u2019s New Russia Sanctions: What It Means And Can India Face 100% Tariffs outlookindia.com",
+      "source": "outlookindia.com",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZmF1X3dmTnhmUlRyOFM5SHlGWU02XzRDOFM0ZmlZbU0yRFRLRHItY2VKVkVEYnVud1hTYlRNcGdYNHZWM2JnWGJQTUE4YjBDYkR0VFJGdWNyVWlsQkJHV2dNdVZoNzJ2ZmF3elhpRXBaQ29xeVVyNDByWHRLN1NwOUhkVTh0QjhhY2hmR0xiN3paemhGbkHSAaMBQVVfeXFMTUNYU2Q3MkNoZFpzRnlHYVExTzhUQjc4ekZfUXlHekFFRzBwV29UbVZESThJenkxckt5S1U3bnRxVmxZYWRsbHVHeFRtMzRpcEtyYTRYUmwxZWR0T3E4YnRxRnR0dFQ5V2xLMkNWdGx4QWJ2ZnVKZkM0dk1WZno3M2JSdGZ4dU1OaktIUGNPWjQwbGdBb2FMR1I2WUxnckxsQXdOMA?oc=5",
+      "published": "2026-09-20T11:05:08Z",
       "sentiment": "bullish",
       "impact": "low"
     },
     {
-      "title": "Iran\u2019s sanctions violations, illicit networks prolong conflict, place commercial operators, economies at risk",
-      "summary": "Iran\u2019s sanctions violations, illicit networks prolong conflict, place commercial operators, economies at risk Indo-Pacific Defense FORUM",
-      "source": "Indo-Pacific Defense FORUM",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPNW1zU2R5TDNKUmVhcEFjMHJ5NTV1V19aTmRKMFZLenpTdlF6bkcwTXhOSWZMUEpGX2JIcnp1VXZMVV9SNVZaYWRPUFd2ZDM1M2NXWWJ1Q2tjVFpvV2hkekxpRzAyWENab0FHQzY5UjJqQkFVMUpwMTZWa1hUSTFQeDFIRExsNzAza25ycjF6NVpJaE02cjUyRnRPb1hCbUl0UEU2ZU1GWWhDaWV4T1FxMHR6NDJNNjBLRUJyLUczRFAtWnM5ZHdwaU50dUdPaXhDdGxFLWVROTY?oc=5",
-      "published": "2026-09-21T18:16:36Z",
-      "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "China says it opposes \u2018illegal\u2019 US sanctions on Iranian airlines",
-      "summary": "China says it opposes \u2018illegal\u2019 US sanctions on Iranian airlines straitstimes.com",
-      "source": "straitstimes.com",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZGh6WHRiNUMtVFZIRTFUVVVyWWpEVHJSTnhsYWVvQm5KaWFCSVA0bjdlcFl3SW1jazEwTWpSY3V5UHdJTFktTkpiSlJGQzM5d2c5dHN5QzQtZVNrV21Ob0txR1o0T2xBbU9JNDZ2NzZfanpOdjNGSzg4VFpwRE5fbDhRejRYd3FEMmxnQXRwdkJ3WWZMZlJ2T3pVa1hjQi1OSXQtQjJn?oc=5",
-      "published": "2026-09-22T09:00:00Z",
-      "sentiment": "bullish",
+      "title": "Trump Warns Iran at UN, Deal or Face \u2018Hell\u2019 as War Enters New Phase",
+      "summary": "Trump Warns Iran at UN, Deal or Face \u2018Hell\u2019 as War Enters New Phase Business Upturn",
+      "source": "Business Upturn",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUkVIcUxmclV5QUpGVUU4OXd2Z21nWGRqYVUwUHB3cXM4aXRaTFV2NW1YalFoei1NSWpuUjFDQnlGM3NUMzFROUpGTGhzS0YtenQ2ZU5Ka084dnZweXFzOHJNM1ExWXNKN1ZXbnhidEJuRDY0ZUZqSlJzdTF1R3M1aVdRUFBBV2o2NTVjYVhqbFhLX1NoZzlKS0ctNElIN1hDYml6WmhTS1B0UDZDWC1jTEVkNklpcjdsSFcxWXZkcElvbm5qWkE?oc=5",
+      "published": "2026-09-22T16:59:40Z",
+      "sentiment": "neutral",
       "impact": "low"
     },
     {
@@ -346,21 +328,39 @@
       "impact": "low"
     },
     {
-      "title": "Trump says Ukrainian strikes have put numerous Russian refineries out of commission",
-      "summary": "Trump says Ukrainian strikes have put numerous Russian refineries out of commission The New Voice of Ukraine",
-      "source": "The New Voice of Ukraine",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOOUdIMDRCRC1qUkphU3FzR1RpLWJUSElfdUdvZk03OF93SjJxNHg1V1BoRzlERDZnRUFoNU9rMnhVa05pYnQ0YzZvbTh3dTF3Mk9DRVc5eVE5d25Cc3RVWnhYbjY3aEZ0TkcwRUpIOWxFS01FbjJtbjdZOTg0RVJad1B4VmlIbFhPcTlKWW45WWlXNHk5NG43THN1Qk44Q2VBVVZvVzU4OTI2bjFBcGI5aHVyWFNCRUdjQmRnUWh5ONIBuAFBVV95cUxOSkhWWG95Y2VWVXdyTXRhdWp3Sm5mZlBNZGpmc2Y2OUNzR1hGYUJ5bV9NQkJadmh5cS1BZlNNWnFySUhkS1d6WGhNdzk0SGdMV2FNRWc5WVBRRkRpWFRtTWMxaHRZbEplWGxpa1EzMENOU3MzU0gyS1V2SnBZaHdlVE1SLXFNdVN4ek9hVzRZWmhBVkw3SWhESFloT21yM0pVUVVOc1hHWGp4UEdzdmtFUV90b0kxU1VF?oc=5",
-      "published": "2026-09-21T14:31:00Z",
-      "sentiment": "neutral",
+      "title": "China says it opposes \u2018illegal\u2019 US sanctions on Iranian airlines",
+      "summary": "China says it opposes \u2018illegal\u2019 US sanctions on Iranian airlines The Straits Times",
+      "source": "The Straits Times",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZGh6WHRiNUMtVFZIRTFUVVVyWWpEVHJSTnhsYWVvQm5KaWFCSVA0bjdlcFl3SW1jazEwTWpSY3V5UHdJTFktTkpiSlJGQzM5d2c5dHN5QzQtZVNrV21Ob0txR1o0T2xBbU9JNDZ2NzZfanpOdjNGSzg4VFpwRE5fbDhRejRYd3FEMmxnQXRwdkJ3WWZMZlJ2T3pVa1hjQi1OSXQtQjJn?oc=5",
+      "published": "2026-09-22T09:00:00Z",
+      "sentiment": "bullish",
       "impact": "low"
     },
     {
-      "title": "Trump At UNGA: Will Use New Tariff Powers If Needed To End Ukraine War",
-      "summary": "Trump At UNGA: Will Use New Tariff Powers If Needed To End Ukraine War ABP Live English",
-      "source": "ABP Live English",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYmtwTElwcV8tRGFISVExSmFBVUFBbzRLR0Nfai0xaUpvV2lIQmdhbXhpaFAwZ1JlTUEySl9Da3F4QzlTRmZKQ0MycWZWZ1ZXTkcxV09uYVJ3bnhJbmZ1RG1ROGNkcGhBclFBd1BJLUFlSXFIZnRIYkM1NkgtdVE2Qms1SDVfZE1DWlpNdU5UYjhJMFVaQXVUYW9Ub0dNYWxhZWdwYWNSVUhXRjlBT1dKWnRESQ?oc=5",
-      "published": "2026-09-22T16:38:02Z",
-      "sentiment": "neutral",
+      "title": "\"Infernal Sanctions\" Named After Graham: Trump\u2019s Tariff Club and Its Real Cost for Russia",
+      "summary": "\"Infernal Sanctions\" Named After Graham: Trump\u2019s Tariff Club and Its Real Cost for Russia inkorr.com",
+      "source": "inkorr.com",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTkVXZWxkZTcwVzdfdGlaWGxaazFMZmF2TWxfUzFINHd6WkF6ckJMbFRwWUs5M0dQZ1NqWHktanA5Vnh5Rld0Ujgtd29tMXFvOEZ4ZmlkTzlpTXloNm5kRExLYzN1R3o0aTNVQTJUSDJpemVjTDZfeVhEdWNZQVJqdjVGQzIwSm9lV3lBYk9JWEJJRWxVS2w3QnMxcWk5dzk5NXQzcl9uNmR4UdIBrwFBVV95cUxQamNHOVBRdDZqT1VVRnYxanRTSmVKVlR5UDRaaUdUNGZVbm9qdC00WmtCaVJOdXhoa3kybF9iVHdHckNNQ1RHd0FnQ3N3R1FrRE10Z2xuWjA4SUg5eW1jTXkwd0lTNGppZ04tUzFGYTVqZ3pGMG1FN2VadjhDajhGNkNtdXF2eHQtV3plUUl6TldMQmxBbDFTNVk2VlFZMzZEdnJCWG5jOFF3MVFpanNN?oc=5",
+      "published": "2026-09-21T11:22:08Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Zelenskyy hopes for Graham bill sanctions if Putin refuses to de-escalate",
+      "summary": "Zelenskyy hopes for Graham bill sanctions if Putin refuses to de-escalate RBC-Ukraine",
+      "source": "RBC-Ukraine",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPM09TeW9vTmhsVzU5ZGpCUmNfRkxfQzBuei1tSk53T3dIX1NiMXZGLXZNUEpJeWpIWFhIdkdDMDZRSzZKV3p0R1M5Y2czOUdGTjdldm1TMjA4QkZmZVl5a1hZNlpHN1NHS3gyN3MyeW8wdUtuVUNsdGdJXzRwNXdHM3pkQXdqTko5RVpnRmwzdW53ZG8?oc=5",
+      "published": "2026-09-22T20:30:34Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "Trump signs Russia sanctions law, India faces 100% tariff risk",
+      "summary": "Trump signs Russia sanctions law, India faces 100% tariff risk pressreader.com",
+      "source": "pressreader.com",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQOTExS3Rxakx0OXdOdkRiMWdIRU1qaGY5ckRLNEt1NEtHSExYVWNxMkgzY3V1MEJyOUJhR3cwd3Q1cG8yeTVsOFF4ZlN1djBZRFFseXIwbHNzN1NpeUtGRkRXMjktMGE4ZVJNVmxLVUxtYVhNaHB3cHNDY0dKMzZQY244WWpUeXR4?oc=5",
+      "published": "2026-09-20T09:14:36Z",
+      "sentiment": "bullish",
       "impact": "low"
     }
   ]
