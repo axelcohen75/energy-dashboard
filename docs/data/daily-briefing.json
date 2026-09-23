@@ -1,44 +1,46 @@
 {
- "generated": "2026-09-23T17:42:02.603992+00:00",
+ "generated": "2026-09-23T23:30:09.763929+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "A sharp reversal dominated crude markets Wednesday, with WTI shedding 3.26% to $91.50/bbl and heating oil cratering 7.17% to $4.5853/gal \u2014 the week's accumulated losses now stand at 10.66% and 12.56% respectively, unwinding much of September's geopolitical risk premium. The move lower comes despite an ongoing US-Iran conflict that has seen tanker strikes in the Strait of Hormuz and Gulf neighbors' export shutdowns. The sell-off appears driven by a confluence of bearish fundamentals: the EIA reported a 3-million-barrel crude build for the week ending September 18, while Goldman Sachs flagged that elevated prices near $100 Brent are suppressing Chinese buying. A temporary US easing of Russia sanctions and new Senate legislation targeting both Russia and Iran add further uncertainty. Asian crude imports hitting post-war highs provides a partial demand offset, but the market's direction today is unambiguously supply-bearish.",
+   "summary": "Crude sold off sharply across the board on Wednesday despite an active geopolitical backdrop: WTI dropped 2.55% to $92.19/bbl, Brent fell 1.37% to $97.89, while heating oil cratered 5.81% and RBOB shed 4.10%. The EIA's reported 3-million-barrel crude build drove the bearish session, overwhelming lingering Hormuz risk premium. Headlines from over the weekend flagged three tankers damaged in the Gulf and Iran maintaining its oil blockade, yet Gulf neighbors' exports remain partially shut while Iranian crude reportedly continues to flow. On the sanctions front, Trump's Russia legislation threatens 100% tariffs on buyers of Russian oil\u2014putting India and China's combined ~2.1 million bpd imports under pressure\u2014a theme expected to headline the September 24 Trump-Xi White House summit. Options markets now price a 77% probability of an OPEC cut at the next meeting.",
    "drivers": [
-    "EIA crude build of 3M barrels and distillate stocks 12% below average weighed on the complex, reinforcing near-term demand-supply imbalance concerns",
-    "Goldman Sachs: $100 Brent constraining Chinese crude purchases, capping upside; Asia imports hit highest since war began but failed to lift prices",
-    "US temporarily easing Russia oil sanctions to tame price surge alongside new Senate sanctions legislation creates conflicting geopolitical signals around supply"
+    "Bearish EIA print: 3M barrel crude build pressured flat prices despite distillate stocks running 12% below seasonal average",
+    "Hormuz crisis partially priced in: tanker strikes and Iran's blockade threat offset by evidence Iranian barrels continue to move, capping upside",
+    "Russia sanctions/tariff legislation and China's 80% grip on Iranian oil set to dominate Trump-Xi summit agenda, adding geopolitical tail-risk"
    ],
    "headlineCount": 12,
    "sources": [
-    "112.ua",
-    "Britannica",
     "EnergyNow.com",
     "Gulf News",
-    "The Sunday Guardian"
+    "The Daily Jagran",
+    "The Sunday Guardian",
+    "britannica.com",
+    "\u041c\u0435\u0436\u0430. \u041d\u043e\u0432\u0438\u043d\u0438 \u0423\u043a\u0440\u0430\u0457\u043d\u0438."
    ]
   },
   "gas": {
-   "summary": "Henry Hub surged 6.07% on the day to $3.144/MMBtu, extending a strong weekly (+8.79%) and monthly (+13.05%) trend that suggests tightening US domestic supply dynamics, likely amplified by broader energy market volatility stemming from the Gulf conflict and its knock-on effects on LNG demand expectations. TTF was comparatively quiet, edging up just 0.78% to \u20ac73.915/MWh. On the supply side, TotalEnergies announced an investment decision on the Ima offshore gas field in Nigeria to boost Nigeria LNG output \u2014 a positive longer-term signal for global LNG supply, though not a near-term market mover. News flow for this sector was thin today; the Henry Hub price action is the primary story.",
+   "summary": "Henry Hub surged 6.95% on the day to $3.171/MMBtu, extending a strong weekly (+9.69%) and monthly (+13.98%) run, as the Hormuz crisis reshapes global LNG supply expectations. A dedicated analysis piece today warned that roughly 20% of global LNG supply must now be treated as interruptible following nearly seven months of Hormuz disruption\u2014a structural shift that is rerating prompt gas. TTF was comparatively muted, adding just 0.78% to \u20ac73.915/MWh after last week's 5.27% pullback, suggesting European markets see less direct spot tightness for now. TotalEnergies' decision to develop the Ima offshore gas field in Nigeria to boost Nigeria LNG supply represents a supply-side response at the margin, but new volumes are a multi-year story. News flow for gas beyond the Hormuz LNG angle is thin today.",
    "drivers": [
-    "Henry Hub up 6.07% on the day, building on a strong monthly trend of +13.05%, pointing to tightening US domestic balances",
-    "TotalEnergies FID on Nigeria's Ima gas field to expand Nigeria LNG capacity \u2014 bullish for longer-term Atlantic Basin LNG supply",
-    "TTF relatively stable at \u20ac73.915/MWh; European gas market decoupling somewhat from the US move, with the weekly trend still negative (-5.27%)"
+    "Hormuz LNG disruption risk: ~20% of global LNG supply now viewed as interruptible, driving Henry Hub sharply higher",
+    "TotalEnergies greenlights Nigeria Ima gas field development to expand NLNG capacity\u2014bullish longer-term supply signal",
+    "TTF lagging HH rally, reflecting European market's relatively contained near-term spot exposure to Hormuz vs. Asian LNG buyers"
    ],
-   "headlineCount": 2,
+   "headlineCount": 5,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon allowances dipped modestly, -0.87% on the day to $81.725/EUA, though the instrument remains well-supported on both a weekly (+0.72%) and monthly (+4.11%) basis. TTF's slight uptick today (+0.78%) offers marginal upward cost pressure on gas-fired power generation, but the broader EUA market appears rangebound. Dedicated power and carbon headlines were sparse today. A carbon capture startup announced CO2 offtake deals with three unnamed US oil producers, noting that federal incentive cuts and regulatory uncertainty are pushing firms toward private commercial arrangements rather than government-supported schemes \u2014 a structural shift worth monitoring for US carbon market development. Geopolitical noise from UNGA (Trump tariff threats) and the India-US Russia sanctions dialogue remained peripheral to EUA pricing.",
+   "summary": "EU Carbon EUAs edged up just 0.08% to $82.505/EUA, consolidating a solid monthly gain of 5.10% while TTF ticked modestly higher. News flow directly relevant to European power and carbon is thin today. On the technology side, China broke ground on a hybrid facility using supercritical CO2 as a working fluid alongside molten-salt thermal storage\u2014notable for long-run decarbonization trends but with no near-term price impact. A climate startup disclosed CO2 capture agreements with three unnamed U.S. oil producers, signaling that private-sector carbon capture deal-making is filling the void left by reduced U.S. federal incentives. Geopolitical noise around Russian sanctions and Ukraine war diplomacy (Jaishankar-Rubio talks in New York) provides background macro risk but has no direct read-through to EUA pricing today.",
    "drivers": [
-    "EUA slips 0.87% to $81.725 but monthly trend remains constructive at +4.11%; no single catalyst driving today's move",
-    "Carbon capture startup pivots to private CO2 deals with US oil producers amid federal incentive cuts, signalling structural shift in US voluntary carbon markets",
-    "TTF marginal daily gain (+0.78%) provides modest upward pressure on European gas-fired power costs; broader geopolitical headlines had limited direct EUA impact today"
+    "EUA market broadly stable; monthly uptrend intact at +5.10% but today's session nearly flat with limited fresh catalysts",
+    "Private carbon capture deal flow accelerating as U.S. federal incentives recede, with a startup signing agreements with three oil producers",
+    "China's supercritical CO2 power plant groundbreaking highlights emerging low-carbon technology but is a long-dated, not near-term, market factor"
    ],
-   "headlineCount": 3,
+   "headlineCount": 5,
    "sources": [
-    "The Tribune",
-    "news.abplive.com"
+    "ABP Live English",
+    "The Sunday Guardian",
+    "The Tribune"
    ]
   }
  }
