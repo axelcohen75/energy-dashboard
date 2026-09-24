@@ -1,45 +1,45 @@
 {
- "generated": "2026-09-24T17:45:19.955850+00:00",
+ "generated": "2026-09-24T23:59:00.446433+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude staged a sharp intraday rally \u2014 Brent +3.26% to $106.44 and WTI +2.85% to $94.81 \u2014 driven by persistent Hormuz supply anxiety after Iran signalled its blockade continues until US/Israeli strikes cease. Saudi Arabia's reported sale of nearly 100 million barrels to Asian buyers via Hormuz and Vitol's acquisition of 25 million barrels of discounted Iraqi crude underscored frantic physical market activity. Offsetting factors capped upside: a temporary US easing of Russia sanctions to dampen the price surge and early peace-dialogue signals. The WTI/Brent spread widened sharply, consistent with Russia's Vostok Arctic project commencing commercial exports. RBOB fell 5.35% and Heating Oil dropped 3.29%, suggesting distillate demand concerns and potential US export-restriction speculation. The week-on-week WTI loss of nearly 7% reflects high volatility around geopolitical headline risk.",
+   "summary": "Crude markets logged a sharply bifurcated session on 24-Sep. Brent surged 2.90% to $106.07/bbl and WTI gained 1.95% to $93.96/bbl, both lifted by the ongoing Iran-driven Hormuz disruption: Saudi Arabia has routed roughly 100 million barrels to Asian buyers via the strait since last week, while Iran's blockade conditions remain unresolved and Trump has threatened further escalation. US sanctions on Iranian airlines added to the geopolitical premium. Meanwhile, distillate products reversed violently \u2014 RBOB collapsed 8.17% and Heating Oil fell 5.36% \u2014 suggesting demand-destruction or product-specific repositioning. On the supply side, Russia's Rosneft began commercial exports from the Vostok Arctic project, though new US tariff threats targeting the 2.1 million bpd of Russian crude flowing to India and China cloud the outlet. Soaring freight costs, particularly for Japanese importers where freight now represents roughly one-fifth of cargo cost, are compressing refiner margins globally.",
    "drivers": [
-    "Iran-Hormuz blockade persists, keeping Middle East supply risk elevated and supporting Brent above $106",
-    "Russia Vostok Arctic project begins exports; US temporarily eases Russia sanctions, adding incremental supply and tempering the rally",
-    "Indian refiners weighing cuts to Russian crude purchases amid 100% US tariff threat on 2.1 million bpd of Russian imports, reshaping trade flows"
+    "Iran's Hormuz blockade and conditions for resumption keeping Brent/WTI bid; Saudi rerouting adds freight cost pressure",
+    "Russia's Vostok Arctic project starts commercial exports, but US 100% tariff threat on Russian crude buyers (India, China) clouds demand outlook",
+    "Sharp crack spread collapse \u2014 RBOB -8.17%, HO -5.36% \u2014 diverging steeply from crude gains, signalling product-level demand concerns"
    ],
    "headlineCount": 12,
    "sources": [
     "Britannica",
-    "EnergyNow.com",
-    "Livemint",
-    "The New Voice of Ukraine",
-    "The Sunday Guardian"
+    "The Sunday Guardian",
+    "Tribune Online",
+    "UA.NEWS",
+    "energynow.com"
    ]
   },
   "gas": {
-   "summary": "Natural gas prices surged across both US and European benchmarks today. Henry Hub jumped 11.35% to $3.368/MMBtu \u2014 its strongest single-day move in recent memory \u2014 extending a 21.5% monthly rally as Hormuz LNG disruptions ripple into global supply chains. TTF climbed 4.58% to \u20ac75.305/MWh, with European prices gapping higher at Amsterdam open on the continued US-Iran standoff. The geopolitical backdrop is accelerating longer-term supply diversification bets: the US government is backing Argentina's first LNG export project with up to $6 billion, and South Korea committed $22.3 billion to a Texas gas project. Southeast Asian nations continue building gas-fired power capacity despite the price shock, while Indian refiners are lifting LPG output nearly 20% to offset Hormuz-choked imports.",
+   "summary": "Henry Hub surged 8.47% on the day to $3.28/MMBtu, extending a strong 13% weekly and 18% monthly rally. TTF added 4.53% to \u20ac75.27/MWh, though it remains marginally softer on the week. The headline-driven macro backdrop \u2014 Hormuz disruption tightening global energy supply \u2014 is clearly spilling into gas sentiment. South Korea's $22.3 billion commitment to Texas LNG infrastructure underscores long-term demand conviction from North Asian buyers. Separately, China flagging potential cuts to fuel exports in October due to plunging domestic inventories could further tighten global energy balances. Note that dedicated gas-specific fundamental headlines today are thin; the bulk of the price move appears to reflect broader energy risk premium rather than gas-market-specific supply or weather news.",
    "drivers": [
-    "Prolonged Hormuz standoff disrupting LNG flows, pushing Henry Hub and TTF sharply higher on supply tightness fears",
-    "US backing $6bn Argentina LNG loan and South Korea's $22.3bn Texas gas investment signal accelerated long-term supply diversification away from Gulf routes",
-    "China risk of cutting fuel exports in October and potential US diesel export ban flagged by Morgan Stanley as additional upside catalysts for global gas and fuel prices"
+    "Hormuz-driven energy risk premium lifting all fuel complexes; Henry Hub +8.47% on the day",
+    "South Korea commits $22.3bn to Texas LNG, reinforcing robust long-term Asian demand for US gas exports",
+    "China signalling October fuel export cuts amid depleted domestic inventories, tightening global balances"
    ],
-   "headlineCount": 8,
+   "headlineCount": 3,
    "sources": []
   },
   "power": {
-   "summary": "EU Carbon EUAs were essentially flat on the day at $82.46 (-0.05%), though the weekly gain of 2.4% and monthly gain of 3.65% reflect steady underlying support. The dominant power-sector story is the demand-side response to record European fuel prices: a headline today noted that soaring gasoline and diesel costs are accelerating EV adoption in Europe at a pace policymakers had not achieved through regulation alone, a structural trend that could reshape the power load mix over time. On the generation side, Southeast Asia continues to build gas-fired capacity despite the Hormuz-driven LNG price shock, suggesting carbon-intensive power expansion in that region. EU carbon price action is relatively thin in today's feed \u2014 the TTF gas spike at +4.58% is the clearest near-term cost input for European power generators.",
+   "summary": "EU carbon (EUA) edged down 0.95% to $81.73/EUA, a modest pullback against a backdrop of TTF gaining 4.53% to \u20ac75.27/MWh \u2014 higher gas costs typically support EUA demand as gas-to-coal switching diminishes, so today's mild EUA softness is notable but not decisive given the 1-month trend of +2.72%. The standout structural story is Italy's Senate passing legislation to re-enter nuclear power after a 40-year absence, a long-term bearish signal for both gas burn and EUA demand in Italy's power mix. On the demand side, record European fuel prices are being credited with accelerating EV adoption in ways that years of policy could not achieve, pointing to gradual erosion of transport-sector fossil demand. UK sanctions on Russia's Transneft add further friction to energy supply chains across Europe.",
    "drivers": [
-    "Record European fuel prices driving a surge in EV sales, accelerating electrification of transport demand and shifting the power load profile",
-    "TTF gas +4.58% on the day raises marginal generation costs for European gas-fired power plants, providing indirect support to carbon prices",
-    "Southeast Asia continuing gas-plant construction despite Hormuz LNG price shock points to sustained carbon-intensive power capacity growth in the region"
+    "Italy's Senate approves nuclear re-entry after 40 years \u2014 structurally bearish for long-term Italian gas burn and EUA demand",
+    "TTF +4.53% on the day pressures power generation economics; EUA slips modestly despite higher gas, suggesting muted switching signal",
+    "Record European fuel prices driving EV sales surge, accelerating structural decline in transport fossil demand"
    ],
    "headlineCount": 5,
    "sources": [
-    "The Sunday Guardian",
+    "ABP Live English",
     "The Tribune",
-    "news.abplive.com"
+    "ddnews.gov.in"
    ]
   }
  }
