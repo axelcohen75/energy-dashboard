@@ -1,13 +1,13 @@
 {
- "generated": "2026-09-25T17:46:05.056944+00:00",
+ "generated": "2026-09-25T23:58:07.487398+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets whipsawed violently on Friday, with Brent shedding 8.85% to $97.17/bbl and WTI falling 2.54% to $92.20/bbl, widening the Brent-WTI spread to roughly $12 \u2014 a dislocation driven by soaring freight costs and Hormuz-related supply fears hitting waterborne Brent grades harder. RBOB gasoline led the selloff with a brutal 10.85% drop, while heating oil fell 6.33%. The catalyst for the late-session giveback was a reported Iranian proposal to reopen the Strait of Hormuz within seven days if the US meets conditions, easing near-term blockade fears. Offsetting that relief: Iran's oil blockade remains active, Saudi Aramco is still recovering from pipeline attacks, and Trump's threat to escalate strikes adds tail risk. The US temporarily easing Russia oil sanctions to cap prices drew pushback from European allies. India confirmed it will continue diesel exports to ease the global fuel crunch.",
+   "summary": "A brutal session for crude saw Brent shed 8.56% to $97.47/bbl and WTI drop 2.29% to $92.44/bbl, opening a near-$12 Brent-WTI spread that headlines attribute to soaring freight costs and dislocated Atlantic Basin flows stemming from the ongoing Iran conflict. The Strait of Hormuz remains partially blockaded \u2014 Iran has stated the closure continues until attacks end \u2014 while Trump has threatened to escalate strikes. Some relief came from a reported temporary US easing of Russia oil sanctions, though European allies are reportedly furious. RBOB gasoline was the session's hardest hit, collapsing 10.32%, while heating oil fell 3.18% despite diesel crunch fears. Capitol Hill is pressing for tougher action against Chinese entities purchasing Iranian barrels, and Aramco's partial restart of its East-West pipeline provided only modest comfort. CME OPEC Watch prices a 77% chance of a cut at the next meeting.",
    "drivers": [
-    "Iran's conditional 7-day Hormuz reopening offer triggered a sharp price selloff, unwinding war-premium bids across crude and products",
-    "Brent-WTI spread blew out to ~$12 on elevated freight costs and supply disruption fears concentrated in waterborne Middle Eastern grades",
-    "Geopolitical cross-currents remain intense: US eases Russia sanctions temporarily, Trump threatens to escalate Iran strikes, and Saudi Aramco Petroline only partially restored after attacks"
+    "Strait of Hormuz blockade persists; Iran conditions reopening on cessation of attacks, keeping geopolitical premium in Brent but distorting WTI differentials via freight and rerouting costs",
+    "US temporarily eases Russia oil sanctions to cap price surge, angering European allies; Trump simultaneously threatens 100% tariffs on Indian and Chinese buyers of Russian crude",
+    "RBOB gasoline cratered 10.32% on the day; diesel crunch fears and Italy pushing refineries to boost output signal downstream stress across Atlantic markets"
    ],
    "headlineCount": 12,
    "sources": [
@@ -15,32 +15,30 @@
     "EnergyNow.com",
     "Livemint",
     "The Sunday Guardian",
-    "Tribune Online",
-    "freepressjournal.in"
+    "USA Herald",
+    "tribuneonlineng.com"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets pulled back on both sides of the Atlantic, with TTF falling 4.03% to \u20ac72.08/MWh and Henry Hub easing 2.37% to $3.218/MMBtu, though both remain sharply higher on a one-month basis \u2014 up 9.83% and 13.27% respectively. The TTF retreat was likely tied to the broader risk-off tone in energy following Hormuz diplomacy hopes, though the EU's Gas Coordination Group separately signalled supply remains stable despite low storage levels. The Netherlands publicly challenged the bloc's gas storage mandate, calling it fiscally burdensome after a \u20ac1.14 billion bill. On the supply side, Baker Hughes data showed the US oil and gas rig count rose this week, and BP is reportedly eyeing Devon Energy's Eagle Ford assets as CEO Meg O'Neill pivots the company back toward hydrocarbons.",
+   "summary": "Natural gas markets saw a modest pullback Friday, with Henry Hub slipping 1.40% to $3.251/MMBtu after an 11.64% weekly surge, while TTF fell 4.03% to \u20ac72.08/MWh, giving back some of its recent war-risk premium. On the supply side, Saudi Aramco's partial restoration of the East-West Petroline pipeline \u2014 knocked out less than two weeks ago \u2014 eased some Gulf supply anxiety. In Europe, the EU's Gas Coordination Group indicated supply remains stable despite low storage levels, helping cap TTF. A separate note highlighted that despite record Lower 48 heat over the summer, Henry Hub averaged only $2.93/MMBtu June\u2013August, underscoring structural oversupply limiting upside. Baker Hughes data showed a week-on-week rise in active US oil and gas rigs, pointing to a supply response beginning to take shape under elevated prices.",
    "drivers": [
-    "TTF and Henry Hub both retreated as Hormuz diplomatic progress reduced immediate supply-shock premia built in over the prior week",
-    "EU storage mandate under political pressure: Netherlands seeking to scrap the system after a $1.14 billion fiscal hit, even as the Gas Coordination Group downplays supply risk",
-    "US upstream activity picking up \u2014 Baker Hughes rig count rose this week, and BP is evaluating shale acquisitions, signalling longer-term supply confidence"
+    "Aramco's partial Petroline restart eases immediate Gulf gas and liquids supply fears, contributing to TTF's 4% daily pullback",
+    "EU Gas Coordination Group signals stable European supply despite low storage, tempering panic buying even as the Iran conflict lingers",
+    "Rising US rig count and evidence that summer heat failed to structurally lift Henry Hub suggest ample domestic supply; Henry Hub weekly gain of 11.6% may be running ahead of fundamentals"
    ],
    "headlineCount": 6,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon allowances (EUA) bucked the broader energy selloff, edging up 1.10% to $82.625/EUA, extending a steady one-month gain of 3.23%. The relative resilience of carbon pricing contrasts with sharply lower TTF gas \u2014 down 4.03% on the day \u2014 which in theory reduces the cost of gas-fired generation and can soften short-term EUA demand. However, geopolitical uncertainty and structural supply tightness appear to be supporting the carbon floor. In the broader power complex, India is weighing mandatory imported coal blending at domestic power plants after coal stocks at many facilities deteriorated due to logistics failures, a development that could lift seaborne thermal coal demand. The Netherlands' push to scrap EU gas storage targets and Trump's diesel export threat add further stress to European energy security heading into winter. Headline data for power generation prices themselves is limited today.",
+   "summary": "Power and carbon markets were relatively contained on Friday. EU EUAs edged up 0.90% to $82.46/EUA, extending a modest weekly and monthly grind higher, consistent with elevated gas prices feeding through to carbon costs in the power stack even as TTF eased on the day. Headline flow for the sector was thin on direct power market news; the most notable item was India weighing mandatory imported coal blending at power plants as domestic stocks deteriorate amid logistics issues \u2014 a potential demand signal for seaborne coal. Trump's threat to halt US diesel exports rattled UK markets and added a secondary supply-security concern for European power operators reliant on distillate backup generation. Nigeria's IEA membership alongside a six-year output high was noted but carries limited near-term power market read-through.",
    "drivers": [
-    "EUAs held firm at $82.63 despite a sharp TTF gas drop, suggesting structural carbon support is outweighing short-term fuel-switching signals",
-    "India considering mandatory imported coal blending at power plants amid crumbling domestic coal stocks \u2014 potential upside for seaborne thermal coal demand",
-    "European energy security under twin pressure: Netherlands challenging the EU gas storage mandate while Iran's Hormuz proposal keeps winter supply risk elevated"
+    "EUAs nudge higher (+0.90%) as elevated gas prices sustain carbon costs in the European power mix, even with TTF pulling back intraday",
+    "India weighing mandatory imported coal blending signals potential tightening of seaborne thermal coal supply with knock-on effects for Asian and European power fuel costs",
+    "Trump's threatened US diesel export halt puts UK and European backup power generation economics at risk, adding a supply-security layer to an already stressed continental energy picture"
    ],
-   "headlineCount": 7,
+   "headlineCount": 5,
    "sources": [
-    "Edp24",
-    "The Tribune",
-    "ctvnews.ca"
+    "tribuneindia.com"
    ]
   }
  }
