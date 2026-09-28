@@ -1,44 +1,45 @@
 {
- "generated": "2026-09-25T23:58:07.487398+00:00",
+ "generated": "2026-09-28T20:00:53.657263+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "A brutal session for crude saw Brent shed 8.56% to $97.47/bbl and WTI drop 2.29% to $92.44/bbl, opening a near-$12 Brent-WTI spread that headlines attribute to soaring freight costs and dislocated Atlantic Basin flows stemming from the ongoing Iran conflict. The Strait of Hormuz remains partially blockaded \u2014 Iran has stated the closure continues until attacks end \u2014 while Trump has threatened to escalate strikes. Some relief came from a reported temporary US easing of Russia oil sanctions, though European allies are reportedly furious. RBOB gasoline was the session's hardest hit, collapsing 10.32%, while heating oil fell 3.18% despite diesel crunch fears. Capitol Hill is pressing for tougher action against Chinese entities purchasing Iranian barrels, and Aramco's partial restart of its East-West pipeline provided only modest comfort. CME OPEC Watch prices a 77% chance of a cut at the next meeting.",
+   "summary": "A sharp divergence dominated the crude complex today: WTI held near flat (+0.36% to $92.73) while Brent cratered 6% to $98.06, compressing the Brent-WTI spread dramatically. Products were hit harder still, with RBOB off 6.76% and heating oil down 3.36%, suggesting demand-side concerns are cutting through the geopolitical premium. The backdrop remains acutely uncertain: Iran's 7-day Hormuz reopening plan has reportedly been rejected by Trump, Saudi Arabia's foreign minister is in Washington for emergency talks, and Ukraine struck Russian oil facilities overnight. Offsetting some upside pressure, the U.S. SPR hit its lowest level since 1982 at 284.6 million barrels. Russia's new decree blacking out export and refinery data further clouds supply visibility. CME options imply a 77% probability of an OPEC cut at the next meeting, reflecting market anxiety about demand.",
    "drivers": [
-    "Strait of Hormuz blockade persists; Iran conditions reopening on cessation of attacks, keeping geopolitical premium in Brent but distorting WTI differentials via freight and rerouting costs",
-    "US temporarily eases Russia oil sanctions to cap price surge, angering European allies; Trump simultaneously threatens 100% tariffs on Indian and Chinese buyers of Russian crude",
-    "RBOB gasoline cratered 10.32% on the day; diesel crunch fears and Italy pushing refineries to boost output signal downstream stress across Atlantic markets"
+    "Brent -6% on reports Trump rejected Iran's Hormuz reopening plan, injecting fresh ceasefire uncertainty into the market",
+    "U.S. SPR falls to a 44-year low of 284.6 mb, limiting the government's buffer against supply shocks",
+    "Russia imposes new secrecy decree on energy export data, compounding supply-side opacity as Ukraine strikes Russian oil facilities"
    ],
    "headlineCount": 12,
    "sources": [
+    "Arabian Business",
     "Britannica",
-    "EnergyNow.com",
-    "Livemint",
-    "The Sunday Guardian",
-    "USA Herald",
-    "tribuneonlineng.com"
+    "Business Today",
+    "Free Press Journal",
+    "India Today",
+    "The Kyiv Independent"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets saw a modest pullback Friday, with Henry Hub slipping 1.40% to $3.251/MMBtu after an 11.64% weekly surge, while TTF fell 4.03% to \u20ac72.08/MWh, giving back some of its recent war-risk premium. On the supply side, Saudi Aramco's partial restoration of the East-West Petroline pipeline \u2014 knocked out less than two weeks ago \u2014 eased some Gulf supply anxiety. In Europe, the EU's Gas Coordination Group indicated supply remains stable despite low storage levels, helping cap TTF. A separate note highlighted that despite record Lower 48 heat over the summer, Henry Hub averaged only $2.93/MMBtu June\u2013August, underscoring structural oversupply limiting upside. Baker Hughes data showed a week-on-week rise in active US oil and gas rigs, pointing to a supply response beginning to take shape under elevated prices.",
+   "summary": "Natural gas prices pulled back modestly on the day \u2014 Henry Hub -1.81% to $3.138/MMBtu and TTF -1.33% to \u20ac71.11/MWh \u2014 but both benchmarks remain well up on the month. The session's dominant structural story is QatarEnergy extending its LNG force majeure through end-November as Hormuz traffic remains constrained, effectively keeping a floor under European prices. High freight costs are diverting U.S. LNG cargoes toward Europe rather than Asia, providing some relief to European buyers while tightening the Atlantic basin. An Asian switch from gas to coal \u2014 partly responsible for Indonesia's coal exports falling 23% \u2014 is paradoxically tightening coal markets globally. Today's mild price decline looks corrective rather than trend-reversing given the persistent supply constraints.",
    "drivers": [
-    "Aramco's partial Petroline restart eases immediate Gulf gas and liquids supply fears, contributing to TTF's 4% daily pullback",
-    "EU Gas Coordination Group signals stable European supply despite low storage, tempering panic buying even as the Iran conflict lingers",
-    "Rising US rig count and evidence that summer heat failed to structurally lift Henry Hub suggest ample domestic supply; Henry Hub weekly gain of 11.6% may be running ahead of fundamentals"
+    "QatarEnergy extends LNG force majeure through end-November, keeping structural supply tightness in place for European and Asian buyers",
+    "High freight costs close the U.S.-Asia LNG arbitrage, redirecting more U.S. LNG to Europe and capping near-term European upside",
+    "Asian gas-to-coal switching tightens thermal coal markets but reduces near-term gas demand pressure in the region"
    ],
    "headlineCount": 6,
    "sources": []
   },
   "power": {
-   "summary": "Power and carbon markets were relatively contained on Friday. EU EUAs edged up 0.90% to $82.46/EUA, extending a modest weekly and monthly grind higher, consistent with elevated gas prices feeding through to carbon costs in the power stack even as TTF eased on the day. Headline flow for the sector was thin on direct power market news; the most notable item was India weighing mandatory imported coal blending at power plants as domestic stocks deteriorate amid logistics issues \u2014 a potential demand signal for seaborne coal. Trump's threat to halt US diesel exports rattled UK markets and added a secondary supply-security concern for European power operators reliant on distillate backup generation. Nigeria's IEA membership alongside a six-year output high was noted but carries limited near-term power market read-through.",
+   "summary": "Power and carbon markets were relatively quiet on price action today \u2014 EU EUAs slipped 0.84% to $81.93, holding within recent ranges and up ~5% on the month. The most notable headline was the UK National Energy System Operator flagging a 1.4 GW margin shortfall for Monday evening, a precautionary warning that underscores how thin reserve margins can become as the heating season approaches. The Trump-Xi summit delivered only a two-month trade truce extension, which markets received coolly and which offers little near-term relief to energy demand or supply-chain dynamics. Indonesia's coal export decline \u2014 driven by Asian buyers switching to coal from gas amid the Hormuz crisis \u2014 points to tightening traded coal availability that could eventually feed through to European power prices. Data for this sector was relatively limited today.",
    "drivers": [
-    "EUAs nudge higher (+0.90%) as elevated gas prices sustain carbon costs in the European power mix, even with TTF pulling back intraday",
-    "India weighing mandatory imported coal blending signals potential tightening of seaborne thermal coal supply with knock-on effects for Asian and European power fuel costs",
-    "Trump's threatened US diesel export halt puts UK and European backup power generation economics at risk, adding a supply-security layer to an already stressed continental energy picture"
+    "UK grid operator warns of a 1.4 GW margin shortfall Monday evening, highlighting thin reserve buffers heading into autumn",
+    "EU EUAs stable near $81.93, consolidating a ~5% monthly gain with no major fundamental catalyst to break the range today",
+    "Trump-Xi trade truce extension left flat by markets; no demand-side relief anticipated for near-term power or carbon fundamentals"
    ],
    "headlineCount": 5,
    "sources": [
-    "tribuneindia.com"
+    "Free Press Journal",
+    "India Today"
    ]
   }
  }
