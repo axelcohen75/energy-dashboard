@@ -1,14 +1,14 @@
 {
-  "updated": "2026-09-28T20:00:25Z",
+  "updated": "2026-09-29T00:15:36Z",
   "physical": [
     {
-      "title": "Indonesia's Coal Exports Sink 23% as Global Demand Heads for a Record",
-      "summary": "The world\u2019s biggest exporter of thermal coal, Indonesia, is not benefiting from tightening global coal markets amid an Asian switch to coal from gas due to the Middle East crisis choking LNG supply...",
+      "title": "Why Blocking U.S. Diesel Exports Could Make Fuel More Expensive",
+      "summary": "Talk of a possible ban on U.S. exports of diesel fuel to curb soaring prices at the pump could end up pushing all fuel prices higher, cutting refinery runs as storage fills up, analysts have warned...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indonesias-Coal-Exports-Sink-23-as-Global-Demand-Heads-for-a-Record.html",
-      "published": "2026-09-28T13:30:00Z",
+      "url": "https://oilprice.com/Energy/Energy-General/Why-Blocking-US-Diesel-Exports-Could-Make-Fuel-More-Expensive.html",
+      "published": "2026-09-28T23:00:00Z",
       "sentiment": "bullish",
-      "impact": "med"
+      "impact": "high"
     },
     {
       "title": "Russia Tightens Secrecy On Energy Exports",
@@ -17,15 +17,6 @@
       "url": "https://oilprice.com/Latest-Energy-News/World-News/Russia-Tightens-Secrecy-On-Energy-Exports.html",
       "published": "2026-09-28T17:30:00Z",
       "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "U.S. Strategic Petroleum Reserve Falls to Lowest Level Since 1982",
-      "summary": "Crude stocks in the U.S. Strategic Petroleum Reserve stood at 284.6 million barrels for the week ending September 18, according to the Energy Information Administration, down from 285.0 million the...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Strategic-Petroleum-Reserve-Falls-to-Lowest-Level-Since-1982.html",
-      "published": "2026-09-28T18:30:00Z",
-      "sentiment": "bearish",
       "impact": "med"
     },
     {
@@ -47,30 +38,12 @@
       "impact": "low"
     },
     {
-      "title": "Europe\u2019s Gas Forecasts Are Not an Energy Strategy",
-      "summary": "Energy models have an unusual talent. However chaotic the present may be, the future almost always becomes remarkably calm. Wars end. Shipping lanes reopen. LNG terminals work as planned. Winters r...",
+      "title": "U.S. Strategic Petroleum Reserve Falls to Lowest Level Since 1982",
+      "summary": "Crude stocks in the U.S. Strategic Petroleum Reserve stood at 284.6 million barrels for the week ending September 18, according to the Energy Information Administration, down from 285.0 million the...",
       "source": "",
-      "url": "https://oilprice.com/Energy/Natural-Gas/Europes-Gas-Forecasts-Are-Not-an-Energy-Strategy.html",
-      "published": "2026-09-28T19:00:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "UK Grid Operator Warns of Tight Power Margins",
-      "summary": "The UK power system faces a margin shortfall of 1.4 gigawatts (GW) on Monday evening local time, the National Energy System Operator said in a routine precautionary notice. During the spring and th...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/UK-Grid-Operator-Warns-of-Tight-Power-Margins.html",
-      "published": "2026-09-28T12:30:00Z",
-      "sentiment": "neutral",
-      "impact": "med"
-    },
-    {
-      "title": "European Gas Prices Rally on U.S.-Iran Stalemate",
-      "summary": "Europe\u2019s benchmark natural gas prices rose by 2% in early trade in Amsterdam on Monday, as the United States and Iran are again locked in a stalemate over negotiations and conditions for reopening ...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/European-Gas-Prices-Rally-on-US-Iran-Stalemate.html",
-      "published": "2026-09-28T11:30:00Z",
-      "sentiment": "bullish",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Strategic-Petroleum-Reserve-Falls-to-Lowest-Level-Since-1982.html",
+      "published": "2026-09-28T18:30:00Z",
+      "sentiment": "bearish",
       "impact": "med"
     },
     {
@@ -83,21 +56,48 @@
       "impact": "low"
     },
     {
+      "title": "Europe\u2019s Gas Forecasts Are Not an Energy Strategy",
+      "summary": "Energy models have an unusual talent. However chaotic the present may be, the future almost always becomes remarkably calm. Wars end. Shipping lanes reopen. LNG terminals work as planned. Winters r...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Natural-Gas/Europes-Gas-Forecasts-Are-Not-an-Energy-Strategy.html",
+      "published": "2026-09-28T19:00:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "Two-Month Trade Truce Extension Leaves Markets Cold After Trump-Xi Summit",
+      "summary": "Donald Trump gave Xi Jinping the full state-visit treatment in Washington, but markets were more interested in what the two leaders did not deliver. After three days of ceremony, an unusually warm ...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/Two-Month-Trade-Truce-Extension-Leaves-Markets-Cold-After-Trump-Xi-Summit.html",
+      "published": "2026-09-28T15:00:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "What\u2019s Putin\u2019s Secret Post-Election Strategy To Test NATO?",
+      "summary": "The 2026 Russian legislative election to select all 450 seats of the State Duma (the lower house of parliament) ended on 20 September with President Vladimir Putin\u2019s United Russia party securing 57...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/Whats-Putins-Secret-Post-Election-Strategy-To-Test-NATO.html",
+      "published": "2026-09-28T16:00:00Z",
+      "sentiment": "bearish",
+      "impact": "low"
+    },
+    {
+      "title": "Hormuz Rerouting Doubles Cape Traffic Without Delivering a Windfall",
+      "summary": "Over the past seven months, shipping traffic through the Strait of Hormuz has dwindled to a trickle, with Iran effectively closing the critical maritime chokepoint ever since the U.S. and Israel la...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/Hormuz-Rerouting-Doubles-Cape-Traffic-Without-Delivering-a-Windfall.html",
+      "published": "2026-09-29T00:00:00Z",
+      "sentiment": "bearish",
+      "impact": "low"
+    },
+    {
       "title": "SpaceX Sends Starship to Orbit and Deploys 26 Starlink V3 Satellites",
       "summary": "SpaceX's Starship reached orbit for the first time on Monday, Reuters reported, deploying 26 Starlink V3 satellites on the vehicle's 14th test flight after one of its six upper-stage engines failed...",
       "source": "",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/SpaceX-Sends-Starship-to-Orbit-and-Deploys-26-Starlink-V3-Satellites.html",
       "published": "2026-09-28T16:30:00Z",
       "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "The World Is Entering a New Era of Energy Security",
-      "summary": "The U.S.\u2013Iran and Russia\u2013Ukraine wars are more than regional or military conflicts. They are exposing weaknesses in the global energy and economic system and demonstrating that energy security can ...",
-      "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/The-World-Is-Entering-a-New-Era-of-Energy-Security.html",
-      "published": "2026-09-28T20:00:00Z",
-      "sentiment": "bullish",
       "impact": "low"
     },
     {
@@ -110,258 +110,32 @@
       "impact": "med"
     },
     {
-      "title": "Two-Month Trade Truce Extension Leaves Markets Cold After Trump-Xi Summit",
-      "summary": "Donald Trump gave Xi Jinping the full state-visit treatment in Washington, but markets were more interested in what the two leaders did not deliver. After three days of ceremony, an unusually warm ...",
+      "title": "The World Is Entering a New Era of Energy Security",
+      "summary": "The U.S.\u2013Iran and Russia\u2013Ukraine wars are more than regional or military conflicts. They are exposing weaknesses in the global energy and economic system and demonstrating that energy security can ...",
       "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/Two-Month-Trade-Truce-Extension-Leaves-Markets-Cold-After-Trump-Xi-Summit.html",
-      "published": "2026-09-28T15:00:00Z",
+      "url": "https://oilprice.com/Energy/Energy-General/The-World-Is-Entering-a-New-Era-of-Energy-Security.html",
+      "published": "2026-09-28T20:00:00Z",
       "sentiment": "bullish",
       "impact": "low"
     },
     {
-      "title": "Zelenskyy Warns Russia Wants to Widen War Beyond Ukraine",
-      "summary": "Russian drone strikes killed at least four people in Ukraine overnight and into September 27, including one person in the capital, Kyiv, and three in the southeastern Zaporizhzhya region, Ukrainian...",
+      "title": "How AI Could Upend the Secretive World of Fuel Trading",
+      "summary": "The fuel trading market is expanding from an established group of specialized desks at oil majors, commodity trading houses, and refiners to AI-assisted trades. AI could either make the sometimes o...",
       "source": "",
-      "url": "https://oilprice.com/Geopolitics/International/Zelenskyy-Warns-Russia-Wants-to-Widen-War-Beyond-Ukraine.html",
-      "published": "2026-09-28T14:00:00Z",
+      "url": "https://oilprice.com/Energy/Energy-General/How-AI-Could-Upend-the-Secretive-World-of-Fuel-Trading.html",
+      "published": "2026-09-28T21:00:00Z",
       "sentiment": "neutral",
       "impact": "low"
     },
     {
-      "title": "What\u2019s Putin\u2019s Secret Post-Election Strategy To Test NATO?",
-      "summary": "The 2026 Russian legislative election to select all 450 seats of the State Duma (the lower house of parliament) ended on 20 September with President Vladimir Putin\u2019s United Russia party securing 57...",
+      "title": "Standard Chartered: Record CTA Long Bets Are Capping Oil's Upside",
+      "summary": "Oil prices rebounded from their recent slide on fears of U.S.-Iran escalation after attempts at diplomacy yielded mixed results, with speeches by leaders on both sides laced with threats and bellig...",
       "source": "",
-      "url": "https://oilprice.com/Energy/Energy-General/Whats-Putins-Secret-Post-Election-Strategy-To-Test-NATO.html",
-      "published": "2026-09-28T16:00:00Z",
-      "sentiment": "bearish",
-      "impact": "low"
+      "url": "https://oilprice.com/Energy/Oil-Prices/Standard-Chartered-Record-CTA-Long-Bets-Are-Capping-Oils-Upside.html",
+      "published": "2026-09-28T22:00:00Z",
+      "sentiment": "bullish",
+      "impact": "med"
     }
   ],
-  "geopolitics": [
-    {
-      "title": "Iran offers 7-day plan to reopen Strait of Hormuz as US-China discuss middle east war",
-      "summary": "Iran offers 7-day plan to reopen Strait of Hormuz as US-China discuss middle east war news9live.com",
-      "source": "news9live.com",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOaGJ0MVlJcVhuODBWbFN4cUJJMFRjVHZWclZTdk5MV1ROSmRDaFhoQUJndFVhZDF2T3h2ZDQ1S0xVOGpISGxjQlVMZWtNMlFrTl9WSDFpMkllOUE4Smx0X3dnU3JSd3Z1cjI1S1pQbDVSVHhsN0FqYzRZWGRPQTlsSW1lTmJqd1Y5VEdZOVc5NlRHejRYa1QzY1NoalNCaUE4Ykl3dlJyME5jZXhlOEotOF9FbHNTRW5TM3hIc2U5cGNqTkHSAcgBQVVfeXFMTmZIazhJQlNwMUZXVG5tOWdZWnNkUEZFTGF2NnZNaDF3eGZGbHIzeWlDTHp0Q1h3cFJEUGh6Y1VQOUVocHJBUXprWENLYk9IYVZDdWtCeTlKLVFERDJRdDlBU0tPZHZYNUVkSER1bGN0dVJsWFNueWROem91OUlid2JXYk44cVpDTjlBUE02Um5Tb2tFblU3NmwtdGVFYk9NTG85WWlfUmd4bmpfWFNFcGJ3WHU5T1dCYmx1M3A4d2R1cHQ5Q0VvdlE?oc=5",
-      "published": "2026-09-26T01:40:40Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "2026 Iran war | Oil, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
-      "summary": "2026 Iran war | Oil, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict Britannica",
-      "source": "Britannica",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
-      "published": "2026-09-28T05:00:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "US-Israel-Iran War Latest Live News: Trump Rejects Iran\u2019s Hormuz Proposal as Iraq, UAE, Oman and Other Countries Halt Iranian Flights After US Sanctions",
-      "summary": "US-Israel-Iran War Latest Live News: Trump Rejects Iran\u2019s Hormuz Proposal as Iraq, UAE, Oman and Other Countries Halt Iranian Flights After US Sanctions sundayguardianlive.com",
-      "source": "sundayguardianlive.com",
-      "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxOOHp2VUhVYXlGMGs2RVVtaXJLUnFVbVV6ZVhUT05PLUMyRzJaRHplMk0zVy1kUlJZSjJpazZFUnIwR0NGNDBncGV3RVZRQUl4WDVMUlRBNFFhWUFNNEU4dVZDbUNOTV9wYWNiUnBjelBrVDRwNXZraDhBV3A2NEo4ZVV2MmxldkNPeEtJTmhLMlV5YkZzUFVpYlc4U3NTR3p0VkNHRXRaS1Mtdk5ldkxSLWcxSGF1MzhIbWdqTUg3ZG4yVnhuZXlqWWRDS0FCYjlyN3BFbGxmNkVkSmRNcWpiZzZlLV9TS3FKSGZWcWk2MV9ER3JKMmJlMzRKOWFDTmstUjdURnZUN0ROX0o2YjVHUDQ2T2RReDNRM24wem12ZF9WT3PSAaMCQVVfeXFMTjh6dlVIVWF5RjBrNkVVbWlyS1JxVW1VemVYVE9OTy1DMkcyWkR6ZTJNM1ctZFJSWUoyaWs2RVJyMEdDRjQwZ3Bld0VWUUFJeFg1TFJUQTRRYVlBTTRFOHVWQ21DTk1fcGFjYlJwY3pQa1Q0cDV2a2g4QVdwNjRKOGVVdjJsZXZDT3hLSU5oSzJVeWJGc1BVaWJXOFNzU0d6dFZDR0V0WktTLXZOZXZMUi1nMUhhdTM4SG1nak1IN2RuMlZ4bmV5allkQ0tBQmI5cjdwRWxsZjZFZEpkTXFqYmc2ZS1fU0txSkhmVnFpNjFfREdySjJiZTM0SjlhQ05rLVI3VEZ2VDdETl9KNmI1R1A0Nk9kUXgzUTNuMHptdmRfVk9z?oc=5",
-      "published": "2026-09-27T03:11:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Eight US Marines injured in Iranian missile attack in Strait of Hormuz: report",
-      "summary": "Eight US Marines injured in Iranian missile attack in Strait of Hormuz: report The Express Tribune",
-      "source": "The Express Tribune",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNFhHUERMNzMyWDlIak1Ya1M2cGVMay1fRjRRdlNTTzdhb2VidTl3Ulg3bDhtQmhITkVCRi1kc25VYk1BRWtoWlI2TUZCNkgzQVRNSEVLLXpQVWNfNVhzZmZZYjdUN3JTaUdzaGxzYVF4Zkh6eXFpbC12SVV0ZFROUV95QnlwX0JrTVJ1VmV1RTc5Q3BHZWt3M2dhWUZYb0RiWDRsQmxNdkp3a1M4dmFJ?oc=5",
-      "published": "2026-09-28T05:27:37Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Trump rejects Iran\u2019s seven-day peace deal to reopen strait of Hormuz",
-      "summary": "Trump rejects Iran\u2019s seven-day peace deal to reopen strait of Hormuz The Guardian",
-      "source": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPazdjdl95TUw5YndNMUkzTkNvZGh2VER3MEhQTVI0MHd2WDQ4cmdITTBhZnBrQlhlX19fMHVXU2F6Q3dCWGxOVS1TTGlkcjY0TWFrbGdvQVp3TWQ3Uy1kMFJ0aEV6aEhWN05IM0xKUzRtSjJXS0tPZjAwV0ZlUjVyd09sWmNZa0lrMVAtS0p0TGtlcVYya01z?oc=5",
-      "published": "2026-09-26T09:31:00Z",
-      "sentiment": "bearish",
-      "impact": "low"
-    },
-    {
-      "title": "United Nations Diplomacy Focuses on Iran Proposal to Reopen Strait of Hormuz",
-      "summary": "United Nations Diplomacy Focuses on Iran Proposal to Reopen Strait of Hormuz USA Herald",
-      "source": "USA Herald",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNczQ3Z3Nqd2dPVGlGREx6QTJsOHVYbjV2TERDaVAxQzVxWExQWklXWmJjY08yTTRvaEY4UDBUZ1hVaHFKZ0F5QVBuRGZfaHotMjNiaGhJMDZWYUlQU0lETzkzaXhTMl9PRDlncXVSdjh3T3M1VUlWMUZUUEg0eHc3WkpjYndtYWxIUkxoZ2prdnM5eENuQ1RyeFBGNWlGUWNR?oc=5",
-      "published": "2026-09-26T15:53:57Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "US-Israel-Iran War Latest Live News: Tehran Awaits Trump\u2019s Official Response After US President Reportedly Rejects Iran\u2019s 7-Day Plan To Reopen Strait Of Hormuz And Halt Fighting",
-      "summary": "US-Israel-Iran War Latest Live News: Tehran Awaits Trump\u2019s Official Response After US President Reportedly Rejects Iran\u2019s 7-Day Plan To Reopen Strait Of Hormuz And Halt Fighting sundayguardianlive.com",
-      "source": "sundayguardianlive.com",
-      "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxPTEh4ZlA5RWRrRTM1OHo5TFBYdjRfLUdvcmhuYUVTZDJoSk5SeW1QU2tmX3ZWNjQwdmZzZGNmNVItMGp0QUY0SHRJdy1VaEVyaElNOFNXckM4XzNuWU9YLURlbGF3UDA1WkZoNTdJbUtGWnpVM0JlRHloWE9MdUpZdW9MX1RpdUJXTWxHdmltdm1WMWZJQS00Sk9iWW9xWnFIT1dPTmRUdTlybzVTaDcwQnN2YjVfX0xPcGpRTFFuTFdnS01HeGtNeDQ2WGVmUlRRVkhnVXZLc01aWDBCNkFWbWFmV0c1eWhuQ1c3dmZiN1Y0ZjE1OV9UTUZ2b0ZkNk40S0NydVlLYzFIWkN3NTY1bnZQMzBhVWR5M25fTVVFOXpEVWQtX0t4VF9NcjNEQWRSMkNlRy1ueXM1dGhpeE15NnVQZlFzZ9IBxgJBVV95cUxPTEh4ZlA5RWRrRTM1OHo5TFBYdjRfLUdvcmhuYUVTZDJoSk5SeW1QU2tmX3ZWNjQwdmZzZGNmNVItMGp0QUY0SHRJdy1VaEVyaElNOFNXckM4XzNuWU9YLURlbGF3UDA1WkZoNTdJbUtGWnpVM0JlRHloWE9MdUpZdW9MX1RpdUJXTWxHdmltdm1WMWZJQS00Sk9iWW9xWnFIT1dPTmRUdTlybzVTaDcwQnN2YjVfX0xPcGpRTFFuTFdnS01HeGtNeDQ2WGVmUlRRVkhnVXZLc01aWDBCNkFWbWFmV0c1eWhuQ1c3dmZiN1Y0ZjE1OV9UTUZ2b0ZkNk40S0NydVlLYzFIWkN3NTY1bnZQMzBhVWR5M25fTVVFOXpEVWQtX0t4VF9NcjNEQWRSMkNlRy1ueXM1dGhpeE15NnVQZlFzZw?oc=5",
-      "published": "2026-09-26T03:12:25Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal",
-      "summary": "Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal BBC",
-      "source": "BBC",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9uUlZ1bjNodmd4U3ZTcjk4enJRaW92SkJnN1hIWkRRWXpabGpNSEZiYnIxcWg3YjhDTHpIdDRDdDhKZjA4M3NiR3JURUxJdkdLbDNDRC1yem1nOU9lM0E?oc=5",
-      "published": "2026-09-27T02:16:52Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Trump rejects Iran proposal for deal to reopen Hormuz",
-      "summary": "Trump rejects Iran proposal for deal to reopen Hormuz South China Morning Post",
-      "source": "South China Morning Post",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWndnNTdpYWxkMEZNOC1qUTFENVF6QnJaWTQwaFFZUXNlVzB2MjcwTHR0Q3F6OUEzYWh0VFd6VE5wWDlDVWI1YV9tSmFHQzJ6NzRvZWU5bmJpaWdqTi1WbDgxVVE3OTZXbjhzR2Q2c3ZCOXFxOWV6U0lEN3pxQmVKNUVWTkU0X2F4bUxPNUpPd2NEU0k2R1I3eEc2SFZzaUFHUUFTdFktTS1yUdIBqgFBVV95cUxNWndnNTdpYWxkMEZNOC1qUTFENVF6QnJaWTQwaFFZUXNlVzB2MjcwTHR0Q3F6OUEzYWh0VFd6VE5wWDlDVWI1YV9tSmFHQzJ6NzRvZWU5bmJpaWdqTi1WbDgxVVE3OTZXbjhzR2Q2c3ZCOXFxOWV6U0lEN3pxQmVKNUVWTkU0X2F4bUxPNUpPd2NEU0k2R1I3eEc2SFZzaUFHUUFTdFktTS1yUQ?oc=5",
-      "published": "2026-09-26T17:02:16Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Russia-Ukraine War\u2019s India Impact: Russian Oil, US Tariffs And Delhi\u2019s Tough Balancing Act",
-      "summary": "Russia-Ukraine War\u2019s India Impact: Russian Oil, US Tariffs And Delhi\u2019s Tough Balancing Act Business Today",
-      "source": "Business Today",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOeC1OaXlPTFh6V01KN1FoVk0tbzN2MWJNRGQ4b25rQ01zSnBWN1BEMEI2ME9GVFZoV0VFUDR5LUJrWDR6NDZfTTZaWlhCYjdMZXB6aVRlQXRCb0pXSWFCU2xUVnAyQWZrZTJ3TXowSEdHNXdsWDJMUVNoN0c5bTVEREhlN21kbFc2QzhtaHRPYlZkNmc0T1dPTUZJbkEtQmZVMjBqeHV1VEhqTW1SWUs4REJlSVc1QnNDUEdnTzE0b252NHctR3hxMDZxSHV6b2FQVWJHZXJJSmxjazJnWURXRWRzSTAxMjJ6bHVobnFGd2bSAfABQVVfeXFMTngtTml5T0xYeldNSjdRaFZNLW8zdjFiTURkOG9ua0NNc0pwVjdQRDBCNjBPRlRWaFdFRVA0eS1Ca1g0ejQ2X002WlpYQmI3TGVwemlUZUF0Qm9KV0lhQlNsVFZwMkFma2Uyd016MEhHRzV3bFgyTFFTaDdHOW01RERIZTdtZGxXNkM4bWh0T2JWZDZnNE9XT01GSW5BLUJmVTIwanh1dVRIak1tUllLOERCZUlXNUJzQ1BHZ08xNG9udjR3LUd4cTA2cUh1em9hUFViR2VySUpsY2syZ1lEV0Vkc0kwMTIyemx1aG5xRndm?oc=5",
-      "published": "2026-09-28T07:15:58Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "President Trump Rejects Iran Strait of Hormuz Deal, Posts \u2018Trump Strait\u2019 Map",
-      "summary": "President Trump Rejects Iran Strait of Hormuz Deal, Posts \u2018Trump Strait\u2019 Map The Media Line",
-      "source": "The Media Line",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPMUh5Ti1fWEFCbFNtdld3dzZyLU5DaVFhNUR2T1pTSlhJMFBYT3ZzcEt6VWRac2x2RGktcHlaX1hMU3hRTmJ1N2l0eEMwbUpqSktZYWhDbTcyVGhqQVlmelRtNUVuVEwzU2ZyWXpJUksxSUg5QVp1Qmx1emVlcFFXck9DdlRZUnFQNkU0NFNCZVJfWFFWTS13TEpqQUJFMjNQVk9DeVYxYXdvQ29VYmc?oc=5",
-      "published": "2026-09-26T19:28:28Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Zelenskyy Warns Russia Wants to Widen War Beyond Ukraine",
-      "summary": "Zelenskyy Warns Russia Wants to Widen War Beyond Ukraine oilprice.com",
-      "source": "oilprice.com",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOV9HQmFfQmV1U2dBSUljcTJFVC13WWVjUXNFVHI2WDR3Tmoxd01raHlQdUJXV1I2d1dHalF0UHk4N3hrcHdfUldERjhBMGREbENNMDJGNGRIZW1aWjl2X0hWQS1vX0dSQnRlNzg4a1NEcDJyOG5uTnFEUlM5U0lGV0lNUXdyM2h1ZFlWZkJBa1Iwc1JJQjl5c0pfUm15WVVIXzVhNVNrTlZ3R2F20gGyAUFVX3lxTE1HSWtqTU5FNzFhT3M5czhlM0pRN1U5VWRWVE9oWTFlenpvQTFNMGVpaUdOMktrZWRPNGZQNlluNVdGRnJjYmVHbGRDMkxDTjhIdHRUd0hiMHI4Q0NoczFSM3JCRDFQNmFYcmVtQVhPTy1pd2pYcnJ2QUc1blZwNno5aURWdjB0ZDlXQzRveDN0OFVVNDVZeU9PeTJVaVRUUWI4RWFvU2NvY21QV0V0NEN4a0E?oc=5",
-      "published": "2026-09-28T14:00:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Trump rejects Iran\u2019s seven-day roadmap to end war and reopen Hormuz",
-      "summary": "Trump rejects Iran\u2019s seven-day roadmap to end war and reopen Hormuz Al Jazeera",
-      "source": "Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPekVrcUpCSVdWWjdjNHY5ZS12MmprMF9ma3loOGpyZExyTW5uRG9qT3NjV21qSUFSMUhRVV9Ld3A5TWpVTS1QcFI2VENoZTdQRkVIQi11Z2JuUV80a1B2U2Q5TGhlQlZiZkV3MFlCbkI4NUZDeWJROWgxbTAtSVE3dU0xUDVnbFU2MF9MN25MVmZRNUdCWXBleDhlamtaVGNzbkVtWDM1VlfSAa4BQVVfeXFMTjljQTNjOXdPLVpNZWhUNTduR2ZZWGN3dDRrak9NOS1WWlBNejVMWDk2aGRkek9CYzB5OWpiTU1BeWtHUkRZZGduc28td2dSZmlsQUM2NTNrQ1M5WU1rcVJoNWZKZlkzNmN5Z1FkWnJFN0FNVDEtQjFKSkYwQ0RQZFpkOWVxNm43dkloMnZtTFFFSy1xVVRYVEJEYkFZdzdBemNCMEJQZGVLZzdvQXlB?oc=5",
-      "published": "2026-09-27T03:30:46Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Trump Rejects Iran's Seven-Day Plan to Reopen Strait of Hormuz",
-      "summary": "Trump Rejects Iran's Seven-Day Plan to Reopen Strait of Hormuz BBN Times",
-      "source": "BBN Times",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRkRpOXE2QjZKRkozamV0WGZSUURkNVN6akxhd3RIRmRQMnluNGFpZS0wcjhlWjl0RUJOMFk5MEdIS3duZFBCbEZ6QThPX0I0VWlVRDNMcjU3c3dEN2V2LUdYR3B4NHBSV05HNmN3dWt3dHFiQkdxalJtOTJNTktMN1F0UFhORERyLWZFUnFJNFpHSGh3TWNtMzhmazU?oc=5",
-      "published": "2026-09-26T21:40:24Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Russia Sanctions and Tariffs: What Businesses Need to Know About the Graham Act",
-      "summary": "Russia Sanctions and Tariffs: What Businesses Need to Know About the Graham Act natlawreview.com",
-      "source": "natlawreview.com",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOb3dKVjU4SFJncF9EbXl6aEVoaTVTdkpDZEE0M3hESVBadjFYam9oUWpFcS1KOXY5Xzg3TWhSSkludnZDTkJlVjg2QW5SZE5TUlFyNm5SM1FFNDFVTU9pcy1QaUUtTno1cDBSMHZUaHhEVnNxVVFkTGdCX0Y0VjdNVlhocG9lTHdqdzU0MVl1d051SGdMLTEtbGE3ZzVhOV8tbE0wZDg1VWRUbUZiR0dV0gGvAUFVX3lxTE5vd0pWNThIUmdwX0RteXpoRWhpNVN2SkNkQTQzeERJUFp2MVhqb2hRakVxLUo5djlfODdNaFJKSW52dkNOQmVWODZBblJkTlNSUXI2blIzUUU0MVVNT2lzLVBpRS1OejVwMFIwdlRoeERWc3FVUWRMZ0JfRjRWN01WWGhwb2VMd2p3NTQxWXV3TnVIZ0wtMS1sYTdnNWE5Xy1sTTBkODVVZFRtRmJHR1U?oc=5",
-      "published": "2026-09-28T15:24:46Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Iran awaits US response on plan to reopen Strait of Hormuz | Daily Sabah",
-      "summary": "Iran awaits US response on plan to reopen Strait of Hormuz | Daily Sabah Daily Sabah",
-      "source": "Daily Sabah",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSHB2dGtQa2lvYUtPT0w4NEpjekljdlkwZ1Q0WXRpUllzTHMtdjIyQVJqN0tTbmR1aFNqTzBIRnBvS2gtM0VwS0xjTEl1UnRKYUN1dThRQlFpaWFWT3RJc2t1TmlyNTBSUE5LSmtqT00yOHg1ZjhMVWxXZE4zcVhtSG9uQl9EMGRpdHZQZGdFNjExY3h0M01jRGV6c0VLcEZpU29iNGROWdIBpwFBVV95cUxQSHB2dGtQa2lvYUtPT0w4NEpjekljdlkwZ1Q0WXRpUllzTHMtdjIyQVJqN0tTbmR1aFNqTzBIRnBvS2gtM0VwS0xjTEl1UnRKYUN1dThRQlFpaWFWT3RJc2t1TmlyNTBSUE5LSmtqT00yOHg1ZjhMVWxXZE4zcVhtSG9uQl9EMGRpdHZQZGdFNjExY3h0M01jRGV6c0VLcEZpU29iNGROWQ?oc=5",
-      "published": "2026-09-26T11:33:47Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "EAM Jaishankar Meets Russian, Iranian Foreign Ministers At UNGA; Gulf Conflict, BRICS Cooperation In Focus |",
-      "summary": "EAM Jaishankar Meets Russian, Iranian Foreign Ministers At UNGA; Gulf Conflict, BRICS Cooperation In Focus | Free Press Journal",
-      "source": "Free Press Journal",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPRnBPaFI0b0JzZm1MSGRmTWlSeXc5VkpUMXNwcHBwdlV2b2dxeGNsYmVKcTVuU3pCczI1N1RKU0JVQVhBNkxkT3o2RmFfMmJ5YTgtZGRaaEhSalZnSHZ6OWRvYzk5TjlWLVg1TnJfTmlIZE1tQzk1V2o1NkVpc0RrTFBhYi04M3VKQWhrTXZKZ2RJeGQ0WUVQbTRSQWJWRnlZZ1Q3NzdGdGc3VnBfaGdWQ1c2MF9ZMGZ6QWp6TWdTb0dRRGlJc1ZTclJxZGRIdGpobTVXR2wxTjliTHJya0Y1YklxcHk5UdIB5gFBVV95cUxPRnBPaFI0b0JzZm1MSGRmTWlSeXc5VkpUMXNwcHBwdlV2b2dxeGNsYmVKcTVuU3pCczI1N1RKU0JVQVhBNkxkT3o2RmFfMmJ5YTgtZGRaaEhSalZnSHZ6OWRvYzk5TjlWLVg1TnJfTmlIZE1tQzk1V2o1NkVpc0RrTFBhYi04M3VKQWhrTXZKZ2RJeGQ0WUVQbTRSQWJWRnlZZ1Q3NzdGdGc3VnBfaGdWQ1c2MF9ZMGZ6QWp6TWdTb0dRRGlJc1ZTclJxZGRIdGpobTVXR2wxTjliTHJya0Y1YklxcHk5UQ?oc=5",
-      "published": "2026-09-27T00:59:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Jaishankar meets Russia, Iran at UN after Trump sanctions law",
-      "summary": "Jaishankar meets Russia, Iran at UN after Trump sanctions law India Today",
-      "source": "India Today",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPYjRMd2pJdTF4czZLVFdja3REYVgyWTJSenBfWXZwYVgyekRzeWtybF9GeTJjS1NHMVc4YW5VcTZ0RFZ2TkZkc3FvMXlFNEVCQ25uZFg4WkJnSkRFS2liWHAzaldsb1Z1Sk1pejhkN3RzQkk4SXdtZE5jM1N0S0k5cGRfYlJsOGNYeDNQTXA0RS1NZE5CdWc3dVdJdXBKNkQwd3ZPOEQtb2FjUkJCZW1J0gG0AUFVX3lxTE15QzVabXFvWEkyVkZEczM2ODliZkQ5Vll0OUt4NVZ3ZzNHWjJtM3lkSF9mQWR2czhPTUlFR3VhT21hRHRfaEdiZDBQUTV3Wk9tZi1LUEQ0eW5sc0hWTXpuNlFUMDQwc3VqdDV0N2sxWFVkVC05R2ppeE93dW1lQkMtTnFTRUMxRG1RMDQtZ0w1eklFdmFvX1BpMkVFeHRnYWdtMVZRWDJHLXJVN3VIZWYwZmFlNw?oc=5",
-      "published": "2026-09-26T05:10:39Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Iran reacts after Trump rejects plan to reopen the Strait of Hormuz",
-      "summary": "Iran reacts after Trump rejects plan to reopen the Strait of Hormuz Laodong.vn",
-      "source": "Laodong.vn",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSDEtaTZXNmFwY082RmQtM0x3VTlNVHdlYXBLNkpnd0ZkME5nSGNuRHhzeTRpRlZrYnAtUEM2RVZvREJGUnRVcEtfOEg5UkdEaUducVdiaEd6T0Jyc191Tjh2Q1J1WEZVUk9lTHc3S1hXOHBYZ2dDWi1TOWRYWnROaHZHaUFEY3REZm9RNkdDd0xCUnRPSVpoblNRelQ3QjdsSEJETzBfbDBXR183NjJjbQ?oc=5",
-      "published": "2026-09-27T09:08:10Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "US Says 'No Hard Feelings' Over India\u2019s Warning On Russia Sanctions",
-      "summary": "US Says 'No Hard Feelings' Over India\u2019s Warning On Russia Sanctions Outlook India",
-      "source": "Outlook India",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcTlUdkh3RTkwdWQxMkJLV1ZjeHFtd3NxaE9hOVFMNm5aQmJDRGVnckhxLW5vR211MVZnblhzcHFjVEZxREFoX0hRVk52S2JHN3RPMnpWUDB1bXB2NFZ0WHdqaGVMWC1qaU85WDZwQTJtZFAxR3I3QllMWnNMd0dvdndXOF9hTzNINDMtN1hPcG5SUFNNaV9sdmhOZ3lxTmtMdkd0VXlncXFKUVnSAbgBQVVfeXFMUDEzZmNqaFhUZ28takJNSU5qS1JRRi1lZmxlYUtTVGlsYjlCVi1DMnk2VEN3T2FXN0pJekNuY1pCRWkwRjRCQzJBVlZqaGNNd2hzMG1MWVBObTRub01zeXhydzZpQUJtWjlZYTlCajd4SjZaTlJvcjkwaWZBZHIzZGUyTzFpN1JHVFFVWnh6UkFWQ21FZW9lc0NYdGFuaU4yVXN4c3FYRWlVeGlaOEZ2M0xTZ3lmVHV0ZA?oc=5",
-      "published": "2026-09-26T06:51:11Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Donald Trump rejects Iran's proposal to reopen Strait of Hormuz in 7 days, plans to resume bombing after midterms",
-      "summary": "Donald Trump rejects Iran's proposal to reopen Strait of Hormuz in 7 days, plans to resume bombing after midterms DNA India",
-      "source": "DNA India",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPRkMyeXFxanM1Vks3c3VWRlNfRHJpaTd5WnM3aUFCN3FFTVdpdDdGY3Z2bEJ6RDhrcFo5WVptWjBSSFppR1R3RU1lMEJlSzBVN0VQcFVGbnBLanhXY1c2dUdDd1M0Ul9qVnM0Z3gwUGh6VzUtcGJQTkFtUzJhYlR6U212ZUFJQm9QVjA5TGN2TE5fWjNRX0d6UXlTYThlQUhTN2xnQVRzUE4tSEtWT2F0MEdqODgwVUJQNW9xVG5GbUdyaFhsS0stajFWOUlmTzdLeWtNZ1Y0OHl3RFFPOHNmMjhXNkcyWXloMjdZeWJpMlcxX0RV0gH0AUFVX3lxTE9GQzJ5cXFqczVWSzdzdVZGU19EcmlpN3laczdpQUI3cUVNV2l0N0ZjdnZsQnpEOGtwWjlZWm1aMFJIWmlHVHdFTWUwQmVLMFU3RVBwVUZucEtqeFdjVzZ1R0N3UzRSX2pWczRneDBQaHpXNS1wYlBOQW1TMmFiVHpTbXZlQUlCb1BWMDlMY3ZMTl9aM1FfR3pReVNhOGVBSFM3bGdBVHNQTi1IS1ZPYXQwR2o4ODBVQlA1b3FUbkZtR3JoWGxLSy1qMVY5SWZPN0t5a01nVjQ4eXdEUU84c2YyOFc2RzJZeWgyN1l5YmkyVzFfRFU?oc=5",
-      "published": "2026-09-26T06:12:38Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Iran war live: Saudi foreign minister arrives in US for crunch talks",
-      "summary": "Iran war live: Saudi foreign minister arrives in US for crunch talks Arabian Business",
-      "source": "Arabian Business",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNeGVzSjhrbUhOTTctX0ViTkJTRnFEZnkwNTJQR3gySTJRQlk3aXNwenJ2Qk1DejVYcF84dmF4WDFPd2xKRzEwazEtOEdOb05OOFhJaXZQVTd3R2lDRHdGbTgtM1JSSEMxeFN5OTlLc0tLNE55MHlHRDZNU3lOVFBDaTJwQQ?oc=5",
-      "published": "2026-09-28T07:20:29Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Ukraine strikes defense plants, oil facilities in overnight strike on Russia",
-      "summary": "Ukraine strikes defense plants, oil facilities in overnight strike on Russia The Kyiv Independent",
-      "source": "The Kyiv Independent",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUHZTUHV0RENna3BBZHpMNXUzc3d3VjMwMjhOUENaQWtyNTl4Z2hJT1haWFJrVmtNX0U3YmpObk8zYWxnYjcxUWdhck1wejBWdWRuNWFGY0Vac29NeDd6RzZJR0k3Q1R5M3ZXU1dZaVV0cGVWZHBIbC0xUllYalBtUmc0c3lpVDV6MG95anFTQXEyMzU3YndQT00yQU85RHl5?oc=5",
-      "published": "2026-09-28T01:44:54Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Trump Rejects Iran\u2019s Plan to Reopen Strait of Hormuz in Seven Days",
-      "summary": "Trump Rejects Iran\u2019s Plan to Reopen Strait of Hormuz in Seven Days THISDAYLIVE",
-      "source": "THISDAYLIVE",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVFl6UTVONjhoNURmY1ZWX0REQmVWUmhOWTRsUzdzTTNvUzJSdmRnVFB1YWJjdmRWUnhuV2haTkZjelFqendMZ0w0Ni1XQk1wU21GblFYZV9QSzA3bEphcDlmQzY0Rk45THZMZWs4QnN6QS00amYzMjBmRjBfaE04ajhTNFU5TzVOdWxxdUdpdWJ2YkpXR3FjaXdCSXhiUFBKRDdrSG1LdWs?oc=5",
-      "published": "2026-09-27T04:04:45Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Trump Rejects Iran's Proposal, Strait of Hormuz Fate Remains Uncertain",
-      "summary": "Trump Rejects Iran's Proposal, Strait of Hormuz Fate Remains Uncertain Aktualita.co",
-      "source": "Aktualita.co",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRDllTDAzRGluOTZ3dVNpNUNjbnMza2hSajliWWFBLWZ2aWFLWVowa05mTXhLSnF2b1lwc2NvdHVTeHVzNzN2Q2VDc1dabE9ReDNaT09qZjJscmlvZDZ0eDN1REJjeXdXQ1RXb1pkcEVqcWhuMGxYTlZkNWFJTFJUa1Bhc1JKamVHdVNfeTlBSUZzT2VWTVZPUjVsX1ZFNkFGV2Nr?oc=5",
-      "published": "2026-09-26T17:42:48Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    }
-  ]
+  "geopolitics": []
 }
