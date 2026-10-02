@@ -1,45 +1,44 @@
 {
- "generated": "2026-10-01T18:42:19.667953+00:00",
+ "generated": "2026-10-02T18:12:48.269795+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "A deeply bifurcated session in crude. WTI surged +2.83% to $92.97/bbl, reflecting ongoing Hormuz risk premium after three tankers were struck by unknown projectiles in the strait and Indian refiners scrambled to secure tanker capacity. Brent, however, slipped -1.08% to $102.41 on reports that the US has temporarily eased Russia oil sanctions to cap the price surge \u2014 a move that riled European allies and introduced fresh supply-side relief. Heating oil cratered -6.35% to $4.6424/gal, the session's sharpest mover, partly tied to the diesel export-ban discussion after Trump acknowledged a potential ban could negatively impact gasoline prices. Ukraine's strikes on 45% of Russian refining capacity and the Lindsey Graham sanctions act targeting buyers of Russian energy remain structural overhangs. CME options markets price a 77% probability of an OPEC cut at the next meeting, consistent with elevated market uncertainty.",
+   "summary": "Oil markets delivered a split verdict on Friday. WTI fell 1.46% to $91.51/bbl, dragged lower by reports of an EU-led emergency stockpile release and a subsequent G7 agreement to release up to 100 million barrels of crude and diesel stocks over four months. A temporary US easing of Russian oil sanctions added further downside pressure. RBOB gasoline shed 2.40% and heating oil collapsed 3.49% on the day. Brent managed a slim 0.23% gain to $102.56, while physical Dated Brent surging above $120 signals acute tightness in spot markets. The underlying geopolitical bid remains intact: Iran's Hormuz standoff persists, the US deployed Patriot batteries to protect Saudi and Qatari infrastructure, and CME options assign a 77% probability to an OPEC production cut at the next meeting.",
    "drivers": [
-    "Hormuz tanker strikes and Indian refiner demand for shipping capacity support WTI's +2.83% bid",
-    "US temporary easing of Russia oil sanctions caps Brent upside and triggers a -1.08% pullback",
-    "Heating oil -6.35% on Trump's diesel export-ban commentary and potential supply-side recalibration"
+    "G7 agreement to release up to 100 million barrels of emergency stocks and US temporary easing of Russia sanctions pressured futures prices lower",
+    "Acute physical market tightness with Dated Brent above $120 and European diesel inventories stressed, underpinned by Russia's diesel supply embargo until sanctions are lifted",
+    "Ongoing Hormuz standoff and US military deployments to protect Gulf energy infrastructure sustain a geopolitical risk premium"
    ],
    "headlineCount": 12,
    "sources": [
     "Britannica",
-    "EnergyNow.com",
-    "Kyiv Post",
-    "Latest news from Azerbaijan",
-    "Moneycontrol.com",
-    "Stephenson Harwood"
+    "Crude Oil Prices Today | OilPrice.com",
+    "EnergyNow",
+    "Reuters",
+    "The Daily Jagran",
+    "sundayguardianlive.com"
    ]
   },
   "gas": {
-   "summary": "Henry Hub continued to bleed lower, falling -1.95% to $2.966/MMBtu and now down -10.01% on the week \u2014 a notable divergence from geopolitical noise driving oil. No gas-specific supply disruption headlines were present today to arrest the decline. TTF edged up +0.91% to \u20ac73.015/MWh, holding closer to flat on the month, with European markets remaining more sensitive to broader energy security concerns. Pakistan's consideration of direct spot LNG imports for power plants adds a marginal demand signal on the LNG side. The BLM opening of 35,000 California acres to an oil and gas lease sale in December points to modest future supply expansion domestically. Overall, gas headline flow today was thin and insufficient to reverse Henry Hub's downward trajectory.",
+   "summary": "Natural gas markets diverged sharply by geography on Friday. TTF surged 3.47% to 76.5 \u20ac/MWh, extending a 6.15% weekly gain as Hormuz shipping disruptions continue to constrain Qatari LNG flows into Europe. JERA's CEO warned that LNG prices have further to climb, citing no near-term resolution to the Hormuz bottleneck; September saw 21 LNG cargoes exit the strait, the highest since the Iran war began but still well below pre-conflict norms. European utilities are reportedly returning to coal in response to the punishing gas bill. Henry Hub rose a more modest 1.92% to $3.024/MMBtu, capped in part by a Baker Hughes rig count that showed US drilling activity edging lower. Alaska LNG economics remain questioned, with costs potentially more than double Gulf Coast projects.",
    "drivers": [
-    "Henry Hub -1.95% on the day and -10.01% on the week; no supply disruption catalyst present",
-    "TTF +0.91% holds relatively firm, reflecting lingering European energy security premium",
-    "Pakistan spot LNG import consideration provides a marginal demand-side signal for global LNG markets"
+    "Strait of Hormuz disruptions limiting Qatari LNG shipments are driving TTF sharply higher, with JERA warning of further price appreciation",
+    "European utilities reverting to coal as high gas prices persist ahead of winter, highlighting structural demand-supply tension in European gas markets",
+    "Henry Hub gains are restrained by a declining US rig count and domestic supply dynamics decoupled from the Middle East crisis"
    ],
-   "headlineCount": 4,
+   "headlineCount": 8,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs were essentially unchanged at $81.41 (-0.23%), consolidating a +3.05% monthly gain. The power sector headlines today were dominated by nuclear themes: Amazon secured a 20-year nuclear power agreement with Constellation Energy, with a Goldman analyst calling it broadly positive for the industry under the 'Powering Up America' theme. Uranium long-term prices hit an all-time record of $96/lb, though nuclear equities sold off in a divergent signal. Commonwealth Fusion Systems inked a historic superconductor deal, advancing commercial fusion timelines. India's power shortfall hit a three-year high in September driven by El Ni\u00f1o conditions and rising industrial demand. Taiwan allocated $13 billion to shield consumers from elevated energy costs, supporting Taipower and refiner CPC.",
+   "summary": "Power and carbon markets received limited direct headline flow today, leaving price action as the primary guide. EU carbon EUAs slipped 0.89% to $80.225/EUA, extending a 2.71% weekly decline, even as TTF gas surged 3.47% to 76.5 \u20ac/MWh on the day. The divergence is notable: rising gas prices typically support carbon prices via gas-to-coal switching, and headlines confirm European utilities are indeed returning to coal, which would ordinarily lift EUA demand. The month-on-month carbon gain of just 0.54% suggests the market may be digesting the broader macro uncertainty. Physical tightness in oil and diesel markets, flagged by Dated Brent above $120 and the G7 emergency stock release, adds to the complex backdrop. News flow specifically on power assets and carbon trading was thin today.",
    "drivers": [
-    "Amazon-Constellation 20-year nuclear deal and record uranium prices at $96/lb underscore accelerating nuclear demand",
-    "India's power shortfall reaches three-year high in September on El Ni\u00f1o and industrial demand surge",
-    "Taiwan's $13 billion energy cost support package highlights government intervention as power prices remain elevated"
+    "TTF surging 3.47% on the day increases gas-fired generation costs, pushing European utilities back toward coal and implying higher future EUA demand",
+    "EUAs fell 0.89% despite the bullish gas backdrop, suggesting macro risk-off or supply-side factors are currently outweighing the fuel-switching carbon impulse",
+    "Persistent Hormuz disruptions and Russian diesel embargo maintain an elevated energy cost environment that underpins structural pressure on European power markets"
    ],
-   "headlineCount": 9,
+   "headlineCount": 5,
    "sources": [
-    "Gazeta Express",
-    "\u041c\u0435\u0436\u0430. \u041d\u043e\u0432\u0438\u043d\u0438 \u0423\u043a\u0440\u0430\u0457\u043d\u0438.",
+    "Reuters",
     "\u041f\u0440\u044f\u043c\u0438\u0439"
    ]
   }
