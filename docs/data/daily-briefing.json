@@ -1,46 +1,45 @@
 {
- "generated": "2026-10-02T18:12:48.269795+00:00",
+ "generated": "2026-10-05T21:02:58.170163+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Oil markets delivered a split verdict on Friday. WTI fell 1.46% to $91.51/bbl, dragged lower by reports of an EU-led emergency stockpile release and a subsequent G7 agreement to release up to 100 million barrels of crude and diesel stocks over four months. A temporary US easing of Russian oil sanctions added further downside pressure. RBOB gasoline shed 2.40% and heating oil collapsed 3.49% on the day. Brent managed a slim 0.23% gain to $102.56, while physical Dated Brent surging above $120 signals acute tightness in spot markets. The underlying geopolitical bid remains intact: Iran's Hormuz standoff persists, the US deployed Patriot batteries to protect Saudi and Qatari infrastructure, and CME options assign a 77% probability to an OPEC production cut at the next meeting.",
+   "summary": "Crude sold off sharply on Monday \u2014 WTI down 2.04% to $89.23/bbl, Brent off 2.00% to $100.18 \u2014 despite a deeply bullish headline from Aramco CEO Amin Nasser warning that nearly 3 billion barrels of gross supply have been lost since the Iran war began. The paradox likely reflects profit-taking after Brent's 4.90% monthly gain and uncertainty around the Graham Act sanctions President Trump signed today targeting Russia and Iran. Iran's oil minister resigned as the U.S. blockade pushes Tehran's exports toward zero, while Ukraine's strikes have crippled over half of Russia's refining capacity. South Korea's pivot toward Canadian crude, a reported $20B Lukoil deal embedded in U.S.-Russia peace talks, and CME options markets pricing a 77% probability of an OPEC cut at the next meeting add further geopolitical complexity. Heating oil bucked the trend, inching up 0.17%.",
    "drivers": [
-    "G7 agreement to release up to 100 million barrels of emergency stocks and US temporary easing of Russia sanctions pressured futures prices lower",
-    "Acute physical market tightness with Dated Brent above $120 and European diesel inventories stressed, underpinned by Russia's diesel supply embargo until sanctions are lifted",
-    "Ongoing Hormuz standoff and US military deployments to protect Gulf energy infrastructure sustain a geopolitical risk premium"
+    "Graham Act sanctions signed against Russia and Iran, Iran oil minister resigns as exports approach zero",
+    "Aramco CEO flags ~3 billion barrels of lost gross supply since Iran war; OPEC cut probability at 77% per CME options",
+    "Ukraine strikes on Russian refineries cited as a refining-capacity and price risk; South Korea diversifying away from Saudi crude toward Canada"
    ],
    "headlineCount": 12,
    "sources": [
-    "Britannica",
     "Crude Oil Prices Today | OilPrice.com",
-    "EnergyNow",
-    "Reuters",
-    "The Daily Jagran",
-    "sundayguardianlive.com"
+    "The Chenab Times",
+    "The Moscow Times",
+    "The New York Times",
+    "The Times of India",
+    "T\u00fcrkiye Today"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets diverged sharply by geography on Friday. TTF surged 3.47% to 76.5 \u20ac/MWh, extending a 6.15% weekly gain as Hormuz shipping disruptions continue to constrain Qatari LNG flows into Europe. JERA's CEO warned that LNG prices have further to climb, citing no near-term resolution to the Hormuz bottleneck; September saw 21 LNG cargoes exit the strait, the highest since the Iran war began but still well below pre-conflict norms. European utilities are reportedly returning to coal in response to the punishing gas bill. Henry Hub rose a more modest 1.92% to $3.024/MMBtu, capped in part by a Baker Hughes rig count that showed US drilling activity edging lower. Alaska LNG economics remain questioned, with costs potentially more than double Gulf Coast projects.",
+   "summary": "Henry Hub firmed 1.25% to $3.074/MMBtu on the day and is up 5.49% over the past month, while TTF eased 2.01% to \u20ac73.255/MWh, narrowing the transatlantic spread. The key domestic catalyst was Freeport LNG ramping gas intake back toward normal levels following a Train 2 shutdown on Friday, suggesting the feedgas dip was short-lived. Broader headline flow remains dominated by war-driven energy insecurity: Singapore is actively exploring nuclear power after high oil and gas prices tied to the Iran war exposed its import vulnerability. Southeast Asian upstream M&A is accelerating as IOCs exit and regional buyers step in. News flow for gas specifically is relatively thin beyond the Freeport operational update.",
    "drivers": [
-    "Strait of Hormuz disruptions limiting Qatari LNG shipments are driving TTF sharply higher, with JERA warning of further price appreciation",
-    "European utilities reverting to coal as high gas prices persist ahead of winter, highlighting structural demand-supply tension in European gas markets",
-    "Henry Hub gains are restrained by a declining US rig count and domestic supply dynamics decoupled from the Middle East crisis"
+    "Freeport LNG Train 2 maintenance outage now resolving, feedgas intake recovering \u2014 near-term bullish for Henry Hub",
+    "Henry Hub on a five-week uptrend (+5.49% 1m) even as TTF softens, suggesting tightening U.S. domestic balance",
+    "Iran war-driven energy insecurity prompting structural demand-side responses (Singapore nuclear pivot, SE Asia M&A) but limited near-term gas-specific catalysts in today's feed"
    ],
-   "headlineCount": 8,
-   "sources": []
+   "headlineCount": 4,
+   "sources": [
+    "\u0426\u0435\u043d\u0437\u043e\u0440.\u041d\u0415\u0422"
+   ]
   },
   "power": {
-   "summary": "Power and carbon markets received limited direct headline flow today, leaving price action as the primary guide. EU carbon EUAs slipped 0.89% to $80.225/EUA, extending a 2.71% weekly decline, even as TTF gas surged 3.47% to 76.5 \u20ac/MWh on the day. The divergence is notable: rising gas prices typically support carbon prices via gas-to-coal switching, and headlines confirm European utilities are indeed returning to coal, which would ordinarily lift EUA demand. The month-on-month carbon gain of just 0.54% suggests the market may be digesting the broader macro uncertainty. Physical tightness in oil and diesel markets, flagged by Dated Brent above $120 and the G7 emergency stock release, adds to the complex backdrop. News flow specifically on power assets and carbon trading was thin today.",
+   "summary": "EU Carbon (EUA) slipped a modest 0.51% to $79.815/EUA and is essentially flat over the past month (-0.02%), offering little directional signal. TTF's 2.01% daily pullback to \u20ac73.255/MWh removes some short-run cost pressure for gas-fired generation, which could mildly compress carbon demand at the margin. The most substantive power-sector story in today's feed is Singapore's consideration of nuclear power as a strategic response to import dependency exposed by the Iran war, though this is a long-dated structural theme rather than a near-term price driver. With roughly $9.6 billion in Southeast Asian upstream assets on the block through 2027, power and carbon market news flow today is thin; the EUA price is treading water pending clearer macroeconomic or policy catalysts.",
    "drivers": [
-    "TTF surging 3.47% on the day increases gas-fired generation costs, pushing European utilities back toward coal and implying higher future EUA demand",
-    "EUAs fell 0.89% despite the bullish gas backdrop, suggesting macro risk-off or supply-side factors are currently outweighing the fuel-switching carbon impulse",
-    "Persistent Hormuz disruptions and Russian diesel embargo maintain an elevated energy cost environment that underpins structural pressure on European power markets"
+    "EUA flat on the month, daily dip minimal \u2014 carbon market lacks a near-term directional catalyst",
+    "TTF pullback of 2.01% on the day eases gas-to-power cost pressure, mild negative for carbon demand at the margin",
+    "Singapore nuclear power deliberations highlight structural energy-security rethinking driven by the Iran war, but no near-term EUA impact"
    ],
-   "headlineCount": 5,
-   "sources": [
-    "Reuters",
-    "\u041f\u0440\u044f\u043c\u0438\u0439"
-   ]
+   "headlineCount": 2,
+   "sources": []
   }
  }
 }
