@@ -1,43 +1,50 @@
 {
- "generated": "2026-10-07T19:15:04.352487+00:00",
+ "generated": "2026-10-08T19:09:17.095316+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude prices traded with a split tone on Wednesday. Brent held near $100.47/bbl (-0.11%) while WTI slipped to $88.48 (-1.06%), both extending a week-long retreat. The dominant macro narrative is a collision of supply disruptions and policy-driven relief valves: new U.S. sanctions under the Graham Act target Russia and Iran simultaneously, yet a temporary easing of Russia sanctions was also reported to contain a price surge \u2014 a contradiction that is clearly weighing on conviction. Iran's oil minister resigned amid an active U.S. naval blockade, with Iranian crude offers to Chinese buyers already falling. Ukraine strikes were reported to have crippled over half of Russia's refining capacity. On the demand-side, U.S. crude stocks drew 3.2 million barrels, but RBOB gasoline cratered 6.03% on the day, suggesting demand-side concerns. The IEA convened informally to discuss a coordinated 100-million-barrel strategic stock release, which is capping the upside.",
+   "summary": "Crude surged sharply on Thursday as escalating Iranian attacks on tankers in the Strait of Hormuz drove Brent back above $104 and WTI to $91.36. Reports of three tankers damaged in the Gulf and Iran's vow to block further Hormuz routes pushed supertanker rates to a record $1.4 million per day, with a large fleet tied up in ship-to-ship transfers outside the strait. Heating oil led the complex higher, up 6.84% on the day, reflecting tightening distillate supply routes. RBOB was the notable laggard, falling 2.09%, suggesting some demand-side caution stateside. On the supply side, Washington temporarily eased Russia oil sanctions to cool prices\u2014a move that riled European allies\u2014while India is pivoting away from Russian crude toward Middle East barrels as U.S. sanctions pressure bites. CME options markets price a 77% probability of an OPEC cut at the next meeting.",
    "drivers": [
-    "Graham Act sanctions on Russia and Iran creating geopolitical risk premium, partly offset by a temporary U.S. sanctions easing to manage price surge",
-    "IEA discussing 100-million-barrel coordinated stock release, providing bearish ceiling for Brent/WTI despite a 3.2M-bbl U.S. crude draw",
-    "RBOB gasoline collapsed 6.03% on the session (-10.53% on the week), signalling demand-side deterioration even as heating oil firmed +1.65%"
+    "Iranian tanker attacks in the Strait of Hormuz intensify, threatening Gulf export flows and driving supertanker rates to a record $1.4 million/day",
+    "U.S. temporarily eases Russia oil sanctions to dampen the price surge, while India shifts crude sourcing from Russia to Middle East suppliers",
+    "Heating oil +6.84% on distillate supply concerns; RBOB -2.09% diverges, signaling demand-side weakness in gasoline"
    ],
    "headlineCount": 12,
    "sources": [
     "Britannica",
-    "Crude Oil Prices Today | OilPrice.com",
-    "EnergyNow",
+    "CBS News",
     "EnergyNow.com",
-    "Ratopati",
-    "The Chenab Times"
+    "The Economic Times",
+    "The Sunday Guardian",
+    "https://streamlinefeed.co.ke/"
    ]
   },
   "gas": {
-   "summary": "Natural gas rallied sharply on both sides of the Atlantic. Henry Hub gained 2.86% to $3.204/MMBtu, extending a monthly rise of nearly 10%, while TTF jumped 3.74% to \u20ac78.525/MWh, up over 8.5% on the week. News flow is thin on direct fundamental catalysts today, but the broader backdrop of tightening European supply \u2014 evidenced by Shell reporting a near-record refining margin jumping 75% sequentially \u2014 is supportive. QatarEnergy's $3 billion loan from Chinese banks amid stalling LNG export volumes hints at financing stress in the LNG supply chain, a bearish signal for Qatari supply reliability. SpaceX's application to build a 32.4-mile Florida gas pipeline is a minor long-term demand signal. Apollo entering the race for Uniper in an $11.5 billion process signals investor appetite for European gas infrastructure at current elevated price levels.",
+   "summary": "Natural gas prices pulled back modestly on both sides of the Atlantic today\u2014Henry Hub shed 1.37% to $3.159/MMBtu and TTF slipped 1.12% to \u20ac77.205/MWh\u2014despite a strong weekly and monthly trend for Henry Hub (+6.47% and +11.94% respectively). The dominant headline was a Reuters exclusive reporting that the U.S. and Russia are actively exploring a framework to revive Russian gas sales to Europe, including a potential U.S. investor for the Nord Stream pipeline. The prospect of resumed Russian supply weighed on TTF sentiment at the margin. On the supply side, Equinor announced a new gas discovery at Norway's Gullfaks South field, with recoverable resources estimated at 3.3\u201310.3 million barrels of oil equivalent, offering incremental upside for North Sea production.",
    "drivers": [
-    "TTF and Henry Hub both rallying strongly on the week and month, reflecting tightening supply conditions and geopolitical disruption to Russian flows",
-    "QatarEnergy securing $3B in Chinese bank financing amid LNG export disruptions raises questions over Atlantic Basin supply adequacy",
-    "Apollo's non-binding bid for Uniper signals private capital conviction in elevated European gas prices persisting; Shell refining margins near record highs confirm tight fuel markets"
+    "Reuters reports U.S. and Russia in discussions to revive Russian gas flows to Europe via a potential U.S.-backed Nord Stream investment, capping TTF upside",
+    "Henry Hub continues its strong monthly rally (+11.94%) even as today's session saw a modest pullback of -1.37%",
+    "Equinor discovers 3.3\u201310.3 MMboe of gas at Gullfaks South, supporting longer-term Norwegian North Sea supply outlook"
    ],
-   "headlineCount": 4,
-   "sources": []
+   "headlineCount": 8,
+   "sources": [
+    "Arise News",
+    "Observer Voice",
+    "Reuters",
+    "The Times of India"
+   ]
   },
   "power": {
-   "summary": "EU carbon EUAs firmed 2.06% to $81.46, broadly tracking the sharp move higher in TTF (+3.74%), as gas-to-power economics tighten and carbon costs rise in tandem. The session's headline story is Google contracting 3,590 MW of nuclear power from Constellation Energy in the PJM interconnection, with 890 MW highlighted \u2014 the clearest signal yet of hyperscaler demand driving baseload nuclear procurement at scale. Finnish power capacity is now being primarily financed by data center offtake agreements, with buyers pivoting from renewable volume to firm baseload supply. South Korea announced a $747 billion plan covering renewables, EV uptake, and industrial decarbonisation through 2035. Equinor flagged its marketing, midstream and processing division will beat Q3 guidance of $400 million, benefiting from Europe's ongoing fuel squeeze.",
+   "summary": "EU carbon EUAs edged higher, up 2.32% to $82.53, maintaining a steady uptrend over the past month (+1.68%). News flow in the power sector today was thematic rather than price-catalytic. A case study from California's September 9 heat event highlighted how over 140,000 home batteries discharged simultaneously through a virtual power plant, averting grid stress without new built capacity\u2014a structural signal for demand-response investment. A drone attack on a UAE nuclear power plant was flagged as a headline risk. UK retailers urged government action to cut green levies as their collective electricity costs are set to rise \u00a3440 million this year, adding to policy pressure on power pricing. A separate commentary raised grid security concerns around Chinese long-duration batteries and foreign cyber threats. TTF's slight daily decline is a modest tailwind for carbon-linked power generation costs.",
    "drivers": [
-    "Google's 3,590 MW Constellation nuclear deal underscores accelerating data-center-driven demand for firm, carbon-free baseload power",
-    "EU EUAs up 2.06% on the day, pulled higher by TTF's 3.74% surge as gas-fired generation remains marginal price-setter",
-    "South Korea's $747B decarbonisation plan and Finnish data-center power financing highlight the global pivot from intermittent renewables toward reliable clean capacity"
+    "EU EUAs +2.32% to $82.53, sustaining a positive monthly trend as oil-linked energy crisis supports carbon pricing",
+    "California VPP event on Sept. 9 demonstrated 140,000+ home batteries discharging in coordination, underscoring distributed grid resilience as a scalable alternative to conventional capacity",
+    "UK retailers warn of \u00a3440 million electricity cost surge and press for green levy cuts; drone attack on UAE nuclear plant adds geopolitical risk to regional power supply"
    ],
-   "headlineCount": 5,
-   "sources": []
+   "headlineCount": 4,
+   "sources": [
+    "EnergyNow.com"
+   ]
   }
  }
 }
