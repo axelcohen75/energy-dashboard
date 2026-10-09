@@ -1,49 +1,50 @@
 {
- "generated": "2026-10-08T19:09:17.095316+00:00",
+ "generated": "2026-10-09T18:39:26.257290+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude surged sharply on Thursday as escalating Iranian attacks on tankers in the Strait of Hormuz drove Brent back above $104 and WTI to $91.36. Reports of three tankers damaged in the Gulf and Iran's vow to block further Hormuz routes pushed supertanker rates to a record $1.4 million per day, with a large fleet tied up in ship-to-ship transfers outside the strait. Heating oil led the complex higher, up 6.84% on the day, reflecting tightening distillate supply routes. RBOB was the notable laggard, falling 2.09%, suggesting some demand-side caution stateside. On the supply side, Washington temporarily eased Russia oil sanctions to cool prices\u2014a move that riled European allies\u2014while India is pivoting away from Russian crude toward Middle East barrels as U.S. sanctions pressure bites. CME options markets price a 77% probability of an OPEC cut at the next meeting.",
+   "summary": "Crude markets closed Friday in a narrow range after a volatile week dominated by Hormuz geopolitics. WTI settled at $91.78/bbl (+0.27% on the day) while Brent held above $100 at $104.60/bbl, supported by tanker attacks that have pushed Hormuz traffic to a two-month low and shut Gulf neighbour exports. The day's swing factor was Trump signalling no Iran strikes before the midterms, pulling Brent back from intraday highs near $110. RBOB gasoline was the session's standout loser, cratering 5.04% on the day and nearly 5% on the week, likely reflecting demand-side concerns. Energy Aspects argued crude remains underpriced relative to physical markets, citing a fair value near $150/bbl. Separately, supertanker rates hitting $82 million have effectively closed the U.S.-to-Asia arbitrage, reshaping flow patterns as India pivots back to Middle East barrels away from Russian crude amid U.S. sanctions pressure. CME options imply a 77% probability of an OPEC cut at the next meeting.",
    "drivers": [
-    "Iranian tanker attacks in the Strait of Hormuz intensify, threatening Gulf export flows and driving supertanker rates to a record $1.4 million/day",
-    "U.S. temporarily eases Russia oil sanctions to dampen the price surge, while India shifts crude sourcing from Russia to Middle East suppliers",
-    "Heating oil +6.84% on distillate supply concerns; RBOB -2.09% diverges, signaling demand-side weakness in gasoline"
+    "Hormuz tanker attacks at a two-month traffic low sustain a geopolitical premium in Brent, but Trump's pre-midterm Iran strike pause capped upside near $110",
+    "RBOB gasoline collapsed 5% on the day and heating oil fell ~3%, suggesting crack-spread compression and possible demand-side deterioration despite tight crude supply",
+    "U.S. easing of Russia oil sanctions temporarily and India's pivot to Middle East crude are reshaping global trade flows as supertanker rates price Asian buyers out of U.S. cargoes"
    ],
    "headlineCount": 12,
    "sources": [
     "Britannica",
     "CBS News",
+    "DD News",
     "EnergyNow.com",
-    "The Economic Times",
     "The Sunday Guardian",
     "https://streamlinefeed.co.ke/"
    ]
   },
   "gas": {
-   "summary": "Natural gas prices pulled back modestly on both sides of the Atlantic today\u2014Henry Hub shed 1.37% to $3.159/MMBtu and TTF slipped 1.12% to \u20ac77.205/MWh\u2014despite a strong weekly and monthly trend for Henry Hub (+6.47% and +11.94% respectively). The dominant headline was a Reuters exclusive reporting that the U.S. and Russia are actively exploring a framework to revive Russian gas sales to Europe, including a potential U.S. investor for the Nord Stream pipeline. The prospect of resumed Russian supply weighed on TTF sentiment at the margin. On the supply side, Equinor announced a new gas discovery at Norway's Gullfaks South field, with recoverable resources estimated at 3.3\u201310.3 million barrels of oil equivalent, offering incremental upside for North Sea production.",
+   "summary": "Natural gas prices rallied sharply on both sides of the Atlantic. Henry Hub gained 1.55% on the day to $3.217/MMBtu, extending a 6% weekly and 13.5% monthly surge. TTF was the more acute mover, up 3.21% to \u20ac81.38/MWh on a weekly gain of nearly 9%, as a headline flagged that the Hormuz crisis has left EU gas storage at historically low levels heading into winter, raising the prospect of a shortfall. Geopolitically, Reuters exclusively reported that the U.S. and Russia are exploring resumed gas sales to Europe via the Nord Stream pipelines despite the ongoing Ukraine war, a development that could reshape European supply balances but remains speculative. On the LNG front, Venture Global suffered a second arbitration loss, this time to Portugal's Galp for contract breach, adding reputational and commercial pressure to the U.S. exporter. Australia is also close to finalising its domestic gas reservation scheme for LNG exporters.",
    "drivers": [
-    "Reuters reports U.S. and Russia in discussions to revive Russian gas flows to Europe via a potential U.S.-backed Nord Stream investment, capping TTF upside",
-    "Henry Hub continues its strong monthly rally (+11.94%) even as today's session saw a modest pullback of -1.37%",
-    "Equinor discovers 3.3\u201310.3 MMboe of gas at Gullfaks South, supporting longer-term Norwegian North Sea supply outlook"
+    "EU gas storage at historically low seasonal levels due to the Hormuz crisis is the primary bullish driver for TTF, lifting the weekly gain to nearly 9%",
+    "Reuters-reported U.S.-Russia Nord Stream gas-to-Europe talks introduce a potential supply relief narrative but remain unconfirmed and politically complex",
+    "Venture Global's second arbitration loss (to Galp) and Australia's pending domestic gas reservation legislation add supply-side uncertainty to the LNG market"
    ],
-   "headlineCount": 8,
+   "headlineCount": 9,
    "sources": [
     "Arise News",
-    "Observer Voice",
     "Reuters",
+    "The News International",
     "The Times of India"
    ]
   },
   "power": {
-   "summary": "EU carbon EUAs edged higher, up 2.32% to $82.53, maintaining a steady uptrend over the past month (+1.68%). News flow in the power sector today was thematic rather than price-catalytic. A case study from California's September 9 heat event highlighted how over 140,000 home batteries discharged simultaneously through a virtual power plant, averting grid stress without new built capacity\u2014a structural signal for demand-response investment. A drone attack on a UAE nuclear power plant was flagged as a headline risk. UK retailers urged government action to cut green levies as their collective electricity costs are set to rise \u00a3440 million this year, adding to policy pressure on power pricing. A separate commentary raised grid security concerns around Chinese long-duration batteries and foreign cyber threats. TTF's slight daily decline is a modest tailwind for carbon-linked power generation costs.",
+   "summary": "Power and carbon markets saw broad gains, albeit with limited sector-specific headline flow. EU EUAs rose 1.71% to $82.855/EUA, posting a tidy +1.77% weekly and +1.83% monthly gain \u2014 a modest but steady uptrend consistent with tighter energy balances across Europe. The key backdrop driver remains TTF's 3.21% daily spike, which mechanically raises marginal generation costs and supports carbon pricing. On the supply side, China's decision to restart fuel exports after a one-week suspension should bring some diesel market relief but is peripheral to European power pricing. U.S. states are reportedly expanding virtual power plant programmes to reduce grid costs, a structural rather than immediate price driver. Coverage for this sector in today's feed was relatively thin beyond these items.",
    "drivers": [
-    "EU EUAs +2.32% to $82.53, sustaining a positive monthly trend as oil-linked energy crisis supports carbon pricing",
-    "California VPP event on Sept. 9 demonstrated 140,000+ home batteries discharging in coordination, underscoring distributed grid resilience as a scalable alternative to conventional capacity",
-    "UK retailers warn of \u00a3440 million electricity cost surge and press for green levy cuts; drone attack on UAE nuclear plant adds geopolitical risk to regional power supply"
+    "TTF's sharp 3.21% daily rally raises European marginal power generation costs, providing direct support to EUA carbon prices",
+    "China's resumption of fuel exports after a one-week halt offers modest downstream relief to diesel and refined product markets",
+    "U.S. virtual power plant expansion signals longer-term grid flexibility investment but carries no immediate price impact"
    ],
-   "headlineCount": 4,
+   "headlineCount": 6,
    "sources": [
-    "EnergyNow.com"
+    "DD News",
+    "The Sunday Guardian"
    ]
   }
  }
