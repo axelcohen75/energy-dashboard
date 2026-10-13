@@ -1,48 +1,46 @@
 {
- "generated": "2026-10-12T21:33:12.833464+00:00",
+ "generated": "2026-10-13T19:44:27.548565+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude staged a sharp intraday rally Monday, with WTI settling near $93.16/bbl (+1.43%) and Brent topping $105.92/bbl (+1.15%), hitting nearly two-week highs after fresh attacks on Saudi Arabia and tanker strikes near the Strait of Hormuz reignited supply-disruption risk premiums. Ukraine's continued precision drone campaign against Russian refineries \u2014 explicitly maintained despite Trump's controversial diesel supply deal with Putin \u2014 adds a secondary supply overhang. The Trump-Putin diesel arrangement is generating significant political blowback: Rep. Brian Fitzpatrick is pushing House legislation to block the deal, CNBC flags potential sanctions-law conflicts, and Trump publicly sparred with Zelensky and European leaders over the accord. RBOB gasoline diverged sharply lower (-4.49%), suggesting demand-side softness or seasonal blending dynamics rather than a tight product market. The WTI one-month return of -6.89% underscores a volatile tape around geopolitical flare-ups.",
+   "summary": "A bifurcated crude complex defined Tuesday's session. WTI edged up 0.71% to $94.42/bbl while Brent slipped 0.68% to $105.93/bbl, maintaining a historically wide spread as Middle East risk premia fluctuate unevenly across grades. The standout mover was Heating Oil, surging 4.54% on the day and 8.06% on the week to $4.9388/gal, reflecting acute distillate tightness exacerbated by Ukrainian drone strikes hobbling Russian refinery capacity. RBOB gasoline collapsed 4.82% to $3.1331/gal, suggesting demand-side softness or refinery run normalization at the products level. Geopolitically, the backdrop remains exceptionally stressed: Iran claims Hormuz control, three tankers have been damaged in the Gulf, Saudi infrastructure faces Houthi attack risk, and Riyadh is fast-tracking its East-West pipeline to 10 million bpd bypass capacity. Guyana's exports approaching 1 million bpd offer a modest supply offset. CME options imply a 77% probability of an OPEC cut at the next meeting.",
    "drivers": [
-    "Attacks on Saudi Arabia and Hormuz-area tankers spike geopolitical risk premium in crude benchmarks",
-    "Ukraine sustains refinery drone strikes despite Trump-Putin diesel deal, keeping Russian supply disruption risk elevated",
-    "Bipartisan political and legal pushback on Trump's Russian diesel agreement introduces U.S. policy uncertainty"
+    "Middle East conflict escalation \u2014 Houthi attacks on Saudi infrastructure, Iranian Hormuz claims, and tanker damage keeping a floor under Brent near $106",
+    "Distillate squeeze: Heating Oil +4.54% on the day, driven by Russian refinery disruptions from Ukrainian drone strikes and diesel supply tightness",
+    "Guyana export milestone (approaching 1 mb/d) and Saudi Hormuz bypass expansion provide incremental supply relief, capping further upside"
    ],
    "headlineCount": 12,
    "sources": [
-    "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-    "CNBC",
-    "CNN",
-    "PBS",
-    "The Times",
-    "The Washington Post"
+    "Business Upturn",
+    "EnergyNow.com",
+    "Iran International",
+    "The Hill",
+    "The Sunday Guardian",
+    "The Times"
    ]
   },
   "gas": {
-   "summary": "European gas markets are the standout mover today, with TTF surging +4.05% to \u20ac84.735/MWh \u2014 up +15.27% on the week \u2014 and headlines warning of multi-year highs ahead despite a reported Russia-Ukraine energy ceasefire over the weekend. The ceasefire appears to be offering the market little conviction: Kyiv accuses Russia of continuing strikes on energy infrastructure, and Ukraine has revealed 20 vessels allegedly used to sustain sanctioned Russian LNG exports. Henry Hub eased modestly to $3.177/MMBtu (-1.34% on the day) but remains strong on a one-month basis (+12.22%), reflecting tightening U.S. domestic balances. A piece on the Russian-Iranian energy-pipeline sanctions-evasion network adds further structural uncertainty to global LNG supply reliability.",
+   "summary": "Natural gas markets are firmly bid on both sides of the Atlantic. Henry Hub jumped 4.77% to $3.318/MMBtu, extending its month-to-date gain to nearly 15%. TTF surged 2.90% to \u20ac86.8/MWh, up a sharp 14.68% on the week, as Gulf disruptions threaten Qatari LNG term supply flows \u2014 a dynamic directly hitting Pakistan, which faces a $1 billion spot LNG bill this winter. China's $3 billion Qatar LNG deal highlights the geopolitical sensitivity of Qatari supply given its geography between Saudi Arabia and Iran. On the demand side, a super El Ni\u00f1o is expected to raise winter temperatures across South Korea, Japan, and parts of China, which could temper Asian LNG import needs and provide some relief to spot prices, though this remains a forecast-dependent offset against current physical tightness.",
    "drivers": [
-    "TTF surging toward multi-year highs as the Russia-Ukraine energy ceasefire fails to inspire market confidence",
-    "Ukraine exposes 20 ships sustaining Russian LNG exports, highlighting persistent sanctions-evasion and supply opacity",
-    "Henry Hub holds firm on a monthly basis (+12.22%) despite a modest daily pullback, reflecting tightening U.S. fundamentals"
+    "TTF +14.68% on the week as Gulf conflict disrupts Qatari LNG term supply, tightening European and Asian spot markets simultaneously",
+    "Pakistan facing $1 billion+ winter LNG bill underscores acute spot price stress for price-sensitive emerging market buyers",
+    "Super El Ni\u00f1o warming forecasts for Northeast Asia offer a potential demand-side buffer, but remain conditional on weather outcomes"
    ],
-   "headlineCount": 4,
-   "sources": [
-    "Defense Express"
-   ]
+   "headlineCount": 5,
+   "sources": []
   },
   "power": {
-   "summary": "The power and carbon complex is feeling the weight of converging geopolitical and structural pressures. EU EUAs edged up +0.99% to $83.675/EUA, supported by rising TTF gas costs that inflate carbon-intensive generation expenses. A drone attack on a UAE nuclear power plant (per EnergyNow) added a nuclear-vulnerability narrative to the day's geopolitical risk backdrop. In Asia, Indian small factories and households face rolling blackouts as coal inventories at power plants plunge amid strong electricity demand, while CREA data shows India curtailed over 4% of solar output in July-August \u2014 highlighting grid integration bottlenecks even in record renewable generation periods. Domestically, Trump's grid security executive order targeting Chinese-made equipment is flagged as a risk to battery storage supply chains, potentially impeding U.S. grid buildout critical for AI data center load growth. Energy stocks gained 16.5% in Q3, the top sector performer.",
+   "summary": "EU carbon edged higher, with EUAs settling at $83.655/EUA, up 0.97% on the day and 4.81% on the week, supported by rising TTF gas prices that increase the cost of gas-fired generation and lift marginal abatement economics. A drone attack on a UAE nuclear power plant, reported Monday, added a tail-risk dimension to Middle East power infrastructure beyond oil and gas assets. India's senior officials signaled that the country's 97 GW coal expansion plan through 2035 may need to be revised upward given surging electricity demand and grid stability needs \u2014 a bearish long-run signal for carbon transition narratives. Trump's announced Russia-Ukraine energy ceasefire covering solar was reported, though analysts note it may offer oil and broader energy markets limited tangible relief near-term.",
    "drivers": [
-    "EU EUAs grinding higher alongside surging TTF, as expensive gas raises the marginal cost of carbon-intensive power generation",
-    "India faces simultaneous coal-supply blackouts and solar curtailment, exposing grid infrastructure gaps",
-    "Trump's grid security order risks disrupting battery storage supply chains, with knock-on effects for U.S. power grid resilience and AI-driven demand growth"
+    "EUAs supported by TTF at \u20ac86.8/MWh, elevating gas-fired generation costs and reinforcing carbon price floor",
+    "Drone strike on UAE nuclear plant highlights broadening infrastructure risk across the Middle East power sector",
+    "India signaling coal expansion beyond 97 GW through 2035 pressures long-term decarbonization expectations in the world's third-largest energy consumer"
    ],
-   "headlineCount": 8,
+   "headlineCount": 5,
    "sources": [
+    "DD News",
     "EnergyNow.com",
-    "Haaretz",
-    "Reuters",
+    "Kompas.id",
     "The National"
    ]
   }
