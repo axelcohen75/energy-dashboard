@@ -1,47 +1,45 @@
 {
- "generated": "2026-10-13T19:44:27.548565+00:00",
+ "generated": "2026-10-14T17:47:17.552551+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "A bifurcated crude complex defined Tuesday's session. WTI edged up 0.71% to $94.42/bbl while Brent slipped 0.68% to $105.93/bbl, maintaining a historically wide spread as Middle East risk premia fluctuate unevenly across grades. The standout mover was Heating Oil, surging 4.54% on the day and 8.06% on the week to $4.9388/gal, reflecting acute distillate tightness exacerbated by Ukrainian drone strikes hobbling Russian refinery capacity. RBOB gasoline collapsed 4.82% to $3.1331/gal, suggesting demand-side softness or refinery run normalization at the products level. Geopolitically, the backdrop remains exceptionally stressed: Iran claims Hormuz control, three tankers have been damaged in the Gulf, Saudi infrastructure faces Houthi attack risk, and Riyadh is fast-tracking its East-West pipeline to 10 million bpd bypass capacity. Guyana's exports approaching 1 million bpd offer a modest supply offset. CME options imply a 77% probability of an OPEC cut at the next meeting.",
+   "summary": "Crude closed a volatile session with WTI firming 1.73% to $95.73/bbl and Brent adding 0.83% to $106.49/bbl, even as RBOB gasoline sold off sharply by 3.39% \u2014 a notable divergence suggesting demand-side nervousness at the pump. The week's +8.48% WTI rally is being driven by a confluence of geopolitical flashpoints: the Russia-Ukraine energy ceasefire remains contested after Kyiv disputed Trump's claim, Houthi attacks on Saudi infrastructure persist, and Strait of Hormuz disruptions continue despite Iraq reporting exports surging to 2.7 million b/d. The US-Russia diesel deal, welcomed by Deputy PM Novak as a 'positive signal,' is drawing fierce political backlash and complicating the supply narrative. On the demand side, Aramco's new Chinese JV refinery receiving its first Arab crude cargo signals incremental downstream pull. CME options markets price a 77% probability of an OPEC cut at the next meeting, underpinning the medium-term floor.",
    "drivers": [
-    "Middle East conflict escalation \u2014 Houthi attacks on Saudi infrastructure, Iranian Hormuz claims, and tanker damage keeping a floor under Brent near $106",
-    "Distillate squeeze: Heating Oil +4.54% on the day, driven by Russian refinery disruptions from Ukrainian drone strikes and diesel supply tightness",
-    "Guyana export milestone (approaching 1 mb/d) and Saudi Hormuz bypass expansion provide incremental supply relief, capping further upside"
+    "Russia-Ukraine energy ceasefire collapse and ongoing Houthi strikes on Saudi infrastructure keeping a geopolitical risk premium in Brent, with $108 cited as near-term technical target",
+    "US-Russia diesel deal generating political backlash but Novak framing it as bullish for Russian refining output, adding supply-side complexity",
+    "RBOB gasoline -3.39% on the day despite crude strength, signalling potential demand softness at the consumer level amid broader Middle East supply disruption"
    ],
    "headlineCount": 12,
    "sources": [
-    "Business Upturn",
-    "EnergyNow.com",
-    "Iran International",
-    "The Hill",
-    "The Sunday Guardian",
-    "The Times"
+    "Latin Times",
+    "Outside the Beltway",
+    "PBS",
+    "Radio Free Europe/Radio Liberty",
+    "Reuters",
+    "The Hill"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets are firmly bid on both sides of the Atlantic. Henry Hub jumped 4.77% to $3.318/MMBtu, extending its month-to-date gain to nearly 15%. TTF surged 2.90% to \u20ac86.8/MWh, up a sharp 14.68% on the week, as Gulf disruptions threaten Qatari LNG term supply flows \u2014 a dynamic directly hitting Pakistan, which faces a $1 billion spot LNG bill this winter. China's $3 billion Qatar LNG deal highlights the geopolitical sensitivity of Qatari supply given its geography between Saudi Arabia and Iran. On the demand side, a super El Ni\u00f1o is expected to raise winter temperatures across South Korea, Japan, and parts of China, which could temper Asian LNG import needs and provide some relief to spot prices, though this remains a forecast-dependent offset against current physical tightness.",
+   "summary": "Henry Hub retreated 3.20% to $3.177/MMBtu on the day, paring some of the month's 8.87% gain, while European TTF was effectively flat on the session at \u20ac87.315/MWh after a blistering +11.83% weekly surge. The Atlantic spread remains wide and the geopolitical backdrop is firmly bullish for European gas: the Nord Stream sabotage trial opened in Germany with explosive allegations against Ukraine, and the Russia-Ukraine ceasefire that briefly offered market comfort has collapsed in credibility. On the LNG side, Taiwan committed up to $4.4 billion to the Alaska LNG megaproject, locking in 30% of output over 20 years \u2014 a significant long-term demand anchor for US exports. Meanwhile, the Iran war is reshaping Asian LNG trade flows: India's demand has dropped 1.5 million tonnes year-to-date as spot prices rose, with Oman displacing the US as India's top LNG supplier in September.",
    "drivers": [
-    "TTF +14.68% on the week as Gulf conflict disrupts Qatari LNG term supply, tightening European and Asian spot markets simultaneously",
-    "Pakistan facing $1 billion+ winter LNG bill underscores acute spot price stress for price-sensitive emerging market buyers",
-    "Super El Ni\u00f1o warming forecasts for Northeast Asia offer a potential demand-side buffer, but remain conditional on weather outcomes"
+    "TTF holding near weekly highs (+11.83%) as Russia-Ukraine ceasefire doubts persist and the Nord Stream trial reopens pipeline security anxiety in Europe",
+    "Taiwan's $4.4 billion Alaska LNG commitment provides a structural long-term demand signal for US LNG exports, though near-term Henry Hub is softening",
+    "Iran war disrupting Middle East LNG flows: India's gas demand down 1.5 million tonnes YTD, with trade-flow shifts away from US toward Oman in Asian markets"
    ],
-   "headlineCount": 5,
+   "headlineCount": 6,
    "sources": []
   },
   "power": {
-   "summary": "EU carbon edged higher, with EUAs settling at $83.655/EUA, up 0.97% on the day and 4.81% on the week, supported by rising TTF gas prices that increase the cost of gas-fired generation and lift marginal abatement economics. A drone attack on a UAE nuclear power plant, reported Monday, added a tail-risk dimension to Middle East power infrastructure beyond oil and gas assets. India's senior officials signaled that the country's 97 GW coal expansion plan through 2035 may need to be revised upward given surging electricity demand and grid stability needs \u2014 a bearish long-run signal for carbon transition narratives. Trump's announced Russia-Ukraine energy ceasefire covering solar was reported, though analysts note it may offer oil and broader energy markets limited tangible relief near-term.",
+   "summary": "The power and carbon complex is under acute stress from two directions simultaneously. In Ukraine, Russian forces fired 39 ballistic missiles at the power grid on 14 October, cutting electricity to at least 600,000 people \u2014 a strike that came just four days after the Trump administration licensed Russian diesel imports, deepening questions about the coherence of US energy diplomacy. In the US, PJM spot prices breached $1,000/MWh as an unseasonable Midwest and Mid-Atlantic heat event collided with the scheduled fall plant maintenance window, creating a classic dual squeeze on capacity. EU carbon (EUA) slipped 1.15% to $82.71 on the day but remains up 2.54% on the week, with TTF's elevated level at \u20ac87.315/MWh continuing to incentivise gas-to-power switching that keeps carbon demand supported. Big Tech is also pushing back against grid upgrade cost-sharing obligations, adding regulatory uncertainty to the longer-term US infrastructure buildout.",
    "drivers": [
-    "EUAs supported by TTF at \u20ac86.8/MWh, elevating gas-fired generation costs and reinforcing carbon price floor",
-    "Drone strike on UAE nuclear plant highlights broadening infrastructure risk across the Middle East power sector",
-    "India signaling coal expansion beyond 97 GW through 2035 pressures long-term decarbonization expectations in the world's third-largest energy consumer"
+    "Russian missile barrage cuts power to 600,000 Ukrainians, escalating infrastructure war and undermining any market confidence in the Trump-brokered ceasefire narrative",
+    "PJM spot prices topping $1,000/MWh as unseasonable heat collides with fall maintenance outages, highlighting US grid vulnerability heading into shoulder season",
+    "EU EUA eases 1.15% on the day but TTF's weekly surge of +11.83% continues to support gas-burn and carbon demand; Big Tech resistance to grid cost-sharing adds long-term capex uncertainty"
    ],
-   "headlineCount": 5,
+   "headlineCount": 6,
    "sources": [
-    "DD News",
-    "EnergyNow.com",
-    "Kompas.id",
-    "The National"
+    "Breitbart News",
+    "The Defence Blog"
    ]
   }
  }
