@@ -1,42 +1,42 @@
 {
- "generated": "2026-10-16T17:10:37.132079+00:00",
+ "generated": "2026-10-16T22:47:15.137876+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets split sharply today: Brent surged 3.27% to $109.33/bbl, extending its weekly gain to +4.45%, while WTI added a more modest +0.71% to $98.62/bbl. The Brent/WTI spread blowout reflects Hormuz risk premium as Iran intensifies tanker attacks and oil flows through the strait plummet. Ukraine's strike on the Ryazan refinery and the collapse of the US-brokered Russia-Ukraine energy ceasefire added fresh supply-disruption anxiety. Distillates diverged from crude: RBOB fell 1.64% and heating oil shed 2.85% on the day, likely reflecting a US-Russia diesel deal that eased near-term product supply fears. Options markets remain firmly biased toward an OPEC cut at the next meeting (77.26% probability). Trump faces a 10-day deadline on 100% tariffs for Russian oil buyers, adding a further policy wildcard.",
+   "summary": "Crude markets are caught between a surging front-month spot and a softening product complex. Brent touched $110 intraday for the first time since May before settling at $109.69 (+3.56%), driven by intensifying Strait of Hormuz disruptions as Iran steps up tanker attacks, compressing regional supply flows. WTI tracked higher to $99.04 (+1.09%), though the Brent-WTI spread widening signals distinct basin dynamics. Distillate and gasoline cracks are rolling over sharply \u2014 heating oil off 2.53% and RBOB down 1.17% on the day \u2014 suggesting demand concerns are beginning to offset the geopolitical premium. Ukraine's renewed drone strike on the Ryazan refinery and the Russia-Ukraine energy ceasefire collapse add further supply-side risk. The U.S. moved to release another 17 million SPR barrels, one day after the IEA accelerated emergency stock releases, but markets appear unimpressed. Options pricing assigns a 77% probability to an OPEC cut at the next meeting.",
    "drivers": [
-    "Iran intensifying Strait of Hormuz tanker attacks, sharply curtailing Gulf oil flows and lifting Brent risk premium",
-    "Russia-Ukraine energy ceasefire breakdown and Ukrainian strike on Ryazan refinery reinforce upstream supply disruption concerns",
-    "US-Russia diesel deal and Trump's 10-day tariff decision on Russian oil buyers inject product-market and policy uncertainty"
+    "Iran intensifying Strait of Hormuz attacks, disrupting tanker flows and pushing Brent to a May-high of $110",
+    "Ukraine striking Russian oil infrastructure (Ryazan refinery) after energy ceasefire collapse, adding supply risk premium",
+    "U.S. releasing 17 million additional SPR barrels alongside IEA emergency stock release, providing partial demand-side offset"
    ],
    "headlineCount": 12,
    "sources": [
     "Britannica",
     "CBS News",
-    "EnergyNow.com",
     "Latin Times",
     "Reuters",
-    "Swarajya"
+    "THISAGE",
+    "The New Indian Express"
    ]
   },
   "gas": {
-   "summary": "Henry Hub slipped 2.84% to $3.145/MMBtu, extending a weekly loss of 2.36%, while TTF eased 0.81% to \u20ac86.432/MWh after a blistering +9.62% weekly rally. The Atlantic divergence persists: European prices remain structurally elevated as the Iran war-driven LNG supply crunch squeezes Middle Eastern deliveries, turning Europe's residual coal capacity profitable and forcing two German power retailers out of business. South Korea has similarly pivoted back to coal as spot LNG premiums bite. China's early stockpiling ahead of winter offers a partial demand offset and may limit further Asian spot LNG price escalation. Zelensky warned a US-Russia gas deal could follow the diesel pact, introducing a tail risk that could eventually loosen European supply.",
+   "summary": "Henry Hub softened sharply, falling 3.68% on the day to $3.117/MMBtu, pulling back despite a firm monthly backdrop (+7.45% over 30 days), possibly reflecting domestic demand ambiguity and a flat U.S. rig count \u2014 Baker Hughes reported no change in active oil and gas rigs this week, signalling producers are not yet responding to elevated prices. TTF held nearly flat on the day at \u20ac87.138/MWh but remains up 11.60% on the week, reflecting persistent European tightness tied to the LNG supply crunch. That crunch has revived profitability at Europe's remaining coal-fired plants and is squeezing German retail power suppliers, with two startup electricity retailers announcing market exits this week. Zelensky separately warned a gas supply deal could follow a reported US-Russia diesel pact, adding a geopolitical wildcard to the European gas outlook.",
    "drivers": [
-    "Iran war-driven Middle Eastern LNG disruption sustaining elevated TTF and triggering coal-to-gas switching reversals in Europe and South Korea",
-    "China's pre-built winter gas inventories may cap extreme Asian spot LNG demand, providing marginal supply relief",
-    "Potential US-Russia gas deal flagged by Zelensky represents a downside price risk if ceasefire diplomacy resurfaces"
+    "Global LNG supply crunch keeping TTF elevated (+11.6% w/w), reigniting European coal-to-gas switching economics in reverse",
+    "U.S. rig count unchanged despite soaring prices, limiting near-term domestic supply response and underpinning the monthly Henry Hub gain",
+    "Geopolitical uncertainty rising as Zelensky signals potential US-Russia gas deal, adding further European supply-route risk"
    ],
-   "headlineCount": 6,
+   "headlineCount": 5,
    "sources": [
     "AzerNews"
    ]
   },
   "power": {
-   "summary": "EU carbon (EUA) slipped 2.16% to $80.92/EUA, drifting slightly lower on the week (-1.95%) despite the LNG crunch that is driving coal-fired generation back into dispatch across Europe and South Korea. The carbon price weakness is notable given the surge in coal burn \u2014 two German power retailers have already failed under spiking wholesale prices. Russia's 39-ballistic-missile strike on Ukraine's power grid earlier this week left 600,000 people without electricity and drew Zelensky's charge that Moscow violated Trump's own ceasefire framework. Data-centre-led renewable demand growth in India represents a structural demand tailwind for clean power investment but is a longer-dated signal. Near-term, the power complex is dominated by the gas price squeeze and war-related grid disruptions.",
+   "summary": "EU carbon slipped 1.24% to $80.92/EUA and is down 2.34% on the week, a notable divergence from the TTF surge. The likely explanation: the LNG-driven gas price spike is pushing European generators back toward coal, reducing near-term EUA demand as coal carries a different carbon cost structure in the short run. Two German retail power suppliers have exited the market this week, illustrating how wholesale price volatility is cascading into retail stress. On the geopolitical side, Russia's 39-missile ballistic strike on Ukraine's power grid \u2014 reportedly during a ceasefire window \u2014 left 600,000 people without power and drew sharp condemnation from Zelensky, who called for strong U.S. sanctions. On the demand side, India's data center buildout is emerging as a structural clean energy demand driver, with local renewable providers warning supply could fall short. A large wind farm in Victoria, Australia received state approval, moving toward federal environmental review.",
    "drivers": [
-    "Russia's ballistic missile strikes on Ukraine's power grid undermining ceasefire credibility and heightening European energy security anxiety",
-    "LNG supply crunch restoring profitability to European coal-fired power while pushing two German electricity retailers into insolvency",
-    "EUA carbon price softening despite rising coal burn, creating a potential dislocation to watch if coal dispatch data confirms a sustained ramp"
+    "LNG crunch reviving European coal plant profitability, weighing on near-term EUA demand and pressuring carbon prices lower",
+    "Russia's 39-missile strike on Ukraine's power grid leaving 600,000 without electricity, escalating energy infrastructure warfare",
+    "India data center expansion driving structural renewable power demand growth, while a major Victoria wind farm clears state approval"
    ],
    "headlineCount": 10,
    "sources": [
