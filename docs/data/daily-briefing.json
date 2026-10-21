@@ -1,49 +1,46 @@
 {
- "generated": "2026-10-21T00:02:33.348727+00:00",
+ "generated": "2026-10-21T17:51:54.207720+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude prices posted a sharp intraday split on Wednesday: WTI shed 5.08% to $98.38/bbl while Brent fell only 0.21% to $109.32, widening the Brent-WTI spread markedly. The divergence reflects two competing forces. On the bearish side, Trump's partial waiver of Russian oil sanctions added supply-side relief, with Russia's seaborne exports already under pressure after Baltic port disruptions and Ukraine's mass drone strike on a St. Petersburg oil terminal. On the bullish side, Houthi attacks on Saudi airports and Aramco facilities, ongoing Strait of Hormuz disruption in the US-Israel-Iran conflict, and a 4.93 million barrel US crude inventory draw reported by API all kept Brent well supported. RBOB gasoline and heating oil fell 3.86% and 3.25% respectively, suggesting demand-side softness is amplifying the WTI weakness. CME options markets price a 77% probability of an OPEC cut at the next meeting.",
+   "summary": "A sharp divergence dominated crude today: WTI tumbled 4.65% to $97.07 while Brent held flat near $108.78, leaving the WTI-Brent spread at an unusually wide $11.71. The gap reflects competing forces\u2014Houthi strikes on Saudi airports and Aramco facilities earlier this week have kept Brent bid, while Trump's Russia sanctions waiver and the imminent arrival of the first Russian diesel tanker to the US are weighing on domestic benchmarks. Goldman Sachs flagged a new oil price shock risk, citing tanker rates surging from $3 to $20/bbl on Hormuz crisis disruption. Heating oil shed a punishing 7.09% as the Russia diesel deal undercuts distillate premiums. EIA data showed US crude inventories fell 3.1 million barrels last week, offering some floor, but Saudi Arabia's record-low production offset by a five-month high in exports adds further complexity to the supply picture. Markets are pricing an aggressive 77% probability of an OPEC cut at the next meeting.",
    "drivers": [
-    "Trump's Russia sanctions waiver pressuring WTI while Houthi strikes on Saudi Aramco facilities and Hormuz disruption underpin Brent, widening the spread",
-    "API reported a 4.93 million barrel US crude inventory draw for the week ending Oct 16, providing a partial floor",
-    "Ukraine's 1,000-drone strike on St. Petersburg oil infrastructure and halted Primorsk Baltic exports tighten Russian supply, but sanctions relief offsets the effect"
+    "Houthi strikes on Saudi Aramco facilities and airports supporting Brent; Trump's Russia sanctions waiver and incoming Russian diesel tanker pressuring WTI and heating oil",
+    "Goldman Sachs warns of oil price shock as tanker freight rates surge to $20/bbl from $3/bbl due to Iran war and Hormuz crisis",
+    "EIA reports US crude inventories -3.1 mb last week; Saudi exports hit five-month high despite record-low production; IOC to trim Middle East term purchases"
    ],
    "headlineCount": 12,
    "sources": [
-    "ABC News - Breaking News, Latest News and Videos",
+    "Al Jazeera",
     "BigGo Finance",
+    "Business Recorder",
     "CNBC",
-    "Coinpaper",
-    "EnergyNow.com",
-    "Firstpost"
+    "Equiti Global",
+    "Knewz"
    ]
   },
   "gas": {
-   "summary": "Natural gas prices weakened on both sides of the Atlantic on Wednesday, though the underlying supply picture remains strained. Henry Hub fell 2.52% to $2.982/MMBtu and is down 9.20% on the week, suggesting near-term US demand softness or mild weather is outweighing geopolitical support. European TTF eased 1.81% to \u20ac86.445/MWh but remains 18% higher on the month, a stark contrast reflecting tighter fundamentals. A notable bearish development for European supply came from Norway, where September natural gas output fell 12.6% month-on-month, exacerbating concerns ahead of winter. The EU simultaneously reaffirmed its opposition to Arctic gas development despite depleted storage levels. LNG market tightness linked to Middle East conflict risks was flagged in available reporting but headline detail on that front is limited.",
+   "summary": "Henry Hub natural gas slid 5.91% to $2.789/MMBtu, extending a brutal week that has seen US prices drop nearly 13%. TTF, by contrast, gained 2.87% to \u20ac87.5/MWh and is up over 19% on the month, underscoring the ongoing transatlantic supply bifurcation. The EU formally rejected reported US pressure to restore Russian gas flows as part of a Ukraine peace framework, keeping European supply anxiety elevated. The UK, responding to that tightness, approved the long-contested Jackdaw North Sea gas field\u2014its first new North Sea project sanction since the Iran war pushed energy prices higher. On the demand side, GM's announcement that it will expand hybrid vehicle offerings as US pump prices hit $4.28/gal signals demand-side adaptation beginning to take hold.",
    "drivers": [
-    "Norway's September gas output fell 12.6% month-on-month, tightening European winter supply",
-    "EU reaffirmed opposition to Arctic gas development even as the bloc faces an expensive winter with depleted storage",
-    "Henry Hub down 9.2% on the week despite a firmer monthly trend, pointing to near-term US demand weakness overriding geopolitical support"
+    "Henry Hub drops sharply amid US supply-demand slack; TTF surges month-on-month as European supply tightness persists following Iran war disruptions",
+    "EU rejects US push to restore Russian gas imports under any Ukraine peace deal, keeping European supply risk premium intact",
+    "UK approves Jackdaw North Sea gas field in first new project sanction since the Iran war energy price shock"
    ],
    "headlineCount": 5,
-   "sources": []
+   "sources": [
+    "EU Today",
+    "UNITED24 Media"
+   ]
   },
   "power": {
-   "summary": "EU carbon EUAs edged up 0.89% to $81.64/EUA today, a modest recovery within a broader monthly softening of 1.08%, while TTF \u2014 the key power-sector fuel input \u2014 slipped 1.81% on the day but remains 18% higher over the past month. Structural demand signals are constructive: a separate headline noted European electricity demand has returned to growth, driven by rising electrification despite weak industrial activity. On the supply side, Mexico's state utility is set to approve up to 60 renewable energy projects totalling 8.2 GW, predominantly solar. A Nevada utility dataset showed geothermal reaching cost parity with solar-plus-storage, a meaningful milestone for firm clean power. The Strait of Hormuz situation, with Iran offering a conditional six-to-seven-day reopening window, remains a key watch point for LNG and gas-fired generation cost exposure across Europe.",
+   "summary": "The power and carbon complex offered thin data flow today. EU carbon EUAs were essentially unchanged at $81.495/EUA (+0.03%), with a modest week-on-month drift lower of about 1.2%, suggesting near-term carbon demand expectations remain subdued despite the broader energy price surge. TTF's 2.87% daily rise keeps gas-fired generation costs elevated across Europe. India's coal crisis is a notable macro risk: half the country's coal-fired fleet is reportedly operating with critically low stocks as power demand surges\u2014a situation that could tighten seaborne thermal coal markets and indirectly pressure carbon prices if substitution shifts. Morgan Stanley flags global fuel markets remaining tight through at least mid-2027 due to elevated maintenance schedules, which could sustain power price volatility well into next year.",
    "drivers": [
-    "European power demand returning to growth driven by electrification, supporting EUA prices despite weak industrial activity",
-    "Mexico poised to approve 8.2 GW of new renewable capacity across up to 60 projects, predominantly solar",
-    "Geothermal achieves cost parity with solar-plus-storage per Nevada utility data, while Hormuz closure risk keeps European gas-fired generation cost exposure elevated"
+    "EU EUAs effectively flat at $81.50; TTF's continued monthly surge (+19%) raises gas-to-power generation costs across Europe",
+    "India coal crisis: half of coal power fleet at critically low stock levels amid surging power demand, raising seaborne coal market tightness risk",
+    "Morgan Stanley sees global fuel markets staying tight through mid-2027 on unusually high planned maintenance, sustaining power price volatility outlook"
    ],
-   "headlineCount": 11,
-   "sources": [
-    "ABC News - Breaking News, Latest News and Videos",
-    "Bangkok Post",
-    "Business Upturn",
-    "Firstpost",
-    "The Sunday Guardian"
-   ]
+   "headlineCount": 2,
+   "sources": []
   }
  }
 }
