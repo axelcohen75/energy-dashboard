@@ -1,46 +1,47 @@
 {
- "generated": "2026-10-21T17:51:54.207720+00:00",
+ "generated": "2026-10-22T00:08:04.601509+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "A sharp divergence dominated crude today: WTI tumbled 4.65% to $97.07 while Brent held flat near $108.78, leaving the WTI-Brent spread at an unusually wide $11.71. The gap reflects competing forces\u2014Houthi strikes on Saudi airports and Aramco facilities earlier this week have kept Brent bid, while Trump's Russia sanctions waiver and the imminent arrival of the first Russian diesel tanker to the US are weighing on domestic benchmarks. Goldman Sachs flagged a new oil price shock risk, citing tanker rates surging from $3 to $20/bbl on Hormuz crisis disruption. Heating oil shed a punishing 7.09% as the Russia diesel deal undercuts distillate premiums. EIA data showed US crude inventories fell 3.1 million barrels last week, offering some floor, but Saudi Arabia's record-low production offset by a five-month high in exports adds further complexity to the supply picture. Markets are pricing an aggressive 77% probability of an OPEC cut at the next meeting.",
+   "summary": "A sharp WTI/Brent divergence dominated oil markets Thursday. WTI tumbled 3.70% to $98.02/bbl while Brent edged up 1.17% to $110.06/bbl, a spread that reflects the competing forces of Trump's Russian sanctions waivers \u2014 which have rerouted Arctic-grade barrels to Asian buyers via the Northern Sea Route \u2014 against ongoing Hormuz/Bab al-Mandab disruptions that tighten Atlantic Basin supply. Three tankers damaged in the Gulf this week, fresh Houthi strikes on Saudi energy sites, and Ukraine's 1,015-drone assault on Russian oil facilities kept the geopolitical premium elevated for Brent. Refined products cracked hard: Heating Oil collapsed 6.15% to $4.6221/gal and RBOB fell 1.69% to $3.0645/gal. US crude stocks drew down 3.1 million barrels per the latest EIA print. CME OPEC Watch prices a 77% probability of a production cut at the next meeting.",
    "drivers": [
-    "Houthi strikes on Saudi Aramco facilities and airports supporting Brent; Trump's Russia sanctions waiver and incoming Russian diesel tanker pressuring WTI and heating oil",
-    "Goldman Sachs warns of oil price shock as tanker freight rates surge to $20/bbl from $3/bbl due to Iran war and Hormuz crisis",
-    "EIA reports US crude inventories -3.1 mb last week; Saudi exports hit five-month high despite record-low production; IOC to trim Middle East term purchases"
+    "WTI/Brent spread blowing out as Trump's Russia sanction waivers redirect discounted barrels east, softening WTI while Brent holds on Gulf/Hormuz risk premium",
+    "Hormuz and Bab al-Mandab disruptions \u2014 three tankers damaged, ongoing Houthi strikes on Saudi sites \u2014 supporting Atlantic Basin crude but crushing refined product flows",
+    "Bearish US refinery margin signal: Heating Oil -6.15% and RBOB -1.69% despite a 3.1 mb crude stock draw, suggesting demand destruction at high retail prices"
    ],
    "headlineCount": 12,
    "sources": [
     "Al Jazeera",
     "BigGo Finance",
-    "Business Recorder",
-    "CNBC",
-    "Equiti Global",
-    "Knewz"
+    "Britannica",
+    "EnergyNow.com",
+    "Saudi Gazette",
+    "SuaraGarut.ID"
    ]
   },
   "gas": {
-   "summary": "Henry Hub natural gas slid 5.91% to $2.789/MMBtu, extending a brutal week that has seen US prices drop nearly 13%. TTF, by contrast, gained 2.87% to \u20ac87.5/MWh and is up over 19% on the month, underscoring the ongoing transatlantic supply bifurcation. The EU formally rejected reported US pressure to restore Russian gas flows as part of a Ukraine peace framework, keeping European supply anxiety elevated. The UK, responding to that tightness, approved the long-contested Jackdaw North Sea gas field\u2014its first new North Sea project sanction since the Iran war pushed energy prices higher. On the demand side, GM's announcement that it will expand hybrid vehicle offerings as US pump prices hit $4.28/gal signals demand-side adaptation beginning to take hold.",
+   "summary": "Henry Hub and TTF are moving in opposite directions, highlighting a deepening transatlantic gas market split. Henry Hub slid 6.28% to $2.777/MMBtu on the day, extending a brutal 13.16% weekly decline, likely reflecting mild weather and comfortable domestic supply. TTF gained 2.87% to \u20ac87.5/MWh, up 19.31% on the month, as the EU formally rejected any US-brokered restoration of Russian gas imports under a prospective Ukraine peace deal, keeping European supply constraints intact. The UK government's re-approval of the Jackdaw North Sea gas field offers some medium-term supply relief but does nothing for near-term TTF tightness. North Sea asset turnover accelerated as BP continues its full exit from UK upstream and independents step in.",
    "drivers": [
-    "Henry Hub drops sharply amid US supply-demand slack; TTF surges month-on-month as European supply tightness persists following Iran war disruptions",
-    "EU rejects US push to restore Russian gas imports under any Ukraine peace deal, keeping European supply risk premium intact",
-    "UK approves Jackdaw North Sea gas field in first new project sanction since the Iran war energy price shock"
+    "EU's outright rejection of resumed Russian gas imports under a peace framework cements TTF's structurally elevated level, now +19% on the month",
+    "Henry Hub in freefall (-13% on the week) on soft US demand fundamentals, widening the TTF/HH arb and incentivising continued LNG export flows to Europe",
+    "UK Jackdaw field re-approval adds long-term North Sea supply optionality, but BP's full upstream exit signals major incumbents are de-risking UK gas exposure"
    ],
-   "headlineCount": 5,
+   "headlineCount": 4,
    "sources": [
-    "EU Today",
     "UNITED24 Media"
    ]
   },
   "power": {
-   "summary": "The power and carbon complex offered thin data flow today. EU carbon EUAs were essentially unchanged at $81.495/EUA (+0.03%), with a modest week-on-month drift lower of about 1.2%, suggesting near-term carbon demand expectations remain subdued despite the broader energy price surge. TTF's 2.87% daily rise keeps gas-fired generation costs elevated across Europe. India's coal crisis is a notable macro risk: half the country's coal-fired fleet is reportedly operating with critically low stocks as power demand surges\u2014a situation that could tighten seaborne thermal coal markets and indirectly pressure carbon prices if substitution shifts. Morgan Stanley flags global fuel markets remaining tight through at least mid-2027 due to elevated maintenance schedules, which could sustain power price volatility well into next year.",
+   "summary": "Power and carbon data are thin today. EU Carbon EUAs edged fractionally lower, down 0.21% to $81.47/EUA, continuing a modest weekly and monthly retreat of 2.61% and 1.18% respectively, despite TTF natural gas rising 2.87% on the day \u2014 a divergence that would normally pressure carbon higher via gas-to-coal switching economics. The disconnect may reflect broader risk-off sentiment given escalating conflict headlines. Russian ballistic missile strikes on Kyiv's energy infrastructure, reported Monday, remain the most acute power-sector risk in theatre. On the corporate side, oil supermajors are flagging record quarterly profits tied to the Middle East war premium, though capex discipline is being maintained. Beyond these points, today's provided data for this sector is limited.",
    "drivers": [
-    "EU EUAs effectively flat at $81.50; TTF's continued monthly surge (+19%) raises gas-to-power generation costs across Europe",
-    "India coal crisis: half of coal power fleet at critically low stock levels amid surging power demand, raising seaborne coal market tightness risk",
-    "Morgan Stanley sees global fuel markets staying tight through mid-2027 on unusually high planned maintenance, sustaining power price volatility outlook"
+    "EUA prices drifting lower (-2.6% on the week) despite surging gas costs, suggesting near-term demand-side weakness is outweighing fuel-switching carbon pressure",
+    "Russian strikes on Ukrainian energy infrastructure represent a direct power-grid threat and could amplify winter supply stress across Eastern Europe",
+    "Supermajors banking war-premium profits while capping spending, signalling no imminent upstream capacity relief that could ease power generation fuel costs"
    ],
    "headlineCount": 2,
-   "sources": []
+   "sources": [
+    "ABC News - Breaking News, Latest News and Videos"
+   ]
   }
  }
 }
