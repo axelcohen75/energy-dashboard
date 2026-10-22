@@ -1,47 +1,45 @@
 {
- "generated": "2026-10-22T00:08:04.601509+00:00",
+ "generated": "2026-10-22T17:51:15.997470+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "A sharp WTI/Brent divergence dominated oil markets Thursday. WTI tumbled 3.70% to $98.02/bbl while Brent edged up 1.17% to $110.06/bbl, a spread that reflects the competing forces of Trump's Russian sanctions waivers \u2014 which have rerouted Arctic-grade barrels to Asian buyers via the Northern Sea Route \u2014 against ongoing Hormuz/Bab al-Mandab disruptions that tighten Atlantic Basin supply. Three tankers damaged in the Gulf this week, fresh Houthi strikes on Saudi energy sites, and Ukraine's 1,015-drone assault on Russian oil facilities kept the geopolitical premium elevated for Brent. Refined products cracked hard: Heating Oil collapsed 6.15% to $4.6221/gal and RBOB fell 1.69% to $3.0645/gal. US crude stocks drew down 3.1 million barrels per the latest EIA print. CME OPEC Watch prices a 77% probability of a production cut at the next meeting.",
+   "summary": "Crude markets surged Thursday, with Brent settling above $112/bbl (+3.44% on the day, +9.20% on the month) and WTI clearing $99/bbl, driven squarely by Middle East escalation. Iran's IRGC Navy claimed seven vessels\u2014including oil tankers\u2014were struck in the Persian Gulf, compounding earlier Houthi strikes on Saudi energy infrastructure and tanker damage reported earlier in the week. Strait of Hormuz closure risk is the dominant fear premium in the market. Citi, which had called for $60 oil, now acknowledges more upside risk. A partial offset came from the Trump administration's temporary waiver on select Russian oil sanctions, which briefly weighed on futures mid-week but failed to cap the geopolitical bid. Product markets diverged sharply: RBOB gasoline fell 1.18% on the day and is down 14% on the month, while heating oil also slipped, suggesting demand-side softness at the refined-products level despite surging crude.",
    "drivers": [
-    "WTI/Brent spread blowing out as Trump's Russia sanction waivers redirect discounted barrels east, softening WTI while Brent holds on Gulf/Hormuz risk premium",
-    "Hormuz and Bab al-Mandab disruptions \u2014 three tankers damaged, ongoing Houthi strikes on Saudi sites \u2014 supporting Atlantic Basin crude but crushing refined product flows",
-    "Bearish US refinery margin signal: Heating Oil -6.15% and RBOB -1.69% despite a 3.1 mb crude stock draw, suggesting demand destruction at high retail prices"
+    "IRGC claims seven ships struck in Persian Gulf, escalating Strait of Hormuz closure risk and driving a sharp geopolitical risk premium into crude",
+    "Houthi attacks on Saudi energy sites and ongoing US-Iran conflict sustaining regional supply-disruption fears",
+    "Trump administration's temporary waiver on Russian oil sanctions providing partial bearish offset but insufficient to reverse the geopolitical bid"
    ],
    "headlineCount": 12,
    "sources": [
-    "Al Jazeera",
     "BigGo Finance",
-    "Britannica",
     "EnergyNow.com",
-    "Saudi Gazette",
-    "SuaraGarut.ID"
+    "Iran International",
+    "SuaraGarut.ID",
+    "The Sunday Guardian",
+    "WSJ"
    ]
   },
   "gas": {
-   "summary": "Henry Hub and TTF are moving in opposite directions, highlighting a deepening transatlantic gas market split. Henry Hub slid 6.28% to $2.777/MMBtu on the day, extending a brutal 13.16% weekly decline, likely reflecting mild weather and comfortable domestic supply. TTF gained 2.87% to \u20ac87.5/MWh, up 19.31% on the month, as the EU formally rejected any US-brokered restoration of Russian gas imports under a prospective Ukraine peace deal, keeping European supply constraints intact. The UK government's re-approval of the Jackdaw North Sea gas field offers some medium-term supply relief but does nothing for near-term TTF tightness. North Sea asset turnover accelerated as BP continues its full exit from UK upstream and independents step in.",
+   "summary": "European and US gas markets diverged sharply Thursday. TTF rose 3.29% on the day to 90.3 \u20ac/MWh\u2014a 25.4% monthly gain\u2014as Middle East escalation stoked broader energy supply anxiety and the EU reaffirmed sanctions on Russian LNG will remain in place until the war ends, per von der Leyen. A headline noting TTF near \u20ac90/MWh, equivalent to roughly $29.50/MMBtu, underscores the continued trans-Atlantic price dislocation. Ofgem's approval of a deal to preserve UK gas import capacity from European connectors signals regulatory awareness of tightening supply flexibility. The Jackdaw North Sea field approval offers a longer-term incremental supply story but provides no near-term relief. Henry Hub, by contrast, softened to $2.82/MMBtu, down 12.86% on the week, reflecting looser domestic US fundamentals disconnected from the geopolitical shock hitting Europe.",
    "drivers": [
-    "EU's outright rejection of resumed Russian gas imports under a peace framework cements TTF's structurally elevated level, now +19% on the month",
-    "Henry Hub in freefall (-13% on the week) on soft US demand fundamentals, widening the TTF/HH arb and incentivising continued LNG export flows to Europe",
-    "UK Jackdaw field re-approval adds long-term North Sea supply optionality, but BP's full upstream exit signals major incumbents are de-risking UK gas exposure"
+    "EU reaffirms Russian LNG sanctions remain in force, keeping European supply structurally constrained and supporting TTF at elevated levels",
+    "Middle East escalation and Strait of Hormuz risk driving broad European energy risk premium, lifting TTF 25% over the past month",
+    "Henry Hub down sharply week-on-week, highlighting persistent US-Europe price divergence driven by differing supply fundamentals"
    ],
-   "headlineCount": 4,
+   "headlineCount": 7,
    "sources": [
-    "UNITED24 Media"
+    "EXPRO Consulting"
    ]
   },
   "power": {
-   "summary": "Power and carbon data are thin today. EU Carbon EUAs edged fractionally lower, down 0.21% to $81.47/EUA, continuing a modest weekly and monthly retreat of 2.61% and 1.18% respectively, despite TTF natural gas rising 2.87% on the day \u2014 a divergence that would normally pressure carbon higher via gas-to-coal switching economics. The disconnect may reflect broader risk-off sentiment given escalating conflict headlines. Russian ballistic missile strikes on Kyiv's energy infrastructure, reported Monday, remain the most acute power-sector risk in theatre. On the corporate side, oil supermajors are flagging record quarterly profits tied to the Middle East war premium, though capex discipline is being maintained. Beyond these points, today's provided data for this sector is limited.",
+   "summary": "EU carbon EUAs edged up modestly, gaining 0.93% to $82.26/EUA on the day, with the monthly move essentially flat (+0.65%), suggesting carbon markets are not yet pricing a dramatic demand-destruction or fuel-switching signal from surging energy costs. The backdrop is nonetheless complex: TTF at 90.3 \u20ac/MWh continues to pressure gas-fired power economics across Europe, while record fuel prices are reported to be accelerating EV adoption and suppressing conventional vehicle registrations\u2014a structural demand-side shift. In India, the picture is one of stress on multiple fronts: grid and transmission constraints forced curtailment of 118.6 GW of solar and wind capacity in September, while the government is simultaneously ramping coal supply to power plants to avert a power crisis. Carbon market headline flow is thin today; EUA price action appears to be drifting rather than reacting decisively to the macro energy shock.",
    "drivers": [
-    "EUA prices drifting lower (-2.6% on the week) despite surging gas costs, suggesting near-term demand-side weakness is outweighing fuel-switching carbon pressure",
-    "Russian strikes on Ukrainian energy infrastructure represent a direct power-grid threat and could amplify winter supply stress across Eastern Europe",
-    "Supermajors banking war-premium profits while capping spending, signalling no imminent upstream capacity relief that could ease power generation fuel costs"
+    "TTF at 90.3 \u20ac/MWh sustaining pressure on European gas-fired power generation economics, though EUAs are not yet reflecting a strong fuel-switching signal",
+    "India curtailed 118.6 GW of renewables in September due to grid and transmission constraints, forcing increased reliance on coal for power supply",
+    "Record European fuel prices reported to be accelerating EV adoption, a longer-term demand-side shift with limited immediate carbon price impact"
    ],
-   "headlineCount": 2,
-   "sources": [
-    "ABC News - Breaking News, Latest News and Videos"
-   ]
+   "headlineCount": 5,
+   "sources": []
   }
  }
 }
