@@ -1,44 +1,40 @@
 {
- "generated": "2026-10-23T00:05:07.613772+00:00",
+ "generated": "2026-10-23T17:41:16.267238+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude staged a sharp divergent session: Brent surged 4.05% to $113.23/bbl while WTI added 2.25% to $99.34/bbl, extending a month-long rally of roughly 10% and 8% respectively. The driver remains the US-Iran conflict, with three tankers reported damaged in the Gulf and Strait of Hormuz disruption risks keeping supply anxiety elevated. Iranian oil is reportedly still transiting Hormuz while Gulf neighbors' exports face shutdowns, a dangerous asymmetry. A temporary US easing of Russian oil sanctions, which has riled European allies, is providing only partial offset to the geopolitical premium. Citi, which had famously called $60 Brent, now acknowledges more upside risk. China is increasing crude imports to reduce drawdowns from strategic reserves. On the downside, RBOB gasoline slid 1.02% on the day and is down nearly 14% over the month, suggesting demand-side softness at the retail end despite elevated crude benchmarks.",
+   "summary": "Crude markets delivered a split session Friday: WTI surged 3.52% to $103.00/bbl while Brent dipped 1.47% to $111.51, widening the spread sharply. The divergence reflects a volatile week shaped by Middle East escalation \u2014 Iran has explicitly targeted Saudi refineries and infrastructure, drawing Egypt into a defensive posture and pushing Brent toward a five-month high. A headline citing '$120 oil is almost here' captured the geopolitical bid, yet physical Middle East crude prices softened even as futures rallied, suggesting paper markets are running ahead of spot fundamentals. Refined products cracked lower: RBOB fell 1.54% and heating oil dropped 3.22%, hinting at demand-side concerns. On the supply side, a US partner in Venezuela lifted output ~20,000 b/d, while the first Russian diesel cargo bound for New York departed Primorsk. A CFTC probe into a two-minute 6-million-barrel futures dump adds a market-integrity overhang. Options markets price a 77% probability of an OPEC cut at the next meeting.",
    "drivers": [
-    "Strait of Hormuz disruption risk intensifies: three tankers damaged in the Gulf amid the ongoing US-Iran conflict, supporting the Brent-WTI spread widening",
-    "US temporarily eases Russian oil sanctions to cap prices, partially offsetting geopolitical risk premium, though Russia's Lavrov reaffirms support for Iran",
-    "China shifts to rising crude imports from strategic stock drawdowns, signalling stabilising demand appetite at elevated price levels above $100/bbl"
+    "Middle East escalation \u2014 Iran targeting Saudi energy infrastructure and Egypt entering the conflict \u2014 sustaining a geopolitical risk premium in WTI and Brent futures",
+    "Refined product weakness (RBOB -1.54%, heating oil -3.22%) diverging from crude strength, suggesting demand concerns or crack-spread compression",
+    "Supply offsets from Venezuela production gains (~20,000 b/d) and first Russian diesel cargo to the US, while physical Middle East crude softens versus paper benchmarks"
    ],
    "headlineCount": 12,
    "sources": [
     "Breitbart News",
-    "Crude Oil Prices Today | OilPrice.com",
     "EnergyNow.com",
-    "SuaraGarut.ID",
-    "The Economic Times",
-    "The Sunday Guardian"
+    "The National",
+    "https://www.usthadian.com/"
    ]
   },
   "gas": {
-   "summary": "A sharp transatlantic divergence defines today's natural gas picture. TTF climbed 3.29% to 90.3 \u20ac/MWh, extending a striking 25% monthly gain as Middle East escalation lifts European supply anxiety and Ofgem moves to preserve UK gas import capacity from European connectors. Von der Leyen confirmed the EU will maintain sanctions on Russian LNG until the war ends, keeping European buyers structurally short of cheap pipeline and LNG alternatives. In contrast, Henry Hub slipped a further 0.36% to $2.78/MMBtu and is down 14% on the week, reflecting ample North American supply. The LNG Canada expansion \u2014 with Shell, PETRONAS, PetroChina, Mitsubishi and KOGAS approving a Final Investment Decision \u2014 adds a longer-term supply route for Asian buyers seeking diversification away from Middle Eastern exposure, though near-term European tightness persists.",
+   "summary": "Natural gas markets split sharply along geographic lines Friday. Henry Hub spiked 8.98% intraday to $3.048/MMBtu, a notable single-session jump even as the monthly trend remains down 7.58%, pointing to weather or near-term supply tightness rather than a structural re-rating. In Europe, TTF surged another 3.62% to 93.3 \u20ac/MWh \u2014 its highest level since 2022 \u2014 driven by Middle East escalation restricting Qatari LNG flows. TTF is now up 24.22% over the past month, a significant supply-shock move. Domestically, the US rig count held flat for a second consecutive week despite elevated oil prices, signaling producers are not yet responding to price signals with incremental drilling. Australia's gas-fired generation hit a quarter-century low in Q3 as renewables and grid-scale batteries displaced gas, a structural demand-erosion signal for that market.",
    "drivers": [
-    "Middle East escalation and sustained Russian LNG sanctions drive TTF to near 90 \u20ac/MWh, a 25% monthly surge, as European supply alternatives remain constrained",
-    "LNG Canada FID approved by a Shell-led consortium, signalling a new 250,000 bpd-scale Atlantic-to-Pacific diversification route over the medium term",
-    "Henry Hub remains deeply pressured at $2.78/MMBtu, down 14% on the week, reflecting a stark divergence between flush North American supply and tight European markets"
+    "TTF at highest since 2022, up 24% in a month, as Middle East conflict curtails Qatari LNG flows into Europe",
+    "Henry Hub +8.98% on the day despite a soft monthly trend, suggesting acute near-term tightness rather than a structural shift",
+    "US rig count unchanged for a second week, indicating supply response to higher prices remains absent"
    ],
-   "headlineCount": 6,
-   "sources": [
-    "EXPRO Consulting"
-   ]
+   "headlineCount": 4,
+   "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs were essentially flat on the day at $81.50/EUA, barely moving (+0.03%) despite a 3.29% spike in TTF gas \u2014 the input fuel most relevant to marginal power generation costs in Europe. The lack of EUA follow-through suggests the carbon market is in a wait-and-see mode amid geopolitical noise rather than pricing in a structural demand uplift. Headline risk remains elevated: Ukraine struck a Russian oil terminal in St. Petersburg with over 1,000 drones, and reports of Iran's hardliners pushing for nuclear weapons add tail-risk uncertainty to European energy security. The EU's proposed shipping subsidies for bioLNG could eventually narrow the cost gap with fuel oil under the EU carbon market framework. On the demand side, electric utility executives flagged that AI-driven power demand is placing unprecedented strain on global energy infrastructure, a structural theme building beneath the current geopolitical noise. Information on this sector today is relatively limited beyond these cross-cutting themes.",
+   "summary": "The power and carbon complex offers a mixed picture today. EU carbon (EUA) is essentially flat on the day at $82.27/EUA (+0.02%), with the one-month performance near-zero (-0.23%), suggesting the ETS market has not yet repriced the energy shock fully. The dominant cross-sector story remains surging TTF gas (+3.62% today, +24% over one month), which mechanically pressures gas-fired generation economics and should support EUA demand \u2014 though the carbon price is not yet moving in tandem. Australia illustrates the secular displacement trend: gas-fired power hit a 25-year quarterly low as renewables and battery storage set records, reducing that market's gas-burn and carbon intensity. Ukraine's mass drone strike on a Russian oil terminal in St. Petersburg adds a further geopolitical layer to European energy security. Headline flow for this sector is thinner than oil; carbon price action remains subdued relative to the underlying energy price stress.",
    "drivers": [
-    "EUA prices stagnant despite surging TTF, suggesting carbon market is not yet pricing in a geopolitical supply shock premium; watch for catch-up if gas tightness persists",
-    "Ukraine's large-scale drone strike on a Russian oil terminal in St. Petersburg raises further energy infrastructure risk across the continent",
-    "AI-driven power demand boom cited by electric utilities as an unprecedented structural strain on energy infrastructure, adding a long-run demand support layer beneath near-term macro volatility"
+    "TTF +24% over one month pressures European gas-fired generation margins, yet EUA carbon price remains flat, suggesting a lagged or decoupled market response",
+    "Australia's gas power generation at a 25-year Q3 low as record renewables and grid-scale batteries displace thermal dispatch",
+    "Ukraine drone strike on St. Petersburg oil terminal adds European energy-security risk, reinforcing the case for fuel-switching and carbon market volatility ahead"
    ],
-   "headlineCount": 5,
+   "headlineCount": 6,
    "sources": [
     "KVNU"
    ]
