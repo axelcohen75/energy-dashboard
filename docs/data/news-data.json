@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T18:31:49Z",
+  "updated": "2026-10-27T22:34:27Z",
   "physical": [
     {
       "title": "OPEC+ Set to Keep Oil Quotas Unchanged",
@@ -11,11 +11,20 @@
       "impact": "low"
     },
     {
-      "title": "India Rejects Claims of U.S. Pressure Over Russian Oil Purchases",
-      "summary": "The United States has not pressured India to cut crude oil imports from Russia, Indian Oil Minister Hardeep Singh Puri said on Tuesday, as Russian cargo arrivals to the world\u2019s third-largest crude ...",
+      "title": "Russia\u2019s Crude Exports Set to Fall as Diesel Production Rises",
+      "summary": "Russia's crude exports from its western ports could fall by as much as 200,000 barrels per day in November as refiners increase diesel production under Moscow's new agreement with Washington, accor...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/India-Rejects-Claims-of-US-Pressure-Over-Russian-Oil-Purchases.html",
-      "published": "2026-10-27T10:30:00Z",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Russias-Crude-Exports-Set-to-Fall-as-Diesel-Production-Rises.html",
+      "published": "2026-10-27T18:30:00Z",
+      "sentiment": "neutral",
+      "impact": "high"
+    },
+    {
+      "title": "US Crude Oil Inventories Buck Analyst Expectations",
+      "summary": "The American Petroleum Institute (API) estimated that crude oil inventories in the United States fell by 2.031 million barrels in the week ending October 23. In the week prior, US crude oil invento...",
+      "source": "",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Crude-Oil-Inventories-Buck-Analyst-Expectations.html",
+      "published": "2026-10-27T20:56:11Z",
       "sentiment": "neutral",
       "impact": "low"
     },
@@ -29,13 +38,22 @@
       "impact": "high"
     },
     {
-      "title": "Diesel Drives India's Fuel Export Windfall as Earnings Reach $12.6 Billion",
-      "summary": "Soaring diesel and gasoline prices hiked the value of India\u2019s fuel exports by 50% between April and September, while the world was grappling with the worst of the Middle East crisis so far. India e...",
+      "title": "Saudi Aramco Offers Discounted Oil to Europe as Exports Recover",
+      "summary": "Saudi Aramco is offering additional crude to European refiners for October and November loading, just weeks after telling customers they would receive no oil under their October contracts following...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Diesel-Drives-Indias-Fuel-Export-Windfall-as-Earnings-Reach-126-Billion.html",
-      "published": "2026-10-27T11:30:00Z",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Aramco-Offers-Discounted-Oil-to-Europe-as-Exports-Recover.html",
+      "published": "2026-10-27T17:40:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "The Diesel Crisis Is Here To Stay",
+      "summary": "The diesel crunch is set to persist well into 2027 as supply remains limited by the Middle East conflict and the damaged Russian refineries, analysts say. Attempts at transient small supply-side so...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Crude-Oil/The-Diesel-Crisis-Is-Here-To-Stay.html",
+      "published": "2026-10-27T19:00:00Z",
       "sentiment": "bullish",
-      "impact": "med"
+      "impact": "low"
     },
     {
       "title": "U.S. Military Eyes Nuclear Reactors to Survive 90 Days Without the Grid",
@@ -43,33 +61,6 @@
       "source": "",
       "url": "https://oilprice.com/Alternative-Energy/Nuclear-Power/US-Military-Eyes-Nuclear-Reactors-to-Survive-90-Days-Without-the-Grid.html",
       "published": "2026-10-27T16:00:00Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Trump Moves to Ease Methane Regulations for U.S. Oil Producers",
-      "summary": "The Trump Administration is set to announce easing of the federal methane regulations for oil and gas production in a bid to boost U.S. domestic energy production and lower costs for producers and ...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Trump-Moves-to-Ease-Methane-Regulations-for-US-Oil-Producers.html",
-      "published": "2026-10-27T09:35:00Z",
-      "sentiment": "bearish",
-      "impact": "med"
-    },
-    {
-      "title": "India\u2019s Oil Buyers Squeezed by $123 Crude and Weak Rupee",
-      "summary": "The Indian crude basket hit $123.29 per barrel last week, approaching levels recorded in March 2012, and adding 86% to the price Indian oil marketing companies pay, local media have reported, also ...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Oil-Buyers-Squeezed-by-123-Crude-and-Weak-Rupee.html",
-      "published": "2026-10-27T07:30:00Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Saudi Aramco Offers Discounted Oil to Europe as Exports Recover",
-      "summary": "Saudi Aramco is offering additional crude to European refiners for October and November loading, just weeks after telling customers they would receive no oil under their October contracts following...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Aramco-Offers-Discounted-Oil-to-Europe-as-Exports-Recover.html",
-      "published": "2026-10-27T17:40:00Z",
       "sentiment": "neutral",
       "impact": "low"
     },
@@ -83,12 +74,12 @@
       "impact": "med"
     },
     {
-      "title": "IEA Warns of Dangerous Concentration in Global Clean Energy Supply Chains",
-      "summary": "The global energy transition depends on highly concentrated supply chains, the head of the International Energy Agency, Fatih Birol, has warned, declining to name any of the countries involved in t...",
+      "title": "Investors From 119 Countries Pile Into Dangote\u2019s Record Refinery IPO",
+      "summary": "The initial public offering of Nigeria\u2019s Dangote refinery has reached its target to raise $1.6 billion in funds from domestic and retail investors alone, sources with knowledge of the IPO process t...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/IEA-Warns-of-Dangerous-Concentration-in-Global-Clean-Energy-Supply-Chains.html",
-      "published": "2026-10-27T08:30:00Z",
-      "sentiment": "bearish",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Investors-From-119-Countries-Pile-Into-Dangotes-Record-Refinery-IPO.html",
+      "published": "2026-10-27T13:30:00Z",
+      "sentiment": "neutral",
       "impact": "low"
     },
     {
@@ -101,20 +92,11 @@
       "impact": "low"
     },
     {
-      "title": "Ras Tanura Fire Follows Attacks on Aramco Offices and Near Shaybah Field",
-      "summary": "A fire broke out near Saudi Arabia\u2019s key oil export hub of Ras Tanura on the Persian Gulf following an attack early on Tuesday, but the Kingdom quickly contained the fire, an unnamed source familia...",
+      "title": "Will Rubio\u2019s Jamnagar Move Permanently Break The Russia-India Oil Axis?",
+      "summary": "The announcement by India\u2019s largest private refiner Reliance Industries Ltd that it is open to collaborating with U.S. companies across oil, gas and clean energy, including in Venezuela, is a welco...",
       "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Ras-Tanura-Fire-Follows-Attacks-on-Aramco-Offices-and-Near-Shaybah-Field.html",
-      "published": "2026-10-27T12:30:00Z",
-      "sentiment": "neutral",
-      "impact": "med"
-    },
-    {
-      "title": "Investors From 119 Countries Pile Into Dangote\u2019s Record Refinery IPO",
-      "summary": "The initial public offering of Nigeria\u2019s Dangote refinery has reached its target to raise $1.6 billion in funds from domestic and retail investors alone, sources with knowledge of the IPO process t...",
-      "source": "",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Investors-From-119-Countries-Pile-Into-Dangotes-Record-Refinery-IPO.html",
-      "published": "2026-10-27T13:30:00Z",
+      "url": "https://oilprice.com/Energy/Energy-General/Will-Rubios-Jamnagar-Move-Permanently-Break-The-Russia-India-Oil-Axis.html",
+      "published": "2026-10-27T22:00:00Z",
       "sentiment": "neutral",
       "impact": "low"
     },
@@ -125,6 +107,24 @@
       "url": "https://oilprice.com/Geopolitics/Middle-East/Iran-Turns-to-Russia-for-Nuclear-Power-as-IAEA-Oversight-Falters.html",
       "published": "2026-10-27T14:00:00Z",
       "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Turkey\u2019s Libya Deal Puts Oil Majors in a Bind",
+      "summary": "Turkey has finally gotten both sides of a divided Libya to sign the maritime map it has pushed for seven years. Ankara signed the boundary deal with Libya\u2019s Tripoli government in 2019, and the riva...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/Turkeys-Libya-Deal-Puts-Oil-Majors-in-a-Bind.html",
+      "published": "2026-10-27T21:00:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "5 Data Center Power Stocks to Watch Before Earnings",
+      "summary": "Wall Street has spent the last three weeks punishing the companies that build and equip AI data centers, which would make more sense if anyone could point to the orders drying up. As of Friday, tha...",
+      "source": "",
+      "url": "https://oilprice.com/Energy/Energy-General/5-Data-Center-Power-Stocks-to-Watch-Before-Earnings.html",
+      "published": "2026-10-27T20:00:00Z",
+      "sentiment": "bearish",
       "impact": "low"
     },
     {
@@ -148,15 +148,6 @@
       "impact": "low"
     },
     {
-      "title": "FAVORING PUTIN OVER UKRAINE: Trump Waives Many Russia-Related Sanctions, Tariffs Before They Were to Take Effect Under New Law",
-      "summary": "FAVORING PUTIN OVER UKRAINE: Trump Waives Many Russia-Related Sanctions, Tariffs Before They Were to Take Effect Under New Law EnergyNow",
-      "source": "EnergyNow",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQNlNXT3hOZ2dLRXRhSWo3QUFscXUzSmVNeS0xVUNHOHNaalpNZ3oxNjhiZVM1V3dRNFlINWd3ZVc4a2s1UG1fazNjdTZWYWJKRmtja3hlOTJZT1VQLTlpSWtLNnhmRk85NXR1OXNkQWJhSXFTYVg1XzA1SnVQdFB5NVc1UDNsMVViN3h4a1JnYnNiVHdfWWRKbTVZdWh5VmFLRFRZbDVqUmpuLWV2a0liOFpETXpNamhLLW1KT2ItbmtUSWhRYlBnQkVvN0J6TnJScDBSQkNrWDViWlNPU1o3bVNwU0dQc21oUEE?oc=5",
-      "published": "2026-10-27T08:15:41Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
       "title": "US and Iran Agree to Deal Halting War That Shook Middle East",
       "summary": "US and Iran Agree to Deal Halting War That Shook Middle East EnergyNow",
       "source": "EnergyNow",
@@ -166,13 +157,13 @@
       "impact": "low"
     },
     {
-      "title": "Russia\u2019s War Spending Strains Budget as Putin Criticizes Sanctions.",
-      "summary": "Russia\u2019s War Spending Strains Budget as Putin Criticizes Sanctions. Ukraine Business News",
-      "source": "Ukraine Business News",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNnpEcUtqQUkzU1hJX3l6UmJmV2lnTk9icGhIeGZrVEpaeHBJOURLYU83TVdWdjF2TEwtYkNfWUhFSW9EQ2lLNGpjdDBrRXJmakpsN1lld05Ea3ZGdUNzZHFtZWdVampSTGFVQU5FUWtiVzZWdS14MTVTUDFFeHJVRTZXT0kxYTlGSkgw0gGTAUFVX3lxTE9pWWNTX2JiYmQ1eDRJNW81UDN6eF93QzE2ZkNhX05EWHo5N1llVXU2WjRhZ3JBY2xWcVhMMTRmZmtUX2Z0RjJaOTllSGp2TEJaUVBHOUJTNnVRRnVRdE5lbVdxaGUwbXdSUmVYU1ZJRXNyMHVWbGdiMXJlejRtS1ZTQXg3ZTFkUTZHTzBCMVF5bmZDQQ?oc=5",
-      "published": "2026-10-27T00:02:54Z",
+      "title": "Middle East Officials Meet Discuss Deescalation Amidst Continued Houthi Attacks",
+      "summary": "Middle East Officials Meet Discuss Deescalation Amidst Continued Houthi Attacks Marine News Magazine",
+      "source": "Marine News Magazine",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9tNmlXd0FNd05BLVFodnh6ZE1IMk9JZldaYk96VnB5T3ZaVEF3eFhWY3AzWFRiWTZLZnU0dVJvdENRZ1g5c0RHTWMxVGllS2c3eVBfU2U3azdWaTJ3TUVMRnpIMWxVVVBscnZPbkM0OENiOHkwZTBVandpdTdSZw?oc=5",
+      "published": "2026-10-26T18:01:10Z",
       "sentiment": "bullish",
-      "impact": "low"
+      "impact": "med"
     },
     {
       "title": "Trump\u2019s Russia diesel deal: energy supplies, oil sanctions and Ukraine talk",
@@ -189,6 +180,24 @@
       "source": "Iran International",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9reFd6eFdFdzZFLUg1dS1pd3BGYmtJMjBzZktXY1NSaXc5QkJwZE5xQ0FMMDVwQzl0OG1kcWtReEtlZjE0dFdzUUJ2LXgxTU1Pc1E?oc=5",
       "published": "2026-10-25T01:35:00Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Iran cries \u2018fabrication\u2019 over new Hormuz deal report as Trump threatens another strike",
+      "summary": "Iran cries \u2018fabrication\u2019 over new Hormuz deal report as Trump threatens another strike The Statesman",
+      "source": "The Statesman",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSmZnTjViLTg2Tmdfd1oxWVJTZGpjazNNUlQ4SUcxdTdhQ1haQ3hpUFN3b3hIS092eGoxbEc4RXAzQVFPMWRXdlFWbV93a3V0TjJWaXMtOU92NTI4LV81dklnS3dXX1NZd1J0TzYtN2F0UnhmSzNQSHpLM2FJSGxlRzNTQk5DR25GdmJ3b0VCWDZFUE5uUlB1cTdjUEhGSmJRbXFaMGZoaXFwZlZEZnlZQjVkb3RZc3hHaVIwSFN0LWxzaFczLVJ5bVpFd0xnNFFY0gHWAUFVX3lxTFB2LWJXNG4ycFRTZVNxTEdHcFNnR0QyTmRQS0Z3N0Q1dXU3d0V1b0F2blloQXZ1YjVxSEthbDUtcHNSczlyVkItRTZ5RHBBWW9pbDQ1UF9VSXBUWnNycHM2NF92Qk9xOGpvMFlJMUw4WnNacURGVVdqOEdaNE9vMVBVdWxKUWVxSjN2N1pqUlo5ZzZVYVdIVnlRVmVDU21nNEkwb0tQVFZaa3FjS0RSY0hwVWdCRXBZS1E3WG5fcWR2ckVGS2Jlb0RjMzVzaWtYV3dXTTc3SGc?oc=5",
+      "published": "2026-10-25T02:36:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
+    },
+    {
+      "title": "Russia\u2019s War Spending Strains Budget as Putin Criticizes Sanctions.",
+      "summary": "Russia\u2019s War Spending Strains Budget as Putin Criticizes Sanctions. Ukraine Business News",
+      "source": "Ukraine Business News",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNnpEcUtqQUkzU1hJX3l6UmJmV2lnTk9icGhIeGZrVEpaeHBJOURLYU83TVdWdjF2TEwtYkNfWUhFSW9EQ2lLNGpjdDBrRXJmakpsN1lld05Ea3ZGdUNzZHFtZWdVampSTGFVQU5FUWtiVzZWdS14MTVTUDFFeHJVRTZXT0kxYTlGSkgw0gGTAUFVX3lxTE9pWWNTX2JiYmQ1eDRJNW81UDN6eF93QzE2ZkNhX05EWHo5N1llVXU2WjRhZ3JBY2xWcVhMMTRmZmtUX2Z0RjJaOTllSGp2TEJaUVBHOUJTNnVRRnVRdE5lbVdxaGUwbXdSUmVYU1ZJRXNyMHVWbGdiMXJlejRtS1ZTQXg3ZTFkUTZHTzBCMVF5bmZDQQ?oc=5",
+      "published": "2026-10-27T00:02:54Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -211,30 +220,30 @@
       "impact": "low"
     },
     {
-      "title": "Serbia's election winners oppose sanctions on Russia and pledge to halt arms exports to war zones",
-      "summary": "Serbia's election winners oppose sanctions on Russia and pledge to halt arms exports to war zones Hromadske",
-      "source": "Hromadske",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWjlYSEVzNWttZm1Xdk91dHk1OHdjLXdmNS1rRFNmV3lGOEJZMXVPSTJ0MV9VTjM1TFFKenpHRFluMWppc2VvQ3NfbWVoM1JrcWpBOVotbWdOTXZfRkNGNEtPYmotMnM0ZTdCcG1yd3VGRzZVYzZtb0pSSzEzNnVhQXp4WlVKUjViSEhEOE15TUFBUEV0ei1KeHpTbVo2a0pYY0xxS0hQWFdfX0U0YmZXZEdzcFd0LVVVTW5PdWo2c0dfWUpZWGZCY3BhbVpMbDI1M1HSAdcBQVVfeXFMTjhwSUxuR1dWWUxKbVZobkpoSUJiY0JJeU1MOGl6czE2c0VIZGx1aWZid0FUOW1HVjNBS2tZM2QyZmg3S0FHbXM3X250RThFVXBIb2hJcTJvOW8zNkdnNEhiQnRlOE9DZnR6NFduV29mNzFRS0ZKSWR5NjJlbmxiMlBrZTFUNlVGX1dRWHd6WDZZSVl0SlhfbXdCbWtqQ3Z1NWY1MTNKWHVnZ0tJT2UwZzZ0eWVrSVAwUDRTZDJNcGNrbENUekkzMlRHbXM2bDU4RVdHWEhiM2M?oc=5",
-      "published": "2026-10-26T16:12:00Z",
-      "sentiment": "bullish",
+      "title": "Washington discusses Russian deals for US oil majors in Ukraine peace talks",
+      "summary": "Washington discusses Russian deals for US oil majors in Ukraine peace talks Financial Times",
+      "source": "Financial Times",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSlZrMHRhQWxzdDR0VmtsaUs4THFGSDBTODl6YWRVRXJGVVRoa0UtZjBtZmhrQVJfa2JIWVlGZWxxc1I1bm1GeEZYV2gtdlYyWXFacGU2WnpleTU4THJaTFBjVm5XZzU0WjFHTlZVd1dOX1pTTy04V2JZNDZraFpUWkJaZW4?oc=5",
+      "published": "2026-10-27T19:06:02Z",
+      "sentiment": "neutral",
       "impact": "low"
     },
     {
-      "title": "Rubio described Trump\u2019s decision to ease sanctions against Russia for \"diesel deal\" as \"very wise\"",
-      "summary": "Rubio described Trump\u2019s decision to ease sanctions against Russia for \"diesel deal\" as \"very wise\" \u0426\u0435\u043d\u0437\u043e\u0440.\u041d\u0415\u0422",
-      "source": "\u0426\u0435\u043d\u0437\u043e\u0440.\u041d\u0415\u0422",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUGc3Q3ZtU2FuaTk2U1ZJTE9tcUZoVHBlNzdicDdqSEhLcmN4STNiRXhYcW5UdGZrTEVsQVJZem1rZmRlc2VWcGZpSkZfZ281OE01QlNrY0dMZ0VCeHBNTWwwUV9fZU5Rb3VxdnFDNmlhZUNlNlZFR1ViYTAxSlpSOWVHWHB6OUwwTzNXS1A5YW5mRkh1bHFFeHVJcVl2dG41MUNZWklZUmtUeG4xTXBydmF4R29zOFk?oc=5",
-      "published": "2026-10-25T06:46:00Z",
-      "sentiment": "bullish",
-      "impact": "high"
+      "title": "Iran Turns to Russia for Nuclear Power as IAEA Oversight Falters",
+      "summary": "Iran Turns to Russia for Nuclear Power as IAEA Oversight Falters Crude Oil Prices Today | OilPrice.com",
+      "source": "Crude Oil Prices Today | OilPrice.com",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPb2l3MlZFNG9zZUJJNHZsVmdHaVo5Ry0tTjNVX2F6em43dEs4WmpmZ1FjSk5aMlIzR1JvNkhsUTgtLWMtUWtHZm9sbWIyRFZ3RGljS0k1aUhUbGdWb3NXYVhicjZoTGMwaXJydEJiVGNVakNrZzFnT1ZYNzJGT09kVjFzWmhTWUhFTGtISWJBNFdMT0FMcU4tVmg1OXlkZ2kxdGNtTko4Q1hzcGpUMXZqWWh2S1ZMSDlwdUHSAboBQVVfeXFMT29pdzJWRTRvc2VCSTR2bFZnR2laOUctLU4zVV9henpuN3RLOFpqZmdRY0pOWjJSM0dSbzZIbFE4LS1jLVFrR2ZvbG1iMkRWd0RpY0tJNWlIVGxnVm9zV2FYYnI2aExjMGlycnRCYlRjVWpDa2cxZ09WWDcyRk9PZFYxc1poU1lIRUxrSEliQTRXTE9BTHFOLVZoNTl5ZGdpMXRjbU5KOENYc3BqVDF2allodktWTEg5cHVB?oc=5",
+      "published": "2026-10-27T14:00:00Z",
+      "sentiment": "neutral",
+      "impact": "low"
     },
     {
-      "title": "Zelenskyy Warns Against Normalising Deals With Russia After Trump\u2019s Diesel Accord",
-      "summary": "Zelenskyy Warns Against Normalising Deals With Russia After Trump\u2019s Diesel Accord EnergyNow.com",
-      "source": "EnergyNow.com",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOajlxOGhDRTRmYnBFZmlzWmJrTS1pdTdhNlVacjdMVlNoc3ctNUs5U0g2NWZQTHdPOF9DWnFHZVE1dnFqWW00eEstQlBac0tkbGZaS0J2RUExX2lEMHBGdmlrc1M5S1VWcGdxUUcwa1NNMWhpdWt0Y1NaalI4LWFOMHlfNXZLZDdhdkFFTXdyQTJORzNRT3M5U25YYVRNdXlBNzk2QU5LdGJYMHI2b041OA?oc=5",
-      "published": "2026-10-27T10:10:41Z",
-      "sentiment": "bullish",
+      "title": "Zelensky Sees Energy Ceasefire as a Crucial Step Toward Ending the War, While Kyiv Demands Continued Sanctions",
+      "summary": "Zelensky Sees Energy Ceasefire as a Crucial Step Toward Ending the War, While Kyiv Demands Continued Sanctions Inkorr",
+      "source": "Inkorr",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNU9ZOERQeFYxc0xTTG4tclVnbUh0QTJZTjJJWExQem44T3IyYTJOXzNvYmZ6MFltcGVQNmwtMnhHbFc5ZXBGZ2dfY0J6ZzA0Y1JXWHJzcjdXX2NFWF9CMldjWG5KOWhaeGtZc292eHppRWs5WDBGdzRBMkZwZ2dNNnhNbWE3SW5fbjV6emNNWUtSM2xxOWlrY29BeEpwdkJsSTcwME9ucTZzMjZnWUtxb1J4aWYxd2hmeGtoekZmWkZEem5TSmFHZTJYY9IBywFBVV95cUxNNU9ZOERQeFYxc0xTTG4tclVnbUh0QTJZTjJJWExQem44T3IyYTJOXzNvYmZ6MFltcGVQNmwtMnhHbFc5ZXBGZ2dfY0J6ZzA0Y1JXWHJzcjdXX2NFWF9CMldjWG5KOWhaeGtZc292eHppRWs5WDBGdzRBMkZwZ2dNNnhNbWE3SW5fbjV6emNNWUtSM2xxOWlrY29BeEpwdkJsSTcwME9ucTZzMjZnWUtxb1J4aWYxd2hmeGtoekZmWkZEem5TSmFHZTJYYw?oc=5",
+      "published": "2026-10-26T06:52:53Z",
+      "sentiment": "bearish",
       "impact": "med"
     },
     {
@@ -243,42 +252,6 @@
       "source": "https://internationalfinance.com/",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUUZQbzlGVVFhNkIyQjdEQ3l4SEFzbThYeFJmOHZOTDlzSS0wS3M5LTIyeVJuQmxHRklLcGRkdFVvTmZFUjE0SmZhYm00b196cTlhbHZvV2Jhak1QTFQ1ak1WbkhhTzROdmxqSlY4b2RvOU1janB3RWpkdXYyLWo4T1J1aVphVnd4NVowaFQ2a2x2RVprUERSY1RMaVQ5eTRRdlRrQTA1Z1hFLW8?oc=5",
       "published": "2026-10-27T00:00:04Z",
-      "sentiment": "neutral",
-      "impact": "low"
-    },
-    {
-      "title": "Serbia's new government will not impose sanctions against russia and intends to halt arms sales to Ukraine",
-      "summary": "Serbia's new government will not impose sanctions against russia and intends to halt arms sales to Ukraine Ukrainian news",
-      "source": "Ukrainian news",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPRTB2WU1mMTBpZGM1djVMbHB6RnJjZWZJOGJqOXNidFVQMWVyRlZFM2pFbDRnRXd6MFUzUTZGNS01OXpYX0RnZUk1b1ZmX1FsWG9OYVNlYi1XNmlDTWUzSTFPLVBMTzI1MmEwNG1xR0pUVzRmOFBhQjFxRmtzeDRfejdDcURjaW5kR2Z6blJ1M3UwNFZURDdMRURTN3hQaG1YVVZ1R1BPcDVEZi1heEhYS3ZTVWpNQVA2M0FkeTdNNk5FdXA2TzB2WUt1YkoyUUZ60gHWAUFVX3lxTE0zTTIxVnJhRTB0Zjl1SGNXZ1hzTENWV0hsT2NvdDFMNy1meWlUY2RkdFBQNzU3ckxRUmZBaHlLdi1ZdXNndUxaMkg3S3lEVlpMWXM3TWRfNXRxT2tBUTU0YlVUSGZpcktWUUR3ZmNtaFhDR3BWVXhxVjNHZ3Y0TG8wRW56Ri0zLWlXeHJKZl9pQk5lU0c2cE9SY2ItelE4cmNrNFdPVjNqbndDcjFjVWZDNmtWSXJjS2VXdHIydUEtODQ3ZFZyb2lobElKejlfMERFVWg0eUE?oc=5",
-      "published": "2026-10-26T17:29:39Z",
-      "sentiment": "bullish",
-      "impact": "med"
-    },
-    {
-      "title": "Trump, Putin talk of war and peace as US weighs easing Russian oil sanctions",
-      "summary": "Trump, Putin talk of war and peace as US weighs easing Russian oil sanctions DD News",
-      "source": "DD News",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVFc3VURUOWlGU19kdFpCNXY5N0VEVTNLSlRzaVFfSlZnMGNnamFFdk1yekJnN05HVFNxRFdKam50NGhMdHBSYmNpV21CdWJCLVFTY0FFVk5ReF9OVDRCMUNlR3IwR1dXZy14TERWYTdWSWpIaTd4S3pXbV9jNEZ4eFhIT2tVeW0tdXFZWnp0QXEzRFlCcTZFQ1d2NzVROVlwdXdF?oc=5",
-      "published": "2026-10-25T02:33:55Z",
-      "sentiment": "neutral",
-      "impact": "med"
-    },
-    {
-      "title": "How the War in Iran Could Escalate",
-      "summary": "How the War in Iran Could Escalate Time Magazine",
-      "source": "Time Magazine",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9xQWhzR0ktMDFnUlVBRWhEWnhsNU1TMC1Rb2lNTzBpUnB1cVh5aERIcC11SVFFUWNWOEFqaE16cjcyNGJHdFAtTGhkb1MyaFhsN1Vfano1alhybjN2a2tvZExweHMxQTVCd1V6ZllRZkZvZC1Zb2lQVmFYRQ?oc=5",
-      "published": "2026-10-27T14:59:56Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Trump Calls for Replacing Ukraine\u2019s Zelenskyy in Tussle Over Diesel Deal With Russia",
-      "summary": "Trump Calls for Replacing Ukraine\u2019s Zelenskyy in Tussle Over Diesel Deal With Russia EnergyNow.com",
-      "source": "EnergyNow.com",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZXJhbnZxLUdwU253eXEyaG9MM2lmdllscnFIdTdkaGkxMHpjemFwTG1pUTlGbHpTU19sMWVQMHQycTMzelZxb09OTFAxRXc3WncybFU3SmZzUHNnUC13MUlpQm1GNXVlM2xQX2F5cy0yN2l4V2pJVzFiY0czdmJDTFBfc0VyaGhtNzJNcWlPT1RNZW5FaVZRUzAyVkM4aDNiaEhoVzZoYUh2Z3M5QWtWMUs4ZWY?oc=5",
-      "published": "2026-10-27T01:38:17Z",
       "sentiment": "neutral",
       "impact": "low"
     },
@@ -292,29 +265,47 @@
       "impact": "med"
     },
     {
-      "title": "Zelensky Sees Energy Ceasefire as a Crucial Step Toward Ending the War, While Kyiv Demands Continued Sanctions",
-      "summary": "Zelensky Sees Energy Ceasefire as a Crucial Step Toward Ending the War, While Kyiv Demands Continued Sanctions Inkorr",
-      "source": "Inkorr",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNU9ZOERQeFYxc0xTTG4tclVnbUh0QTJZTjJJWExQem44T3IyYTJOXzNvYmZ6MFltcGVQNmwtMnhHbFc5ZXBGZ2dfY0J6ZzA0Y1JXWHJzcjdXX2NFWF9CMldjWG5KOWhaeGtZc292eHppRWs5WDBGdzRBMkZwZ2dNNnhNbWE3SW5fbjV6emNNWUtSM2xxOWlrY29BeEpwdkJsSTcwME9ucTZzMjZnWUtxb1J4aWYxd2hmeGtoekZmWkZEem5TSmFHZTJYY9IBywFBVV95cUxNNU9ZOERQeFYxc0xTTG4tclVnbUh0QTJZTjJJWExQem44T3IyYTJOXzNvYmZ6MFltcGVQNmwtMnhHbFc5ZXBGZ2dfY0J6ZzA0Y1JXWHJzcjdXX2NFWF9CMldjWG5KOWhaeGtZc292eHppRWs5WDBGdzRBMkZwZ2dNNnhNbWE3SW5fbjV6emNNWUtSM2xxOWlrY29BeEpwdkJsSTcwME9ucTZzMjZnWUtxb1J4aWYxd2hmeGtoekZmWkZEem5TSmFHZTJYYw?oc=5",
-      "published": "2026-10-26T06:52:53Z",
-      "sentiment": "bearish",
-      "impact": "med"
+      "title": "US-Russia diesel deal tests Europe\u2019s energy security",
+      "summary": "US-Russia diesel deal tests Europe\u2019s energy security \u0633\u0627\u0646\u0627",
+      "source": "\u0633\u0627\u0646\u0627",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE50bW83TzVWM2ZOcmI4Z21Sd0hjc2ZJUkpnUUxoaFQzQk5XcXBzLWhqQU92bmNtZm5TaG94QzBBVkxobWk5OUg2c1FQbzY?oc=5",
+      "published": "2026-10-27T11:27:21Z",
+      "sentiment": "neutral",
+      "impact": "low"
     },
     {
-      "title": "Trump Warns Zelensky: He \u2018Better Damn Well Stop\u2019 Attacking Russian Oil Refineries, Calls for New Ukrainian Leader",
-      "summary": "Trump Warns Zelensky: He \u2018Better Damn Well Stop\u2019 Attacking Russian Oil Refineries, Calls for New Ukrainian Leader EnergyNow.com",
-      "source": "EnergyNow.com",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZDh1aUxQWkpMaXlvZnRBbUhzNE55WU9jZUFVa1M5YzlydVdpcjlTRkYxeFFjeGluVnFuVG4tQ3NxWWRyUW8tRTdWSW52eVhHbzJLM1RuUnNZN0pYTDlydE9CN0l1Z05mZjNfSHgyX3p3dDZGQXpGR1h3c0RLMDRGRlgzWkt3b0VfOTZvYzZrTDRLb0RRSE1QakxrdFkzX2U3V1B1Rkt4d0ZCYmYzMFhiTFNjYVQteU9FamY0enJMVmhlOEhrTFdra0tfM3ByVEhIQVZiMG1mcw?oc=5",
-      "published": "2026-10-26T23:11:11Z",
+      "title": "Serbia's election winners oppose sanctions on Russia and pledge to halt arms exports to war zones",
+      "summary": "Serbia's election winners oppose sanctions on Russia and pledge to halt arms exports to war zones Hromadske",
+      "source": "Hromadske",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWjlYSEVzNWttZm1Xdk91dHk1OHdjLXdmNS1rRFNmV3lGOEJZMXVPSTJ0MV9VTjM1TFFKenpHRFluMWppc2VvQ3NfbWVoM1JrcWpBOVotbWdOTXZfRkNGNEtPYmotMnM0ZTdCcG1yd3VGRzZVYzZtb0pSSzEzNnVhQXp4WlVKUjViSEhEOE15TUFBUEV0ei1KeHpTbVo2a0pYY0xxS0hQWFdfX0U0YmZXZEdzcFd0LVVVTW5PdWo2c0dfWUpZWGZCY3BhbVpMbDI1M1HSAdcBQVVfeXFMTjhwSUxuR1dWWUxKbVZobkpoSUJiY0JJeU1MOGl6czE2c0VIZGx1aWZid0FUOW1HVjNBS2tZM2QyZmg3S0FHbXM3X250RThFVXBIb2hJcTJvOW8zNkdnNEhiQnRlOE9DZnR6NFduV29mNzFRS0ZKSWR5NjJlbmxiMlBrZTFUNlVGX1dRWHd6WDZZSVl0SlhfbXdCbWtqQ3Z1NWY1MTNKWHVnZ0tJT2UwZzZ0eWVrSVAwUDRTZDJNcGNrbENUekkzMlRHbXM2bDU4RVdHWEhiM2M?oc=5",
+      "published": "2026-10-26T16:12:00Z",
       "sentiment": "bullish",
       "impact": "low"
     },
     {
-      "title": "Trump Signs Oil Deal With Russia Despite Imposing Sanctions On India Last Month",
-      "summary": "Trump Signs Oil Deal With Russia Despite Imposing Sanctions On India Last Month Inventiva",
-      "source": "Inventiva",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMTZla0NTbEhrN2VIYmRScjI5SnBOWFhrTWRBNG5lYS12VEZ3RTVRZWEzalJYd3Zwb092d1FxRHFGb1AyWlFiT0NQb3dHRUFRTS1CaXRGZWpPSVpvQ3ZHOVpBLXJDYlZHc3ZmaTRVQUpIdm5mN2xpbVN6UWtUX2sxSl8zRm1oWU5pcjRKaWN6M0ZNajNkOV9LZ041QU5VSW9QeWdFSDVDWnBheTZUc2lueG1sRURvZw?oc=5",
-      "published": "2026-10-25T21:38:13Z",
+      "title": "Iran\u2019s calculations as US escalation looms: Trust, midterms, Hormuz",
+      "summary": "Iran\u2019s calculations as US escalation looms: Trust, midterms, Hormuz Al Jazeera",
+      "source": "Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOOC11eFk1bzZtbDZJckFTX0dZSUFYZ0RrOWdUOHVFLVhpbm43UVZQX2ZYZ2hnaFVaM1Npa1p1VlFrdHVFZ0gzZDQ0blJib0QyZnowbVRkT3o1bUlRQkxuRTdTS0lfdTcxd1dSc1dQOEd5bnR2U2R6TG9vY2hjdDdDNFFRZlE4aWRtRTQ2N1RQY2VDb3BmdTNLNFNoTVA4S0Nra3dlc0NBMWTSAa4BQVVfeXFMTU5EdEc2VFRjUlpXUTBIb2h6NjlUdmQtYmh0RWpXRGlVLUcxWTB4Mkd6b0ZyRDZaZ1cxQTB0QWtJR3Z0WmoxTGdGMkxOUUV6NFRkQm1Qa1BIRmZpTG1ndGMwd0tNb2o1MHNoUmJXMVo2QkI5Uk9kZk90VGs2UUhtcDFhM2N1eHZNUUhnWl9jbXBra2FaM09wYXRxSXAtS0daaFlrYVc3YjltcUc0TDBn?oc=5",
+      "published": "2026-10-27T15:29:20Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "How Did Myanmar Hide Iranian Jet Fuel Imports to Evade US Sanctions?",
+      "summary": "How Did Myanmar Hide Iranian Jet Fuel Imports to Evade US Sanctions? Modern Diplomacy",
+      "source": "Modern Diplomacy",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeWk4R2lUZm9XUEg5WE9yODdGd0pmYXNkTnRaZUhwOEpZTVJQQjFoYkhmdVk4Q1ZfQ1VRM1p2OE5WU2RLZ0M5MHd6cHRFYVBjaGN6OW9OeFFDMlBySXh1SWM3S1RwQ3dBMlZfX3lZVDBFb0pPcmt3cC1XTTVURDZvLXZxMG1kYkQ1eHNZYVlEVkttc1ZrU2FJMTBVcWZvcTdKOWs0NXBWaGRGZw?oc=5",
+      "published": "2026-10-26T04:39:25Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Oil Touches Two-Week High After Drone Attack on UAE Nuclear Power Plant",
+      "summary": "Oil Touches Two-Week High After Drone Attack on UAE Nuclear Power Plant EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOOFR4cExqSkJkMUFiVmlJTTFvN3lQeUZKT1ZYRWlGTldSQ19Zc3pjU2pSeXZUZGQwb3JfaFZyWXFteU03aTRtaUY5aVhkLXBiTXdLMU9EaWpZU1Z4ekRLck1QTVRvdE95Ml9ramNEVTlWUW9MVEFtR3BTakRCRzlEd2tRNXJ1LVJtSnBHT05oSUdWeVpuYm1aSFJrc2JTZTJaSUUtcQ?oc=5",
+      "published": "2026-10-26T20:55:10Z",
       "sentiment": "bullish",
       "impact": "low"
     },
@@ -328,38 +319,47 @@
       "impact": "low"
     },
     {
-      "title": "How Did Myanmar Hide Iranian Jet Fuel Imports to Evade US Sanctions?",
-      "summary": "How Did Myanmar Hide Iranian Jet Fuel Imports to Evade US Sanctions? Modern Diplomacy",
-      "source": "Modern Diplomacy",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeWk4R2lUZm9XUEg5WE9yODdGd0pmYXNkTnRaZUhwOEpZTVJQQjFoYkhmdVk4Q1ZfQ1VRM1p2OE5WU2RLZ0M5MHd6cHRFYVBjaGN6OW9OeFFDMlBySXh1SWM3S1RwQ3dBMlZfX3lZVDBFb0pPcmt3cC1XTTVURDZvLXZxMG1kYkQ1eHNZYVlEVkttc1ZrU2FJMTBVcWZvcTdKOWs0NXBWaGRGZw?oc=5",
-      "published": "2026-10-26T04:39:25Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "Saudi defence pact countries push for peace in Tehran as Houthis launch more attacks",
-      "summary": "Saudi defence pact countries push for peace in Tehran as Houthis launch more attacks Prothom Alo English",
-      "source": "Prothom Alo English",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5oWkdLR3J1SlFNN1hNakpFSUthdERqanJnZ2FudjZUbUg5VXRMY0ZnbFdlVmNUUzBlQlNwNkpkLU1uYzVPZXh4Mmt3RXo0Umt0SENNc2RJdFdRNXNaYmZ2T21oalVJZkszVGhvTnZ5NNIBfEFVX3lxTE9UNWtvV3FJY1JZUlZKSGFWTnFyVmtDQUJuUzlEbEFXcldseUR4MDdyTFpWVWk4M1IyclVIMEZ2RzgtZUxyd0szNE8yU3V5WE1pNkd4Q3JsNmpzbzB1bW10TmRUZDAzQl9VczJpUF9xOVBXOFdqNzZIbDNCOEQ?oc=5",
-      "published": "2026-10-26T17:02:48Z",
-      "sentiment": "bullish",
-      "impact": "low"
-    },
-    {
-      "title": "China driving down price of Russian gas",
-      "summary": "China driving down price of Russian gas Eurasianet",
-      "source": "Eurasianet",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5nak1sWDcyWEN2TFFzczROVjAzaTBBMTV4em1IUVVJdm1QQ05oUVQ1SEtLTTlJeXRlSzQ3RThkbnI1dW5rQnA2MGdzSnpGNi1UbC1TSTFLQndqenVfT2ZfRzlBX0tLSUlLOW1lTUlTMA?oc=5",
-      "published": "2026-10-27T14:34:01Z",
+      "title": "Trump Calls for Replacing Ukraine\u2019s Zelenskyy in Tussle Over Diesel Deal With Russia",
+      "summary": "Trump Calls for Replacing Ukraine\u2019s Zelenskyy in Tussle Over Diesel Deal With Russia EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZXJhbnZxLUdwU253eXEyaG9MM2lmdllscnFIdTdkaGkxMHpjemFwTG1pUTlGbHpTU19sMWVQMHQycTMzelZxb09OTFAxRXc3WncybFU3SmZzUHNnUC13MUlpQm1GNXVlM2xQX2F5cy0yN2l4V2pJVzFiY0czdmJDTFBfc0VyaGhtNzJNcWlPT1RNZW5FaVZRUzAyVkM4aDNiaEhoVzZoYUh2Z3M5QWtWMUs4ZWY?oc=5",
+      "published": "2026-10-27T01:38:17Z",
       "sentiment": "neutral",
       "impact": "low"
     },
     {
-      "title": "Senate overwhelmingly advances Russia sanctions bill named after Sen. Lindsey Graham",
-      "summary": "Senate overwhelmingly advances Russia sanctions bill named after Sen. Lindsey Graham ABC News - Breaking News, Latest News and Videos",
-      "source": "ABC News - Breaking News, Latest News and Videos",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOY201cHExVEdiSzNVUkNQZ2cydldwMkhLeEllZFVEelRtMVQzMGdxZHk4Z041YklkcW0wY2tscXFTaFpBUnRENHJnekJjU3JfTHU2RnFaMnA4SjBsVWRwTGk1ZVVWV1BVWWl5dHptaFNYdThJUEFaYWk2MUUzeVRsa1RKdHBManRzNHR5eEJWa2d6cjBfSW1kX2hBeTIwUdIBowFBVV95cUxNYndwVEREWVpyY3dxenJmS3JtUXFjbUkwYVoyNEZ0NE43NHN2SFh3THpneC1peF9MUzJsamhaRVU3M2R0b2JvaDI0ZElSTHl3NDU0aWgzM3g1ZDBoOXpLSFdjSmZLREtBVXVsYThQbkUwOThxd1pLUXhhaTBsTDl0c0FyemhVWjFuZ3pfOV9vTkFjVk5pdlhnbjE0M2s4VUtMTk1v?oc=5",
-      "published": "2026-10-27T08:15:41Z",
+      "title": "Serbia's new government will not impose sanctions against russia and intends to halt arms sales to Ukraine",
+      "summary": "Serbia's new government will not impose sanctions against russia and intends to halt arms sales to Ukraine Ukrainian news",
+      "source": "Ukrainian news",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPRTB2WU1mMTBpZGM1djVMbHB6RnJjZWZJOGJqOXNidFVQMWVyRlZFM2pFbDRnRXd6MFUzUTZGNS01OXpYX0RnZUk1b1ZmX1FsWG9OYVNlYi1XNmlDTWUzSTFPLVBMTzI1MmEwNG1xR0pUVzRmOFBhQjFxRmtzeDRfejdDcURjaW5kR2Z6blJ1M3UwNFZURDdMRURTN3hQaG1YVVZ1R1BPcDVEZi1heEhYS3ZTVWpNQVA2M0FkeTdNNk5FdXA2TzB2WUt1YkoyUUZ60gHWAUFVX3lxTE0zTTIxVnJhRTB0Zjl1SGNXZ1hzTENWV0hsT2NvdDFMNy1meWlUY2RkdFBQNzU3ckxRUmZBaHlLdi1ZdXNndUxaMkg3S3lEVlpMWXM3TWRfNXRxT2tBUTU0YlVUSGZpcktWUUR3ZmNtaFhDR3BWVXhxVjNHZ3Y0TG8wRW56Ri0zLWlXeHJKZl9pQk5lU0c2cE9SY2ItelE4cmNrNFdPVjNqbndDcjFjVWZDNmtWSXJjS2VXdHIydUEtODQ3ZFZyb2lobElKejlfMERFVWg0eUE?oc=5",
+      "published": "2026-10-26T17:29:39Z",
+      "sentiment": "bullish",
+      "impact": "med"
+    },
+    {
+      "title": "Trump Warns Zelensky: He \u2018Better Damn Well Stop\u2019 Attacking Russian Oil Refineries, Calls for New Ukrainian Leader",
+      "summary": "Trump Warns Zelensky: He \u2018Better Damn Well Stop\u2019 Attacking Russian Oil Refineries, Calls for New Ukrainian Leader EnergyNow.com",
+      "source": "EnergyNow.com",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZDh1aUxQWkpMaXlvZnRBbUhzNE55WU9jZUFVa1M5YzlydVdpcjlTRkYxeFFjeGluVnFuVG4tQ3NxWWRyUW8tRTdWSW52eVhHbzJLM1RuUnNZN0pYTDlydE9CN0l1Z05mZjNfSHgyX3p3dDZGQXpGR1h3c0RLMDRGRlgzWkt3b0VfOTZvYzZrTDRLb0RRSE1QakxrdFkzX2U3V1B1Rkt4d0ZCYmYzMFhiTFNjYVQteU9FamY0enJMVmhlOEhrTFdra0tfM3ByVEhIQVZiMG1mcw?oc=5",
+      "published": "2026-10-26T23:11:11Z",
+      "sentiment": "bullish",
+      "impact": "low"
+    },
+    {
+      "title": "Rubio described Trump\u2019s decision to ease sanctions against Russia for \"diesel deal\" as \"very wise\"",
+      "summary": "Rubio described Trump\u2019s decision to ease sanctions against Russia for \"diesel deal\" as \"very wise\" \u0426\u0435\u043d\u0437\u043e\u0440.\u041d\u0415\u0422",
+      "source": "\u0426\u0435\u043d\u0437\u043e\u0440.\u041d\u0415\u0422",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUGc3Q3ZtU2FuaTk2U1ZJTE9tcUZoVHBlNzdicDdqSEhLcmN4STNiRXhYcW5UdGZrTEVsQVJZem1rZmRlc2VWcGZpSkZfZ281OE01QlNrY0dMZ0VCeHBNTWwwUV9fZU5Rb3VxdnFDNmlhZUNlNlZFR1ViYTAxSlpSOWVHWHB6OUwwTzNXS1A5YW5mRkh1bHFFeHVJcVl2dG41MUNZWklZUmtUeG4xTXBydmF4R29zOFk?oc=5",
+      "published": "2026-10-25T06:46:00Z",
+      "sentiment": "bullish",
+      "impact": "high"
+    },
+    {
+      "title": "How the War in Iran Could Escalate",
+      "summary": "How the War in Iran Could Escalate Time Magazine",
+      "source": "Time Magazine",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9xQWhzR0ktMDFnUlVBRWhEWnhsNU1TMC1Rb2lNTzBpUnB1cVh5aERIcC11SVFFUWNWOEFqaE16cjcyNGJHdFAtTGhkb1MyaFhsN1Vfano1alhybjN2a2tvZExweHMxQTVCd1V6ZllRZkZvZC1Zb2lQVmFYRQ?oc=5",
+      "published": "2026-10-27T14:59:56Z",
       "sentiment": "bullish",
       "impact": "low"
     }
