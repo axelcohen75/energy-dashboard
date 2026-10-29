@@ -1,47 +1,47 @@
 {
- "generated": "2026-10-28T18:39:46.586297+00:00",
+ "generated": "2026-10-29T18:48:06.332351+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets sent mixed signals today. WTI surged 2.98% to $102.88/bbl on a third consecutive weekly draw in US inventories (-1.9 mb per EIA) and persistent Gulf supply disruption, with at least 50 tankers reported stuck in the Gulf. Brent, however, slipped 1.87% to $111.73 despite UBS raising its year-end Brent target to $110, suggesting some profit-taking after a 15% monthly WTI rally. Distillates softened, with Heating Oil off 2.13% and RBOB down 0.93%. The geopolitical backdrop remains combustible: Iran is reportedly budgeting for $130 oil in 2027, while Chinese refiners pivot to West African and Brazilian barrels as freight eases. PetroChina posted a 21.6% Q3 profit jump citing war-inflated prices. Options markets price a 77% probability of an OPEC cut at the May 2027 meeting.",
+   "summary": "Crude markets are sending mixed signals today. WTI slipped just 0.55% to $102.22/bbl while Brent dropped a sharper 3.84% to $110.91, widening the spread amid volatile geopolitical flows. The most consequential late-session headline: Iran declared the Strait of Hormuz closed following a naval mine strike that set an oil tanker ablaze \u2014 a development that will demand close attention overnight. Europe announced a release of 42 million barrels from emergency reserves, half diesel, in a direct policy response to the $11 billion/month import cost surge tied to the Iran war. On the supply diplomacy front, the US temporarily eased Russia sanctions and Washington is reportedly discussing post-war Sakhalin joint ventures and Druzhba pipeline deals. UBS data shows Russian exports only 10% below pre-war levels. Products sold off hard \u2014 heating oil -5.0%, RBOB -2.82% \u2014 while Sinopec posted Q3 profit up 64% and Carlos Slim liquidated $1.15 billion in US oil equities.",
    "drivers": [
-    "US crude inventories fell 1.9 mb for the week ending Oct 23, providing floor support for WTI",
-    "Gulf shipping crisis keeps at least 50 tankers idle; tanker giant Bahri posted a tenfold Q3 profit surge on surging rates",
-    "Geopolitical risk premium elevated: Iran targets $130 oil in 2027 budget; Ukraine-Russia energy infrastructure strikes ongoing; Trump-Russia diesel deal under Western scrutiny"
+    "Iran declares Strait of Hormuz closed after tanker mine strike \u2014 acute supply disruption risk to ~20% of global oil flows",
+    "Europe releasing 42 million barrels of emergency stocks to cap retail fuel prices ahead of winter",
+    "US-Russia sanctions easing and post-war energy mega-deal talks add competing downside pressure on medium-term prices"
    ],
    "headlineCount": 12,
    "sources": [
-    "CBS News",
+    "BigGo Finance",
+    "Britannica",
     "Crude Oil Prices Today | OilPrice.com",
     "EnergyNow.com",
-    "Equiti Global",
-    "The Kyiv Independent"
+    "Financial Times",
+    "LatestLY"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets staged a sharp rally across both benchmarks. Henry Hub jumped 12.46% to $3.035/MMBtu in a single session, extending a weekly gain of 8.71%. TTF surged 4.00% to \u20ac99.9/MWh, now up 43% over the past month \u2014 a striking move heading into winter. The most significant catalyst is QatarEnergy's extension of its LNG force majeure through end-2026, removing key term supply certainty for European and Asian buyers at a critical seasonal juncture. Russia is simultaneously offering China a substantial gas discount, reflecting Moscow's fiscal dependence on Beijing. Equinor, benefiting from high prices, tripled Q3 adjusted net income and raised its 2026 production growth forecast to ~4%, while PetroChina also cited war-inflated gas prices as a profit driver.",
+   "summary": "Natural gas markets diverged sharply across regions today. Henry Hub gained 4.69% to $2.95/MMBtu, extending a solid weekly gain of 5.47%, likely reflecting winter demand positioning. European TTF fell 3.19% to \u20ac97.51/MWh on the day but remains up 34.76% on the month \u2014 a stark reminder of the structural supply squeeze. The month's gains are underpinned by the Iran war disruption and ongoing Russian supply uncertainty. On the supply side, Equinor doubled its resource estimate for the Afrodite North Sea discovery. Trafigura signed a $1.5 billion, five-year deal to supply over 150 TWh of gas to Germany's SEFE, signalling long-term European import dependency. Shell nearly doubled Q3 profits to $10.8 billion on record LNG margins. A sanctions-violation allegation against Polar LNG's Alaska project adds regulatory risk to US LNG supply growth.",
    "drivers": [
-    "QatarEnergy extended LNG force majeure to end-2026, stripping European and Asian buyers of guaranteed term supply heading into winter",
-    "TTF +43% on the month reflects acute European supply anxiety; Henry Hub +12.46% today signals US market tightening",
-    "Russia offering China a large gas discount underscores Kremlin's leverage loss, while Equinor raised output guidance on strong commodity prices"
-   ],
-   "headlineCount": 6,
-   "sources": []
-  },
-  "power": {
-   "summary": "EU carbon edged up 1.14% to $84.78/EUA, building on a 4% weekly and nearly 4% monthly gain, as elevated TTF at \u20ac99.9/MWh keeps gas-fired generation expensive and sustains carbon cost pass-through. The geopolitical backdrop is directly pressuring power infrastructure: a drone attack on a UAE nuclear power plant pushed oil to a two-week high earlier today, and Ukraine launched over 1,000 drones striking a Russian oil terminal in St. Petersburg. Iran's deepening nuclear entanglement \u2014 now turning to Russia for nuclear power as IAEA oversight falters \u2014 adds a longer-term proliferation overhang to regional energy security. On the structural side, China's wind and solar capacity surpassed 2 terawatts, a landmark that may gradually reshape global carbon dynamics. Gulf states are reported to be negotiating a regional peace deal covering Hormuz, Yemen, and Iran's nuclear program.",
-   "drivers": [
-    "QatarEnergy LNG force majeure and TTF at \u20ac99.9/MWh sustain high carbon prices as gas generation costs remain elevated",
-    "Drone attack on UAE nuclear plant and Ukraine's 1,000-drone strike on Russian energy infrastructure highlight escalating power and energy security risks",
-    "China's wind and solar capacity crosses 2 TW milestone; Gulf states in peace talks covering Strait of Hormuz and Iran nuclear program signal potential medium-term supply normalization"
+    "Henry Hub up 4.69% on the day; TTF up 34.76% month-on-month, both reflecting winter demand and war-driven European supply anxiety",
+    "Trafigura-SEFE 150 TWh supply deal and Equinor's doubled Afrodite estimate highlight Europe's scramble to secure non-Russian gas",
+    "Polar LNG faces Russian-financing allegations, adding sanctions risk to a key prospective US LNG export project"
    ],
    "headlineCount": 7,
    "sources": [
-    "ABC News - Breaking News, Latest News and Videos",
-    "Business Upturn",
-    "Crude Oil Prices Today | OilPrice.com",
-    "EnergyNow.com",
-    "Informat.ro"
+    "Anchorage Daily News",
+    "BigGo Finance"
+   ]
+  },
+  "power": {
+   "summary": "News flow in the power and carbon sector is relatively thin today. EU carbon allowances (EUA) edged up 0.22% to $84.97/EUA, maintaining a steady monthly uptrend of nearly 5%, broadly consistent with elevated gas prices keeping carbon costs supported in the power stack. TTF's sharp monthly rise of 34.76% continues to feed through to generation costs. UK National Grid announced up to $532 million investment to extend the IFA France-UK interconnector through 2050, a significant infrastructure commitment for cross-border power security. The US is actively promoting American nuclear technology across Central Asia and the Caucasus. A CCS project by Heidelberg Materials in Edmonton reportedly cleared all technical tests but failed on investment economics \u2014 a cautionary signal for the carbon capture pipeline. Ukraine's 1,000-drone strike hitting a St. Petersburg oil terminal is a reminder that energy infrastructure attacks remain a live risk.",
+   "drivers": [
+    "EUAs holding firm near $85 with monthly gains intact, underpinned by elevated TTF and winter demand expectations",
+    "UK National Grid's $532M IFA interconnector extension to 2050 reinforces long-term cross-border power security investment",
+    "Heidelberg Materials CCS project failure on investment test highlights persistent financing gap for industrial carbon capture"
+   ],
+   "headlineCount": 5,
+   "sources": [
+    "ABC News - Breaking News, Latest News and Videos"
    ]
   }
  }
