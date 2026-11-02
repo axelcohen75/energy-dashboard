@@ -1,36 +1,47 @@
 {
- "generated": "2026-10-30T18:25:05.173572+00:00",
+ "generated": "2026-11-02T22:05:58.466396+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "A volatile session saw WTI surge +2.77% to $104.83 while Brent slipped -1.17% to $113.54, a widening spread reflecting intraday swings driven by competing Hormuz risk and emergency supply signals. A tanker fire in the Strait of Hormuz\u2014reportedly caused by explosive devices\u2014pushed Brent briefly to $117 intraday before SPR-release talk and tentative Iran diplomacy dragged it back. ANZ raised its year-end Brent target by $10 to roughly $105, while traders eye a further push toward $120. Downstream products weakened, with Heating Oil off -1.05% and RBOB -0.41%, suggesting demand caution. Corporate earnings were a standout: ExxonMobil posted $15.4 bn in Q3 profit\u2014more than double year-ago\u2014while BP nearly quadrupled earnings. The Baker Hughes rig count was unchanged, signaling U.S. producers remain disciplined at current prices. CME options put a 77% probability on a production cut at the next OPEC meeting.",
+   "summary": "Crude staged a dramatic intraday reversal, with WTI settling at $96.31/bbl (-7.50%) and Brent at $104.15/bbl (-11.47%), the sharpest single-day drops in recent memory. The catalyst was a joint US-Iran signal that diplomatic channels remain open, unwinding a significant portion of the geopolitical war premium that had built following Houthi strikes on Saudi Arabia's Ras Tanura refinery last week. RBOB gasoline led the sell-off at -12.44%, reflecting the same risk-off unwind in refined products. Offsetting factors kept declines from deepening further: Ukraine defied Washington by resuming strikes on Russian refineries\u2014hitting at least three facilities since Friday, including a reported fire at a major Volga hub\u2014and a sanctioned Iranian tanker successfully delivered LNG cargo to China despite the US naval blockade. ADNOC's chief warned that global supply buffers have been severely eroded. Options markets now price a 77% chance of an OPEC cut at the May 2026 meeting.",
    "drivers": [
-    "Hormuz security: tanker attack sent Brent to $117 intraday, keeping a geopolitical risk premium firmly embedded",
-    "SPR releases and tentative Iran diplomacy capped gains, contributing to Brent's end-of-day pullback despite WTI strength",
-    "Record upstream/refining profits at ExxonMobil and BP confirm sector earnings leverage; U.S. rig count flat signals producer restraint"
+    "US-Iran diplomatic signals triggered a sharp unwind of the geopolitical war premium, driving WTI -7.5% and Brent -11.5% on the day",
+    "Ukraine resumed and escalated strikes on Russian refineries (three hits since Friday), providing a partial supply-risk floor under prices",
+    "CME options now price a 77% probability of an OPEC production cut at the next meeting (May 3, 2026), reflecting underlying demand concern"
    ],
    "headlineCount": 12,
-   "sources": []
+   "sources": [
+    "DD News",
+    "EnergyNow",
+    "EnergyNow.com",
+    "Latest news from Azerbaijan",
+    "Macau Business",
+    "The Guardian"
+   ]
   },
   "gas": {
-   "summary": "European gas continued its breakout, with TTF closing at 103.19 \u20ac/MWh (+4.67% on the day, +39.56% on the month)\u2014its highest level since the 2022 crisis\u2014as winter approaches against a backdrop of historically low storage. Henry Hub, by contrast, slipped -1.96% to $2.894/MMBtu, though its weekly gain of nearly +10% signals tightening domestic sentiment. The Atlantic spread is stark: U.S. producers face pressure to redirect volumes to lucrative European and Asian markets, with America's LNG export infrastructure described as facing its biggest test yet. Japan is set to displace China as the world's top LNG importer in 2026, partly because high LNG prices are deterring Chinese buyers. Japan's government separately tapped $7 bn in contingency reserves to subsidize domestic fuel costs. The flat U.S. rig count raises questions about supply responsiveness as global demand accelerates.",
+   "summary": "Henry Hub eased modestly to $2.869/MMBtu (-1.00% on the day) but remains up over 10% on the week, suggesting near-term bullish momentum despite today's soft session. TTF fell sharply, -10.10% to \u20ac93.45/MWh, likely tracking the broader crude and geopolitical-premium unwind after US-Iran diplomacy headlines, though TTF remains up 25% on the month\u2014a sign of persistent European tightness. On the structural side, two sizable LNG investment deals headlined the session: Blackstone-led investors acquired a $3.1 billion stake in LNG Canada, and a US-backed consortium proposed a $4.4 billion LNG import terminal in Pakistan, signaling continued global appetite for long-term LNG infrastructure. News flow on gas fundamentals was otherwise thin today.",
    "drivers": [
-    "TTF at a four-year high above 103 \u20ac/MWh on low European storage and approaching winter demand, creating extreme transatlantic price divergence",
-    "Japan poised to become world's top LNG importer in 2026 as high prices curb Chinese demand, intensifying competition for U.S. cargoes",
-    "U.S. drilling activity stagnant per Baker Hughes, limiting near-term domestic supply response despite a near-10% weekly Henry Hub rally"
+    "TTF dropped 10% on the day, likely tracking the crude geopolitical-premium unwind, though the month-to-date gain of 25% signals persistent European supply tightness",
+    "Blackstone and Canadian institutional investors closed a $3.1 billion stake purchase in LNG Canada, reinforcing long-term export capacity build-out",
+    "A US-backed consortium proposed a $4.4 billion LNG import terminal in Pakistan, reflecting growing emerging-market demand for seaborne LNG"
    ],
-   "headlineCount": 6,
+   "headlineCount": 5,
    "sources": []
   },
   "power": {
-   "summary": "News flow and price data for Power & Carbon were limited today. EU Carbon (EUA) was essentially flat at $84.88/EUA (-0.11%), consolidating within a modest +4.26% monthly gain. The dominant story in this sector is the indirect cost-push from gas: TTF's +4.67% single-day move to 103.19 \u20ac/MWh materially raises the marginal cost of gas-fired generation across Europe, which typically lifts power prices and supports carbon permit demand as coal-to-gas switching dynamics shift. However, no direct power-price data or EUA-specific headlines were provided today, so a fuller assessment of dispatch economics and carbon market flows is not possible from today's feed.",
+   "summary": "EU carbon allowances (EUA) bucked the broader energy sell-off, edging up +1.49% to $86.145/EUA and extending a month-to-date gain of 7.38%\u2014a notable divergence from the sharp declines in crude and TTF. The EUA resilience likely reflects structural compliance demand that is less sensitive to short-term geopolitical swings. The key macro backdrop for European power remains the Strait of Hormuz situation: Iran offered to reopen the strait within two days conditional on US concessions, though separate headlines indicated Iran rejected US peace talks, leaving the situation fluid. Central Asia faces a distinct but parallel stress test, with reports flagging rising concern over the region's capacity to generate sufficient heat and electricity ahead of winter. Dedicated power and carbon headline flow was thin today; the sector is largely trading in the shadow of the oil and gas volatility.",
    "drivers": [
-    "TTF at 103.19 \u20ac/MWh (+4.67% on day) raises marginal generation costs, providing indirect upward pressure on European power prices",
-    "EUA flat at $84.88 with limited carbon-specific news; month-on-month gain of +4.26% tracks the broader energy price complex higher",
-    "Thin headline flow for this sector today\u2014no direct power price prints or carbon auction data available to elaborate further"
+    "EUA carbon prices rose +1.49% and are up 7.38% on the month, showing resilience against the broader energy commodity sell-off driven by compliance-floor demand",
+    "Iran's conditional offer to reopen the Strait of Hormuz introduces uncertainty around European energy security and power generation feedstock costs",
+    "Central Asia's power grid is flagged as a stress point heading into winter, with insufficient generation capacity a growing concern for the region"
    ],
-   "headlineCount": 2,
-   "sources": []
+   "headlineCount": 7,
+   "sources": [
+    "Mathrubhumi English",
+    "NewsCord",
+    "Pragativadi"
+   ]
   }
  }
 }
