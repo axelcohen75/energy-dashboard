@@ -1,36 +1,49 @@
 {
- "generated": "2026-11-04T20:16:10.593021+00:00",
+ "generated": "2026-11-05T20:28:24.589572+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude collapsed on Wednesday in one of the sharpest single-session selloffs of the year. WTI settled near $88.54 (-7.84%) and Brent crashed through $95, finishing around $95.12 (-8.19%), after touching its lowest level since early September. The catalyst was a dramatic political shift: following Tuesday's Democratic midterm sweep, President Trump and VP Vance publicly blamed the Iran war for the party's losses, sending markets racing to price an imminent U.S.-Iran diplomatic settlement and the return of sanctioned Iranian barrels. That risk-off signal dominated a session where EIA data actually showed a 900,000-barrel draw \u2014 a figure that would normally be supportive. Refined products were also hammered: RBOB fell 6.83% and Heating Oil dropped 6.95%. On the supply side, Nigeria reported output rising to 3.04 million boepd, New Jersey moved to block Russian diesel imports, and Equinor shut its Visund North Sea platform after an electrical fire, removing 13.2 kboepd \u2014 though neither event materially offset the Iran-driven selloff. CME options now price a 77% probability of an OPEC cut at the next meeting.",
+   "summary": "Crude surged sharply on Thursday, with WTI +3.1% to $90.85/bbl and Brent +4.1% to $98.46/bbl, as Hormuz risk premiums returned to the fore after Iran's IRGC reported two tankers and a tugboat ablaze in the strait, with headlines framing the incidents as deliberate pressure following the U.S. midterm vote. The supply-disruption bid overshadowed the week's steep sell-off (-10.9% WTI, -14.3% Brent over seven days). Diesel and heating oil outperformed gasoline \u2014 HO +3.5% vs. RBOB +1.4% \u2014 consistent with reporting that U.S. refineries are structurally pivoting yield toward distillates. The Russian diesel subplot added complexity: tankers reportedly reversed course away from U.S. ports after sanctions pushback from the New Jersey governor and apparent friction with a temporary White House deal to ease Russia oil sanctions. Options markets price a 77% probability of an OPEC cut at the May 2027 meeting, suggesting the medium-term demand outlook remains cautious even as near-term geopolitical risk keeps a floor under flat price.",
    "drivers": [
-    "Trump-Iran deal speculation surged after Democrats swept midterms; Brent shed ~$9/bbl intraday on expectations of returning Iranian supply",
-    "EIA reported a 900,000-barrel crude inventory draw for the week ending Oct 30, providing no floor amid dominant macro/political sentiment",
-    "Equinor's Visund platform fire removed ~13,200 boepd of North Sea supply; Nigeria raised output to 3.04 million boepd, adding further bearish supply context"
+    "Hormuz incident: IRGC reports two tankers and a tugboat on fire in the strait, lifting geopolitical risk premium across the crude complex",
+    "Russian diesel saga: tankers divert away from U.S. ports amid NJ governor sanctions threat and sanctions-wall friction, despite a reported temporary White House easing of Russia oil restrictions",
+    "Refinery yield shift: U.S. refiners cutting gasoline output share in favour of diesel/jet fuel, explaining diesel's outperformance of RBOB on the day"
    ],
    "headlineCount": 12,
-   "sources": []
+   "sources": [
+    "Arabian Business",
+    "EnergyNow",
+    "GMA Network",
+    "Iran International",
+    "Kyiv Post",
+    "New Jersey Monitor"
+   ]
   },
   "gas": {
-   "summary": "Natural gas markets diverged sharply on Wednesday. Henry Hub edged higher to $2.96/MMBtu (+2.31% on the day, +5.15% on the week), finding modest support amid forecasts of a potential polar vortex disruption that could send cold air into Northwest Europe and pressure storage levels. TTF, by contrast, cratered 7.17% to \u20ac85.03/MWh \u2014 its worst single-session drop in weeks \u2014 as Iran-deal optimism spilled over from oil markets, reducing risk of a broader Middle East supply disruption and easing LNG premium. The polar vortex warning from the European Centre for Medium-Range Weather Forecasts adds a key downside risk to European storage draws heading into winter. The Equinor Visund outage removes associated gas alongside crude, a marginal supply tightener for European pipe flows. The UAE is also reportedly weighing a third Hormuz bypass pipeline, underscoring ongoing regional infrastructure diversification.",
+   "summary": "Henry Hub edged marginally lower (-0.3%) to $2.95/MMBtu and remains range-bound on the week, reflecting ample domestic supply with no acute demand catalyst. TTF gained 1.8% to \u20ac89.64/MWh despite intraday reports of a 2% early-session drop attributed to Democrat midterm gains raising hopes for a U.S.-Iran deal that could ease global supply concerns; the market ultimately pared those losses as the EU moved to rebuff any resumption of Russian gas purchases. The WSJ report of U.S. pressure to restore Russian gas flows via Ukraine sits in direct tension with the EU's stated position of no plans to resume Russian gas imports, leaving the transit-route story unresolved. Hungary's announcement of a full exit from Russian gas by fall 2027 adds a medium-term structural demand shift for alternative supply. Separately, IEEFA data showing $67.8 billion in Asian LNG power projects scrapped or stalled is a bearish medium-term signal for LNG demand from Southeast Asia.",
    "drivers": [
-    "TTF fell sharply as Iran deal optimism reduced geopolitical risk premium on European LNG supply",
-    "Polar vortex forecast from ECMWF threatens early cold-air intrusion into Northwest Europe, putting gas reserves at risk and supporting Henry Hub",
-    "Equinor Visund platform fire halted associated gas output in the Norwegian North Sea; UAE evaluating third Hormuz bypass pipeline adds longer-term supply context"
+    "EU-U.S. divergence on Russian gas: Washington reportedly pushing to restore Russian flows via Ukraine while the EU explicitly rules out resuming Russian gas purchases",
+    "Post-midterm Iran deal optimism briefly weighed on TTF intraday before market recovered; geopolitical premium remains in European gas",
+    "IEEFA: over half of proposed LNG-to-power projects ($67.8 bn) in key Southeast Asian markets scrapped or stalled, dampening longer-term LNG demand outlook"
    ],
-   "headlineCount": 8,
-   "sources": []
+   "headlineCount": 10,
+   "sources": [
+    "New Jersey Monitor",
+    "The New Voice of Ukraine",
+    "WSJ"
+   ]
   },
   "power": {
-   "summary": "The power and carbon picture on Wednesday was one of decoupling. EU EUAs held firm at $85.95/EUA (+0.34%), extending a monthly gain of 6.56% and showing resilience against the broader energy commodity selloff. The carbon market appears to be taking its cue from the U.S. political landscape: Democrats swept the midterm elections, triggering a sharp rally in renewables stocks across Asia and Europe as investors re-priced U.S. clean-energy policy expectations. That political tailwind provided a supportive backdrop for carbon prices. TTF's sharp 7.17% drop is a double-edged input \u2014 lower gas costs reduce short-term power generation costs and the incentive to switch from coal, which could modestly weigh on carbon demand, though EUA pricing has not reflected this today. Data flow for this sector is otherwise thin.",
+   "summary": "The power and carbon sector offers relatively thin price action today. EU carbon EUAs slipped 1.1% to $84.99/EUA, pulling back modestly despite a solid monthly gain of +4.3%, with no sector-specific headline driving the move. TTF's 1.8% gain is the primary input cost signal for European power generators. On the structural side, two notable demand-side developments emerged: India is set to mandate state utilities to add energy storage capacity to reduce clean-power curtailment, a potentially significant build-out signal for storage markets. Turkey unveiled an ambitious $500 billion energy investment plan to 2040 spanning gas, solar, and nuclear, adding a large long-dated capex story to the regional power landscape. The IEEFA finding of $67.8 billion in stalled Asian LNG power projects is relevant here as a signal that gas-to-power capacity additions in Southeast Asia are slowing materially.",
    "drivers": [
-    "Democratic midterm sweep boosted renewables equities globally and provided a supportive policy backdrop for carbon markets",
-    "EU EUAs (+0.34%) held firm and extended monthly gains of 6.56% despite broad energy commodity weakness",
-    "TTF's 7.17% single-day drop may reduce gas-to-coal switching incentives, a marginal bearish signal for near-term carbon demand \u2014 though not yet reflected in EUA prices"
+    "EU EUA -1.1% on the day despite positive monthly trend; no specific carbon-market catalyst identified in today's headlines",
+    "India mandating energy storage additions for state utilities signals accelerating clean-power integration and curtailment-reduction investment",
+    "Turkey's $500 bn energy plan to 2040 (gas, solar, nuclear) and IEEFA's $67.8 bn stalled Asian LNG-to-power tally frame divergent regional power investment trajectories"
    ],
-   "headlineCount": 2,
-   "sources": []
+   "headlineCount": 4,
+   "sources": [
+    "Logistics Middle East"
+   ]
   }
  }
 }
