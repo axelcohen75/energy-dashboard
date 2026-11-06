@@ -1,48 +1,47 @@
 {
- "generated": "2026-11-05T20:28:24.589572+00:00",
+ "generated": "2026-11-06T19:51:08.102855+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude surged sharply on Thursday, with WTI +3.1% to $90.85/bbl and Brent +4.1% to $98.46/bbl, as Hormuz risk premiums returned to the fore after Iran's IRGC reported two tankers and a tugboat ablaze in the strait, with headlines framing the incidents as deliberate pressure following the U.S. midterm vote. The supply-disruption bid overshadowed the week's steep sell-off (-10.9% WTI, -14.3% Brent over seven days). Diesel and heating oil outperformed gasoline \u2014 HO +3.5% vs. RBOB +1.4% \u2014 consistent with reporting that U.S. refineries are structurally pivoting yield toward distillates. The Russian diesel subplot added complexity: tankers reportedly reversed course away from U.S. ports after sanctions pushback from the New Jersey governor and apparent friction with a temporary White House deal to ease Russia oil sanctions. Options markets price a 77% probability of an OPEC cut at the May 2027 meeting, suggesting the medium-term demand outlook remains cautious even as near-term geopolitical risk keeps a floor under flat price.",
+   "summary": "Crude is stabilising after a brutal week: WTI settled at $90.98/bbl (+0.53% today) and Brent at $98.36/bbl (+0.07%), but both contracts are nursing weekly losses of roughly 12-16% after shedding more than $11/bbl from opening levels near $102 \u2014 the market's sharpest weekly decline in months. The selloff is being driven by U.S. midterm election results that raised hopes of de-escalation in the U.S.-Iran conflict, compressing the geopolitical risk premium that had underpinned crude. Asia's fuel oil margins have slumped on the same de-escalation narrative, while HPCL continues to struggle securing tankers for Hormuz transits. On the Russia side, a temporary U.S. easing of Russian oil sanctions has rattled European allies, and Russian diesel tankers that were initially tracked toward the U.S. have reportedly redirected after hitting sanctions headwinds. CME options markets price a 77% probability of an OPEC cut at the next meeting in May 2027.",
    "drivers": [
-    "Hormuz incident: IRGC reports two tankers and a tugboat on fire in the strait, lifting geopolitical risk premium across the crude complex",
-    "Russian diesel saga: tankers divert away from U.S. ports amid NJ governor sanctions threat and sanctions-wall friction, despite a reported temporary White House easing of Russia oil restrictions",
-    "Refinery yield shift: U.S. refiners cutting gasoline output share in favour of diesel/jet fuel, explaining diesel's outperformance of RBOB on the day"
+    "U.S. midterm results fuelling de-escalation hopes for the U.S.-Iran conflict, sharply unwinding the geopolitical risk premium in crude",
+    "Temporary U.S. easing of Russia oil sanctions adding supply-side bearish pressure and straining transatlantic allied relations",
+    "Strait of Hormuz tanker disruptions persisting (HPCL unable to secure vessels), capping the downside and keeping Heating Oil spreads elevated"
    ],
    "headlineCount": 12,
    "sources": [
-    "Arabian Business",
+    "Britannica",
     "EnergyNow",
-    "GMA Network",
+    "EnergyNow.com",
     "Iran International",
     "Kyiv Post",
     "New Jersey Monitor"
    ]
   },
   "gas": {
-   "summary": "Henry Hub edged marginally lower (-0.3%) to $2.95/MMBtu and remains range-bound on the week, reflecting ample domestic supply with no acute demand catalyst. TTF gained 1.8% to \u20ac89.64/MWh despite intraday reports of a 2% early-session drop attributed to Democrat midterm gains raising hopes for a U.S.-Iran deal that could ease global supply concerns; the market ultimately pared those losses as the EU moved to rebuff any resumption of Russian gas purchases. The WSJ report of U.S. pressure to restore Russian gas flows via Ukraine sits in direct tension with the EU's stated position of no plans to resume Russian gas imports, leaving the transit-route story unresolved. Hungary's announcement of a full exit from Russian gas by fall 2027 adds a medium-term structural demand shift for alternative supply. Separately, IEEFA data showing $67.8 billion in Asian LNG power projects scrapped or stalled is a bearish medium-term signal for LNG demand from Southeast Asia.",
+   "summary": "Henry Hub edged up to $2.986/MMBtu today (+1.32%), recovering modestly on the week (+3.04%) but still down nearly 6% on the month. Headline flow for the natural gas sector is relatively thin today. The Baker Hughes rig count showed a minor week-on-week uptick in U.S. oil and gas drilling activity despite the crude price crash, suggesting producers have not yet meaningfully curtailed activity. On the geopolitical supply-chain side, Hungary announced it will end Russian natural gas imports by autumn 2027, a notable longer-term demand shift for European LNG. Norway's production outlook drew attention, with reports flagging a major decline risk absent new discoveries \u2014 a potential medium-term tightener for European gas balances.",
    "drivers": [
-    "EU-U.S. divergence on Russian gas: Washington reportedly pushing to restore Russian flows via Ukraine while the EU explicitly rules out resuming Russian gas purchases",
-    "Post-midterm Iran deal optimism briefly weighed on TTF intraday before market recovered; geopolitical premium remains in European gas",
-    "IEEFA: over half of proposed LNG-to-power projects ($67.8 bn) in key Southeast Asian markets scrapped or stalled, dampening longer-term LNG demand outlook"
+    "Modest daily rebound in Henry Hub (+1.32%) after a soft month, with the weekly move turning positive",
+    "Hungary committing to exit Russian gas by autumn 2027, reinforcing European LNG demand trajectory",
+    "U.S. rig count ticking slightly higher despite the oil price rout, suggesting near-term associated gas supply remains intact"
    ],
-   "headlineCount": 10,
+   "headlineCount": 5,
    "sources": [
     "New Jersey Monitor",
-    "The New Voice of Ukraine",
-    "WSJ"
+    "The New Voice of Ukraine"
    ]
   },
   "power": {
-   "summary": "The power and carbon sector offers relatively thin price action today. EU carbon EUAs slipped 1.1% to $84.99/EUA, pulling back modestly despite a solid monthly gain of +4.3%, with no sector-specific headline driving the move. TTF's 1.8% gain is the primary input cost signal for European power generators. On the structural side, two notable demand-side developments emerged: India is set to mandate state utilities to add energy storage capacity to reduce clean-power curtailment, a potentially significant build-out signal for storage markets. Turkey unveiled an ambitious $500 billion energy investment plan to 2040 spanning gas, solar, and nuclear, adding a large long-dated capex story to the regional power landscape. The IEEFA finding of $67.8 billion in stalled Asian LNG power projects is relevant here as a signal that gas-to-power capacity additions in Southeast Asia are slowing materially.",
+   "summary": "EU Carbon (EUA) fell to $82.62/EUA today (-2.78%), extending a weekly decline of 2.66%, though the one-month move remains marginally positive (+0.11%). The carbon selloff appears linked to broader energy market de-escalation sentiment following the U.S. midterms. On the structural side, two significant bullish signals emerged: European grid investment spending has surged 155% since 2019 and is expected to continue rising through 2030, per European network data; and the IEA projects 4,800 GW of new renewable capacity by 2031, explicitly citing the Strait of Hormuz crisis and fuel price spike as accelerants for the energy transition. Iran's review of 'concrete proposals' on its nuclear programme adds an additional wildcard for energy market risk sentiment.",
    "drivers": [
-    "EU EUA -1.1% on the day despite positive monthly trend; no specific carbon-market catalyst identified in today's headlines",
-    "India mandating energy storage additions for state utilities signals accelerating clean-power integration and curtailment-reduction investment",
-    "Turkey's $500 bn energy plan to 2040 (gas, solar, nuclear) and IEEFA's $67.8 bn stalled Asian LNG-to-power tally frame divergent regional power investment trajectories"
+    "EUA prices under pressure (-2.78%) as de-escalation hopes reduce near-term energy scarcity fears and risk premiums",
+    "European grid capex up 155% since 2019 with further increases planned through 2030, underpinning long-run power infrastructure investment thesis",
+    "IEA forecasting 4,800 GW of new renewables by 2031, with the Hormuz crisis cited as a structural accelerant for the energy transition"
    ],
    "headlineCount": 4,
    "sources": [
-    "Logistics Middle East"
+    "The New York Times"
    ]
   }
  }
