@@ -1,47 +1,47 @@
 {
- "generated": "2026-11-06T19:51:08.102855+00:00",
+ "generated": "2026-11-09T22:52:12.942551+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude is stabilising after a brutal week: WTI settled at $90.98/bbl (+0.53% today) and Brent at $98.36/bbl (+0.07%), but both contracts are nursing weekly losses of roughly 12-16% after shedding more than $11/bbl from opening levels near $102 \u2014 the market's sharpest weekly decline in months. The selloff is being driven by U.S. midterm election results that raised hopes of de-escalation in the U.S.-Iran conflict, compressing the geopolitical risk premium that had underpinned crude. Asia's fuel oil margins have slumped on the same de-escalation narrative, while HPCL continues to struggle securing tankers for Hormuz transits. On the Russia side, a temporary U.S. easing of Russian oil sanctions has rattled European allies, and Russian diesel tankers that were initially tracked toward the U.S. have reportedly redirected after hitting sanctions headwinds. CME options markets price a 77% probability of an OPEC cut at the next meeting in May 2027.",
+   "summary": "Crude suffered its sharpest single-session collapse in months, with Brent off 6.26% to $92.17 and WTI down 4.90% to $86.38, as diplomatic optimism swamped supply-side risk. Qatar's prime minister carried an Iranian interim deal proposal to the White House, and unconfirmed reports of a broader U.S.-Iran diplomatic breakthrough drove the rout, more than offsetting a confirmed attack on Saudi Arabia's East-West pipeline and overnight Ukrainian drone strikes on Russia's second-largest oil refinery. RBOB gasoline led the complex lower, shedding 5.15% on the day and 20.07% over the month. The market is essentially pricing a Hormuz reopening premium out of the curve. CME options now imply a 77% probability of an OPEC cut at the May 2026 meeting, suggesting the market expects the group to defend price. Traders are also sidestepping Russian diesel following the Trump-Putin arrangement, further muddying Atlantic Basin flows.",
    "drivers": [
-    "U.S. midterm results fuelling de-escalation hopes for the U.S.-Iran conflict, sharply unwinding the geopolitical risk premium in crude",
-    "Temporary U.S. easing of Russia oil sanctions adding supply-side bearish pressure and straining transatlantic allied relations",
-    "Strait of Hormuz tanker disruptions persisting (HPCL unable to secure vessels), capping the downside and keeping Heating Oil spreads elevated"
+    "Iran diplomatic breakthrough hopes: Qatar PM carried Iranian Hormuz interim deal proposal to White House, triggering broad risk-off for geopolitical premium",
+    "Saudi East-West pipeline attacked and Ukrainian drones struck Russia's second-largest refinery, but supply-disruption fear was overpowered by peace optimism",
+    "CME OPEC Watch pricing 77% chance of a production cut at May 2026 meeting, signalling market expects OPEC response to price slide"
    ],
    "headlineCount": 12,
    "sources": [
+    "Al Jazeera",
     "Britannica",
     "EnergyNow",
     "EnergyNow.com",
-    "Iran International",
-    "Kyiv Post",
-    "New Jersey Monitor"
+    "Latest news from Azerbaijan",
+    "National Security Journal"
    ]
   },
   "gas": {
-   "summary": "Henry Hub edged up to $2.986/MMBtu today (+1.32%), recovering modestly on the week (+3.04%) but still down nearly 6% on the month. Headline flow for the natural gas sector is relatively thin today. The Baker Hughes rig count showed a minor week-on-week uptick in U.S. oil and gas drilling activity despite the crude price crash, suggesting producers have not yet meaningfully curtailed activity. On the geopolitical supply-chain side, Hungary announced it will end Russian natural gas imports by autumn 2027, a notable longer-term demand shift for European LNG. Norway's production outlook drew attention, with reports flagging a major decline risk absent new discoveries \u2014 a potential medium-term tightener for European gas balances.",
+   "summary": "Henry Hub rebounded sharply, gaining 6.90% to $3.205/MMBtu on the day and extending a 12.22% weekly gain, as global LNG market tightness underpinned sentiment. A published analysis flagged LNG spot prices above $30/MMBtu heading into winter 2026/27, characterising the season as one of extreme uncertainty. Geopolitical cross-currents added to the anxiety: Russian strikes continued to target Ukrainian energy infrastructure, while Israel's Energy Ministry awarded six offshore gas exploration licenses near Leviathan to Murphy Oil and Ratio Energies, a signal of longer-term Eastern Mediterranean supply ambitions. The Saudi pipeline attack added a marginal risk bid. On a one-month basis Henry Hub is essentially flat (-0.47%), so today's move looks like a weather- and LNG-premium catch-up rather than a structural shift.",
    "drivers": [
-    "Modest daily rebound in Henry Hub (+1.32%) after a soft month, with the weekly move turning positive",
-    "Hungary committing to exit Russian gas by autumn 2027, reinforcing European LNG demand trajectory",
-    "U.S. rig count ticking slightly higher despite the oil price rout, suggesting near-term associated gas supply remains intact"
+    "Global LNG spot prices above $30/MMBtu and deep winter supply uncertainty providing a strong floor and driving the 6.90% single-day surge",
+    "Ongoing Russian strikes on Ukrainian energy infrastructure sustaining European supply-security anxiety",
+    "Israel awards six Leviathan-area offshore gas licenses to Murphy Oil and Ratio Energies, adding longer-term Eastern Med supply optionality"
    ],
-   "headlineCount": 5,
+   "headlineCount": 7,
    "sources": [
-    "New Jersey Monitor",
-    "The New Voice of Ukraine"
+    "The National",
+    "Ukraine Business News"
    ]
   },
   "power": {
-   "summary": "EU Carbon (EUA) fell to $82.62/EUA today (-2.78%), extending a weekly decline of 2.66%, though the one-month move remains marginally positive (+0.11%). The carbon selloff appears linked to broader energy market de-escalation sentiment following the U.S. midterms. On the structural side, two significant bullish signals emerged: European grid investment spending has surged 155% since 2019 and is expected to continue rising through 2030, per European network data; and the IEA projects 4,800 GW of new renewable capacity by 2031, explicitly citing the Strait of Hormuz crisis and fuel price spike as accelerants for the energy transition. Iran's review of 'concrete proposals' on its nuclear programme adds an additional wildcard for energy market risk sentiment.",
+   "summary": "EU carbon EUAs edged up 0.96% to \u20ac83.42/EUA, holding near the top of a one-month range that is roughly flat (+0.68%) despite a 3.17% weekly pullback. The incremental support came from European power prices jumping to their highest level since 2022, driven by still and cloudy weather curtailing wind and solar output across major continental markets. Russian air strikes targeting Ukraine's power grid ahead of Abu Dhabi peace talks forced Ukrainian authorities to scramble power restoration for hundreds of thousands in the east, adding geopolitical anxiety. A separate analysis on AI-driven electricity demand growth flagged potential structural upside for baseload consumption. LNG tightness above $30/MMBtu adds an additional cost floor for gas-fired generation, feeding through to power prices and indirectly supporting carbon.",
    "drivers": [
-    "EUA prices under pressure (-2.78%) as de-escalation hopes reduce near-term energy scarcity fears and risk premiums",
-    "European grid capex up 155% since 2019 with further increases planned through 2030, underpinning long-run power infrastructure investment thesis",
-    "IEA forecasting 4,800 GW of new renewables by 2031, with the Hormuz crisis cited as a structural accelerant for the energy transition"
+    "Wind and solar generation slump in key European markets drove power prices to 2022 highs, tightening the carbon-power price correlation",
+    "Russian strikes on Ukraine's power grid ahead of Abu Dhabi peace talks amplified regional energy security concerns",
+    "LNG spot prices above $30/MMBtu lifting gas-fired generation costs and providing an indirect floor for EU carbon allowances"
    ],
-   "headlineCount": 4,
+   "headlineCount": 7,
    "sources": [
-    "The New York Times"
+    "Business Insider Africa"
    ]
   }
  }
