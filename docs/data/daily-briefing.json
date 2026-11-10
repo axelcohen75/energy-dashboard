@@ -1,47 +1,46 @@
 {
- "generated": "2026-11-09T22:52:12.942551+00:00",
+ "generated": "2026-11-10T20:12:04.800834+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude suffered its sharpest single-session collapse in months, with Brent off 6.26% to $92.17 and WTI down 4.90% to $86.38, as diplomatic optimism swamped supply-side risk. Qatar's prime minister carried an Iranian interim deal proposal to the White House, and unconfirmed reports of a broader U.S.-Iran diplomatic breakthrough drove the rout, more than offsetting a confirmed attack on Saudi Arabia's East-West pipeline and overnight Ukrainian drone strikes on Russia's second-largest oil refinery. RBOB gasoline led the complex lower, shedding 5.15% on the day and 20.07% over the month. The market is essentially pricing a Hormuz reopening premium out of the curve. CME options now imply a 77% probability of an OPEC cut at the May 2026 meeting, suggesting the market expects the group to defend price. Traders are also sidestepping Russian diesel following the Trump-Putin arrangement, further muddying Atlantic Basin flows.",
+   "summary": "Crude sold off sharply on Tuesday, with Brent briefly breaching $90/bbl for the first time since August and WTI settling at $86.31. The dominant driver is geopolitical optimism: diplomatic momentum around Iran and Ukraine is pricing out the conflict premium that has underpinned crude for months, overwhelming bullish supply-side noise. Notably, Ukrainian drone strikes have now disrupted roughly 30% of Russia's oil-refining capacity since late October, with Rosneft limiting domestic fuel sales in response \u2014 yet the market is focused on potential sanctions relief, as Trump-Putin diplomacy reopens the prospect of easing Russian oil restrictions. Tanker markets are also adjusting, with Saudi Bahri coordinating Hormuz transits with the U.S. military. On the demand side, China's October crude imports hit 41.94 million tons (~9.88 mb/d), the highest since March, offering a partial offset. U.S. pump prices fell below $4/gal for the first time since July. CME options now price a 77% probability of an OPEC cut at the May 2027 meeting.",
    "drivers": [
-    "Iran diplomatic breakthrough hopes: Qatar PM carried Iranian Hormuz interim deal proposal to White House, triggering broad risk-off for geopolitical premium",
-    "Saudi East-West pipeline attacked and Ukrainian drones struck Russia's second-largest refinery, but supply-disruption fear was overpowered by peace optimism",
-    "CME OPEC Watch pricing 77% chance of a production cut at May 2026 meeting, signalling market expects OPEC response to price slide"
+    "Iran/Ukraine diplomatic optimism unwinding geopolitical risk premium; Brent sub-$90 for first time since August",
+    "Ukrainian strikes disrupting ~30% of Russian refining capacity, prompting Rosneft fuel-sales limits \u2014 supply disruption largely ignored by bulls",
+    "China October crude imports rebound to 9.88 mb/d (highest since March), partly cushioning demand-side bearishness"
    ],
    "headlineCount": 12,
    "sources": [
-    "Al Jazeera",
     "Britannica",
-    "EnergyNow",
-    "EnergyNow.com",
-    "Latest news from Azerbaijan",
-    "National Security Journal"
-   ]
-  },
-  "gas": {
-   "summary": "Henry Hub rebounded sharply, gaining 6.90% to $3.205/MMBtu on the day and extending a 12.22% weekly gain, as global LNG market tightness underpinned sentiment. A published analysis flagged LNG spot prices above $30/MMBtu heading into winter 2026/27, characterising the season as one of extreme uncertainty. Geopolitical cross-currents added to the anxiety: Russian strikes continued to target Ukrainian energy infrastructure, while Israel's Energy Ministry awarded six offshore gas exploration licenses near Leviathan to Murphy Oil and Ratio Energies, a signal of longer-term Eastern Mediterranean supply ambitions. The Saudi pipeline attack added a marginal risk bid. On a one-month basis Henry Hub is essentially flat (-0.47%), so today's move looks like a weather- and LNG-premium catch-up rather than a structural shift.",
-   "drivers": [
-    "Global LNG spot prices above $30/MMBtu and deep winter supply uncertainty providing a strong floor and driving the 6.90% single-day surge",
-    "Ongoing Russian strikes on Ukrainian energy infrastructure sustaining European supply-security anxiety",
-    "Israel awards six Leviathan-area offshore gas licenses to Murphy Oil and Ratio Energies, adding longer-term Eastern Med supply optionality"
-   ],
-   "headlineCount": 7,
-   "sources": [
-    "The National",
+    "DD News",
+    "National Security Journal",
+    "The Kyiv Independent",
     "Ukraine Business News"
    ]
   },
-  "power": {
-   "summary": "EU carbon EUAs edged up 0.96% to \u20ac83.42/EUA, holding near the top of a one-month range that is roughly flat (+0.68%) despite a 3.17% weekly pullback. The incremental support came from European power prices jumping to their highest level since 2022, driven by still and cloudy weather curtailing wind and solar output across major continental markets. Russian air strikes targeting Ukraine's power grid ahead of Abu Dhabi peace talks forced Ukrainian authorities to scramble power restoration for hundreds of thousands in the east, adding geopolitical anxiety. A separate analysis on AI-driven electricity demand growth flagged potential structural upside for baseload consumption. LNG tightness above $30/MMBtu adds an additional cost floor for gas-fired generation, feeding through to power prices and indirectly supporting carbon.",
+  "gas": {
+   "summary": "Henry Hub surged 2.92% on the day to $3.312/MMBtu, extending a sharp weekly gain of 14.40% \u2014 the strongest sector performer in today's energy complex. The provided headlines offer limited direct Henry Hub catalysts; most news flow relates to geopolitical context. Russian strikes on Ukraine's energy and gas infrastructure, reported over the weekend, may be contributing to tightening sentiment. Separately, ADNOC Gas reported Q3 net income of $1.34 billion, double the prior quarter, reflecting a broader LNG and gas export rebound. A piece on Turkey-Russia gas geopolitics highlights ongoing European supply routing tensions. The 2026 U.S. midterm results are flagged as a potential policy wildcard for gas markets, though specific implications are not detailed in available material. Overall, the fundamental driver behind this week's move remains underdetermined from current headlines.",
    "drivers": [
-    "Wind and solar generation slump in key European markets drove power prices to 2022 highs, tightening the carbon-power price correlation",
-    "Russian strikes on Ukraine's power grid ahead of Abu Dhabi peace talks amplified regional energy security concerns",
-    "LNG spot prices above $30/MMBtu lifting gas-fired generation costs and providing an indirect floor for EU carbon allowances"
+    "Henry Hub +14.4% on the week \u2014 sharpest mover in the energy complex; specific fundamental catalyst not fully detailed in available headlines",
+    "Russian strikes on Ukrainian energy and gas infrastructure adding supply-disruption risk to European gas sentiment",
+    "2026 U.S. midterm political shift flagged as a potential policy wildcard for domestic gas markets; details limited"
    ],
-   "headlineCount": 7,
+   "headlineCount": 5,
    "sources": [
-    "Business Insider Africa"
+    "Ukraine Business News",
+    "www.lvivherald.com"
+   ]
+  },
+  "power": {
+   "summary": "EU Carbon EUAs edged up 0.56% to $83.88/EUA on the day, though the contract remains down 2.08% on the week and is essentially flat over the past month (+0.24%). Price action is subdued relative to the volatility in crude. A notable macro headline: global fossil fuel CO2 emissions are forecast to fall 0.4% in 2026, attributed to the oil shock from the Iran conflict and increased renewable deployment \u2014 a modestly bearish structural signal for carbon demand. Russia is stepping up strikes on Ukraine's power grid ahead of winter, adding energy-security stress to European markets. At COP31, Turkey is pushing a commitment to raise electricity's share of global energy consumption to 35% by 2035, from ~20% currently. The U.S. midterm results could reshape carbon and energy policy, but specifics remain unclear from available material.",
+   "drivers": [
+    "Global fossil fuel CO2 emissions forecast to fall 0.4% in 2026 on Iran war oil shock and renewables growth \u2014 modest structural bearish signal for EUA demand",
+    "Russia intensifying strikes on Ukraine's power grid ahead of winter, elevating European energy-security risk",
+    "Turkey pushing COP31 electrification target of 35% global energy share by 2035; U.S. midterm outcome flagged as policy wildcard"
+   ],
+   "headlineCount": 4,
+   "sources": [
+    "Ukraine Business News"
    ]
   }
  }
