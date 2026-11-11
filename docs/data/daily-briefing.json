@@ -1,46 +1,46 @@
 {
- "generated": "2026-11-10T20:12:04.800834+00:00",
+ "generated": "2026-11-11T19:59:19.261684+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude sold off sharply on Tuesday, with Brent briefly breaching $90/bbl for the first time since August and WTI settling at $86.31. The dominant driver is geopolitical optimism: diplomatic momentum around Iran and Ukraine is pricing out the conflict premium that has underpinned crude for months, overwhelming bullish supply-side noise. Notably, Ukrainian drone strikes have now disrupted roughly 30% of Russia's oil-refining capacity since late October, with Rosneft limiting domestic fuel sales in response \u2014 yet the market is focused on potential sanctions relief, as Trump-Putin diplomacy reopens the prospect of easing Russian oil restrictions. Tanker markets are also adjusting, with Saudi Bahri coordinating Hormuz transits with the U.S. military. On the demand side, China's October crude imports hit 41.94 million tons (~9.88 mb/d), the highest since March, offering a partial offset. U.S. pump prices fell below $4/gal for the first time since July. CME options now price a 77% probability of an OPEC cut at the May 2027 meeting.",
+   "summary": "Crude posted a split session: Brent gained +0.87% to $92.29 and heating oil surged +1.61% to $4.1974/gal on supply-risk headlines, while RBOB cratered -1.62% to $2.5666/gal, weighed down by the US-Russia diesel deal that Lavrov confirmed is pushing refined-product prices lower \u2014 US diesel futures reportedly down ~11%. The dominant geopolitical overlay remains the Iran war: Tehran denied any talks with Washington, sending Brent spiking nearly 3% intraday to $93.90 before settling back. Meanwhile, Saudi Arabia reported a 26% jump in October output to 10.563 mb/d, near pre-war levels, capping the upside. Ukrainian drones struck Russia's Ust-Luga Baltic export hub and are reported to have cut Russian refining capacity by 30%. Strait of Hormuz crude flows have recovered to ~80-85% of pre-war levels, but refined-product flows remain stuck near 35%, explaining the crude/product divergence. Options markets price a 77% probability of an OPEC cut at the May 2026 meeting.",
    "drivers": [
-    "Iran/Ukraine diplomatic optimism unwinding geopolitical risk premium; Brent sub-$90 for first time since August",
-    "Ukrainian strikes disrupting ~30% of Russian refining capacity, prompting Rosneft fuel-sales limits \u2014 supply disruption largely ignored by bulls",
-    "China October crude imports rebound to 9.88 mb/d (highest since March), partly cushioning demand-side bearishness"
+    "Iran war risk premium: Tehran's denial of Washington talks triggered a sharp intraday Brent spike to $93.90, underscoring how sensitive flat price remains to diplomatic signals.",
+    "US-Russia diesel deal depressing refined products: Lavrov confirmed the deal is working, with US diesel futures down ~11%, hammering RBOB and creating a widening crude-vs-product spread.",
+    "Supply crosscurrents: Saudi output surges 26% to 10.563 mb/d while Ukrainian drones cut Russian refining capacity by ~30% and hit the Ust-Luga export hub, tightening the global refinery margin picture."
    ],
    "headlineCount": 12,
    "sources": [
-    "Britannica",
+    "Arabian Business",
+    "Atlantic Council",
+    "BigGo Finance",
     "DD News",
     "National Security Journal",
-    "The Kyiv Independent",
-    "Ukraine Business News"
+    "Reuters"
    ]
   },
   "gas": {
-   "summary": "Henry Hub surged 2.92% on the day to $3.312/MMBtu, extending a sharp weekly gain of 14.40% \u2014 the strongest sector performer in today's energy complex. The provided headlines offer limited direct Henry Hub catalysts; most news flow relates to geopolitical context. Russian strikes on Ukraine's energy and gas infrastructure, reported over the weekend, may be contributing to tightening sentiment. Separately, ADNOC Gas reported Q3 net income of $1.34 billion, double the prior quarter, reflecting a broader LNG and gas export rebound. A piece on Turkey-Russia gas geopolitics highlights ongoing European supply routing tensions. The 2026 U.S. midterm results are flagged as a potential policy wildcard for gas markets, though specific implications are not detailed in available material. Overall, the fundamental driver behind this week's move remains underdetermined from current headlines.",
+   "summary": "Henry Hub pulled back -2.43% on the day to $3.215/MMBtu, though the contract remains up +8.69% on the week, suggesting the daily retreat is a consolidation rather than a trend reversal. The key geopolitical catalyst is ongoing Iran war uncertainty: European benchmark gas prices rebounded from a one-month low hit Tuesday as markets reassessed supply-route risks through the Strait of Hormuz, where refined-product flows remain far below pre-war norms. Germany's first capacity auction cleared entirely in gas-fired power \u2014 all 5.16 GW of derated capacity \u2014 signalling structural European gas demand is entrenched. Longer-dated supply diversification plays also gained traction: Turkmenistan revived its $10 billion trans-Caspian pipeline project at an Ashgabat forum, citing the Iran war as a catalyst. Russian strikes on Ukrainian energy infrastructure add further supply-side noise. Murphy Oil faces a fresh boycott call over Israeli offshore gas licenses.",
    "drivers": [
-    "Henry Hub +14.4% on the week \u2014 sharpest mover in the energy complex; specific fundamental catalyst not fully detailed in available headlines",
-    "Russian strikes on Ukrainian energy and gas infrastructure adding supply-disruption risk to European gas sentiment",
-    "2026 U.S. midterm political shift flagged as a potential policy wildcard for domestic gas markets; details limited"
+    "Iran war uncertainty driving European gas rebound: European benchmark prices lifted off one-month lows as geopolitical risk returned to the market mid-session.",
+    "Germany's capacity auction goes 100% gas: All 5.16 GW awarded to gas-fired projects, cementing near-term European demand support and positive read-across for LNG trade flows.",
+    "Turkmenistan trans-Caspian pipeline revival: The Iran conflict is accelerating alternative Central Asian gas route discussions, a potential medium-term structural shift for European supply."
    ],
-   "headlineCount": 5,
+   "headlineCount": 8,
    "sources": [
-    "Ukraine Business News",
-    "www.lvivherald.com"
+    "Ukraine Business News"
    ]
   },
   "power": {
-   "summary": "EU Carbon EUAs edged up 0.56% to $83.88/EUA on the day, though the contract remains down 2.08% on the week and is essentially flat over the past month (+0.24%). Price action is subdued relative to the volatility in crude. A notable macro headline: global fossil fuel CO2 emissions are forecast to fall 0.4% in 2026, attributed to the oil shock from the Iran conflict and increased renewable deployment \u2014 a modestly bearish structural signal for carbon demand. Russia is stepping up strikes on Ukraine's power grid ahead of winter, adding energy-security stress to European markets. At COP31, Turkey is pushing a commitment to raise electricity's share of global energy consumption to 35% by 2035, from ~20% currently. The U.S. midterm results could reshape carbon and energy policy, but specifics remain unclear from available material.",
+   "summary": "EU carbon EUAs edged up +0.56% to $83.88/EUA, broadly flat on the month (+0.24%), as bullish renewable investment news offset bearish macro pressure from the week's -2.08% drift. The session's headline was the RWE-KKR $16 billion UK offshore wind mega-deal, described as likely the largest of its kind in the UK. India approved a 1,150-kilovolt high-capacity transmission corridor worth $7.3 billion to integrate renewables, and Indian turbine manufacturers are in advanced talks on a repowering plan targeting a 50% wind capacity boost without additional land. On the demand-and-infrastructure disruption side, Russia launched 128 attacks on Ukraine's energy grid in a single week, underscoring the vulnerability of centralised power systems. Siemens Energy's record FY2026 revenues and a more-than-tripled dividend reflect strong grid and energy-transition equipment demand. A potential Super El Ni\u00f1o adds an emerging watch item for coal and hydro markets.",
    "drivers": [
-    "Global fossil fuel CO2 emissions forecast to fall 0.4% in 2026 on Iran war oil shock and renewables growth \u2014 modest structural bearish signal for EUA demand",
-    "Russia intensifying strikes on Ukraine's power grid ahead of winter, elevating European energy-security risk",
-    "Turkey pushing COP31 electrification target of 35% global energy share by 2035; U.S. midterm outcome flagged as policy wildcard"
+    "RWE-KKR $16 billion UK offshore wind deal signals large-scale private capital continuing to flow into clean power despite macro uncertainty.",
+    "Germany's capacity auction fully cleared by gas projects: Structurally supportive for carbon prices as gas-fired marginal generation keeps EUA demand elevated.",
+    "Russia's 128 weekly attacks on Ukraine's grid highlight energy-infrastructure vulnerability and sustain risk premiums across European power and gas markets."
    ],
-   "headlineCount": 4,
+   "headlineCount": 9,
    "sources": [
-    "Ukraine Business News"
+    "\u041d\u043e\u0432\u0438\u043d\u0438 \u043f\u0440\u043e \u043f\u0440\u0430\u0432\u0430 \u043b\u044e\u0434\u0438\u043d\u0438"
    ]
   }
  }
