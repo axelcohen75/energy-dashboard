@@ -1,48 +1,42 @@
 {
- "generated": "2026-11-12T01:49:46.055585+00:00",
+ "generated": "2026-11-12T20:39:11.558675+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets are caught in a tug-of-war between supply recovery and geopolitical risk. WTI slipped 0.65% to $85.48/bbl while Brent barely held positive at $91.63, masking a brutal month that has seen Brent shed over 13%. The key supply-side development: Saudi Arabia reported a 26% jump in October output to 10.563 mb/d, near pre-war levels, and OPEC broadly confirms production is normalising in the Strait of Hormuz corridor \u2014 crude export flows back to 80-85% of pre-war capacity. Options markets price a 77% probability of an OPEC cut at the May meeting, flagging bearish medium-term sentiment. Offsetting the supply surge, Iran's denial of any US negotiations briefly spiked Brent nearly 3% intraday. Ukrainian drones reportedly cut Russian refining capacity by 30%, consistent with the sharp 2.45% drop in RBOB gasoline and the relative outperformance of heating oil (+1.20%), where Russian diesel disruption and UK sanctions on 22 Russian tankers tighten distillate balances.",
+   "summary": "Crude surged Thursday, with Brent touching $96 and WTI up nearly 3%, driven squarely by geopolitical risk premium. Trump's declaration that the U.S. no longer needs an Iran deal\u2014reversing comments made just days ago suggesting the eight-month war was nearing resolution\u2014sparked the rally, compounded by his threat of sanctions on Iran's trading partners. Iran's simultaneous demand of seven conditions to reopen the Strait of Hormuz kept supply-disruption fears elevated. On the bearish side, EIA reported a 4.7 million barrel crude build for the week ending November 6, alongside gasoline and distillate builds, capping upside. Indian buyers rotating away from Russian crude toward Gulf barrels for the first time since the Iran war began signals shifting trade flows. UK sanctions on Russia's Slavneft and Ukraine drone strikes cutting Russian refining capacity by 30% add further supply-side noise. Options markets price a 77% probability of an OPEC cut at the May 2026 meeting.",
    "drivers": [
-    "Saudi Arabia output surged 26% in October to 10.563 mb/d, reinforcing supply recovery and weighing on flat-price crude",
-    "Ukraine drone strikes cut Russian refining capacity by an estimated 30%, tightening distillate markets and lifting heating oil even as RBOB sold off sharply",
-    "Iran war risk premium volatile \u2014 Iran's denial of US talks triggered an intraday Brent spike of nearly 3%, but US downplaying of further strikes kept net gains capped"
+    "Trump's Iran deal reversal and threatened secondary sanctions on Iran partners drove the intraday spike in Brent to $96",
+    "Bearish EIA data: crude inventories rose 4.7 million barrels w/w, with builds also in gasoline and distillates",
+    "Russia supply disruption risks escalate: Ukraine drone strikes cut refining capacity 30%, UK sanctions added on Slavneft"
    ],
    "headlineCount": 12,
    "sources": [
-    "Al Jazeera",
     "Atlantic Council",
-    "National Security Journal",
-    "Reuters",
-    "The Independent",
-    "The Korea Times"
+    "Britannica",
+    "EnergyNow.com",
+    "Reuters"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets diverged sharply across geographies. Henry Hub pulled back 0.64% to $3.275/MMBtu on the day but remains up over 10% on the week, suggesting recent strength is consolidating rather than reversing. European TTF gained 2.94% to \u20ac87.22/MWh, bouncing from a one-month low hit Tuesday as Iran war uncertainty re-entered the market \u2014 Tehran's warning of domestic gas shortages caused by the conflict added a fresh supply-risk narrative. Germany's decision to award all 5.16 GW of its inaugural capacity auction to gas-fired projects underscores how critical gas remains for European power security, structurally underpinning TTF. UK sanctions on 22 Russian tankers add further tail risk to European LNG and pipeline balances. Pro-Palestinian activists are now targeting Murphy Oil over Israeli offshore gas licenses, though near-term market impact appears limited.",
+   "summary": "Henry Hub extended its strong weekly run, adding nearly 4% on the day to $3.343/MMBtu, now up over 13% on the week. News flow for natural gas was relatively thin today; available headlines point to two structural demand themes rather than near-term catalysts. EU LNG imports from Russia have already exceeded the full-year 2025 value with six weeks remaining before the January ban takes effect, underscoring how aggressively European buyers are front-running the cutoff. Meanwhile, China's energy regulator is pushing domestic gas turbine makers to target overseas data centers as AI-driven power demand accelerates globally. Specific storage or weather catalysts for today's move were not available in the provided data.",
    "drivers": [
-    "TTF rebounded 2.94% as Iran war uncertainty returned; Tehran warned of domestic gas shortages, reinforcing regional supply risk",
-    "Germany awarded all 5.16 GW of its first capacity auction to gas-fired generation, cementing structural European gas demand",
-    "UK sanctions on 22 Russian tankers tighten potential LNG and pipeline supply routes into Europe, adding upside tail risk to TTF"
+    "Henry Hub up ~4% on the day, extending a 13%+ weekly gain; specific intraday catalyst not detailed in available data",
+    "EU Russian LNG imports already exceed full-year 2025 levels ahead of the January ban, highlighting pre-ban stockpiling urgency",
+    "AI-driven power demand surge supporting longer-term gas consumption outlook as China targets global gas turbine sales to data centers"
    ],
-   "headlineCount": 7,
-   "sources": [
-    "Arabian Business",
-    "oEnergetice.cz"
-   ]
+   "headlineCount": 3,
+   "sources": []
   },
   "power": {
-   "summary": "EU carbon edged up 0.56% to $83.88/EUA, holding a marginal positive on the month despite a week-to-date decline of over 2%, with TTF's 2.94% daily rise providing supportive cost-push pressure. The macro backdrop at COP31 is constructive for long-term grid investment \u2014 IRENA reported over 21,000 km of new transmission lines built last year, a 50% surge to a record high. Germany's gas-capacity auction result highlights the tension between near-term security of supply and net-zero targets, an issue also confronting Andy Burnham at COP31. Russia launched 128 attacks on Ukraine's energy grid in a single week, underscoring infrastructure vulnerability. Longer-dated themes in focus include quantum computing pitched as a solution to AI's growing power demand, and a record year for private investment in fusion superconducting technology \u2014 both too early-stage to affect current EUA pricing but shaping the demand outlook.",
+   "summary": "EU carbon EUAs edged up 0.82% to $86.12, posting a modest fourth consecutive weekly gain. The dominant thematic in power today is AI-driven electricity demand: China's push into overseas gas turbine markets targets data centers consuming ever-larger power loads, while a separate piece flags that the U.S. data center boom is forcing grid infrastructure investment. In the UK, Chancellor Healey's Budget signaled a notable policy shift away from prior net-zero commitments, with soaring electricity costs cited as the pressure point\u2014a development worth monitoring for European carbon sentiment. Iran's Hormuz conditions remain a tail risk for gas-fired power generation costs across Europe. The lithium story out of Argentina is thematically relevant to the energy transition but had no direct carbon price impact today.",
    "drivers": [
-    "TTF's 2.94% daily gain provides cost-push support to EUA as carbon and gas prices remain correlated through gas-fired power generation",
-    "IRENA reported a 50% surge in global grid expansion to over 21,000 km of new transmission lines, highlighted at COP31, reinforcing long-term electrification investment thesis",
-    "Russia's 128 weekly attacks on Ukraine's energy grid and ongoing Iran war uncertainty keep European power security in focus, supporting capacity and carbon premiums"
+    "AI and data center power demand accelerating globally, underpinning long-term gas and grid infrastructure investment narratives",
+    "UK government signals a shift away from net-zero commitments citing soaring electricity costs, a potential headwind for carbon policy momentum",
+    "EUA prices quietly bid up 0.82% on the day; Strait of Hormuz uncertainty sustains risk premium on gas-fired power generation costs"
    ],
-   "headlineCount": 10,
+   "headlineCount": 6,
    "sources": [
-    "Open Canada",
-    "\u041d\u043e\u0432\u0438\u043d\u0438 \u043f\u0440\u043e \u043f\u0440\u0430\u0432\u0430 \u043b\u044e\u0434\u0438\u043d\u0438"
+    "NewsBricks"
    ]
   }
  }
