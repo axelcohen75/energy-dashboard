@@ -1,42 +1,47 @@
 {
- "generated": "2026-11-12T20:39:11.558675+00:00",
+ "generated": "2026-11-13T01:40:08.923155+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude surged Thursday, with Brent touching $96 and WTI up nearly 3%, driven squarely by geopolitical risk premium. Trump's declaration that the U.S. no longer needs an Iran deal\u2014reversing comments made just days ago suggesting the eight-month war was nearing resolution\u2014sparked the rally, compounded by his threat of sanctions on Iran's trading partners. Iran's simultaneous demand of seven conditions to reopen the Strait of Hormuz kept supply-disruption fears elevated. On the bearish side, EIA reported a 4.7 million barrel crude build for the week ending November 6, alongside gasoline and distillate builds, capping upside. Indian buyers rotating away from Russian crude toward Gulf barrels for the first time since the Iran war began signals shifting trade flows. UK sanctions on Russia's Slavneft and Ukraine drone strikes cutting Russian refining capacity by 30% add further supply-side noise. Options markets price a 77% probability of an OPEC cut at the May 2026 meeting.",
+   "summary": "Crude staged a sharp intraday recovery \u2014 WTI +2.1% to $88.3/bbl, Brent +2.9% to $95.41 \u2014 but both benchmarks remain deep in the red on a one-month basis, having shed roughly 20% from late-October highs near $118/bbl. The rebound was largely geopolitically driven: Trump's declaration that the U.S. has no need for an Iran deal reversed earlier peace-optimism selling, briefly pushing Brent back above $96. Offsetting bullish pressure, Wednesday's EIA report showed a 4.7 mb crude build alongside gasoline and distillate builds, capping upside. On the supply side, UK sanctions on all ten of Russia's largest oil producers and shadow fleet vessels, combined with Ukraine's drone strikes reportedly cutting Russian refining capacity by 30%, add medium-term disruption risk. RBOB underperformed markedly (+0.4%), while heating oil (+1.7%) tracked crude more closely. CME options imply a 77% probability of an OPEC cut at the May 2027 meeting.",
    "drivers": [
-    "Trump's Iran deal reversal and threatened secondary sanctions on Iran partners drove the intraday spike in Brent to $96",
-    "Bearish EIA data: crude inventories rose 4.7 million barrels w/w, with builds also in gasoline and distillates",
-    "Russia supply disruption risks escalate: Ukraine drone strikes cut refining capacity 30%, UK sanctions added on Slavneft"
+    "Trump rules out Iran deal, reviving geopolitical risk premium and briefly pushing Brent above $96",
+    "EIA reports a 4.7 mb crude build plus gasoline and distillate builds, capping the rally",
+    "UK sanctions Russia's ten largest oil producers and shadow fleet; Ukraine drone strikes cut Russian refining capacity ~30%"
    ],
    "headlineCount": 12,
    "sources": [
     "Atlantic Council",
     "Britannica",
-    "EnergyNow.com",
-    "Reuters"
+    "Oil & Gas Journal",
+    "Reuters",
+    "The Independent",
+    "The Korea Times"
    ]
   },
   "gas": {
-   "summary": "Henry Hub extended its strong weekly run, adding nearly 4% on the day to $3.343/MMBtu, now up over 13% on the week. News flow for natural gas was relatively thin today; available headlines point to two structural demand themes rather than near-term catalysts. EU LNG imports from Russia have already exceeded the full-year 2025 value with six weeks remaining before the January ban takes effect, underscoring how aggressively European buyers are front-running the cutoff. Meanwhile, China's energy regulator is pushing domestic gas turbine makers to target overseas data centers as AI-driven power demand accelerates globally. Specific storage or weather catalysts for today's move were not available in the provided data.",
+   "summary": "Henry Hub surged 4.6% on the day to $3.362/MMBtu, extending a sharp weekly gain of over 14%. The fundamental backdrop is tightening: Europe is entering winter with its lowest gas inventories of the 2020s, and Asian spot LNG is trading above $30/MMBtu, intensifying competition for cargoes. EU LNG imports from Russia have already exceeded full-year 2025 volumes with the bloc's January ban on Russian LNG still weeks away, underscoring the urgency to secure alternative supply. The combination of thin European storage, surging Asian demand, and the looming Russian LNG ban creates a structurally supportive environment for Henry Hub as U.S. LNG export demand increases. Domestic data flow was limited to the EIA crude report, which did not cover gas storage.",
    "drivers": [
-    "Henry Hub up ~4% on the day, extending a 13%+ weekly gain; specific intraday catalyst not detailed in available data",
-    "EU Russian LNG imports already exceed full-year 2025 levels ahead of the January ban, highlighting pre-ban stockpiling urgency",
-    "AI-driven power demand surge supporting longer-term gas consumption outlook as China targets global gas turbine sales to data centers"
+    "Europe enters winter with decade-low gas inventories, tightening global LNG balances",
+    "Asian spot LNG above $30/MMBtu intensifies competition with Europe for U.S. export cargoes",
+    "EU LNG imports from Russia already exceed 2025 totals ahead of the January ban, raising near-term supply replacement urgency"
    ],
-   "headlineCount": 3,
-   "sources": []
+   "headlineCount": 5,
+   "sources": [
+    "Oil & Gas Journal"
+   ]
   },
   "power": {
-   "summary": "EU carbon EUAs edged up 0.82% to $86.12, posting a modest fourth consecutive weekly gain. The dominant thematic in power today is AI-driven electricity demand: China's push into overseas gas turbine markets targets data centers consuming ever-larger power loads, while a separate piece flags that the U.S. data center boom is forcing grid infrastructure investment. In the UK, Chancellor Healey's Budget signaled a notable policy shift away from prior net-zero commitments, with soaring electricity costs cited as the pressure point\u2014a development worth monitoring for European carbon sentiment. Iran's Hormuz conditions remain a tail risk for gas-fired power generation costs across Europe. The lithium story out of Argentina is thematically relevant to the energy transition but had no direct carbon price impact today.",
+   "summary": "EU carbon EUAs edged up 1.8% to $85.42, holding constructively within a narrow one-month range (+2.1%). News flow for the sector today was varied but thin on direct carbon price catalysts. In the UK, Chancellor Healey's budget speech signalled a material shift in government positioning on net zero as soaring electricity costs force a rethink of green policy commitments. AI-driven data centre power demand continues to pressure U.S. grid infrastructure, with cost recovery questions increasingly pointed at ratepayers. Venezuela passed reforms opening its electricity sector to private capital for the first time since 2007, prioritising oil fields. Iran's conditions for reopening the Strait of Hormuz remain a tail risk for gas-fired power generation costs globally. Overall, carbon price action was modest and the broader news flow was more directionally relevant to medium-term demand than to today's EUA move.",
    "drivers": [
-    "AI and data center power demand accelerating globally, underpinning long-term gas and grid infrastructure investment narratives",
-    "UK government signals a shift away from net-zero commitments citing soaring electricity costs, a potential headwind for carbon policy momentum",
-    "EUA prices quietly bid up 0.82% on the day; Strait of Hormuz uncertainty sustains risk premium on gas-fired power generation costs"
+    "UK government signals policy retreat on net zero amid soaring electricity costs",
+    "AI data centre power demand surge raising U.S. grid investment and cost-recovery questions",
+    "Iran's seven conditions for Hormuz reopening maintain geopolitical risk premium on gas-fired generation costs"
    ],
    "headlineCount": 6,
    "sources": [
-    "NewsBricks"
+    "NewsBricks",
+    "Oil & Gas Journal"
    ]
   }
  }
