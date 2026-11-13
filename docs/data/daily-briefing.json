@@ -1,47 +1,46 @@
 {
- "generated": "2026-11-13T01:40:08.923155+00:00",
+ "generated": "2026-11-13T20:18:16.706119+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude staged a sharp intraday recovery \u2014 WTI +2.1% to $88.3/bbl, Brent +2.9% to $95.41 \u2014 but both benchmarks remain deep in the red on a one-month basis, having shed roughly 20% from late-October highs near $118/bbl. The rebound was largely geopolitically driven: Trump's declaration that the U.S. has no need for an Iran deal reversed earlier peace-optimism selling, briefly pushing Brent back above $96. Offsetting bullish pressure, Wednesday's EIA report showed a 4.7 mb crude build alongside gasoline and distillate builds, capping upside. On the supply side, UK sanctions on all ten of Russia's largest oil producers and shadow fleet vessels, combined with Ukraine's drone strikes reportedly cutting Russian refining capacity by 30%, add medium-term disruption risk. RBOB underperformed markedly (+0.4%), while heating oil (+1.7%) tracked crude more closely. CME options imply a 77% probability of an OPEC cut at the May 2027 meeting.",
+   "summary": "WTI settled near $88.80/bbl, essentially flat on the day (+0.07%) but nursing a 2.2% weekly loss and a sharp 9.4% one-month drawdown. The session was volatile: the December contract opened at $90.83, broke lower, then staged a partial recovery as Middle East risk premiums returned. Brent reportedly climbed back above $96 on renewed Iran tensions, with a Hormuz-transiting gas tanker reportedly striking a mine. Competing supply forces are creating noise: Iraq's October output hit 4.6 mb/d, its highest since 2019, while OPEC indicates production is nearing pre-Iran-war levels. Offsetting bullish pressure, the US naval blockade on Iran remained in force. UK sanctions on all ten of Russia's top oil producers and Ukrainian drones cutting Russian refining capacity by 30% add further complexity. Options markets price a 77% chance of an OPEC cut at the May 2026 meeting, suggesting the market sees demand or supply headwinds ahead.",
    "drivers": [
-    "Trump rules out Iran deal, reviving geopolitical risk premium and briefly pushing Brent above $96",
-    "EIA reports a 4.7 mb crude build plus gasoline and distillate builds, capping the rally",
-    "UK sanctions Russia's ten largest oil producers and shadow fleet; Ukraine drone strikes cut Russian refining capacity ~30%"
+    "Iran conflict and Hormuz disruption risk providing intermittent bid, but US blockade and peace-talk uncertainty cap upside",
+    "Iraq production at 4.6 mb/d (2019 high) and OPEC output near pre-war levels adding supply-side pressure and contributing to monthly price erosion",
+    "UK sanctions on all top-10 Russian producers and Ukraine drone strikes cutting Russian refining capacity by 30% introduce medium-term supply wildcard"
    ],
    "headlineCount": 12,
    "sources": [
+    "Al Jazeera",
     "Atlantic Council",
     "Britannica",
-    "Oil & Gas Journal",
-    "Reuters",
-    "The Independent",
-    "The Korea Times"
+    "BusinessToday Malaysia",
+    "EnergyNow",
+    "The Kyiv Independent"
    ]
   },
   "gas": {
-   "summary": "Henry Hub surged 4.6% on the day to $3.362/MMBtu, extending a sharp weekly gain of over 14%. The fundamental backdrop is tightening: Europe is entering winter with its lowest gas inventories of the 2020s, and Asian spot LNG is trading above $30/MMBtu, intensifying competition for cargoes. EU LNG imports from Russia have already exceeded full-year 2025 volumes with the bloc's January ban on Russian LNG still weeks away, underscoring the urgency to secure alternative supply. The combination of thin European storage, surging Asian demand, and the looming Russian LNG ban creates a structurally supportive environment for Henry Hub as U.S. LNG export demand increases. Domestic data flow was limited to the EIA crude report, which did not cover gas storage.",
+   "summary": "Henry Hub pulled back sharply today (-3.05% to $3.239/MMBtu) and TTF slid -2.94% to \u20ac89.545/MWh, giving back a portion of strong weekly gains (+8.0% and +4.6% respectively). The daily selloff looks like profit-taking after a week of geopolitically driven buying. The key headline catalyst remains the Strait of Hormuz: Iran reported a gas tanker struck a mine during an unauthorized transit, underscoring the fragility of LNG routing through the strait. Pakistan LNG Limited issued a tender for two December\u2013January cargoes, reflecting deepening winter demand pressure in South Asia. On the European supply side, Germany is dismantling the Nord Stream landfall power plant for transfer to Ukraine, signalling the permanent closure of that import corridor. Headline count for this sector today is relatively limited beyond these items.",
    "drivers": [
-    "Europe enters winter with decade-low gas inventories, tightening global LNG balances",
-    "Asian spot LNG above $30/MMBtu intensifies competition with Europe for U.S. export cargoes",
-    "EU LNG imports from Russia already exceed 2025 totals ahead of the January ban, raising near-term supply replacement urgency"
+    "Hormuz mine incident on a gas tanker keeps LNG transit risk elevated despite daily price pullback",
+    "Pakistan's emergency LNG tender for December\u2013January delivery highlights tightening winter demand in emerging markets",
+    "Permanent repurposing of Nord Stream's German landfall infrastructure signals no near-term revival of that European supply route"
    ],
-   "headlineCount": 5,
-   "sources": [
-    "Oil & Gas Journal"
-   ]
+   "headlineCount": 4,
+   "sources": []
   },
   "power": {
-   "summary": "EU carbon EUAs edged up 1.8% to $85.42, holding constructively within a narrow one-month range (+2.1%). News flow for the sector today was varied but thin on direct carbon price catalysts. In the UK, Chancellor Healey's budget speech signalled a material shift in government positioning on net zero as soaring electricity costs force a rethink of green policy commitments. AI-driven data centre power demand continues to pressure U.S. grid infrastructure, with cost recovery questions increasingly pointed at ratepayers. Venezuela passed reforms opening its electricity sector to private capital for the first time since 2007, prioritising oil fields. Iran's conditions for reopening the Strait of Hormuz remain a tail risk for gas-fired power generation costs globally. Overall, carbon price action was modest and the broader news flow was more directionally relevant to medium-term demand than to today's EUA move.",
+   "summary": "EU Carbon (EUA) eased -2.46% today to $84.005/EUA, though the contract remains up 1.7% on the week and 2.5% on the month, tracking the broader energy complex's daily retreat. TTF's concurrent -2.94% move lower reduces the marginal cost of gas-fired generation, which typically softens near-term carbon demand. The dominant macro narrative for this sector continues to be the Iran conflict and Hormuz dynamics: Iran has set seven conditions for reopening the strait, ruled out return of IAEA nuclear inspectors, and denied US peace talks, while Trump said further strikes were 'highly unlikely' if negotiations progress. An article noting global energy markets have absorbed eight months of Iran war disruptions suggests the acute shock phase may be fading. India's road fuel demand not expected to peak until 2034 is a longer-horizon bearish signal for the energy transition timeline. Power-specific data in today's feed is thin beyond these cross-sector items.",
    "drivers": [
-    "UK government signals policy retreat on net zero amid soaring electricity costs",
-    "AI data centre power demand surge raising U.S. grid investment and cost-recovery questions",
-    "Iran's seven conditions for Hormuz reopening maintain geopolitical risk premium on gas-fired generation costs"
+    "EUA dips alongside TTF as lower gas prices reduce gas-to-power carbon intensity pressure, but monthly trend remains modestly positive",
+    "Iran's seven Hormuz conditions and IAEA standoff sustain geopolitical uncertainty that underpins energy price floors across the complex",
+    "India's road fuel demand peak deferred to 2034 signals prolonged fossil fuel consumption growth, limiting medium-term carbon demand destruction"
    ],
-   "headlineCount": 6,
+   "headlineCount": 8,
    "sources": [
+    "Facebook",
     "NewsBricks",
-    "Oil & Gas Journal"
+    "Open Canada"
    ]
   }
  }
