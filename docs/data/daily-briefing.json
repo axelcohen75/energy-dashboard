@@ -1,49 +1,48 @@
 {
- "generated": "2026-11-16T22:44:15.878318+00:00",
+ "generated": "2026-11-17T21:30:18.013520+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude sold off hard on Monday, with WTI down 3.95% to $85.06 and Brent off 4.17% to $91.84, extending a bruising month that has seen both benchmarks shed roughly 16%. Refined products led the rout \u2014 heating oil cratered 6.68% and RBOB fell 4.93%. The move is counterintuitive against a backdrop of acute supply-side stress: Ukraine claims drone strikes have disabled more than 55% of Russian refining capacity, Iran's output has plunged below domestic needs amid the ongoing US-Israel conflict, Iran is maintaining its Hormuz blockade, the UN reports 25 seafarers killed in Hormuz waters, and Houthi fighters have advanced to within 100 km of Aden, threatening Saudi export routes. Market pricing appears to be front-running a demand-destruction narrative and potential ceasefire diplomacy, amplified by Trump's warning to Zelensky to halt refinery strikes. Options markets now price a 77% probability of an OPEC cut at the May 2027 meeting, suggesting the street expects the demand outlook to remain weak.",
+   "summary": "Crude markets are caught in a tug-of-war between geopolitical risk and bearish supply dynamics. Brent edged up 0.57% to $92.97 while WTI was near flat at $85.65, but both remain deeply underwater on the month \u2014 down 15% and 17% respectively \u2014 reflecting demand-side pressure. The Strait of Hormuz remains the dominant headline risk: Iran reports three tankers struck by mines and a third U.S. carrier has arrived in the region, keeping a risk premium embedded in Brent. Simultaneously, Russian crude exports hit a four-month high above 30 million barrels as Ukrainian drone strikes displaced oil from domestic refineries to export channels. Trump's public warning to Zelensky to cease refinery attacks adds a political wildcard. Refined products sold off sharply, with RBOB down 1.65% and heating oil off 2.79%. CME options imply a 77% probability of an OPEC cut at the May 2027 meeting.",
    "drivers": [
-    "Sharp broad sell-off across crude and products despite multiple active supply disruption risks (Hormuz blockade, 55%+ Russian refining capacity offline, Houthi threat to Saudi exports)",
-    "Trump pressure on Zelensky to cease drone attacks on Russian refineries introduces potential diplomatic de-escalation signal",
-    "CME OPEC Watch pricing 77% probability of a production cut at the May 2027 meeting, reflecting deteriorating demand outlook"
+    "Strait of Hormuz escalation: three tankers mined, third U.S. carrier deployed, Iran escalating threats \u2014 supporting Brent risk premium",
+    "Russian crude exports surge to four-month high as Ukrainian strikes redirect barrels from refineries to tankers, adding supply to seaborne markets",
+    "Sharp selloff in refined products (RBOB -1.65%, heating oil -2.79%) and deep month-on-month losses across the complex signal underlying demand weakness; OPEC cut odds at 77% for May"
    ],
    "headlineCount": 12,
    "sources": [
-    "Al Jazeera",
+    "Anadolu Ajans\u0131",
+    "CNBC",
     "Crowdfund Insider",
-    "Dagens.com",
-    "EnergyNow.com",
-    "Iran International",
-    "South China Morning Post"
+    "Crude Oil Prices Today | OilPrice.com",
+    "EnergyNow",
+    "EnergyNow.com"
    ]
   },
   "gas": {
-   "summary": "Henry Hub slipped 3.37% on the day to $3.121/MMBtu, though the month-on-month reading remains essentially flat at +0.16%, suggesting the intraday move is primarily weather-driven rather than a structural repricing. The key dynamic today is a divergence between the US and European markets: US LNG flows hit a reported all-time high, boosting export volumes and tightening domestic balances modestly, yet milder-than-expected European weather forecasts caused Amsterdam benchmark prices to slump, pulling sentiment across the complex. That said, Europe's structural position remains precarious \u2014 storage sites have already surrendered 10% of summer injections entering the heating season at multi-decade lows. Russia launched 116 attacks on Ukrainian energy and gas infrastructure over the past week, adding a persistent geopolitical risk premium to the European supply outlook. The TAPI pipeline remains a watch item, with Turkmenistan targeting completion of a key section by year-end.",
+   "summary": "Henry Hub rebounded 2.27% on the day to $3.193/MMBtu, partially recovering from a weekly loss of 3.12%, while the month-on-month gain of 4.41% suggests some structural support. In Europe, TTF bounced to approximately \u20ac85.48/MWh (+0.86%), recovering from a reported 7% drop on Monday as Hormuz-related risks resurfaced \u2014 tanker strikes in the strait and a drone alarm at an Iraqi gas field kept traders on edge. Russia launched 116 attacks on Ukraine's energy and gas sector over the past week, adding supply-side anxiety in Europe. Reliance Industries' announced $1.6 billion investment in 100 Indian biogas plants is a medium-term structural note. News flow for this sector is relatively limited beyond the Hormuz/Ukraine supply-risk thread.",
    "drivers": [
-    "US LNG exports at record highs are absorbing domestic production, yet milder European weather forecasts weighed on global gas sentiment and pushed Henry Hub lower",
-    "Europe enters deep heating season at multi-decade low storage levels, having already drawn down 10% of summer injections \u2014 structural tightness remains",
-    "Russia's 116 attacks on Ukrainian energy infrastructure last week sustain elevated disruption risk for European supply routes"
+    "TTF recovery from Monday's 7% drop driven by renewed Strait of Hormuz vessel attacks and drone incident at Iraqi gas field",
+    "Russia's 116 attacks on Ukrainian energy infrastructure over the past week sustain European supply-security concerns",
+    "Henry Hub +2.27% intraday bounce, though still down 3.12% on the week \u2014 headline support from geopolitical risk rather than fresh fundamental catalyst"
    ],
-   "headlineCount": 6,
+   "headlineCount": 5,
    "sources": [
+    "Al Jazeera",
     "Ukrinform"
    ]
   },
   "power": {
-   "summary": "EU carbon EUAs eased a modest 0.88% to $83.265/EUA, holding the bulk of a 2.90% monthly gain. Power and carbon headline flow today was thin on sector-specific catalysts. The most notable directional data point is China, where thermal power generation fell year-on-year for the fourth consecutive month in October, with year-to-date thermal output down 0.1%, driven by wind and solar surging \u2014 a structural bearish signal for coal demand. On the geopolitical side, Iran ruled out UN inspections of damaged nuclear sites until hostilities end, and Bahrain reported intercepting Iranian attacks, keeping Middle East risk elevated but without a direct near-term read-through to European carbon pricing. The Iran-related Britannica headlines in the feed carry no actionable market content. Overall, the EUA market is consolidating recent gains with limited fresh catalysts today.",
+   "summary": "EU carbon EUAs traded marginally lower at $83.13 (-0.16%), broadly flat on the week (-0.89%) but up 1.83% on the month, suggesting modest structural support in the absence of a strong directional catalyst. TTF's +0.86% session gain feeds into European power generation costs at the margin. The EU's new sanctions package targeting Russian banks, energy firms, and offshore traders could tighten Russian energy revenue flows, though the direct power-market impact is unclear from available data. Japan's proposed 'Asian IEA' and 'Power Gulf Initiative' reflect growing import-side coordination pressure among Asian consumers. China's milestone crewed flight of an all-electric aircraft is a long-horizon demand-destruction data point. Dedicated power-price data is not available in today's feed; the EUA and TTF moves are the primary tradeable signals.",
    "drivers": [
-    "China's thermal power output fell year-on-year for the fourth straight month in October as wind and solar generation surged, pressuring global coal demand",
-    "EUA prices holding monthly gains of ~2.90% but seeing modest profit-taking today amid thin sector-specific catalysts",
-    "Ongoing Iran conflict \u2014 nuclear site inspections blocked, Bahrain intercepting Iranian strikes \u2014 sustains broad energy risk premium but lacks direct power/carbon price catalyst today"
+    "EU EUA near flat at $83.13 with marginal monthly support (+1.83%); TTF recovery adds modest upward pressure on carbon-intensive power generation costs",
+    "New EU sanctions targeting Russian energy firms and offshore traders could incrementally tighten Russian supply pipelines into European markets",
+    "Japan's proposed Asian energy stockpiling task force signals structural shift in demand-side coordination among major crude and LNG importers"
    ],
-   "headlineCount": 8,
+   "headlineCount": 7,
    "sources": [
-    "Britannica",
-    "CBS News",
     "South China Morning Post",
-    "The Straits Times"
+    "The Brussels Times"
    ]
   }
  }
