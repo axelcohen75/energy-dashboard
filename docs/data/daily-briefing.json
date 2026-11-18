@@ -1,48 +1,48 @@
 {
- "generated": "2026-11-18T03:05:38.726374+00:00",
+ "generated": "2026-11-18T21:05:31.252470+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets are caught in a tug-of-war between supply disruption risk and bearish inventory data. WTI slipped 0.77% to $85.06 while Brent held near flat at $92.63, with the Brent-WTI spread widening as Hormuz premium support underpins the international benchmark. RBOB gasoline shed nearly 2% and heating oil fell over 3% on the day, compounding steep month-long losses of 22% and 20% respectively. The API reported a 5.3 million barrel crude build for the week ending November 13, reinforcing the demand-side drag. On the supply side, Russian crude exports hit a four-month high above 30 million barrels as Ukrainian drone strikes rerouted oil from damaged domestic refineries to export terminals \u2014 even as Zelenskyy claims strikes have halted over 55% of Russian refining capacity. Iran tensions remain acute, with a third U.S. carrier now in the Middle East, a tanker struck in the Strait of Hormuz, and Trump simultaneously threatening Iran sanctions while warning Kyiv to cease refinery attacks.",
+   "summary": "Crude sold off hard on Wednesday, with WTI dropping 4.64% to $82.03/bbl and Brent off 4.58% to $88.87, extending a brutal month that has erased roughly 19% from both benchmarks. The dominant driver is a supply-side reversal: despite ongoing Iranian tanker attacks in the Strait of Hormuz \u2014 with smaller vessels now absorbing the bulk of Hormuz traffic as supertankers are targeted \u2014 Middle East crude exports have broadly recovered, undermining the geopolitical risk premium. A U.S. EIA report showing a 3.4 million barrel build in domestic crude inventories for the week ending November 13 added further bearish weight. On the geopolitical front, the Trump administration announced a temporary easing of Russia oil sanctions to contain the price surge, drawing European pushback, while Trump simultaneously pressured Zelensky to halt strikes on Russian refineries and defended a reported Russia diesel deal facing bipartisan congressional criticism. Options markets now price a 77% probability of an OPEC cut at the May 2027 meeting.",
    "drivers": [
-    "Bearish: API crude inventory build of 5.3 million barrels and sharp month-long price declines signal soft demand backdrop",
-    "Bullish risk: Hormuz tanker strike and Iran escalation maintain geopolitical premium on Brent; Gulf neighbor exports disrupted",
-    "Mixed: Russian export surge adds supply, but Ukrainian refinery strikes structurally redirect barrels rather than reduce total volumes"
+    "Middle East crude exports recovering despite Hormuz tanker attacks, compressing the geopolitical risk premium",
+    "U.S. crude inventories rose 3.4 million barrels for the week ending November 13, adding bearish supply pressure",
+    "Trump administration temporarily eases Russia oil sanctions and pushes to curb Ukrainian strikes on Russian energy infrastructure, increasing expected Russian supply"
    ],
    "headlineCount": 12,
    "sources": [
+    "ABC News - Breaking News, Latest News and Videos",
     "CNBC",
-    "Crowdfund Insider",
     "EnergyNow",
     "EnergyNow.com",
-    "South China Morning Post",
-    "Ukrinform"
+    "Iran International",
+    "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)"
    ]
   },
   "gas": {
-   "summary": "Henry Hub rebounded 1.89% on the day to $3.181/MMBtu, though remains down 3.49% on the week and is only modestly positive on the month. TTF edged up 0.86% to \u20ac85.48/MWh, supported by a headline-driven narrative of acute European supply tightness. Europe is reported to be entering the pre-winter period with the lowest gas storage levels in over a decade, forcing aggressive competition for LNG cargoes and sending shockwaves into Asian gas markets as European buyers crowd out regional demand. Middle East risk is an additional overlay, with a drone incident reported at an Iraqi gas field alongside the Hormuz tanker strikes. The news flow on the demand side is mixed: Reliance Industries announced a $1.6 billion commitment to 100 biogas plants in India, pointing to longer-term substitution dynamics. The data flow for North American gas is thin today beyond the Henry Hub price tick and the API report's secondary read-across.",
+   "summary": "Natural gas markets diverged sharply today: Henry Hub surged 6.42% to $3.414/MMBtu, its strongest single-day gain in months and up 15% over the past month, while European TTF slumped 5.03% to \u20ac81.105/MWh. The U.S. rally likely reflects tightening domestic balances and LNG export demand \u2014 China Gas Holdings doubled its contracted volumes from U.S. exporter Venture Global, signalling robust Asian pull on American cargoes. On the supply side, Mozambique's government approved ExxonMobil's revised $30 billion Rovuma LNG development plan, a long-dated positive for global LNG supply. Meanwhile, the Iran conflict continues to cast a shadow: a headline warns that UK household energy bills are set to jump 26% from January 2027 to a four-year high, partly attributable to the ongoing Iran war inflating wholesale gas prices.",
    "drivers": [
-    "European storage at decade-low pre-winter levels, driving LNG import competition and TTF support",
-    "Hormuz tanker strike and Iraqi gas field drone incident add Middle East supply disruption risk to global gas flows",
-    "Henry Hub daily rebound modest; weekly loss of 3.49% suggests U.S. market remains well-supplied relative to European tightness"
+    "China Gas Holdings doubles LNG offtake from U.S. Venture Global, tightening American LNG export capacity and supporting Henry Hub",
+    "Iran war cited as pushing UK 2027 household energy bills to their highest since 2023, underpinning geopolitical risk premium in European gas",
+    "Mozambique approves ExxonMobil's $30 billion Rovuma LNG plan, adding long-dated global supply; TTF retreats on broader supply recovery signals"
    ],
-   "headlineCount": 8,
+   "headlineCount": 7,
    "sources": [
     "Al Jazeera",
-    "Ukrinform"
+    "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)"
    ]
   },
   "power": {
-   "summary": "EU carbon EUAs dipped 0.88% on the day to $83.265 but remain up 2.90% on the month, holding in a narrow weekly range of -0.18%, suggesting the market is consolidating rather than trending. TTF at \u20ac85.48/MWh, up 0.86% on the day, provides modest upward cost pressure on gas-fired generation and modest carbon price support via fuel-switching logic. The key structural story is European energy security: pre-winter storage at a decade low and an LNG scramble are the dominant backdrop. The UK announced a major step forward on one of the world's largest North Sea carbon capture and storage projects, a positive signal for long-run carbon market credibility. On the innovation side, China's state planemaker completed a crewed test flight of an all-electric commuter aircraft. The power and carbon sector news flow is otherwise thin today, with no direct EUA auction data or grid-level power price moves provided.",
+   "summary": "EU carbon allowances (EUA) suffered their steepest single-session decline in recent weeks, falling 8.28% to $76.25/EUA and extending a 10.74% weekly loss. The sell-off tracked the sharp drop in TTF gas prices (-5.03% on the day), which reduces the cost of gas-fired generation and lowers the implied carbon cost needed to incentivise fuel switching. Broader macro risk-off sentiment tied to energy market volatility may also be weighing on EUA demand. On the structural side, the ongoing Iran war is flagged as pushing UK 2027 wholesale energy costs sharply higher, and EU authorities are tightening sanctions on Russian banks and energy firms. News flow for EU power-specific assets is relatively thin today beyond these macro cross-currents; the Thames Water restructuring story adds colour to stressed European utility sector conditions but has limited direct EUA pricing relevance.",
    "drivers": [
-    "EUA prices in narrow weekly range despite month-on-month gains; gas-power fuel-switch dynamics provide modest floor via TTF elevation",
-    "UK North Sea CCS project advances, reinforcing medium-term structural demand for carbon abatement infrastructure",
-    "European pre-winter storage at decade lows underpins energy security premium across both TTF and carbon complex"
+    "Sharp TTF gas decline reduces fuel-switching incentive, mechanically pressuring EUA prices lower in tandem",
+    "EU tightens sanctions on Russian energy firms and banks, adding long-term supply uncertainty but offering no near-term price support for carbon",
+    "Iran conflict expected to lift UK wholesale energy bills 26% from January 2027, highlighting persistent geopolitical risk premium in European power markets"
    ],
-   "headlineCount": 9,
+   "headlineCount": 5,
    "sources": [
-    "South China Morning Post",
-    "The Times of Israel"
+    "ABC News - Breaking News, Latest News and Videos",
+    "The Brussels Times"
    ]
   }
  }
