@@ -1,47 +1,47 @@
 {
- "generated": "2026-11-19T02:44:10.721160+00:00",
+ "generated": "2026-11-19T21:09:38.669150+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude sold off sharply today, with WTI down 4.23% to $82.35/bbl and Brent off 4.02% to $89.40/bbl, extending a bruising month that has erased roughly 19% from WTI. The catalyst appears to be a confluence of bearish supply signals overriding residual geopolitical risk. U.S. crude inventories rose 3.4 million barrels in the week ending November 13, while the Trump administration's temporary easing of Russian oil sanctions\u2014a move that riled European allies\u2014signaled additional supply coming back to market. Permian production remains only moderately elevated despite the earlier war-premium spike above $100/bbl. On the demand side, China is reportedly burning less oil as the Iran conflict reshapes its energy mix. Options markets now price a 77.26% probability of an OPEC output decrease at the May 2027 meeting, suggesting the market expects the cartel to defend price levels. Heating oil and RBOB gasoline led losses, down 4.50% and 3.28% respectively.",
+   "summary": "Crude sold off hard on the week \u2014 WTI down 6.4% and Brent off 6.1% \u2014 with today's session extending losses as the dominant macro story remains Washington's temporary easing of Russia oil sanctions. The Trump administration's move to relax sanctions and secure a diesel deal with Moscow drew bipartisan congressional criticism and sharp pushback from European allies, capping the geopolitical risk premium that had built up around Middle East disruptions. Headlines confirm the Iran conflict caused the largest oil and gas disruption on record, with tankers struck in the Strait of Hormuz and Gulf neighbor exports shuttered, yet Iranian oil itself continued flowing. Meanwhile, Ukrainian drone strikes reportedly halved Russian refining capacity in November, prompting Trump to publicly warn Kyiv to stand down. On the supply side, India posted record crude imports with Saudi shipments surging, Brazil is set to lead global production additions this year, and traders are actively seeking long-term Qatari crude deals for 2027. CME options-implied OPEC watch assigns a 77% probability of a production decrease at the May 2027 meeting.",
    "drivers": [
-    "U.S. crude stockpiles rose 3.4 million barrels w/e Nov 13, adding bearish supply pressure",
-    "Trump administration temporarily eased Russia oil sanctions, raising supply expectations and riling EU allies",
-    "China reducing oil consumption as the Iran war restructures its energy mix, denting demand outlook"
+    "US temporary easing of Russia oil sanctions and Trump-backed diesel deal with Moscow weighing heavily on the risk premium and driving week-long selloff",
+    "Strait of Hormuz disruptions \u2014 tanker strikes, Iranian threats, third US carrier deployment \u2014 remain a live tail risk but have so far failed to sustain a bullish bid",
+    "Rising non-OPEC supply (Brazil production boom, record Indian imports absorbing Saudi barrels) adding to bearish structural backdrop"
    ],
    "headlineCount": 12,
    "sources": [
-    "ABC News - Breaking News, Latest News and Videos",
+    "Al Jazeera",
     "CNBC",
+    "Drop Site News",
     "EnergyNow",
     "EnergyNow.com",
-    "The New York Times",
-    "energynews.pro"
+    "The New Voice of Ukraine"
    ]
   },
   "gas": {
-   "summary": "Natural gas markets diverged sharply across geographies today. Henry Hub surged 5.17% to $3.374/MMBtu, up over 13% on the month, as LNG export demand builds with China Gas Holdings upsizing a long-term supply deal with Venture Global and China securing a gas processing agreement in Kazakhstan. European TTF, by contrast, fell 5.03% to \u20ac81.105/MWh, pulling back from recent Iran-crisis highs, though the broader backdrop remains tight: an ongoing cyberattack on Equinor\u2014Europe's largest pipeline gas supplier\u2014is adding operational uncertainty, and Gazprom has warned that potential sanctions on Naftogaz could halt remaining Ukraine transit flows. UK household energy bills are forecast to jump 26% from January 2027 to a four-year high. Mozambique's approval of ExxonMobil's $30 billion Rovuma LNG plan adds longer-dated supply optionality but offers no near-term relief.",
+   "summary": "The natural gas complex is sending mixed regional signals today. Henry Hub fell 3.74% on the session to $3.246/MMBtu, trimming part of its impressive +16.3% one-month rally, suggesting near-term profit-taking or milder weather expectations. European TTF moved in the opposite direction, surging 4.46% to \u20ac84.45/MWh, though it remains down 8.5% on the week \u2014 likely reflecting renewed supply-side anxiety given that the Iran conflict has been characterized as causing the largest oil and gas disruption on record, with the Iraq gas field drone alarm adding to Hormuz-corridor jitters. News flow for this sector is relatively thin today beyond the geopolitical overhang: Australia's federal government is exploring a gas phase-out clause in its domestic reservation scheme, and Venezuela announced an AI-driven methane reduction initiative.",
    "drivers": [
-    "Henry Hub lifted by growing U.S. LNG export commitments, including China Gas Holdings upsizing volumes from Venture Global",
-    "Equinor cyberattack and threatened halt to Ukraine gas transit keep European supply risk elevated despite today's TTF pullback",
-    "Iran war continues to reshape global gas flows, with UK 2027 energy bills projected at a four-year high as a downstream consequence"
-   ],
-   "headlineCount": 8,
-   "sources": [
-    "Al Jazeera",
-    "oEnergetice.cz"
-   ]
-  },
-  "power": {
-   "summary": "The power and carbon complex was relatively quiet on a price basis today. EU Carbon EUAs edged down just 0.16% to $83.13/EUA, holding broadly stable on the month (+1.83%), even as TTF gas\u2014a key input for power generation economics\u2014fell 5.03% to \u20ac81.105/MWh. The divergence suggests carbon demand is not yet capitulating alongside gas. The macro backdrop carries meaningful medium-term risk for European power consumers: UK household energy bills are forecast to rise 26% from January 2027 to their highest level since 2023, driven by the Iran war's sustained pressure on wholesale gas prices. The Thames Water situation, flagged in headlines, adds complexity to UK utility sector stress but the provided summary is insufficient to draw firm trading conclusions. The Iran conflict's reshaping of China's energy mix\u2014burning less coal\u2014may have modest secondary effects on global carbon-intensive fuel demand.",
-   "drivers": [
-    "EU EUAs essentially flat on the day (-0.16%) as carbon demand holds despite a sharp 5% drop in TTF gas prices",
-    "Iran war keeping European power price forecasts elevated; UK 2027 energy bills projected at a four-year high",
-    "Equinor cyberattack introduces supply-side uncertainty for European gas-fired power generation"
+    "Henry Hub giving back gains on the session despite its strong monthly uptrend, diverging sharply from a rebounding TTF",
+    "Iran war-driven Middle East supply disruption \u2014 flagged as the largest oil and gas disruption on record \u2014 underpinning European gas nervousness and the TTF bounce",
+    "Australian gas reservation scheme negotiations, including a potential phase-out clause with the Greens, adding long-run demand uncertainty for LNG exporters"
    ],
    "headlineCount": 4,
    "sources": [
-    "ABC News - Breaking News, Latest News and Videos"
+    "Al Jazeera",
+    "Drop Site News"
+   ]
+  },
+  "power": {
+   "summary": "EU carbon EUAs recovered 2.81% today to $78.40/EUA, though the contract remains down nearly 9% on the week and roughly 4% on the month, tracking the broader energy complex's slide. The TTF gas bounce of 4.46% is directionally supportive of EUAs given gas-fired generation marginal cost dynamics in Europe. News flow in this sector today is macro-thematic rather than price-specific. Hard data on US data-center electricity consumption is reportedly staggering, with AI demand continuing to drive structural upward pressure on US power demand \u2014 a trend analysts say has not been deterred by AI sector volatility. Egypt announced a solar push targeting 7,000 factories, aiming for 42% renewable electricity by 2030. Venezuela's AI-driven methane reduction program speaks to emissions efficiency rather than power markets directly.",
+   "drivers": [
+    "EUA carbon prices bouncing modestly alongside a TTF gas rally, but remaining under pressure on the week as the broader energy selloff weighs on carbon sentiment",
+    "Staggering US data-center power consumption figures reinforcing the structural AI-driven electricity demand thesis, with no sign of slowdown",
+    "Egypt's large-scale solar industrialization program highlighting accelerating emerging-market renewable buildout, though with limited immediate EUA market impact"
+   ],
+   "headlineCount": 4,
+   "sources": [
+    "Audacy"
    ]
   }
  }
