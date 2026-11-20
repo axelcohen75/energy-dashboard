@@ -1,45 +1,45 @@
 {
- "generated": "2026-11-19T21:09:38.669150+00:00",
+ "generated": "2026-11-20T02:30:18.719823+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude sold off hard on the week \u2014 WTI down 6.4% and Brent off 6.1% \u2014 with today's session extending losses as the dominant macro story remains Washington's temporary easing of Russia oil sanctions. The Trump administration's move to relax sanctions and secure a diesel deal with Moscow drew bipartisan congressional criticism and sharp pushback from European allies, capping the geopolitical risk premium that had built up around Middle East disruptions. Headlines confirm the Iran conflict caused the largest oil and gas disruption on record, with tankers struck in the Strait of Hormuz and Gulf neighbor exports shuttered, yet Iranian oil itself continued flowing. Meanwhile, Ukrainian drone strikes reportedly halved Russian refining capacity in November, prompting Trump to publicly warn Kyiv to stand down. On the supply side, India posted record crude imports with Saudi shipments surging, Brazil is set to lead global production additions this year, and traders are actively seeking long-term Qatari crude deals for 2027. CME options-implied OPEC watch assigns a 77% probability of a production decrease at the May 2027 meeting.",
+   "summary": "Crude is under heavy pressure across the complex, with Brent off 2.23% today to $89.90/bbl and WTI slipping to $82.86 \u2014 both down sharply on the month (Brent -17%, WTI -15%). The divergence between active geopolitical risk and falling prices reflects a supply-side offset: the US temporarily eased Russia sanctions and struck a reported $7bn Russian diesel deal, adding barrels to the market. Brazilian offshore production is booming, adding more supply than any other country this year. Meanwhile, Iran mounted roughly 14 Hormuz attacks in November, striking at least one tanker twice, yet market reaction has been muted. CME options now price a 77% chance of an OPEC cut at the May 2026 meeting, underscoring weak demand sentiment. Trump's pressure on Kyiv to halt strikes on Russian refineries adds further political complexity as Ukrainian attacks are reported to have nearly halved Russian refining capacity this month.",
    "drivers": [
-    "US temporary easing of Russia oil sanctions and Trump-backed diesel deal with Moscow weighing heavily on the risk premium and driving week-long selloff",
-    "Strait of Hormuz disruptions \u2014 tanker strikes, Iranian threats, third US carrier deployment \u2014 remain a live tail risk but have so far failed to sustain a bullish bid",
-    "Rising non-OPEC supply (Brazil production boom, record Indian imports absorbing Saudi barrels) adding to bearish structural backdrop"
+    "US temporary easing of Russia oil sanctions floods additional supply into the market, capping geopolitical risk premiums despite Hormuz tanker strikes",
+    "Brazil's offshore production boom accelerating global supply growth, adding downward price pressure on a one-month basis (-15% WTI, -17% Brent)",
+    "CME options pricing 77% probability of OPEC production cut at May 2026 meeting, signalling persistent demand-side weakness"
    ],
    "headlineCount": 12,
    "sources": [
-    "Al Jazeera",
+    "Anadolu Ajans\u0131",
+    "Aviamost",
     "CNBC",
-    "Drop Site News",
     "EnergyNow",
     "EnergyNow.com",
-    "The New Voice of Ukraine"
+    "Facebook"
    ]
   },
   "gas": {
-   "summary": "The natural gas complex is sending mixed regional signals today. Henry Hub fell 3.74% on the session to $3.246/MMBtu, trimming part of its impressive +16.3% one-month rally, suggesting near-term profit-taking or milder weather expectations. European TTF moved in the opposite direction, surging 4.46% to \u20ac84.45/MWh, though it remains down 8.5% on the week \u2014 likely reflecting renewed supply-side anxiety given that the Iran conflict has been characterized as causing the largest oil and gas disruption on record, with the Iraq gas field drone alarm adding to Hormuz-corridor jitters. News flow for this sector is relatively thin today beyond the geopolitical overhang: Australia's federal government is exploring a gas phase-out clause in its domestic reservation scheme, and Venezuela announced an AI-driven methane reduction initiative.",
+   "summary": "Henry Hub retreated sharply, falling 4.00% on the day to $3.237/MMBtu, though it remains 16% higher on the month \u2014 a reminder of the significant run-up in recent weeks now partially unwinding. TTF moved in the opposite direction, surging 4.46% to \u20ac84.45/MWh, though it is still down 8.46% on the week. The TTF bounce likely reflects lingering Middle East supply anxiety, with headlines flagging that the Iran conflict caused the largest oil and gas disruption on record and a drone incident at an Iraqi gas field adding to jitters. A notable structural story: Canada is actively building LNG export infrastructure to diversify away from US customers following tariff friction, a shift that could redraw North American gas trade flows. News flow for this sector is relatively thin today beyond these themes.",
    "drivers": [
-    "Henry Hub giving back gains on the session despite its strong monthly uptrend, diverging sharply from a rebounding TTF",
-    "Iran war-driven Middle East supply disruption \u2014 flagged as the largest oil and gas disruption on record \u2014 underpinning European gas nervousness and the TTF bounce",
-    "Australian gas reservation scheme negotiations, including a potential phase-out clause with the Greens, adding long-run demand uncertainty for LNG exporters"
+    "Henry Hub selling off 4% intraday as the month-long rally cools, while TTF gains 4.46% on residual Middle East supply disruption fears",
+    "Iran conflict described as causing the largest oil and gas disruption on record, with an Iraqi gas field drone incident adding regional risk",
+    "Canada accelerating LNG export infrastructure buildout to reduce dependence on US market, a potential long-term structural shift in North American gas flows"
    ],
-   "headlineCount": 4,
+   "headlineCount": 5,
    "sources": [
     "Al Jazeera",
     "Drop Site News"
    ]
   },
   "power": {
-   "summary": "EU carbon EUAs recovered 2.81% today to $78.40/EUA, though the contract remains down nearly 9% on the week and roughly 4% on the month, tracking the broader energy complex's slide. The TTF gas bounce of 4.46% is directionally supportive of EUAs given gas-fired generation marginal cost dynamics in Europe. News flow in this sector today is macro-thematic rather than price-specific. Hard data on US data-center electricity consumption is reportedly staggering, with AI demand continuing to drive structural upward pressure on US power demand \u2014 a trend analysts say has not been deterred by AI sector volatility. Egypt announced a solar push targeting 7,000 factories, aiming for 42% renewable electricity by 2030. Venezuela's AI-driven methane reduction program speaks to emissions efficiency rather than power markets directly.",
+   "summary": "EU Carbon EUAs suffered a sharp 8.28% single-day drop to $76.25/EUA, extending a painful week (-10.74%) and month (-6.41%). The move is notable in magnitude; no specific headline directly explains today's sell-off, suggesting macro risk-off and the broader energy complex decline may be dragging carbon lower. TTF's 4.46% daily gain creates a cross-current: higher gas prices typically support carbon by incentivising fuel-switching to coal, but the month-long TTF softness may already be weighing on longer-dated carbon sentiment. On the demand side, new data quantifying US data-centre power consumption is described as 'staggering,' reinforcing the structural AI-driven power demand thesis. Egypt's plan to bring 7,000 factories onto solar power as part of a 42%-renewables-by-2030 target adds a supply-side decarbonisation datapoint. Headlines for the power and carbon sector are otherwise limited today.",
    "drivers": [
-    "EUA carbon prices bouncing modestly alongside a TTF gas rally, but remaining under pressure on the week as the broader energy selloff weighs on carbon sentiment",
-    "Staggering US data-center power consumption figures reinforcing the structural AI-driven electricity demand thesis, with no sign of slowdown",
-    "Egypt's large-scale solar industrialization program highlighting accelerating emerging-market renewable buildout, though with limited immediate EUA market impact"
+    "EU Carbon EUAs down 8.28% on the day and nearly 11% on the week \u2014 the sharpest move across all monitored sectors \u2014 with no single headline catalyst identified",
+    "AI-driven US data-centre power demand described as 'staggering' in new quantitative data, reinforcing the structural bull case for power consumption growth",
+    "Egypt targets 42% renewable electricity by 2030, with 7,000 factories moving to solar, illustrating accelerating non-EU clean energy buildout"
    ],
-   "headlineCount": 4,
+   "headlineCount": 5,
    "sources": [
     "Audacy"
    ]
