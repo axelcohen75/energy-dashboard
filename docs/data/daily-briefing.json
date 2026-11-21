@@ -1,29 +1,30 @@
 {
- "generated": "2026-11-20T20:55:15.591401+00:00",
+ "generated": "2026-11-21T01:57:52.580467+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets are caught in a tug-of-war between recovering Persian Gulf supply and persistent Hormuz disruptions. WTI finished fractionally higher at $83.76 (+0.65%) but Brent shed 2.0% to $90.13, extending a punishing month that has erased more than 20% from the front-month contract. The dominant bear case is a rebuilding global glut: Chinese Persian Gulf imports surged 42.4% in October as the strait reopens, US inventories are rising, and a temporary US easing of Russian oil sanctions has added incremental supply\u2014angering European allies and sparking bipartisan pushback in Congress. Offsetting factors include Iran's intensifying daily tanker attacks, a near-halving of Russian refinery output from Ukrainian strikes, and a Trump warning to Zelensky to halt those attacks. CME options now price a 77% probability of an OPEC cut at the May 2027 meeting, underscoring how far sentiment has shifted bearish.",
+   "summary": "Crude markets are caught in a paradox: approximately 14 Iranian Hormuz attacks in November alone, a Trump-Putin diesel deal unravelling, and Russian missiles striking Kyiv have done little to sustain prices. Brent shed another 2.3% today to $89.87 and is now off more than 20% on the month, with WTI holding slightly firmer at $83.62 (+0.49%). The bearish read is structural: recovering Gulf oil flows are absorbing the geopolitical risk premium, Iran's own crude is reportedly still moving through the Strait, and China's October Gulf imports surged 42.4% month-on-month\u2014suggesting aggressive restocking rather than shortage. Japan's plan to replenish up to 8 million barrels of Saudi crude drawn during the Hormuz crisis adds to the demand-side narrative. CME options now price a 77% probability of an OPEC cut at the May 2027 meeting, underscoring market concern about the demand trajectory.",
    "drivers": [
-    "Supply glut fears dominate: recovering Gulf flows, rising US inventories, and temporary US relief on Russian oil sanctions overwhelm geopolitical risk premium",
-    "Iran escalating daily Hormuz tanker attacks while Persian Gulf crude flows simultaneously recover, creating an unusual divergence between physical disruption and price direction",
-    "OPEC cut probability hits 77% (CME options) as month-on-month price collapse of ~20% signals markets expect producers to respond"
+    "Gulf oil flows recovering despite ~14 Iranian Hormuz attacks in November, capping the geopolitical risk premium and pushing Brent -20% on the month",
+    "Trump-Ukraine energy truce collapse and stalled Russia diesel deal inject political uncertainty without translating into supply disruption priced by the market",
+    "OPEC cut probability at 77% for May meeting signals traders expect production discipline will be needed to stabilise prices at current levels"
    ],
    "headlineCount": 12,
    "sources": [
     "Crude Oil Prices Today | OilPrice.com",
+    "Drop Site News",
     "EnergyNow",
     "EnergyNow.com",
-    "The New Voice of Ukraine",
-    "Yahoo Finance"
+    "Kyiv Post",
+    "https://houseofsaud.com/"
    ]
   },
   "gas": {
-   "summary": "Henry Hub exploded higher, surging 15.5% on the day to $3.776/MMBtu and now up 35% on the month\u2014the standout move across energy today. The backdrop is tightening supply after what has been characterised as the largest oil and gas disruption on record stemming from the Iran war. Europe is burning through storage fast\u201411% of summer injections drained in under a month heading into winter\u2014while starting stocks were already low, pushing TTF up 5% on the day to \u20ac88.7/MWh despite a softer week. Norway is ramping hard, with October gas sales nearly 20% above year-ago levels, providing some relief on the European side. India's LPG demand rebounded to an eight-month high in October as supply recovered post-Hormuz shock. The Baker Hughes rig count for US oil and gas ticked higher this week, though the supply response will take time to materialise.",
+   "summary": "Henry Hub surged 16% today to $3.791/MMBtu, extending a blistering month that has seen prices rise nearly 36%. The Iran war's status as the largest oil and gas disruption on record is feeding through to global LNG pricing, tightening supply available to both Asian and European buyers. Europe entered winter already stressed: storage has drained 11% of summer injections in under a month from a low starting point, keeping TTF elevated at 88.7 \u20ac/MWh (+5% today) despite a slight weekly pullback. Norway's gas sales jumped nearly 20% in October, running 5.6% above year-ago levels, but incremental Norwegian supply alone appears insufficient to offset the regional deficit. India's LPG consumption hit an eight-month high in October as supply gradually recovered post-Hormuz disruption. A rising U.S. rig count provides some medium-term relief signal but offers no near-term balance.",
    "drivers": [
-    "Henry Hub +15.5% on the day and +35% on the month as Iran-war supply shock continues to reverberate through global gas markets",
-    "European storage drawdown accelerating\u201411% of summer injections consumed in under a month\u2014with winter demand just beginning; TTF +5% on the day",
-    "Norway gas sales +20% in October providing incremental supply relief; US rig count rising but physical response will lag"
+    "Henry Hub +16% on the day, +36% on the month, driven by global LNG tightness stemming from the Iran-war supply disruption",
+    "European storage drawdowns have already consumed 11% of summer injections with winter just starting, keeping TTF structurally bid",
+    "Norway export surge (+20% in October) and rising U.S. rig count are partial offsets but insufficient to relieve near-term tightness"
    ],
    "headlineCount": 6,
    "sources": [
@@ -31,16 +32,16 @@
    ]
   },
   "power": {
-   "summary": "The power and carbon desk has limited price-specific news flow today beyond TTF and EUA levels. EU carbon slipped 1.2% to $77.44/EUA and is down 7.8% on the week, likely pressured by the broader commodity selloff and near-term demand uncertainty. TTF's sharp daily rally (+5%) is a cost push for gas-fired generators but has not been enough to lift EUAs. On the structural side, a notable headline flags that Democratic governors will oversee states holding 77% of the 300 GW in US data centre capacity announced for 2027\u20132030, raising questions about permitting and grid-integration policy from January. A US-China-Russia superpower summit on the APEC sidelines delivered pledges around fuel supplies and nuclear dialogue but no concrete breakthroughs per reporting. The six-month mark of the Iran war is drawing formal CSIS analysis on energy and national security implications.",
+   "summary": "EU carbon edged up 2.8% to $78.40/EUA today, partially recovering from a sharp 9% weekly loss, as surging TTF gas prices (+5% on the day) lift the marginal cost of gas-fired generation and feed into allowance demand. The broader macro backdrop is shaped by a high-profile Trump-Xi-Putin summit on the APEC sidelines that delivered what sources describe as big promises but few breakthroughs, leaving energy market structural risks unresolved. On the demand side, a headline on U.S. data centre capacity highlights that Democratic governors will oversee states hosting 77% of the 300 GW of data centre build announced for 2027-2030, flagging a new political variable for power load growth. Houthi activity continued, with a Saudi-led coalition targeting weapons smuggling at Hodeidah port overnight. The power and carbon space has limited dedicated price-driver news today beyond the gas and geopolitical read-across.",
    "drivers": [
-    "EU EUAs down 7.8% on the week, decoupling from a sharply higher TTF as bearish macro sentiment and weak near-term industrial demand weigh on carbon",
-    "US data centre power demand build-out (300 GW announced for 2027-2030) faces new political uncertainty as Democratic governors take control of key host states in January",
-    "Superpower summit (Trump-Xi-Putin) produced broad language on boosting fuel supplies and nuclear dialogue but no actionable policy detail"
+    "TTF +5% on the day lifts gas generation costs and supports EUA demand, partially reversing the week's 9% EUA selloff",
+    "Trump-Xi-Putin summit produced no concrete energy or sanctions breakthroughs, leaving supply-disruption risk unresolved for carbon-intensive generation",
+    "U.S. data centre build concentrated in Democrat-governed states introduces a new political dimension to future power load and clean-energy procurement"
    ],
    "headlineCount": 5,
    "sources": [
+    "Al Jazeera",
     "Audacy",
-    "CSIS | Center for Strategic and International Studies",
     "The National"
    ]
   }
