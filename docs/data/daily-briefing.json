@@ -1,48 +1,46 @@
 {
- "generated": "2026-11-21T01:57:52.580467+00:00",
+ "generated": "2026-11-24T00:34:13.046580+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets are caught in a paradox: approximately 14 Iranian Hormuz attacks in November alone, a Trump-Putin diesel deal unravelling, and Russian missiles striking Kyiv have done little to sustain prices. Brent shed another 2.3% today to $89.87 and is now off more than 20% on the month, with WTI holding slightly firmer at $83.62 (+0.49%). The bearish read is structural: recovering Gulf oil flows are absorbing the geopolitical risk premium, Iran's own crude is reportedly still moving through the Strait, and China's October Gulf imports surged 42.4% month-on-month\u2014suggesting aggressive restocking rather than shortage. Japan's plan to replenish up to 8 million barrels of Saudi crude drawn during the Hormuz crisis adds to the demand-side narrative. CME options now price a 77% probability of an OPEC cut at the May 2027 meeting, underscoring market concern about the demand trajectory.",
+   "summary": "Crude suffered a brutal session, with Brent off 6.15% to $86.88/bbl and WTI down 4.23% to $80.43\u2014extending a month-long rout that has now stripped roughly 25% from both benchmarks. The dominant theme is returning supply overwhelming geopolitical risk: despite tanker strikes in the Strait of Hormuz and Iranian attacks on a Bahraini industrial site, the market shrugged off the headlines. Russian export disruptions from Baltic and Black Sea storms provided only fleeting support. On the geopolitical side, Trump's pressure on Zelensky to halt strikes on Russian refineries, his defence of a Russia diesel deal, and an EU proposal to ban European assistance for repairing Russian refineries are all adding political noise. CME OPEC Watch now prices a 77% probability of a production cut at the May 2026 meeting, suggesting the market expects OPEC to respond. Heating oil's 6.84% drop was the sharpest mover on the complex.",
    "drivers": [
-    "Gulf oil flows recovering despite ~14 Iranian Hormuz attacks in November, capping the geopolitical risk premium and pushing Brent -20% on the month",
-    "Trump-Ukraine energy truce collapse and stalled Russia diesel deal inject political uncertainty without translating into supply disruption priced by the market",
-    "OPEC cut probability at 77% for May meeting signals traders expect production discipline will be needed to stabilise prices at current levels"
+    "Returning supply overwhelms Hormuz tanker-strike and Russian export disruption risk, sending the entire complex sharply lower",
+    "Geopolitical cross-currents: Trump pushes to halt Ukrainian refinery strikes and defends Russia diesel deal while EU advances sanctions on Russian refinery repair",
+    "CME OPEC Watch at 77% probability of a cut signals the market anticipates supply-side intervention before prices stabilise"
    ],
    "headlineCount": 12,
    "sources": [
-    "Crude Oil Prices Today | OilPrice.com",
-    "Drop Site News",
+    "AFP.com",
+    "Arabian Business",
+    "EU Today",
     "EnergyNow",
     "EnergyNow.com",
-    "Kyiv Post",
-    "https://houseofsaud.com/"
+    "Industrial Info Resources"
    ]
   },
   "gas": {
-   "summary": "Henry Hub surged 16% today to $3.791/MMBtu, extending a blistering month that has seen prices rise nearly 36%. The Iran war's status as the largest oil and gas disruption on record is feeding through to global LNG pricing, tightening supply available to both Asian and European buyers. Europe entered winter already stressed: storage has drained 11% of summer injections in under a month from a low starting point, keeping TTF elevated at 88.7 \u20ac/MWh (+5% today) despite a slight weekly pullback. Norway's gas sales jumped nearly 20% in October, running 5.6% above year-ago levels, but incremental Norwegian supply alone appears insufficient to offset the regional deficit. India's LPG consumption hit an eight-month high in October as supply gradually recovered post-Hormuz disruption. A rising U.S. rig count provides some medium-term relief signal but offers no near-term balance.",
+   "summary": "Henry Hub surged 3.69% on the day to $3.537/MMBtu, extending a remarkable month-long rally of nearly 34%. TTF added 3.32% to \u20ac91.39/MWh, up 7.84% on the week. The European bid was supported by the EU's advancing legislation to ban Russian gas imports, reinforcing the structural tightening narrative. Cold-weather demand provided an additional catalyst, with Japan's spot electricity prices hitting their highest since August 2022 on snowfall expectations and rising gas burn. The data-centre power story remains a background constructive theme, with ongoing debate about whether batteries can displace gas turbines at scale. Headline newsflow here is relatively thin but directionally consistent: tighter supply policy, rising seasonal demand, and elevated prices across both Atlantic and Pacific Basin benchmarks.",
    "drivers": [
-    "Henry Hub +16% on the day, +36% on the month, driven by global LNG tightness stemming from the Iran-war supply disruption",
-    "European storage drawdowns have already consumed 11% of summer injections with winter just starting, keeping TTF structurally bid",
-    "Norway export surge (+20% in October) and rising U.S. rig count are partial offsets but insufficient to relieve near-term tightness"
+    "EU advancing legislation to ban Russian gas imports tightens the structural supply outlook for European TTF",
+    "Cold weather arrival in Japan pushes spot electricity to 2022 highs, increasing LNG/gas burn and global demand competition",
+    "Henry Hub +34% over the past month signals broader tightening; seasonal heating demand is amplifying the move"
    ],
-   "headlineCount": 6,
+   "headlineCount": 3,
    "sources": [
-    "Drop Site News"
+    "The New Voice of Ukraine"
    ]
   },
   "power": {
-   "summary": "EU carbon edged up 2.8% to $78.40/EUA today, partially recovering from a sharp 9% weekly loss, as surging TTF gas prices (+5% on the day) lift the marginal cost of gas-fired generation and feed into allowance demand. The broader macro backdrop is shaped by a high-profile Trump-Xi-Putin summit on the APEC sidelines that delivered what sources describe as big promises but few breakthroughs, leaving energy market structural risks unresolved. On the demand side, a headline on U.S. data centre capacity highlights that Democratic governors will oversee states hosting 77% of the 300 GW of data centre build announced for 2027-2030, flagging a new political variable for power load growth. Houthi activity continued, with a Saudi-led coalition targeting weapons smuggling at Hodeidah port overnight. The power and carbon space has limited dedicated price-driver news today beyond the gas and geopolitical read-across.",
+   "summary": "EU carbon EUAs slipped 1.22% to $77.44/EUA, now down nearly 8% on the week and roughly 6% on the month\u2014a notable divergence from the rising gas input cost reflected in TTF's 3.32% daily gain to \u20ac91.39/MWh. The widening gap between gas and carbon prices may reflect reduced clean-spark spread attractiveness and demand-side uncertainty. Japan's electricity spot prices surging to a 2022 high on cold-weather demand is the standout power headline globally. The Pakistan-Iran energy cooperation development and the Russia-China Power of Siberia 2 discussion add geopolitical texture to the longer-term gas-to-power supply picture, though neither item moves markets near-term. The batteries-vs-gas-turbines debate at data centres remains a medium-term structural overhang for gas power demand. Headline coverage for EU power specifically is thin today.",
    "drivers": [
-    "TTF +5% on the day lifts gas generation costs and supports EUA demand, partially reversing the week's 9% EUA selloff",
-    "Trump-Xi-Putin summit produced no concrete energy or sanctions breakthroughs, leaving supply-disruption risk unresolved for carbon-intensive generation",
-    "U.S. data centre build concentrated in Democrat-governed states introduces a new political dimension to future power load and clean-energy procurement"
+    "EUA carbon prices sliding despite higher TTF gas costs, widening the disconnect between input fuel prices and emissions pricing",
+    "Japan spot power prices hit a 2022 high on cold-weather demand, highlighting seasonal tightness in gas-fired generation globally",
+    "EU Russian gas import ban legislation and Iran-Pakistan electricity cooperation signal continued structural reshaping of power supply chains"
    ],
-   "headlineCount": 5,
+   "headlineCount": 4,
    "sources": [
-    "Al Jazeera",
-    "Audacy",
-    "The National"
+    "The Geopolitics"
    ]
   }
  }
