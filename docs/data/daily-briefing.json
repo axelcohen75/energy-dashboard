@@ -1,45 +1,47 @@
 {
- "generated": "2026-11-24T22:54:44.364775+00:00",
+ "generated": "2026-11-25T22:09:20.172308+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "Crude markets posted a split session on 24 November, with WTI recovering 1.90% to $81.69/bbl while Brent slipped 0.97% to $88.50/bbl \u2014 the divergence likely reflecting distinct quality and regional flow dynamics. The backdrop remains deeply bearish on a monthly basis, with both benchmarks down roughly 20-24% over the past month. Strait of Hormuz tension stayed elevated after Iran claimed three tankers struck mines and Bahrain reported an Iranian strike on an industrial site, yet prices struggled to sustain a risk premium as the US naval blockade tightens Iran's oil revenues. OPEC+ fractures are adding to the bearish undertow: Iraq is openly contesting OPEC+'s capacity assessment, Saudi Arabia revised its GDP contraction to 2.1% (from 3.6%) as more oil reaches market, and options markets price a 77% chance of a production cut at the May 2027 meeting. The Russia diesel deal and sanctions relief discussions add further complexity to supply-side optics.",
+   "summary": "WTI surged 2.55% to $84.14/bbl, driven squarely by a Houthi strike on Saudi Arabia's Ras Tanura refinery \u2014 the kingdom's largest \u2014 with Saudi air defenses reportedly intercepting drones over the facility. Separately, two tankers exploded in the Strait of Hormuz, compounding supply-route anxiety as the Iran war continues to reshape global crude flows; Iran also reported three additional tankers hitting mines in Hormuz. Despite the geopolitical premium, Brent slipped 0.69% to $90.77, RBOB fell 1.43%, and heating oil dropped 1.65%, suggesting product markets remain pressured by the month-long demand-side selloff (Brent -20.3% on the month). U.S. crude inventories rose 1.1 million barrels last week, adding a mild bearish offset. The WTI/Brent spread divergence is notable. Options markets price a 77% probability of an OPEC+ cut at the May 2026 meeting.",
    "drivers": [
-    "Strait of Hormuz incidents (tanker mine strikes, Bahrain strike report) provide a geopolitical floor but insufficient to offset supply-side bearishness",
-    "OPEC+ cohesion under pressure as Iraq disputes its production capacity ceiling, raising compliance doubts ahead of the May meeting",
-    "US blockade squeezing Iranian oil revenues while Russia-US oil deal diplomacy muddies the sanctions landscape"
+    "Houthi drone strike on Ras Tanura refinery and tanker explosions/mines in the Strait of Hormuz spike supply-disruption premium in WTI",
+    "Iran war accelerating shift of fuel tankers into crude trade; Russia becomes top supplier to India and China as Iranian barrels are disrupted",
+    "Bearish offset from rising U.S. crude inventories (+1.1 mb) and sharp month-long product price declines; OPEC+ cut odds at 77% for May"
    ],
    "headlineCount": 12,
    "sources": [
-    "AFP.com",
-    "EnergyNow",
-    "Fortune",
-    "Hromadske",
-    "Mathrubhumi English",
-    "National Security Journal"
+    "Arabian Business",
+    "Britannica",
+    "CNBC",
+    "Demokratis.co.id",
+    "EU Today",
+    "EnergyNow"
    ]
   },
   "gas": {
-   "summary": "Henry Hub surged 15.26% on the day to $3.67/MMBtu, extending a remarkable monthly gain of 41.05% \u2014 the standout price move across all energy sectors today. No specific US-side headline was provided to explain today's spike, so the driver set is likely a combination of early-winter demand pull and position squaring; the data provided is thin on US-specific catalysts. In Europe, TTF edged up 0.75% to \u20ac90.405/MWh, its fourth consecutive session of gains, as an incoming cold snap is accelerating storage withdrawals from already-depleted reserves. The year-on-year context is stark: European gas prices are reportedly up 163% over the past twelve months. The EU's advancing legislation to ban Russian gas imports adds a structural tightening signal, while Iran's worsening domestic gas shortage \u2014 driven by war-related infrastructure damage \u2014 removes a potential alternative supply source from the regional picture.",
+   "summary": "Henry Hub rocketed 10.59% to $3.676/MMBtu, extending a sharp monthly rally of over 36%, with the Iran war and broader Middle East supply disruption cited as the primary driver lifting global energy complex sentiment. UK household energy bills are reported set to soar 26% from the start of next year, directly linked to Iran-war-driven gas price pressure. TTF pulled back 3.89% to \u20ac88.1/MWh on the day despite holding an 8.97% weekly gain, suggesting some profit-taking after last week's run-up. European gas policy signals remain deeply contradictory: the EU is advancing legislation to ban Russian gas imports while U.S. envoys are simultaneously pitching a plan to resume Russian gas flows via Ukraine. The U.S. rig count held flat this week even as domestic oil production hit a fifth consecutive record.",
    "drivers": [
-    "European cold snap driving accelerated storage withdrawals from depleted inventories, pushing TTF to a fourth consecutive daily gain",
-    "Henry Hub +15% single-day spike on strong winter demand signals; underlying US catalyst data is limited in today's feed",
-    "EU legislation to ban Russian gas imports and Iran's domestic gas infrastructure damage both point to tighter medium-term supply globally"
+    "Iran war and Strait of Hormuz disruptions driving broad energy risk premium, lifting Henry Hub +10.6% on the day and +36% on the month",
+    "Contradictory European policy signals: EU advancing Russian gas ban while U.S. envoys propose resuming Russian gas flows to Europe via Ukraine",
+    "UK energy bills set to rise 26% as Iran-war gas price shock feeds through to consumer tariffs; U.S. rig count flat despite record oil output"
    ],
-   "headlineCount": 5,
+   "headlineCount": 7,
    "sources": [
-    "The New Voice of Ukraine"
+    "The New Voice of Ukraine",
+    "Vocal"
    ]
   },
   "power": {
-   "summary": "EU carbon (EUA) fell 1.05% to $79.025/EUA, extending a 4.94% weekly decline and a 6.07% monthly retreat. The softness in EUAs sits in contrast to rising TTF gas prices, which typically support carbon demand as gas-fired generation becomes more expensive and marginal abatement costs shift. Headlines on the power and carbon desk are thin today; the most relevant contextual items are the EU's 22nd Russia sanctions package \u2014 raising questions about how much further the bloc's sanctions toolbox can reach \u2014 and a Central Asian pilot project for a regional electricity market, which is early-stage and unlikely to move near-term European prices. No power price data was provided for European day-ahead markets, limiting the analytical picture.",
+   "summary": "EU carbon (EUA) edged down 0.97% to $78.26/EUA, trimming a modest weekly gain of 2.63% but remaining 6.6% below last month's levels. TTF's 3.89% daily retreat provides some relief to gas-fired power generation margins in Europe, though the weekly and monthly context keeps the power stack under pressure. Iran's electricity rationing under U.S. sanctions and blockade highlights how deeply the conflict is affecting domestic energy infrastructure beyond crude exports. On the structural side, a headline flagged real momentum building for small modular reactors in the U.S., and Big Oil and Big Tech are jointly lobbying the EU for faster permitting of gas-fired data centers. The EU's 22nd Russia sanctions package is in motion, with questions raised about whether Brussels' sanctions machinery is approaching its operational limits.",
    "drivers": [
-    "EUA prices sliding despite rising TTF, suggesting demand-side weakness or profit-taking is outweighing fuel-switching carbon pressure",
-    "EU's 22nd Russia sanctions package signals continued policy tightening but its incremental energy market impact appears limited at this stage",
-    "Power sector news flow is sparse today; Central Asia regional grid pilot is too nascent to influence near-term market dynamics"
+    "EUA softens slightly as TTF pulls back on the day, but monthly carbon weakness reflects broader demand uncertainty and energy cost pressure in Europe",
+    "Iran electricity rationing under sanctions illustrates conflict's systemic power-sector spillover beyond crude markets",
+    "SMR momentum building in the U.S.; Big Oil and Big Tech lobbying EU for expedited gas-fired data center permits signals rising power-demand expectations"
    ],
-   "headlineCount": 4,
+   "headlineCount": 6,
    "sources": [
+    "Al Jazeera",
     "EUalive",
     "Saudi Gazette"
    ]
