@@ -1,49 +1,47 @@
 {
- "generated": "2026-11-26T22:08:05.857264+00:00",
+ "generated": "2026-11-27T21:48:58.845408+00:00",
  "model": "claude-sonnet-4-6",
  "sectors": {
   "oil": {
-   "summary": "A sharp intraday divergence between WTI and Brent defined today's session. WTI front-month recovered +1.47% to $84.91/bbl, bouncing from a three-month low on renewed Middle East supply anxiety, while Brent shed -3.04% to $91.73, suggesting physical market players are pricing differential risk differently across benchmarks. The Hormuz corridor remains acutely disrupted: Iran reports an LNG carrier and multiple oil tankers struck naval mines in the strait, hardliners are openly calling for tanker convoys to defy the U.S. blockade, and a suspected fake Iranian tanker probed gaps in U.S. maritime monitoring. Partially offsetting the supply-risk bid, the U.S. temporarily eased Russian oil sanctions to cap price surges, while Persian Gulf exports from non-Iranian producers have reportedly recovered close to pre-war levels. The one-month move of -17 to -23% across the complex shows the broader bearish macro backdrop still dominates despite daily geopolitical flares. CME options-implied probability of an OPEC cut at the May 2026 meeting stands at 77%.",
+   "summary": "Crude sold off sharply today despite an intensifying Middle East conflict backdrop: Brent shed nearly 4% to $90.84/bbl and WTI eased 0.72% to $83.08, though both contracts remain well below their month-ago levels (-21% and -19% respectively), suggesting supply fears have yet to fully override a bearish macro overhang. Headlines are contradictory on Iraq \u2014 SOMO reportedly delayed 20-30 million barrels of loadings while the oil minister simultaneously announced exports at 3.6 mbpd, the apparent push for a higher OPEC quota adding to supply-side noise. The sharpest geopolitical signal came from a reported mine explosion hitting a tanker in the Strait of Hormuz, Iran's declared oil blockade, Houthi strikes on four Saudi cities, and a drone attack on a UAE nuclear facility. Partially offsetting: the US reportedly eased Russia oil sanctions temporarily to cap prices, and Persian Gulf exports were described as near pre-war levels. Options markets are pricing a 77% probability of an OPEC output cut at the May 2027 meeting.",
    "drivers": [
-    "Strait of Hormuz mine strikes on multiple tankers and Iranian hardliner calls for convoy breakout are injecting acute supply-risk premiums into WTI",
-    "U.S. temporary easing of Russian oil sanctions and near-prewar Persian Gulf export recovery are capping the upside and weighing on Brent",
-    "CME options market prices a 77% probability of an OPEC production cut at the next meeting, reflecting broader demand concerns behind the steep month-on-month losses"
+    "Iran's Strait of Hormuz blockade and tanker mine explosion sustain a risk premium, but actual export disruption remains contained near pre-war levels per recent reports",
+    "Iraq sending mixed signals: multi-week cargo delays clash with oil minister's claim of 3.6 mbpd exports and push for a higher OPEC production cap",
+    "US temporary easing of Russia oil sanctions and Trump pressure on Ukraine to halt refinery strikes are both bearish supply impulses, capping the geopolitical upside"
    ],
    "headlineCount": 12,
    "sources": [
-    "Business Upturn",
-    "CNBC",
+    "Anadolu Ajans\u0131",
+    "DD News",
     "Deccan Herald",
-    "EnergyNow",
     "EnergyNow.com",
-    "Iran International"
+    "Iran International",
+    "Outlook India"
    ]
   },
   "gas": {
-   "summary": "Henry Hub surged +10.09% on the day to $3.599/MMBtu, extending a +10.13% weekly gain and a +27.76% monthly rally \u2014 the standout move across the energy complex today. The Hormuz angle is directly relevant here as well: an LNG carrier is reported to have exploded after hitting a naval mine in the strait, adding a supply-disruption risk premium to global LNG pricing. European TTF was comparatively muted at +0.28% to 87.55 \u20ac/MWh on the week but is off -13.08% over the month, reflecting the diverging demand/supply dynamics between the two markets. On structural flows, U.S. envoys are pitching a controversial plan to resume Russian gas flows to Europe via Ukraine, while Gasunie urged the Netherlands to establish a strategic gas reserve citing international supply disruptions. The TAPI pipeline milestone remains a longer-dated fundamental. Overall, today's Henry Hub spike appears driven primarily by the Hormuz LNG incident.",
+   "summary": "Henry Hub surged 6.79% on the day to $3.491/MMBtu, extending a near-7% weekly gain and a near-24% monthly rally \u2014 a stark divergence from TTF, which fell 2.81% to \u20ac84.85/MWh on the day, though the European benchmark is still roughly flat on the week. The US price spike likely reflects tightening domestic balances heading into winter, while TTF softened, possibly on the headline that China reports ample thermal coal, gas, and backup power reserves to cover winter demand peaks \u2014 reducing one pillar of LNG competition. A controversial US diplomatic proposal to resume Russian gas flows to Europe via Ukraine remains a potential structural bearish catalyst for TTF if it gains traction. News flow for this sector is relatively thin today; the Henry Hub move is the dominant story.",
    "drivers": [
-    "An LNG carrier explosion following a Hormuz mine strike is injecting significant supply-disruption risk into global LNG markets, underpinning the Henry Hub spike",
-    "U.S. envoys pitching resumption of Russian gas flows to Europe via Ukraine adds geopolitical complexity to European supply outlooks, though TTF reaction was subdued today",
-    "Gasunie's call for a Dutch strategic gas reserve signals that European operators are actively repositioning for prolonged supply uncertainty"
+    "Henry Hub +6.79% on the day, posting a near-24% monthly rally \u2014 domestic winter tightness is the primary driver with limited bearish offsets",
+    "TTF declines 2.81% intraday; China's confirmation of ample winter energy reserves reduces marginal LNG demand pressure on the European market",
+    "US envoys floating a plan to restore Russian gas flows to Europe via Ukraine \u2014 if progressed, a structural bearish threat for TTF"
    ],
-   "headlineCount": 5,
+   "headlineCount": 2,
    "sources": [
     "Vocal"
    ]
   },
   "power": {
-   "summary": "EU carbon EUAs firmed +2.88% to $80.51/EUA, the strongest single-day move across the power and carbon complex, extending a +2.70% weekly gain even as the one-month trend remains negative at -5.04%. The key European physical story today is a UK grid squeeze: a cold snap is driving a system margin shortfall of more than 2.7 GW between noon and 8 p.m. local time, tightening spare capacity materially. Norway's grid operator Statnett has paused new data-center grid reservations, highlighting AI-driven load growth overwhelming planned supply additions. On nuclear: TEPCO is delaying restart of a second Kashiwazaki-Kariwa reactor, a setback for Japan's nuclear revival, while a reported drone attack on a UAE nuclear power plant sent oil to a two-week high. Iran is rationing electricity under the weight of U.S. sanctions and the blockade. The U.S.-Saudi civilian nuclear deal was reported but details remain thin.",
+   "summary": "The power and carbon picture is thin on dedicated headlines today. EU carbon (EUA) edged up just 0.14% to $80.625/EUA, consolidating after a 4.11% weekly gain even as the monthly trend remains negative (-5.11%). TTF, the key marginal cost input for European power, fell 2.81% on the day, which should ease near-term generation costs but may also reduce the incentive to switch away from gas. A drone attack on a UAE nuclear power plant (reported yesterday) adds a tail-risk dimension to regional power security. The US-Saudi civilian nuclear deal, if confirmed, is a longer-term structural signal for Gulf power diversification. China's state media confirmed sufficient thermal coal, gas, and power reserves for the winter, limiting any demand-driven upside in global energy commodities.",
    "drivers": [
-    "A UK cold-snap power margin shortfall exceeding 2.7 GW is tightening near-term European power balances and supporting EUA prices",
-    "Norway's Statnett pause on data-center grid reservations highlights how AI-driven electricity demand is outstripping grid capacity in key markets",
-    "TEPCO's delay to the Kashiwazaki-Kariwa reactor restart and a reported drone strike on a UAE nuclear plant underscore ongoing nuclear supply vulnerabilities across two continents"
+    "EUA holds $80.625/EUA with a modest daily gain; weekly +4.1% gain suggests underlying carbon support even as monthly trend is negative",
+    "Drone attack on UAE nuclear plant introduces power-infrastructure risk to the broader Middle East conflict narrative",
+    "TTF -2.81% on the day softens European power generation costs at the margin, while China's winter adequacy declaration removes a key upside demand catalyst"
    ],
-   "headlineCount": 11,
+   "headlineCount": 3,
    "sources": [
-    "Al Jazeera",
     "Deccan Herald",
-    "EnergyNow.com",
-    "NewsCord"
+    "EnergyNow.com"
    ]
   }
  }
